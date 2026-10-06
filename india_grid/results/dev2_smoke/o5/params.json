@@ -1,0 +1,26 @@
+{
+ "forecast_model": "lgbm",
+ "calibration_window": 180,
+ "round1_model": "lgbm",
+ "params": {
+  "A2": {
+   "beta": 0,
+   "rho": 0.5
+  },
+  "A5": {
+   "beta": 0
+  },
+  "A4s": {
+   "b0": -4,
+   "bU": 0,
+   "bS": 1,
+   "rho": 0.5
+  },
+  "A5c": {
+   "b0": -4,
+   "bU": 0,
+   "bS": 1
+  }
+ },
+ "seconds": 57
+}

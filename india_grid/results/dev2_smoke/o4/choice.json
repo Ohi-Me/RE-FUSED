@@ -1,0 +1,16 @@
+{
+ "forecast_model": "lgbm",
+ "calibration_window": 180,
+ "cv_tau": {
+  "O4a": 0.0005813077703818561,
+  "O4b": 0.01842456514121196,
+  "O4c": 0.04970844617079796
+ },
+ "chosen": "O4c",
+ "params": {
+  "depth": 2,
+  "k": 0.25
+ },
+ "n_val": 3000,
+ "n_dev": 3000
+}

@@ -1,0 +1,27 @@
+{
+ "tid": "T5",
+ "variant": "mcag_instance_sd",
+ "blocks": [
+  "market",
+  "system",
+  "environment"
+ ],
+ "block_dims": [
+  6,
+  13,
+  5
+ ],
+ "params_instance": 227535,
+ "params": 227535,
+ "fusion_hidden": 172,
+ "n_train": 21008,
+ "n_es": 2314,
+ "n_eval": 9477,
+ "seeds": {
+  "0": {
+   "epochs": 1,
+   "best_es": 0.2626805007457733,
+   "elapsed_s": 10.3
+  }
+ }
+}

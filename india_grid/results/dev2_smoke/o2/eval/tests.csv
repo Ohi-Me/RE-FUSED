@@ -1,0 +1,10 @@
+tid,model,test,W90,W180,W365,chosen,comparator,H,mean_diff,lo,hi,p_one_sided,n_days,p_holm_family
+T5,chronos,calibration_window_val_pinball,,,,90.0,,,,,,,,
+T5,chronos,final_vs_seasonal_naive,,,,,seasonal_naive,1,,,,,0.0,1.0
+T5,chronos,final_vs_seasonal_naive,,,,,seasonal_naive,2,,,,,0.0,1.0
+T5,chronos,final_vs_seasonal_naive,,,,,seasonal_naive,3,,,,,0.0,1.0
+T5,chronos,final_vs_seasonal_naive,,,,,seasonal_naive,all,,,,,0.0,
+T5,chronos,final_vs_round1_selected,,,,,bilstm,1,,,,,0.0,
+T5,chronos,final_vs_round1_selected,,,,,bilstm,2,,,,,0.0,
+T5,chronos,final_vs_round1_selected,,,,,bilstm,3,,,,,0.0,
+T5,chronos,final_vs_round1_selected,,,,,bilstm,all,,,,,0.0,

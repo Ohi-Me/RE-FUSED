@@ -1,0 +1,27 @@
+{
+ "tid": "T5",
+ "Ly": 14,
+ "covariates": [
+  "dem_energy_met_gwh",
+  "dev_actual_drawal_gwh",
+  "gen_outage_share",
+  "m_dsm",
+  "m_prc_rtm",
+  "m_psp",
+  "m_wx",
+  "nat_energy_met_gwh",
+  "prc_dsm_normal",
+  "prc_rtm_acp",
+  "reg_solar_gwh",
+  "sys_pct_lt_49_9",
+  "wx_cdd24",
+  "wx_tmax_c"
+ ],
+ "context": 512,
+ "val_mase": {
+  "False": 1.9370519421488808,
+  "True": 1.9533588713276624
+ },
+ "cross_learning": false,
+ "seconds": 4.7
+}
