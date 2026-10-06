@@ -16,20 +16,31 @@ Controller of India (Grid-India), the Central Electricity Authority (CEA) and th
 Author: **Rohit Kumar**, Centre for Artificial Intelligence, Dr. B. R. Ambedkar National Institute of Technology
 Jalandhar. All computation ran on the institute's NVIDIA H100 cluster.
 
-![Overview of the research](docs/figures/architecture.svg)
+![Overview of the research](Docs/figures/architecture.svg)
 
-## What is in this repository
+## Repository layout
 
-The folders are numbered in reading order. Folders 1 and 2 are the **final version** of the work;
-[`FINAL_VERSION.md`](FINAL_VERSION.md) shows which code produced each final result, where the result is, and its run log.
+```
+RE-FUSED/
+├── README.md                 this page
+├── FINAL_VERSION.md          which code produced each final result, where the result is, and its run log
+├── India_Grid_Study/         main study: official data, Indian datasets, forecasting, deviation assessment, scheduling
+├── Forecast_Correction_India/   forecast correction on real Indian data
+│   └── Other_Countries/      the same method on data from other countries (comparison only)
+├── Early_Versions/           earlier versions of the work and why it changed
+└── Docs/                     guides (data, results, how to rerun) and all figures
+```
+
+Every folder opens with a `README.md` that says what is inside it. `India_Grid_Study` and
+`Forecast_Correction_India` are the **final version** of the work.
 
 | Folder | What it holds |
 |---|---|
-| [`1_india_data_forecasting_scheduling/`](1_india_data_forecasting_scheduling/) | **Main study.** Download and checking of every official report; the State-day panel and the all-India 15-minute and hourly series; day-ahead forecasting; deviation assessment; scheduling under deviation charges; all results and run logs |
-| [`2_forecast_correction_india/`](2_forecast_correction_india/) | **Forecast correction on real Indian data.** Can a forecast be improved by learning its past errors, and how finely should that correction be tuned? Run on the all-India hourly series and the State daily series, with its frozen plan and run logs |
-| [`2_forecast_correction_india/comparison_other_countries/`](2_forecast_correction_india/comparison_other_countries/) | The same correction method tested earlier on data from other countries (USA, Europe), kept only to compare with the Indian results |
-| [`3_early_versions/`](3_early_versions/) | Code, results and notes of the earlier versions, and why the work changed direction |
-| [`docs/`](docs/) | Plain-language guides: [data](docs/DATA.md), [results](docs/RESULTS.md), [how to rerun](docs/REPRODUCE.md), and all figures |
+| [`India_Grid_Study/`](India_Grid_Study/) | Download and checking of every official report; the State-day panel and the all-India 15-minute and hourly series; day-ahead forecasting; deviation assessment; scheduling under deviation charges; all results and run logs |
+| [`Forecast_Correction_India/`](Forecast_Correction_India/) | Can a forecast be improved by learning its past errors, and how finely should that correction be tuned? Run on the all-India hourly series and the State daily series, with its frozen plan and run logs |
+| [`Other_Countries/`](Forecast_Correction_India/Other_Countries/) | The same correction method on New York, European and Portuguese data, kept only to compare with the Indian results |
+| [`Early_Versions/`](Early_Versions/) | Code, results and notes of the earlier versions |
+| [`Docs/`](Docs/) | [Data](Docs/DATA.md), [results](Docs/RESULTS.md), [how to rerun](Docs/REPRODUCE.md), and all figures |
 
 **Gated correction, in one line:** a forecast `B` is improved by adding a learned correction `r` of its usual
 errors, scaled by a gate `g` between 0 and 1.5: `final forecast = B + g × r`. The gate can be one number for
@@ -38,7 +49,7 @@ everything, or one per series, per hour or per day; the study tests when a finer
 ## The main findings, in short
 
 All numbers come from result files in this repository. Each claim was written down and frozen before the
-evaluation data were opened ([how](docs/figures/protocol.svg)).
+evaluation data were opened ([how](Docs/figures/protocol.svg)).
 
 - **Late data is expensive.** Using reports only after they are published, instead of pretending they arrive at
   once, raises day-ahead forecast error by 15 % (State drawal) to 138 % (market price).
@@ -52,31 +63,31 @@ evaluation data were opened ([how](docs/figures/protocol.svg)).
   a year of drawal forecast error across the 34 control areas; finer gates add little or make it worse. Market
   prices are the exception: there only a gate that keeps re-learning over time helps.
 - **The dataset is open**: 34 State control areas, 1 April 2018 to 31 August 2026, 104,550 State-days × 107
-  columns, DOI [10.5281/zenodo.22870921](https://doi.org/10.5281/zenodo.22870921).
+  columns, Zenodo DOI [to be added on publication](https://zenodo.org).
 
-Details, with intervals and the tests that were *not* supported: [docs/RESULTS.md](docs/RESULTS.md).
+Details, with intervals and the tests that were *not* supported: [Docs/RESULTS.md](Docs/RESULTS.md).
 
 | | |
 |---|---|
-| ![Forecast accuracy](docs/figures/forecast_accuracy.png) | ![Cost of late data and interval coverage](docs/figures/late_data_and_intervals.png) |
-| ![Daily scheduling regret](docs/figures/scheduling_regret.png) | ![Value of forecast accuracy](docs/figures/value_of_accuracy.png) |
+| ![Forecast accuracy](Docs/figures/forecast_accuracy.png) | ![Cost of late data and interval coverage](Docs/figures/late_data_and_intervals.png) |
+| ![Daily scheduling regret](Docs/figures/scheduling_regret.png) | ![Value of forecast accuracy](Docs/figures/value_of_accuracy.png) |
 
 ## How each part works
 
 | | |
 |---|---|
-| Forecasting with data as published | ![forecasting](docs/figures/forecasting.svg) |
-| Schedule and deviation charge | ![scheduling](docs/figures/scheduling.svg) |
-| Gated forecast correction | ![correction](docs/figures/correction.svg) |
+| Forecasting with data as published | ![forecasting](Docs/figures/forecasting.svg) |
+| Schedule and deviation charge | ![scheduling](Docs/figures/scheduling.svg) |
+| Gated forecast correction | ![correction](Docs/figures/correction.svg) |
 
 ## Data and licences
 
 Code: MIT licence ([`LICENSE`](LICENSE)). The processed Indian data, documentation and results: CC BY 4.0
 ([`LICENSE-DATA.md`](LICENSE-DATA.md)). The original report files are not copied here; they stay with the agencies
 that publish them, and the download scripts fetch them again and check them against the recorded SHA-256 hashes.
-Files too large for GitHub are in the Zenodo record ([list](docs/LARGE_FILES_ON_ZENODO.md)).
+Files too large for GitHub are in the [Zenodo record](https://zenodo.org) ([list](Docs/LARGE_FILES_ON_ZENODO.md)).
 
 ## Citation
 
-See [`CITATION.cff`](CITATION.cff). Dataset: Rohit Kumar, *RE-FUSED: a provenance-tracked State-day panel of India's
-power system*, Zenodo, DOI 10.5281/zenodo.22870921.
+See [`CITATION.cff`](CITATION.cff). Rohit Kumar (2026). *RE-FUSED: research on India's power system from official
+government data — code, results, logs and datasets* (version 1.0). Zenodo. DOI to be added on publication.

@@ -1,0 +1,20 @@
+#!/bin/bash
+#PBS -N refused_india_dev3
+#PBS -q workq
+#PBS -l select=1:ncpus=8:ngpus=1:mem=32gb
+#PBS -l walltime=04:00:00
+#PBS -j oe
+# Development check after the fixes of 6 Oct 2026 (per-series fallback for thin quantile cells, imbalance cost from the
+# Grid-India market prices): the reserve and energy ladder again on the development split, then the analysis dry run.
+cd "$PBS_O_WORKDIR"
+export PYTHONNOUSERSITE=1 OMP_NUM_THREADS=8 MKL_NUM_THREADS=8 OPENBLAS_NUM_THREADS=8 PYTHONIOENCODING=utf-8 PYTHONUNBUFFERED=1 MPLBACKEND=Agg
+source ../India_Grid_Study/hpc/cluster.env 2>/dev/null
+source "${HPC_CONDA_SH:-/apps/compilers/anaconda3/etc/profile.d/conda.sh}"
+conda activate "${HPC_CONDA_ENV:-refused_h100}"
+MIG=$(cd ../India_Grid_Study && python run_all.py pick-mig) || { echo "no free MIG instance"; exit 3; }
+export CUDA_VISIBLE_DEVICES="$MIG"
+echo "india dev3 $(date -Iseconds) on $(hostname), job $PBS_JOBID"
+rm -rf results/india/dev/prob_energy
+python -u code/scripts/india/india_prob_energy.py --mode dev --seeds 1
+python -u code/scripts/india/analyze_india.py --map dev
+echo "india dev3 finished rc=$? $(date -Iseconds)"

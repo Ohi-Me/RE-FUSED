@@ -23,8 +23,8 @@ Evaluation period: 1 April 2025 to 31 August 2026, not loaded during development
 | F4 | Risk-aware scheduling and the forecast-to-decision chain | 6 of 9 |
 | F5 | Refining a forecast correction (the question of section 2, on the State panel) | 1 of 3 |
 
-File: `1_india_data_forecasting_scheduling/results/tables/confirm_hypotheses.md`. An independent rescoring of the stored predictions
-reproduces this table exactly (`1_india_data_forecasting_scheduling/results/audit/INTEGRITY.md`).
+File: `India_Grid_Study/results/tables/confirm_hypotheses.md`. An independent rescoring of the stored predictions
+reproduces this table exactly (`India_Grid_Study/results/audit/INTEGRITY.md`).
 
 ### Forecasting
 
@@ -66,7 +66,7 @@ J = half the mean plus half the CVaR at 0.9. Lower is better.
 - **Deviation assessment (negative result):** the consequence-aware measure does not rank deviations better than
   energy alone (estimate 0.0108, interval −0.0154 to 0.0351). Forecast information does beat a shuffled placebo.
 
-File: `1_india_data_forecasting_scheduling/results/tables/confirm_o5_summary.md`.
+File: `India_Grid_Study/results/tables/confirm_o5_summary.md`.
 
 ![Daily regret](figures/scheduling_regret.png)
 
@@ -80,7 +80,7 @@ File: `1_india_data_forecasting_scheduling/results/tables/confirm_o5_summary.md`
 | One correction gate, in energy | for drawal, one fixed gate removes 13,374 GWh a year of forecast error over all 34 areas (interval 10,273 to 17,003); finer gates were significantly worse in 9 of 36 cases and better in 3 |
 | Prices are different | for the day-ahead price, the fixed gate is worse than no correction (mean absolute error 1,485 against 1,008 Rs/MWh); a gate re-learned over time helps (956) |
 
-Files: `1_india_data_forecasting_scheduling/results/extra/`.
+Files: `India_Grid_Study/results/extra/`.
 
 ![Value of accuracy](figures/value_of_accuracy.png)
 
@@ -132,16 +132,16 @@ What the run shows:
 | IH-8b | less 99 % reserve | 805 MW | supported (see coverage caveat) |
 | IE-8c | imbalance cost saved (estimate only) | −469 Rs crore/yr | cost rose |
 
-Files: `2_forecast_correction_india/06_results/india/confirm/analysis/verdicts.json` and the tables beside it. Changes made
+Files: `Forecast_Correction_India/results/india/confirm/analysis/verdicts.json` and the tables beside it. Changes made
 after the plan was frozen (thread and core limits after the cluster stopped three attempts before any forecast was
-made) are listed in `2_forecast_correction_india/02_design/06_deviations_india.md`.
+made) are listed in `Forecast_Correction_India/design/06_deviations_india.md`.
 
 ### State daily correction ladders (exploratory)
 
 The same correction on the five daily State targets of the 34 control areas: simple forecasts lose 12–55 % of
 their squared error, learned forecasts gain about nothing, and finer gates add nothing except the per-instance gate
 for renewable generation. These periods had already been opened by the State-day study, so this is exploratory.
-Files: `2_forecast_correction_india/06_results/india/explore/`.
+Files: `Forecast_Correction_India/results/india/explore/`.
 
 ---
 
@@ -161,7 +161,7 @@ unchanged reliability (99.2 % against 99.3 %), again without lowering imbalance 
 | Correction lowers imbalance cost | no | no (cost rose) |
 
 So the validation rules that worked on the comparison data did not carry over to India's all-India series, while
-the energy effect and the missing cost effect did. Files: `2_forecast_correction_india/comparison_other_countries/`.
+the energy effect and the missing cost effect did. Files: `Forecast_Correction_India/Other_Countries/`.
 
 ---
 
@@ -176,4 +176,4 @@ the energy effect and the missing cost effect did. Files: `2_forecast_correction
 
 ## 5. Early stages
 
-What the earlier stages found, and why the work was rebuilt from official data: [`../3_early_versions/README.md`](../3_early_versions/README.md).
+What the earlier stages found, and why the work was rebuilt from official data: [`../Early_Versions/README.md`](../Early_Versions/README.md).

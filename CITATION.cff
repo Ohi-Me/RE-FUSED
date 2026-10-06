@@ -9,10 +9,6 @@ authors:
     affiliation: "Centre for Artificial Intelligence, Dr. B. R. Ambedkar National Institute of Technology Jalandhar"
 repository-code: "https://github.com/Ohi-Me/RE-FUSED"
 license: MIT
-identifiers:
-  - type: doi
-    value: 10.5281/zenodo.22870921
-    description: "State-day panel of India's power system, code and frozen results (Zenodo)"
 keywords:
   - load forecasting
   - Indian power system
