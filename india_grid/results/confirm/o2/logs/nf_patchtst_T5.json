@@ -1,0 +1,50 @@
+{
+ "tid": "T5",
+ "model": "patchtst",
+ "h": 17,
+ "Ly": 14,
+ "n_windows": 881,
+ "hist_exog": [
+  "dem_energy_met_gwh",
+  "dev_actual_drawal_gwh",
+  "gen_outage_share",
+  "m_dsm",
+  "m_prc_rtm",
+  "m_psp",
+  "m_wx",
+  "nat_energy_met_gwh",
+  "prc_dsm_normal",
+  "prc_rtm_acp",
+  "reg_solar_gwh",
+  "sys_pct_lt_49_9",
+  "wx_cdd24",
+  "wx_tmax_c"
+ ],
+ "seeds": {
+  "0": {
+   "steps_trained": 0,
+   "rows": 34359,
+   "elapsed_s": 15.7
+  },
+  "1": {
+   "steps_trained": 0,
+   "rows": 34359,
+   "elapsed_s": 30.8
+  },
+  "2": {
+   "steps_trained": 0,
+   "rows": 34359,
+   "elapsed_s": 46.2
+  },
+  "3": {
+   "steps_trained": 0,
+   "rows": 34359,
+   "elapsed_s": 61.1
+  },
+  "4": {
+   "steps_trained": 0,
+   "rows": 34359,
+   "elapsed_s": 79.2
+  }
+ }
+}

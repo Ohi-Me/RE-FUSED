@@ -1,0 +1,33 @@
+{
+ "tid": "T5",
+ "variant": "market_only",
+ "blocks": [
+  "market"
+ ],
+ "block_dims": [
+  6
+ ],
+ "params_instance": 190595,
+ "params": 190595,
+ "fusion_hidden": 80,
+ "n_train": 25766,
+ "n_es": 2314,
+ "n_eval": 11453,
+ "seeds": {
+  "0": {
+   "epochs": 8,
+   "best_es": 0.19597409665584564,
+   "elapsed_s": 8.9
+  },
+  "1": {
+   "epochs": 8,
+   "best_es": 0.1902230829000473,
+   "elapsed_s": 11.0
+  },
+  "2": {
+   "epochs": 8,
+   "best_es": 0.1938653141260147,
+   "elapsed_s": 13.0
+  }
+ }
+}
