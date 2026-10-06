@@ -1,0 +1,17 @@
+--- Cell 0 (markdown) : 0 hits ---
+--- Cell 4 (markdown) : 0 hits ---
+--- Cell 7 (code) : 0 hits ---
+--- Cell 8 (code) : 0 hits ---
+--- Cell 12 (markdown) : 0 hits ---
+--- Cell 13 (code) : 0 hits ---
+--- Cell 14 (code) : 0 hits ---
+--- Cell 18 (code) : 0 hits ---
+--- Cell 21 (markdown) : 1 hits ---
+    xy carbon variance signals (rolling std, NOT true intraday) | Δ < 0 → sub-daily-proxy resolution adds value 
+--- Cell 22 (code) : 0 hits ---
+--- Cell 23 (code) : 0 hits ---
+--- Cell 29 (markdown) : 0 hits ---
+--- Cell 30 (code) : 0 hits ---
+--- Cell 32 (code) : 0 hits ---
+--- Cell 34 (code) : 0 hits ---
+--- Cell 35 (code) : 0 hits ---

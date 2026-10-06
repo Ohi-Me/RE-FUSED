@@ -1,0 +1,5 @@
+model,status
+chronos,not installed (ModuleNotFoundError)
+timesfm,not installed (ModuleNotFoundError)
+momentfm,not installed (ModuleNotFoundError)
+uni2ts,not installed (ModuleNotFoundError)

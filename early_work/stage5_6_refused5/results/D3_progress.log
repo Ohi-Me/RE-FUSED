@@ -1,0 +1,7 @@
+RT rows=11,267,325 zones=15 span=2019-01-01 00:05:00..2026-01-01 00:00:00
+DA rows=920,520 zones=15 span=2019-01-01 00:00:00..2025-12-31 23:00:00
+RT interval minutes: median 5.0 | 5-min share 96.5 %
+5min  rows=11,042,970 | MAE persistence=   9.356 day-ahead=  14.082 | DA better on 28.2% of steps | sd(y)=58.52
+15min rows=3,681,525 | MAE persistence=   9.483 day-ahead=  12.964 | DA better on 31.8% of steps | sd(y)=55.0
+1h    rows=  920,400 | MAE persistence=   9.190 day-ahead=  11.511 | DA better on 37.0% of steps | sd(y)=49.96
+1d    rows=   38,370 | MAE persistence=  10.046 day-ahead=   7.839 | DA better on 57.2% of steps | sd(y)=35.15

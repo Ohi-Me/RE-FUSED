@@ -1,0 +1,14 @@
+- `2026-09-13 00:48:40` orchestrator started; keep-awake held; queue = M5b_full -> M8 -> M7 -> ALL_STATS
+- `2026-09-13 00:48:41` **M5b_full** is already running from an earlier launcher; waiting for it
+- `2026-09-13 00:48:42` heartbeat: M5b_full still running, 11 configs logged
+- `2026-09-13 00:58:52` heartbeat: M5b_full still running, 21 configs logged
+- `2026-09-13 01:09:01` heartbeat: M5b_full still running, 32 configs logged
+- `2026-09-13 01:14:34` **M5b_full** complete (external launcher)
+- `2026-09-13 01:14:34` **M8** attempt 1 started
+- `2026-09-13 01:23:51` **M8** complete (exit 0)
+- `2026-09-13 01:23:51` **M7** attempt 1 started
+- `2026-09-13 01:28:19` **M7** complete (exit 0)
+- `2026-09-13 01:28:19` **ALL_STATS** attempt 1 started
+- `2026-09-13 01:28:23` **ALL_STATS** complete (exit 0)
+- `2026-09-13 01:28:23` pipeline finished in 0.66 h. complete=['M5b_full', 'M8', 'M7', 'ALL_STATS'] failed=[]
+- `2026-09-13 01:28:23` keep-awake released; orchestrator exiting

@@ -1,0 +1,17 @@
+column,train_min,train_max,test_out_of_train_range,refit_max_abs_delta
+price_norm,0.0,1.0,0.0,0.0
+grid_stress_index,0.1649,0.9308,0.0,0.4402
+gen_zscore,-3.412,2.9219,0.0,0.0
+price_zscore,-1.0855,1.5053,0.0,0.0
+outage_zscore,-2.1125,3.1656,0.0042,0.0
+ren_zscore,-2.7719,4.4722,0.0038,0.0
+gen_cvar90,0.43,453.27,0.0273,0.0
+outage_cvar90,0.0,18577.14,0.0,0.0
+price_cvar90,2787.6383,10000.0,0.0,0.0
+state_gen_norm,0.0,1.0,0.0,0.0
+state_outage_norm,0.0,1.0,0.0,0.0
+state_coal_norm,0.0,1.0,0.0,0.0
+state_ren_norm,0.0,1.0,0.0,0.0
+state_price_norm,0.0,1.0,0.0,0.0
+state_gen_rank,1.0,18.0,0.0,0.0
+state_gen_tier,1.0,18.0,0.0,0.0

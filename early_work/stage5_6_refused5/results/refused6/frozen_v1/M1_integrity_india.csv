@@ -1,0 +1,15 @@
+check,passed,detail
+C1 all planned configs present,True,15 configs
+C1b no unplanned configs,True,
+C2 every config has 10 seeds,True,
+"C3 every (config,seed) has 8 rungs",True,
+C3b rung vocabulary complete,True,
+"C4 no duplicate (config,seed,rung) rows",True,0 duplicates
+C5 no seasonal-naive at h multiple of season (D3),True,
+C6 rung0 skill is exactly zero in all metrics,True,max |skill|=0.00e+00
+C7 baseline magnitude constant across rungs,True,
+C8 data counts identical across seeds,True,
+C9 clipped fraction valid; rung0 unclipped; CLIP declared,True,range_ok=True rung0=0.0 clip=1.5
+"C10 both aggregations present, finite, not identical",True,finite=True macro==pooled everywhere=False
+C11 bootstrap covers all configs and brackets point estimates,True,missing=0 brackets_ok=True
+C12 canonical definitions declared,True,"unit=one (dataset,baseline,h,seed) run primary=skill_sq_macro"

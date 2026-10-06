@@ -1,0 +1,6 @@
+﻿GPU queue PID 24676; CPU queue PID 26600
+O3 queue PID 25468
+04_code\scripts\o2\run_gpu_queue.ps1 -> PID 7308 (return 0)
+04_code\scripts\o2\run_cpu_queue.ps1 -> PID 2676 (return 0)
+04_code\scripts\o3\run_o3_queue.ps1 -> PID 26220 (return 0)
+post queue -> PID 14856 (return 0)

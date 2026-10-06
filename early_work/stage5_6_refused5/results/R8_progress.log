@@ -1,0 +1,9 @@
+ETTh1. h=  1 | always=+0.0918 global=+0.0724 static=+0.1089 free=+0.0857 shrunk=+0.1050 | rho=1.54 [11s]
+ETTh1. h=  6 | always=+0.3109 global=+0.3122 static=+0.3190 free=+0.2624 shrunk=+0.2942 | rho=1.63 [20s]
+ETTh1. h= 24 | always=-0.0122 global=+0.0207 static=-0.0067 free=-0.0029 shrunk=+0.0008 | rho=1.71 [28s]
+ETTh2. h=  1 | always=+0.0592 global=+0.0586 static=+0.0612 free=+0.0776 shrunk=+0.0782 | rho=1.86 [35s]
+ETTh2. h=  6 | always=+0.1741 global=+0.1724 static=+0.1661 free=+0.1636 shrunk=+0.1702 | rho=1.95 [44s]
+ETTh2. h= 24 | always=-0.0277 global=-0.0037 static=+0.0094 free=-0.0113 shrunk=-0.0041 | rho=3.01 [53s]
+ETTm1. h=  1 | always=+0.0115 global=-0.0055 static=+0.0201 free=+0.0103 shrunk=+0.0148 | rho=3.25 [69s]EETTm1. h=  6 | always=+0.1318 global=+0.1059 static=+0.1360 free=+0.1169 shrunk=+0.1324 | rho=2.00 [91s]EETTm1. h= 24 | always=+0.2829 global=+0.2852 static=+0.2862 free=+0.2622 shrunk=+0.2703 | rho=4.09 [114s]
+ETTm2. h=  1 | always=+0.0010 global=-0.0036 static=+0.0082 free=-0.0029 shrunk=+0.0039 | rho=2.09 [129s]EETTm2. h=  6 | always=+0.0699 global=+0.0666 static=+0.0646 free=+0.0880 shrunk=+0.0857 | rho=2.95 [153s]EETTm2. h= 24 | always=+0.1861 global=+0.1820 static=+0.1681 free=+0.1737 shrunk=+0.1776 | rho=4.20 [176s]
+DONE

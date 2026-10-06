@@ -1,0 +1,238 @@
+[2026-08-17 13:18:35] ======================================================================
+[2026-08-17 13:18:35] Starting Notebook Execution: notebook\RE-FUSED.ipynb
+[2026-08-17 13:18:35] ======================================================================
+[2026-08-17 13:18:35] Notebook loaded: 38 total cells (28 code cells)
+[2026-08-17 13:18:35] 
+--- [Cell 00/37] Markdown: <div style="background: linear-gradient(135deg, #0 ---
+[2026-08-17 13:18:35] 
+--- [Cell 01/37] Markdown: Section 0 — Environment & GPU Setup ---
+[2026-08-17 13:18:35] 
+>>> [Cell 02/37 | Code Exec #1] Running: # ─── Cell 0.1 — Imports & Device Detection ───────────────────────────────...
+[2026-08-17 13:18:42] [✅ PASSED] Cell 02 finished in 6.96s (Exec #1)
+[2026-08-17 13:18:42]    | ============================================================
+[2026-08-17 13:18:42]    |   RE-FUSED-Alpha Runtime Environment
+[2026-08-17 13:18:42]    | ============================================================
+[2026-08-17 13:18:42]    |   Device : cuda
+[2026-08-17 13:18:42]    |   GPU    : NVIDIA GeForce GTX 1660 Ti with Max-Q Design
+[2026-08-17 13:18:42]    | ... (3 more output lines)
+[2026-08-17 13:18:42] 
+>>> [Cell 03/37 | Code Exec #2] Running: # ─── Cell 0.2 — Directory Setup ──────────────────────────────────────────...
+[2026-08-17 13:18:42] [✅ PASSED] Cell 03 finished in 0.00s (Exec #2)
+[2026-08-17 13:18:42]    | Data dir : C:\Users\Ohi\Downloads\Refused1\data
+[2026-08-17 13:18:42]    |   Out  dir : C:\Users\Ohi\Downloads\Refused1\results
+[2026-08-17 13:18:42]    |   Train CSV: True
+[2026-08-17 13:18:42]    |   Test  CSV: True
+[2026-08-17 13:18:42] 
+--- [Cell 04/37] Markdown: Section 1 — Data Loading & Feature Engineering (Alpha) ---
+[2026-08-17 13:18:42] 
+>>> [Cell 05/37 | Code Exec #3] Running: # ─── Cell 1.1 — Load & Inspect Data ──────────────────────────────────────...
+[2026-08-17 13:18:43] [✅ PASSED] Cell 05 finished in 0.93s (Exec #3)
+[2026-08-17 13:18:43]    | ==============================================================
+[2026-08-17 13:18:43]    |   Loaded in 0.9s
+[2026-08-17 13:18:43]    |   Train :  39,672 rows | 140 cols | 2017-10-03 → 2023-12-31
+[2026-08-17 13:18:43]    |   Test  :   7,614 rows | 140 cols | 2024-01-01 → 2025-04-22
+[2026-08-17 13:18:43]    |   States: 18 → ['Bihar', 'Chhattisgarh', 'Delhi', 'Gujarat', 'Haryana', 'Himachal Pradesh', 'Jammu & Kashmir', 'Jharkhand', 'Karnataka', 'Madhya Pradesh', 'Maharashtra', 'Odisha', 'Puducherry', 'Punjab', 'Rajasthan', 'Tamil Nadu', 'Uttar Pradesh', 'Uttarakhand']
+[2026-08-17 13:18:43]    | ... (4 more output lines)
+[2026-08-17 13:18:43] 
+>>> [Cell 06/37 | Code Exec #4] Running: # --- Cell 1.1b -- Leakage Fix: train-only refit of CSV-baked features ----...
+[2026-08-17 13:18:44] [✅ PASSED] Cell 06 finished in 0.68s (Exec #4)
+[2026-08-17 13:18:44]    | column  train_min  train_max  test_out_of_train_range  refit_max_abs_delta
+[2026-08-17 13:18:44]    |        price_norm     0.0000     1.0000                   0.0000               0.0000
+[2026-08-17 13:18:44]    | grid_stress_index     0.1649     0.9308                   0.0000               0.4402
+[2026-08-17 13:18:44]    |        gen_zscore    -3.4120     2.9219                   0.0000               0.0000
+[2026-08-17 13:18:44]    |      price_zscore    -1.0855     1.5053                   0.0000               0.0000
+[2026-08-17 13:18:44]    | ... (14 more output lines)
+[2026-08-17 13:18:44] 
+>>> [Cell 07/37 | Code Exec #5] Running: # --- Cell 1.1c -- Unit Hygiene & Imputation Audit (Task F7: units.py wirin...
+[2026-08-17 13:18:45] [✅ PASSED] Cell 07 finished in 0.38s (Exec #5)
+[2026-08-17 13:18:45]    | ======================================================================
+[2026-08-17 13:18:45]    |   Unit Hygiene Audit (train split, post leakage-fix)
+[2026-08-17 13:18:45]    | ======================================================================
+[2026-08-17 13:18:45]    |   43 column(s) show a within-column magnitude jump (ratio p95/p05 >= 100x):
+[2026-08-17 13:18:45]    |     total_generation_mwh         ratio=    560.3  suspected x1000  likely unit switch (e.g. GWh<->MWh / tons<->kilotons); inspect source files before modeling
+[2026-08-17 13:18:45]    | ... (71 more output lines)
+[2026-08-17 13:18:45] 
+>>> [Cell 08/37 | Code Exec #6] Running: # ─── Cell 1.2 — Feature Engineering (V2 base + Alpha 5-min extensions) ───...
+[2026-08-17 13:18:46] [✅ PASSED] Cell 08 finished in 1.03s (Exec #6)
+[2026-08-17 13:18:46]    | ==============================================================
+[2026-08-17 13:18:46]    |   Feature Engineering Complete — V2 + Alpha
+[2026-08-17 13:18:46]    | ==============================================================
+[2026-08-17 13:18:46]    |   [NEW] rolling_cvar4hr              μ=5167.2969  σ=2562.5355  max=10000.0000
+[2026-08-17 13:18:46]    |   [NEW] ci_intraday_variance         μ=0.0174  σ=0.0347  max=0.3982
+[2026-08-17 13:18:46]    | ... (5 more output lines)
+[2026-08-17 13:18:46] 
+>>> [Cell 09/37 | Code Exec #7] Running: # ─── Cell 1.3 — Exploratory Visualisation (6-panel, Alpha) ───────────────...
+[2026-08-17 13:18:48] [✅ PASSED] Cell 09 finished in 1.91s (Exec #7)
+[2026-08-17 13:18:48]    | Figure saved: S1_dataset_overview.png
+[2026-08-17 13:18:48] 
+--- [Cell 10/37] Markdown: Section 2 — DRO-CVaR Uncertainty Radius Calibration ---
+[2026-08-17 13:18:48] 
+>>> [Cell 11/37 | Code Exec #8] Running: # ─── Cell 2.1 — Calibrate DRO rho* ───────────────────────────────────────...
+[2026-08-17 13:18:48] [✅ PASSED] Cell 11 finished in 0.01s (Exec #8)
+[2026-08-17 13:18:48]    | ============================================================
+[2026-08-17 13:18:48]    |   DRO-CVaR Uncertainty Radius Calibration
+[2026-08-17 13:18:48]    | ============================================================
+[2026-08-17 13:18:48]    |   [TRAIN] N=39,672
+[2026-08-17 13:18:48]    |   ├─ Kurtosis  : -0.3758  → rho_tail   = 0.0100
+[2026-08-17 13:18:48]    | ... (7 more output lines)
+[2026-08-17 13:18:48] 
+>>> [Cell 12/37 | Code Exec #9] Running: # ─── Cell 2.2 — DRO Sensitivity Visualisation ────────────────────────────...
+[2026-08-17 13:18:49] [✅ PASSED] Cell 12 finished in 0.83s (Exec #9)
+[2026-08-17 13:18:49]    | Figure saved: S2_dro_calibration.png
+[2026-08-17 13:18:49] 
+--- [Cell 13/37] Markdown: Section 3 — Staged Architecture Comparison (N5) ---
+[2026-08-17 13:18:49] 
+>>> [Cell 14/37 | Code Exec #10] Running: # ─── Cell 3.1 — Feature & Target Preparation (Alpha, 25 features + FIX, se...
+[2026-08-17 13:18:49] [✅ PASSED] Cell 14 finished in 0.58s (Exec #10)
+[2026-08-17 13:18:49]    | ==============================================================
+[2026-08-17 13:18:49]    |   Alpha Forecasting Setup (+ session FIX: leak-free feats, target self-history)
+[2026-08-17 13:18:49]    | ==============================================================
+[2026-08-17 13:18:49]    |   Features     : 30  (V2:20 + Alpha:5 + FIX:5 target self-history)
+[2026-08-17 13:18:49]    |   Targets      : 6 -> ['total_generation_mwh', 'avg_market_price', 'grid_stress_index', 'fcfs_priority_score', 'palmp', 'log_carbon']
+[2026-08-17 13:18:49]    | ... (6 more output lines)
+[2026-08-17 13:18:49] 
+>>> [Cell 15/37 | Code Exec #11] Running: # ─── Cell 3.2 — All Model Definitions (V2 + Alpha) ───────────────────────...
+[2026-08-17 13:18:49] [✅ PASSED] Cell 15 finished in 0.06s (Exec #11)
+[2026-08-17 13:18:49]    | ============================================================
+[2026-08-17 13:18:49]    |   All Model Architectures (V2 + Alpha)
+[2026-08-17 13:18:49]    | ============================================================
+[2026-08-17 13:18:49]    |   PatchTST+MCAG [V2]                     24,690 params
+[2026-08-17 13:18:49]    |   PatchTST+MCAG-Regime [NEW]             25,220 params
+[2026-08-17 13:18:49]    | ... (7 more output lines)
+[2026-08-17 13:18:49] 
+>>> [Cell 16/37 | Code Exec #12] Running: # ─── Cell 3.3 — Unified Training & Evaluation Loop (Alpha) ───────────────...
+[2026-08-17 13:18:49] [✅ PASSED] Cell 16 finished in 0.00s (Exec #12)
+[2026-08-17 13:18:49]    | Alpha training loop ready.
+[2026-08-17 13:18:49]    |   SEQ=14  BS=256  EP=15  patience=5  CosineWarmRestarts T_0=5
+[2026-08-17 13:18:49]    |   Val split: 7935 rows  |  Test: 7614 rows
+[2026-08-17 13:18:49] 
+>>> [Cell 17/37 | Code Exec #13] Running: # ─── Cell 3a — Stage 2: BiLSTM Best-of-3 (Alpha N5) ──────────────────────...
+[2026-08-17 13:20:27] [✅ PASSED] Cell 17 finished in 97.25s (Exec #13)
+[2026-08-17 13:20:27]    | ============================================================
+[2026-08-17 13:20:27]    |   STAGE 2: BiLSTM Best-of-3
+[2026-08-17 13:20:27]    | ============================================================
+[2026-08-17 13:20:27]    |   ── BiLSTM-Base
+[2026-08-17 13:20:27]    |     ep  1/15  train=0.47150  val=0.14448  ←best
+[2026-08-17 13:20:27]    | ... (58 more output lines)
+[2026-08-17 13:20:27] 
+>>> [Cell 18/37 | Code Exec #14] Running: # ─── Cell 3b — Stage 3: TFT Best-of-3 (Alpha N5) ─────────────────────────...
+[2026-08-17 13:32:29] [✅ PASSED] Cell 18 finished in 721.92s (Exec #14)
+[2026-08-17 13:32:29]    | ============================================================
+[2026-08-17 13:32:29]    |   STAGE 3: TFT Best-of-3
+[2026-08-17 13:32:29]    | ============================================================
+[2026-08-17 13:32:29]    |   ── TFT-Lite
+[2026-08-17 13:32:29]    |     ep  1/15  train=0.24957  val=0.09675  ←best
+[2026-08-17 13:32:29]    | ... (60 more output lines)
+[2026-08-17 13:32:29] 
+>>> [Cell 19/37 | Code Exec #15] Running: # ─── Cell 3c — Stage 4: PatchTST+MCAG Best-of-3 (Alpha N2 + N4) ──────────...
+[2026-08-17 13:37:55] [✅ PASSED] Cell 19 finished in 325.84s (Exec #15)
+[2026-08-17 13:37:55]    | ============================================================
+[2026-08-17 13:37:55]    |   STAGE 4: PatchTST+MCAG Best-of-3
+[2026-08-17 13:37:55]    | ============================================================
+[2026-08-17 13:37:55]    |   ── MCAG-Real  (mode=real)
+[2026-08-17 13:37:55]    |     ep  1/15  train=0.26402  val=0.12290  ←best
+[2026-08-17 13:37:55]    | ... (58 more output lines)
+[2026-08-17 13:37:55] 
+>>> [Cell 20/37 | Code Exec #16] Running: # ─── Cell 3d — Final Head-to-Head (Best-of-3 vs Best-of-3 vs Best-of-3) ──...
+[2026-08-17 13:37:55] [✅ PASSED] Cell 20 finished in 0.01s (Exec #16)
+[2026-08-17 13:37:55]    | ==================================================================================
+[2026-08-17 13:37:55]    |   FINAL HEAD-TO-HEAD — Per-Target MAPE (%) on Test 2024-2025 (Alpha)
+[2026-08-17 13:37:55]    | ==================================================================================
+[2026-08-17 13:37:55]    |   Target                          Best PatchTST    Best BiLSTM     Best TFT  CoalMAPE(PtST)
+[2026-08-17 13:37:55]    |   ------------------------------------------------------------------------------------
+[2026-08-17 13:37:55]    | ... (29 more output lines)
+[2026-08-17 13:37:55] 
+>>> [Cell 21/37 | Code Exec #17] Running: # ─── Cell 3e — Architecture Comparison Visualisation (Alpha) ─────────────...
+[2026-08-17 13:37:57] [✅ PASSED] Cell 21 finished in 1.90s (Exec #17)
+[2026-08-17 13:37:57]    | Figure saved: S3_arch_comparison.png
+[2026-08-17 13:37:57] 
+>>> [Cell 22/37 | Code Exec #18] Running: # ─── Cell 3f — Priority 3: Quantile Heads + Probabilistic Forecasting ────...
+[2026-08-17 13:38:51] [✅ PASSED] Cell 22 finished in 53.75s (Exec #18)
+[2026-08-17 13:38:51]    | ==============================================================
+[2026-08-17 13:38:51]    |   Priority 3 -- Quantile Forecasting (PatchTST+MCAG-Real backbone)
+[2026-08-17 13:38:51]    | ==============================================================
+[2026-08-17 13:38:51]    |   TAUS=[0.1, 0.5, 0.9]  avg CRPS (6 targets)=65.8029
+[2026-08-17 13:38:51]    |     total_generation_mwh     CRPS=11.0381  PI80_cov=0.799  PI80_width=50.107  pinball50=8.2140  median_MASE=1.1268
+[2026-08-17 13:38:51]    | ... (7 more output lines)
+[2026-08-17 13:38:51] 
+--- [Cell 23/37] Markdown: Section 4 — MCAG 5-Way Ablation Study (N2 Extended) ---
+[2026-08-17 13:38:51] 
+>>> [Cell 24/37 | Code Exec #19] Running: # ─── Cell 4.1 — MCAG 5-Way Ablation (Alpha) ──────────────────────────────...
+[2026-08-17 13:43:32] [✅ PASSED] Cell 24 finished in 281.66s (Exec #19)
+[2026-08-17 13:43:32]    | ==============================================================
+[2026-08-17 13:43:32]    |   MCAG 5-Way Ablation — PatchTST backbone
+[2026-08-17 13:43:32]    | ==============================================================
+[2026-08-17 13:43:32]    |   Running MCAG-Real  (proposed, true carbon)  
+[2026-08-17 13:43:32]    |   → avg MAPE=15.29%  best_val=0.07684
+[2026-08-17 13:43:32]    | ... (38 more output lines)
+[2026-08-17 13:43:32] 
+>>> [Cell 25/37 | Code Exec #20] Running: # ─── Cell 4.2 — Ablation Visualisation ───────────────────────────────────...
+[2026-08-17 13:43:34] [✅ PASSED] Cell 25 finished in 1.46s (Exec #20)
+[2026-08-17 13:43:34]    | Figure saved: S4_mcag_ablation.png
+[2026-08-17 13:43:34] 
+--- [Cell 26/37] Markdown: Section 5 — DRO-CVaR-PPO with Vol-Scaled-λ (Alpha N4) ---
+[2026-08-17 13:43:34] 
+>>> [Cell 27/37 | Code Exec #21] Running: # ─── Cell 5.1 — India Grid Simulator & Policy Networks ───────────────────...
+[2026-08-17 13:43:34] [✅ PASSED] Cell 27 finished in 0.00s (Exec #21)
+[2026-08-17 13:43:34]    | Simulator + Policy ready  OBS_DIM=14  RHO=0.0806  λ_base=0.1
+[2026-08-17 13:43:34]    | Vol-scale weight (static, train-set-wide)=0.9940
+[2026-08-17 13:43:34]    | Action-conditioned dynamics: ON  decay=0.85  clip=3.0  gains={'carbon_budget_pressure': 0.35, 'grid_stress_index': -0.3, 'coal_outage_stress': 0.2, 'supply_demand_gap': -0.25}
+[2026-08-17 13:43:34] 
+>>> [Cell 28/37 | Code Exec #22] Running: # ─── Cell 5.2 — PPO Training: Standard / DRO-Fixed / DRO-Vol-Scaled / DRO-...
+[2026-08-17 13:45:21] [✅ PASSED] Cell 28 finished in 106.81s (Exec #22)
+[2026-08-17 13:45:21]    | Running Standard PPO...
+[2026-08-17 13:45:21]    |   [PPO-Standard] iter  10  reward=0.3385  cvar=1.7843  λ=0.100
+[2026-08-17 13:45:21]    |   [PPO-Standard] iter  20  reward=0.3689  cvar=2.1458  λ=0.100
+[2026-08-17 13:45:21]    |   [PPO-Standard] iter  30  reward=0.2484  cvar=1.7184  λ=0.100
+[2026-08-17 13:45:21]    |   [PPO-Standard] iter  40  reward=0.3792  cvar=1.4053  λ=0.100
+[2026-08-17 13:45:21]    | ... (19 more output lines)
+[2026-08-17 13:45:21] 
+>>> [Cell 29/37 | Code Exec #23] Running: # ─── Cell 5.3 — PPO Results Summary (Alpha 4-way) ────────────────────────...
+[2026-08-17 13:45:21] [✅ PASSED] Cell 29 finished in 0.00s (Exec #23)
+[2026-08-17 13:45:21]    | ==============================================================================================
+[2026-08-17 13:45:21]    |   DRO-CVaR-PPO Alpha — Standard vs Fixed-λ vs Vol-Scaled-λ vs Regime-Coupled-λ
+[2026-08-17 13:45:21]    | ==============================================================================================
+[2026-08-17 13:45:21]    |   Metric                          Std PPO     DRO Fixed    DRO VolScl    DRO Regime    Best
+[2026-08-17 13:45:21]    |   ------------------------------------------------------------------------------------------
+[2026-08-17 13:45:21]    | ... (10 more output lines)
+[2026-08-17 13:45:21] 
+>>> [Cell 30/37 | Code Exec #24] Running: # ─── Cell 5.4 — PPO Visualisation (Alpha 4-way) ──────────────────────────...
+[2026-08-17 13:45:23] [✅ PASSED] Cell 30 finished in 2.10s (Exec #24)
+[2026-08-17 13:45:23]    | Figure saved: S5_ppo_dispatch.png
+[2026-08-17 13:45:23] 
+--- [Cell 31/37] Markdown: Section 6 — PA-LMP & 5-Minute Settlement Deep Analysis (N1 + N4) ---
+[2026-08-17 13:45:23] 
+>>> [Cell 32/37 | Code Exec #25] Running: # ─── Cell 6.1 — PA-LMP + 5-Min Settlement Analysis (Alpha) ───────────────...
+[2026-08-17 13:45:26] [✅ PASSED] Cell 32 finished in 3.13s (Exec #25)
+[2026-08-17 13:45:26]    | Figure saved: S6_palmp_5min.png
+[2026-08-17 13:45:26] 
+--- [Cell 33/37] Markdown: Section 7 — Results Summary & Publication Tables ---
+[2026-08-17 13:45:26] 
+>>> [Cell 34/37 | Code Exec #26] Running: # ─── Cell 7.1 — Compile & Save All Results (Alpha) ───────────────────────...
+[2026-08-17 13:45:26] [✅ PASSED] Cell 34 finished in 0.01s (Exec #26)
+[2026-08-17 13:45:26]    | Saved: metrics_summary.json + results_summary.csv
+[2026-08-17 13:45:26]    | {
+[2026-08-17 13:45:26]    |   "experiment": {
+[2026-08-17 13:45:26]    |     "framework": "RE-FUSED-Alpha",
+[2026-08-17 13:45:26]    |     "scope": "18 Indian States 2017-2025",
+[2026-08-17 13:45:26]    | ... (133 more output lines)
+[2026-08-17 13:45:26] 
+--- [Cell 35/37] Markdown: Section 8 — Conclusions & Alpha Publication Checklist ---
+[2026-08-17 13:45:26] 
+>>> [Cell 36/37 | Code Exec #27] Running: # ─── Cell 8.1 — Publication Readiness Checklist (Alpha) ──────────────────...
+[2026-08-17 13:45:26] [✅ PASSED] Cell 36 finished in 0.03s (Exec #27)
+[2026-08-17 13:45:26]    | ========================================================================
+[2026-08-17 13:45:26]    |   RE-FUSED-Alpha — Publication Readiness Checklist
+[2026-08-17 13:45:26]    | ========================================================================
+[2026-08-17 13:45:26]    |   [✓] N1 PA-LMP (daily)                        ₹12,875.8/MWh (+37.8% premium)
+[2026-08-17 13:45:26]    |   [✓] N4 PA-LMP_t (sub-daily proxy)            ₹12,875.5/MWh (+37.8% premium)
+[2026-08-17 13:45:26]    | ... (16 more output lines)
+[2026-08-17 13:45:26] 
+>>> [Cell 37/37 | Code Exec #28] Running: # ─── Cell 8.2 — Master Results Figure (Alpha 9-panel) ────────────────────...
+[2026-08-17 13:45:31] [✅ PASSED] Cell 37 finished in 4.59s (Exec #28)
+[2026-08-17 13:45:31]    | Master figure saved: REFUSED_Alpha_Master_Results.png
+[2026-08-17 13:45:31]    | All RE-FUSED-Alpha outputs in: results/
+[2026-08-17 13:45:31] 
+======================================================================
+[2026-08-17 13:45:31] EXECUTION SUMMARY: 28/28 code cells passed in 1615.53s (26.93 min)
+[2026-08-17 13:45:31] ======================================================================

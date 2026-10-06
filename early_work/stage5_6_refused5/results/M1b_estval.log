@@ -1,0 +1,18 @@
+s_eps=0.3 n_val= 1000 | raw_ratio: mse=0.3752 corr=+0.082 risk=0.7302  ridge_ratio: mse=0.3179 corr=+0.124 risk=0.7235  wls: mse=0.2848 corr=+0.081 risk=0.7226  wls_bagged: mse=0.2677 corr=+0.072 risk=0.7108 | oracle_risk=0.6431 mean_gstar=0.644 [179s]
+s_eps=0.3 n_val= 4000 | raw_ratio: mse=0.2772 corr=+0.142 risk=0.6985  ridge_ratio: mse=0.2078 corr=+0.228 risk=0.6914  wls: mse=0.1929 corr=+0.157 risk=0.6884  wls_bagged: mse=0.1766 corr=+0.163 risk=0.6799 | oracle_risk=0.6431 mean_gstar=0.644 [332s]
+s_eps=0.7 n_val= 1000 | raw_ratio: mse=0.2737 corr=+0.248 risk=0.8711  ridge_ratio: mse=0.2187 corr=+0.282 risk=0.8466  wls: mse=0.1904 corr=+0.274 risk=0.8355  wls_bagged: mse=0.1769 corr=+0.265 risk=0.8215 | oracle_risk=0.7227 mean_gstar=0.386 [400s]
+s_eps=0.7 n_val= 4000 | raw_ratio: mse=0.1440 corr=+0.431 risk=0.8034  ridge_ratio: mse=0.1086 corr=+0.480 risk=0.7874  wls: mse=0.0989 corr=+0.495 risk=0.7824  wls_bagged: mse=0.0902 corr=+0.514 risk=0.7742 | oracle_risk=0.7227 mean_gstar=0.386 [492s]
+s_eps=1.5 n_val= 1000 | raw_ratio: mse=0.1338 corr=+0.274 risk=1.0798  ridge_ratio: mse=0.0979 corr=+0.300 risk=1.0174  wls: mse=0.0643 corr=+0.347 risk=0.9603  wls_bagged: mse=0.0584 corr=+0.329 risk=0.9477 | oracle_risk=0.8424 mean_gstar=0.171 [568s]
+s_eps=1.5 n_val= 4000 | raw_ratio: mse=0.0495 corr=+0.511 risk=0.9318  ridge_ratio: mse=0.0374 corr=+0.540 risk=0.9111  wls: mse=0.0305 corr=+0.589 risk=0.8991  wls_bagged: mse=0.0272 corr=+0.604 risk=0.8921 | oracle_risk=0.8424 mean_gstar=0.171 [664s]
+
+=== estimator quality, averaged over all settings (unit = one seed-setting run) ===
+             mse_vs_gstar  bias_vs_gstar  corr_vs_gstar  frac_inadmissible        absmax    risk
+estimator                                                                                       
+raw_ratio          0.2089         0.1399         0.2814             0.2259  1.399966e+08  0.8525
+ridge_ratio        0.1647         0.0825         0.3256             0.1959  1.028814e+03  0.8296
+wls                0.1436         0.1307         0.3238             0.1107  2.069200e+00  0.8147
+wls_bagged         0.1328         0.1382         0.3245             0.0818  1.948700e+00  0.8044
+
+oracle (g* itself) mean relative risk: 0.7361
+lowest-risk estimator: wls_bagged
+DONE 663.7844586372375

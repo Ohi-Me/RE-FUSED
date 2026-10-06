@@ -1,0 +1,27 @@
+h=1 persistence always=+0.0902+-0.0026 global=+0.0894+-0.0025 static=+0.0919+-0.0023 shrunk=+0.0943+-0.0020 | DM(shrunk vs base) p=0.0000 [51s]
+h=1 roll7       always=+0.0878+-0.0056 global=+0.0865+-0.0048 static=+0.0984+-0.0038 shrunk=+0.0991+-0.0034 | DM(shrunk vs base) p=0.0000 [117s]
+h=1 snaive7     always=+0.1954+-0.0026 global=+0.1920+-0.0025 static=+0.1960+-0.0024 shrunk=+0.1986+-0.0019 | DM(shrunk vs base) p=0.0000 [191s]
+h=2 persistence always=+0.0610+-0.0071 global=+0.0646+-0.0045 static=+0.0722+-0.0027 shrunk=+0.0767+-0.0039 | DM(shrunk vs base) p=0.0000 [256s]
+h=2 roll7       always=+0.0168+-0.0058 global=+0.0344+-0.0045 static=+0.0459+-0.0032 shrunk=+0.0443+-0.0047 | DM(shrunk vs base) p=0.0000 [339s]
+h=2 snaive7     always=+0.0964+-0.0049 global=+0.0961+-0.0052 static=+0.1061+-0.0030 shrunk=+0.1070+-0.0024 | DM(shrunk vs base) p=0.0000 [408s]
+h=3 persistence always=+0.0459+-0.0069 global=+0.0521+-0.0052 static=+0.0620+-0.0030 shrunk=+0.0665+-0.0038 | DM(shrunk vs base) p=0.0000 [473s]
+h=3 roll7       always=-0.0217+-0.0101 global=+0.0176+-0.0048 static=+0.0317+-0.0021 shrunk=+0.0236+-0.0049 | DM(shrunk vs base) p=0.0069 [539s]
+h=3 snaive7     always=+0.0391+-0.0075 global=+0.0536+-0.0048 static=+0.0700+-0.0028 shrunk=+0.0620+-0.0053 | DM(shrunk vs base) p=0.0000 [607s]
+h=7 persistence always=-0.0189+-0.0043 global=+0.0170+-0.0017 static=+0.0242+-0.0020 shrunk=+0.0228+-0.0018 | DM(shrunk vs base) p=0.0024 [672s]
+h=7 roll7       always=-0.0386+-0.0073 global=+0.0278+-0.0040 static=+0.0350+-0.0046 shrunk=+0.0323+-0.0028 | DM(shrunk vs base) p=0.0041 [728s]
+h=7 snaive7     always=-0.0189+-0.0043 global=+0.0170+-0.0017 static=+0.0242+-0.0020 shrunk=+0.0228+-0.0018 | DM(shrunk vs base) p=0.0024 [782s]
+
+=== paired tests across seeds (shrunk vs static) ===
+h=1 persistence shrunk-static=+0.00240 wins=10/10 t=+6.29 p=0.0001 wilcoxon_p=0.0020
+h=1 roll7       shrunk-static=+0.00074 wins=5/10 t=+0.97 p=0.3587 wilcoxon_p=0.5566
+h=1 snaive7     shrunk-static=+0.00254 wins=10/10 t=+4.65 p=0.0012 wilcoxon_p=0.0020
+h=2 persistence shrunk-static=+0.00445 wins=10/10 t=+7.98 p=0.0000 wilcoxon_p=0.0020
+h=2 roll7       shrunk-static=-0.00165 wins=2/10 t=-1.93 p=0.0861 wilcoxon_p=0.0840
+h=2 snaive7     shrunk-static=+0.00086 wins=8/10 t=+1.51 p=0.1645 wilcoxon_p=0.1934
+h=3 persistence shrunk-static=+0.00441 wins=10/10 t=+10.40 p=0.0000 wilcoxon_p=0.0020
+h=3 roll7       shrunk-static=-0.00810 wins=0/10 t=-5.48 p=0.0004 wilcoxon_p=0.0020
+h=3 snaive7     shrunk-static=-0.00807 wins=0/10 t=-6.47 p=0.0001 wilcoxon_p=0.0020
+h=7 persistence shrunk-static=-0.00134 wins=2/10 t=-1.84 p=0.0996 wilcoxon_p=0.1602
+h=7 roll7       shrunk-static=-0.00262 wins=1/10 t=-2.20 p=0.0556 wilcoxon_p=0.0371
+h=7 snaive7     shrunk-static=-0.00134 wins=2/10 t=-1.84 p=0.0996 wilcoxon_p=0.1602
+DONE

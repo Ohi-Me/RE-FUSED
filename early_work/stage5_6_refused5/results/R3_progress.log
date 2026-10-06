@@ -1,0 +1,13 @@
+5min  h= 12 b_pers  | baseMAE=  15.90 residR2=-0.018 g=0.594 | always=-0.063 global=-0.004 static=-0.002 [112s]
+5min  h= 12 b_da    | baseMAE=  18.87 residR2=+0.166 g=0.639 | always=+0.120 global=+0.102 static=+0.100 [118s]
+15min h=  4 b_pers  | baseMAE=  15.33 residR2=+0.032 g=0.816 | always=-0.005 global=+0.007 static=+0.006 [155s]
+15min h=  4 b_da    | baseMAE=  17.76 residR2=+0.131 g=0.854 | always=+0.114 global=+0.107 static=+0.106 [163s]
+1h    h=  1 b_pers  | baseMAE=  12.49 residR2=+0.060 g=0.535 | always=+0.008 global=+0.039 static=+0.039 [201s]
+1h    h=  1 b_da    | baseMAE=  15.97 residR2=+0.164 g=0.694 | always=+0.138 global=+0.132 static=+0.132 [225s]
+1h    h= 24 b_pers  | baseMAE=  22.39 residR2=+0.039 g=0.484 | always=+0.005 global=+0.039 static=+0.038 [263s]
+1h    h= 24 b_da    | baseMAE=  16.00 residR2=-0.017 g=0.307 | always=-0.024 global=+0.004 static=+0.000 [274s]
+1d    h=  1 b_pers  | baseMAE=  14.40 residR2=-0.053 g=0.284 | always=-0.079 global=+0.026 static=+0.023 [286s]
+1d    h=  1 b_da    | baseMAE=  11.08 residR2=-0.643 g=0.020 | always=-0.316 global=-0.003 static=-0.025 [298s]
+1d    h=  7 b_pers  | baseMAE=  24.03 residR2=-0.036 g=0.600 | always=-0.074 global=+0.029 static=+0.014 [311s]
+1d    h=  7 b_da    | baseMAE=  11.06 residR2=-0.453 g=0.007 | always=-0.187 global=-0.000 static=-0.005 [316s]
+DONE 316.42992663383484

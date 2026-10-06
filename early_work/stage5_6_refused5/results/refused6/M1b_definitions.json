@@ -1,0 +1,7 @@
+{
+  "z_clip": 10.0,
+  "tau": 0.1,
+  "n_seeds": 10,
+  "clip": 1.5,
+  "note": "D8 fix: weighted-least-squares gate; ratio form retained for contrast"
+}

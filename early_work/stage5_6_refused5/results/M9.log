@@ -1,0 +1,37 @@
+india_daily persistence  h= 1 | global=+0.1396 neural_gate=+0.1415 neural_gate_refit=+0.1443 none=+0.0000 per_series=+0.1439 per_series_V1=+0.1396 | nn_epochs=32 [19s]
+india_daily persistence  h= 3 | global=+0.0953 neural_gate=+0.1148 neural_gate_refit=+0.1188 none=+0.0000 per_series=+0.1193 per_series_V1=+0.1107 | nn_epochs=13 [33s]
+india_daily roll7        h= 1 | global=+0.1829 neural_gate=+0.1940 neural_gate_refit=+0.2045 none=+0.0000 per_series=+0.2078 per_series_V1=+0.1831 | nn_epochs=17 [51s]
+india_daily roll7        h= 3 | global=+0.0408 neural_gate=+0.0681 neural_gate_refit=+0.0826 none=+0.0000 per_series=+0.0860 per_series_V1=+0.0586 | nn_epochs=14 [67s]
+india_daily snaive7      h= 1 | global=+0.3168 neural_gate=+0.3247 neural_gate_refit=+0.3312 none=+0.0000 per_series=+0.3333 per_series_V1=+0.3204 | nn_epochs=11 [82s]
+india_daily snaive7      h= 3 | global=+0.0788 neural_gate=+0.1143 neural_gate_refit=+0.1281 none=+0.0000 per_series=+0.1334 per_series_V1=+0.1003 | nn_epochs=15 [99s]
+ETTh1       persistence  h= 1 | global=+0.1597 neural_gate=+0.1604 neural_gate_refit=+0.1728 none=+0.0000 per_series=+0.2067 per_series_V1=+0.2064 | nn_epochs=89 [149s]
+ETTh1       persistence  h=24 | global=+0.0518 neural_gate=+0.0507 neural_gate_refit=+0.0433 none=+0.0000 per_series=+0.0498 per_series_V1=+0.0488 | nn_epochs=44 [184s]
+ETTh2       persistence  h= 1 | global=+0.1462 neural_gate=+0.1455 neural_gate_refit=+0.1473 none=+0.0000 per_series=+0.1456 per_series_V1=+0.1437 | nn_epochs=4 [200s]
+ETTh2       persistence  h=24 | global=+0.0139 neural_gate=+0.0158 neural_gate_refit=+0.0165 none=+0.0000 per_series=+0.0181 per_series_V1=+0.0146 | nn_epochs=2 [217s]
+
+wrote 300 rows on cuda
+gate                        global  neural_gate  neural_gate_refit  none  per_series  per_series_V1
+dataset     baseline    h                                                                          
+ETTh1       persistence 1   0.1597       0.1604             0.1728   0.0      0.2067         0.2064
+                        24  0.0518       0.0507             0.0433   0.0      0.0498         0.0488
+ETTh2       persistence 1   0.1462       0.1455             0.1473   0.0      0.1456         0.1437
+                        24  0.0139       0.0158             0.0165   0.0      0.0181         0.0146
+india_daily persistence 1   0.1396       0.1415             0.1443   0.0      0.1439         0.1396
+                        3   0.0953       0.1148             0.1188   0.0      0.1193         0.1107
+            roll7       1   0.1829       0.1940             0.2045   0.0      0.2078         0.1831
+                        3   0.0408       0.0681             0.0826   0.0      0.0860         0.0586
+            snaive7     1   0.3168       0.3247             0.3312   0.0      0.3333         0.3204
+                        3   0.0788       0.1143             0.1281   0.0      0.1334         0.1003
+  stronger neural variant: neural_gate_refit
+  neural_gate - per_series     mean=-0.01142 neural better in 6/50 wilcoxon_p=5.90e-10 p[neural better]=1.000
+  neural_gate - per_series_V1  mean=+0.00036 neural better in 41/50 wilcoxon_p=4.51e-04 p[neural better]=0.000
+  neural_gate - global         mean=+0.01038 neural better in 41/50 wilcoxon_p=1.21e-07 p[neural better]=0.000
+  neural_gate_refit - per_series     mean=-0.00544 neural better in 16/50 wilcoxon_p=2.97e-05 p[neural better]=1.000
+  neural_gate_refit - per_series_V1  mean=+0.00634 neural better in 40/50 wilcoxon_p=7.55e-04 p[neural better]=0.000
+  neural_gate_refit - global         mean=+0.01636 neural better in 42/50 wilcoxon_p=1.16e-08 p[neural better]=0.000
+
+=== PRE-REGISTERED VERDICT FOR H-M9 ===
+  PASS  (i)  neural_gate_refit NOT significantly better than per-series (p[neural better]=1.000 >= 0.05)
+  PASS  (ii) neural_gate_refit beats per-series in 2/10 configs <= half
+  H-M9 SURVIVES (coarse dominance transfers to the neural gate family)
+DONE 217.58127522468567

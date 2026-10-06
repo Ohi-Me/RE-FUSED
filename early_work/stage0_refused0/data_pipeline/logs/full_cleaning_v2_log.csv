@@ -1,0 +1,134 @@
+file,initial_rows,final_rows,initial_cols,final_cols
+..\cleaned\cleaning_log.csv,162,162,7,7
+..\cleaned\master_generation_daily.csv,2657,2657,7,7
+..\cleaned\CEA Data\CO2_DatabaseVersion_19_2022_23.xlsx,2038,2038,27,27
+..\cleaned\CEA Data\CO2_Database_Version_20.0_2023_24.xlsx,2095,2095,21,21
+..\cleaned\CEA Data\CO2_Database_V_21.0 (1).xlsx,2681,2681,17,17
+..\cleaned\CEA Data\installed-capacity.csv,32,32,5,5
+..\cleaned\CEA Data\installed-capacity_punjab_2022-2025.csv,37,37,8,8
+..\cleaned\CEA Data\installed-capacity_punjab_2022-2025_sector wise.csv,37,37,5,5
+..\cleaned\Daily power genration\Daily_Power_Gen_Source_march_23.csv,18251,18251,8,8
+..\cleaned\Daily power genration\Daily_Power_Gen_States_march_23.csv,126699,126699,6,6
+..\cleaned\IDP\daily-coal-stocks.csv,362035,362035,22,22
+..\cleaned\IDP\daily-power-generation.csv,2583818,2583818,12,12
+..\cleaned\IDP\daily-power-outage.csv,2585703,2585703,15,15
+..\cleaned\IDP\daily-renewable-energy-generation.csv,67014,67014,9,9
+..\cleaned\IDP\interstate-generating-stationisgs-renewable-energy-generation.csv,200234,200234,12,12
+..\cleaned\IDP\state-control-renewable-energy-generation.csv,61845,61845,9,9
+..\cleaned\IDP\wheather\2020 Gol Emissions Estimates1772184766110.xlsx,8,8,2,2
+..\cleaned\IDP\wheather\daily-rainfall-at-state-level.csv,204876,204876,8,8
+..\cleaned\IDP\wheather\State-wise monthly wind speed.xlsx,9253,9253,5,5
+..\cleaned\IDP\wheather\temperature.csv,264576,264576,13,13
+..\cleaned\IDP\wheather\wind_speed_tel_hr_punjab_sw_pb_1970_2025.csv,61896,61896,20,20
+..\cleaned\nitiAayog\Installed_Capacity_&_Power_Generation (1).xlsx,10,10,5,5
+..\cleaned\nitiAayog\Installed_Capacity_&_Power_Generation (2).xlsx,10,10,5,5
+..\cleaned\nitiAayog\Installed_Capacity_&_Power_Generation.xlsx,10,10,5,5
+..\cleaned\overall Monthy data\India_monthly_data.csv,334,334,212,212
+..\cleaned\posoco\Indias_Electricity_Consumption_Dataset.csv,3707,3707,39,39
+..\cleaned\prices of energy\2015\apr.csv,2850,2850,8,8
+..\cleaned\prices of energy\2015\aug.csv,2945,2945,8,8
+..\cleaned\prices of energy\2015\dec.csv,2945,2945,8,8
+..\cleaned\prices of energy\2015\jul.csv,2945,2945,8,8
+..\cleaned\prices of energy\2015\jun.csv,2850,2850,8,8
+..\cleaned\prices of energy\2015\may.csv,2945,2945,8,8
+..\cleaned\prices of energy\2015\nov.csv,2850,2850,8,8
+..\cleaned\prices of energy\2015\oct.csv,2945,2945,8,8
+..\cleaned\prices of energy\2015\sep.csv,2850,2850,8,8
+..\cleaned\prices of energy\2016\apr.csv,2850,2850,8,8
+..\cleaned\prices of energy\2016\aug.csv,2945,2945,8,8
+..\cleaned\prices of energy\2016\dec.csv,2945,2945,8,8
+..\cleaned\prices of energy\2016\feb.csv,2755,2755,8,8
+..\cleaned\prices of energy\2016\jan.csv,2945,2945,8,8
+..\cleaned\prices of energy\2016\jul.csv,2945,2945,8,8
+..\cleaned\prices of energy\2016\jun.csv,2850,2850,8,8
+..\cleaned\prices of energy\2016\mar.csv,2945,2945,8,8
+..\cleaned\prices of energy\2016\may.csv,2945,2945,8,8
+..\cleaned\prices of energy\2016\nov.csv,2850,2850,8,8
+..\cleaned\prices of energy\2016\oct.csv,2945,2945,8,8
+..\cleaned\prices of energy\2016\sep.csv,2850,2850,8,8
+..\cleaned\prices of energy\2017\apr.csv,2850,2850,8,8
+..\cleaned\prices of energy\2017\aug.csv,2945,2945,8,8
+..\cleaned\prices of energy\2017\dec.csv,2945,2945,8,8
+..\cleaned\prices of energy\2017\feb.csv,2660,2660,8,8
+..\cleaned\prices of energy\2017\jan.csv,2945,2945,8,8
+..\cleaned\prices of energy\2017\jul.csv,2945,2945,8,8
+..\cleaned\prices of energy\2017\jun.csv,2850,2850,8,8
+..\cleaned\prices of energy\2017\mar.csv,2945,2945,8,8
+..\cleaned\prices of energy\2017\may.csv,2945,2945,8,8
+..\cleaned\prices of energy\2017\nov.csv,2850,2850,8,8
+..\cleaned\prices of energy\2017\oct.csv,2945,2945,8,8
+..\cleaned\prices of energy\2017\sep.csv,2850,2850,8,8
+..\cleaned\prices of energy\2018\apr.csv,2850,2850,8,8
+..\cleaned\prices of energy\2018\aug.csv,2945,2945,8,8
+..\cleaned\prices of energy\2018\dec.csv,2945,2945,8,8
+..\cleaned\prices of energy\2018\feb.csv,2660,2660,8,8
+..\cleaned\prices of energy\2018\jan.csv,2945,2945,8,8
+..\cleaned\prices of energy\2018\jul.csv,2945,2945,8,8
+..\cleaned\prices of energy\2018\jun.csv,2850,2850,8,8
+..\cleaned\prices of energy\2018\mar.csv,2945,2945,8,8
+..\cleaned\prices of energy\2018\may.csv,2945,2945,8,8
+..\cleaned\prices of energy\2018\nov.csv,2090,2090,8,8
+..\cleaned\prices of energy\2018\oct.csv,2945,2945,8,8
+..\cleaned\prices of energy\2018\sep.csv,2850,2850,8,8
+..\cleaned\prices of energy\2019\apr.csv,2850,2850,8,8
+..\cleaned\prices of energy\2019\aug.csv,1045,1045,8,8
+..\cleaned\prices of energy\2019\dec.csv,2280,2280,8,8
+..\cleaned\prices of energy\2019\feb.csv,2660,2660,8,8
+..\cleaned\prices of energy\2019\jan.csv,2945,2945,8,8
+..\cleaned\prices of energy\2019\jul.csv,1140,1140,8,8
+..\cleaned\prices of energy\2019\jun.csv,1045,1045,8,8
+..\cleaned\prices of energy\2019\mar.csv,2945,2945,8,8
+..\cleaned\prices of energy\2019\may.csv,1140,1140,8,8
+..\cleaned\prices of energy\2019\nov.csv,1520,1520,8,8
+..\cleaned\prices of energy\2019\oct.csv,2375,2375,8,8
+..\cleaned\prices of energy\2019\sep.csv,2090,2090,8,8
+..\cleaned\prices of energy\2020\aug.csv,1553,1553,8,8
+..\cleaned\prices of energy\2020\dec.csv,2976,2976,8,8
+..\cleaned\prices of energy\2020\feb.csv,2496,2496,8,8
+..\cleaned\prices of energy\2020\jan.csv,2671,2671,8,8
+..\cleaned\prices of energy\2020\jul.csv,787,787,8,8
+..\cleaned\prices of energy\2020\jun.csv,2688,2688,8,8
+..\cleaned\prices of energy\2020\mar.csv,1440,1440,8,8
+..\cleaned\prices of energy\2020\may.csv,1632,1632,8,8
+..\cleaned\prices of energy\2020\nov.csv,2880,2880,8,8
+..\cleaned\prices of energy\2020\oct.csv,2976,2976,8,8
+..\cleaned\prices of energy\2020\sep.csv,2880,2880,8,8
+..\cleaned\prices of energy\2021\apr.csv,2784,2784,8,8
+..\cleaned\prices of energy\2021\aug.csv,2976,2976,8,8
+..\cleaned\prices of energy\2021\dec.csv,2976,2976,8,8
+..\cleaned\prices of energy\2021\feb.csv,2688,2688,8,8
+..\cleaned\prices of energy\2021\jan.csv,2976,2976,8,8
+..\cleaned\prices of energy\2021\jul.csv,2976,2976,8,8
+..\cleaned\prices of energy\2021\june.csv,2880,2880,8,8
+..\cleaned\prices of energy\2021\mar.csv,2976,2976,8,8
+..\cleaned\prices of energy\2021\may.csv,2976,2976,8,8
+..\cleaned\prices of energy\2021\nov.csv,2880,2880,8,8
+..\cleaned\prices of energy\2021\oct.csv,2784,2784,8,8
+..\cleaned\prices of energy\2021\sep.csv,2880,2880,8,8
+..\cleaned\prices of energy\2022\apr.csv,2592,2592,8,8
+..\cleaned\prices of energy\2022\aug.csv,2976,2976,8,8
+..\cleaned\prices of energy\2022\dec.csv,2976,2976,8,8
+..\cleaned\prices of energy\2022\feb.csv,2688,2688,8,8
+..\cleaned\prices of energy\2022\jan.csv,2976,2976,8,8
+..\cleaned\prices of energy\2022\jul.csv,2976,2976,8,8
+..\cleaned\prices of energy\2022\june.csv,2784,2784,8,8
+..\cleaned\prices of energy\2022\mar.csv,2976,2976,8,8
+..\cleaned\prices of energy\2022\may.csv,2016,2016,8,8
+..\cleaned\prices of energy\2022\nov.csv,2880,2880,8,8
+..\cleaned\prices of energy\2022\oct.csv,2976,2976,8,8
+..\cleaned\prices of energy\2022\sep.csv,2880,2880,8,8
+..\cleaned\prices of energy\2023\apr.csv,2880,2880,8,8
+..\cleaned\prices of energy\2023\aug.csv,2976,2976,8,8
+..\cleaned\prices of energy\2023\dec.csv,2976,2976,8,8
+..\cleaned\prices of energy\2023\feb.csv,2592,2592,8,8
+..\cleaned\prices of energy\2023\jan.csv,2688,2688,8,8
+..\cleaned\prices of energy\2023\jul.csv,2976,2976,8,8
+..\cleaned\prices of energy\2023\june.csv,2880,2880,8,8
+..\cleaned\prices of energy\2023\mar.csv,2880,2880,8,8
+..\cleaned\prices of energy\2023\may.csv,2400,2400,8,8
+..\cleaned\prices of energy\2023\nov.csv,2880,2880,8,8
+..\cleaned\prices of energy\2023\oct.csv,2976,2976,8,8
+..\cleaned\prices of energy\2023\sep.csv,2880,2880,8,8
+..\cleaned\prices of energy\2024\feb.csv,2784,2784,8,8
+..\cleaned\prices of energy\2024\jan.csv,2976,2976,8,8
+..\cleaned\prices of energy\2024\mar.csv,2976,2976,8,8

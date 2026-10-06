@@ -1,0 +1,9 @@
+fitting statistical models (rolling 1-step via cross_validation)...
+Traceback (most recent call last):
+  File "D:\\REFUSED5\src\strong_baselines_india.py", line 23, in <module>
+    cv = sf.cross_validation(df=train._append(test) if hasattr(train, "_append") else pd.concat([train, test]),
+  File "C:\Users\Ohi\AppData\Local\Programs\Python\Python310\lib\site-packages\statsforecast\core.py", line 1948, in cross_validation
+    return super().cross_validation(
+  File "C:\Users\Ohi\AppData\Local\Programs\Python\Python310\lib\site-packages\statsforecast\core.py", line 1191, in cross_validation
+    raise ValueError(
+ValueError: Can only use integer refit or refit=False with models that implement the forward method. The following models do not implement the forward method: [WindowAverage].

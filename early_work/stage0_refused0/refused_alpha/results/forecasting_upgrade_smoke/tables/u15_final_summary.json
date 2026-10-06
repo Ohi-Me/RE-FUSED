@@ -1,0 +1,51 @@
+{
+  "published": {
+    "model": "PatchTST+MCAG",
+    "avg_mape": 28.2,
+    "mase": 3.4748
+  },
+  "replica_same_grid": {
+    "model": "PatchTST+MCAG(replica)",
+    "mase": 15.005218026940533
+  },
+  "new_best": {
+    "model": "Hybrid_Persistence_XGB",
+    "mase": 0.38408406142724844,
+    "ci": [
+      0.30891143741000193,
+      0.4411624484274497
+    ]
+  },
+  "persistence": {
+    "mase": 0.4163355422006279
+  },
+  "verdicts": {
+    "beats_persistence": true,
+    "beats_patchtst_mcag": true,
+    "dm_significant_vs_persistence": false,
+    "bootstrap_ci_excludes_zero": false,
+    "survives_multiseed": true
+  },
+  "multiseed": "8 seeds, MASE 0.3911 +/- 0.0006; upper 95% CI 0.3916 vs persistence 0.4163",
+  "n_states_won_vs_persistence": 17,
+  "evaluation": {
+    "test_period": [
+      "2024-01-01",
+      "2025-04-22"
+    ],
+    "horizons": [
+      1,
+      2,
+      3
+    ],
+    "targets": [
+      "total_generation_mwh",
+      "avg_market_price"
+    ],
+    "headline_targets": [
+      "total_generation_mwh",
+      "avg_market_price"
+    ],
+    "primary_metric": "MASE (macro across 18 states, m=7)"
+  }
+}

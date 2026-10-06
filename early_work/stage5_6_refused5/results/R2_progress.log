@@ -1,0 +1,11 @@
+h=1 renewables  base=+0.0617 with=+0.0598 perm=+0.0632 | VOC=-0.0018 (p=0.562) vs-perm=-0.0033 (p=0.439) states+=5/11 [25s]
+h=1 coal        base=+0.0617 with=+0.0623 perm=+0.0680 | VOC=+0.0007 (p=0.754) vs-perm=-0.0057 (p=0.080) states+=7/11 [39s]
+h=1 outage      base=+0.0617 with=+0.0613 perm=+0.0645 | VOC=-0.0004 (p=0.921) vs-perm=-0.0033 (p=0.504) states+=6/11 [65s]
+h=3 renewables  base=-0.0142 with=-0.0111 perm=-0.0188 | VOC=+0.0031 (p=0.642) vs-perm=+0.0077 (p=0.517) states+=4/11 [178s]
+h=3 coal        base=-0.0142 with=-0.0247 perm=-0.0220 | VOC=-0.0105 (p=0.403) vs-perm=-0.0027 (p=0.875) states+=4/11 [304s]
+h=3 outage      base=-0.0142 with=-0.0079 perm=-0.0033 | VOC=+0.0063 (p=0.184) vs-perm=-0.0046 (p=0.245) states+=6/11 [397s]
+h=7 renewables  base=-0.1151 with=-0.0804 perm=-0.1202 | VOC=+0.0347 (p=0.151) vs-perm=+0.0399 (p=0.020) states+=8/11 [553s]
+h=7 coal        base=-0.1151 with=-0.1145 perm=-0.1278 | VOC=+0.0006 (p=0.982) vs-perm=+0.0133 (p=0.693) states+=6/11 [630s]
+h=7 outage      base=-0.1151 with=-0.1009 perm=-0.1133 | VOC=+0.0142 (p=0.273) vs-perm=+0.0124 (p=0.331) states+=5/11 [699s]
+
+DONE 698.7822024822235

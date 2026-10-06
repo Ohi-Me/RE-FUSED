@@ -1,0 +1,17 @@
+{
+  "best_rung_counts": {
+    "rung2_series": 10,
+    "rung0_none": 4,
+    "rung3_cell": 1
+  },
+  "unimodal": "12/15",
+  "mean_skill_by_rung": {
+    "rung0_none": 0.0,
+    "rung1_global": 0.06926,
+    "rung2_series": 0.09906,
+    "rung3_cell": 0.09439,
+    "rung4_shrunk": 0.0862,
+    "rung5_instance": 0.04131
+  },
+  "frac_oracle": 0.22313333333333332
+}

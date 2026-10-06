@@ -1,0 +1,37 @@
+
+# RE-FUSED-6 pipeline run started 2026-09-13 00:48:40
+
+- `2026-09-13 00:48:40` orchestrator started; keep-awake held; queue = M5b_full -> M8 -> M7 -> ALL_STATS
+- `2026-09-13 00:48:41` **M5b_full** is already running from an earlier launcher; waiting for it
+- `2026-09-13 00:48:42` heartbeat: M5b_full still running, 11 configs logged
+- `2026-09-13 00.54.57` [sleep-watchdog] started: sleeps the PC when _FINAL_PACKAGE_DONE.txt appears, or 3 h after compute ends with no activity
+- `2026-09-13 00:58:52` heartbeat: M5b_full still running, 21 configs logged
+- `2026-09-13 01:09:01` heartbeat: M5b_full still running, 32 configs logged
+- `2026-09-13 01:14:34` **M5b_full** complete (external launcher)
+- `2026-09-13 01:14:34` **M8** attempt 1 started
+- `2026-09-13 01:17:36` [post-chain] waiting for orchestrator to finish (ALL_STATS flag)
+- `2026-09-13 01:23:51` **M8** complete (exit 0)
+- `2026-09-13 01:23:51` **M7** attempt 1 started
+- `2026-09-13 01:28:19` **M7** complete (exit 0)
+- `2026-09-13 01:28:19` **ALL_STATS** attempt 1 started
+- `2026-09-13 01:28:23` **ALL_STATS** complete (exit 0)
+- `2026-09-13 01:28:23` pipeline finished in 0.66 h. complete=['M5b_full', 'M8', 'M7', 'ALL_STATS'] failed=[]
+- `2026-09-13 01:28:23` keep-awake released; orchestrator exiting
+- `2026-09-13 01:28:36` [post-chain] M5c attempt 1 started
+- `2026-09-13 01:31:53` [post-chain-2] waiting for M5c post-chain to finish
+- `2026-09-13 01:39:02` [post-chain-3] waiting for M7b post-chain to finish
+- `2026-09-13 01:53:48` [post-chain] M5c complete
+- `2026-09-13 01:53:51` [post-chain] ALL_STATS regenerated with M5c; post-chain finished
+- `2026-09-13 01:53:53` [post-chain-2] M7b attempt 1 started
+- `2026-09-13 02:01:53` [post-chain-2] M7b complete
+- `2026-09-13 02:01:56` [post-chain-2] ALL_STATS regenerated with M7b; post-chain-2 finished
+- `2026-09-13 02:02:02` [post-chain-3] M9 attempt 1 started
+- `2026-09-13 02:05:51` [post-chain-3] M9 complete
+- `2026-09-13 02:05:51` [post-chain-3] M10 attempt 1 started
+- `2026-09-13 02:22:44` [post-chain-3] M10 complete
+- `2026-09-13 02:22:47` [post-chain-3] ALL_STATS regenerated with M9/M10; post-chain-3 finished
+- `2026-09-13 05.25.05` [sleep-watchdog] safety net: compute finished, no Python running, model silent for 181 min - putting the PC to sleep
+- `2026-09-13 08:01:38` [post-chain-4] M9b attempt 1 started
+- `2026-09-13 08:11:10` [post-chain-4] M9b complete
+- `2026-09-13 08:11:15` [post-chain-4] ALL_STATS regenerated with M9b; post-chain-4 finished
+- `2026-09-13 08:13:26` [model] final package complete: docs/12, REFUSED6_Final_Report.pdf, ALL_STATS regenerated with M9b; nothing queued

@@ -1,0 +1,13 @@
+feature_family,example_columns,construction,available_at_origin,action
+target lags (upgrade),lag_1 ... lag_90,"calendar shift of the target on a complete daily grid, per state",True,USED — the core signal the original FEATS list omitted
+rolling summaries (upgrade),"roll{3,7,14,28}_{mean,std,min,max}",trailing window ending at the forecast origin T = D - h,True,USED
+change / volatility (upgrade),"d_1, d_7, accel, zscore7, cv7, trend_7_28",differences of origin-side lags only,True,USED
+calendar of target date,"cal_dow, cal_month, cal_doy, cyclic sin/cos",deterministic function of D,True,USED — knowable arbitrarily far ahead
+cross-state context,"xs_national_lag1, xs_ratio_to_national, xs_rank_pct",mean / rank across states of values dated <= T,True,"USED — all 18 states report daily, so lagged aggregates are known"
+"exogenous drivers, lagged",x_<driver>_lag1 / _lag7 / _roll7,calendar shift of observed drivers,True,USED
+CSV shipped lags,"gen_lag_1d, price_lag_1d, coal_lag_7d",POSITIONAL row shift; ignores the 77/55 missing calendar days,False,EXCLUDED — rebuilt as calendar-correct lags instead
+CSV shipped rollings,"gen_rmean_7d, price_rmean_30d, carbon_roll_30d",trailing window that INCLUDES day t,False,EXCLUDED — contains the value being predicted at h=0 framing
+CSV cross-sectional aggregates,"national_gen_avg, national_gsi, gen_vs_national",same-day mean over all 18 states,False,EXCLUDED — other states' same-day values are unknown at T
+CSV whole-panel normalisations,"state_gen_norm, state_gen_rank, gen_cvar90, *_zscore",min-max / rank / quantile over the full 2017-2025 panel,False,EXCLUDED — flagged by refused_fixes.causal_features.leakage_scan
+derived overlays (targets only),"palmp, log_carbon, grid_stress_index, fcfs",deterministic function of same-day observables (train-frozen stats),False,TARGETS ONLY — never used as an input feature
+shipped regime / coal flags,"regime, coal_critical",fixed calendar label / upstream threshold,False,EXCLUDED as features; regimes redefined from train-only quantiles

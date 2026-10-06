@@ -1,0 +1,30 @@
+india_daily persistence  h= 1 | neural_gate_tuned=+0.1441 per_series=+0.1439 | chosen={'128/0.001/0.003': 2, '128/1e-05/0.001': 1, '128/1e-05/0.003': 1, '32/0.001/0.003': 1} [43s]
+india_daily persistence  h= 3 | neural_gate_tuned=+0.1159 per_series=+0.1193 | chosen={'128/1e-05/0.003': 3, '128/0.001/0.003': 1, '128/1e-05/0.001': 1} [69s]
+india_daily roll7        h= 1 | neural_gate_tuned=+0.2019 per_series=+0.2078 | chosen={'128/1e-05/0.003': 2, '128/1e-05/0.001': 2, '32/1e-05/0.001': 1} [100s]
+india_daily roll7        h= 3 | neural_gate_tuned=+0.0863 per_series=+0.0860 | chosen={'128/0.001/0.003': 3, '32/0.001/0.001': 1, '32/0.001/0.003': 1} [129s]
+india_daily snaive7      h= 1 | neural_gate_tuned=+0.3311 per_series=+0.3333 | chosen={'128/1e-05/0.001': 3, '128/1e-05/0.003': 2} [161s]
+india_daily snaive7      h= 3 | neural_gate_tuned=+0.1273 per_series=+0.1334 | chosen={'128/0.001/0.003': 3, '128/0.001/0.001': 1, '32/0.001/0.001': 1} [189s]
+ETTh1       persistence  h= 1 | neural_gate_tuned=+0.1779 per_series=+0.2067 | chosen={'128/1e-05/0.001': 2, '32/1e-05/0.003': 1, '128/0.001/0.001': 1, '128/0.001/0.003': 1} [298s]
+ETTh1       persistence  h=24 | neural_gate_tuned=+0.0436 per_series=+0.0498 | chosen={'32/0.001/0.003': 4, '32/1e-05/0.003': 1} [425s]
+ETTh2       persistence  h= 1 | neural_gate_tuned=+0.1524 per_series=+0.1456 | chosen={'128/1e-05/0.003': 2, '32/0.001/0.003': 2, '128/0.001/0.003': 1} [514s]
+ETTh2       persistence  h=24 | neural_gate_tuned=+0.0170 per_series=+0.0181 | chosen={'32/1e-05/0.001': 4, '128/1e-05/0.001': 1} [560s]
+gate                        neural_gate_tuned  per_series
+dataset     baseline    h                                
+ETTh1       persistence 1              0.1779      0.2067
+                        24             0.0436      0.0498
+ETTh2       persistence 1              0.1524      0.1456
+                        24             0.0170      0.0181
+india_daily persistence 1              0.1441      0.1439
+                        3              0.1159      0.1193
+            roll7       1              0.2019      0.2078
+                        3              0.0863      0.0860
+            snaive7     1              0.3311      0.3333
+                        3              0.1273      0.1334
+
+neural_gate_tuned - per_series mean=-0.00464 tuned better in 16/50 two-sided p=1.19e-03
+
+=== PRE-REGISTERED VERDICT FOR H-M9b ===
+  PASS  (i)  tuned neural gate NOT significantly better than per-series (p[neural better]=0.999)
+  PASS  (ii) tuned neural gate beats per-series in 3/10 configs <= half
+  H-M9b SURVIVES
+DONE 560.2045028209686

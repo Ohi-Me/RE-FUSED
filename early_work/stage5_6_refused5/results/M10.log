@@ -1,0 +1,99 @@
+origin_2022 persistence        h=1 | rung0=+0.0000 rung1=+0.1344 rung2=+0.1456 rung3=+0.1375 rung4=+0.1384 rung5=+0.1251 | best=rung2_series [11s]
+origin_2022 persistence        h=3 | rung0=+0.0000 rung1=+0.0907 rung2=+0.0909 rung3=+0.0879 rung4=+0.0962 rung5=+0.0906 | best=rung4_shrunk [32s]
+origin_2022 roll7              h=1 | rung0=+0.0000 rung1=+0.2129 rung2=+0.2252 rung3=+0.2258 rung4=+0.2271 rung5=+0.2096 | best=rung4_shrunk [49s]
+origin_2022 roll7              h=3 | rung0=+0.0000 rung1=+0.0816 rung2=+0.0736 rung3=+0.0740 rung4=+0.0843 rung5=+0.0785 | best=rung4_shrunk [66s]
+origin_2022 snaive7            h=1 | rung0=+0.0000 rung1=+0.3602 rung2=+0.3695 rung3=+0.3721 rung4=+0.3716 rung5=+0.3554 | best=rung3_cell [84s]
+origin_2022 snaive7            h=3 | rung0=+0.0000 rung1=+0.1227 rung2=+0.1339 rung3=+0.1309 rung4=+0.1296 rung5=+0.1149 | best=rung2_series [102s]
+origin_2022 operator_schedule  h=1 | rung0=+0.0000 rung1=+0.2323 rung2=+0.2685 rung3=+0.2629 rung4=+0.3025 rung5=+0.2998 | best=rung4_shrunk [120s]
+origin_2022 operator_schedule  h=3 | rung0=+0.0000 rung1=+0.1597 rung2=+0.1784 rung3=+0.1667 rung4=+0.2027 rung5=+0.2009 | best=rung4_shrunk [138s]
+origin_2023 persistence        h=1 | rung0=+0.0000 rung1=+0.1408 rung2=+0.1445 rung3=+0.1425 rung4=+0.1456 rung5=+0.1352 | best=rung4_shrunk [151s]
+origin_2023 persistence        h=3 | rung0=+0.0000 rung1=+0.1293 rung2=+0.1322 rung3=+0.1287 rung4=+0.1307 rung5=+0.1214 | best=rung2_series [169s]
+origin_2023 roll7              h=1 | rung0=+0.0000 rung1=+0.2525 rung2=+0.2545 rung3=+0.2511 rung4=+0.2548 rung5=+0.2434 | best=rung4_shrunk [187s]
+origin_2023 roll7              h=3 | rung0=+0.0000 rung1=+0.1143 rung2=+0.1223 rung3=+0.1163 rung4=+0.1107 rung5=+0.1011 | best=rung2_series [205s]
+origin_2023 snaive7            h=1 | rung0=+0.0000 rung1=+0.4099 rung2=+0.4068 rung3=+0.4077 rung4=+0.4140 rung5=+0.4056 | best=rung4_shrunk [222s]
+origin_2023 snaive7            h=3 | rung0=+0.0000 rung1=+0.1617 rung2=+0.1724 rung3=+0.1685 rung4=+0.1659 rung5=+0.1538 | best=rung2_series [240s]
+origin_2023 operator_schedule  h=1 | rung0=+0.0000 rung1=-0.0219 rung2=-0.0169 rung3=-0.0140 rung4=+0.0038 rung5=+0.0039 | best=rung5_instance [258s]
+origin_2023 operator_schedule  h=3 | rung0=+0.0000 rung1=-0.0574 rung2=-0.0694 rung3=-0.0658 rung4=-0.0597 rung5=-0.0599 | best=rung0_none [276s]
+origin_2024 persistence        h=1 | rung0=+0.0000 rung1=+0.1396 rung2=+0.1439 rung3=+0.1410 rung4=+0.1408 rung5=+0.1299 | best=rung2_series [290s]
+origin_2024 persistence        h=3 | rung0=+0.0000 rung1=+0.0953 rung2=+0.1193 rung3=+0.1172 rung4=+0.1036 rung5=+0.0856 | best=rung2_series [308s]
+origin_2024 roll7              h=1 | rung0=+0.0000 rung1=+0.1829 rung2=+0.2078 rung3=+0.2067 rung4=+0.1906 rung5=+0.1638 | best=rung2_series [326s]
+origin_2024 roll7              h=3 | rung0=+0.0000 rung1=+0.0408 rung2=+0.0860 rung3=+0.0837 rung4=+0.0670 rung5=+0.0448 | best=rung2_series [344s]
+origin_2024 snaive7            h=1 | rung0=+0.0000 rung1=+0.3168 rung2=+0.3333 rung3=+0.3340 rung4=+0.3224 rung5=+0.2981 | best=rung3_cell [362s]
+origin_2024 snaive7            h=3 | rung0=+0.0000 rung1=+0.0788 rung2=+0.1334 rung3=+0.1307 rung4=+0.0975 rung5=+0.0661 | best=rung2_series [378s]
+origin_2024 operator_schedule  h=1 | rung0=+0.0000 rung1=-0.0895 rung2=+0.0042 rung3=+0.0004 rung4=+0.0223 rung5=+0.0131 | best=rung4_shrunk [394s]
+origin_2024 operator_schedule  h=3 | rung0=+0.0000 rung1=-0.0521 rung2=-0.0041 rung3=-0.0055 rung4=+0.0031 rung5=+0.0001 | best=rung4_shrunk [411s]
+
+wrote 720 rows
+
+=== best rung per (origin, baseline, h) ===
+origin       baseline           h
+origin_2022  operator_schedule  1      rung4_shrunk
+                                3      rung4_shrunk
+             persistence        1      rung2_series
+                                3      rung4_shrunk
+             roll7              1      rung4_shrunk
+                                3      rung4_shrunk
+             snaive7            1        rung3_cell
+                                3      rung2_series
+origin_2023  operator_schedule  1    rung5_instance
+                                3        rung0_none
+             persistence        1      rung4_shrunk
+                                3      rung2_series
+             roll7              1      rung4_shrunk
+                                3      rung2_series
+             snaive7            1      rung4_shrunk
+                                3      rung2_series
+origin_2024  operator_schedule  1      rung4_shrunk
+                                3      rung4_shrunk
+             persistence        1      rung2_series
+                                3      rung2_series
+             roll7              1      rung2_series
+                                3      rung2_series
+             snaive7            1        rung3_cell
+                                3      rung2_series
+
+=== best-rung counts by origin ===
+origin                     
+origin_2022  rung4_shrunk      5
+             rung2_series      2
+             rung3_cell        1
+origin_2023  rung2_series      3
+             rung4_shrunk      3
+             rung0_none        1
+             rung5_instance    1
+origin_2024  rung2_series      5
+             rung4_shrunk      2
+             rung3_cell        1
+
+per-instance best in 1/24 configs
+fine - best coarse: mean=-0.0127, fine loses in 19/24 configs (binomial p=0.0033)
+                 mean  <lambda_0>  size
+origin                                 
+origin_2022 -0.002731           6     8
+origin_2023 -0.007491           7     8
+origin_2024 -0.027905           6     8
+
+=== PRE-REGISTERED VERDICT FOR H-M10 ===
+  origin_2022: PASS (i) instance best in 0/8 <= 1; PASS (ii) instance below best coarse in 6/8 > half
+  origin_2023: PASS (i) instance best in 1/8 <= 1; PASS (ii) instance below best coarse in 7/8 > half
+  origin_2024: PASS (i) instance best in 0/8 <= 1; PASS (ii) instance below best coarse in 6/8 > half
+  H-M10 SURVIVES (ordering stable across test years)
+[sel] origin_2022 argmin=0.0148 parsimony=0.0140 fixed_series=0.0117 fixed_cell=0.0127 [604s]
+[sel] origin_2023 argmin=0.0084 parsimony=0.0066 fixed_series=0.0072 fixed_cell=0.0078 [802s]
+[sel] origin_2024 argmin=0.0142 parsimony=0.0237 fixed_series=0.0020 fixed_cell=0.0033 [1009s]
+
+=== selection regret by origin (origin_2024 overlaps M5c Part B: in-sample) ===
+             regret_nested_argmin  regret_nested_parsimony  regret_fixed_none  regret_fixed_global  regret_fixed_series  regret_fixed_cell  regret_fixed_shrunk  regret_fixed_instance
+origin                                                                                                                                                                                
+origin_2022                0.0148                   0.0140             0.2045               0.0244               0.0117             0.0127               0.0035                 0.0152
+origin_2023                0.0084                   0.0066             0.1706               0.0103               0.0072             0.0078               0.0107                 0.0209
+origin_2024                0.0142                   0.0237             0.1341               0.0421               0.0020             0.0033               0.0259                 0.0509
+
+=== PRE-REGISTERED VERDICT FOR H-M10b (fresh origins 2022, 2023) ===
+  origin_2022 PASS nested_argmin not significantly better than fixed_series (mean diff +0.0031, p[selector better]=0.983)
+  origin_2022 PASS nested_parsimony not significantly better than fixed_series (mean diff +0.0023, p[selector better]=0.999)
+  origin_2023 PASS nested_argmin not significantly better than fixed_series (mean diff +0.0011, p[selector better]=0.693)
+  origin_2023 PASS nested_parsimony not significantly better than fixed_series (mean diff -0.0007, p[selector better]=0.490)
+  PASS pooled fresh: fixed_series mean regret 0.0095 <= argmin 0.0116 and parsimony 0.0103
+  H-M10b SURVIVES (validation-based rung selection does not pay; fixed per-series default)
+DONE 1008.9268937110901

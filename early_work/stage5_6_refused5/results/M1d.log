@@ -1,0 +1,21 @@
+cap=1.0   | r1_global=+0.0712  r2_series=+0.1008  r3_cell=+0.0996  r4_shrunk=+0.0953  r5_wls_bagge=+0.0869 | best=rung2_series [171s]
+cap=1.5   | r1_global=+0.0712  r2_series=+0.0942  r3_cell=+0.0915  r4_shrunk=+0.0848  r5_wls_bagge=+0.0676 | best=rung2_series [345s]
+cap=3.0   | r1_global=+0.0712  r2_series=+0.0914  r3_cell=+0.0845  r4_shrunk=+0.0730  r5_wls_bagge=+0.0290 | best=rung2_series [524s]
+cap=inf   | r1_global=+0.0712  r2_series=+0.0914  r3_cell=+0.0842  r4_shrunk=+0.0728  r5_wls_bagge=+0.0235 | best=rung2_series [698s]
+
+=== ordering invariance across caps ===
+rung  rung1_global  rung2_series  rung3_cell  rung4_shrunk  rung5_wls_bagged
+cap                                                                         
+1.0         0.0712        0.1008      0.0996        0.0953            0.0869
+1.5         0.0712        0.0942      0.0915        0.0848            0.0676
+3.0         0.0712        0.0914      0.0845        0.0730            0.0290
+inf         0.0712        0.0914      0.0842        0.0728            0.0235
+
+best rung per cap: {1.0: 'rung2_series', 1.5: 'rung2_series', 3.0: 'rung2_series', inf: 'rung2_series'}
+
+=== fine minus per-series, per cap (paired over config x seed) ===
+  cap=1.0   diff=-0.01394  fine wins=0/20  p=2.90e-07
+  cap=1.5   diff=-0.02660  fine wins=0/20  p=3.83e-08
+  cap=3.0   diff=-0.06243  fine wins=0/20  p=8.15e-08
+  cap=inf   diff=-0.06795  fine wins=0/20  p=2.81e-07
+DONE 697.9222774505615

@@ -1,0 +1,19 @@
+india_daily persistence        h= 1 | rung0=+0.0000 rung1=+0.1371 rung2=+0.1424 rung3=+0.1397 rung4=+0.1369 rung5=+0.1203 oracle=+0.3662 | lam=0.24 rho=0.31 [59s]
+india_daily persistence        h= 2 | rung0=+0.0000 rung1=+0.1057 rung2=+0.1243 rung3=+0.1232 rung4=+0.1118 rung5=+0.0885 oracle=+0.3973 | lam=0.21 rho=0.27 [129s]
+india_daily persistence        h= 3 | rung0=+0.0000 rung1=+0.0889 rung2=+0.1142 rung3=+0.1093 rung4=+0.0996 rung5=+0.0710 oracle=+0.4109 | lam=0.24 rho=0.32 [212s]
+india_daily persistence        h= 7 | rung0=+0.0000 rung1=+0.0510 rung2=+0.0646 rung3=+0.0619 rung4=+0.0554 rung5=+0.0280 oracle=+0.3819 | lam=0.21 rho=0.27 [311s]
+india_daily roll7              h= 1 | rung0=+0.0000 rung1=+0.1764 rung2=+0.2052 rung3=+0.2032 rung4=+0.1856 rung5=+0.1339 oracle=+0.5378 | lam=0.23 rho=0.31 [433s]
+india_daily roll7              h= 2 | rung0=+0.0000 rung1=+0.0664 rung2=+0.1095 rung3=+0.1044 rung4=+0.0861 rung5=+0.0307 oracle=+0.4489 | lam=0.25 rho=0.37 [585s]
+india_daily roll7              h= 3 | rung0=+0.0000 rung1=+0.0393 rung2=+0.0823 rung3=+0.0758 rung4=+0.0550 rung5=+0.0156 oracle=+0.4222 | lam=0.31 rho=0.53 [740s]
+india_daily roll7              h= 7 | rung0=+0.0000 rung1=+0.0595 rung2=+0.0777 rung3=+0.0686 rung4=+0.0620 rung5=+0.0196 oracle=+0.4380 | lam=0.21 rho=0.27 [899s]
+india_daily snaive7            h= 1 | rung0=+0.0000 rung1=+0.3184 rung2=+0.3370 rung3=+0.3374 rung4=+0.3249 rung5=+0.2908 oracle=+0.6420 | lam=0.23 rho=0.31 [1000s]
+india_daily snaive7            h= 2 | rung0=+0.0000 rung1=+0.1391 rung2=+0.1925 rung3=+0.1901 rung4=+0.1793 rung5=+0.1249 oracle=+0.5069 | lam=0.24 rho=0.33 [1122s]
+india_daily snaive7            h= 3 | rung0=+0.0000 rung1=+0.0772 rung2=+0.1334 rung3=+0.1295 rung4=+0.1193 rung5=+0.0666 oracle=+0.4537 | lam=0.23 rho=0.35 [1245s]
+  skip india_daily snaive7 h=7 (invalid or too small)
+india_daily operator_schedule  h= 1 | rung0=+0.0000 rung1=-0.0849 rung2=-0.0049 rung3=-0.0083 rung4=-0.0050 rung5=-0.0792 oracle=+0.4562 | lam=0.45 rho=0.85 [1387s]
+india_daily operator_schedule  h= 2 | rung0=+0.0000 rung1=-0.0647 rung2=-0.0177 rung3=-0.0225 rung4=-0.0140 rung5=-0.0777 oracle=+0.4218 | lam=0.39 rho=0.61 [1510s]
+india_daily operator_schedule  h= 3 | rung0=+0.0000 rung1=-0.0494 rung2=-0.0240 rung3=-0.0285 rung4=-0.0284 rung5=-0.0839 oracle=+0.3992 | lam=0.32 rho=0.47 [1650s]
+india_daily operator_schedule  h= 7 | rung0=+0.0000 rung1=-0.0210 rung2=-0.0508 rung3=-0.0679 rung4=-0.0756 rung5=-0.1294 oracle=+0.3592 | lam=0.30 rho=0.43 [1762s]
+
+wrote 1200 rows -> D:\\REFUSED5\results\refused6
+DONE 1762.4321193695068

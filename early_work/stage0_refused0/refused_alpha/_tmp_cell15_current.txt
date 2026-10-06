@@ -1,0 +1,149 @@
+# ─── Cell 3.2 — All Model Definitions (V2 + Alpha) ───────────────────────────
+
+class TS_Dataset(Dataset):
+    def __init__(self,X,Y,cidx,mode='real'):
+        C = X[:,cidx].copy()
+        if   mode=='null' : C = np.random.randn(*C.shape).astype('f4')
+        elif mode=='price': C = X[:,[FEATS.index(c) for c in
+                               ['price_norm','discom_stress','ppa_deviation','gen_efficiency','month_sin']
+                               if c in FEATS][:NC]]
+        elif mode=='5min' : C = X[:,CIDX_5MIN].copy()
+        self.X=torch.tensor(X); self.C=torch.tensor(C.astype('f4')); self.Y=torch.tensor(Y)
+    def __len__(self): return max(0,len(self.X)-SEQ-PRED)
+    def __getitem__(self,i): return self.X[i:i+SEQ],self.C[i:i+SEQ],self.Y[i+SEQ:i+SEQ+PRED]
+
+# ── N2 MCAG (V2 unchanged) ────────────────────────────────────────────────────
+class MCAG(nn.Module):
+    def __init__(self,nc,d):
+        super().__init__(); self.fc=nn.Linear(nc,d); self.ln=nn.LayerNorm(d)
+    def forward(self,h,c):
+        g=torch.sigmoid(self.ln(self.fc(c.mean(1)))); return h*g.unsqueeze(1)
+
+# ── MCAG-Regime (Alpha NEW) ───────────────────────────────────────────────────
+class MCAG_Regime(nn.Module):
+    '''Soft 3-head routing: {normal, coal_critical, monsoon_peak} regimes.'''
+    def __init__(self,nc,d,n_regimes=3):
+        super().__init__()
+        self.gates  = nn.ModuleList([MCAG(nc,d) for _ in range(n_regimes)])
+        self.router = nn.Linear(nc,n_regimes)
+    def forward(self,h,c):
+        alpha = torch.softmax(self.router(c.mean(1)),dim=-1)
+        gated = torch.stack([g(h,c) for g in self.gates],dim=1)
+        return (alpha.unsqueeze(-1).unsqueeze(-1)*gated).sum(1)
+
+# ── PatchTST+MCAG (V2, accepts optional mcag_cls) ────────────────────────────
+class PatchTST_MCAG(nn.Module):
+    def __init__(self,nf,nc,pl=4,st=2,mcag_cls=MCAG):
+        super().__init__()
+        self.pl=pl; self.st=st; self.np=(SEQ-pl)//st+1
+        self.proj=nn.Linear(pl*nf,D)
+        el=nn.TransformerEncoderLayer(D,4,D*2,0.0,batch_first=True,norm_first=True)
+        self.enc=nn.TransformerEncoder(el,2)
+        self.mcag=mcag_cls(nc,D)
+        self.out=nn.Linear(D*self.np,PRED*NT)
+    def forward(self,x,c):
+        B=x.shape[0]
+        patches=[x[:,i*self.st:i*self.st+self.pl,:].reshape(B,-1) for i in range(self.np)]
+        h=self.proj(torch.stack(patches,1)); h=self.enc(h)
+        cp=c[:,:self.np] if c.shape[1]>=self.np else c[:,:1].expand(-1,self.np,-1)
+        return self.out(self.mcag(h,cp).reshape(B,-1)).reshape(B,PRED,NT)
+
+# ── BiLSTM-Base (V2 unchanged) ───────────────────────────────────────────────
+class BiLSTM(nn.Module):
+    def __init__(self,nf):
+        super().__init__()
+        self.lstm=nn.LSTM(nf,D*2,1,batch_first=True,bidirectional=True)
+        self.out=nn.Linear(D*4,PRED*NT)
+    def forward(self,x,c=None):
+        h,_=self.lstm(x); return self.out(h[:,-1,:]).reshape(-1,PRED,NT)
+
+# ── BiLSTM-Deep (Alpha NEW) ───────────────────────────────────────────────────
+class BiLSTM_Deep(nn.Module):
+    '''3-layer BiLSTM with skip connection — long monsoon regimes.'''
+    def __init__(self,nf):
+        super().__init__()
+        self.lstm1=nn.LSTM(nf,D*2,1,batch_first=True,bidirectional=True)
+        self.lstm2=nn.LSTM(D*4,D*2,1,batch_first=True,bidirectional=True,dropout=0.1)
+        self.lstm3=nn.LSTM(D*4,D*2,1,batch_first=True,bidirectional=True,dropout=0.1)
+        self.ln=nn.LayerNorm(D*4); self.out=nn.Linear(D*4,PRED*NT)
+    def forward(self,x,c=None):
+        h1,_=self.lstm1(x); h2,_=self.lstm2(h1); h3,_=self.lstm3(self.ln(h2+h1))
+        return self.out(h3[:,-1,:]).reshape(-1,PRED,NT)
+
+# ── BiLSTM-Attn (Alpha NEW) ───────────────────────────────────────────────────
+class BiLSTM_Attn(nn.Module):
+    '''BiLSTM + Bahdanau attention. Attention weights = interpretability figure.'''
+    def __init__(self,nf):
+        super().__init__()
+        self.lstm=nn.LSTM(nf,D*2,2,batch_first=True,bidirectional=True,dropout=0.1)
+        self.attn=nn.Linear(D*4,1); self.ln=nn.LayerNorm(D*4); self.out=nn.Linear(D*4,PRED*NT)
+    def forward(self,x,c=None):
+        h,_=self.lstm(x)
+        alpha=torch.softmax(self.attn(h),dim=1)
+        ctx=(alpha*h).sum(1)
+        return self.out(self.ln(ctx)).reshape(-1,PRED,NT)
+    def get_attention(self,x):
+        self.eval()
+        with torch.no_grad():
+            h,_=self.lstm(x)
+            return torch.softmax(self.attn(h),dim=1).squeeze(-1).cpu().numpy()
+
+# ── TFT-Lite (V2 unchanged) ──────────────────────────────────────────────────
+class TFT_Lite(nn.Module):
+    def __init__(self,nf):
+        super().__init__()
+        d2=D*2; self.vsn=nn.Linear(nf,d2); self.g1=nn.Linear(d2,d2)
+        self.g2=nn.Linear(d2,d2); self.ln=nn.LayerNorm(d2)
+        el=nn.TransformerEncoderLayer(d2,4,d2*2,0.0,batch_first=True,norm_first=True)
+        self.enc=nn.TransformerEncoder(el,1); self.out=nn.Linear(d2,PRED*NT)
+    def forward(self,x,c=None):
+        h=self.vsn(x); h=self.ln(h+self.g2(F.elu(self.g1(h))))
+        h=self.enc(h); return self.out(h[:,-1,:]).reshape(-1,PRED,NT)
+
+# ── TFT-Full (Alpha NEW) ─────────────────────────────────────────────────────
+class TFT_Full(nn.Module):
+    '''Full TFT: proper GRN + static covariate + 2-layer Transformer.'''
+    def __init__(self,nf):
+        super().__init__()
+        d2=D*2
+        self.feat_proj=nn.Linear(nf,d2); self.grn1=nn.Linear(d2,d2)
+        self.grn2=nn.Linear(d2,d2); self.grn_ln=nn.LayerNorm(d2)
+        self.static_emb=nn.Embedding(2,d2//4); self.static_proj=nn.Linear(d2//4,d2)
+        el=nn.TransformerEncoderLayer(d2,4,d2*2,0.1,batch_first=True,norm_first=True)
+        self.enc=nn.TransformerEncoder(el,2); self.out=nn.Linear(d2,PRED*NT)
+    def forward(self,x,c=None):
+        h=self.feat_proj(x); h=self.grn_ln(h+self.grn2(F.elu(self.grn1(h))))
+        idx=torch.clamp((x[:,0,0]>0).long(),0,1)
+        sc=self.static_proj(self.static_emb(idx)).unsqueeze(1)
+        h=h+sc; h=self.enc(h); return self.out(h[:,-1,:]).reshape(-1,PRED,NT)
+
+# ── TFT-Carbon (Alpha NEW) ───────────────────────────────────────────────────
+class TFT_Carbon(nn.Module):
+    '''TFT-Full with carbon signals as static context vs MCAG dynamic gate (N2 cross-test).'''
+    def __init__(self,nf,nc):
+        super().__init__()
+        d2=D*2
+        self.feat_proj=nn.Linear(nf,d2); self.grn1=nn.Linear(d2,d2)
+        self.grn2=nn.Linear(d2,d2); self.grn_ln=nn.LayerNorm(d2)
+        self.carbon_proj=nn.Linear(nc,d2); self.carbon_ln=nn.LayerNorm(d2)
+        el=nn.TransformerEncoderLayer(d2,4,d2*2,0.1,batch_first=True,norm_first=True)
+        self.enc=nn.TransformerEncoder(el,2); self.out=nn.Linear(d2,PRED*NT)
+    def forward(self,x,c):
+        h=self.feat_proj(x); h=self.grn_ln(h+self.grn2(F.elu(self.grn1(h))))
+        sc=self.carbon_ln(self.carbon_proj(c.mean(1))).unsqueeze(1)
+        h=h+sc; h=self.enc(h); return self.out(h[:,-1,:]).reshape(-1,PRED,NT)
+
+print(f"{'='*60}")
+print(f"  All Model Architectures (V2 + Alpha)")
+print(f"{'='*60}")
+for name,m in [('PatchTST+MCAG [V2]',PatchTST_MCAG(NF,NC)),
+               ('PatchTST+MCAG-Regime [NEW]',PatchTST_MCAG(NF,NC,mcag_cls=MCAG_Regime)),
+               ('BiLSTM-Base [V2]',BiLSTM(NF)),
+               ('BiLSTM-Deep [NEW]',BiLSTM_Deep(NF)),
+               ('BiLSTM-Attn [NEW]',BiLSTM_Attn(NF)),
+               ('TFT-Lite [V2]',TFT_Lite(NF)),
+               ('TFT-Full [NEW]',TFT_Full(NF)),
+               ('TFT-Carbon [NEW]',TFT_Carbon(NF,NC))]:
+    params=sum(p.numel() for p in m.parameters())
+    print(f"  {name:<36} {params:>8,} params")
+print(f"  NF={NF} SEQ={SEQ} D={D} EP={EP} BS={BS}")

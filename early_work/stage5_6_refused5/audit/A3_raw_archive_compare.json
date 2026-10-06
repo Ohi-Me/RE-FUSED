@@ -1,0 +1,20 @@
+{
+  "dataset(original)": {
+    "files": 108,
+    "rows": 289667,
+    "days": 3040,
+    "mcp_nan_pct": 52.74,
+    "mcp_mean": 4028.4,
+    "mcp_max": 19500.0,
+    "schemas": 1
+  },
+  "cleaned": {
+    "files": 108,
+    "rows": 289667,
+    "days": 3040,
+    "mcp_nan_pct": 52.74,
+    "mcp_mean": 4028.4,
+    "mcp_max": 19500.0,
+    "schemas": 1
+  }
+}

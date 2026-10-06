@@ -1,0 +1,23 @@
+[5min] rows after memory trim: 2,103,145 zones=5
+5min  h=  1 b_pers  | baseMAE=   5.66 residR2=+0.016 g=1.357 | always=-0.027 global=-0.043 static=-0.042 [11s]
+5min  h=  1 b_da    | baseMAE=  17.69 residR2=+0.488 g=1.071 | always=+0.445 global=+0.451 static=+0.451 [17s]
+5min  h=  3 b_pers  | baseMAE=   9.85 residR2=+0.027 g=1.133 | always=-0.028 global=-0.036 static=-0.034 [19s]
+5min  h=  3 b_da    | baseMAE=  17.69 residR2=+0.334 g=0.892 | always=+0.322 global=+0.319 static=+0.318 [31s]
+5min  h= 12 b_pers  | baseMAE=  14.99 residR2=+0.041 g=0.866 | always=+0.010 global=+0.022 static=+0.023 [43s]
+5min  h= 12 b_da    | baseMAE=  17.69 residR2=+0.245 g=0.770 | always=+0.194 global=+0.184 static=+0.185 [48s]
+[15min] rows after memory trim: 2,629,005 zones=15
+15min h=  1 b_pers  | baseMAE=   9.03 residR2=+0.007 g=1.254 | always=-0.009 global=-0.017 static=-0.016 [56s]
+15min h=  1 b_da    | baseMAE=  17.29 residR2=+0.260 g=0.867 | always=+0.287 global=+0.279 static=+0.280 [64s]
+15min h=  4 b_pers  | baseMAE=  14.78 residR2=+0.033 g=1.114 | always=+0.021 global=+0.017 static=+0.015 [68s]
+15min h=  4 b_da    | baseMAE=  17.29 residR2=+0.128 g=0.698 | always=+0.162 global=+0.152 static=+0.154 [77s]
+[1h] rows after memory trim: 920,400 zones=15
+1h    h=  1 b_pers  | baseMAE=  12.49 residR2=+0.051 g=0.649 | always=+0.022 global=+0.033 static=+0.031 [81s]
+1h    h=  1 b_da    | baseMAE=  15.97 residR2=+0.131 g=0.707 | always=+0.130 global=+0.116 static=+0.118 [85s]
+1h    h= 24 b_pers  | baseMAE=  22.39 residR2=+0.093 g=0.419 | always=+0.007 global=+0.039 static=+0.039 [95s]
+1h    h= 24 b_da    | baseMAE=  16.00 residR2=-0.010 g=0.162 | always=-0.050 global=+0.003 static=+0.002 [102s]
+[1d] rows after memory trim: 38,370 zones=15
+1d    h=  1 b_pers  | baseMAE=  14.44 residR2=-0.053 g=0.284 | always=-0.078 global=+0.026 static=+0.023 [104s]
+1d    h=  1 b_da    | baseMAE=  11.08 residR2=-0.643 g=0.020 | always=-0.316 global=-0.003 static=-0.025 [105s]
+1d    h=  7 b_pers  | baseMAE=  24.14 residR2=-0.035 g=0.600 | always=-0.072 global=+0.029 static=+0.015 [107s]
+1d    h=  7 b_da    | baseMAE=  11.06 residR2=-0.453 g=0.007 | always=-0.187 global=-0.000 static=-0.005 [107s]
+DONE 107.19979548454285

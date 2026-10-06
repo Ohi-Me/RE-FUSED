@@ -1,0 +1,20 @@
+
+M1 INTEGRITY CHECKS (india) — 1200 rows
+======================================================================
+  PASS  C1 all planned configs present  |  15 configs
+  PASS  C1b no unplanned configs
+  PASS  C2 every config has 10 seeds
+  PASS  C3 every (config,seed) has 8 rungs
+  PASS  C3b rung vocabulary complete
+  PASS  C4 no duplicate (config,seed,rung) rows  |  0 duplicates
+  PASS  C5 no seasonal-naive at h multiple of season (D3)
+  PASS  C6 rung0 skill is exactly zero in all metrics  |  max |skill|=0.00e+00
+  PASS  C7 baseline magnitude constant across rungs
+  PASS  C8 data counts identical across seeds
+  PASS  C9 clipped fraction valid; rung0 unclipped; CLIP declared  |  range_ok=True rung0=0.0 clip=1.5
+        clipped fraction by rung: {'oracle_instance': 0.7386, 'rung1_global': 0.0, 'rung2_series': 0.0507, 'rung3_cell': 0.0864, 'rung4_shrunk': 0.2389, 'rung5_instance': 0.3991, 'rung5b_bagged': 0.4174}
+  PASS  C10 both aggregations present, finite, not identical  |  finite=True macro==pooled everywhere=False
+  PASS  C11 bootstrap covers all configs and brackets point estimates  |  missing=0 brackets_ok=True
+  PASS  C12 canonical definitions declared  |  unit=one (dataset,baseline,h,seed) run primary=skill_sq_macro
+======================================================================
+14/14 checks passed

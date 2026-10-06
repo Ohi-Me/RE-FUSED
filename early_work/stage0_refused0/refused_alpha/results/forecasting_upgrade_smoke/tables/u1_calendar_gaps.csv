@@ -1,0 +1,37 @@
+state_name,split,observed_days,calendar_days,missing_days,max_gap_days,n_gaps
+Bihar,train,2204,2281,77,75,2
+Bihar,test,423,478,55,55,2
+Chhattisgarh,train,2204,2281,77,75,2
+Chhattisgarh,test,423,478,55,55,2
+Delhi,train,2204,2281,77,75,2
+Delhi,test,423,478,55,55,2
+Gujarat,train,2204,2281,77,75,2
+Gujarat,test,423,478,55,55,2
+Haryana,train,2204,2281,77,75,2
+Haryana,test,423,478,55,55,2
+Himachal Pradesh,train,2204,2281,77,75,2
+Himachal Pradesh,test,423,478,55,55,2
+Jammu & Kashmir,train,2204,2281,77,75,2
+Jammu & Kashmir,test,423,478,55,55,2
+Jharkhand,train,2204,2281,77,75,2
+Jharkhand,test,423,478,55,55,2
+Karnataka,train,2204,2281,77,75,2
+Karnataka,test,423,478,55,55,2
+Madhya Pradesh,train,2204,2281,77,75,2
+Madhya Pradesh,test,423,478,55,55,2
+Maharashtra,train,2204,2281,77,75,2
+Maharashtra,test,423,478,55,55,2
+Odisha,train,2204,2281,77,75,2
+Odisha,test,423,478,55,55,2
+Puducherry,train,2204,2281,77,75,2
+Puducherry,test,423,478,55,55,2
+Punjab,train,2204,2281,77,75,2
+Punjab,test,423,478,55,55,2
+Rajasthan,train,2204,2281,77,75,2
+Rajasthan,test,423,478,55,55,2
+Tamil Nadu,train,2204,2281,77,75,2
+Tamil Nadu,test,423,478,55,55,2
+Uttar Pradesh,train,2204,2281,77,75,2
+Uttar Pradesh,test,423,478,55,55,2
+Uttarakhand,train,2204,2281,77,75,2
+Uttarakhand,test,423,478,55,55,2

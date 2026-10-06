@@ -1,0 +1,143 @@
+[cell 0] | **New** — CERC-compatible proposal vs IEX 15-min DSM (validated on daily data) |
+| **N5** | *
+[cell 4] dow) | N4: sub-daily-proxy tail-risk |
+| `ci_intraday_variance` | σ(CI) over 7-day rolling window 
+[cell 4] day rolling window (name is legacy, NOT true intraday) | N2: MCAG-Regime gate input |
+| `re_ramp_r
+[cell 7] l 1.2 — Feature Engineering (V2 base + Alpha 5-min extensions) ──────
+def prep(df, ref=None):
+ 
+[cell 7]  is literally a 6-DAY rolling
+    # q90; `ci_intraday_variance` is a 7-DAY rolling std. Present th
+[cell 7] ehaviour; do
+    # NOT claim true 5-minute / intraday results anywhere in the paper.
+    # ═══════
+[cell 7]   # Rolling 4-hr CVaR proxy (6-day rolling = intraday 4-hr analog at daily resolution)
+    df['rol
+[cell 7] in_periods=1).quantile(0.90))
+    )
+    # CI intraday variance: 7-day rolling std of carbon intens
+[cell 7] y rolling std of carbon intensity
+    df['ci_intraday_variance'] = (
+        df.sort_values('date'
+[cell 7] N_REF)
+
+ALPHA_FEATS = ['rolling_cvar4hr','ci_intraday_variance','re_ramp_risk','monsoon_re_credit'
+[cell 8] _var_season = df_train.groupby('season')['ci_intraday_variance'].mean().sort_values()
+ax.bar(ci_va
+[cell 9] ility — tighter hedge during high-volatility intraday coal-stress windows.
+
+[cell 12] acy (DA)** — price direction correctness for 5-min settlement
+- **Carbon Forecast Error (CFE)**
+[cell 12] chTST** | MCAG-Real · **MCAG-Regime** · MCAG-5Min | Regime-aware vs intraday carbon gate |
+
+##
+[cell 12] *MCAG-Regime** · MCAG-5Min | Regime-aware vs intraday carbon gate |
+
+### New metrics (Alpha N5)
+- 
+[cell 13] NC} → {[FEATS[i] for i in CIDX]}")
+print(f"  5Min CIDX    : {len(CIDX_5MIN)} → {[FEATS[i] for 
+[cell 13] a_deviation',
+         'rolling_cvar4hr','ci_intraday_variance','re_ramp_risk',
+         'monsoon_
+[cell 13] for c in
+             ['rolling_cvar4hr','ci_intraday_variance','re_ramp_risk',
+              'mon
+[cell 14]     if c in FEATS][:NC]]
+        elif mode=='5min' : C = X[:,CIDX_5MIN].copy()
+        self.X=
+[cell 18] s=MCAG_Regime).to(DEVICE),'real'),
+    'MCAG-5Min':   (PatchTST_MCAG(NF,len(CIDX_5MIN)).to(DEV
+[cell 18] chTST_MCAG(NF,len(CIDX_5MIN)).to(DEVICE),   '5min'),
+}
+ptst_results={}
+for name,(model,mode) i
+[cell 21] arbon ≠ price** |
+| **MCAG-5Min** | Intraday 5-min carbon variance signals | Δ < 0 → intraday r
+[cell 21] only | **Δ > 0 → carbon ≠ price** |
+| **MCAG-5Min** | Intraday 5-min carbon variance signals |
+[cell 21] Δ > 0 → carbon ≠ price** |
+| **MCAG-5Min** | Intraday 5-min carbon variance signals | Δ < 0 → intr
+[cell 21] aday 5-min carbon variance signals | Δ < 0 → intraday resolution adds value (N4) |
+| **MCAG-Regime
+[cell 22]  signals only)      '),
+                   ('5min','MCAG-5Min  (sub-daily-proxy carbon)  ')]:
+
+[cell 22] y)      '),
+                   ('5min','MCAG-5Min  (sub-daily-proxy carbon)  ')]:
+    print(f"
+[cell 22] ice']['avg_mape'] -abl['real']['avg_mape']
+d_5min  =abl['5min']['avg_mape']  -abl['real']['avg
+[cell 22] ape'] -abl['real']['avg_mape']
+d_5min  =abl['5min']['avg_mape']  -abl['real']['avg_mape']
+d_re
+[cell 22] rice:+.2f}%]  ← N2 key test")
+print(f"  MCAG-5Min   (sub-daily proxy) : {abl['5min']['avg_mape
+[cell 22] nt(f"  MCAG-5Min   (sub-daily proxy) : {abl['5min']['avg_mape']:.2f}%  [Δ={d_5min:+.2f}%]  ← N
+[cell 22] oxy) : {abl['5min']['avg_mape']:.2f}%  [Δ={d_5min:+.2f}%]  ← N4 key test")
+print(f"  MCAG-Regi
+[cell 22]  or reduce BS for clearer separation)")
+if d_5min<0:  print(f"  ✓ N4 SUPPORTED: sub-daily-prox
+[cell 22] D: sub-daily-proxy carbon signal adds {abs(d_5min):.2f}pp improvement")
+else:          print(f
+[cell 22]  ↔ N4 NEUTRAL: daily carbon sufficient (Δ={d_5min:+.2f}%)")
+
+# N2 vs N4 cross-test
+mcag_r_lc=a
+[cell 23] e'],abl['price']['avg_mape'],
+          abl['5min']['avg_mape'],abl['regime']['avg_mape']]
+col
+[cell 23] rbon\n(static)','MCAG-Real\n(dynamic)','MCAG-5Min\n(sub-daily proxy)']
+cross_vals=[tft_c_lc,mc
+[cell 23] proxy)']
+cross_vals=[tft_c_lc,mcag_r_lc,abl['5min']['per_target']['log_carbon']['MAPE']]
+bars_
+[cell 24] ---
+## Section 5 — DRO-CVaR-PPO with Adaptive-λ (Alpha N4)
+
+$$\lambda_t = \lambda_{\text{bas
+[cell 24]  rho\*=0.0806, λ=0.10 (V2)
+3. **DRO-CVaR-PPO Adaptive-λ** — rho\*=0.0806, λ modulated by PA-LMP_t vo
+[cell 30] # ─── Cell 6.1 — PA-LMP + 5-Min Settlement Analysis (Alpha) ────────────────
+[cell 30] h')
+
+plt.savefig(OUT_DIR/'figures'/'S6_palmp_5min.png',dpi=150,bbox_inches='tight',facecolor='
+[cell 30] ')
+plt.show(); print("Figure saved: S6_palmp_5min.png")
+
+[cell 32]            'price':abl['price']['avg_mape'],'5min':abl['5min']['avg_mape'],
+                  
+[cell 32] 'price':abl['price']['avg_mape'],'5min':abl['5min']['avg_mape'],
+                           'r
+[cell 32]                 'delta_5min_vs_real':round(d_5min,3),
+                           'delta_regime
+[cell 32] 'n2_confirmed':(d_price>0),'n4_supported':(d_5min<0),
+                           'tft_carbon_v
+[cell 32] ion','Metric':'delta_5min_vs_real','Value':d_5min,'Unit':'pp'})
+rows.append({'Section':'N4 Abl
+[cell 32]  Ablation','Metric':'n4_supported','Value':d_5min<0,'Unit':'bool'})
+rows.append({'Section':'PP
+[cell 32]      'alpha_features':['rolling_cvar4hr','ci_intraday_variance',
+                                 
+[cell 33] |
+|---|---|---|
+| N1 PA-LMP | Daily signal | 5-min PA-LMP_t + monsoon RE credit |
+| N2 MCAG | 3
+[cell 33] FC | Intraday resolution + CFE metric |
+| N4 5-Min Settlement | Not present | CERC-compatible p
+[cell 33] 2 vs N4 cross-test |
+| N3 GCAL | Daily CFC | Intraday resolution + CFE metric |
+| N4 5-Min Settlem
+[cell 34] ation_5way']['n2_confirmed']),
+    ('N4 MCAG-5Min gate',
+     f"Δ(5Min-Real)={S['mcag_ablation
+[cell 34] irmed']),
+    ('N4 MCAG-5Min gate',
+     f"Δ(5Min-Real)={S['mcag_ablation_5way']['delta_5min_v
+[cell 35] 2])
+labels_abl=['Real\n(N2)','Null','Price','5Min\n(N4)','Regime']
+vals_abl=[abl['real']['avg_
+[cell 35] e'],abl['price']['avg_mape'],
+          abl['5min']['avg_mape'],abl['regime']['avg_mape']]
+brs

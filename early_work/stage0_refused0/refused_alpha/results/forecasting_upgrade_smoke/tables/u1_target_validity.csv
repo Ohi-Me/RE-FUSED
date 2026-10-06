@@ -1,0 +1,7 @@
+target,split,n,nan,zeros,negative,abs_lt_1e-6,min,median,max,MAPE_safe
+total_generation_mwh,train,33102,0,0,0,0,0.43,121.85,528.25,True
+total_generation_mwh,valid,6570,0,0,0,0,0.43,159.255,532.484,True
+total_generation_mwh,test,7614,0,0,0,0,0.43,176.24,532.484,True
+avg_market_price,train,33102,0,0,0,0,2484.14,3274.1379,10000.0,True
+avg_market_price,valid,6570,0,0,0,0,3968.37583,10000.0,10000.0,True
+avg_market_price,test,7614,0,0,0,0,5692.85185,10000.0,10000.0,True

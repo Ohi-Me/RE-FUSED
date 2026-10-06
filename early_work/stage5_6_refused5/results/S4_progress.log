@@ -1,0 +1,14 @@
+amp= 0.0 n_val=   500 | static=0.1053 free=0.1041 bagged=0.1115 shrunk=0.1213 oracle=0.1347 | rho=0.62 var_est=0.1439 var_within=0.0877 within_true=0.1033 | free-static=-0.0011 bag-static=+0.0063 [47s]
+amp= 0.0 n_val=  8000 | static=0.1294 free=0.1162 bagged=0.1192 shrunk=0.1268 oracle=0.1330 | rho=0.67 var_est=0.1347 var_within=0.0907 within_true=0.1044 | free-static=-0.0132 bag-static=-0.0102 [132s]
+amp= 0.5 n_val=   500 | static=0.1044 free=0.1070 bagged=0.1137 shrunk=0.1220 oracle=0.1381 | rho=0.60 var_est=0.1460 var_within=0.0874 within_true=0.1051 | free-static=+0.0026 bag-static=+0.0093 [173s]
+amp= 0.5 n_val=  8000 | static=0.1313 free=0.1176 bagged=0.1220 shrunk=0.1288 oracle=0.1357 | rho=0.70 var_est=0.1355 var_within=0.0947 within_true=0.1061 | free-static=-0.0137 bag-static=-0.0093 [248s]
+amp= 1.0 n_val=   500 | static=0.1164 free=0.1211 bagged=0.1268 shrunk=0.1348 oracle=0.1529 | rho=0.58 var_est=0.1468 var_within=0.0840 within_true=0.1199 | free-static=+0.0047 bag-static=+0.0104 [288s]
+amp= 1.0 n_val=  8000 | static=0.1464 free=0.1311 bagged=0.1352 shrunk=0.1421 oracle=0.1501 | rho=0.69 var_est=0.1421 var_within=0.0977 within_true=0.1204 | free-static=-0.0153 bag-static=-0.0112 [360s]
+amp= 2.0 n_val=   500 | static=0.1656 free=0.1617 bagged=0.1712 shrunk=0.1808 oracle=0.2011 | rho=0.57 var_est=0.1489 var_within=0.0845 within_true=0.1365 | free-static=-0.0039 bag-static=+0.0056 [402s]
+amp= 2.0 n_val=  8000 | static=0.1940 free=0.1733 bagged=0.1807 shrunk=0.1885 oracle=0.1983 | rho=0.74 var_est=0.1415 var_within=0.1037 within_true=0.1364 | free-static=-0.0207 bag-static=-0.0133 [473s]
+
+=== criterion with bootstrap variance ===
+configs=32 | rho range 0.46..0.91 | sign accuracy=0.750 | spearman=-0.371 (p=0.0364)
+conditional (free) wins 8/32 | bagged wins 14/32 | shrunk wins 16/32
+shrunk-static mean=+0.00656 t=+3.24 p=0.0029 | bagged-static mean=-0.00155 t=-0.81 p=0.4223
+DONE

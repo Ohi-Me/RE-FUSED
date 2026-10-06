@@ -1,0 +1,18 @@
+configs: 88 ({'synthetic': 72, 'india': 16})
+rho range: 1.04 .. 4.94 (median 1.37)
+
+--- synthetic: n=72
+  sign-prediction accuracy of (rho>1): 0.194 | base rate of conditional winning: 0.194
+  corr(rho, skill_cond - skill_static) = -0.553 | spearman rho=-0.545 p=0.0000
+  conditional wins in 14/72 configs; shrunk beats static in 24/72
+  mean skill — always-static 0.1388 | always-conditional 0.1278 | criterion-selected 0.1278 | shrunk 0.1400 | oracle-selected 0.1406
+
+--- india: n=16
+  sign-prediction accuracy of (rho>1): 0.125 | base rate of conditional winning: 0.125
+  corr(rho, skill_cond - skill_static) = +0.273 | spearman rho=+0.411 p=0.1139
+  conditional wins in 2/16 configs; shrunk beats static in 14/16
+  mean skill — always-static 0.0489 | always-conditional 0.0425 | criterion-selected 0.0425 | shrunk 0.0516 | oracle-selected 0.0491
+
+=== VERDICT (the claim survives only if the criterion is predictive AND shrunk >= static) ===
+pooled sign accuracy=0.182  pooled spearman=-0.265 (p=0.0127)
+shrunk vs static paired t=+1.237 p=0.2193 mean diff=+0.00149

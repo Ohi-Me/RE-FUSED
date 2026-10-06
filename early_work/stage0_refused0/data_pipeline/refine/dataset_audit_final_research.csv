@@ -1,0 +1,35 @@
+file,rows,cols,numeric_cols,duplicate_rows,size_mb
+../dataset\CEA Data\CO2_DatabaseVersion_19_2022_23.xlsx,2039,27,15,1,0.41
+../dataset\CEA Data\CO2_Database_Version_20.0_2023_24.xlsx,2095,21,10,0,0.32
+../dataset\CEA Data\CO2_Database_V_21.0 (1).xlsx,2683,17,9,2,0.39
+../dataset\CEA Data\installed-capacity.csv,32,5,4,0,0.0
+../dataset\CEA Data\installed-capacity_punjab_2022-2025.csv,38,8,7,1,0.0
+../dataset\CEA Data\installed-capacity_punjab_2022-2025_sector wise.csv,37,5,4,0,0.0
+../dataset\Daily power genration\Daily_Power_Gen_Source_march_23.csv,18251,8,6,0,1.0
+../dataset\Daily power genration\Daily_Power_Gen_States_march_23.csv,126699,6,3,0,4.77
+../dataset\IDP\daily-coal-stocks.csv,362035,22,14,0,62.37
+../dataset\IDP\daily-power-generation.csv,2583818,12,5,0,288.35
+../dataset\IDP\daily-power-outage.csv,2585703,15,4,0,353.29
+../dataset\IDP\daily-renewable-energy-generation.csv,67014,9,6,0,5.0
+../dataset\IDP\interstate-generating-stationisgs-renewable-energy-generation.csv,200234,12,4,0,24.57
+../dataset\IDP\state-control-renewable-energy-generation.csv,61845,9,6,0,4.58
+../dataset\IDP\wheather\2020 Gol Emissions Estimates1772184766110.xlsx,8,2,1,0,0.01
+../dataset\IDP\wheather\daily-rainfall-at-state-level.csv,204876,8,6,0,12.55
+../dataset\IDP\wheather\State-wise monthly wind speed.xlsx,9256,5,2,3,0.62
+../dataset\IDP\wheather\temperature.csv,264576,13,8,0,30.77
+../dataset\IDP\wheather\wind_speed_tel_hr_punjab_sw_pb_1970_2025.csv,61896,20,6,0,7.84
+../dataset\nitiAayog\Installed_Capacity_&_Power_Generation (1).xlsx,10,5,2,0,0.01
+../dataset\nitiAayog\Installed_Capacity_&_Power_Generation (2).xlsx,10,5,2,0,0.01
+../dataset\nitiAayog\Installed_Capacity_&_Power_Generation.xlsx,10,5,2,0,0.01
+../dataset\overall Monthy data\India_monthly_data.csv,334,212,212,0,0.34
+../dataset\posoco\Indias_Electricity_Consumption_Dataset.csv,3707,39,38,0,0.76
+../dataset\prices of energy\2015\apr.csv,2850,8,6,0,0.22
+../dataset\prices of energy\2016\apr.csv,2850,8,6,0,0.21
+../dataset\prices of energy\2017\apr.csv,2850,8,6,0,0.21
+../dataset\prices of energy\2018\apr.csv,2850,8,1,0,0.17
+../dataset\prices of energy\2019\apr.csv,2850,8,1,0,0.19
+../dataset\prices of energy\2020\apr.csv,0,8,0,0,0.0
+../dataset\prices of energy\2021\apr.csv,2784,8,1,0,0.18
+../dataset\prices of energy\2022\apr.csv,2592,8,1,0,0.14
+../dataset\prices of energy\2023\apr.csv,2880,8,1,0,0.16
+../dataset\prices of energy\2024\feb.csv,2784,8,1,0,0.16

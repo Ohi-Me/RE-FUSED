@@ -1,0 +1,4 @@
+split,rows,states,start,end,days_span,distinct_dates,dup_state_date,target_nans
+train,33102,18,2017-10-03,2022-12-31,1916,1839,0,0
+valid,6570,18,2023-01-01,2023-12-31,365,365,0,0
+test,7614,18,2024-01-01,2025-04-22,478,423,0,0

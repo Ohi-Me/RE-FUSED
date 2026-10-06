@@ -1,0 +1,158 @@
+{
+  "experiment": {
+    "framework": "RE-FUSED-Alpha",
+    "scope": "18 Indian States 2017-2025",
+    "n_train": 39672,
+    "n_test": 7614,
+    "device": "cuda",
+    "SEQ": 14,
+    "EP": 15,
+    "BS": 256,
+    "alpha_features": [
+      "rolling_cvar4hr",
+      "ci_intraday_variance",
+      "re_ramp_risk",
+      "monsoon_re_credit",
+      "pa_lmp_t"
+    ]
+  },
+  "palmp_gcal": {
+    "mean_base_lmp": 9347.1,
+    "mean_palmp": 12875.8,
+    "mean_pa_lmp_t": 12875.5,
+    "palmp_premium_pct": 37.75,
+    "pa_lmp_t_premium_pct": 37.75,
+    "mean_carbon_price_inr_per_tco2": 2239.0,
+    "mean_cfc_value_inr": 63.0
+  },
+  "dro_calibration": {
+    "N": 39672,
+    "kurtosis_excess": -0.3758,
+    "RE_gap_pp": -1.96,
+    "coal_freq_pct": 4.028,
+    "rho_tail": 0.01,
+    "rho_regime": 0.01,
+    "rho_coal": 0.0806,
+    "dominant_term": "rho_coal",
+    "rho_recommended": 0.0806
+  },
+  "baseline_comparison": {
+    "_source": null
+  },
+  "architecture_comparison": {
+    "stage2_winner": "BiLSTM-Base",
+    "stage3_winner": "TFT-Lite",
+    "stage4_winner": "MCAG-Regime",
+    "final_winner": "TFT-Lite",
+    "best_bilstm": {
+      "avg_mape": 16.38,
+      "wt_score": 10.064,
+      "mase_observable": 1.0166
+    },
+    "best_tft": {
+      "avg_mape": 15.09,
+      "wt_score": 9.187,
+      "mase_observable": 0.9761
+    },
+    "best_ptst": {
+      "avg_mape": 13.65,
+      "wt_score": 8.162,
+      "mase_observable": 1.0365
+    }
+  },
+  "mcag_ablation_5way": {
+    "real": 15.29,
+    "null": 14.08,
+    "price": 16.2,
+    "5min": 16.1,
+    "regime": 16.78,
+    "delta_price_vs_real": 0.91,
+    "delta_5min_vs_real": 0.81,
+    "delta_regime_vs_real": 1.49,
+    "n2_confirmed": true,
+    "n4_supported": false,
+    "tft_carbon_vs_mcag_real_delta": 1.05,
+    "dynamic_gate_superior": true
+  },
+  "dispatch_rl": {
+    "PPO_standard": {
+      "mean_reward": 1.0193,
+      "std_reward": 0.1694,
+      "cvar90": -0.6572,
+      "worst5pct": 0.6404,
+      "mean_regime_frac": null
+    },
+    "DRO_fixed_lambda": {
+      "mean_reward": 0.8627,
+      "std_reward": 0.1501,
+      "cvar90": -0.5237,
+      "worst5pct": 0.5137,
+      "mean_regime_frac": null
+    },
+    "DRO_vol_scaled_lambda": {
+      "mean_reward": 0.8474,
+      "std_reward": 0.1479,
+      "cvar90": -0.5258,
+      "worst5pct": 0.4922,
+      "mean_regime_frac": null
+    },
+    "DRO_regime_coupled_lambda": {
+      "mean_reward": 0.9189,
+      "std_reward": 0.1563,
+      "cvar90": -0.5909,
+      "worst5pct": 0.5607,
+      "mean_regime_frac": 0.0286
+    },
+    "std_reduction_dro_pct": -11.39,
+    "std_reduction_adp_pct": -12.69,
+    "std_reduction_regime_pct": -7.73
+  },
+  "probabilistic_forecasting": {
+    "taus": [
+      0.1,
+      0.5,
+      0.9
+    ],
+    "avg_crps": 65.8029,
+    "per_target": {
+      "total_generation_mwh": {
+        "CRPS": 11.0381,
+        "PI80_coverage": 0.7993,
+        "PI80_width": 50.1074,
+        "median_pinball": 8.214,
+        "median_MASE": 1.1268
+      },
+      "avg_market_price": {
+        "CRPS": 179.1535,
+        "PI80_coverage": 0.7428,
+        "PI80_width": 533.6761,
+        "median_pinball": 116.8779,
+        "median_MASE": 0.4211
+      },
+      "grid_stress_index": {
+        "CRPS": 0.0112,
+        "PI80_coverage": 0.7818,
+        "PI80_width": 0.0445,
+        "median_pinball": 0.0079
+      },
+      "fcfs_priority_score": {
+        "CRPS": 0.0213,
+        "PI80_coverage": 0.7765,
+        "PI80_width": 0.1023,
+        "median_pinball": 0.016
+      },
+      "palmp": {
+        "CRPS": 204.4555,
+        "PI80_coverage": 0.7515,
+        "PI80_width": 654.2603,
+        "median_pinball": 135.6768
+      },
+      "log_carbon": {
+        "CRPS": 0.1379,
+        "PI80_coverage": 0.7538,
+        "PI80_width": 0.6102,
+        "median_pinball": 0.1012
+      }
+    }
+  }
+}

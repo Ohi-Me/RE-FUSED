@@ -1,0 +1,5 @@
+column,hypothesis,agreement,note
+gen_lag_1d,positional row shift(1),1.0,"matches everywhere, including all 4 gap row(s)"
+gen_lag_1d,calendar shift(1 day),1.0,agrees only where a calendar lag EXISTS; it is undefined on 5 day(s) where the shipped column still has a value (5 such rows in Bihar). e.g. 2019-11-01 lag_1d reaches back 4 days; 2020-06-01 lag_1d reaches back 75 days; 2025-02-03 lag_1d reaches back 55 days
+gen_rmean_7d,trailing mean INCLUDING day t,0.9977,contemporaneous -> unusable to predict day t
+gen_rmean_7d,trailing mean EXCLUDING day t,0.0015,ruled out

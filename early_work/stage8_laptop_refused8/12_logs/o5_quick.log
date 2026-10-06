@@ -1,0 +1,44 @@
+# O5 development results — risk-aware scheduling (stylised settlement; not actual DSM settlement)
+
+Forecast source: O2 `patchtst` (T2, H = 1, rolling-180 conformal C1). Chosen on validation: A2 β = 0, ρ = 0.5; A3 ρ₀ = 0.1; A4 β₀ = 0, β_U = 0, β_stress = 0; A2r β(low, high stress) = (0, 0).
+
+| split | arm | system_mean_crore | system_cvar90_crore | J | state_mean_crore | state_cvar90_crore | deviation_energy_gwh_per_state_day | budget_violation_share | hard_limit_envelope_exceedance_share | n_state_days |
+|---|---|---|---|---|---|---|---|---|---|---|
+| validation | H_final | 0.6959 | 3.3272 | 2.0115 | 0.0205 | 0.1578 | 1.1756 | 0.2136 | 0.1229 | 12137 |
+| validation | H_pub | 12.9994 | 37.6224 | 25.3109 | 0.3824 | 2.0586 | 5.9911 | 0.7843 | 0.0 | 12137 |
+| validation | P | 12.6813 | 36.4125 | 24.5469 | 0.373 | 1.9858 | 5.8972 | 0.7223 | 0.0 | 12137 |
+| validation | A2 | 11.9067 | 30.8622 | 21.3844 | 0.3502 | 1.8583 | 6.556 | 0.7429 | 0.0 | 12137 |
+| validation | A2r | 11.9067 | 30.8622 | 21.3844 | 0.3502 | 1.8583 | 6.556 | 0.7429 | 0.0 | 12137 |
+| validation | A3 | 11.7659 | 31.5057 | 21.6358 | 0.3461 | 1.852 | 6.3377 | 0.7428 | 0.0 | 12137 |
+| validation | A4 | 11.9067 | 30.8622 | 21.3844 | 0.3502 | 1.8583 | 6.556 | 0.7429 | 0.0 | 12137 |
+| dev_test | H_final | 0.6885 | 2.3565 | 1.5225 | 0.0202 | 0.1363 | 1.1775 | 0.2105 | 0.2241 | 12070 |
+| dev_test | H_pub | 15.4942 | 39.0428 | 27.2685 | 0.4557 | 2.153 | 6.7957 | 0.8123 | 0.0 | 12070 |
+| dev_test | P | 14.7608 | 36.2383 | 25.4995 | 0.4341 | 2.0391 | 6.5792 | 0.7741 | 0.0 | 12070 |
+| dev_test | A2 | 13.3625 | 30.3146 | 21.8386 | 0.393 | 1.8703 | 7.348 | 0.807 | 0.0 | 12070 |
+| dev_test | A2r | 13.3625 | 30.3146 | 21.8386 | 0.393 | 1.8703 | 7.348 | 0.807 | 0.0 | 12070 |
+| dev_test | A3 | 13.2323 | 30.6196 | 21.9259 | 0.3892 | 1.872 | 7.0616 | 0.8004 | 0.0 | 12070 |
+| dev_test | A4 | 13.3625 | 30.3146 | 21.8386 | 0.393 | 1.8703 | 7.348 | 0.807 | 0.0 | 12070 |
+
+Development-test paired tests (system-wide daily regret, ₹ crore; negative = a better):
+
+| a | b | metric | mean_diff | lo | hi | p_a_better | n_days | p_holm |
+|---|---|---|---|---|---|---|---|---|
+| A4 | A2 | mean system regret | 0.0 | 0.0 | 0.0 | 0.5 | 355 | 1.0 |
+| A4 | A2 | tail days (either arm above its 90th pct) | 0.0 | 0.0 | 0.0 | 1.0 | 36 |  |
+| A4 | H_pub | mean system regret | -2.1318 | -2.9093 | -1.3997 | 7.123e-10 | 355 | 6.411e-09 |
+| A4 | H_pub | tail days (either arm above its 90th pct) | -7.4669 | -11.1209 | -4.0382 | 0.0004998 | 49 |  |
+| A4 | P | mean system regret | -1.3983 | -2.027 | -0.7168 | 2.637e-07 | 355 | 1.846e-06 |
+| A4 | P | tail days (either arm above its 90th pct) | -5.442 | -7.77 | -2.703 | 0.0004998 | 45 |  |
+| A2 | H_pub | mean system regret | -2.1318 | -2.9093 | -1.3997 | 7.123e-10 | 355 | 6.411e-09 |
+| A2 | H_pub | tail days (either arm above its 90th pct) | -7.4669 | -11.1209 | -4.0382 | 0.0004998 | 49 |  |
+| A2 | P | mean system regret | -1.3983 | -2.027 | -0.7168 | 2.637e-07 | 355 | 1.846e-06 |
+| A2 | P | tail days (either arm above its 90th pct) | -5.442 | -7.77 | -2.703 | 0.0004998 | 45 |  |
+| A3 | A2 | mean system regret | -0.1302 | -0.2916 | 0.0049 | 0.0111 | 355 | 0.0443 |
+| A3 | A2 | tail days (either arm above its 90th pct) | 0.3583 | -0.0973 | 0.7791 | 0.936 | 39 |  |
+| A2r | A2 | mean system regret | 0.0 | 0.0 | 0.0 | 0.5 | 355 | 1.0 |
+| A2r | A2 | tail days (either arm above its 90th pct) | 0.0 | 0.0 | 0.0 | 1.0 | 36 |  |
+| A4 | A2r | mean system regret | 0.0 | 0.0 | 0.0 | 0.5 | 355 | 1.0 |
+| A4 | A2r | tail days (either arm above its 90th pct) | 0.0 | 0.0 | 0.0 | 1.0 | 36 |  |
+| P | H_pub | mean system regret | -0.7334 | -1.0746 | -0.4509 | 1.9e-06 | 355 | 9.501e-06 |
+| P | H_pub | tail days (either arm above its 90th pct) | -2.59 | -4.3097 | -1.2896 | 0.0009995 | 40 |  |
+

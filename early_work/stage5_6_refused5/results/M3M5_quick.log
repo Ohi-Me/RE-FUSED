@@ -1,0 +1,31 @@
+M3/M5: 5 configurations x 10 seeds
+[1/5] between=0.0                        rung0=+0.0000 rung1=+0.1909 rung2=+0.1875 rung3=+0.1797 rung4=+0.1812 rung5=+0.1537 | oracle=rung1_global rho=0.21 uni=0.00 regret_srm1=+0.0372 [81s]
+[2/5] between=0.3                        rung0=+0.0000 rung1=+0.1798 rung2=+0.1805 rung3=+0.1839 rung4=+0.1841 rung5=+0.1446 | oracle=rung3_cell   rho=0.22 uni=0.30 regret_srm1=+0.0406 [152s]
+[3/5] between=0.8                        rung0=+0.0000 rung1=+0.1793 rung2=+0.1939 rung3=+0.2337 rung4=+0.2305 rung5=+0.1598 | oracle=rung3_cell   rho=0.24 uni=0.90 regret_srm1=+0.0738 [265s]
+[4/5] n_val=300                          rung0=+0.0000 rung1=+0.1737 rung2=+0.1685 rung3=+0.1685 rung4=+0.1501 rung5=+0.1120 | oracle=rung1_global rho=0.26 uni=1.00 regret_srm1=+0.0002 [371s]
+[5/5] n_val=3000                         rung0=+0.0000 rung1=+0.1798 rung2=+0.1805 rung3=+0.1839 rung4=+0.1841 rung5=+0.1446 | oracle=rung3_cell   rho=0.22 uni=0.30 regret_srm1=+0.0406 [546s]
+
+wrote 50 rows
+
+=== M5 selection performance (mean regret in units of baseline risk) ===
+regret_rho_rule                0.00382
+regret_fixed_rung3_cell        0.00382
+regret_fixed_rung4_shrunk      0.00772
+regret_fixed_rung2_series      0.01156
+regret_fixed_rung1_global      0.01307
+regret_srm_c1.0                0.03848
+regret_srm_c0.0                0.05082
+regret_srm_c0.5                0.05082
+regret_fixed_rung5_instance    0.05082
+regret_val_argmin              0.05082
+regret_fixed_rung0_none        0.19375
+
+=== oracle rung distribution ===
+oracle_rung
+rung1_global    21
+rung3_cell      20
+rung2_series     5
+rung4_shrunk     4
+
+=== unimodality rate: 0.500 ===
+DONE 545.9371521472931

@@ -1,0 +1,170 @@
+{
+  "experiment": {
+    "framework": "RE-FUSED-Alpha",
+    "scope": "18 Indian States 2017-2025",
+    "n_train": 39672,
+    "n_test": 7614,
+    "device": "cuda",
+    "SEQ": 14,
+    "EP": 15,
+    "BS": 256,
+    "alpha_features": [
+      "rolling_cvar4hr",
+      "ci_intraday_variance",
+      "re_ramp_risk",
+      "monsoon_re_credit",
+      "pa_lmp_t"
+    ]
+  },
+  "palmp_gcal": {
+    "mean_base_lmp": 9347.1,
+    "mean_palmp": 12875.8,
+    "mean_pa_lmp_t": 12875.5,
+    "palmp_premium_pct": 37.75,
+    "pa_lmp_t_premium_pct": 37.75,
+    "mean_carbon_price_inr_per_tco2": 2239.0,
+    "mean_cfc_value_inr": 63.0
+  },
+  "dro_calibration": {
+    "N": 39672,
+    "kurtosis_excess": -0.3758,
+    "RE_gap_pp": -1.96,
+    "coal_freq_pct": 4.028,
+    "rho_tail": 0.01,
+    "rho_regime": 0.01,
+    "rho_coal": 0.0806,
+    "dominant_term": "rho_coal",
+    "rho_recommended": 0.0806
+  },
+  "baseline_comparison": {
+    "total_generation_mwh": {
+      "winner_mase": 5.9325,
+      "naive_mase": 0.494,
+      "snaive_mase": 0.9942,
+      "beats_snaive": false
+    },
+    "avg_market_price": {
+      "winner_mase": 1.0171,
+      "naive_mase": 0.0753,
+      "snaive_mase": 0.5269,
+      "beats_snaive": false
+    },
+    "_source": "results\\tables\\baseline_metrics.csv"
+  },
+  "architecture_comparison": {
+    "stage2_winner": "BiLSTM-Deep",
+    "stage3_winner": "TFT-Lite",
+    "stage4_winner": "MCAG-Real",
+    "final_winner": "MCAG-Real",
+    "best_bilstm": {
+      "avg_mape": 32.69,
+      "wt_score": 19.199,
+      "mase_observable": 3.5281
+    },
+    "best_tft": {
+      "avg_mape": 34.88,
+      "wt_score": 19.721,
+      "mase_observable": 3.538
+    },
+    "best_ptst": {
+      "avg_mape": 28.2,
+      "wt_score": 17.573,
+      "mase_observable": 3.4748
+    }
+  },
+  "mcag_ablation_5way": {
+    "real": 30.0,
+    "null": 33.16,
+    "price": 32.93,
+    "5min": 37.46,
+    "regime": 31.26,
+    "delta_price_vs_real": 2.93,
+    "delta_5min_vs_real": 7.46,
+    "delta_regime_vs_real": 1.26,
+    "n2_confirmed": true,
+    "n4_supported": false,
+    "tft_carbon_vs_mcag_real_delta": 11.25,
+    "dynamic_gate_superior": true
+  },
+  "dispatch_rl": {
+    "PPO_standard": {
+      "mean_reward": 0.9337,
+      "std_reward": 0.1972,
+      "cvar90": -0.494,
+      "worst5pct": 0.4758,
+      "mean_regime_frac": null
+    },
+    "DRO_fixed_lambda": {
+      "mean_reward": 0.9059,
+      "std_reward": 0.1874,
+      "cvar90": -0.5563,
+      "worst5pct": 0.5351,
+      "mean_regime_frac": null
+    },
+    "DRO_vol_scaled_lambda": {
+      "mean_reward": 0.8799,
+      "std_reward": 0.1744,
+      "cvar90": -0.4868,
+      "worst5pct": 0.4669,
+      "mean_regime_frac": null
+    },
+    "DRO_regime_coupled_lambda": {
+      "mean_reward": 0.9562,
+      "std_reward": 0.1528,
+      "cvar90": -0.6117,
+      "worst5pct": 0.5931,
+      "mean_regime_frac": 0.0286
+    },
+    "std_reduction_dro_pct": -4.97,
+    "std_reduction_adp_pct": -11.56,
+    "std_reduction_regime_pct": -22.52
+  },
+  "probabilistic_forecasting": {
+    "taus": [
+      0.1,
+      0.5,
+      0.9
+    ],
+    "avg_crps": 132.5089,
+    "per_target": {
+      "total_generation_mwh": {
+        "CRPS": 75.5996,
+        "PI80_coverage": 0.6368,
+        "PI80_width": 225.9561,
+        "median_pinball": 55.1319,
+        "median_MASE": 7.5631
+      },
+      "avg_market_price": {
+        "CRPS": 370.7732,
+        "PI80_coverage": 0.8227,
+        "PI80_width": 1781.7105,
+        "median_pinball": 242.6596,
+        "median_MASE": 0.8742
+      },
+      "grid_stress_index": {
+        "CRPS": 0.0139,
+        "PI80_coverage": 0.7664,
+        "PI80_width": 0.0385,
+        "median_pinball": 0.0088
+      },
+      "fcfs_priority_score": {
+        "CRPS": 0.0363,
+        "PI80_coverage": 0.6679,
+        "PI80_width": 0.1196,
+        "median_pinball": 0.0268
+      },
+      "palmp": {
+        "CRPS": 348.0672,
+        "PI80_coverage": 0.8371,
+        "PI80_width": 1792.4761,
+        "median_pinball": 212.8456
+      },
+      "log_carbon": {
+        "CRPS": 0.5635,
+        "PI80_coverage": 0.6343,
+        "PI80_width": 2.1098,
+        "median_pinball": 0.4345
+      }
+    }
+  }
+}

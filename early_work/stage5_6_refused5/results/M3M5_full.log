@@ -1,0 +1,65 @@
+M3/M5: 37 configurations x 10 seeds
+[1/37] between=0.0                        rung0=+0.0000 rung1=+0.1909 rung2=+0.1875 rung3=+0.1797 rung4=+0.1830 rung5=+0.1549 | oracle=rung1_global rho=0.64 uni=1.00 regret_srm1=+0.0360 [58s]
+[2/37] between=0.1                        rung0=+0.0000 rung1=+0.1877 rung2=+0.1848 rung3=+0.1785 rung4=+0.1810 rung5=+0.1511 | oracle=rung1_global rho=0.66 uni=1.00 regret_srm1=+0.0366 [129s]
+[3/37] between=0.3                        rung0=+0.0000 rung1=+0.1798 rung2=+0.1805 rung3=+0.1839 rung4=+0.1841 rung5=+0.1466 | oracle=rung3_cell   rho=0.65 uni=0.60 regret_srm1=+0.0390 [221s]
+[4/37] between=0.6                        rung0=+0.0000 rung1=+0.1734 rung2=+0.1828 rung3=+0.2090 rung4=+0.2044 rung5=+0.1493 | oracle=rung3_cell   rho=0.67 uni=0.90 regret_srm1=+0.0597 [319s]
+[5/37] between=1.0                        rung0=+0.0000 rung1=+0.1908 rung2=+0.2107 rung3=+0.2614 rung4=+0.2524 rung5=+0.1906 | oracle=rung3_cell   rho=0.73 uni=1.00 regret_srm1=+0.0709 [413s]
+[6/37] within=0.0                         rung0=+0.0000 rung1=+0.1798 rung2=+0.1805 rung3=+0.1839 rung4=+0.1841 rung5=+0.1466 | oracle=rung3_cell   rho=0.65 uni=0.60 regret_srm1=+0.0390 [498s]
+[7/37] within=0.5                         rung0=+0.0000 rung1=+0.1752 rung2=+0.1755 rung3=+0.1780 rung4=+0.1787 rung5=+0.1417 | oracle=rung1_global rho=0.65 uni=0.70 regret_srm1=+0.0390 [581s]
+[8/37] within=1.0                         rung0=+0.0000 rung1=+0.1638 rung2=+0.1643 rung3=+0.1659 rung4=+0.1665 rung5=+0.1292 | oracle=rung3_cell   rho=0.64 uni=0.70 regret_srm1=+0.0390 [663s]
+[9/37] within=2.0                         rung0=+0.0000 rung1=+0.1732 rung2=+0.1736 rung3=+0.1737 rung4=+0.1751 rung5=+0.1370 | oracle=rung4_shrunk rho=0.64 uni=0.70 regret_srm1=+0.0402 [743s]
+[10/37] n_val=300                          rung0=+0.0000 rung1=+0.1737 rung2=+0.1685 rung3=+0.1685 rung4=+0.1489 rung5=+0.1005 | oracle=rung1_global rho=0.77 uni=1.00 regret_srm1=+0.0002 [799s]
+[11/37] n_val=600                          rung0=+0.0000 rung1=+0.1776 rung2=+0.1688 rung3=+0.1688 rung4=+0.1624 rung5=+0.1150 | oracle=rung1_global rho=0.71 uni=1.00 regret_srm1=+0.0000 [866s]
+[12/37] n_val=1500                         rung0=+0.0000 rung1=+0.1792 rung2=+0.1779 rung3=+0.1743 rung4=+0.1769 rung5=+0.1319 | oracle=rung1_global rho=0.66 uni=0.80 regret_srm1=+0.0491 [944s]
+[13/37] n_val=3000                         rung0=+0.0000 rung1=+0.1798 rung2=+0.1805 rung3=+0.1839 rung4=+0.1841 rung5=+0.1466 | oracle=rung3_cell   rho=0.65 uni=0.60 regret_srm1=+0.0390 [1031s]
+[14/37] n_val=8000                         rung0=+0.0000 rung1=+0.1799 rung2=+0.1839 rung3=+0.1913 rung4=+0.1920 rung5=+0.1667 | oracle=rung4_shrunk rho=0.65 uni=1.00 regret_srm1=+0.0255 [1138s]
+[15/37] n_val=20000                        rung0=+0.0000 rung1=+0.1768 rung2=+0.1808 rung3=+0.1902 rung4=+0.1917 rung5=+0.1836 | oracle=rung4_shrunk rho=0.69 uni=1.00 regret_srm1=+0.0012 [1251s]
+[16/37] snr=0.02                           rung0=+0.0000 rung1=+0.0044 rung2=+0.0016 rung3=-0.0024 rung4=-0.0019 rung5=-0.0173 | oracle=rung1_global rho=0.62 uni=1.00 regret_srm1=+0.0177 [1317s]
+[17/37] snr=0.1                            rung0=+0.0000 rung1=+0.0532 rung2=+0.0504 rung3=+0.0465 rung4=+0.0477 rung5=+0.0240 | oracle=rung1_global rho=0.64 uni=1.00 regret_srm1=+0.0294 [1400s]
+[18/37] snr=0.3                            rung0=+0.0000 rung1=+0.1798 rung2=+0.1805 rung3=+0.1839 rung4=+0.1841 rung5=+0.1466 | oracle=rung3_cell   rho=0.65 uni=0.60 regret_srm1=+0.0390 [1489s]
+[19/37] snr=1.0                            rung0=+0.0000 rung1=+0.4383 rung2=+0.4451 rung3=+0.4643 rung4=+0.4609 rung5=+0.4171 | oracle=rung3_cell   rho=0.69 uni=0.90 regret_srm1=+0.0473 [1574s]
+[20/37] snr=3.0                            rung0=+0.0000 rung1=+0.6840 rung2=+0.6943 rung3=+0.7261 rung4=+0.7202 rung5=+0.6876 | oracle=rung3_cell   rho=0.81 uni=1.00 regret_srm1=+0.0409 [1661s]
+[21/37] phi=0.0                            rung0=+0.0000 rung1=+0.1798 rung2=+0.1805 rung3=+0.1839 rung4=+0.1841 rung5=+0.1466 | oracle=rung3_cell   rho=0.65 uni=0.60 regret_srm1=+0.0390 [1750s]
+[22/37] phi=0.5                            rung0=+0.0000 rung1=+0.1782 rung2=+0.1796 rung3=+0.1822 rung4=+0.1821 rung5=+0.1439 | oracle=rung3_cell   rho=0.65 uni=0.60 regret_srm1=+0.0396 [1840s]
+[23/37] phi=0.9                            rung0=+0.0000 rung1=+0.1760 rung2=+0.1784 rung3=+0.1810 rung4=+0.1808 rung5=+0.1435 | oracle=rung3_cell   rho=0.68 uni=0.90 regret_srm1=+0.0384 [1928s]
+[24/37] mis=0                              rung0=+0.0000 rung1=+0.1798 rung2=+0.1805 rung3=+0.1839 rung4=+0.1841 rung5=+0.1466 | oracle=rung3_cell   rho=0.65 uni=0.60 regret_srm1=+0.0390 [2003s]
+[25/37] mis=2                              rung0=+0.0000 rung1=+0.1204 rung2=+0.1196 rung3=+0.1211 rung4=+0.1220 rung5=+0.0910 | oracle=rung1_global rho=0.62 uni=0.70 regret_srm1=+0.0327 [2060s]
+[26/37] mis=4                              rung0=+0.0000 rung1=+0.0331 rung2=+0.0305 rung3=+0.0264 rung4=+0.0305 rung5=+0.0112 | oracle=rung1_global rho=0.67 uni=0.90 regret_srm1=+0.0198 [2112s]
+[27/37] drift=0.0                          rung0=+0.0000 rung1=+0.1798 rung2=+0.1805 rung3=+0.1839 rung4=+0.1841 rung5=+0.1466 | oracle=rung3_cell   rho=0.65 uni=0.60 regret_srm1=+0.0390 [2170s]
+[28/37] drift=0.5                          rung0=+0.0000 rung1=+0.1690 rung2=+0.1700 rung3=+0.1734 rung4=+0.1730 rung5=+0.1366 | oracle=rung3_cell   rho=0.65 uni=0.70 regret_srm1=+0.0380 [2227s]
+[29/37] drift=2.0                          rung0=+0.0000 rung1=+0.0891 rung2=+0.0902 rung3=+0.0923 rung4=+0.0912 rung5=+0.0701 | oracle=rung3_cell   rho=0.65 uni=0.60 regret_srm1=+0.0231 [2279s]
+[30/37] n_series=4,n_regimes=2             rung0=+0.0000 rung1=+0.2004 rung2=+0.2035 rung3=+0.2071 rung4=+0.2032 rung5=+0.1679 | oracle=rung3_cell   rho=0.66 uni=0.90 regret_srm1=+0.0321 [2329s]
+[31/37] n_series=12,n_regimes=3            rung0=+0.0000 rung1=+0.1798 rung2=+0.1805 rung3=+0.1839 rung4=+0.1841 rung5=+0.1466 | oracle=rung3_cell   rho=0.65 uni=0.60 regret_srm1=+0.0390 [7177s]
+[32/37] n_series=40,n_regimes=5            rung0=+0.0000 rung1=+0.1884 rung2=+0.1780 rung3=+0.1780 rung4=+0.1825 rung5=+0.1552 | oracle=rung1_global rho=0.62 uni=1.00 regret_srm1=+0.0332 [7222s]
+[33/37] adv_no_signal                      rung0=+0.0000 rung1=-0.0001 rung2=-0.0019 rung3=-0.0059 rung4=-0.0050 rung5=-0.0207 | oracle=rung0_none   rho=0.61 uni=1.00 regret_srm1=+0.0001 [7272s]
+[34/37] adv_noise_heterogeneity            rung0=+0.0000 rung1=+0.0028 rung2=+0.0002 rung3=+0.0002 rung4=-0.0106 rung5=-0.0319 | oracle=rung1_global rho=0.77 uni=0.90 regret_srm1=+0.0008 [7303s]
+[35/37] adv_drift_unseen                   rung0=+0.0000 rung1=+0.0849 rung2=+0.0821 rung3=+0.0821 rung4=+0.0777 rung5=+0.0582 | oracle=rung1_global rho=0.77 uni=1.00 regret_srm1=+0.0040 [7331s]
+[36/37] adv_within_scarce                  rung0=+0.0000 rung1=+0.0602 rung2=+0.0560 rung3=+0.0560 rung4=+0.0396 rung5=+0.0121 | oracle=rung1_global rho=0.71 uni=1.00 regret_srm1=+0.0000 [7362s]
+[37/37] adv_misspecified_strong_signal     rung0=+0.0000 rung1=+0.0950 rung2=+0.0937 rung3=+0.0920 rung4=+0.0967 rung5=+0.0712 | oracle=rung4_shrunk rho=0.71 uni=0.80 regret_srm1=+0.0245 [7415s]
+
+wrote 370 rows
+
+=== M5 selection performance (mean regret in units of baseline risk) ===
+regret_fixed_rung3_cell        0.00354
+regret_rho_rule                0.00374
+regret_fixed_rung4_shrunk      0.00503
+regret_fixed_rung2_series      0.00777
+regret_fixed_rung1_global      0.00822
+regret_srm_c1.0                0.03058
+regret_srm_c0.5                0.03705
+regret_srm_c0.0                0.03814
+regret_val_argmin              0.03832
+regret_fixed_rung5_instance    0.03833
+regret_fixed_rung0_none        0.17465
+
+=== oracle rung distribution ===
+oracle_rung
+rung1_global       124
+rung3_cell         117
+rung4_shrunk        76
+rung2_series        39
+rung0_none          12
+rung5_raw_ratio      2
+
+=== unimodality rate: 0.824 ===
+DONE 7414.601972579956

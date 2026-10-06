@@ -1,0 +1,26 @@
+persistence  h=1 | r2_series: +0.1424->+0.1424 (clip 0.06->0.05)  r5_wls_bagge: +0.1305->+0.1300 (clip 0.20->0.20) [157s]
+persistence  h=3 | r2_series: +0.1142->+0.1151 (clip 0.01->0.11)  r5_wls_bagge: +0.0585->+0.0767 (clip 0.16->0.29) [351s]
+persistence  h=7 | r2_series: +0.0646->+0.0693 (clip 0.03->0.22)  r5_wls_bagge: +0.0230->+0.0460 (clip 0.19->0.42) [530s]
+roll7        h=1 | r2_series: +0.2052->+0.2052 (clip 0.00->0.00)  r5_wls_bagge: +0.1557->+0.1568 (clip 0.11->0.12) [708s]
+roll7        h=3 | r2_series: +0.0823->+0.0839 (clip 0.00->0.16)  r5_wls_bagge: -0.0037->+0.0365 (clip 0.15->0.39) [897s]
+roll7        h=7 | r2_series: +0.0777->+0.0822 (clip 0.00->0.33)  r5_wls_bagge: +0.0077->+0.0496 (clip 0.18->0.45) [1089s]
+
+=== D9 TEST: effect of absorbing the global gate (mean over 6 configs x 10 seeds) ===
+                 frac_clipped         gate_mean         skill_sq_macro        
+rescaled                    0       1         0       1              0       1
+rung                                                                          
+rung1_global           0.0000  0.0000    0.8174  1.0000         0.0920  0.0920
+rung2_series           0.0150  0.1442    0.9002  1.0948         0.1144  0.1164
+rung3_cell             0.0415  0.1696    0.8975  1.0735         0.1098  0.1137
+rung4_shrunk           0.0565  0.2071    0.9282  1.0940         0.0943  0.1030
+rung5_wls_bagged       0.1667  0.3107    0.9255  1.0545         0.0620  0.0826
+
+=== paired test per rung (unit = config x seed) ===
+  rung1_global       rescaled - original = -0.00000  improves in 16/60  p=1.24e-01
+  rung2_series       rescaled - original = +0.00196  improves in 45/60  p=2.67e-09
+  rung3_cell         rescaled - original = +0.00391  improves in 51/60  p=1.19e-11
+  rung4_shrunk       rescaled - original = +0.00868  improves in 47/60  p=6.76e-10
+  rung5_wls_bagged   rescaled - original = +0.02066  improves in 49/60  p=9.00e-12
+  fine - per-series (rescaled=0): -0.05244 wins=0/60
+  fine - per-series (rescaled=1): -0.03374 wins=0/60
+DONE 1089.0490634441376

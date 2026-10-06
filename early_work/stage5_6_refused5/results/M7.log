@@ -1,0 +1,41 @@
+persistence        h=1 | always=+0.1439(0.2)  never=+0.0000(0.0)  block_lcb=+0.1375(0.0)  crc_quantile=+0.0172(0.0)  clip90=+0.1436(0.0)  unc_selective=+0.1427(0.2) [22s]
+persistence        h=3 | always=+0.1168(0.8)  never=+0.0000(0.0)  block_lcb=+0.1068(0.6)  crc_quantile=+0.0106(0.0)  clip90=+0.1243(0.2)  unc_selective=+0.1157(1.0) [49s]
+persistence        h=7 | always=+0.0684(4.0)  never=+0.0000(0.0)  block_lcb=+0.0343(2.0)  crc_quantile=+0.0020(0.0)  clip90=+0.0737(2.2)  unc_selective=+0.0666(3.8) [80s]
+roll7              h=1 | always=+0.2058(0.4)  never=+0.0000(0.0)  block_lcb=+0.2011(0.4)  crc_quantile=+0.0567(0.0)  clip90=+0.1955(0.0)  unc_selective=+0.2042(0.6) [111s]
+roll7              h=3 | always=+0.0825(3.2)  never=+0.0000(0.0)  block_lcb=+0.0401(1.2)  crc_quantile=+0.0000(0.0)  clip90=+0.0910(2.2)  unc_selective=+0.0783(3.2) [139s]
+roll7              h=7 | always=+0.0819(4.4)  never=+0.0000(0.0)  block_lcb=+0.0410(1.6)  crc_quantile=+0.0000(0.0)  clip90=+0.0925(2.8)  unc_selective=+0.0793(5.2) [170s]
+operator_schedule  h=1 | always=+0.0135(8.0)  never=+0.0000(0.0)  block_lcb=+0.0422(1.0)  crc_quantile=+0.0022(0.0)  clip90=+0.0060(8.0)  unc_selective=+0.0170(8.0) [199s]
+operator_schedule  h=3 | always=+0.0007(5.6)  never=+0.0000(0.0)  block_lcb=+0.0224(0.0)  crc_quantile=+0.0000(0.0)  clip90=-0.0043(5.6)  unc_selective=+0.0020(5.6) [230s]
+operator_schedule  h=7 | always=-0.0044(6.8)  never=+0.0000(0.0)  block_lcb=+0.0088(0.2)  crc_quantile=+0.0000(0.0)  clip90=-0.0062(6.4)  unc_selective=-0.0055(6.6) [265s]
+
+wrote 270 rows
+
+=== accuracy-safety summary by baseline (mean over h x seeds) ===
+                                 coverage  degraded_series  mean_skill  withheld  withheld_helpful  worst_series_skill
+baseline          rule                                                                                                
+operator_schedule always           0.8367           6.8000      0.0032    0.0000            0.0000             -0.4459
+                  block_lcb        0.1800           0.4000      0.0245   16.4000            6.7333             -0.0472
+                  clip90           0.8367           6.6667     -0.0015    0.0000            0.0000             -0.4371
+                  crc_quantile     0.0033           0.0000      0.0007   16.6667            9.8667              0.0000
+                  never            0.0000           0.0000      0.0000    0.0000            0.0000              0.0000
+                  unc_selective    0.7959           6.7333      0.0045    0.0000            0.0000             -0.4283
+persistence       always           0.9933           1.6667      0.1097    0.0000            0.0000             -0.0202
+                  block_lcb        0.7233           0.8667      0.0929    5.5333            4.6000             -0.0186
+                  clip90           0.9933           0.8000      0.1139    0.0000            0.0000             -0.0053
+                  crc_quantile     0.0467           0.0000      0.0099   18.9333           17.2667              0.0000
+                  never            0.0000           0.0000      0.0000    0.0000            0.0000              0.0000
+                  unc_selective    0.9776           1.6667      0.1083    0.0000            0.0000             -0.0211
+roll7             always           1.0000           2.6667      0.1234    0.0000            0.0000             -0.0640
+                  block_lcb        0.6733           1.0667      0.0941    6.5333            4.9333             -0.0345
+                  clip90           1.0000           1.6667      0.1263    0.0000            0.0000             -0.0295
+                  crc_quantile     0.0767           0.0000      0.0189   18.4667           15.8000              0.0000
+                  never            0.0000           0.0000      0.0000    0.0000            0.0000              0.0000
+                  unc_selective    0.9811           3.0000      0.1206    0.0000            0.0000             -0.0628
+
+=== paired comparison vs block_lcb (unit = config x seed) ===
+  block_lcb - always         skill=-0.00831 p=3.68e-02 | degraded: lcb=0.78 vs always=3.71
+  block_lcb - never          skill=+0.07048 p=1.06e-09 | degraded: lcb=0.78 vs never=0.00
+  block_lcb - crc_quantile   skill=+0.06062 p=2.01e-11 | degraded: lcb=0.78 vs crc_quantile=0.00
+  block_lcb - clip90         skill=-0.00909 p=6.15e-02 | degraded: lcb=0.78 vs clip90=3.04
+  block_lcb - unc_selective  skill=-0.00733 p=4.74e-02 | degraded: lcb=0.78 vs unc_selective=3.80
+DONE 264.9715723991394

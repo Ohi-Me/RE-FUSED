@@ -1,0 +1,7 @@
+target,horizon,rows_compared,cols_compared,offending_cols,passed
+total_generation_mwh,1,39618,82,0,True
+total_generation_mwh,2,39564,82,0,True
+total_generation_mwh,3,39510,82,0,True
+avg_market_price,1,39618,82,0,True
+avg_market_price,2,39564,82,0,True
+avg_market_price,3,39510,82,0,True

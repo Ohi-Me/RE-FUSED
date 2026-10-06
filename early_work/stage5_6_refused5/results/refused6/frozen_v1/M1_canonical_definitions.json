@@ -1,0 +1,14 @@
+{
+  "clip": 1.5,
+  "n_seeds": 10,
+  "n_boot": 5,
+  "n_regimes": 3,
+  "min_cell": 30,
+  "unit": "one (dataset,baseline,h,seed) run",
+  "primary_metric": "skill_sq_macro",
+  "secondary": [
+    "skill_sq_pooled",
+    "skill_mae_macro",
+    "skill_mae_pooled"
+  ]
+}

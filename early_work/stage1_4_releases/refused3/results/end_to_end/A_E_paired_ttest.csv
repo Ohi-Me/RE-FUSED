@@ -1,0 +1,5 @@
+comparison,mean_diff,t_stat,p_value
+C_ppo_point_forecast vs B_ppo_standard,-0.07503305659691492,-2.1972767746191457,0.09293444373591915
+D_ppo_probabilistic_forecast vs C_ppo_point_forecast,0.02658951445420583,0.7658195255562257,0.48647618277561727
+E_ppo_probabilistic_dro vs D_ppo_probabilistic_forecast,0.003933454712231943,0.9909159102094348,0.37781872896772256
+E_ppo_probabilistic_dro vs B_ppo_standard,-0.04451008743047715,-0.9948943926795474,0.3760985308721108

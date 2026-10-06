@@ -1,0 +1,7 @@
+target,method,PI80_coverage,coverage_gap_pp,mean_width,CRPS,WQL,P50_MAE,P50_RMSE
+avg_market_price,QuantileReg,0.9706,17.06,312.7085,89.7665,0.00961,84.1301,573.2277
+avg_market_price,Conformal-sym,0.9429,14.29,52.4929,86.2508,0.00923,84.1301,573.2277
+avg_market_price,CQR,0.5312,-26.88,294.2601,90.2284,0.00966,84.1301,573.2277
+total_generation_mwh,QuantileReg,0.7902,-0.98,27.1894,5.7582,0.02909,8.8353,14.1012
+total_generation_mwh,Conformal-sym,0.8221,2.21,31.4776,6.3629,0.03214,8.8353,14.1012
+total_generation_mwh,CQR,0.8328,3.28,29.8296,5.7717,0.02916,8.8353,14.1012

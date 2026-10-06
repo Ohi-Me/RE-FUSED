@@ -1,0 +1,73 @@
+=== Cell 0 (markdown) : 1 hits ===
+   | **New** — CERC-compatible proposal vs IEX 15-min DSM (validated on daily data) | | | **N5** | *
+=== Cell 4 (markdown) : 2 hits ===
+   dow) | N4: sub-daily-proxy tail-risk | | | `ci_intraday_variance` | σ(CI) over 7-day rolling window 
+   day rolling window (name is legacy, NOT true intraday) | N2: MCAG-Regime gate input | | | `re_ramp_r
+=== Cell 7 (code) : 8 hits ===
+   l 1.2 — Feature Engineering (V2 base + Alpha 5-min extensions) ────── | def prep(df, ref=None): |  
+    is literally a 6-DAY rolling |     # q90; `ci_intraday_variance` is a 7-DAY rolling std. Present th
+   ettlement behaviour; do |     # NOT claim true 5-minute / intraday results anywhere in the paper.
+   ehaviour; do |     # NOT claim true 5-minute / intraday results anywhere in the paper. |     # ═══════
+     # Rolling 4-hr CVaR proxy (6-day rolling = intraday 4-hr analog at daily resolution) |     df['rol
+   in_periods=1).quantile(0.90)) |     ) |     # CI intraday variance: 7-day rolling std of carbon intens
+   y rolling std of carbon intensity |     df['ci_intraday_variance'] = ( |         df.sort_values('date'
+   N_REF) |  | ALPHA_FEATS = ['rolling_cvar4hr','ci_intraday_variance','re_ramp_risk','monsoon_re_credit'
+=== Cell 8 (code) : 1 hits ===
+   _var_season = df_train.groupby('season')['ci_intraday_variance'].mean().sort_values() | ax.bar(ci_va
+=== Cell 12 (markdown) : 1 hits ===
+   chTST** | MCAG-Real · **MCAG-Regime** · MCAG-5Min | Regime-aware vs sub-daily-proxy carbon gat
+=== Cell 13 (code) : 6 hits ===
+   a_deviation', |          'rolling_cvar4hr','ci_intraday_variance','re_ramp_risk', |          'monsoon_
+   risk','monsoon_re_risk'] if c in FEATS] | CIDX_5MIN = [FEATS.index(c) for c in |              ['ro
+   for c in |              ['rolling_cvar4hr','ci_intraday_variance','re_ramp_risk', |               'mon
+   NC} → {[FEATS[i] for i in CIDX]}") | print(f"  5Min CIDX    : {len(CIDX_5MIN)} → {[FEATS[i] for 
+    CIDX]}") | print(f"  5Min CIDX    : {len(CIDX_5MIN)} → {[FEATS[i] for i in CIDX_5MIN]}") | print(
+    {len(CIDX_5MIN)} → {[FEATS[i] for i in CIDX_5MIN]}") | print(f"  SEQ={SEQ}  PRED={PRED}  BS={BS
+=== Cell 14 (code) : 2 hits ===
+       if c in FEATS][:NC]] |         elif mode=='5min' : C = X[:,CIDX_5MIN].copy() |         self.X=
+   C]] |         elif mode=='5min' : C = X[:,CIDX_5MIN].copy() |         self.X=torch.tensor(X); self
+=== Cell 18 (code) : 3 hits ===
+   s=MCAG_Regime).to(DEVICE),'real'), |     'MCAG-5Min':   (PatchTST_MCAG(NF,len(CIDX_5MIN)).to(DEV
+      'MCAG-5Min':   (PatchTST_MCAG(NF,len(CIDX_5MIN)).to(DEVICE),   '5min'), | } | ptst_results={} | f
+   chTST_MCAG(NF,len(CIDX_5MIN)).to(DEVICE),   '5min'), | } | ptst_results={} | for name,(model,mode) i
+=== Cell 21 (markdown) : 2 hits ===
+   only | **Δ > 0 → carbon ≠ price** | | | **MCAG-5Min** | Sub-daily-proxy carbon variance signals 
+   rbon variance signals (rolling std, NOT true intraday) | Δ < 0 → sub-daily-proxy resolution adds v
+=== Cell 22 (code) : 10 hits ===
+    signals only)      '), |                    ('5min','MCAG-5Min  (sub-daily-proxy carbon)  ')]: | 
+   y)      '), |                    ('5min','MCAG-5Min  (sub-daily-proxy carbon)  ')]: |     print(f"
+   ice']['avg_mape'] -abl['real']['avg_mape'] | d_5min  =abl['5min']['avg_mape']  -abl['real']['avg
+   ape'] -abl['real']['avg_mape'] | d_5min  =abl['5min']['avg_mape']  -abl['real']['avg_mape'] | d_re
+   rice:+.2f}%]  ← N2 key test") | print(f"  MCAG-5Min   (sub-daily proxy) : {abl['5min']['avg_mape
+   nt(f"  MCAG-5Min   (sub-daily proxy) : {abl['5min']['avg_mape']:.2f}%  [Δ={d_5min:+.2f}%]  ← N
+   oxy) : {abl['5min']['avg_mape']:.2f}%  [Δ={d_5min:+.2f}%]  ← N4 key test") | print(f"  MCAG-Regi
+    or reduce BS for clearer separation)") | if d_5min<0:  print(f"  ✓ N4 SUPPORTED: sub-daily-prox
+   D: sub-daily-proxy carbon signal adds {abs(d_5min):.2f}pp improvement") | else:          print(f
+    ↔ N4 NEUTRAL: daily carbon sufficient (Δ={d_5min:+.2f}%)") |  | # N2 vs N4 cross-test | mcag_r_lc=a
+=== Cell 23 (code) : 3 hits ===
+   e'],abl['price']['avg_mape'], |           abl['5min']['avg_mape'],abl['regime']['avg_mape']] | col
+   rbon\n(static)','MCAG-Real\n(dynamic)','MCAG-5Min\n(sub-daily proxy)'] | cross_vals=[tft_c_lc,mc
+   proxy)'] | cross_vals=[tft_c_lc,mcag_r_lc,abl['5min']['per_target']['log_carbon']['MAPE']] | bars_
+=== Cell 29 (markdown) : 1 hits ===
+   --- | ## Section 6 — PA-LMP & 5-Minute Settlement Deep Analysis (N1 + N4) |  | $$\te
+=== Cell 30 (code) : 3 hits ===
+   # ─── Cell 6.1 — PA-LMP + 5-Min Settlement Analysis (Alpha) ────────────────
+   h') |  | plt.savefig(OUT_DIR/'figures'/'S6_palmp_5min.png',dpi=150,bbox_inches='tight',facecolor='
+   ') | plt.show(); print("Figure saved: S6_palmp_5min.png") | 
+=== Cell 32 (code) : 9 hits ===
+        'alpha_features':['rolling_cvar4hr','ci_intraday_variance', |                                  
+              'price':abl['price']['avg_mape'],'5min':abl['5min']['avg_mape'], |                   
+   'price':abl['price']['avg_mape'],'5min':abl['5min']['avg_mape'], |                            'r
+   _price,3), |                            'delta_5min_vs_real':round(d_5min,3), |                   
+                   'delta_5min_vs_real':round(d_5min,3), |                            'delta_regime
+   'n2_confirmed':(d_price>0),'n4_supported':(d_5min<0), |                            'tft_carbon_v
+   end({'Section':'N4 Ablation','Metric':'delta_5min_vs_real','Value':d_5min,'Unit':'pp'}) | rows.a
+   ion','Metric':'delta_5min_vs_real','Value':d_5min,'Unit':'pp'}) | rows.append({'Section':'N4 Abl
+    Ablation','Metric':'n4_supported','Value':d_5min<0,'Unit':'bool'}) | rows.append({'Section':'PP
+=== Cell 34 (code) : 3 hits ===
+   ation_5way']['n2_confirmed']), |     ('N4 MCAG-5Min gate (sub-daily proxy)', |      f"Δ(5Min-Real)
+    MCAG-5Min gate (sub-daily proxy)', |      f"Δ(5Min-Real)={S['mcag_ablation_5way']['delta_5min_v
+   Δ(5Min-Real)={S['mcag_ablation_5way']['delta_5min_vs_real']:+.3f}pp  " |      f"N4={'SUPPORTED ✓
+=== Cell 35 (code) : 1 hits ===
+   e'],abl['price']['avg_mape'], |           abl['5min']['avg_mape'],abl['regime']['avg_mape']] | brs
+TOTAL: 56

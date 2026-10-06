@@ -1,0 +1,54 @@
+india_daily  h= 1 | residR2_val=+0.211 acf1=+0.094 varB=0.1191 varE=0.3254 n/cell=122 | r1_g=+0.1396 r2_s=+0.1439 r3_c=+0.1410 r4_s=+0.1445 r5_i=+0.1335 | best=rung4_shrunk fine-coarse=-0.0104 [16s]
+india_daily  h= 3 | residR2_val=+0.185 acf1=+0.644 varB=0.1284 varE=0.2736 n/cell=122 | r1_g=+0.0953 r2_s=+0.1193 r3_c=+0.1172 r4_s=+0.1060 r5_i=+0.0860 | best=rung2_series fine-coarse=-0.0333 [36s]
+ETTh1        h= 1 | residR2_val=+0.409 acf1=+0.295 varB=0.2230 varE=0.2145 n/cell=581 | r1_g=+0.1597 r2_s=+0.2067 r3_c=+0.2087 r4_s=+0.1837 r5_i=+0.1519 | best=rung3_cell fine-coarse=-0.0568 [58s]
+ETTh1        h=24 | residR2_val=+0.104 acf1=+0.818 varB=0.1285 varE=0.5300 n/cell=581 | r1_g=+0.0518 r2_s=+0.0498 r3_c=+0.0553 r4_s=+0.0495 r5_i=+0.0430 | best=rung3_cell fine-coarse=-0.0123 [83s]
+ETTh2        h= 1 | residR2_val=+0.145 acf1=-0.172 varB=0.0887 varE=0.4720 n/cell=581 | r1_g=+0.1462 r2_s=+0.1456 r3_c=+0.1410 r4_s=+0.1496 r5_i=+0.1390 | best=rung4_shrunk fine-coarse=-0.0073 [108s]
+ETTh2        h=24 | residR2_val=+0.027 acf1=+0.826 varB=0.5706 varE=1.5510 n/cell=581 | r1_g=+0.0139 r2_s=+0.0181 r3_c=+0.0184 r4_s=+0.0136 r5_i=+0.0122 | best=rung3_cell fine-coarse=-0.0062 [137s]
+ETTm1        h= 1 | residR2_val=+0.102 acf1=-0.065 varB=0.1609 varE=0.2230 n/cell=2323 | r1_g=+0.0079 r2_s=+0.0244 r3_c=+0.0262 r4_s=+0.0190 r5_i=+0.0104 | best=rung3_cell fine-coarse=-0.0158 [176s]
+ETTm1        h=24 | residR2_val=+0.644 acf1=+0.973 varB=0.1778 varE=0.0410 n/cell=2323 | r1_g=+0.1436 r2_s=+0.3409 r3_c=+0.3527 r4_s=+0.2444 r5_i=+0.2061 | best=rung3_cell fine-coarse=-0.1466 [246s]
+ETTm2        h= 1 | residR2_val=+0.044 acf1=-0.132 varB=0.1609 varE=0.3019 n/cell=2323 | r1_g=+0.0734 r2_s=+0.0751 r3_c=+0.0786 r4_s=+0.0781 r5_i=+0.0745 | best=rung3_cell fine-coarse=-0.0041 [296s]
+ETTm2        h=24 | residR2_val=+0.481 acf1=+0.924 varB=0.1042 varE=0.0513 n/cell=2323 | r1_g=+0.2365 r2_s=+0.2595 r3_c=+0.2521 r4_s=+0.2021 r5_i=+0.1792 | best=rung2_series fine-coarse=-0.0803 [367s]
+nyiso_1h     h= 1 | residR2_val=+0.027 acf1=-0.301 varB=0.0448 varE=0.3663 n/cell=2928 | r1_g=+0.0834 r2_s=+0.0825 r3_c=+0.0796 r4_s=+0.0856 r5_i=+0.0800 | best=rung1_global fine-coarse=-0.0033 [450s]
+nyiso_1h     h=24 | residR2_val=+0.034 acf1=+0.395 varB=0.0282 varE=0.2913 n/cell=2928 | r1_g=+0.1027 r2_s=+0.1021 r3_c=+0.0982 r4_s=+0.1188 r5_i=+0.1177 | best=rung4_shrunk fine-coarse=+0.0148 [549s]
+
+wrote 60 rows over 6 datasets
+
+=== best rung by dataset ===
+dataset      h 
+ETTh1        1       rung3_cell
+             24      rung3_cell
+ETTh2        1     rung4_shrunk
+             24      rung3_cell
+ETTm1        1       rung3_cell
+             24      rung3_cell
+ETTm2        1       rung3_cell
+             24    rung2_series
+india_daily  1     rung4_shrunk
+             3     rung2_series
+nyiso_1h     1     rung1_global
+             24    rung4_shrunk
+
+=== do validation-only descriptors predict the fine-rung gap? (unit = config mean) ===
+  resid_R2_val         spearman=-0.881 (p=0.000)   pearson=-0.954 (p=0.000)
+  gate_var_between     spearman=-0.448 (p=0.145)   pearson=-0.044 (p=0.893)
+  gate_var_est         spearman=+0.685 (p=0.014)   pearson=+0.430 (p=0.162)
+  n_val_per_cell       spearman=+0.320 (p=0.310)   pearson=-0.106 (p=0.742)
+  resid_acf1           spearman=-0.580 (p=0.048)   pearson=-0.569 (p=0.053)
+  base_mae_over_sd     spearman=-0.168 (p=0.602)   pearson=-0.533 (p=0.074)
+  lam                  spearman=-0.385 (p=0.217)   pearson=-0.711 (p=0.009)
+
+=== config-level table ===
+    dataset  h  resid_R2_val  resid_acf1  gate_var_between  gate_var_est  n_val_per_cell  best_coarse_skill  fine_minus_coarse
+      ETTh1  1        0.4091      0.2947            0.2230        0.2145        580.6667             0.2087            -0.0568
+      ETTh1 24        0.1040      0.8177            0.1285        0.5300        580.6667             0.0553            -0.0123
+      ETTh2  1        0.1452     -0.1720            0.0887        0.4720        580.6667             0.1463            -0.0073
+      ETTh2 24        0.0269      0.8258            0.5706        1.5510        580.6667             0.0185            -0.0062
+      ETTm1  1        0.1019     -0.0648            0.1609        0.2230       2322.6667             0.0262            -0.0158
+      ETTm1 24        0.6436      0.9728            0.1778        0.0410       2322.6667             0.3527            -0.1466
+      ETTm2  1        0.0441     -0.1316            0.1609        0.3019       2322.6667             0.0786            -0.0041
+      ETTm2 24        0.4813      0.9236            0.1042        0.0513       2322.6667             0.2595            -0.0803
+india_daily  1        0.2109      0.0938            0.1191        0.3254        121.6667             0.1439            -0.0104
+india_daily  3        0.1849      0.6438            0.1284        0.2736        121.6667             0.1193            -0.0333
+   nyiso_1h  1        0.0266     -0.3007            0.0448        0.3663       2927.6667             0.0834            -0.0033
+   nyiso_1h 24        0.0343      0.3954            0.0282        0.2913       2927.6667             0.1029             0.0148
+DONE 549.4209434986115

@@ -1,0 +1,56 @@
+==============================================================================
+  U15.2 — CONCLUSION (paper-ready)
+==============================================================================
+
+We re-examined day-ahead forecasting on the RE-FUSED-Alpha panel (18 Indian
+states, 47,286 state-day observations, chronological test period
+2024-01-01 to 2025-04-22) using an isolated pipeline with a mechanical
+leakage proof: every observation from the test boundary onward was replaced
+with noise and the pre-boundary features verified bit-identical across
+18 target-horizon configurations and 712,152 row-comparisons.
+
+The published PatchTST+MCAG result (28.20% average MAPE, MASE 3.4748) is
+reproducible, and its weakness is attributable to the input specification
+rather than the architecture: the original feature list contains no lag of
+total_generation_mwh, so the model was asked to predict the level of a
+series it was never shown. Two further measurement issues were identified —
+the published model MASE was computed with pooled scaling while its
+baselines were macro-averaged across states, and the validation split was a
+state holdout rather than a time holdout.
+
+Persistence is a strong benchmark on this panel (MASE 0.4163),
+beating ARIMA, ETS, seasonal-naive and rolling-mean alternatives. Market
+price in particular is near-trivially persistent, which the original audit
+attributes to the 87.3% imputation rate smoothing the series.
+
+The strongest model found is Hybrid_Persistence_XGB, at MASE
+0.3841 against persistence at 0.4163 — an improvement of
+7.75%. It wins in 17 of 18 states.
+The gain comes from two corrections rather than from model capacity:
+forecasting the residual from a persistence base (which removes the
+train-to-test level shift) and normalising each state's target by its own
+MASE denominator (which aligns the training loss with the macro-averaged
+metric on a panel spanning three orders of magnitude).
+
+Statistically: Diebold-Mariano tests do NOT consistently reject equal
+accuracy against persistence at the 5% level, and the moving-block
+bootstrap interval for the error difference includes zero.
+The improvement survives re-seeding: the 95% confidence interval over
+8 seeds lies entirely below the persistence benchmark.
+
+Limitations. (i) 87.3% of state-day rows carry at least one imputed value;
+the smoothing this induces is the most likely reason persistence is so hard
+to beat, and it caps what any model can demonstrate here. (ii) The mean
+market price roughly doubles between train and test, so 85.6% of test rows
+sit above the per-state training 90th percentile — a covariate shift no
+fixed-range learner handles well. (iii) The test period contains a 54-day
+data outage (2024-12-11 to 2025-02-02) which removes window-based models'
+coverage immediately afterwards. (iv) Horizons are limited to 1-3 days to
+match the original PRED=3 setting; longer horizons, where persistence decays
+fastest, are where a learned model would most plausibly win and are left to
+future work. (v) No time-series foundation model was evaluated, because
+installing one would have altered the pinned torch build that produced the
+Part I results.
+
+Reporting note: MAPE is a percentage error and is never restated as an
+accuracy. A 28.20% MAPE does not correspond to 71.8% accuracy.

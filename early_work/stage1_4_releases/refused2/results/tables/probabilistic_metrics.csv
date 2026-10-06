@@ -1,0 +1,7 @@
+target,CRPS,PI80_coverage,PI80_width,median_pinball,median_MASE
+total_generation_mwh,11.0381,0.7993,50.1074,8.214,1.1268
+avg_market_price,179.1535,0.7428,533.6761,116.8779,0.4211
+grid_stress_index,0.0112,0.7818,0.0445,0.0079,
+fcfs_priority_score,0.0213,0.7765,0.1023,0.016,
+palmp,204.4555,0.7515,654.2603,135.6768,
+log_carbon,0.1379,0.7538,0.6102,0.1012,

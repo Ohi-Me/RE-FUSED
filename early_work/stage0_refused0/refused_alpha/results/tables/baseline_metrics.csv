@@ -1,0 +1,7 @@
+target,baseline,n_states,MASE,RMSSE,sMAPE,MASE_worst_state
+total_generation_mwh,naive,18,0.494,0.5266,4.542,0.694
+total_generation_mwh,snaive,18,0.9942,0.983,9.553,1.333
+total_generation_mwh,moving_avg,18,0.7017,0.6999,6.659,0.9665
+avg_market_price,naive,18,0.0753,0.3355,0.513,0.0753
+avg_market_price,snaive,18,0.5269,0.8877,3.594,0.5269
+avg_market_price,moving_avg,18,0.3011,0.5671,2.068,0.3011

@@ -1,0 +1,70 @@
+[1/37] n_val=  3000 nested=+0.00000 mallows1=+0.03596 mallows2=+0.03596 val_argmin=+0.03596 fixed_cell=+0.01121 oracle=rung1_global [60s]
+[2/37] n_val=  3000 nested=+0.00022 mallows1=+0.03663 mallows2=+0.03663 val_argmin=+0.03663 fixed_cell=+0.00921 oracle=rung1_global [114s]
+[3/37] n_val=  3000 nested=+0.00389 mallows1=+0.03939 mallows2=+0.03666 val_argmin=+0.03939 fixed_cell=+0.00208 oracle=rung4_shrunk [168s]
+[4/37] n_val=  3000 nested=+0.00053 mallows1=+0.05971 mallows2=+0.02747 val_argmin=+0.05971 fixed_cell=+0.00000 oracle=rung3_cell [225s]
+[5/37] n_val=  3000 nested=+0.00000 mallows1=+0.07085 mallows2=+0.00874 val_argmin=+0.07085 fixed_cell=+0.00000 oracle=rung3_cell [296s]
+[6/37] n_val=  3000 nested=+0.00389 mallows1=+0.03939 mallows2=+0.03666 val_argmin=+0.03939 fixed_cell=+0.00208 oracle=rung4_shrunk [355s]
+[7/37] n_val=  3000 nested=+0.00364 mallows1=+0.03918 mallows2=+0.03651 val_argmin=+0.03918 fixed_cell=+0.00285 oracle=rung4_shrunk [411s]
+[8/37] n_val=  3000 nested=+0.00302 mallows1=+0.03903 mallows2=+0.03638 val_argmin=+0.03903 fixed_cell=+0.00239 oracle=rung3_cell [468s]
+[9/37] n_val=  3000 nested=+0.00354 mallows1=+0.04022 mallows2=+0.01658 val_argmin=+0.04022 fixed_cell=+0.00351 oracle=rung4_shrunk [521s]
+[10/37] n_val=   300 nested=+0.00554 mallows1=+0.07334 mallows2=+0.07334 val_argmin=+0.07334 fixed_cell=+0.00021 oracle=rung1_global [555s]
+[11/37] n_val=   600 nested=+0.00425 mallows1=+0.06262 mallows2=+0.05782 val_argmin=+0.06262 fixed_cell=+0.00002 oracle=rung1_global [601s]
+[12/37] n_val=  1500 nested=+0.00100 mallows1=+0.04896 mallows2=+0.04002 val_argmin=+0.04896 fixed_cell=+0.00647 oracle=rung1_global [651s]
+[13/37] n_val=  3000 nested=+0.00389 mallows1=+0.03939 mallows2=+0.03666 val_argmin=+0.03939 fixed_cell=+0.00208 oracle=rung4_shrunk [710s]
+[14/37] n_val=  8000 nested=+0.00103 mallows1=+0.02543 mallows2=+0.01206 val_argmin=+0.02543 fixed_cell=+0.00085 oracle=rung4_shrunk [777s]
+[15/37] n_val= 20000 nested=+0.00057 mallows1=+0.00000 mallows2=+0.00012 val_argmin=+0.00824 fixed_cell=+0.00165 oracle=rung4_shrunk [856s]
+[16/37] n_val=  3000 nested=+0.00041 mallows1=+0.02170 mallows2=+0.00617 val_argmin=+0.02170 fixed_cell=+0.00675 oracle=rung1_global [913s]
+[17/37] n_val=  3000 nested=+0.00188 mallows1=+0.02940 mallows2=+0.01319 val_argmin=+0.02940 fixed_cell=+0.00690 oracle=rung1_global [968s]
+[18/37] n_val=  3000 nested=+0.00389 mallows1=+0.03939 mallows2=+0.03666 val_argmin=+0.03939 fixed_cell=+0.00208 oracle=rung4_shrunk [1029s]
+[19/37] n_val=  3000 nested=+0.00018 mallows1=+0.04727 mallows2=+0.00315 val_argmin=+0.04727 fixed_cell=+0.00003 oracle=rung3_cell [1087s]
+[20/37] n_val=  3000 nested=+0.00000 mallows1=+0.00562 mallows2=+0.00562 val_argmin=+0.03848 fixed_cell=+0.00000 oracle=rung3_cell [1151s]
+[21/37] n_val=  3000 nested=+0.00389 mallows1=+0.03939 mallows2=+0.03666 val_argmin=+0.03939 fixed_cell=+0.00208 oracle=rung4_shrunk [1207s]
+[22/37] n_val=  3000 nested=+0.00333 mallows1=+0.03980 mallows2=+0.03675 val_argmin=+0.03980 fixed_cell=+0.00146 oracle=rung4_shrunk [1267s]
+[23/37] n_val=  3000 nested=+0.00365 mallows1=+0.03878 mallows2=+0.03525 val_argmin=+0.03878 fixed_cell=+0.00129 oracle=rung3_cell [1332s]
+[24/37] n_val=  3000 nested=+0.00389 mallows1=+0.03939 mallows2=+0.03666 val_argmin=+0.03939 fixed_cell=+0.00208 oracle=rung4_shrunk [1391s]
+[25/37] n_val=  3000 nested=+0.00364 mallows1=+0.03299 mallows2=+0.02941 val_argmin=+0.03299 fixed_cell=+0.00291 oracle=rung1_global [1444s]
+[26/37] n_val=  3000 nested=+0.00158 mallows1=+0.02220 mallows2=+0.00553 val_argmin=+0.02220 fixed_cell=+0.00708 oracle=rung1_global [1495s]
+[27/37] n_val=  3000 nested=+0.00389 mallows1=+0.03939 mallows2=+0.03666 val_argmin=+0.03939 fixed_cell=+0.00208 oracle=rung4_shrunk [1544s]
+[28/37] n_val=  3000 nested=+0.00342 mallows1=+0.03844 mallows2=+0.03563 val_argmin=+0.03844 fixed_cell=+0.00164 oracle=rung4_shrunk [1598s]
+[29/37] n_val=  3000 nested=+0.00234 mallows1=+0.02344 mallows2=+0.02161 val_argmin=+0.02344 fixed_cell=+0.00129 oracle=rung3_cell [1651s]
+[30/37] n_val=  3000 nested=+0.00207 mallows1=+0.03921 mallows2=+0.03586 val_argmin=+0.03921 fixed_cell=+0.00000 oracle=rung3_cell [1705s]
+[31/37] n_val=  3000 nested=+0.00389 mallows1=+0.03939 mallows2=+0.03666 val_argmin=+0.03939 fixed_cell=+0.00208 oracle=rung4_shrunk [1757s]
+[32/37] n_val=  3000 nested=+0.00000 mallows1=+0.03316 mallows2=+0.03316 val_argmin=+0.03316 fixed_cell=+0.00000 oracle=rung1_global [1809s]
+[33/37] n_val=  3000 nested=+0.00083 mallows1=+0.02072 mallows2=+0.00526 val_argmin=+0.02072 fixed_cell=+0.00590 oracle=rung0_none [1862s]
+[34/37] n_val=   300 nested=+0.00987 mallows1=+0.03547 mallows2=+0.03547 val_argmin=+0.03547 fixed_cell=+0.00084 oracle=rung1_global [1897s]
+[35/37] n_val=   300 nested=+0.00315 mallows1=+0.02872 mallows2=+0.02872 val_argmin=+0.02872 fixed_cell=+0.00197 oracle=rung1_global [1934s]
+[36/37] n_val=   300 nested=+0.02013 mallows1=+0.04803 mallows2=+0.04803 val_argmin=+0.04803 fixed_cell=+0.00000 oracle=rung1_global [1969s]
+[37/37] n_val=  3000 nested=+0.00286 mallows1=+0.02730 mallows2=+0.00858 val_argmin=+0.02730 fixed_cell=+0.00651 oracle=rung4_shrunk [2019s]
+
+wrote 370 rows
+
+=== mean regret vs oracle rung (lower is better) ===
+regret_fixed_rung3_cell        0.00269
+regret_nested                  0.00308
+regret_fixed_rung4_shrunk      0.00473
+regret_fixed_rung2_series      0.00783
+regret_fixed_rung1_global      0.00829
+regret_mallows2                0.02871
+regret_mallows1                0.03728
+regret_val_argmin              0.03839
+regret_fixed_rung5_instance    0.03839
+regret_srm_sqrt                0.03839
+regret_fixed_rung0_none        0.17472
+
+=== selection accuracy (exact oracle-rung recovery) ===
+correct_val_argmin    0.000
+correct_nested        0.503
+correct_mallows1      0.024
+correct_mallows2      0.054
+correct_srm_sqrt      0.000
+
+=== regret by validation size ===
+       regret_nested  regret_mallows1  regret_mallows2  regret_val_argmin  regret_fixed_rung3_cell
+n_val                                                                                             
+300          0.00967          0.04639          0.04639            0.04639                  0.00076
+600          0.00425          0.06262          0.05782            0.06262                  0.00002
+1500         0.00100          0.04896          0.04002            0.04896                  0.00647
+3000         0.00235          0.03644          0.02644            0.03757                  0.00302
+8000         0.00103          0.02543          0.01206            0.02543                  0.00085
+20000        0.00057          0.00000          0.00012            0.00824                  0.00165
+DONE 2018.9409854412079

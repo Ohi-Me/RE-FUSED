@@ -1,0 +1,103 @@
+[A 1] n_val=  3000 argmin=+0.00000 parsimony=+0.00000 fixed_cell=+0.01063
+[A 2] n_val=  3000 argmin=+0.00000 parsimony=+0.00000 fixed_cell=+0.00816
+[A 3] n_val=  3000 argmin=+0.00499 parsimony=+0.00581 fixed_cell=+0.00034
+[A 4] n_val=  3000 argmin=+0.00000 parsimony=+0.01257 fixed_cell=+0.00000
+[A 5] n_val=  3000 argmin=+0.00000 parsimony=+0.00000 fixed_cell=+0.00000
+[A 6] n_val=  3000 argmin=+0.00499 parsimony=+0.00581 fixed_cell=+0.00034
+[A 7] n_val=  3000 argmin=+0.00505 parsimony=+0.00543 fixed_cell=+0.00112
+[A 8] n_val=  3000 argmin=+0.00461 parsimony=+0.00415 fixed_cell=+0.00109
+[A 9] n_val=  3000 argmin=+0.00424 parsimony=+0.00538 fixed_cell=+0.00222
+[A 10] n_val=   300 argmin=+0.00000 parsimony=+0.17331 fixed_cell=+0.00805
+[A 11] n_val=   600 argmin=+0.00714 parsimony=+0.00000 fixed_cell=+0.00806
+[A 12] n_val=  1500 argmin=+0.00150 parsimony=+0.00150 fixed_cell=+0.00534
+[A 13] n_val=  3000 argmin=+0.00499 parsimony=+0.00581 fixed_cell=+0.00034
+[A 14] n_val=  8000 argmin=+0.00000 parsimony=+0.00206 fixed_cell=+0.00000
+[A 15] n_val= 20000 argmin=+0.00102 parsimony=+0.00000 fixed_cell=+0.00000
+[A 16] n_val=  3000 argmin=+0.00081 parsimony=+0.00230 fixed_cell=+0.00591
+[A 17] n_val=  3000 argmin=+0.00019 parsimony=+0.00019 fixed_cell=+0.00619
+[A 18] n_val=  3000 argmin=+0.00499 parsimony=+0.00581 fixed_cell=+0.00034
+[A 19] n_val=  3000 argmin=+0.00000 parsimony=+0.00670 fixed_cell=+0.00000
+[A 20] n_val=  3000 argmin=+0.00000 parsimony=+0.00000 fixed_cell=+0.00000
+[A 21] n_val=  3000 argmin=+0.00499 parsimony=+0.00581 fixed_cell=+0.00034
+[A 22] n_val=  3000 argmin=+0.00220 parsimony=+0.00360 fixed_cell=+0.00019
+[A 23] n_val=  3000 argmin=+0.00174 parsimony=+0.00383 fixed_cell=+0.00057
+[A 24] n_val=  3000 argmin=+0.00499 parsimony=+0.00581 fixed_cell=+0.00034
+[A 25] n_val=  3000 argmin=+0.00276 parsimony=+0.00346 fixed_cell=+0.00229
+[A 26] n_val=  3000 argmin=+0.00257 parsimony=+0.00000 fixed_cell=+0.00762
+[A 27] n_val=  3000 argmin=+0.00499 parsimony=+0.00581 fixed_cell=+0.00034
+[A 28] n_val=  3000 argmin=+0.00476 parsimony=+0.00558 fixed_cell=+0.00022
+[A 29] n_val=  3000 argmin=+0.00278 parsimony=+0.00330 fixed_cell=+0.00012
+[A 30] n_val=  3000 argmin=+0.00192 parsimony=+0.00570 fixed_cell=+0.00000
+[A 31] n_val=  3000 argmin=+0.00499 parsimony=+0.00581 fixed_cell=+0.00034
+[A 32] n_val=  3000 argmin=+0.00000 parsimony=+0.00000 fixed_cell=+0.01106
+[A 33] n_val=  3000 argmin=+0.00135 parsimony=+0.00005 fixed_cell=+0.00601
+[A 34] n_val=   300 argmin=+0.01479 parsimony=+0.00442 fixed_cell=+0.00559
+[A 35] n_val=   300 argmin=+0.00000 parsimony=+0.08247 fixed_cell=+0.00441
+[A 36] n_val=   300 argmin=+0.01303 parsimony=+0.05992 fixed_cell=+0.00646
+[A 37] n_val=  3000 argmin=+0.00107 parsimony=+0.00144 fixed_cell=+0.00359
+
+==================== PART A synthetic: 185 runs ====================
+regret_fixed_cell          0.00291
+regret_nested_argmin       0.00307
+regret_fixed_global        0.00813
+regret_fixed_series        0.00820
+regret_nested_parsimony    0.01173
+regret_fixed_shrunk        0.01718
+regret_fixed_instance      0.03915
+regret_fixed_none          0.17625
+
+exact oracle recovery: argmin=0.568 parsimony=0.443
+  nested_parsimony   - nested_argmin    mean=+0.00866 lower_in=36/185 wilcoxon_p=2.43e-04
+  nested_parsimony   - fixed_series     mean=+0.00353 lower_in=120/185 wilcoxon_p=2.49e-02
+  nested_parsimony   - fixed_cell       mean=+0.00882 lower_in=63/185 wilcoxon_p=2.20e-03
+  nested_argmin      - fixed_series     mean=-0.00513 lower_in=110/185 wilcoxon_p=5.57e-09
+  tail nested_argmin      p95=0.01062 max=0.06514
+  tail nested_parsimony   p95=0.06818 max=0.18934
+  tail fixed_series       p95=0.03311 max=0.07974
+  tail fixed_cell         p95=0.01173 max=0.01973
+[B] india_daily persistence        h= 1 argmin=+0.00557 parsimony=+0.00671 fixed_series=+0.00000 fixed_cell=+0.00186 oracle=rung2_series
+[B] india_daily persistence        h= 2 argmin=+0.00513 parsimony=+0.00445 fixed_series=+0.00000 fixed_cell=+0.00099 oracle=rung2_series
+[B] india_daily persistence        h= 3 argmin=+0.00000 parsimony=+0.01140 fixed_series=+0.00000 fixed_cell=+0.00179 oracle=rung2_series
+[B] india_daily persistence        h= 7 argmin=+0.01880 parsimony=+0.04148 fixed_series=+0.00003 fixed_cell=+0.00078 oracle=rung2_series
+[B] india_daily roll7              h= 1 argmin=+0.00006 parsimony=+0.00006 fixed_series=+0.00006 fixed_cell=+0.00059 oracle=rung2_series
+[B] india_daily roll7              h= 2 argmin=+0.00582 parsimony=+0.00000 fixed_series=+0.00000 fixed_cell=+0.00261 oracle=rung2_series
+[B] india_daily roll7              h= 3 argmin=+0.00000 parsimony=+0.00988 fixed_series=+0.00000 fixed_cell=+0.00337 oracle=rung2_series
+[B] india_daily roll7              h= 7 argmin=+0.00000 parsimony=+0.00000 fixed_series=+0.00000 fixed_cell=+0.00211 oracle=rung2_series
+[B] india_daily snaive7            h= 1 argmin=+0.00222 parsimony=+0.01003 fixed_series=+0.00222 fixed_cell=+0.00000 oracle=rung3_cell
+[B] india_daily snaive7            h= 2 argmin=+0.00006 parsimony=+0.00006 fixed_series=+0.00006 fixed_cell=+0.00071 oracle=rung2_series
+[B] india_daily snaive7            h= 3 argmin=+0.01307 parsimony=+0.02772 fixed_series=+0.00000 fixed_cell=+0.00257 oracle=rung2_series
+[B] india_daily operator_schedule  h= 1 argmin=+0.02397 parsimony=+0.05526 fixed_series=+0.01371 fixed_cell=+0.01193 oracle=rung0_none
+[B] india_daily operator_schedule  h= 2 argmin=+0.04950 parsimony=+0.07983 fixed_series=+0.00000 fixed_cell=+0.00868 oracle=rung2_series
+[B] india_daily operator_schedule  h= 3 argmin=+0.06879 parsimony=+0.06879 fixed_series=+0.00000 fixed_cell=+0.00447 oracle=rung2_series
+[B] india_daily operator_schedule  h= 7 argmin=+0.02849 parsimony=+0.02849 fixed_series=+0.00003 fixed_cell=+0.00177 oracle=rung2_series
+[B] ETTh1       persistence        h= 1 argmin=+0.06224 parsimony=+0.02976 fixed_series=+0.00004 fixed_cell=+0.00048 oracle=rung2_series
+[B] ETTh1       persistence        h=24 argmin=+0.01346 parsimony=+0.01782 fixed_series=+0.02085 fixed_cell=+0.00000 oracle=rung3_cell
+[B] ETTh2       persistence        h= 1 argmin=+0.00222 parsimony=+0.00006 fixed_series=+0.00098 fixed_cell=+0.00398 oracle=rung1_global
+[B] ETTh2       persistence        h=24 argmin=+0.00076 parsimony=+0.03156 fixed_series=+0.00012 fixed_cell=+0.00076 oracle=rung2_series
+
+==================== PART B real data (fresh test of H-M5c): 95 runs ====================
+regret_fixed_series        0.00201
+regret_fixed_cell          0.00260
+regret_nested_argmin       0.01580
+regret_nested_parsimony    0.02228
+regret_fixed_shrunk        0.02266
+regret_fixed_global        0.03303
+regret_fixed_instance      0.04111
+regret_fixed_none          0.12540
+
+exact oracle recovery: argmin=0.411 parsimony=0.379
+  nested_parsimony   - nested_argmin    mean=+0.00648 lower_in=13/95 wilcoxon_p=6.78e-03
+  nested_parsimony   - fixed_series     mean=+0.02028 lower_in=6/95 wilcoxon_p=3.73e-10
+  nested_parsimony   - fixed_cell       mean=+0.01968 lower_in=37/95 wilcoxon_p=2.24e-07
+  nested_argmin      - fixed_series     mean=+0.01379 lower_in=6/95 wilcoxon_p=1.12e-07
+  tail nested_argmin      p95=0.07357 max=0.09155
+  tail nested_parsimony   p95=0.07967 max=0.09155
+  tail fixed_series       p95=0.02039 max=0.02364
+  tail fixed_cell         p95=0.00856 max=0.02268
+
+=== PRE-REGISTERED VERDICT FOR H-M5c ===
+  FAIL  mean regret: parsimony <= argmin
+  FAIL  p95 regret: parsimony < argmin
+  FAIL  not significantly worse than fixed per-series
+  H-M5c FALSIFIED
+DONE 1508.6714842319489

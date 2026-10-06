@@ -1,0 +1,30 @@
+{
+  "version": "frozen_v1",
+  "stage": "M1 canonical india (all 14 integrity checks passed)",
+  "files": {
+    "M1_audit_report.txt": {
+      "md5": "23156d754e1b2971a91b4412a3a710fc",
+      "bytes": 5098
+    },
+    "M1_audit_summary.json": {
+      "md5": "9e982ef3b1bfd0ef12f1246d3f7c7bf7",
+      "bytes": 370
+    },
+    "M1_blockboot_india.csv": {
+      "md5": "7a77d307273726c1fc7fd7b08c1074f7",
+      "bytes": 7840
+    },
+    "M1_canonical_definitions.json": {
+      "md5": "255452376732e5506e98e13a0dfa4ec2",
+      "bytes": 274
+    },
+    "M1_integrity_india.csv": {
+      "md5": "be1182e360fba383f1ffa4f18baa7e82",
+      "bytes": 905
+    },
+    "M1_runs_india.csv": {
+      "md5": "d718082bf67b578be83087de1a1017c3",
+      "bytes": 340198
+    }
+  }
+}

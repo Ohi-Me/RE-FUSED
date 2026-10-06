@@ -1,0 +1,84 @@
+{
+  "panel_rows": 47286,
+  "panel_states": 18,
+  "panel_date_range": [
+    "2017-10-03",
+    "2025-04-22"
+  ],
+  "dates_total": 2627,
+  "dates_price_identical_across_states": 2627,
+  "pct_dates_price_identical": 100.0,
+  "mean_within_date_std": 0.0,
+  "price_rows_vs_unique_price_days": [
+    47286,
+    2627
+  ],
+  "price_imputed_pct_by_year": {
+    "2017": 65.8,
+    "2018": 87.08,
+    "2019": 85.3,
+    "2020": 83.89,
+    "2021": 80.59,
+    "2022": 84.22,
+    "2023": 94.82,
+    "2024": 97.81,
+    "2025": 100.0
+  },
+  "price_imputed_pct_test": 98.21,
+  "price_at_cap_10000_pct_test": 78.01,
+  "raw_files": 108,
+  "raw_blocks": 289667,
+  "raw_date_range": [
+    "2015-04-01",
+    "2024-03-31"
+  ],
+  "raw_mcp_nan_pct": 52.737,
+  "raw_days": 3040,
+  "raw_days_with_96_blocks": 1401,
+  "raw_blocks_per_day_median": 95.0,
+  "raw_daily_mcp_mean": 3637.4,
+  "raw_intraday_std_mean": 430.1,
+  "raw_intraday_range_mean": 1306.5,
+  "raw_missing_days": 248,
+  "raw_missing_examples": [
+    "2018-11-07",
+    "2018-11-09",
+    "2018-11-10",
+    "2018-11-11",
+    "2018-11-12",
+    "2018-11-14",
+    "2018-11-18",
+    "2018-11-24",
+    "2019-05-12",
+    "2019-05-13"
+  ],
+  "dates_overlap_panel_raw": 906,
+  "panel_vs_raw_daily_mean": {
+    "corr": 0.649,
+    "MAE": 1207.4,
+    "exact_match_pct": 9.49
+  },
+  "panel_vs_raw_daily_max": {
+    "corr": 0.5762,
+    "MAE": 1686.6,
+    "exact_match_pct": 8.17
+  },
+  "panel_vs_raw_daily_p95": {
+    "corr": 0.5836,
+    "MAE": 1607.8,
+    "exact_match_pct": 8.17
+  },
+  "panel_dates_without_raw_price": 1721,
+  "panel_dates_without_raw_examples": [
+    "2017-10-24",
+    "2017-10-26",
+    "2017-10-27",
+    "2017-10-28",
+    "2017-10-29",
+    "2017-10-30",
+    "2017-10-31",
+    "2017-11-04"
+  ],
+  "test_dates_without_raw_price": 391,
+  "test_dates_total": 423
+}

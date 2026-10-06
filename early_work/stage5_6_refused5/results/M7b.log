@@ -1,0 +1,46 @@
+[1/50] in_sample_india   india_daily persistence        h= 1 | always=+0.1421(0.0) never=+0.0000(0.0) block_lcb=+0.1353(0.0) crc_quantile=+0.0102(0.0) clip90=+0.1414(0.0) clip90_lcb=+0.1343(0.0) unc_selective=+0.1400(0.0) [4s]
+[4/50] in_sample_india   india_daily persistence        h= 3 | always=+0.1229(0.0) never=+0.0000(0.0) block_lcb=+0.1026(0.0) crc_quantile=+0.0200(0.0) clip90=+0.1276(0.0) clip90_lcb=+0.1081(0.0) unc_selective=+0.1204(0.0) [22s]
+[7/50] in_sample_india   india_daily roll7              h= 1 | always=+0.2055(0.0) never=+0.0000(0.0) block_lcb=+0.2055(0.0) crc_quantile=+0.0612(0.0) clip90=+0.1958(0.0) clip90_lcb=+0.1958(0.0) unc_selective=+0.1975(0.0) [40s]
+[10/50] in_sample_india   india_daily roll7              h= 3 | always=+0.0948(2.0) never=+0.0000(0.0) block_lcb=+0.0542(0.0) crc_quantile=+0.0000(0.0) clip90=+0.1012(2.0) clip90_lcb=+0.0618(0.0) unc_selective=+0.0908(2.0) [56s]
+[13/50] in_sample_india   india_daily operator_schedule  h= 1 | always=+0.0002(8.0) never=+0.0000(0.0) block_lcb=+0.0428(1.0) crc_quantile=+0.0000(0.0) clip90=-0.0075(8.0) clip90_lcb=+0.0411(1.0) unc_selective=+0.0005(8.0) [76s]
+[16/50] in_sample_india   india_daily operator_schedule  h= 3 | always=-0.0039(6.0) never=+0.0000(0.0) block_lcb=+0.0222(0.0) crc_quantile=+0.0000(0.0) clip90=-0.0081(6.0) clip90_lcb=+0.0209(0.0) unc_selective=-0.0034(6.0) [92s]
+[19/50] fresh_stationary  ETTh1       persistence        h= 1 | always=+0.2074(0.0) never=+0.0000(0.0) block_lcb=+0.2067(0.0) crc_quantile=+0.1816(0.0) clip90=+0.1941(0.0) clip90_lcb=+0.1934(0.0) unc_selective=+0.2085(0.0) [112s]
+[24/50] fresh_stationary  ETTh1       persistence        h=24 | always=+0.0481(1.0) never=+0.0000(0.0) block_lcb=+0.0363(0.0) crc_quantile=+0.0000(0.0) clip90=+0.0415(0.0) clip90_lcb=+0.0302(0.0) unc_selective=+0.0436(1.0) [148s]
+[29/50] fresh_stationary  ETTh2       persistence        h= 1 | always=+0.1493(0.0) never=+0.0000(0.0) block_lcb=+0.1386(0.0) crc_quantile=+0.0426(0.0) clip90=+0.1441(0.0) clip90_lcb=+0.1352(0.0) unc_selective=+0.1492(0.0) [191s]
+[34/50] fresh_stationary  ETTh2       persistence        h=24 | always=+0.0196(1.0) never=+0.0000(0.0) block_lcb=+0.0160(0.0) crc_quantile=+0.0000(0.0) clip90=+0.0189(1.0) clip90_lcb=+0.0152(0.0) unc_selective=+0.0218(0.0) [232s]
+[39/50] fresh_stationary  nyiso_1h    persistence        h= 1 | always=+0.0642(0.0) never=+0.0000(0.0) block_lcb=+0.0642(0.0) crc_quantile=+0.0036(0.0) clip90=+0.0098(0.0) clip90_lcb=+0.0098(0.0) unc_selective=+0.0638(0.0) [288s]
+[42/50] fresh_stationary  nyiso_1h    persistence        h=24 | always=+0.1107(0.0) never=+0.0000(0.0) block_lcb=+0.1107(0.0) crc_quantile=+0.0000(0.0) clip90=+0.0115(0.0) clip90_lcb=+0.0115(0.0) unc_selective=+0.0756(0.0) [341s]
+[45/50] fresh_stationary  nyiso_1h    day_ahead          h= 1 | always=+0.1927(0.0) never=+0.0000(0.0) block_lcb=+0.1927(0.0) crc_quantile=+0.0000(0.0) clip90=+0.0355(0.0) clip90_lcb=+0.0355(0.0) unc_selective=+0.0848(0.0) [392s]
+[48/50] fresh_stationary  nyiso_1h    day_ahead          h=24 | always=+0.0051(0.0) never=+0.0000(0.0) block_lcb=+0.0007(0.0) crc_quantile=+0.0000(0.0) clip90=+0.0008(0.0) clip90_lcb=+0.0002(0.0) unc_selective=+0.0022(0.0) [434s]
+[50/50] fresh_stationary  nyiso_1h    day_ahead          h=24 | always=+0.0072(0.0) never=+0.0000(0.0) block_lcb=+0.0018(0.0) crc_quantile=+0.0000(0.0) clip90=+0.0013(0.0) clip90_lcb=+0.0005(0.0) unc_selective=+0.0044(0.0) [473s]
+
+wrote 350 rows
+
+=== in_sample_india: mean over configs x seeds ===
+               degraded_series  mean_skill  withheld  worst_series_skill
+rule                                                                    
+always                  3.0000      0.0932    0.0000             -0.1980
+block_lcb               0.4444      0.0935    8.1111             -0.0280
+clip90                  2.7222      0.0918    0.0000             -0.1808
+clip90_lcb              0.1667      0.0932    8.1111             -0.0215
+crc_quantile            0.0000      0.0162   18.6667              0.0000
+never                   0.0000      0.0000    0.0000              0.0000
+unc_selective           3.1111      0.0917    0.0000             -0.1925
+
+=== fresh_stationary: mean over configs x seeds ===
+               degraded_series  mean_skill  withheld  worst_series_skill
+rule                                                                    
+always                  0.3125      0.1009    0.0000              0.0153
+block_lcb               0.1250      0.0968    1.8750              0.0139
+clip90                  0.1562      0.0679    0.0000              0.0058
+clip90_lcb              0.0000      0.0647    1.8750              0.0027
+crc_quantile            0.0000      0.0389    8.4688              0.0000
+never                   0.0000      0.0000    0.0000              0.0000
+unc_selective           0.2500      0.0913    0.0000              0.0121
+
+=== PRE-REGISTERED VERDICT FOR H-M7b ===
+  FAIL  (i)  fresh: clip90_lcb >= block_lcb (diff -0.03210, p[lcb better]=0.000)
+  PASS  (ii) fresh: clip90_lcb degraded 0.00 <= clip90 0.16
+  PASS  (iii) in-sample drift: clip90_lcb degraded <= block_lcb + 0.5
+  H-M7b FALSIFIED (criterion i)
+DONE 473.2896602153778

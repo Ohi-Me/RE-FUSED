@@ -1,0 +1,82 @@
+=== RE-FUSED-Alpha audit diagnostics ===
+train: 39672 rows x 140 cols, 2017-10-03 .. 2023-12-31
+test : 7614 rows x 140 cols, 2024-01-01 .. 2025-04-22
+
+--- 1. leakage_scan (suspect engineered columns) ---
+           column  train_min  train_max  test_out_of_train_range  refit_max_abs_delta
+       price_norm     0.0000     1.0000                   0.0000               0.0000
+grid_stress_index     0.1649     0.9308                   0.0000               0.4402
+       gen_zscore    -3.4120     2.9219                   0.0000               0.0000
+     price_zscore    -1.0855     1.5053                   0.0000               0.0000
+    outage_zscore    -2.1125     3.1656                   0.0042               0.0000
+       ren_zscore    -2.7719     4.4722                   0.0038               0.0000
+       gen_cvar90     0.4300   453.2700                   0.0273               0.0000
+    outage_cvar90     0.0000 18577.1400                   0.0000               0.0000
+     price_cvar90  2787.6383 10000.0000                   0.0000               0.0000
+   state_gen_norm     0.0000     1.0000                   0.0000               0.0000
+state_outage_norm     0.0000     1.0000                   0.0000               0.0000
+  state_coal_norm     0.0000     1.0000                   0.0000               0.0000
+   state_ren_norm     0.0000     1.0000                   0.0000               0.0000
+ state_price_norm     0.0000     1.0000                   0.0000               0.0000
+   state_gen_rank     1.0000    18.0000                   0.0000               0.0000
+   state_gen_tier     1.0000    18.0000                   0.0000               0.0000
+
+columns flagged as leaky / shifted (oob>1% or refit delta>0.01): 2 of 16 scanned
+  -> grid_stress_index, gen_cvar90
+
+--- 2. units_table (full 2017-2025 panel) ---
+numeric columns: 133; declared canonical units: 16; unit-jump flags: 43
+  jump: total_generation_mwh  p95/p05 ratio=591.3  suspected multiplier=1000
+  jump: renewable_generation_mwh  p95/p05 ratio=696.7  suspected multiplier=1000
+  jump: consumption_mwh  p95/p05 ratio=589.2  suspected multiplier=1000
+  jump: month_sin  p95/p05 ratio=8165619676597685.0  suspected multiplier=None
+  jump: month_cos  p95/p05 ratio=1.633123935319537e+16  suspected multiplier=None
+  jump: renewable_ratio  p95/p05 ratio=180.5  suspected multiplier=None
+  jump: non_renewable_gen  p95/p05 ratio=583.5  suspected multiplier=1000
+  jump: carbon_proxy_tons  p95/p05 ratio=583.5  suspected multiplier=1000
+  jump: carbon_avoided_tons  p95/p05 ratio=696.7  suspected multiplier=1000
+  jump: gen_lag_1d  p95/p05 ratio=591.2  suspected multiplier=1000
+  jump: gen_lag_3d  p95/p05 ratio=591.0  suspected multiplier=1000
+  jump: gen_lag_7d  p95/p05 ratio=590.7  suspected multiplier=1000
+  jump: gen_lag_14d  p95/p05 ratio=590.2  suspected multiplier=1000
+  jump: gen_lag_30d  p95/p05 ratio=588.5  suspected multiplier=1000
+  jump: ren_lag_1d  p95/p05 ratio=696.7  suspected multiplier=1000
+  jump: ren_lag_7d  p95/p05 ratio=696.7  suspected multiplier=1000
+  jump: gen_rmean_7d  p95/p05 ratio=589.4  suspected multiplier=1000
+  jump: ren_rmean_7d  p95/p05 ratio=328.3  suspected multiplier=None
+  jump: gen_rmean_14d  p95/p05 ratio=588.0  suspected multiplier=1000
+  jump: ren_rmean_14d  p95/p05 ratio=345.4  suspected multiplier=None
+  jump: gen_rmean_30d  p95/p05 ratio=595.2  suspected multiplier=1000
+  jump: gen_rstd_30d  p95/p05 ratio=327.9  suspected multiplier=None
+  jump: ren_rmean_30d  p95/p05 ratio=1675.8  suspected multiplier=None
+  jump: gen_mom_7d  p95/p05 ratio=231.1  suspected multiplier=None
+  jump: gen_mom_30d  p95/p05 ratio=317.6  suspected multiplier=None
+  jump: ren_mom_7d  p95/p05 ratio=1843.5  suspected multiplier=None
+  jump: gen_acceleration  p95/p05 ratio=289.3  suspected multiplier=None
+  jump: ren_day_change  p95/p05 ratio=984.8  suspected multiplier=1000
+  jump: re_penetration_pct  p95/p05 ratio=180.5  suspected multiplier=None
+  jump: carbon_roll_30d  p95/p05 ratio=577.4  suspected multiplier=1000
+  jump: carbon_trend_30d  p95/p05 ratio=796.4  suspected multiplier=1000
+  jump: price_premium  p95/p05 ratio=111.8  suspected multiplier=100
+  jump: gen_per_price  p95/p05 ratio=470.7  suspected multiplier=None
+  jump: gen_ytd  p95/p05 ratio=581.3  suspected multiplier=1000
+  jump: gen_cvar90  p95/p05 ratio=563.5  suspected multiplier=1000
+  jump: carbon_budget_pressure  p95/p05 ratio=215.6  suspected multiplier=None
+  jump: ren_weekly_range  p95/p05 ratio=953.8  suspected multiplier=1000
+  jump: sdgap_change  p95/p05 ratio=218.0  suspected multiplier=None
+  jump: price_elasticity  p95/p05 ratio=132.9  suspected multiplier=100
+  jump: fcfs_payment_proxy  p95/p05 ratio=554.5  suspected multiplier=1000
+  jump: demand_surplus_mwh  p95/p05 ratio=403.4  suspected multiplier=None
+  jump: gen_vs_national  p95/p05 ratio=504.8  suspected multiplier=1000
+  jump: ren_vs_national  p95/p05 ratio=587.4  suspected multiplier=1000
+
+--- 3. imputation_report (full panel) ---
+imputed rows (any flag): 87.3%
+      column  imputed_rate
+market_price      0.873197
+        coal      0.873197
+ consumption      0.873197
+   renewable      0.000000
+observed-only robustness slice: 5996 / 47286 rows (12.7%)
+
+median total_generation_mwh (state-day) = 135.03 -> plausible only as GWh (audit S6 confirmed)

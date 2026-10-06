@@ -1,0 +1,19 @@
+challenger,reference,target,mean_daily_MAE_diff,ci_lo,ci_hi,excludes_zero,direction
+Hybrid_Persistence_XGB,Persistence,total_generation_mwh,-1.2768178143036961,-1.48932673862592,-1.0498661476902906,True,challenger better
+Hybrid_Persistence_XGB,Persistence,avg_market_price,0.0,0.0,0.0,False,reference better
+Hybrid_Persistence_XGB,SeasonalNaive,total_generation_mwh,-5.165938327752503,-5.940397602398872,-4.497220309914814,True,challenger better
+Hybrid_Persistence_XGB,SeasonalNaive,avg_market_price,-205.0275997150997,-359.61533787393165,-49.121389037274554,True,challenger better
+Hybrid_Persistence_XGB,PatchTST+MCAG(replica),total_generation_mwh,-77.49637118867396,-86.22152535117922,-67.14079815742494,True,challenger better
+Hybrid_Persistence_XGB,PatchTST+MCAG(replica),avg_market_price,-299.0782690902838,-323.01391496078224,-268.88042778278924,True,challenger better
+Ensemble-ValWeighted,Persistence,total_generation_mwh,-1.3265927691877488,-1.5452070727126568,-1.0695774637093904,True,challenger better
+Ensemble-ValWeighted,Persistence,avg_market_price,0.0,0.0,0.0,False,reference better
+Ensemble-ValWeighted,SeasonalNaive,total_generation_mwh,-5.23597123072621,-6.031197482636777,-4.539747496197162,True,challenger better
+Ensemble-ValWeighted,SeasonalNaive,avg_market_price,-218.696106362773,-377.688081671415,-51.41039411206089,True,challenger better
+Ensemble-ValWeighted,PatchTST+MCAG(replica),total_generation_mwh,-77.49637118867396,-86.22152535117922,-67.14079815742494,True,challenger better
+Ensemble-ValWeighted,PatchTST+MCAG(replica),avg_market_price,-299.0782690902838,-323.01391496078224,-268.88042778278924,True,challenger better
+Hybrid_Pers_LGBM_seedavg,Persistence,total_generation_mwh,-1.2070487824396576,-1.4018609526480768,-1.0027596212109604,True,challenger better
+Hybrid_Pers_LGBM_seedavg,Persistence,avg_market_price,5.819041930774659e-14,0.0,1.4229712721459115e-13,False,reference better
+Hybrid_Pers_LGBM_seedavg,SeasonalNaive,total_generation_mwh,-5.096609051056564,-5.8689253943124475,-4.42959721302856,True,challenger better
+Hybrid_Pers_LGBM_seedavg,SeasonalNaive,avg_market_price,-205.02759971509965,-359.6153378739315,-49.12138903727451,True,challenger better
+Hybrid_Pers_LGBM_seedavg,PatchTST+MCAG(replica),total_generation_mwh,-77.43581168552366,-86.15883691109921,-67.08141076584481,True,challenger better
+Hybrid_Pers_LGBM_seedavg,PatchTST+MCAG(replica),avg_market_price,-299.07826909028375,-323.01391496078224,-268.8804277827892,True,challenger better

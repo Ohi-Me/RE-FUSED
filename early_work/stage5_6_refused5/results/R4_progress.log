@@ -1,0 +1,9 @@
+h=1 persistence     cells= 20 | always=+0.0652(4) static=+0.0659(2) RC=+0.0722(0) CRC=+0.0710(2) | withheld=3 of which would-have-helped=1 [12s]
+h=1 schedule_shift  cells= 20 | always=-0.3000(12) static=-0.0052(10) RC=+0.0151(2) CRC=+0.0007(9) | withheld=14 of which would-have-helped=6 [32s]
+h=2 persistence     cells= 20 | always=+0.0405(5) static=+0.0496(5) RC=+0.0532(3) CRC=+0.0588(2) | withheld=3 of which would-have-helped=1 [41s]
+h=2 schedule_shift  cells= 20 | always=-0.2918(12) static=-0.0052(9) RC=+0.0243(1) CRC=-0.0004(8) | withheld=14 of which would-have-helped=6 [52s]
+h=3 persistence     cells= 20 | always=+0.0279(6) static=+0.0422(3) RC=+0.0401(1) CRC=+0.0540(2) | withheld=5 of which would-have-helped=3 [59s]
+h=3 schedule_shift  cells= 20 | always=-0.2878(13) static=-0.0087(10) RC=+0.0211(0) CRC=-0.0060(8) | withheld=16 of which would-have-helped=6 [70s]
+h=7 persistence     cells= 20 | always=-0.0238(9) static=+0.0153(6) RC=+0.0037(3) CRC=+0.0246(4) | withheld=12 of which would-have-helped=9 [81s]
+h=7 schedule_shift  cells= 20 | always=-0.3028(12) static=-0.0335(10) RC=-0.0091(1) CRC=-0.0278(8) | withheld=17 of which would-have-helped=8 [94s]
+DONE

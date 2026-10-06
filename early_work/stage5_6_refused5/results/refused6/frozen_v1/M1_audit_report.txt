@@ -1,0 +1,87 @@
+==============================================================================
+M1 AUDIT (canonical India run: 15 configs x 10 seeds x 8 rungs = 1200 rows)
+==============================================================================
+
+A. LADDER SHAPE  (primary metric: squared-loss skill, macro over series)
+
+best rung per config:
+rung2_series    10
+rung0_none       4
+rung3_cell       1
+
+unimodal (rise-then-fall) configs: 12/15
+
+mean skill by rung (over 15 configs):
+rung
+rung0_none        0.0000
+rung1_global      0.0693
+rung2_series      0.0991
+rung3_cell        0.0944
+rung4_shrunk      0.0862
+rung5_instance    0.0413
+
+fraction of oracle captured by the best feasible rung:
+  mean 0.223  min 0.000  max 0.526
+
+B. PAIRED SEED TESTS  (unit = seed, within config; Holm correction across configs)
+                     contrast  mean_diff  configs_favouring_first  n_configs  n_sig_holm  n_sig_holm_favouring_first
+  rung2_series - rung4_shrunk    0.01287                       14         15          12                          12
+    rung2_series - rung3_cell    0.00467                       14         15          14                          14
+rung2_series - rung5_instance    0.05775                       15         15          15                          15
+    rung3_cell - rung4_shrunk    0.00820                       12         15          12                          11
+rung4_shrunk - rung5_instance    0.04489                       15         15          15                          15
+  rung2_series - rung1_global    0.02981                       14         15          15                          14
+
+C. BLOCK BOOTSTRAP  (unit = 14-day time block; all contrasts vs rung3_cell)
+                mean_diff  mean_lo  mean_hi  configs_CI_excludes_zero   n
+rung                                                                     
+rung1_global      -0.0318  -0.0522  -0.0120                        12  15
+rung2_series       0.0037  -0.0016   0.0096                         3  15
+rung3_cell         0.0000   0.0000   0.0000                         0  15
+rung4_shrunk      -0.0070  -0.0276   0.0109                         6  15
+rung5_instance    -0.0593  -0.1053  -0.0199                        13  15
+
+D. METRIC SENSITIVITY  (does the conclusion depend on the metric or aggregation?)
+  skill_sq_macro     best-rung counts: {'rung2_series': 10, 'rung0_none': 4, 'rung3_cell': 1}
+  skill_sq_pooled    best-rung counts: {'rung2_series': 10, 'rung0_none': 4, 'rung3_cell': 1}
+  skill_mae_macro    best-rung counts: {'rung2_series': 10, 'rung4_shrunk': 2, 'rung0_none': 2, 'rung3_cell': 1}
+  skill_mae_pooled   best-rung counts: {'rung2_series': 10, 'rung4_shrunk': 3, 'rung0_none': 1, 'rung3_cell': 1}
+
+  rung4_shrunk minus rung2_series, by metric (mean over configs):
+    skill_sq_macro     -0.01287
+    skill_sq_pooled    -0.00923
+    skill_mae_macro    -0.00694
+    skill_mae_pooled   -0.00290
+
+E. CROSSING RULE  (is validation-measurable rho predictive of the realised best rung?)
+                                   rho             V    lam     best_rung  fine_minus_coarse
+dataset     baseline          h                                                             
+india_daily operator_schedule 1  0.849  8.750462e+18  0.451    rung0_none             -0.071
+                              2  0.615  1.041264e+19  0.385    rung0_none             -0.055
+                              3  0.472  1.052903e+19  0.318    rung0_none             -0.055
+                              7  0.427  6.144983e+18  0.299    rung0_none             -0.061
+            persistence       1  0.306  2.599737e+17  0.235  rung2_series             -0.019
+                              2  0.269  1.380111e+18  0.208  rung2_series             -0.035
+                              3  0.320  2.735569e+18  0.236  rung2_series             -0.038
+                              7  0.267  2.899974e+18  0.213  rung2_series             -0.034
+            roll7             1  0.305  2.721904e+18  0.230  rung2_series             -0.069
+                              2  0.374  4.028315e+18  0.253  rung2_series             -0.074
+                              3  0.527  8.358409e+18  0.311  rung2_series             -0.060
+                              7  0.271  1.820861e+18  0.210  rung2_series             -0.049
+            snaive7           1  0.311  4.399833e+18  0.229    rung3_cell             -0.047
+                              2  0.335  4.133179e+18  0.238  rung2_series             -0.065
+                              3  0.354  4.156216e+18  0.228  rung2_series             -0.063
+
+  rho < 1 in 15/15 configs; fine rung (rung5) never best: True
+  spearman(rho, rung5 - rung3) = -0.561 (p=0.0297)  <- tests the RANKING claim
+
+F. GATE ADMISSIBILITY  (fraction of gate values outside [0, 1.5] before clipping)
+rung
+oracle_instance    0.7386
+rung0_none         0.0000
+rung1_global       0.0000
+rung2_series       0.0507
+rung3_cell         0.0864
+rung4_shrunk       0.2389
+rung5_instance     0.3991
+rung5b_bagged      0.4174

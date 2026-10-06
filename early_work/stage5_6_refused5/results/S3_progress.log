@@ -1,0 +1,6 @@
+amp= 0.0 n_val=   500 | static=0.0986 free=0.1031 shrunk=0.1161 oracle=0.1325 | free-static=+0.0045 (6/10) shrunk-static=+0.0175 (10/10) | var_within=0.1144 var_est=0.0904 lam=0.56 [77s]
+amp= 0.0 n_val=  2000 | static=0.1245 free=0.1089 shrunk=0.1205 oracle=0.1309 | free-static=-0.0157 (0/10) shrunk-static=-0.0041 (0/10) | var_within=0.1173 var_est=0.0902 lam=0.57 [150s]
+amp= 0.0 n_val=  8000 | static=0.1285 free=0.1140 shrunk=0.1232 oracle=0.1313 | free-static=-0.0145 (0/10) shrunk-static=-0.0054 (0/10) | var_within=0.1139 var_est=0.0852 lam=0.57 [381s]
+amp= 0.0 n_val= 32000 | static=0.1307 free=0.1215 shrunk=0.1253 oracle=0.1320 | free-static=-0.0092 (0/10) shrunk-static=-0.0054 (0/10) | var_within=0.1279 var_est=0.0536 lam=0.70 [746s]
+amp= 0.5 n_val=   500 | static=0.1006 free=0.1045 shrunk=0.1178 oracle=0.1360 | free-static=+0.0039 (5/10) shrunk-static=+0.0172 (10/10) | var_within=0.1150 var_est=0.0906 lam=0.56 [991s]
+amp= 0.5 n_val=  2000 | static=0.1272 free=0.1108 shrunk=0.1227 oracle=0.1343 | free-static=-0.0163 (0/10) shrunk-static=-0.0044 (0/10) | var_within=0.1196 var_est=0.0897 lam=0.57 [1189s]

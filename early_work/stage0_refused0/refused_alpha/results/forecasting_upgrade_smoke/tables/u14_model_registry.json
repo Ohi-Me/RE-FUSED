@@ -1,0 +1,179 @@
+{
+  "Persistence": {
+    "section": "U2",
+    "notes": "yhat(D)=y(D-h); random walk",
+    "n_obs": 45360
+  },
+  "SeasonalNaive": {
+    "section": "U2",
+    "notes": "yhat(D)=y(D-7); m=7",
+    "n_obs": 44856
+  },
+  "Drift": {
+    "section": "U2",
+    "notes": "random walk + trailing 28d slope",
+    "n_obs": 42444
+  },
+  "RollingMean": {
+    "section": "U2",
+    "notes": "trailing mean, per-target window chosen on validation: {'total_generation_mwh': 3, 'avg_market_price': 3}",
+    "n_obs": 45252,
+    "window_by_target": {
+      "total_generation_mwh": 3,
+      "avg_market_price": 3
+    }
+  },
+  "ETS": {
+    "section": "U2",
+    "notes": "Holt-Winters; per-target config selected on validation",
+    "n_obs": 45360,
+    "config_by_target": {
+      "total_generation_mwh": "ETS(trend=add,seasonal=none)",
+      "avg_market_price": "ETS(trend=add,seasonal=none)"
+    }
+  },
+  "ARIMA": {
+    "section": "U2",
+    "notes": "SARIMAX; per-target order selected on validation",
+    "n_obs": 42840,
+    "order_by_target": {
+      "total_generation_mwh": "((1, 0, 0), (1, 0, 0, 7))",
+      "avg_market_price": "((0, 1, 1), (0, 0, 0, 0))"
+    }
+  },
+  "LightGBM": {
+    "section": "U3",
+    "notes": "global model, target normalised by the per-state MASE denominator",
+    "n_obs": 45360
+  },
+  "XGBoost": {
+    "section": "U3",
+    "notes": "global model, target normalised by the per-state MASE denominator",
+    "n_obs": 45360
+  },
+  "CatBoost": {
+    "section": "U3",
+    "notes": "global model, target normalised by the per-state MASE denominator",
+    "n_obs": 45360
+  },
+  "LightGBM-rawlevel": {
+    "section": "U3",
+    "notes": "global model on raw levels \u2014 retained as the U3.2 counterexample",
+    "n_obs": 45360
+  },
+  "Hybrid_Persistence_LGBM": {
+    "section": "U4",
+    "notes": "base + gradient-boosted residual, validation-calibrated shrinkage",
+    "n_obs": 45360
+  },
+  "Hybrid_SeasonalNaive_LGBM": {
+    "section": "U4",
+    "notes": "base + gradient-boosted residual, validation-calibrated shrinkage",
+    "n_obs": 44856
+  },
+  "Hybrid_ETS_LGBM": {
+    "section": "U4",
+    "notes": "base + gradient-boosted residual, validation-calibrated shrinkage",
+    "n_obs": 45360
+  },
+  "Hybrid_Persistence_XGB": {
+    "section": "U4",
+    "notes": "base + gradient-boosted residual, validation-calibrated shrinkage",
+    "n_obs": 45360
+  },
+  "N-BEATS": {
+    "section": "U5",
+    "notes": "global model, instance-normalised windows, lookback=28",
+    "n_obs": 41796
+  },
+  "N-HiTS": {
+    "section": "U5",
+    "notes": "global model, instance-normalised windows, lookback=28",
+    "n_obs": 41796
+  },
+  "TSMixer": {
+    "section": "U5",
+    "notes": "global model, instance-normalised windows, lookback=28",
+    "n_obs": 41796
+  },
+  "PatchTST+MCAG(replica)": {
+    "section": "U6",
+    "notes": "original architecture + original 25-feature input, reproduced on the upgrade grid for reference",
+    "n_obs": 41796
+  },
+  "MCAGv2-base": {
+    "section": "U6",
+    "notes": "carbon-gated PatchTST on instance-normalised windows",
+    "n_obs": 41796
+  },
+  "MCAGv2-A-state": {
+    "section": "U6",
+    "notes": "carbon-gated PatchTST on instance-normalised windows",
+    "n_obs": 41796
+  },
+  "MCAGv2-B-regime": {
+    "section": "U6",
+    "notes": "carbon-gated PatchTST on instance-normalised windows",
+    "n_obs": 41796
+  },
+  "MCAGv2-C-xstate": {
+    "section": "U6",
+    "notes": "carbon-gated PatchTST on instance-normalised windows",
+    "n_obs": 41796
+  },
+  "MCAGv2-D-fusion": {
+    "section": "U6",
+    "notes": "carbon-gated PatchTST on instance-normalised windows",
+    "n_obs": 41796
+  },
+  "MCAGv2-E-multitask": {
+    "section": "U6",
+    "notes": "carbon-gated PatchTST on instance-normalised windows",
+    "n_obs": 41796
+  },
+  "MCAGv2-F-best": {
+    "section": "U6",
+    "notes": "validation-selected combination: {'regime_emb': True, 'cross_state': True, 'fusion': True, 'multitask': -1}",
+    "n_obs": 41796
+  },
+  "XS_A-pooled-global": {
+    "section": "U7",
+    "notes": "persistence-residual LightGBM, state-awareness ablation",
+    "n_obs": 45360
+  },
+  "XS_B-state-specific": {
+    "section": "U7",
+    "notes": "persistence-residual LightGBM, state-awareness ablation",
+    "n_obs": 45360
+  },
+  "XS_C-global+state": {
+    "section": "U7",
+    "notes": "persistence-residual LightGBM, state-awareness ablation",
+    "n_obs": 45360
+  },
+  "XS_D-global+state+regime": {
+    "section": "U7",
+    "notes": "persistence-residual LightGBM, state-awareness ablation",
+    "n_obs": 45360
+  },
+  "Ensemble-SimpleAvg": {
+    "section": "U9",
+    "notes": "candidates=['Persistence', 'LightGBM', 'Hybrid_Persistence_XGB', 'N-BEATS', 'MCAGv2-D-fusion', 'XS_B-state-specific']",
+    "n_obs": 41796
+  },
+  "Ensemble-ValWeighted": {
+    "section": "U9",
+    "notes": "candidates=['Persistence', 'LightGBM', 'Hybrid_Persistence_XGB', 'N-BEATS', 'MCAGv2-D-fusion', 'XS_B-state-specific']",
+    "n_obs": 41796
+  },
+  "Ensemble-Stacked": {
+    "section": "U9",
+    "notes": "candidates=['Persistence', 'LightGBM', 'Hybrid_Persistence_XGB', 'N-BEATS', 'MCAGv2-D-fusion', 'XS_B-state-specific']",
+    "n_obs": 41796
+  },
+  "Hybrid_Pers_LGBM_seedavg": {
+    "section": "U11",
+    "notes": "mean forecast over 8 seeds, tuned hyperparameters",
+    "n_obs": 45360
+  }
+}

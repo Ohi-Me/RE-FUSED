@@ -1,0 +1,99 @@
+c00:5-Min::timization — Alpha Release<br>|    5-Minute Settlement Proposal · Progressi
+c00:5-Min::">|    <b>🆕 Alpha Additions</b><br>5-Min PA-LMP_t · BiLSTM-Attn<br>TFT-Full
+c00:5-Min::LMP** | Daily deviation signal | **5-Min PA-LMP_t** with monsoon RE credit 
+c00:5-Min::recast Error metric ||| **N4** | **5-Min Settlement** | Not present | **New
+c00:5-min::— CERC-compatible proposal vs IEX 15-min DSM ||| **N5** | **Arch Comparison
+c00:5-min::om 4.03% coal-critical frequency · 5-min PA-LMP_t feeds adaptive-λ dispatch
+c00:intraday::** | **GCAL** | Daily CFC | CFC at intraday resolution; Carbon Forecast Error 
+c00:5-Minute::timization — Alpha Release<br>|    5-Minute Settlement Proposal · Progressive 
+c00:adaptive::l frequency · 5-min PA-LMP_t feeds adaptive-λ dispatch|</div>|
+c04:5-Min:: monsoon RE credit deduction | N4: 5-Min settlement signal ||| `monsoon_re_
+c04:intraday::day rolling window (proxy for 4-hr intraday) | N4: intraday tail-risk ||| `ci_
+c04:intraday::ow (proxy for 4-hr intraday) | N4: intraday tail-risk ||| `ci_intraday_varianc
+c04:intraday::) | N4: intraday tail-risk ||| `ci_intraday_variance` | σ(CI) over 7-day rolli
+c07:5-min::ature Engineering (V2 base + Alpha 5-min extensions) ──────|def prep(df, re
+c07:5-min::behaviour; do|    # NOT claim true 5-minute / intraday results anywhere in 
+c07:intraday::lly a 6-DAY rolling|    # q90; `ci_intraday_variance` is a 7-DAY rolling std. 
+c07:intraday::do|    # NOT claim true 5-minute / intraday results anywhere in the paper.|   
+c07:intraday::g 4-hr CVaR proxy (6-day rolling = intraday 4-hr analog at daily resolution)| 
+c07:intraday::=1).quantile(0.90))|    )|    # CI intraday variance: 7-day rolling std of car
+c07:intraday::std of carbon intensity|    df['ci_intraday_variance'] = (|        df.sort_val
+c07:intraday::PHA_FEATS = ['rolling_cvar4hr','ci_intraday_variance','re_ramp_risk','monsoon_
+c08:5-Min::('RE-FUSED-Alpha — Dataset Overview & 5-Min Features: India 18-State Grid',|  
+c08:5-Min::.set_ylabel('₹/MWh')|ax.set_title('5-Min Feature: Rolling CVaR4hr', fontwei
+c08:5-min::or='#4CAF50',lw=2,label='PA-LMP_t (5-min, N4)')|ax.set_xlabel('Year'); ax.s
+c08:intraday::n = df_train.groupby('season')['ci_intraday_variance'].mean().sort_values()|ax
+c08:Intraday:: alpha=0.88)|ax.set_ylabel('Avg CI Intraday Variance')|ax.set_title('CI Intrad
+c08:Intraday::traday Variance')|ax.set_title('CI Intraday Variance by Season\n(MCAG-Regime g
+c09:intraday::ghter hedge during high-volatility intraday coal-stress windows.|
+c09:adaptive::{1-\alpha}$$||**Alpha extension:** adaptive `lambda_t` modulates the PPO penal
+c12:5-min:: — price direction correctness for 5-min settlement|- **Carbon Forecast Err
+c12:intraday::me** · MCAG-5Min | Regime-aware vs intraday carbon gate |||### New metrics (Al
+c13:intraday::n',|         'rolling_cvar4hr','ci_intraday_variance','re_ramp_risk',|        
+c13:intraday::            ['rolling_cvar4hr','ci_intraday_variance','re_ramp_risk',|        
+c14:5min::n FEATS][:NC]]|        elif mode=='5min' : C = X[:,CIDX_5MIN].copy()|     
+c18:5min::(NF,len(CIDX_5MIN)).to(DEVICE),   '5min'),|}|ptst_results={}|for name,(mod
+c21:5-min::ice** ||| **MCAG-5Min** | Intraday 5-min carbon variance signals | Δ < 0 → 
+c21:intraday:: carbon variance signals | Δ < 0 → intraday resolution adds value (N4) ||| **M
+c21:Intraday::rbon ≠ price** ||| **MCAG-5Min** | Intraday 5-min carbon variance signals | Δ 
+c22:5-min::     ('5min','MCAG-5Min  (intraday 5-min carbon)   ')]:|    print(f"\n  Run
+c22:5min::nly)      '),|                   ('5min','MCAG-5Min  (intraday 5-min carbo
+c22:5min::_mape'] -abl['real']['avg_mape']|d_5min  =abl['5min']['avg_mape']  -abl['r
+c22:5min::['real']['avg_mape']|d_5min  =abl['5min']['avg_mape']  -abl['real']['avg_m
+c22:5min::f"  MCAG-5Min   (intraday) : {abl['5min']['avg_mape']:.2f}%  [Δ={d_5min:+.
+c22:5min::l['5min']['avg_mape']:.2f}%  [Δ={d_5min:+.2f}%]  ← N4 key test")|print(f" 
+c22:5min:: BS for clearer separation)")|if d_5min<0:  print(f"  ✓ N4 SUPPORTED: intr
+c22:5min::aday carbon resolution adds {abs(d_5min):.2f}pp improvement")|else:       
+c22:5min::RAL: daily carbon sufficient (Δ={d_5min:+.2f}%)")||# N2 vs N4 cross-test|m
+c22:intraday::              ('5min','MCAG-5Min  (intraday 5-min carbon)   ')]:|    print(f"\
+c22:intraday:: key test")|print(f"  MCAG-5Min   (intraday) : {abl['5min']['avg_mape']:.2f}% 
+c22:intraday::5min<0:  print(f"  ✓ N4 SUPPORTED: intraday carbon resolution adds {abs(d_5min
+c23:5min::rice']['avg_mape'],|          abl['5min']['avg_mape'],abl['regime']['avg_m
+c23:5min::ross_vals=[tft_c_lc,mcag_r_lc,abl['5min']['per_target']['log_carbon']['MAP
+c23:intraday::MCAG-Real\n(dynamic)','MCAG-5Min\n(intraday)']|cross_vals=[tft_c_lc,mcag_r_lc,
+c24:Adaptive::-|## Section 5 — DRO-CVaR-PPO with Adaptive-λ (Alpha N4)||$$\lambda_t = \lambd
+c24:Adaptive::806, λ=0.10 (V2)|3. **DRO-CVaR-PPO Adaptive-λ** — rho\*=0.0806, λ modulated by
+c25:Adaptive::f}  λ_base={LAMBDA_BASE}")|print(f"Adaptive vol_weight={vol_weight:.4f}")|
+c26:adaptive::──|def run_ppo(df_tr,df_te,use_dro,adaptive_lambda=False,n_iter=50,n_steps=128
+c26:adaptive::HO if use_dro else 0.0)|        if adaptive_lambda and use_dro:|            lm
+c26:adaptive::λ')|print("\nRunning DRO-CVaR-PPO (adaptive λ, Alpha N4)...")|res_dro_adp=run_
+c26:adaptive::_ppo(df_train,df_test,use_dro=True,adaptive_lambda=True,label='DRO-Adaptive-λ'
+c26:Adaptive::aining: Standard / DRO-Fixed / DRO-Adaptive ───────────|def run_ppo(df_tr,df_t
+c26:Adaptive::ue,adaptive_lambda=True,label='DRO-Adaptive-λ')|
+c27:Adaptive::PPO Alpha — Standard vs Fixed-λ vs Adaptive-λ")|print(f"{'='*80}")|print(f"  {
+c27:Adaptive::print(f"  σ_reward reduction — DRO-Adaptive : {std_red_adp:+.1f}%")|print(f"  
+c27:Adaptive:: : {std_red_adp:+.1f}%")|print(f"  Adaptive-λ additional gain        : {std_re
+c28:intraday::st vol feeds λ_t",|     f"  Higher intraday vol → tighter hedge",|     f"  Pro
+c28:Adaptive::-CVaR-PPO — Standard vs Fixed-λ vs Adaptive-λ',|             fontsize=13,fontw
+c28:Adaptive::{std_red_dro:+.1f}%",|     f"  DRO Adaptive : {std_red_adp:+.1f}%  (additional
+c29:5-Min::---|## Section 6 — PA-LMP & 5-Minute Settlement Deep Analysis (N1 + 
+c29:5-Minute::---|## Section 6 — PA-LMP & 5-Minute Settlement Deep Analysis (N1 + N4)
+c30:5-Min::# ─── Cell 6.1 — PA-LMP + 5-Min Settlement Analysis (Alpha) ──────
+c30:5-Min::title('Section 6 (Alpha): PA-LMP & 5-Min Settlement Analysis — N1 + N4',|  
+c30:5-min::or='#4CAF50',lw=2,label='PA-LMP_t (5-min N4)')|ax3.fill_between(monthly['t'
+c30:5min::avefig(OUT_DIR/'figures'/'S6_palmp_5min.png',dpi=150,bbox_inches='tight',f
+c30:5min::w(); print("Figure saved: S6_palmp_5min.png")|
+c32:5min:: 'price':abl['price']['avg_mape'],'5min':abl['5min']['avg_mape'],|        
+c32:5min::l['price']['avg_mape'],'5min':abl['5min']['avg_mape'],|                   
+c32:5min::|                           'delta_5min_vs_real':round(d_5min,3),|        
+c32:5min::      'delta_5min_vs_real':round(d_5min,3),|                           'de
+c32:5min::med':(d_price>0),'n4_supported':(d_5min<0),|                           'tf
+c32:5min::ion':'N4 Ablation','Metric':'delta_5min_vs_real','Value':d_5min,'Unit':'pp
+c32:5min::ic':'delta_5min_vs_real','Value':d_5min,'Unit':'pp'})|rows.append({'Sectio
+c32:5min::,'Metric':'n4_supported','Value':d_5min<0,'Unit':'bool'})|rows.append({'Se
+c32:intraday::a_features':['rolling_cvar4hr','ci_intraday_variance',|                       
+c32:adaptive:: not in('rh','cvh')},|        'DRO_adaptive_lambda':{k:v for k,v in res_dro_ad
+c32:adaptive::n':'PPO','Metric':'sigma_reduction_adaptive','Value':std_red_adp,'Unit':'%'})|
+c33:5-Min::day resolution + CFE metric ||| N4 5-Min Settlement | Not present | CERC-co
+c33:5-min::|---||| N1 PA-LMP | Daily signal | 5-min PA-LMP_t + monsoon RE credit ||| N
+c33:Intraday::oss-test ||| N3 GCAL | Daily CFC | Intraday resolution + CFE metric ||| N4 5-M
+c33:adaptive::esent | CERC-compatible proposal + adaptive-λ dispatch ||| N5 Arch Comparison 
+c34:5-min::remium)",True),|    ('N4 PA-LMP_t (5-min)',|     f"₹{S['palmp_gcal']['mean_
+c34:5min::l)={S['mcag_ablation_5way']['delta_5min_vs_real']:+.3f}pp  "|     f"N4={'S
+c34:Adaptive::ic competitive'}",True),|    ('DRO Adaptive-λ dispatch',|     f"σ_reduction DR
+c34:Adaptive::duction_dro_pct']:+.1f}%  "|     f"Adaptive={S['dispatch_rl']['std_reduction_a
+c35:5-Min::ry\n'|             'DRO-CVaR-PPO + 5-Min PA-LMP + GCAL + Staged Arch Compar
+c35:5-Min::'₹/MWh'); ax2.set_title('Fig B: N4 5-Min Settlement',fontweight='bold')|ax2
+c35:5min::rice']['avg_mape'],|          abl['5min']['avg_mape'],abl['regime']['avg_m
+c35:Adaptive::       (res_dro_adp,'#4CAF50','DRO Adaptive-λ')]:|    ax5.plot(ndimage.uniform
+c35:Adaptive::ixed'),(res_dro_adp,'#4CAF50','DRO Adaptive')]:|    ax6.plot(res['cvh'],color=

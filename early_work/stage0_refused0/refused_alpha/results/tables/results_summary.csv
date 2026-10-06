@@ -1,0 +1,33 @@
+Section,Metric,Value,Unit
+PA-LMP/GCAL,mean_base_lmp,9347.1,-
+PA-LMP/GCAL,mean_palmp,12875.8,-
+PA-LMP/GCAL,mean_pa_lmp_t,12875.5,-
+PA-LMP/GCAL,palmp_premium_pct,37.75,-
+PA-LMP/GCAL,pa_lmp_t_premium_pct,37.75,-
+PA-LMP/GCAL,mean_carbon_price_inr_per_tco2,2239.0,-
+PA-LMP/GCAL,mean_cfc_value_inr,63.0,-
+DRO,rho*,0.0806,-
+DRO,coal_freq_pct,4.028,%
+N5 Arch,Stage2_winner,BiLSTM-Deep,-
+N5 Arch,Stage3_winner,TFT-Lite,-
+N5 Arch,Stage4_winner,MCAG-Real,-
+N5 Arch,Overall_winner,MCAG-Real,-
+Forecasting,PatchTST_best_avgMAPE,28.2,%
+Forecasting,PatchTST_best_MASE_observable,3.4748,ratio
+Forecasting,BiLSTM_best_avgMAPE,32.69,%
+Forecasting,BiLSTM_best_MASE_observable,3.5281,ratio
+Forecasting,TFT_best_avgMAPE,34.88,%
+Forecasting,TFT_best_MASE_observable,3.538,ratio
+N2 Ablation,delta_price_vs_real,2.9299999999999997,pp
+N2 Ablation,n2_confirmed,True,bool
+N4 Ablation,delta_5min_vs_real,7.460000000000001,pp
+N4 Ablation,n4_supported,False,bool
+PPO,sigma_reduction_dro,-4.969574036511144,%
+PPO,sigma_reduction_vol_scaled,-11.561866125760643,%
+PPO,sigma_reduction_regime_coupled,-22.51521298174442,%
+Baseline Anchor,total_generation_mwh_naive_MASE,0.494,ratio
+Baseline Anchor,total_generation_mwh_snaive_MASE,0.9942,ratio
+Baseline Anchor,total_generation_mwh_beats_snaive,False,bool
+Baseline Anchor,avg_market_price_naive_MASE,0.0753,ratio
+Baseline Anchor,avg_market_price_snaive_MASE,0.5269,ratio
+Baseline Anchor,avg_market_price_beats_snaive,False,bool

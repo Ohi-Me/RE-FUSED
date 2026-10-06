@@ -1,0 +1,31 @@
+dataset,file,rows,cols,columns,avg_missing_percent
+generation,..\cleaned\IDP\daily-power-generation.csv,2583818,12,"id, date, region, state_name, state_code, sector, station_type, power_station, power_station_unit, monitored_capacity, todays_gen_prgm, todays_gen_act",0.1725
+outage,..\cleaned\IDP\daily-power-outage.csv,2585703,15,"id, date, region, state_name, state_code, sector, station_type, power_station, power_station_unit, outage_type, monitored_capacity, cap_under_outage, outage_date, expected_sync_date, remarks",22.699333333333335
+coal_stock,..\cleaned\IDP\daily-coal-stocks.csv,362035,22,"id, date, state_name, state_code, power_station_name, sector, utility, mode_of_transport, capacity, daily_requirement, daily_receipt, daily_consumption, req_normative_stock, normative_stock_days, indigenous_stock, import_stock, total_stock, stock_days, plf_prcnt, actual_vs_normative_stock_prcnt, is_critical, remarks",16.97681818181818
+renewable,..\cleaned\IDP\daily-renewable-energy-generation.csv,67014,9,"id, date, state_name, state_code, region, wind_energy, solar_energy, other_renewable_energy, total_renewable_energy",0.32
+co2,..\cleaned\CEA Data\CO2_Database_V_21.0 (1).xlsx,2681,17,"s_no, name, unit_no, dt__comm, capacity_as_on_31.03.2025_mw, state, sector, system, type, fuel_1, fuel_2, 2024_25
+
+net_
+generation_
+gwh, 2024_25
+
+fuel_1_
+consumption
+
+if_coal:_only_national_coal, 2024_25
+fuel_1_consumption
+
+only_for_imported_coal_kilotonne, 2024_25
+
+fuel_2_consumption, 2024_25
+
+absolute
+emissions
+t_co2, 2024_25
+
+specific_
+emissions
+t_co2/mwh",7.464117647058823
+price_sample,..\cleaned\prices of energy\2018\jan.csv,2945,8,"delivery, hour, time_block, purchase_bid_mwh, sell_bid_mwh, mcv_mwh, scheduled_volume_mwh, mcp_rs/mwh",0.0
+temperature,..\cleaned\IDP\wheather\temperature.csv,264576,13,"id, date, station_name, station_code, parameter, average_temperature, standard_deviation, highest_temperature, lowest_temperature, state_name, district_name, state_code, district_code",6.763076923076923
+rainfall,..\cleaned\IDP\wheather\daily-rainfall-at-state-level.csv,204876,8,"id, date, state_code, state_name, actual, rfs, normal, deviation",4.0
