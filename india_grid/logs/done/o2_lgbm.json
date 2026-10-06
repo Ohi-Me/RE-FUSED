@@ -1,0 +1,12 @@
+{
+ "stage": "o2_lgbm",
+ "state": "done",
+ "returncode": 0,
+ "queue": "cpu",
+ "seconds": 1599.6,
+ "finished": "2026-09-17T16:32:42",
+ "host": "master",
+ "pbs_job": "31772.master",
+ "cuda_visible_devices": "MIG-4d38d5cf-c802-5308-80b8-251f3cec7480",
+ "log": "logs/stages/o2_lgbm.log"
+}

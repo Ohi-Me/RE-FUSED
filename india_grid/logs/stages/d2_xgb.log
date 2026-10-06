@@ -1,0 +1,33 @@
+
+===== d2_xgb start 2026-09-17T21:17:30 host=master job=31793.master
+  T1 xgb seed 0 done [118s]
+  T1 xgb seed 1 done [161s]
+  T1 xgb seed 2 done [198s]
+  T1 xgb seed 3 done [237s]
+  T1 xgb seed 4 done [272s]
+T1 xgb done, depth {1: 6, 2: 6, 3: 6} 272.6s
+  T2 xgb seed 0 done [131s]
+  T2 xgb seed 1 done [174s]
+  T2 xgb seed 2 done [215s]
+  T2 xgb seed 3 done [255s]
+  T2 xgb seed 4 done [301s]
+T2 xgb done, depth {1: 6, 2: 6, 3: 6} 301.7s
+  T3 xgb seed 0 done [98s]
+  T3 xgb seed 1 done [130s]
+  T3 xgb seed 2 done [160s]
+  T3 xgb seed 3 done [194s]
+  T3 xgb seed 4 done [222s]
+T3 xgb done, depth {1: 6, 2: 6, 3: 6} 222.7s
+  T4 xgb seed 0 done [64s]
+  T4 xgb seed 1 done [86s]
+  T4 xgb seed 2 done [105s]
+  T4 xgb seed 3 done [129s]
+  T4 xgb seed 4 done [150s]
+T4 xgb done, depth {1: 6, 2: 6, 3: 6} 150.0s
+  T5 xgb seed 0 done [31s]
+  T5 xgb seed 1 done [40s]
+  T5 xgb seed 2 done [50s]
+  T5 xgb seed 3 done [60s]
+  T5 xgb seed 4 done [69s]
+T5 xgb done, depth {1: 6, 2: 6, 3: 6} 69.3s
+===== d2_xgb end 2026-09-17T21:34:27 rc=0 seconds=1017

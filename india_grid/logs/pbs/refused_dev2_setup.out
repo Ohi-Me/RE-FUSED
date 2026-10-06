@@ -1,0 +1,135 @@
+job 31792.master on master at 2026-09-17T21:15:34+05:30; python /Data3/<hpc-user>/.conda/envs/refused_h100/bin/python
+CUDA_VISIBLE_DEVICES=MIG-4d38d5cf-c802-5308-80b8-251f3cec7480
+GPU 0: NVIDIA H100 NVL (UUID: GPU-28bcc0ad-8e90-efc9-645e-b546abe3fefc)
+  MIG 3g.47gb     Device  0: (UUID: MIG-4d38d5cf-c802-5308-80b8-251f3cec7480)
+  MIG 3g.47gb     Device  1: (UUID: MIG-9b919b48-2562-5791-8778-080ddb153351)
+GPU 1: NVIDIA H100 NVL (UUID: GPU-6f505f9b-9b65-a96d-bd8c-8c8671f72cda)
+  MIG 3g.47gb     Device  0: (UUID: MIG-2f219700-5dc6-59eb-81ef-2bb9414d3ec0)
+  MIG 3g.47gb     Device  1: (UUID: MIG-569925cc-5048-5da0-9de5-70d720535aba)
+GPU 2: NVIDIA H100 PCIe (UUID: GPU-63af0eea-3926-506e-5128-9a7f8af88ea6)
+  MIG 3g.40gb     Device  0: (UUID: MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e)
+  MIG 3g.40gb     Device  1: (UUID: MIG-110b5c2d-162d-5ada-814c-2aef6f9812f1)
+GPU 3: NVIDIA H100 PCIe (UUID: GPU-a2ee61d0-205e-2913-d3f8-10c7e81b6304)
+  MIG 3g.40gb     Device  0: (UUID: MIG-5eef67d0-7e58-5016-8973-1bf2618f6d54)
+  MIG 3g.40gb     Device  1: (UUID: MIG-98a11fbb-7fcd-5fc9-b30f-f199445f5ddb)
+GPU 4: NVIDIA H100 NVL (UUID: GPU-f950c0e9-ae75-9970-ac82-b1a4bf5d4299)
+  MIG 1g.24gb     Device  0: (UUID: MIG-004fd09c-9a79-5488-bc35-54fb8de861f1)
+  MIG 1g.24gb     Device  1: (UUID: MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e)
+  MIG 1g.24gb     Device  2: (UUID: MIG-c7e12075-054a-5bc9-89e9-896eab5f7528)
+  MIG 1g.24gb     Device  3: (UUID: MIG-120f9b9b-0801-5682-9fd3-e1539b9823c6)
+GPU 5: NVIDIA H100 NVL (UUID: GPU-e1df975a-3c1b-ed1f-8803-08f5c22da8ae)
+GPU 6: NVIDIA H100 NVL (UUID: GPU-494e58c5-04f6-cd47-44b4-50803c2dfacb)
+GPU 7: NVIDIA H100 NVL (UUID: GPU-20df829c-b962-445a-1248-1e4e638cbc38)
+[2026-09-17T21:15:39] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-4d38d5cf-c802-5308-80b8-251f3cec7480), torch 2.5.1+cu121
+[2026-09-17T21:15:39] start d2_setup [cpu] codes/scripts/dev2/d2_00_setup.py
+Collecting xgboost<4,>=2.1
+  Downloading xgboost-3.2.0-py3-none-manylinux_2_28_x86_64.whl.metadata (2.1 kB)
+Requirement already satisfied: numpy in /Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages (from xgboost<4,>=2.1) (2.2.6)
+Requirement already satisfied: nvidia-nccl-cu12 in /Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages (from xgboost<4,>=2.1) (2.21.5)
+Requirement already satisfied: scipy in /Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages (from xgboost<4,>=2.1) (1.15.3)
+Downloading xgboost-3.2.0-py3-none-manylinux_2_28_x86_64.whl (131.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 131.7/131.7 MB 36.3 MB/s  0:00:03
+Installing collected packages: xgboost
+Successfully installed xgboost-3.2.0
+ 
+
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+Fetching 4 files:  25%|██▌       | 1/4 [00:00<00:00,  3.24it/s]
+Fetching 4 files: 100%|██████████| 4/4 [00:12<00:00,  3.10s/it]
+Fetching 4 files: 100%|██████████| 4/4 [00:12<00:00,  3.10s/it]
+amazon/chronos-2 {'path': '/Data3/<hpc-user>/RefusedH100/data/hf_cache/hub/models--amazon--chronos-2/snapshots/29ec3766d36d6f73f0696f85560a422f50e8498c', 'bytes': 477940831}
+
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]
+Fetching 4 files:  25%|██▌       | 1/4 [00:00<00:00,  3.62it/s]
+Fetching 4 files: 100%|██████████| 4/4 [00:16<00:00,  4.03s/it]
+Fetching 4 files: 100%|██████████| 4/4 [00:16<00:00,  4.03s/it]
+amazon/chronos-bolt-base {'path': '/Data3/<hpc-user>/RefusedH100/data/hf_cache/hub/models--amazon--chronos-bolt-base/snapshots/5d9f166d69f47aef3401367a7b842e78fe97b121', 'bytes': 821214877}
+{
+ "started": "2026-09-17T21:15:39",
+ "xgboost": "3.2.0",
+ "amazon/chronos-2": {
+  "path": "/Data3/<hpc-user>/RefusedH100/data/hf_cache/hub/models--amazon--chronos-2/snapshots/29ec3766d36d6f73f0696f85560a422f50e8498c",
+  "bytes": 477940831
+ },
+ "amazon/chronos-bolt-base": {
+  "path": "/Data3/<hpc-user>/RefusedH100/data/hf_cache/hub/models--amazon--chronos-bolt-base/snapshots/5d9f166d69f47aef3401367a7b842e78fe97b121",
+  "bytes": 821214877
+ },
+ "numpy": "2.2.6",
+ "torch": "2.5.1+cu121",
+ "finished": "2026-09-17T21:16:17"
+}
+[2026-09-17T21:16:17] end d2_setup rc=0 38s
+[2026-09-17T21:16:17] start d2_smoke [gpu] codes/scripts/dev2/d2_smoke.py
+=== smoke: d2_01_xgb.py T5 --smoke
+  T5 xgb seed 0 done [20s]
+T5 xgb done, depth {1: 6, 2: 6, 3: 6} 20.1s
+=== smoke end rc=0 21s
+=== smoke: d2_02_nf_models.py nhits,tide,bitcn,nbeatsx T5 --smoke
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+You are using a CUDA device ('NVIDIA H100 NVL MIG 3g.47gb') that has Tensor Cores. To properly utilize them, you should set `torch.set_float32_matmul_precision('medium' | 'high')` which will trade-off precision for performance. For more details, read https://pytorch.org/docs/stable/generated/torch.set_float32_matmul_precision.html#torch.set_float32_matmul_precision
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=20` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T5 window 28: val pinball 0.5726 [8s]
+  nhits T5 seed 0: 28431 rows [8s]
+nhits T5 done, window 28 7.9s
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=20` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T5 window 28: val pinball 0.6312 [3s]
+  tide T5 seed 0: 28431 rows [3s]
+tide T5 done, window 28 3.0s
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=20` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T5 window 28: val pinball 0.6511 [3s]
+  bitcn T5 seed 0: 28431 rows [3s]
+bitcn T5 done, window 28 3.6s
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=20` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T5 window 28: val pinball 0.5367 [3s]
+  nbeatsx T5 seed 0: 28431 rows [3s]
+nbeatsx T5 done, window 28 3.1s
+=== smoke end rc=0 19s
+=== smoke: d2_03_chronos.py chronos2,chronos_base T5 --smoke
+
+Loading weights:   0%|          | 0/170 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 170/170 [00:00<00:00, 2283.78it/s]
+  T5 chronos2 cross_learning=False: val MASE 1.9371 [4s]
+  T5 chronos2 cross_learning=True: val MASE 1.9534 [5s]
+T5 chronos2 done, cross_learning False 4.7s
+
+Loading weights:   0%|          | 0/269 [00:00<?, ?it/s]
+Loading weights:  55%|█████▍    | 147/269 [00:00<00:00, 1463.51it/s]
+Loading weights: 100%|██████████| 269/269 [00:00<00:00, 1364.63it/s]
+T5 chronos_base 195 rows 3s
+=== smoke end rc=0 12s
+=== smoke: o3_01_lamcag.py T5 mcag_instance_sd 1
+  T5 mcag_instance_sd seed 0: epochs 1 es 0.2627 [10s]
+T5 mcag_instance_sd done 11s
+=== smoke end rc=0 13s
+SMOKE_OK
+[2026-09-17T21:17:22] end d2_smoke rc=0 65s
+[2026-09-17T21:17:22] ALL_REQUESTED_STAGES_DONE d2_setup,d2_smoke

@@ -1,0 +1,2203 @@
+job 31823.master on master at 2026-09-18T10:10:18+05:30; python /Data3/<hpc-user>/.conda/envs/refused_h100/bin/python
+CUDA_VISIBLE_DEVICES=MIG-4d38d5cf-c802-5308-80b8-251f3cec7480
+GPU 0: NVIDIA H100 NVL (UUID: GPU-28bcc0ad-8e90-efc9-645e-b546abe3fefc)
+  MIG 3g.47gb     Device  0: (UUID: MIG-4d38d5cf-c802-5308-80b8-251f3cec7480)
+  MIG 3g.47gb     Device  1: (UUID: MIG-9b919b48-2562-5791-8778-080ddb153351)
+GPU 1: NVIDIA H100 NVL (UUID: GPU-6f505f9b-9b65-a96d-bd8c-8c8671f72cda)
+  MIG 3g.47gb     Device  0: (UUID: MIG-2f219700-5dc6-59eb-81ef-2bb9414d3ec0)
+  MIG 3g.47gb     Device  1: (UUID: MIG-569925cc-5048-5da0-9de5-70d720535aba)
+GPU 2: NVIDIA H100 PCIe (UUID: GPU-63af0eea-3926-506e-5128-9a7f8af88ea6)
+  MIG 3g.40gb     Device  0: (UUID: MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e)
+  MIG 3g.40gb     Device  1: (UUID: MIG-110b5c2d-162d-5ada-814c-2aef6f9812f1)
+GPU 3: NVIDIA H100 PCIe (UUID: GPU-a2ee61d0-205e-2913-d3f8-10c7e81b6304)
+  MIG 3g.40gb     Device  0: (UUID: MIG-5eef67d0-7e58-5016-8973-1bf2618f6d54)
+  MIG 3g.40gb     Device  1: (UUID: MIG-98a11fbb-7fcd-5fc9-b30f-f199445f5ddb)
+GPU 4: NVIDIA H100 NVL (UUID: GPU-f950c0e9-ae75-9970-ac82-b1a4bf5d4299)
+  MIG 1g.24gb     Device  0: (UUID: MIG-004fd09c-9a79-5488-bc35-54fb8de861f1)
+  MIG 1g.24gb     Device  1: (UUID: MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e)
+  MIG 1g.24gb     Device  2: (UUID: MIG-c7e12075-054a-5bc9-89e9-896eab5f7528)
+  MIG 1g.24gb     Device  3: (UUID: MIG-120f9b9b-0801-5682-9fd3-e1539b9823c6)
+GPU 5: NVIDIA H100 NVL (UUID: GPU-e1df975a-3c1b-ed1f-8803-08f5c22da8ae)
+GPU 6: NVIDIA H100 NVL (UUID: GPU-494e58c5-04f6-cd47-44b4-50803c2dfacb)
+GPU 7: NVIDIA H100 NVL (UUID: GPU-20df829c-b962-445a-1248-1e4e638cbc38)
+[2026-09-18T10:10:24] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-4d38d5cf-c802-5308-80b8-251f3cec7480), torch 2.5.1+cu121
+[2026-09-18T10:10:24] start c_freeze [cpu] run_all.py _internal freeze
+FROZEN {"time": "2026-09-18T10:10:24", "sha256": "e2122f04b88c25d6387d54bab6a2b8cc68cdd9212fdee4bbd8265a2287306ac2", "commit": "4d3807ed275342c1f83f2e7009f094e838f20bad", "host": "master", "pbs_job": "31823.master"}
+[2026-09-18T10:10:24] end c_freeze rc=0 0s
+[2026-09-18T10:10:24] start c_leakage [cpu] codes/tests/test_leakage.py
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 7.29653033  0.84126868  2.14986142 ...  5.65648252  9.15251295
+ -0.72436771]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 5.06721362  4.70789877  9.13292284 ... 11.45299612  8.86889242
+  8.89675549]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[287.35598421 249.17411262 165.45181159 ... 184.15245081 237.99257971
+ 272.32702239]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[1373.63102406 1507.59481421 2121.46871016 ... 1799.00437262 1523.45581129
+ 2032.02718248]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+Traceback (most recent call last):
+  File "/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py", line 56, in <module>
+    main()
+  File "/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py", line 47, in main
+    assert bad.empty, f"{tid}: features changed after perturbing unpublished data: {bad.to_dict()}"
+AssertionError: T1: features changed after perturbing unpublished data: {'y_l0': 0.26215286956448774, 'y_l1': 0.31202601305473804, 'y_l2': 0.15923359484657834, 'y_l3': 0.46610013468014877, 'y_l4': 0.3050837245179162, 'y_l5': 0.3195212697283246, 'y_l6': 0.2810944735177433, 'y_l7': 0.6016929011325567, 'y_l8': 0.8983020777471968, 'y_l9': 0.449044483052218, 'y_l10': 0.41205904277786387, 'y_l11': 0.4007124787012559, 'y_l12': 0.3738424873391678, 'y_l13': 0.3584620823749691, 'y_base_z': 1.1993940973516826, 'y_std7': 0.25498861754981406, 'x_dem_energy_met_gwh_last': 1.1758449642909476, 'x_dem_energy_met_gwh_m7': 1.1993940973516826, 'x_dem_energy_met_gwh_d7': 0.2621528695644883, 'x_dem_max_demand_mw_last': 0.5163777417329252, 'x_dem_max_demand_mw_m7': 0.5591221840302207, 'x_dem_max_demand_mw_d7': 0.1622622559059086, 'x_dem_energy_shortage_gwh_last': 1.1180722839489605, 'x_dem_energy_shortage_gwh_m7': 1.0405911005242832, 'x_dem_energy_shortage_gwh_d7': 0.33213858049751166, 'x_dev_drawal_schedule_gwh_last': 0.9894560061349951, 'x_dev_drawal_schedule_gwh_m7': 1.0007719766303431, 'x_dev_drawal_schedule_gwh_d7': 0.128930997225597, 'x_dev_od_ud_gwh_last': 0.40489593100851806, 'x_dev_od_ud_gwh_m7': 0.29873462476518864, 'x_dev_od_ud_gwh_d7': 0.35060588744342, 'x_dev_actual_drawal_gwh_last': 0.7505207247529639, 'x_dev_actual_drawal_gwh_m7': 0.8451889170474846, 'x_dev_actual_drawal_gwh_d7': 0.23866498145416315, 'x_reg_wind_gwh_last': 0.050436297100321825, 'x_reg_wind_gwh_m7': 0.03614316065178946, 'x_reg_wind_gwh_d7': 0.02900571315090783, 'x_reg_solar_gwh_last': 0.4419888998281922, 'x_reg_solar_gwh_m7': 0.3706026761860245, 'x_reg_solar_gwh_d7': 0.07855940870960199, 'x_reg_hydro_gwh_last': 0.0613420552067383, 'x_reg_hydro_gwh_m7': 0.05869432100114724, 'x_reg_hydro_gwh_d7': 0.03288393699684078, 'x_reg_energy_met_gwh_last': 0.4229636239601906, 'x_reg_energy_met_gwh_m7': 0.4300585807368926, 'x_reg_energy_met_gwh_d7': 0.11456111998311558, 'x_nat_energy_met_gwh_last': 0.602466449317115, 'x_nat_energy_met_gwh_m7': 0.4204436393058498, 'x_nat_energy_met_gwh_d7': 0.18493603771829004, 'x_sys_pct_lt_49_9_last': 0.011985823339414114, 'x_sys_pct_lt_49_9_m7': 0.009200101068327471, 'x_sys_pct_lt_49_9_d7': 0.007185462101469142, 'x_sys_fvi_last': 0.12406447686101989, 'x_sys_fvi_m7': 0.18266450430100908, 'x_sys_fvi_d7': 0.05953314730596745, 'x_gen_act_gwh_total_last': 0.35047976772959955, 'x_gen_act_gwh_total_m7': 0.3008387485841507, 'x_gen_act_gwh_total_d7': 0.1416708068514, 'x_gen_prog_gwh_total_last': 0.8736631446729419, 'x_gen_prog_gwh_total_m7': 0.8736631446729419, 'x_gen_prog_gwh_total_d7': 0.15134448152495478, 'x_gen_outage_share_last': 1.5950867305612852, 'x_gen_outage_share_m7': 1.4654040043279535, 'x_gen_outage_share_d7': 1.0282619872651066, 'x_gen_act_gwh_hydro_last': 0.2491435208413057, 'x_gen_act_gwh_hydro_m7': 0.23897056265661715, 'x_gen_act_gwh_hydro_d7': 0.05235735668452457, 'x_gen_coal_days_capw_last': 0.04562693898205361, 'x_gen_coal_days_capw_m7': 0.04067173650753064, 'x_gen_coal_days_capw_d7': 0.008494353301891522, 'x_co2_ci_conv_op_last': 1.3773041707813602, 'x_co2_ci_conv_op_m7': 1.280554852520174, 'x_co2_ci_conv_op_d7': 0.5311953552621871, 'x_re_all_total_re_gwh_last': 1.2605706295439685, 'x_re_all_total_re_gwh_m7': 0.9397425428851326, 'x_re_all_total_re_gwh_d7': 0.32082808665883583, 'x_re_all_wind_gwh_last': 0.05914179578423245, 'x_re_all_wind_gwh_m7': 0.05914179578423245, 'x_re_all_wind_gwh_d7': 0.036343522351082624, 'x_re_all_solar_gwh_last': 1.3053040757428929, 'x_re_all_solar_gwh_m7': 0.9808778904629267, 'x_re_all_solar_gwh_d7': 0.607651187742924, 'x_prc_dam_acp_last': 0.036200691956959075, 'x_prc_dam_acp_m7': 0.03592134789248391, 'x_prc_dam_acp_d7': 0.0028353924403224373, 'x_prc_dsm_normal_last': 0.017335345038000854, 'x_prc_dsm_normal_m7': 0.032248409906844244, 'x_prc_dsm_normal_d7': 0.03710434240092808, 'x_wx_tmax_c_last': 0.47229445935150893, 'x_wx_tmax_c_m7': 0.4047888326034127, 'x_wx_tmax_c_d7': 0.3247707895493987, 'x_wx_tmin_c_last': 0.1578054488756458, 'x_wx_tmin_c_m7': 0.17972956891187414, 'x_wx_tmin_c_d7': 0.09019336321416593, 'x_wx_rain_mm_last': 0.041332727322486384, 'x_wx_rain_mm_m7': 0.06686404870312712, 'x_wx_rain_mm_d7': 0.028429907458132675, 'x_wx_cdd24_last': 0.11230090173463259, 'x_wx_cdd24_m7': 0.06451569099052712, 'x_wx_cdd24_d7': 0.08169731039015682, 'y_sn_z': 0.46610013468014877, 'y_sn2_z': 0.41205904277786387, 'y_ly_z': 0.6906756541169483}
+[2026-09-18T10:10:27] FAILED c_leakage rc=1 3s
+[2026-09-18T10:10:27] start c_o2_samples [cpu] codes/scripts/o2/o2_01_samples.py
+T1 standard (312732, 124) 34 series
+T1 instant (312834, 124) 34 series
+T2 standard (312732, 124) 34 series
+T2 instant (312834, 124) 34 series
+T3 standard (242313, 124) 27 series
+T3 instant (242475, 124) 27 series
+T4 standard (111501, 124) 16 series
+T4 instant (111501, 124) 16 series
+T5 standard (108849, 73) 13 series
+T5 instant (109395, 73) 13 series
+[2026-09-18T10:10:48] end c_o2_samples rc=0 21s
+[2026-09-18T10:10:48] start c_o2_lgbm [cpu] codes/scripts/o2/o2_02_lgbm.py T1 T2 T3 T4 T5
+  T1 seed 0 done [162s]
+  T1 seed 1 done [205s]
+  T1 seed 2 done [257s]
+  T1 seed 3 done [306s]
+  T1 seed 4 done [355s]
+T1 done {1: 31, 2: 31, 3: 31} 418.9s
+  T2 seed 0 done [235s]
+  T2 seed 1 done [300s]
+  T2 seed 2 done [368s]
+  T2 seed 3 done [438s]
+  T2 seed 4 done [508s]
+T2 done {1: 31, 2: 31, 3: 63} 584.0s
+  T3 seed 0 done [142s]
+  T3 seed 1 done [181s]
+  T3 seed 2 done [223s]
+  T3 seed 3 done [266s]
+  T3 seed 4 done [307s]
+T3 done {1: 31, 2: 31, 3: 31} 356.3s
+  T4 seed 0 done [138s]
+  T4 seed 1 done [172s]
+  T4 seed 2 done [208s]
+  T4 seed 3 done [244s]
+  T4 seed 4 done [280s]
+T4 done {1: 31, 2: 31, 3: 31} 313.4s
+  T5 seed 0 done [45s]
+  T5 seed 1 done [57s]
+  T5 seed 2 done [76s]
+  T5 seed 3 done [87s]
+  T5 seed 4 done [103s]
+T5 done {1: 31, 2: 63, 3: 31} 138.9s
+[2026-09-18T10:41:00] end c_o2_lgbm rc=0 1812s
+[2026-09-18T10:41:00] start c_o2_patchtst [gpu] codes/scripts/o2/o2_03_nf.py patchtst T1,T2,T3,T4,T5 5
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+You are using a CUDA device ('NVIDIA H100 NVL MIG 3g.47gb') that has Tensor Cores. To properly utilize them, you should set `torch.set_float32_matmul_precision('medium' | 'high')` which will trade-off precision for performance. For more details, read https://pytorch.org/docs/stable/generated/torch.set_float32_matmul_precision.html#torch.set_float32_matmul_precision
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=1500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  patchtst T1 seed 0: 89862 rows [18s]
+Seed set to 1
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=1500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  patchtst T1 seed 1: 89862 rows [33s]
+Seed set to 2
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  patchtst T1 seed 2: 89862 rows [43s]
+Seed set to 3
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=1500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  patchtst T1 seed 3: 89862 rows [58s]
+Seed set to 4
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  patchtst T1 seed 4: 89862 rows [72s]
+patchtst T1 done 72s
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=1500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  patchtst T2 seed 0: 89862 rows [19s]
+Seed set to 1
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  patchtst T2 seed 1: 89862 rows [33s]
+Seed set to 2
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=1500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  patchtst T2 seed 2: 89862 rows [50s]
+Seed set to 3
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=1500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  patchtst T2 seed 3: 89862 rows [66s]
+Seed set to 4
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  patchtst T2 seed 4: 89862 rows [79s]
+patchtst T2 done 80s
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=1500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  patchtst T3 seed 0: 71361 rows [16s]
+Seed set to 1
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=1500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  patchtst T3 seed 1: 71361 rows [32s]
+Seed set to 2
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=1500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  patchtst T3 seed 2: 71361 rows [48s]
+Seed set to 3
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=1500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  patchtst T3 seed 3: 71361 rows [64s]
+Seed set to 4
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=1500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  patchtst T3 seed 4: 71361 rows [79s]
+patchtst T3 done 80s
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  patchtst T4 seed 0: 29085 rows [5s]
+Seed set to 1
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  patchtst T4 seed 1: 29085 rows [8s]
+Seed set to 2
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  patchtst T4 seed 2: 29085 rows [13s]
+Seed set to 3
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  patchtst T4 seed 3: 29085 rows [21s]
+Seed set to 4
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  patchtst T4 seed 4: 29085 rows [24s]
+patchtst T4 done 25s
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=1500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  patchtst T5 seed 0: 34359 rows [16s]
+Seed set to 1
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=1500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  patchtst T5 seed 1: 34359 rows [31s]
+Seed set to 2
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=1500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  patchtst T5 seed 2: 34359 rows [46s]
+Seed set to 3
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=1500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  patchtst T5 seed 3: 34359 rows [61s]
+Seed set to 4
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=1500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  patchtst T5 seed 4: 34359 rows [79s]
+patchtst T5 done 80s
+[2026-09-18T10:46:46] end c_o2_patchtst rc=0 346s
+[2026-09-18T10:46:46] start c_o2_tft [gpu] codes/scripts/o2/o2_03_nf.py tft T1,T2,T3,T4,T5 5
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+You are using a CUDA device ('NVIDIA H100 NVL MIG 3g.47gb') that has Tensor Cores. To properly utilize them, you should set `torch.set_float32_matmul_precision('medium' | 'high')` which will trade-off precision for performance. For more details, read https://pytorch.org/docs/stable/generated/torch.set_float32_matmul_precision.html#torch.set_float32_matmul_precision
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tft T1 seed 0: 89862 rows [45s]
+Seed set to 1
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tft T1 seed 1: 89862 rows [103s]
+Seed set to 2
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tft T1 seed 2: 89862 rows [154s]
+Seed set to 3
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tft T1 seed 3: 89862 rows [223s]
+Seed set to 4
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tft T1 seed 4: 89862 rows [292s]
+tft T1 done 294s
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tft T2 seed 0: 89862 rows [55s]
+Seed set to 1
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tft T2 seed 1: 89862 rows [110s]
+Seed set to 2
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tft T2 seed 2: 89862 rows [155s]
+Seed set to 3
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tft T2 seed 3: 89862 rows [205s]
+Seed set to 4
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tft T2 seed 4: 89862 rows [244s]
+tft T2 done 245s
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tft T3 seed 0: 71361 rows [45s]
+Seed set to 1
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tft T3 seed 1: 71361 rows [90s]
+Seed set to 2
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tft T3 seed 2: 71361 rows [125s]
+Seed set to 3
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tft T3 seed 3: 71361 rows [173s]
+Seed set to 4
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tft T3 seed 4: 71361 rows [215s]
+tft T3 done 216s
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tft T4 seed 0: 29085 rows [22s]
+Seed set to 1
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tft T4 seed 1: 29085 rows [52s]
+Seed set to 2
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tft T4 seed 2: 29085 rows [83s]
+Seed set to 3
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tft T4 seed 3: 29085 rows [106s]
+Seed set to 4
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tft T4 seed 4: 29085 rows [127s]
+tft T4 done 128s
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tft T5 seed 0: 34359 rows [17s]
+Seed set to 1
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tft T5 seed 1: 34359 rows [32s]
+Seed set to 2
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tft T5 seed 2: 34359 rows [45s]
+Seed set to 3
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tft T5 seed 3: 34359 rows [59s]
+Seed set to 4
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tft T5 seed 4: 34359 rows [72s]
+tft T5 done 73s
+[2026-09-18T11:02:53] end c_o2_tft rc=0 967s
+[2026-09-18T11:02:53] start c_o2_bilstm [gpu] codes/scripts/o2/o2_04_bilstm.py T1,T2,T3,T4,T5 5
+  bilstm T1 seed 0: epochs 8, es pinball 0.0938 [20s]
+  bilstm T1 seed 1: epochs 8, es pinball 0.0937 [29s]
+  bilstm T1 seed 2: epochs 7, es pinball 0.0926 [36s]
+  bilstm T1 seed 3: epochs 7, es pinball 0.0943 [42s]
+  bilstm T1 seed 4: epochs 7, es pinball 0.0938 [49s]
+bilstm T1 done 50s
+  bilstm T2 seed 0: epochs 8, es pinball 0.0998 [16s]
+  bilstm T2 seed 1: epochs 8, es pinball 0.1005 [24s]
+  bilstm T2 seed 2: epochs 8, es pinball 0.1009 [32s]
+  bilstm T2 seed 3: epochs 8, es pinball 0.0989 [39s]
+  bilstm T2 seed 4: epochs 9, es pinball 0.1005 [48s]
+bilstm T2 done 49s
+  bilstm T3 seed 0: epochs 8, es pinball 0.0967 [11s]
+  bilstm T3 seed 1: epochs 8, es pinball 0.0971 [16s]
+  bilstm T3 seed 2: epochs 8, es pinball 0.1002 [23s]
+  bilstm T3 seed 3: epochs 8, es pinball 0.0967 [29s]
+  bilstm T3 seed 4: epochs 9, es pinball 0.0967 [37s]
+bilstm T3 done 37s
+  bilstm T4 seed 0: epochs 8, es pinball 0.1199 [7s]
+  bilstm T4 seed 1: epochs 8, es pinball 0.1239 [11s]
+  bilstm T4 seed 2: epochs 11, es pinball 0.1206 [19s]
+  bilstm T4 seed 3: epochs 9, es pinball 0.1223 [25s]
+  bilstm T4 seed 4: epochs 9, es pinball 0.1198 [29s]
+bilstm T4 done 29s
+  bilstm T5 seed 0: epochs 8, es pinball 0.2119 [6s]
+  bilstm T5 seed 1: epochs 7, es pinball 0.2360 [8s]
+  bilstm T5 seed 2: epochs 7, es pinball 0.2269 [10s]
+  bilstm T5 seed 3: epochs 7, es pinball 0.2624 [13s]
+  bilstm T5 seed 4: epochs 7, es pinball 0.2294 [15s]
+bilstm T5 done 15s
+[2026-09-18T11:05:56] end c_o2_bilstm rc=0 183s
+[2026-09-18T11:05:56] start c_o2_chronos [gpu] codes/scripts/o2/o2_05_chronos.py T1,T2,T3,T4,T5
+
+Loading weights:   0%|          | 0/143 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 143/143 [00:00<00:00, 2520.54it/s]
+T1 chronos 89964 rows 12s
+T2 chronos 89964 rows 12s
+T3 chronos 71442 rows 11s
+T4 chronos 29085 rows 10s
+T5 chronos 34398 rows 12s
+[2026-09-18T11:06:57] end c_o2_chronos rc=0 62s
+[2026-09-18T11:06:57] start c_d2_xgb [gpu] codes/scripts/dev2/d2_01_xgb.py
+  T1 xgb seed 0 done [39s]
+  T1 xgb seed 1 done [74s]
+  T1 xgb seed 2 done [107s]
+  T1 xgb seed 3 done [139s]
+  T1 xgb seed 4 done [174s]
+T1 xgb done, depth {1: 6, 2: 6, 3: 6} 174.7s
+  T2 xgb seed 0 done [48s]
+  T2 xgb seed 1 done [93s]
+  T2 xgb seed 2 done [140s]
+  T2 xgb seed 3 done [184s]
+  T2 xgb seed 4 done [230s]
+T2 xgb done, depth {1: 6, 2: 6, 3: 6} 230.9s
+  T3 xgb seed 0 done [31s]
+  T3 xgb seed 1 done [62s]
+  T3 xgb seed 2 done [94s]
+  T3 xgb seed 3 done [126s]
+  T3 xgb seed 4 done [158s]
+T3 xgb done, depth {1: 6, 2: 6, 3: 6} 158.8s
+  T4 xgb seed 0 done [32s]
+  T4 xgb seed 1 done [66s]
+  T4 xgb seed 2 done [100s]
+  T4 xgb seed 3 done [132s]
+  T4 xgb seed 4 done [162s]
+T4 xgb done, depth {1: 6, 2: 6, 3: 6} 162.6s
+  T5 xgb seed 0 done [9s]
+  T5 xgb seed 1 done [18s]
+  T5 xgb seed 2 done [28s]
+  T5 xgb seed 3 done [36s]
+  T5 xgb seed 4 done [46s]
+T5 xgb done, depth {1: 6, 2: 6, 3: 6} 46.5s
+[2026-09-18T11:19:51] end c_d2_xgb rc=0 774s
+[2026-09-18T11:19:51] start c_d2_nf [gpu] codes/scripts/dev2/d2_02_nf_models.py nhits,tide,bitcn,nbeatsx T1,T2,T3,T4,T5
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+You are using a CUDA device ('NVIDIA H100 NVL MIG 3g.47gb') that has Tensor Cores. To properly utilize them, you should set `torch.set_float32_matmul_precision('medium' | 'high')` which will trade-off precision for performance. For more details, read https://pytorch.org/docs/stable/generated/torch.set_float32_matmul_precision.html#torch.set_float32_matmul_precision
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T1 window 56: val pinball 0.3233 [12s]
+  nhits T1 seed 0: 89862 rows [12s]
+Seed set to 1
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T1 seed 1: 89862 rows [18s]
+Seed set to 2
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T1 seed 2: 89862 rows [25s]
+Seed set to 3
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T1 seed 3: 89862 rows [39s]
+Seed set to 4
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T1 seed 4: 89862 rows [49s]
+nhits T1 done, window 56 50.0s
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T1 window 56: val pinball 0.3106 [15s]
+  tide T1 seed 0: 89862 rows [15s]
+Seed set to 1
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T1 seed 1: 89862 rows [29s]
+Seed set to 2
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T1 seed 2: 89862 rows [42s]
+Seed set to 3
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T1 seed 3: 89862 rows [55s]
+Seed set to 4
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T1 seed 4: 89862 rows [66s]
+tide T1 done, window 56 66.3s
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T1 window 56: val pinball 0.2957 [20s]
+  bitcn T1 seed 0: 89862 rows [20s]
+Seed set to 1
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T1 seed 1: 89862 rows [32s]
+Seed set to 2
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T1 seed 2: 89862 rows [46s]
+Seed set to 3
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T1 seed 3: 89862 rows [58s]
+Seed set to 4
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T1 seed 4: 89862 rows [75s]
+bitcn T1 done, window 56 75.3s
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T1 window 56: val pinball 0.3292 [4s]
+  nbeatsx T1 seed 0: 89862 rows [4s]
+Seed set to 1
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T1 seed 1: 89862 rows [9s]
+Seed set to 2
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T1 seed 2: 89862 rows [13s]
+Seed set to 3
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T1 seed 3: 89862 rows [19s]
+Seed set to 4
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T1 seed 4: 89862 rows [24s]
+nbeatsx T1 done, window 56 24.6s
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T2 window 28: val pinball 0.3059 [8s]
+  nhits T2 seed 0: 89862 rows [8s]
+Seed set to 1
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T2 seed 1: 89862 rows [14s]
+Seed set to 2
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T2 seed 2: 89862 rows [17s]
+Seed set to 3
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T2 seed 3: 89862 rows [21s]
+Seed set to 4
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T2 seed 4: 89862 rows [29s]
+nhits T2 done, window 28 29.9s
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T2 window 28: val pinball 0.2969 [13s]
+  tide T2 seed 0: 89862 rows [13s]
+Seed set to 1
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=1500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T2 seed 1: 89862 rows [26s]
+Seed set to 2
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T2 seed 2: 89862 rows [37s]
+Seed set to 3
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T2 seed 3: 89862 rows [50s]
+Seed set to 4
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T2 seed 4: 89862 rows [62s]
+tide T2 done, window 28 62.2s
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T2 window 56: val pinball 0.2924 [17s]
+  bitcn T2 seed 0: 89862 rows [17s]
+Seed set to 1
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T2 seed 1: 89862 rows [32s]
+Seed set to 2
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T2 seed 2: 89862 rows [42s]
+Seed set to 3
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T2 seed 3: 89862 rows [54s]
+Seed set to 4
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=1500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T2 seed 4: 89862 rows [77s]
+bitcn T2 done, window 56 77.9s
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T2 window 28: val pinball 0.3065 [6s]
+  nbeatsx T2 seed 0: 89862 rows [6s]
+Seed set to 1
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T2 seed 1: 89862 rows [10s]
+Seed set to 2
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T2 seed 2: 89862 rows [15s]
+Seed set to 3
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T2 seed 3: 89862 rows [21s]
+Seed set to 4
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T2 seed 4: 89862 rows [29s]
+nbeatsx T2 done, window 28 29.5s
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T3 window 28: val pinball 0.2598 [7s]
+  nhits T3 seed 0: 71361 rows [7s]
+Seed set to 1
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T3 seed 1: 71361 rows [19s]
+Seed set to 2
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T3 seed 2: 71361 rows [34s]
+Seed set to 3
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T3 seed 3: 71361 rows [44s]
+Seed set to 4
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T3 seed 4: 71361 rows [53s]
+nhits T3 done, window 28 53.8s
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T3 window 28: val pinball 0.2571 [14s]
+  tide T3 seed 0: 71361 rows [14s]
+Seed set to 1
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T3 seed 1: 71361 rows [29s]
+Seed set to 2
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T3 seed 2: 71361 rows [46s]
+Seed set to 3
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T3 seed 3: 71361 rows [61s]
+Seed set to 4
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T3 seed 4: 71361 rows [74s]
+tide T3 done, window 28 74.3s
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=1500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T3 window 28: val pinball 0.3233 [24s]
+  bitcn T3 seed 0: 71361 rows [24s]
+Seed set to 1
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=1500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T3 seed 1: 71361 rows [48s]
+Seed set to 2
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=1500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T3 seed 2: 71361 rows [71s]
+Seed set to 3
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=1500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T3 seed 3: 71361 rows [93s]
+Seed set to 4
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T3 seed 4: 71361 rows [115s]
+bitcn T3 done, window 28 115.2s
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T3 window 28: val pinball 0.2649 [7s]
+  nbeatsx T3 seed 0: 71361 rows [7s]
+Seed set to 1
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T3 seed 1: 71361 rows [13s]
+Seed set to 2
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T3 seed 2: 71361 rows [21s]
+Seed set to 3
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T3 seed 3: 71361 rows [29s]
+Seed set to 4
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T3 seed 4: 71361 rows [34s]
+nbeatsx T3 done, window 28 34.1s
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T4 window 28: val pinball 0.2974 [11s]
+  nhits T4 seed 0: 29085 rows [11s]
+Seed set to 1
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T4 seed 1: 29085 rows [16s]
+Seed set to 2
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T4 seed 2: 29085 rows [24s]
+Seed set to 3
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T4 seed 3: 29085 rows [35s]
+Seed set to 4
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T4 seed 4: 29085 rows [42s]
+nhits T4 done, window 28 41.7s
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T4 window 28: val pinball 0.2787 [11s]
+  tide T4 seed 0: 29085 rows [11s]
+Seed set to 1
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T4 seed 1: 29085 rows [22s]
+Seed set to 2
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T4 seed 2: 29085 rows [32s]
+Seed set to 3
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T4 seed 3: 29085 rows [43s]
+Seed set to 4
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T4 seed 4: 29085 rows [54s]
+tide T4 done, window 28 54.6s
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=1500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T4 window 28: val pinball 0.2899 [19s]
+  bitcn T4 seed 0: 29085 rows [19s]
+Seed set to 1
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T4 seed 1: 29085 rows [37s]
+Seed set to 2
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T4 seed 2: 29085 rows [57s]
+Seed set to 3
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T4 seed 3: 29085 rows [72s]
+Seed set to 4
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=1500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T4 seed 4: 29085 rows [95s]
+bitcn T4 done, window 28 95.3s
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T4 window 28: val pinball 0.2822 [7s]
+  nbeatsx T4 seed 0: 29085 rows [7s]
+Seed set to 1
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T4 seed 1: 29085 rows [11s]
+Seed set to 2
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T4 seed 2: 29085 rows [15s]
+Seed set to 3
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T4 seed 3: 29085 rows [20s]
+Seed set to 4
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T4 seed 4: 29085 rows [24s]
+nbeatsx T4 done, window 28 24.4s
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T5 window 28: val pinball 0.3146 [6s]
+  nhits T5 seed 0: 34359 rows [6s]
+Seed set to 1
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T5 seed 1: 34359 rows [10s]
+Seed set to 2
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T5 seed 2: 34359 rows [15s]
+Seed set to 3
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T5 seed 3: 34359 rows [20s]
+Seed set to 4
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T5 seed 4: 34359 rows [24s]
+nhits T5 done, window 28 24.4s
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T5 window 56: val pinball 0.2320 [10s]
+  tide T5 seed 0: 34359 rows [10s]
+Seed set to 1
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T5 seed 1: 34359 rows [16s]
+Seed set to 2
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T5 seed 2: 34359 rows [25s]
+Seed set to 3
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T5 seed 3: 34359 rows [32s]
+Seed set to 4
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T5 seed 4: 34359 rows [40s]
+tide T5 done, window 56 40.1s
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T5 window 56: val pinball 0.2100 [27s]
+  bitcn T5 seed 0: 34359 rows [27s]
+Seed set to 1
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T5 seed 1: 34359 rows [42s]
+Seed set to 2
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T5 seed 2: 34359 rows [57s]
+Seed set to 3
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T5 seed 3: 34359 rows [76s]
+Seed set to 4
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T5 seed 4: 34359 rows [94s]
+bitcn T5 done, window 56 94.2s
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T5 window 28: val pinball 0.3226 [4s]
+  nbeatsx T5 seed 0: 34359 rows [4s]
+Seed set to 1
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T5 seed 1: 34359 rows [7s]
+Seed set to 2
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T5 seed 2: 34359 rows [11s]
+Seed set to 3
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T5 seed 3: 34359 rows [14s]
+Seed set to 4
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T5 seed 4: 34359 rows [18s]
+nbeatsx T5 done, window 28 17.8s
+[2026-09-18T11:37:58] end c_d2_nf rc=0 1087s
+[2026-09-18T11:37:58] start c_d2_chronos [gpu] codes/scripts/dev2/d2_03_chronos.py chronos2,chronos_base T1,T2,T3,T4,T5
+
+Loading weights:   0%|          | 0/170 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 170/170 [00:00<00:00, 2384.06it/s]
+  T1 chronos2 cross_learning=False: val MASE 0.8695 [1314s]
+T1 chronos2 done, cross_learning False 1313.9s
+  T2 chronos2 cross_learning=False: val MASE 0.8674 [1313s]
+T2 chronos2 done, cross_learning False 1313.2s
+  T3 chronos2 cross_learning=False: val MASE 0.7491 [799s]
+T3 chronos2 done, cross_learning False 798.9s
+  T4 chronos2 cross_learning=False: val MASE 0.7725 [460s]
+T4 chronos2 done, cross_learning False 460.5s
+  T5 chronos2 cross_learning=True: val MASE 0.5826 [147s]
+T5 chronos2 done, cross_learning True 147.0s
+
+Loading weights:   0%|          | 0/269 [00:00<?, ?it/s]
+Loading weights:  64%|██████▍   | 173/269 [00:00<00:00, 1713.85it/s]
+Loading weights: 100%|██████████| 269/269 [00:00<00:00, 1589.91it/s]
+T1 chronos_base 89964 rows 23s
+T2 chronos_base 89964 rows 23s
+T3 chronos_base 71442 rows 21s
+T4 chronos_base 29085 rows 17s
+T5 chronos_base 34398 rows 17s
+[2026-09-18T12:46:59] end c_d2_chronos rc=0 4140s
+[2026-09-18T12:46:59] start c_o3_main [gpu] codes/scripts/o3/o3_01_lamcag.py T5,T4,T3,T2,T1 mcag_instance,fusion_fixed,mcag_fixed,mcag_regime 5
+  T5 mcag_instance seed 0: epochs 10 es 0.1490 [18s]
+  T5 mcag_instance seed 1: epochs 10 es 0.1696 [25s]
+  T5 mcag_instance seed 2: epochs 11 es 0.1626 [33s]
+  T5 mcag_instance seed 3: epochs 10 es 0.1597 [41s]
+  T5 mcag_instance seed 4: epochs 9 es 0.1700 [47s]
+T5 mcag_instance done 48s
+  T4 mcag_instance seed 0: epochs 15 es 0.1104 [30s]
+  T4 mcag_instance seed 1: epochs 16 es 0.1107 [52s]
+  T4 mcag_instance seed 2: epochs 16 es 0.1110 [73s]
+  T4 mcag_instance seed 3: epochs 16 es 0.1118 [88s]
+  T4 mcag_instance seed 4: epochs 14 es 0.1112 [106s]
+T4 mcag_instance done 106s
+  T3 mcag_instance seed 0: epochs 13 es 0.0901 [38s]
+  T3 mcag_instance seed 1: epochs 13 es 0.0902 [65s]
+  T3 mcag_instance seed 2: epochs 12 es 0.0913 [90s]
+  T3 mcag_instance seed 3: epochs 11 es 0.0918 [111s]
+  T3 mcag_instance seed 4: epochs 11 es 0.0906 [133s]
+T3 mcag_instance done 134s
+  T2 mcag_instance seed 0: epochs 16 es 0.0939 [55s]
+  T2 mcag_instance seed 1: epochs 14 es 0.0933 [92s]
+  T2 mcag_instance seed 2: epochs 14 es 0.0936 [129s]
+  T2 mcag_instance seed 3: epochs 13 es 0.0929 [164s]
+  T2 mcag_instance seed 4: epochs 16 es 0.0937 [206s]
+T2 mcag_instance done 208s
+  T1 mcag_instance seed 0: epochs 11 es 0.0844 [48s]
+  T1 mcag_instance seed 1: epochs 12 es 0.0845 [80s]
+  T1 mcag_instance seed 2: epochs 12 es 0.0833 [112s]
+  T1 mcag_instance seed 3: epochs 12 es 0.0839 [144s]
+  T1 mcag_instance seed 4: epochs 13 es 0.0866 [179s]
+T1 mcag_instance done 180s
+  T5 fusion_fixed seed 0: epochs 12 es 0.1571 [15s]
+  T5 fusion_fixed seed 1: epochs 11 es 0.1583 [22s]
+  T5 fusion_fixed seed 2: epochs 12 es 0.1562 [29s]
+  T5 fusion_fixed seed 3: epochs 13 es 0.1606 [37s]
+  T5 fusion_fixed seed 4: epochs 14 es 0.1603 [46s]
+T5 fusion_fixed done 46s
+  T4 fusion_fixed seed 0: epochs 12 es 0.1120 [21s]
+  T4 fusion_fixed seed 1: epochs 17 es 0.1106 [37s]
+  T4 fusion_fixed seed 2: epochs 19 es 0.1115 [54s]
+  T4 fusion_fixed seed 3: epochs 19 es 0.1121 [71s]
+  T4 fusion_fixed seed 4: epochs 21 es 0.1101 [90s]
+T4 fusion_fixed done 90s
+  T3 fusion_fixed seed 0: epochs 14 es 0.0911 [37s]
+  T3 fusion_fixed seed 1: epochs 14 es 0.0910 [56s]
+  T3 fusion_fixed seed 2: epochs 12 es 0.0919 [68s]
+  T3 fusion_fixed seed 3: epochs 16 es 0.0919 [88s]
+  T3 fusion_fixed seed 4: epochs 11 es 0.0914 [97s]
+T3 fusion_fixed done 98s
+  T2 fusion_fixed seed 0: epochs 11 es 0.0951 [39s]
+  T2 fusion_fixed seed 1: epochs 12 es 0.0956 [63s]
+  T2 fusion_fixed seed 2: epochs 14 es 0.0942 [89s]
+  T2 fusion_fixed seed 3: epochs 12 es 0.0933 [111s]
+  T2 fusion_fixed seed 4: epochs 13 es 0.0948 [137s]
+T2 fusion_fixed done 138s
+  T1 fusion_fixed seed 0: epochs 11 es 0.0858 [40s]
+  T1 fusion_fixed seed 1: epochs 12 es 0.0849 [63s]
+  T1 fusion_fixed seed 2: epochs 12 es 0.0848 [86s]
+  T1 fusion_fixed seed 3: epochs 12 es 0.0850 [108s]
+  T1 fusion_fixed seed 4: epochs 11 es 0.0865 [129s]
+T1 fusion_fixed done 131s
+  T5 mcag_fixed seed 0: epochs 12 es 0.1509 [17s]
+  T5 mcag_fixed seed 1: epochs 11 es 0.1570 [25s]
+  T5 mcag_fixed seed 2: epochs 11 es 0.1543 [32s]
+  T5 mcag_fixed seed 3: epochs 10 es 0.1612 [39s]
+  T5 mcag_fixed seed 4: epochs 9 es 0.1630 [45s]
+T5 mcag_fixed done 46s
+  T4 mcag_fixed seed 0: epochs 15 es 0.1105 [27s]
+  T4 mcag_fixed seed 1: epochs 16 es 0.1096 [45s]
+  T4 mcag_fixed seed 2: epochs 16 es 0.1113 [65s]
+  T4 mcag_fixed seed 3: epochs 16 es 0.1116 [84s]
+  T4 mcag_fixed seed 4: epochs 15 es 0.1111 [101s]
+T4 mcag_fixed done 101s
+  T3 mcag_fixed seed 0: epochs 13 es 0.0906 [40s]
+  T3 mcag_fixed seed 1: epochs 14 es 0.0904 [66s]
+  T3 mcag_fixed seed 2: epochs 14 es 0.0916 [93s]
+  T3 mcag_fixed seed 3: epochs 11 es 0.0918 [114s]
+  T3 mcag_fixed seed 4: epochs 11 es 0.0906 [136s]
+T3 mcag_fixed done 136s
+  T2 mcag_fixed seed 0: epochs 15 es 0.0940 [56s]
+  T2 mcag_fixed seed 1: epochs 14 es 0.0937 [90s]
+  T2 mcag_fixed seed 2: epochs 16 es 0.0939 [128s]
+  T2 mcag_fixed seed 3: epochs 13 es 0.0931 [161s]
+  T2 mcag_fixed seed 4: epochs 13 es 0.0940 [193s]
+T2 mcag_fixed done 194s
+  T1 mcag_fixed seed 0: epochs 14 es 0.0842 [50s]
+  T1 mcag_fixed seed 1: epochs 12 es 0.0846 [79s]
+  T1 mcag_fixed seed 2: epochs 16 es 0.0832 [113s]
+  T1 mcag_fixed seed 3: epochs 12 es 0.0840 [142s]
+  T1 mcag_fixed seed 4: epochs 11 es 0.0864 [170s]
+T1 mcag_fixed done 171s
+  T5 mcag_regime seed 0: epochs 11 es 0.1489 [16s]
+  T5 mcag_regime seed 1: epochs 11 es 0.1527 [24s]
+  T5 mcag_regime seed 2: epochs 11 es 0.1570 [32s]
+  T5 mcag_regime seed 3: epochs 10 es 0.1586 [40s]
+  T5 mcag_regime seed 4: epochs 9 es 0.1620 [45s]
+T5 mcag_regime done 45s
+  T4 mcag_regime seed 0: epochs 15 es 0.1105 [31s]
+  T4 mcag_regime seed 1: epochs 16 es 0.1096 [53s]
+  T4 mcag_regime seed 2: epochs 16 es 0.1111 [75s]
+  T4 mcag_regime seed 3: epochs 16 es 0.1115 [97s]
+  T4 mcag_regime seed 4: epochs 15 es 0.1111 [118s]
+T4 mcag_regime done 119s
+  T3 mcag_regime seed 0: epochs 13 es 0.0907 [42s]
+  T3 mcag_regime seed 1: epochs 14 es 0.0903 [75s]
+  T3 mcag_regime seed 2: epochs 14 es 0.0917 [109s]
+  T3 mcag_regime seed 3: epochs 11 es 0.0919 [130s]
+  T3 mcag_regime seed 4: epochs 11 es 0.0908 [142s]
+T3 mcag_regime done 142s
+  T2 mcag_regime seed 0: epochs 15 es 0.0942 [58s]
+  T2 mcag_regime seed 1: epochs 14 es 0.0936 [91s]
+  T2 mcag_regime seed 2: epochs 16 es 0.0939 [139s]
+  T2 mcag_regime seed 3: epochs 13 es 0.0931 [177s]
+  T2 mcag_regime seed 4: epochs 13 es 0.0939 [213s]
+T2 mcag_regime done 214s
+  T1 mcag_regime seed 0: epochs 14 es 0.0843 [54s]
+  T1 mcag_regime seed 1: epochs 12 es 0.0848 [90s]
+  T1 mcag_regime seed 2: epochs 16 es 0.0835 [131s]
+  T1 mcag_regime seed 3: epochs 12 es 0.0845 [167s]
+  T1 mcag_regime seed 4: epochs 11 es 0.0866 [200s]
+T1 mcag_regime done 201s
+[2026-09-18T13:29:29] end c_o3_main rc=0 2551s
+[2026-09-18T13:29:29] start c_o3_ablation [gpu] codes/scripts/o3/o3_01_lamcag.py T1,T2,T5 null_context,permuted_context,market_only 3
+  T1 null_context seed 0: epochs 17 es 0.0829 [70s]
+  T1 null_context seed 1: epochs 22 es 0.0829 [132s]
+  T1 null_context seed 2: epochs 25 es 0.0832 [200s]
+T1 null_context done 200s
+  T2 null_context seed 0: epochs 19 es 0.0941 [65s]
+  T2 null_context seed 1: epochs 22 es 0.0937 [114s]
+  T2 null_context seed 2: epochs 28 es 0.0940 [171s]
+T2 null_context done 172s
+  T5 null_context seed 0: epochs 12 es 0.2308 [14s]
+  T5 null_context seed 1: epochs 10 es 0.2334 [19s]
+  T5 null_context seed 2: epochs 11 es 0.2294 [23s]
+T5 null_context done 24s
+  T1 permuted_context seed 0: epochs 21 es 0.0836 [62s]
+  T1 permuted_context seed 1: epochs 25 es 0.0836 [111s]
+  T1 permuted_context seed 2: epochs 23 es 0.0836 [153s]
+T1 permuted_context done 154s
+  T2 permuted_context seed 0: epochs 17 es 0.0942 [56s]
+  T2 permuted_context seed 1: epochs 18 es 0.0945 [87s]
+  T2 permuted_context seed 2: epochs 16 es 0.0946 [116s]
+T2 permuted_context done 117s
+  T5 permuted_context seed 0: epochs 11 es 0.2311 [14s]
+  T5 permuted_context seed 1: epochs 11 es 0.2339 [18s]
+  T5 permuted_context seed 2: epochs 10 es 0.2313 [23s]
+T5 permuted_context done 23s
+  T1 market_only seed 0: epochs 20 es 0.0847 [25s]
+  T1 market_only seed 1: epochs 21 es 0.0842 [40s]
+  T1 market_only seed 2: epochs 20 es 0.0838 [57s]
+T1 market_only done 58s
+  T2 market_only seed 0: epochs 21 es 0.0939 [25s]
+  T2 market_only seed 1: epochs 22 es 0.0941 [40s]
+  T2 market_only seed 2: epochs 21 es 0.0941 [57s]
+T2 market_only done 57s
+  T5 market_only seed 0: epochs 8 es 0.1960 [9s]
+  T5 market_only seed 1: epochs 8 es 0.1902 [11s]
+  T5 market_only seed 2: epochs 8 es 0.1939 [13s]
+T5 market_only done 13s
+[2026-09-18T13:43:10] end c_o3_ablation rc=0 820s
+[2026-09-18T13:43:10] start c_o3_ablation2 [gpu] codes/scripts/o3/o3_01_lamcag.py T1,T2,T3 no_carbon 3
+  T1 no_carbon seed 0: epochs 12 es 0.0847 [44s]
+  T1 no_carbon seed 1: epochs 11 es 0.0841 [63s]
+  T1 no_carbon seed 2: epochs 15 es 0.0829 [88s]
+T1 no_carbon done 89s
+  T2 no_carbon seed 0: epochs 17 es 0.0936 [52s]
+  T2 no_carbon seed 1: epochs 14 es 0.0937 [75s]
+  T2 no_carbon seed 2: epochs 13 es 0.0937 [97s]
+T2 no_carbon done 98s
+  T3 no_carbon seed 0: epochs 14 es 0.0904 [36s]
+  T3 no_carbon seed 1: epochs 13 es 0.0907 [53s]
+  T3 no_carbon seed 2: epochs 12 es 0.0901 [67s]
+T3 no_carbon done 68s
+[2026-09-18T13:47:27] end c_o3_ablation2 rc=0 257s
+[2026-09-18T13:47:27] start c_d2_o3_sd [gpu] codes/scripts/o3/o3_01_lamcag.py T5,T4,T3,T2,T1 mcag_instance_sd,fusion_fixed_sd 5
+  T5 mcag_instance_sd seed 0: epochs 9 es 0.1492 [16s]
+  T5 mcag_instance_sd seed 1: epochs 10 es 0.1589 [20s]
+  T5 mcag_instance_sd seed 2: epochs 10 es 0.1477 [26s]
+  T5 mcag_instance_sd seed 3: epochs 8 es 0.1609 [31s]
+  T5 mcag_instance_sd seed 4: epochs 8 es 0.1716 [35s]
+T5 mcag_instance_sd done 35s
+  T4 mcag_instance_sd seed 0: epochs 14 es 0.1105 [26s]
+  T4 mcag_instance_sd seed 1: epochs 12 es 0.1109 [36s]
+  T4 mcag_instance_sd seed 2: epochs 20 es 0.1106 [52s]
+  T4 mcag_instance_sd seed 3: epochs 14 es 0.1120 [63s]
+  T4 mcag_instance_sd seed 4: epochs 14 es 0.1110 [75s]
+T4 mcag_instance_sd done 75s
+  T3 mcag_instance_sd seed 0: epochs 12 es 0.0911 [37s]
+  T3 mcag_instance_sd seed 1: epochs 13 es 0.0896 [56s]
+  T3 mcag_instance_sd seed 2: epochs 12 es 0.0915 [74s]
+  T3 mcag_instance_sd seed 3: epochs 13 es 0.0902 [92s]
+  T3 mcag_instance_sd seed 4: epochs 13 es 0.0904 [111s]
+T3 mcag_instance_sd done 112s
+  T2 mcag_instance_sd seed 0: epochs 12 es 0.0938 [48s]
+  T2 mcag_instance_sd seed 1: epochs 12 es 0.0948 [70s]
+  T2 mcag_instance_sd seed 2: epochs 13 es 0.0942 [94s]
+  T2 mcag_instance_sd seed 3: epochs 13 es 0.0936 [118s]
+  T2 mcag_instance_sd seed 4: epochs 11 es 0.0941 [137s]
+T2 mcag_instance_sd done 139s
+  T1 mcag_instance_sd seed 0: epochs 13 es 0.0839 [46s]
+  T1 mcag_instance_sd seed 1: epochs 11 es 0.0846 [68s]
+  T1 mcag_instance_sd seed 2: epochs 14 es 0.0837 [96s]
+  T1 mcag_instance_sd seed 3: epochs 13 es 0.0841 [121s]
+  T1 mcag_instance_sd seed 4: epochs 11 es 0.0856 [141s]
+T1 mcag_instance_sd done 143s
+  T5 fusion_fixed_sd seed 0: epochs 9 es 0.1744 [12s]
+  T5 fusion_fixed_sd seed 1: epochs 13 es 0.1487 [16s]
+  T5 fusion_fixed_sd seed 2: epochs 10 es 0.1596 [20s]
+  T5 fusion_fixed_sd seed 3: epochs 10 es 0.1582 [24s]
+  T5 fusion_fixed_sd seed 4: epochs 12 es 0.1540 [30s]
+T5 fusion_fixed_sd done 31s
+  T4 fusion_fixed_sd seed 0: epochs 16 es 0.1118 [24s]
+  T4 fusion_fixed_sd seed 1: epochs 12 es 0.1116 [31s]
+  T4 fusion_fixed_sd seed 2: epochs 12 es 0.1117 [38s]
+  T4 fusion_fixed_sd seed 3: epochs 18 es 0.1125 [49s]
+  T4 fusion_fixed_sd seed 4: epochs 17 es 0.1108 [59s]
+T4 fusion_fixed_sd done 60s
+  T3 fusion_fixed_sd seed 0: epochs 13 es 0.0919 [31s]
+  T3 fusion_fixed_sd seed 1: epochs 15 es 0.0912 [47s]
+  T3 fusion_fixed_sd seed 2: epochs 17 es 0.0915 [66s]
+  T3 fusion_fixed_sd seed 3: epochs 17 es 0.0911 [86s]
+  T3 fusion_fixed_sd seed 4: epochs 12 es 0.0910 [100s]
+T3 fusion_fixed_sd done 101s
+  T2 fusion_fixed_sd seed 0: epochs 11 es 0.0946 [36s]
+  T2 fusion_fixed_sd seed 1: epochs 10 es 0.0957 [50s]
+  T2 fusion_fixed_sd seed 2: epochs 15 es 0.0942 [70s]
+  T2 fusion_fixed_sd seed 3: epochs 11 es 0.0944 [84s]
+  T2 fusion_fixed_sd seed 4: epochs 11 es 0.0947 [99s]
+T2 fusion_fixed_sd done 100s
+  T1 fusion_fixed_sd seed 0: epochs 13 es 0.0864 [40s]
+  T1 fusion_fixed_sd seed 1: epochs 11 es 0.0858 [56s]
+  T1 fusion_fixed_sd seed 2: epochs 14 es 0.0860 [76s]
+  T1 fusion_fixed_sd seed 3: epochs 13 es 0.0856 [96s]
+  T1 fusion_fixed_sd seed 4: epochs 11 es 0.0860 [111s]
+T1 fusion_fixed_sd done 113s
+[2026-09-18T14:02:38] end c_d2_o3_sd rc=0 911s
+[2026-09-18T14:02:38] start c_o2_evaluate [cpu] codes/scripts/o2/o2_06_evaluate.py
+T1 evaluated; models: ['bilstm', 'chronos', 'lgbm', 'ma7', 'patchtst', 'persistence', 'seasonal_naive', 'tft'] selected: lgbm
+T2 evaluated; models: ['bilstm', 'chronos', 'lgbm', 'ma7', 'patchtst', 'persistence', 'seasonal_naive', 'tft'] selected: lgbm
+T3 evaluated; models: ['bilstm', 'chronos', 'lgbm', 'ma7', 'patchtst', 'persistence', 'seasonal_naive', 'tft'] selected: lgbm
+T4 evaluated; models: ['bilstm', 'chronos', 'lgbm', 'ma7', 'patchtst', 'persistence', 'seasonal_naive', 'tft'] selected: chronos
+T5 evaluated; models: ['bilstm', 'chronos', 'lgbm', 'ma7', 'patchtst', 'persistence', 'seasonal_naive', 'tft'] selected: bilstm
+[2026-09-18T14:28:55] end c_o2_evaluate rc=0 1577s
+[2026-09-18T14:28:55] start c_o3_evaluate [cpu] codes/scripts/o3/o3_02_evaluate.py
+T1 O3 evaluated: ['fusion_fixed', 'fusion_fixed+otg', 'fusion_fixed_L1j', 'market_only', 'market_only+otg', 'mcag_fixed', 'mcag_fixed+otg', 'mcag_instance', 'mcag_instance+otg', 'mcag_instance_L1j', 'mcag_regime', 'mcag_regime+otg', 'no_carbon', 'no_carbon+otg', 'null_context', 'null_context+otg', 'permuted_context', 'permuted_context+otg']
+T2 O3 evaluated: ['fusion_fixed', 'fusion_fixed+otg', 'fusion_fixed_L1j', 'market_only', 'market_only+otg', 'mcag_fixed', 'mcag_fixed+otg', 'mcag_instance', 'mcag_instance+otg', 'mcag_instance_L1j', 'mcag_regime', 'mcag_regime+otg', 'no_carbon', 'no_carbon+otg', 'null_context', 'null_context+otg', 'permuted_context', 'permuted_context+otg']
+T3 O3 evaluated: ['fusion_fixed', 'fusion_fixed+otg', 'mcag_fixed', 'mcag_fixed+otg', 'mcag_instance', 'mcag_instance+otg', 'mcag_regime', 'mcag_regime+otg', 'no_carbon', 'no_carbon+otg']
+T4 O3 evaluated: ['fusion_fixed', 'fusion_fixed+otg', 'mcag_fixed', 'mcag_fixed+otg', 'mcag_instance', 'mcag_instance+otg', 'mcag_regime', 'mcag_regime+otg']
+T5 O3 evaluated: ['fusion_fixed', 'fusion_fixed+otg', 'market_only', 'market_only+otg', 'mcag_fixed', 'mcag_fixed+otg', 'mcag_instance', 'mcag_instance+otg', 'mcag_regime', 'mcag_regime+otg', 'null_context', 'null_context+otg', 'permuted_context', 'permuted_context+otg']
+[2026-09-18T14:36:33] end c_o3_evaluate rc=0 457s
+[2026-09-18T14:36:33] start c_d2_ensemble [gpu] codes/scripts/dev2/d2_05_ensemble.py
+T1 ensembles done: members 13, k=4, lambda=0.0, online (2.0, 0.99, 'all'); cross-fitted val MASE {"best_single": 0.8695, "ens_top": 0.8644, "ens_stack": 0.8529, "ens_online": 0.8591} [15.0s]
+T2 ensembles done: members 13, k=2, lambda=0.0, online (4.0, 0.99, 'all'); cross-fitted val MASE {"best_single": 0.8674, "ens_top": 0.8564, "ens_stack": 0.8523, "ens_online": 0.8556} [8.1s]
+T3 ensembles done: members 13, k=2, lambda=0.0, online (2.0, 0.99, 'all'); cross-fitted val MASE {"best_single": 0.7436, "ens_top": 0.7369, "ens_stack": 0.7258, "ens_online": 0.7276} [7.0s]
+T4 ensembles done: members 13, k=2, lambda=0.0, online (2.0, 0.99, 'region'); cross-fitted val MASE {"best_single": 0.7725, "ens_top": 0.7682, "ens_stack": 0.7692, "ens_online": 0.7717} [5.6s]
+T5 ensembles done: members 13, k=6, lambda=0.1, online (0.5, 1.0, 'all'); cross-fitted val MASE {"best_single": 0.5826, "ens_top": 0.6401, "ens_stack": 0.6118, "ens_online": 0.6013} [5.8s]
+[2026-09-18T14:37:17] end c_d2_ensemble rc=0 44s
+[2026-09-18T14:37:17] start c_d2_o2_eval [cpu] codes/scripts/dev2/d2_06_o2_eval.py
+T1 rows per member: {'lgbm': 89856, 'bilstm': 89652, 'tft': 89652, 'patchtst': 89652, 'chronos': 89754, 'xgb': 89856, 'nhits': 89652, 'tide': 89652, 'bitcn': 89652, 'nbeatsx': 89652, 'chronos2': 89754, 'chronos_base': 89754, 'mcag_instance_sd': 89652, 'ens_top': 89652, 'ens_stack': 89652, 'ens_online': 89652, 'seasonal_naive': 89646} -> common rows: 89442
+T1 final: ens_stack window 365
+T2 rows per member: {'lgbm': 89859, 'bilstm': 89655, 'tft': 89655, 'patchtst': 89655, 'chronos': 89757, 'xgb': 89859, 'nhits': 89655, 'tide': 89655, 'bitcn': 89655, 'nbeatsx': 89655, 'chronos2': 89757, 'chronos_base': 89757, 'mcag_instance': 89655, 'ens_top': 89655, 'ens_stack': 89655, 'ens_online': 89655, 'seasonal_naive': 89652} -> common rows: 89448
+T2 final: ens_stack window 365
+T3 rows per member: {'lgbm': 71454, 'bilstm': 71292, 'tft': 71292, 'patchtst': 71292, 'chronos': 71373, 'xgb': 71454, 'nhits': 71292, 'tide': 71292, 'bitcn': 71292, 'nbeatsx': 71292, 'chronos2': 71373, 'chronos_base': 71373, 'mcag_instance': 71292, 'ens_top': 71292, 'ens_stack': 71292, 'ens_online': 71292, 'seasonal_naive': 71385} -> common rows: 71223
+T3 final: ens_top window 365
+T4 rows per member: {'lgbm': 28524, 'bilstm': 28476, 'tft': 28476, 'patchtst': 28476, 'chronos': 28476, 'xgb': 28524, 'nhits': 28476, 'tide': 28476, 'bitcn': 28476, 'nbeatsx': 28476, 'chronos2': 28476, 'chronos_base': 28476, 'mcag_instance': 28476, 'ens_top': 28476, 'ens_stack': 28476, 'ens_online': 28476, 'seasonal_naive': 28476} -> common rows: 28428
+T4 final: chronos2 window 365
+T5 rows per member: {'lgbm': 34437, 'bilstm': 34359, 'tft': 34359, 'patchtst': 34359, 'chronos': 34398, 'xgb': 34437, 'nhits': 34359, 'tide': 34359, 'bitcn': 34359, 'nbeatsx': 34359, 'chronos2': 34398, 'chronos_base': 34398, 'mcag_instance_sd': 34359, 'ens_top': 34359, 'ens_stack': 34359, 'ens_online': 34359, 'seasonal_naive': 34437} -> common rows: 34359
+T5 final: ens_top window 365
+[2026-09-18T14:41:28] end c_d2_o2_eval rc=0 251s
+[2026-09-18T14:41:28] start c_d2_o3_eval [cpu] codes/scripts/dev2/d2_07_o3_eval.py
+T1 O3 round-2 checks done
+T2 O3 round-2 checks done
+T3 O3 round-2 checks done
+T4 O3 round-2 checks done
+T5 O3 round-2 checks done
+# O3 round 2 — staleness-matched dropout and PART as a decision rule
+
+Development test FY2024-25, reported only (protocol `codes/design/06_dev2_protocol.md`, section 4).
+
+## Variants (development test)
+
+| tid | model | mase | rmsse | pinball | cov80 | cov90 | n |
+|---|---|---|---|---|---|---|---|
+| T1 | mcag_instance | 0.9392 | 0.9403 | 0.2784 | 0.7887 | 0.8909 | 52728 |
+| T1 | fusion_fixed | 0.9348 | 0.9388 | 0.2786 | 0.7915 | 0.8911 | 52728 |
+| T1 | mcag_instance_sd | 0.9364 | 0.937 | 0.2779 | 0.7883 | 0.8904 | 52728 |
+| T1 | fusion_fixed_sd | 0.9334 | 0.9343 | 0.2788 | 0.7894 | 0.8901 | 52728 |
+| T2 | mcag_instance | 0.9669 | 0.9629 | 0.2857 | 0.7906 | 0.892 | 52731 |
+| T2 | fusion_fixed | 0.9659 | 0.9644 | 0.2866 | 0.7918 | 0.8939 | 52731 |
+| T2 | mcag_instance_sd | 0.9677 | 0.9577 | 0.2867 | 0.7894 | 0.8911 | 52731 |
+| T2 | fusion_fixed_sd | 0.9652 | 0.964 | 0.288 | 0.7891 | 0.8911 | 52731 |
+| T3 | mcag_instance | 0.8654 | 0.8477 | 0.2591 | 0.7822 | 0.884 | 41829 |
+| T3 | fusion_fixed | 0.877 | 0.8542 | 0.2604 | 0.7799 | 0.8843 | 41829 |
+| T3 | mcag_instance_sd | 0.8699 | 0.8506 | 0.2587 | 0.7804 | 0.8832 | 41829 |
+| T3 | fusion_fixed_sd | 0.8867 | 0.8631 | 0.2612 | 0.7739 | 0.8803 | 41829 |
+| T4 | mcag_instance | 1.2217 | 1.2435 | 0.3814 | 0.7458 | 0.8695 | 11088 |
+| T4 | fusion_fixed | 1.2342 | 1.2568 | 0.3842 | 0.7509 | 0.8696 | 11088 |
+| T4 | mcag_instance_sd | 1.2263 | 1.2498 | 0.3822 | 0.7446 | 0.8653 | 11088 |
+| T4 | fusion_fixed_sd | 1.2175 | 1.2477 | 0.3831 | 0.7466 | 0.8649 | 11088 |
+| T5 | mcag_instance | 1.6043 | 1.2383 | 0.2757 | 0.7582 | 0.8692 | 20163 |
+| T5 | fusion_fixed | 1.7392 | 1.3202 | 0.3188 | 0.7221 | 0.8297 | 20163 |
+| T5 | mcag_instance_sd | 1.4059 | 1.0882 | 0.2493 | 0.774 | 0.8793 | 20163 |
+| T5 | fusion_fixed_sd | 1.7001 | 1.2764 | 0.2969 | 0.7304 | 0.8452 | 20163 |
+
+## Paired tests (all horizons pooled)
+
+| tid | comparison | metric | H | mean_a | mean_b | mean_diff | lo | hi | p_a_better | n_days |
+|---|---|---|---|---|---|---|---|---|---|---|
+| T1 | A2 sd: instance vs fusion | mae | all | 0.9365 | 0.9336 | 0.003 | -0.0021 | 0.0074 | 0.9393 | 518 |
+| T1 | A2 sd: instance vs fusion | pinball | all | 0.2779 | 0.2788 | -0.0009314 | -0.0023 | 0.0002906 | 0.0384 | 518 |
+| T1 | sd vs round 1 (instance) | mae | all | 0.9365 | 0.9394 | -0.0029 | -0.0058 | 6.411e-05 | 0.0075 | 518 |
+| T1 | sd vs round 1 (instance) | pinball | all | 0.2779 | 0.2784 | -0.0005602 | -0.0013 | 0.0001397 | 0.0227 | 518 |
+| T1 | sd vs round 1 (fusion) | mae | all | 0.9336 | 0.9349 | -0.0014 | -0.0064 | 0.0039 | 0.241 | 518 |
+| T1 | sd vs round 1 (fusion) | pinball | all | 0.2788 | 0.2786 | 0.0002052 | -0.0007086 | 0.0011 | 0.7084 | 518 |
+| T2 | A2 sd: instance vs fusion | mae | all | 0.9678 | 0.9653 | 0.0026 | -0.0034 | 0.0075 | 0.8774 | 518 |
+| T2 | A2 sd: instance vs fusion | pinball | all | 0.2867 | 0.288 | -0.0014 | -0.0026 | -0.0003035 | 0.0014 | 518 |
+| T2 | sd vs round 1 (instance) | mae | all | 0.9678 | 0.967 | 0.0008433 | -0.0033 | 0.0052 | 0.6803 | 518 |
+| T2 | sd vs round 1 (instance) | pinball | all | 0.2867 | 0.2857 | 0.0009367 | 0.0002576 | 0.0016 | 0.9981 | 518 |
+| T2 | sd vs round 1 (fusion) | mae | all | 0.9653 | 0.966 | -0.0006544 | -0.0033 | 0.0023 | 0.273 | 518 |
+| T2 | sd vs round 1 (fusion) | pinball | all | 0.288 | 0.2866 | 0.0014 | 0.0006584 | 0.0022 | 1.0 | 518 |
+| T3 | A2 sd: instance vs fusion | mae | all | 0.8697 | 0.8866 | -0.0169 | -0.0263 | -0.0078 | 2.089e-06 | 518 |
+| T3 | A2 sd: instance vs fusion | pinball | all | 0.2587 | 0.2612 | -0.0025 | -0.0046 | -9.187e-05 | 0.0027 | 518 |
+| T3 | sd vs round 1 (instance) | mae | all | 0.8697 | 0.8652 | 0.0044 | 0.0014 | 0.0077 | 0.9995 | 518 |
+| T3 | sd vs round 1 (instance) | pinball | all | 0.2587 | 0.2591 | -0.0003839 | -0.001 | 0.0002928 | 0.0708 | 518 |
+| T3 | sd vs round 1 (fusion) | mae | all | 0.8866 | 0.8769 | 0.0096 | 0.0046 | 0.0154 | 1.0 | 518 |
+| T3 | sd vs round 1 (fusion) | pinball | all | 0.2612 | 0.2604 | 0.0007145 | -0.0002985 | 0.0017 | 0.9573 | 518 |
+| T4 | A2 sd: instance vs fusion | mae | all | 1.2263 | 1.2175 | 0.0088 | -0.0145 | 0.0291 | 0.8793 | 231 |
+| T4 | A2 sd: instance vs fusion | pinball | all | 0.3822 | 0.3831 | -0.0008901 | -0.007 | 0.0067 | 0.3535 | 231 |
+| T4 | sd vs round 1 (instance) | mae | all | 1.2263 | 1.2217 | 0.0046 | -0.0065 | 0.0144 | 0.8813 | 231 |
+| T4 | sd vs round 1 (instance) | pinball | all | 0.3822 | 0.3814 | 0.0008079 | -0.0022 | 0.0048 | 0.7543 | 231 |
+| T4 | sd vs round 1 (fusion) | mae | all | 1.2175 | 1.2342 | -0.0167 | -0.0269 | -0.0072 | 1.83e-05 | 231 |
+| T4 | sd vs round 1 (fusion) | pinball | all | 0.3831 | 0.3842 | -0.0011 | -0.0038 | 0.0015 | 0.1393 | 231 |
+| T5 | A2 sd: instance vs fusion | mae | all | 1.406 | 1.7002 | -0.2951 | -0.3758 | -0.2047 | 5.164e-28 | 518 |
+| T5 | A2 sd: instance vs fusion | pinball | all | 0.2493 | 0.2969 | -0.0478 | -0.0786 | -0.02 | 1.413e-07 | 518 |
+| T5 | sd vs round 1 (instance) | mae | all | 1.406 | 1.6043 | -0.2001 | -0.2559 | -0.1323 | 6.559e-23 | 518 |
+| T5 | sd vs round 1 (instance) | pinball | all | 0.2493 | 0.2757 | -0.0269 | -0.0412 | -0.0105 | 9.156e-08 | 518 |
+| T5 | sd vs round 1 (fusion) | mae | all | 1.7002 | 1.7394 | -0.0397 | -0.0769 | -0.0018 | 0.0006665 | 518 |
+| T5 | sd vs round 1 (fusion) | pinball | all | 0.2969 | 0.3188 | -0.022 | -0.0312 | -0.0118 | 5.736e-12 | 518 |
+
+## H7 source loss with staleness-matched dropout (RE and weather blocks missing)
+
+| tid | model | mase | mase_source_loss | mean_diff | lo | hi | p_instance_degrades_less |
+|---|---|---|---|---|---|---|---|
+| T1 | mcag_instance_sd | 0.9365 | 0.9478 |  |  |  |  |
+| T1 | fusion_fixed_sd | 0.9336 | 0.9476 |  |  |  |  |
+| T1 | instance_sd − fusion_sd (degradation difference) |  |  | -0.0027 | -0.0055 | -0.0001537 | 0.005 |
+| T2 | mcag_instance_sd | 0.9678 | 0.9783 |  |  |  |  |
+| T2 | fusion_fixed_sd | 0.9653 | 0.9738 |  |  |  |  |
+| T2 | instance_sd − fusion_sd (degradation difference) |  |  | 0.0019 | -0.0005351 | 0.0045 | 0.978 |
+
+## PART decision rule (N9)
+
+Total realised development-test gain collected (MSE, scaled units; higher is better): rule +5.9742, sign_only +2.1229, always -0.0148, never +0.0000, oracle +6.2209.
+
+Sign agreement, all cells: 28/45; cells with a clear realised gain: 16/22.
+
+| tid | H | refinement | G_val | G_lower80 | G_upper80 | refine_rule | refine_sign | realised_gain_dev | gain_lo | gain_hi | clear |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| T1 | 1 | regime vs fixed | 0.0051 | -0.0016 | 0.0084 | False | True | 0.0028 | -0.0009101 | 0.0064 | False |
+| T1 | 1 | instance vs fixed | -0.0177 | -0.0862 | -0.039 | False | False | -0.009 | -0.0162 | -0.0015 | True |
+| T1 | 1 | OTG vs fixed | -0.0027 | -0.0063 | 0.0007575 | False | False | -0.0025 | -0.0136 | 0.0068 | False |
+| T1 | 2 | regime vs fixed | 0.0012 | -0.0084 | 0.0041 | False | True | 0.0053 | -0.0001822 | 0.0111 | False |
+| T1 | 2 | instance vs fixed | -0.0411 | -0.1223 | -0.0579 | False | False | -0.0233 | -0.0388 | -0.0077 | True |
+| T1 | 2 | OTG vs fixed | -0.006 | -0.0083 | -0.0031 | False | False | -0.0114 | -0.029 | 0.0035 | False |
+| T1 | 3 | regime vs fixed | -0.005 | -0.019 | 0.0004507 | False | False | 0.003 | -0.0031 | 0.0092 | False |
+| T1 | 3 | instance vs fixed | -0.0945 | -0.1584 | -0.0732 | False | False | -0.016 | -0.0424 | 0.0123 | False |
+| T1 | 3 | OTG vs fixed | -0.0101 | -0.018 | -0.0055 | False | False | -0.0155 | -0.0366 | 0.0029 | False |
+| T2 | 1 | regime vs fixed | -0.0008749 | -0.0042 | 0.0035 | False | False | 0.0036 | 0.0005935 | 0.0067 | True |
+| T2 | 1 | instance vs fixed | -0.0161 | -0.0666 | -0.0137 | False | False | 0.0011 | -0.0056 | 0.0088 | False |
+| T2 | 1 | OTG vs fixed | -0.003 | -0.0049 | -0.0012 | False | False | -0.0126 | -0.0239 | -0.0031 | True |
+| T2 | 2 | regime vs fixed | -0.001 | -0.0092 | 0.0015 | False | False | 0.0023 | -0.0013 | 0.0062 | False |
+| T2 | 2 | instance vs fixed | -0.016 | -0.0775 | -0.0234 | False | False | -0.0189 | -0.0293 | -0.0079 | True |
+| T2 | 2 | OTG vs fixed | -0.0043 | -0.0072 | -0.0014 | False | False | -0.0236 | -0.0439 | -0.0072 | True |
+| T2 | 3 | regime vs fixed | -0.0026 | -0.0106 | -0.000292 | False | False | 0.0013 | -0.003 | 0.0056 | False |
+| T2 | 3 | instance vs fixed | -0.0212 | -0.0994 | -0.0327 | False | False | -0.0236 | -0.0345 | -0.0119 | True |
+| T2 | 3 | OTG vs fixed | -0.0045 | -0.0088 | -0.0012 | False | False | -0.0322 | -0.0613 | -0.0083 | True |
+| T3 | 1 | regime vs fixed | -0.0003939 | -0.0053 | 0.0044 | False | False | 0.0039 | 0.0003387 | 0.0077 | True |
+| T3 | 1 | instance vs fixed | -0.0529 | -0.1001 | -0.06 | False | False | -0.0089 | -0.0163 | -0.0013 | True |
+| T3 | 1 | OTG vs fixed | -0.0023 | -0.0097 | 0.0013 | False | False | 0.0046 | -0.0085 | 0.0191 | False |
+| T3 | 2 | regime vs fixed | -0.0013 | -0.0079 | 0.0026 | False | False | 0.0029 | -0.0016 | 0.0081 | False |
+| T3 | 2 | instance vs fixed | -0.0676 | -0.116 | -0.0672 | False | False | -0.0057 | -0.0141 | 0.002 | False |
+| T3 | 2 | OTG vs fixed | -0.0015 | -0.0053 | 0.0025 | False | False | 0.0005854 | -0.015 | 0.0183 | False |
+| T3 | 3 | regime vs fixed | -0.0051 | -0.0141 | 0.0057 | False | False | 0.0051 | 0.0006667 | 0.01 | True |
+| T3 | 3 | instance vs fixed | -0.0884 | -0.1428 | -0.0758 | False | False | -0.0024 | -0.0127 | 0.0076 | False |
+| T3 | 3 | OTG vs fixed | 4.143e-07 | -0.0053 | 0.0046 | False | True | -0.0012 | -0.0198 | 0.0179 | False |
+| T4 | 1 | regime vs fixed | 0.0027 | -0.005 | 0.0102 | False | True | -0.0426 | -0.2651 | 0.1434 | False |
+| T4 | 1 | instance vs fixed | -0.1247 | -0.1979 | -0.0907 | False | False | -0.1049 | -0.241 | -0.0246 | True |
+| T4 | 1 | OTG vs fixed | -0.0029 | -0.0049 | -0.0015 | False | False | -1.2596 | -3.3136 | -0.0074 | True |
+| T4 | 2 | regime vs fixed | 0.0126 | 0.0012 | 0.0239 | True | True | -0.0325 | -0.2715 | 0.1896 | False |
+| T4 | 2 | instance vs fixed | -0.0964 | -0.1537 | -0.0769 | False | False | -0.0632 | -0.172 | 0.0088 | False |
+| T4 | 2 | OTG vs fixed | 0.0006657 | -0.0028 | 0.0042 | False | True | -1.5828 | -4.0949 | -0.0163 | True |
+| T4 | 3 | regime vs fixed | 0.0164 | 0.0025 | 0.0305 | True | True | -0.0652 | -0.2655 | 0.0886 | False |
+| T4 | 3 | instance vs fixed | -0.1115 | -0.1733 | -0.0946 | False | False | -0.0805 | -0.1989 | -0.0054 | True |
+| T4 | 3 | OTG vs fixed | 0.0032 | -0.0008973 | 0.0067 | False | True | -2.2759 | -5.6976 | -0.0201 | True |
+| T5 | 1 | regime vs fixed | 0.0462 | 0.0286 | 0.0733 | True | True | -0.0696 | -0.1136 | -0.033 | True |
+| T5 | 1 | instance vs fixed | -0.4734 | -0.5557 | -0.304 | False | False | -0.2102 | -0.3495 | -0.0841 | True |
+| T5 | 1 | OTG vs fixed | 0.0276 | 0.0246 | 0.0314 | True | True | 1.7057 | 1.0747 | 2.3219 | True |
+| T5 | 2 | regime vs fixed | 0.0067 | -0.0089 | 0.0166 | False | True | 0.043 | 0.003 | 0.0779 | True |
+| T5 | 2 | instance vs fixed | -0.2609 | -0.383 | -0.2407 | False | False | -0.1287 | -0.3006 | 0.0276 | False |
+| T5 | 2 | OTG vs fixed | 0.0182 | 0.0149 | 0.0216 | True | True | 2.1734 | 1.4364 | 2.8155 | True |
+| T5 | 3 | regime vs fixed | -0.0032 | -0.0167 | 0.0072 | False | False | -0.0168 | -0.0627 | 0.0237 | False |
+| T5 | 3 | instance vs fixed | -0.1732 | -0.2668 | -0.154 | False | False | -0.0964 | -0.2565 | 0.0524 | False |
+| T5 | 3 | OTG vs fixed | 0.0155 | 0.0117 | 0.0199 | True | True | 2.2624 | 1.548 | 2.8776 | True |
+
+[2026-09-18T14:57:55] end c_d2_o3_eval rc=0 988s
+[2026-09-18T14:57:55] start c_o4 [cpu] codes/scripts/o4/o4_01_assessment.py
+# O4 development results — context-aware deviation assessment
+
+U from O2 model `lgbm` (T2, H = 1, rolling-180 conformal C1). Weights fitted on validation (n = 7,431); scored on the development test (n = 10,801).
+
+Weights (R, S, C, U) = [0.0, 1.0, 0.0, 0.0], κ = 0.25; validation within-decile τ = -0.0030 (without U: -0.0030).
+
+| test | outcome | τ(A) | τ(comparator) | difference | 95% CI / placebo 95th pct | p (one-sided) |
+|---|---|---|---|---|---|---|
+| A7 A vs M0 | Y | 0.0096 | 0.0182 | -0.0086 | [-0.0140, -0.0026] | 1 |
+| A7 A vs M0 | Y1 | 0.0158 | 0.0222 | -0.0064 | [-0.0105, -0.0007] | 1 |
+| A7 A vs M0 | Y2 | 0.0259 | 0.0299 | -0.0039 | [-0.0079, +0.0001] | 0.98 |
+| A7 A vs M0 | Y3 | -0.0039 | 0.0044 | -0.0083 | [-0.0143, -0.0025] | 1 |
+| U gain (A vs A without U) | Y | 0.0096 | 0.0096 | +0.0000 | [+0.0000, +0.0000] | 1 |
+| U vs gaussian placebo | Y | nan | nan | +0.0000 | -0.0257 | 0.02 |
+| U vs permuted placebo | Y | nan | nan | +0.0000 | -0.0257 | 0.02 |
+
+Strata (development test):
+
+| stratum | value | n | tau_A | tau_M0 |
+|---|---|---|---|---|
+| regime | R3 | 10801 | 0.0096 | 0.0182 |
+| season | monsoon | 4482 | -0.0027 | 0.0066 |
+| season | post | 1279 | 0.0026 | 0.0062 |
+| season | summer | 3151 | -0.0027 | -0.0034 |
+| season | winter | 1889 | -0.0109 | -0.0073 |
+
+Variance decomposition of log(1 + A):
+
+| component | share |
+|---|---|
+| State | 0.433 |
+| date | 0.081 |
+| residual (interaction + noise) | 0.486 |
+
+[2026-09-18T15:05:32] end c_o4 rc=0 456s
+[2026-09-18T15:05:32] start c_o5_rules [cpu] codes/scripts/o5/o5_01_scheduling.py
+# O5 development results — risk-aware scheduling (stylised settlement; not actual DSM settlement)
+
+Forecast source: O2 `lgbm` (T2, H = 1, rolling-180 conformal C1). Chosen on validation: A2 β = 0, ρ = 0.5; A3 ρ₀ = 0.25; A4 β₀ = 0, β_U = 0, β_stress = 0; A2r β(low, high stress) = (0, 0).
+
+| split | arm | system_mean_crore | system_cvar90_crore | J | state_mean_crore | state_cvar90_crore | deviation_energy_gwh_per_state_day | budget_violation_share | hard_limit_envelope_exceedance_share | n_state_days |
+|---|---|---|---|---|---|---|---|---|---|---|
+| validation | H_final | 2.0257 | 4.0394 | 3.0326 | 0.0596 | 0.2132 | 1.1764 | 0.2099 | 0.1236 | 12070 |
+| validation | H_pub | 15.2445 | 35.9283 | 25.5864 | 0.4484 | 1.898 | 6.1466 | 0.7833 | 0.0 | 12070 |
+| validation | P | 12.6924 | 29.1792 | 20.9358 | 0.3733 | 1.5892 | 5.4346 | 0.6837 | 0.0 | 12070 |
+| validation | A2 | 12.7932 | 27.2602 | 20.0267 | 0.3763 | 1.5451 | 5.8544 | 0.7099 | 0.0 | 12070 |
+| validation | A2r | 12.7932 | 27.2602 | 20.0267 | 0.3763 | 1.5451 | 5.8544 | 0.7099 | 0.0 | 12070 |
+| validation | A3 | 12.6468 | 27.3929 | 20.0199 | 0.372 | 1.5454 | 5.7435 | 0.7036 | 0.0 | 12070 |
+| validation | A4 | 12.7932 | 27.2602 | 20.0267 | 0.3763 | 1.5451 | 5.8544 | 0.7099 | 0.0 | 12070 |
+| dev_test | H_final | 2.2654 | 4.6478 | 3.4566 | 0.0666 | 0.2353 | 1.3221 | 0.1944 | 0.2024 | 17611 |
+| dev_test | H_pub | 18.5585 | 47.467 | 33.0127 | 0.5458 | 2.3777 | 6.9406 | 0.8156 | 0.0 | 17611 |
+| dev_test | P | 16.2729 | 42.2742 | 29.2736 | 0.4786 | 2.1261 | 6.2507 | 0.7376 | 0.0 | 17611 |
+| dev_test | A2 | 16.1054 | 39.179 | 27.6422 | 0.4737 | 2.0238 | 6.6748 | 0.7433 | 0.0 | 17611 |
+| dev_test | A2r | 16.1054 | 39.179 | 27.6422 | 0.4737 | 2.0238 | 6.6748 | 0.7433 | 0.0 | 17611 |
+| dev_test | A3 | 16.0158 | 39.3914 | 27.7036 | 0.4711 | 2.0293 | 6.5798 | 0.7404 | 0.0 | 17611 |
+| dev_test | A4 | 16.1054 | 39.179 | 27.6422 | 0.4737 | 2.0238 | 6.6748 | 0.7433 | 0.0 | 17611 |
+
+Development-test paired tests (system-wide daily regret, ₹ crore; negative = a better):
+
+| a | b | metric | mean_diff | lo | hi | p_a_better | n_days | p_holm |
+|---|---|---|---|---|---|---|---|---|
+| A4 | A2 | mean system regret | 0.0 | 0.0 | 0.0 | 0.5 | 518 | 1.0 |
+| A4 | A2 | tail days (either arm above its 90th pct) | 0.0 | 0.0 | 0.0 | 1.0 | 52 |  |
+| A4 | H_pub | mean system regret | -2.4531 | -2.9674 | -1.9835 | 1.428e-21 | 518 | 1.143e-20 |
+| A4 | H_pub | tail days (either arm above its 90th pct) | -7.5123 | -9.9705 | -5.5574 | 0.0004998 | 65 |  |
+| A4 | P | mean system regret | -0.1675 | -0.5083 | 0.1598 | 0.1274 | 518 | 0.6371 |
+| A4 | P | tail days (either arm above its 90th pct) | -2.752 | -4.2612 | -1.5698 | 0.0004998 | 60 |  |
+| A2 | H_pub | mean system regret | -2.4531 | -2.9674 | -1.9835 | 1.428e-21 | 518 | 1.143e-20 |
+| A2 | H_pub | tail days (either arm above its 90th pct) | -7.5123 | -9.9705 | -5.5574 | 0.0004998 | 65 |  |
+| A2 | P | mean system regret | -0.1675 | -0.5083 | 0.1598 | 0.1274 | 518 | 0.6371 |
+| A2 | P | tail days (either arm above its 90th pct) | -2.752 | -4.2612 | -1.5698 | 0.0004998 | 60 |  |
+| A3 | A2 | mean system regret | -0.0896 | -0.1418 | -0.0343 | 2.843e-05 | 518 | 0.0001706 |
+| A3 | A2 | tail days (either arm above its 90th pct) | 0.2123 | 0.000455 | 0.4353 | 0.9765 | 52 |  |
+| A2r | A2 | mean system regret | 0.0 | 0.0 | 0.0 | 0.5 | 518 | 1.0 |
+| A2r | A2 | tail days (either arm above its 90th pct) | 0.0 | 0.0 | 0.0 | 1.0 | 52 |  |
+| A4 | A2r | mean system regret | 0.0 | 0.0 | 0.0 | 0.5 | 518 | 1.0 |
+| A4 | A2r | tail days (either arm above its 90th pct) | 0.0 | 0.0 | 0.0 | 1.0 | 52 |  |
+| P | H_pub | mean system regret | -2.2856 | -2.6735 | -1.9223 | 2.879e-33 | 518 | 2.591e-32 |
+| P | H_pub | tail days (either arm above its 90th pct) | -5.2964 | -7.5063 | -3.2368 | 0.0004998 | 59 |  |
+
+β adaptivity ladder (prequential validation prediction vs realised development gain in J):
+
+| step | predicted_gain_val | realised_gain_dev | agree |
+|---|---|---|---|
+| constant → per-regime | 0.0 | 0.0 | True |
+| per-regime → per-instance | 0.0 | 0.0 | True |
+
+[2026-09-18T15:13:05] end c_o5_rules rc=0 453s
+[2026-09-18T15:13:05] start c_o5_ppo [gpu] codes/scripts/o5/o5_02_ppo.py
+/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/stable_baselines3/common/on_policy_algorithm.py:150: UserWarning: You are trying to run PPO on the GPU, but it is primarily intended to run on the CPU when not using a CNN policy (you are using ActorCriticPolicy which should be a MlpPolicy). See https://github.com/DLR-RM/stable-baselines3/issues/1245 for more info. You can pass `device='cpu'` or `export CUDA_VISIBLE_DEVICES=` to force using the CPU.Note: The model will train, but the GPU utilization will be poor and the training might take longer than on CPU.
+  warnings.warn(
+PPO seed 0: validation J=19.829, dev_test J=27.564
+/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/stable_baselines3/common/on_policy_algorithm.py:150: UserWarning: You are trying to run PPO on the GPU, but it is primarily intended to run on the CPU when not using a CNN policy (you are using ActorCriticPolicy which should be a MlpPolicy). See https://github.com/DLR-RM/stable-baselines3/issues/1245 for more info. You can pass `device='cpu'` or `export CUDA_VISIBLE_DEVICES=` to force using the CPU.Note: The model will train, but the GPU utilization will be poor and the training might take longer than on CPU.
+  warnings.warn(
+PPO seed 1: validation J=20.365, dev_test J=28.140
+/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/stable_baselines3/common/on_policy_algorithm.py:150: UserWarning: You are trying to run PPO on the GPU, but it is primarily intended to run on the CPU when not using a CNN policy (you are using ActorCriticPolicy which should be a MlpPolicy). See https://github.com/DLR-RM/stable-baselines3/issues/1245 for more info. You can pass `device='cpu'` or `export CUDA_VISIBLE_DEVICES=` to force using the CPU.Note: The model will train, but the GPU utilization will be poor and the training might take longer than on CPU.
+  warnings.warn(
+PPO seed 2: validation J=19.896, dev_test J=27.056
+/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/stable_baselines3/common/on_policy_algorithm.py:150: UserWarning: You are trying to run PPO on the GPU, but it is primarily intended to run on the CPU when not using a CNN policy (you are using ActorCriticPolicy which should be a MlpPolicy). See https://github.com/DLR-RM/stable-baselines3/issues/1245 for more info. You can pass `device='cpu'` or `export CUDA_VISIBLE_DEVICES=` to force using the CPU.Note: The model will train, but the GPU utilization will be poor and the training might take longer than on CPU.
+  warnings.warn(
+PPO seed 3: validation J=19.963, dev_test J=27.618
+/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/stable_baselines3/common/on_policy_algorithm.py:150: UserWarning: You are trying to run PPO on the GPU, but it is primarily intended to run on the CPU when not using a CNN policy (you are using ActorCriticPolicy which should be a MlpPolicy). See https://github.com/DLR-RM/stable-baselines3/issues/1245 for more info. You can pass `device='cpu'` or `export CUDA_VISIBLE_DEVICES=` to force using the CPU.Note: The model will train, but the GPU utilization will be poor and the training might take longer than on CPU.
+  warnings.warn(
+PPO seed 4: validation J=19.932, dev_test J=27.170
+   seed       split  system_mean_crore  system_cvar90_crore        J  seconds  selected_on_validation
+0     0  validation            12.6188              27.0396  19.8292    325.3                    True
+1     0    dev_test            15.9172              39.2112  27.5642    325.3                    True
+2     1  validation            12.6440              28.0852  20.3646    311.4                   False
+3     1    dev_test            16.0169              40.2637  28.1403    311.4                   False
+4     2  validation            12.7889              27.0026  19.8958    315.1                   False
+5     2    dev_test            15.8641              38.2478  27.0560    315.1                   False
+6     3  validation            12.5444              27.3824  19.9634    318.6                   False
+7     3    dev_test            15.7823              39.4538  27.6180    318.6                   False
+8     4  validation            12.7228              27.1408  19.9318    413.8                   False
+9     4    dev_test            15.8257              38.5136  27.1696    413.8                   False
+[2026-09-18T15:41:21] end c_o5_ppo rc=0 1696s
+[2026-09-18T15:41:21] start c_d2_o4 [gpu] codes/scripts/dev2/d2_08_o4.py
+# O4 round 2 — deviation assessment
+
+Forecast source: `ens_stack` (T2, H = 1, rolling conformal C1, 365-day window). Fitted on validation (n = 7,431); development test (n = 10,759) reported only.
+
+Two-fold week cross-validated within-decile tau on validation: . Chosen: **O4c** with {'depth': 3, 'k': 2.0}.
+
+| test | outcome | tau(A) | tau(comparator) | difference | 95% CI / placebo 95th pct | p (one-sided) |
+|---|---|---|---|---|---|---|
+| A vs M0 | Y | 0.0279 | 0.0172 | +0.0108 | [-0.0154, +0.0351] | 0.23 |
+| A vs M0 | Y1 | 0.0140 | 0.0203 | -0.0063 | [-0.0250, +0.0173] | 0.73 |
+| A vs M0 | Y2 | 0.0259 | 0.0296 | -0.0037 | [-0.0220, +0.0214] | 0.62 |
+| A vs M0 | Y3 | 0.0074 | 0.0048 | +0.0026 | [-0.0234, +0.0247] | 0.42 |
+| forecast information gain (A vs A without U, F) | Y | 0.0279 | -0.0007 | +0.0287 | [+0.0134, +0.0448] | 0.0033 |
+| forecast information vs shuffled placebo | Y | nan | nan | +0.0287 | +0.0198 | 0.02 |
+[2026-09-18T15:42:02] end c_d2_o4 rc=0 42s
+[2026-09-18T15:42:02] start c_d2_o5 [gpu] codes/scripts/dev2/d2_09_o5.py
+# O5 round 2 — scheduling with the round-2 forecaster (stylised settlement)
+
+Forecast source: `ens_stack` (window 365 days). Tuned on validation: {"A2": {"beta": 0, "rho": 0.5}, "A5": {"beta": 0}, "A4s": {"b0": -4, "bU": 0, "bS": 4, "rho": 0.5}, "A5c": {"b0": -4, "bU": 1, "bS": 2}}.
+
+| split | arm | system_mean_crore | system_cvar90_crore | J | deviation_energy_gwh_per_state_day | hard_limit_envelope_exceedance_share | n_state_days | source |
+|---|---|---|---|---|---|---|---|---|
+| validation | H_final | 2.0257 | 4.0394 | 3.0326 | 1.1764 | 0.1236 | 12070 | ens_stack |
+| validation | H_pub | 15.2385 | 35.9283 | 25.5834 | 6.1426 | 0.0 | 12070 | ens_stack |
+| validation | P | 12.3625 | 28.4621 | 20.4123 | 5.3355 | 0.0 | 12070 | ens_stack |
+| validation | A2 | 12.4299 | 26.5207 | 19.4753 | 5.7144 | 0.0 | 12070 | ens_stack |
+| validation | A5 | 12.3582 | 28.251 | 20.3046 | 5.4764 | 0.0 | 12070 | ens_stack |
+| validation | A4s | 12.4385 | 26.5394 | 19.4889 | 5.7164 | 0.0 | 12070 | ens_stack |
+| validation | A5c | 12.3568 | 28.2731 | 20.3149 | 5.4759 | 0.0 | 12070 | ens_stack |
+| dev_test | H_final | 2.2662 | 4.6478 | 3.457 | 1.3219 | 0.2018 | 17543 | ens_stack |
+| dev_test | H_pub | 18.537 | 47.467 | 33.002 | 6.9367 | 0.0 | 17543 | ens_stack |
+| dev_test | P | 15.9184 | 41.7127 | 28.8156 | 6.1282 | 0.0 | 17543 | ens_stack |
+| dev_test | A2 | 15.7991 | 38.5083 | 27.1537 | 6.578 | 0.0 | 17543 | ens_stack |
+| dev_test | A5 | 15.7956 | 39.9312 | 27.8634 | 6.2983 | 0.0 | 17543 | ens_stack |
+| dev_test | A4s | 15.8161 | 38.539 | 27.1775 | 6.5876 | 0.0 | 17543 | ens_stack |
+| dev_test | A5c | 15.8002 | 39.9704 | 27.8853 | 6.2992 | 0.0 | 17543 | ens_stack |
+
+Development-test paired tests (system-wide daily regret, crore; negative = a better):
+
+| a | b | metric | mean_diff | lo | hi | p_a_better | n_days | p_holm |
+|---|---|---|---|---|---|---|---|---|
+| A5 | A2 | mean system regret | -0.0035 | -0.2025 | 0.2343 | 0.4848 | 516 | 1.0 |
+| A5 | A2 | tail days (either arm above its 90th pct) | 1.3183 | 0.531 | 2.278 | 0.9975 | 58 |  |
+| A5 | P | mean system regret | -0.1228 | -0.335 | 0.0477 | 0.0746 | 516 | 0.4477 |
+| A5 | P | tail days (either arm above its 90th pct) | -1.6654 | -2.6855 | -0.9652 | 0.0015 | 55 |  |
+| A5 | H_pub | mean system regret | -2.7413 | -3.2026 | -2.2969 | 1.285e-30 | 516 | 1.028e-29 |
+| A5 | H_pub | tail days (either arm above its 90th pct) | -7.0572 | -9.5523 | -4.9961 | 0.0004998 | 62 |  |
+| A4s | A2 | mean system regret | 0.0169 | 0.0044 | 0.0265 | 0.9993 | 516 | 1.0 |
+| A4s | A2 | tail days (either arm above its 90th pct) | 0.0306 | -0.0233 | 0.0732 | 0.8961 | 52 |  |
+| A4s | H_pub | mean system regret | -2.7209 | -3.3047 | -2.2171 | 4.694e-22 | 516 | 3.286e-21 |
+| A4s | H_pub | tail days (either arm above its 90th pct) | -7.8808 | -10.5877 | -5.6943 | 0.0004998 | 66 |  |
+| A5c | A5 | mean system regret | 0.0045 | -0.0015 | 0.0105 | 0.9148 | 516 | 1.0 |
+| A5c | A5 | tail days (either arm above its 90th pct) | 0.0392 | 0.0063 | 0.0656 | 0.993 | 52 |  |
+| A4s | P | mean system regret | -0.1023 | -0.4899 | 0.2009 | 0.2558 | 516 | 1.0 |
+| A4s | P | tail days (either arm above its 90th pct) | -2.7094 | -4.3857 | -1.4029 | 0.0004998 | 60 |  |
+| A2 | P | mean system regret | -0.1193 | -0.5029 | 0.1831 | 0.22 | 516 | 1.0 |
+| A2 | P | tail days (either arm above its 90th pct) | -2.7264 | -4.3783 | -1.4467 | 0.0004998 | 60 |  |
+| P | H_pub | mean system regret | -2.6186 | -2.9963 | -2.2467 | 7.088e-39 | 516 | 6.379e-38 |
+| P | H_pub | tail days (either arm above its 90th pct) | -5.5043 | -7.5919 | -3.4463 | 0.0004998 | 61 |  |
+
+Chain check — same arms with the round-1 selected forecaster:
+
+| split | arm | system_mean_crore | system_cvar90_crore | J | deviation_energy_gwh_per_state_day | hard_limit_envelope_exceedance_share | n_state_days | source |
+|---|---|---|---|---|---|---|---|---|
+| validation | P | 12.3625 | 28.4621 | 20.4123 | 5.3355 | 0.0 | 12070 | ens_stack |
+| validation | A2 | 12.4299 | 26.5207 | 19.4753 | 5.7144 | 0.0 | 12070 | ens_stack |
+| validation | A5 | 12.3582 | 28.251 | 20.3046 | 5.4764 | 0.0 | 12070 | ens_stack |
+| dev_test | P | 15.9184 | 41.7127 | 28.8156 | 6.1282 | 0.0 | 17543 | ens_stack |
+| dev_test | A2 | 15.7991 | 38.5083 | 27.1537 | 6.578 | 0.0 | 17543 | ens_stack |
+| dev_test | A5 | 15.7956 | 39.9312 | 27.8634 | 6.2983 | 0.0 | 17543 | ens_stack |
+| validation | P | 12.6924 | 29.1792 | 20.9358 | 5.4346 | 0.0 | 12070 | lgbm |
+| validation | A2 | 12.7932 | 27.2602 | 20.0267 | 5.8544 | 0.0 | 12070 | lgbm |
+| validation | A5 | 12.7107 | 29.0103 | 20.8605 | 5.5905 | 0.0 | 12070 | lgbm |
+| dev_test | P | 16.2729 | 42.2742 | 29.2736 | 6.2507 | 0.0 | 17611 | lgbm |
+| dev_test | A2 | 16.1054 | 39.179 | 27.6422 | 6.6748 | 0.0 | 17611 | lgbm |
+| dev_test | A5 | 16.0515 | 40.0986 | 28.075 | 6.4091 | 0.0 | 17611 | lgbm |
+
+[2026-09-18T15:44:04] end c_d2_o5 rc=0 122s
+[2026-09-18T15:44:04] start c_d2_ppo [gpu] codes/scripts/dev2/d2_11_ppo.py
+/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/stable_baselines3/common/on_policy_algorithm.py:150: UserWarning: You are trying to run PPO on the GPU, but it is primarily intended to run on the CPU when not using a CNN policy (you are using ActorCriticPolicy which should be a MlpPolicy). See https://github.com/DLR-RM/stable-baselines3/issues/1245 for more info. You can pass `device='cpu'` or `export CUDA_VISIBLE_DEVICES=` to force using the CPU.Note: The model will train, but the GPU utilization will be poor and the training might take longer than on CPU.
+  warnings.warn(
+PPO seed 0: validation J=19.323, dev_test J=27.176
+/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/stable_baselines3/common/on_policy_algorithm.py:150: UserWarning: You are trying to run PPO on the GPU, but it is primarily intended to run on the CPU when not using a CNN policy (you are using ActorCriticPolicy which should be a MlpPolicy). See https://github.com/DLR-RM/stable-baselines3/issues/1245 for more info. You can pass `device='cpu'` or `export CUDA_VISIBLE_DEVICES=` to force using the CPU.Note: The model will train, but the GPU utilization will be poor and the training might take longer than on CPU.
+  warnings.warn(
+PPO seed 1: validation J=19.320, dev_test J=27.355
+/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/stable_baselines3/common/on_policy_algorithm.py:150: UserWarning: You are trying to run PPO on the GPU, but it is primarily intended to run on the CPU when not using a CNN policy (you are using ActorCriticPolicy which should be a MlpPolicy). See https://github.com/DLR-RM/stable-baselines3/issues/1245 for more info. You can pass `device='cpu'` or `export CUDA_VISIBLE_DEVICES=` to force using the CPU.Note: The model will train, but the GPU utilization will be poor and the training might take longer than on CPU.
+  warnings.warn(
+PPO seed 2: validation J=20.030, dev_test J=26.978
+/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/stable_baselines3/common/on_policy_algorithm.py:150: UserWarning: You are trying to run PPO on the GPU, but it is primarily intended to run on the CPU when not using a CNN policy (you are using ActorCriticPolicy which should be a MlpPolicy). See https://github.com/DLR-RM/stable-baselines3/issues/1245 for more info. You can pass `device='cpu'` or `export CUDA_VISIBLE_DEVICES=` to force using the CPU.Note: The model will train, but the GPU utilization will be poor and the training might take longer than on CPU.
+  warnings.warn(
+PPO seed 3: validation J=20.038, dev_test J=27.466
+/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/stable_baselines3/common/on_policy_algorithm.py:150: UserWarning: You are trying to run PPO on the GPU, but it is primarily intended to run on the CPU when not using a CNN policy (you are using ActorCriticPolicy which should be a MlpPolicy). See https://github.com/DLR-RM/stable-baselines3/issues/1245 for more info. You can pass `device='cpu'` or `export CUDA_VISIBLE_DEVICES=` to force using the CPU.Note: The model will train, but the GPU utilization will be poor and the training might take longer than on CPU.
+  warnings.warn(
+PPO seed 4: validation J=19.364, dev_test J=26.778
+# O5 round 2 — PPO arm (A1) with the round-2 forecaster
+
+Forecast source `ens_stack` (window 365 days), 200,000 steps per seed, 5 seeds, policy on the GPU. Seed chosen on validation J: 1.
+
+| seed | split | system_mean_crore | system_cvar90_crore | J | seconds | selected_on_validation |
+|---|---|---|---|---|---|---|
+| 0 | validation | 12.2345 | 26.4119 | 19.3232 | 328.7 | False |
+| 0 | dev_test | 15.5947 | 38.7576 | 27.1761 | 328.7 | False |
+| 1 | validation | 12.1704 | 26.4692 | 19.3198 | 328.3 | True |
+| 1 | dev_test | 15.637 | 39.0722 | 27.3546 | 328.3 | True |
+| 2 | validation | 13.0106 | 27.0504 | 20.0305 | 329.3 | False |
+| 2 | dev_test | 15.9743 | 37.9812 | 26.9778 | 329.3 | False |
+| 3 | validation | 12.5707 | 27.5057 | 20.0382 | 333.4 | False |
+| 3 | dev_test | 15.7355 | 39.1961 | 27.4658 | 333.4 | False |
+| 4 | validation | 12.4542 | 26.2735 | 19.3639 | 326.8 | False |
+| 4 | dev_test | 15.6621 | 37.894 | 26.778 | 326.8 | False |
+
+Development test, PPO against the other arms (negative = PPO better):
+
+| a | b | metric | mean_diff | lo | hi | p_a_better | n_days |
+|---|---|---|---|---|---|---|---|
+| A1 (PPO) | H_final | mean system regret | 13.3708 | 11.7083 | 15.0743 | 1.0 | 516 |
+| A1 (PPO) | H_pub | mean system regret | -2.9 | -3.4025 | -2.4239 | 6.22e-30 | 516 |
+| A1 (PPO) | P | mean system regret | -0.2814 | -0.5343 | -0.0621 | 0.0052 | 516 |
+| A1 (PPO) | A2 | mean system regret | -0.1621 | -0.3447 | 0.0674 | 0.0374 | 516 |
+| A1 (PPO) | A5 | mean system regret | -0.1586 | -0.311 | 0.0092 | 0.0192 | 516 |
+| A1 (PPO) | A4s | mean system regret | -0.1791 | -0.3637 | 0.0562 | 0.027 | 516 |
+| A1 (PPO) | A5c | mean system regret | -0.1632 | -0.3156 | 0.0049 | 0.0172 | 516 |
+
+PPO round 2 done in 1663s
+[2026-09-18T16:11:51] end c_d2_ppo rc=0 1667s
+[2026-09-18T16:11:51] start c_evidence [cpu] codes/scripts/dev2/d2_10_evidence.py
+# N1–N12 evidence (development data only)
+
+Round 1 = first H100 run; round 2 = protocol `codes/design/06_dev2_protocol.md`. All numbers are copied from the result files named in `NOVELTY_MAP.md`. Claims are tested later on the reserved period.
+
+| N | What is tested | Round 1 (dev test) | Round 2 (dev test) | Note |
+|---|---|---|---|---|
+| N1 | Official-data State-day panel with provenance | c6ef9c8ebaba692c… | rebuild identical | – |
+| N2 | Publication-latency cost (LightGBM, MASE) | T1 +16.2% (p 3.3e-107); T2 +15.1% (p 7.5e-115); T3 +30.0% (p 3.2e-115); T4 +15.8% (p 2.4e-18); T5 +137.7% (p 1.7e-44) | same data; not re-run | – |
+| N3 | Forecast accuracy: selected / final forecaster, dev MASE | T1 lgbm 0.927; T2 lgbm 0.953; T3 lgbm 0.861; T4 chronos 1.166; T5 bilstm 2.598 | T1 ens_stack 0.892, vs round 1 -0.035 (p 3.8e-21); T2 ens_stack 0.922, vs round 1 -0.032 (p 9.8e-20); T3 ens_top 0.859, vs round 1 -0.003 (p 9.1e-04); T4 chronos2 1.107, vs round 1 -0.057 (p 4.9e-10); T5 ens_top 0.741, vs round 1 -1.858 (p 9.1e-97) | – |
+| N4 | LA-MCAG instance gates vs matched fusion (scaled MAE diff) | T1 +0.0045 (p 0.992); T2 +0.0011 (p 0.741); T3 -0.0119 (p 3.1e-06); T4 -0.0127 (p 0.024); T5 -0.1347 (p 1.2e-11) | T1 +0.0030 (p 0.939); T2 +0.0026 (p 0.877); T3 -0.0169 (p 2.1e-06); T4 +0.0088 (p 0.879); T5 -0.2951 (p 5.2e-28) | – |
+| N5 | Online time-adaptive gate vs instance (scaled MAE diff) | T1 -0.0027 (p 0.057); T2 +0.0045 (p 0.990); T3 -0.0021 (p 0.115); T4 +0.0414 (p 0.992); T5 -0.6438 (p 3.2e-25) | not re-run | – |
+| N6 | Real vs null context (pinball diff) | T1 -0.0021 (p 0.095); T2 -0.0051 (p 3.9e-05); T5 -0.0053 (p 0.325) | not re-run | – |
+| N7 | Source loss: extra error of gated minus fusion (negative = gated holds up better) | T1 -0.0037 [-0.0062, -0.0012]; T2 +0.0035 [+0.0013, +0.0060] | T1 -0.0027 [-0.0055, -0.0002]; T2 +0.0019 [-0.0005, +0.0045] | – |
+| N8 | Carbon block (GCAL): all vs no carbon (scaled MAE diff) | T1 +0.0037 (p 0.888); T2 +0.0053 (p 1.000); T3 -0.0009 (p 0.329) | not re-run | – |
+| N9 | Price of adaptivity (PART) | sign agreement 29/45 | gain collected: rule +5.9742, always -0.0148, never 0; clear-cell agreement 16/22 | – |
+| N10 | Context-aware deviation assessment | A vs M0 -0.0086 (p 1.000); placebo p 0.020, 0.020 | A vs M0 +0.0108 (p 0.229); placebo p 0.020 | – |
+| N11 | Risk-aware scheduling (crore per day, negative = better) | A4-A2 mean +0.00 (p 0.500), tail +0.00; A2-H_pub mean -2.45 (p 1.4e-21), tail -7.51 | A5-A2 mean -0.00 (p 0.485), tail +1.32; A4s-A2 mean +0.02 (p 0.999), tail +0.03; A5-H_pub mean -2.74 (p 1.3e-30), tail -7.06 | – |
+| N12 | Chain: better forecaster inside scheduling (dev J) | not run | A2: ens_stack J 27.15, lgbm J 27.64; A5: ens_stack J 27.86, lgbm J 28.08; P: ens_stack J 28.82, lgbm J 29.27 | reserved-period run pending |
+[2026-09-18T16:11:51] end c_evidence rc=0 0s
+[2026-09-18T16:11:51] start c_hypotheses [cpu] codes/scripts/confirm/c01_hypotheses.py
+# Pre-registered hypotheses — confirmatory evaluation 1 Apr 2025 – 31 Aug 2026
+
+Holm within family, Benjamini–Yekutieli across all primary tests. A hypothesis is supported when its Holm-adjusted p < 0.05 and its extra rule holds (CI side, all seeds, coverage band, zero violations).
+
+Supported: 35 of 52.
+
+| id | family | what | estimate | lo | hi | p | p_holm | p_by | decision | note |
+|---|---|---|---|---|---|---|---|---|---|---|
+| H1a | F1 | T1: final forecaster beats seasonal naive (scaled |e|, H pooled) | -0.4448 | -0.5 | -0.3955 | 1.769e-87 | 1.769e-86 | 5.672e-86 | supported | seeds p<0.05: 5/5 |
+| H1f-T1 | F1 | T1: final forecaster beats the round-1 selected model (lgbm) | -0.0346 | -0.0429 | -0.0258 | 3.802e-21 | 2.662e-20 | 7.316e-20 | supported |  |
+| H2-T1 | F1 | T1: 80 % / 90 % coverage within ±5 points | 0.7891 | 0.7891 | 0.8931 |  |  |  | supported | cov80 0.789, cov90 0.893 |
+| H3-T1 | F1 | T1: publication-latency cost > 0 (LightGBM, % MASE) | 16.2044 | -0.1426 | -0.1174 | 3.27e-107 | 4.251e-106 | 2.097e-105 | supported | interval: daily scaled-error difference, instant minus published |
+| H1b | F1 | T2: final forecaster beats seasonal naive (scaled |e|, H pooled) | -0.4168 | -0.468 | -0.3721 | 6.562e-93 | 7.218e-92 | 2.525e-91 | supported | seeds p<0.05: 5/5 |
+| H1f-T2 | F1 | T2: final forecaster beats the round-1 selected model (lgbm) | -0.0318 | -0.0399 | -0.023 | 9.838e-20 | 5.903e-19 | 1.721e-18 | supported |  |
+| H2-T2 | F1 | T2: 80 % / 90 % coverage within ±5 points | 0.792 | 0.792 | 0.8927 |  |  |  | supported | cov80 0.792, cov90 0.893 |
+| H3-T2 | F1 | T2: publication-latency cost > 0 (LightGBM, % MASE) | 15.1392 | -0.1369 | -0.1142 | 7.476e-115 | 1.047e-113 | 7.191e-113 | supported | interval: daily scaled-error difference, instant minus published |
+| H1c | F1 | T3: final forecaster beats seasonal naive (scaled |e|, H pooled) | -0.2701 | -0.3076 | -0.2348 | 1.419e-62 | 1.277e-61 | 3.899e-61 | supported | seeds p<0.05: 5/5 |
+| H1f-T3 | F1 | T3: final forecaster beats the round-1 selected model (lgbm) | -0.0029 | -0.0052 | -0.0009436 | 0.0009116 | 0.0009116 | 0.008 | supported |  |
+| H2-T3 | F1 | T3: 80 % / 90 % coverage within ±5 points | 0.8016 | 0.8016 | 0.8993 |  |  |  | supported | cov80 0.802, cov90 0.899 |
+| H3-T3 | F1 | T3: publication-latency cost > 0 (LightGBM, % MASE) | 30.0267 | -0.2165 | -0.183 | 3.216e-115 | 4.823e-114 | 6.187e-113 | supported | interval: daily scaled-error difference, instant minus published |
+| H1d | F1 | T4: final forecaster beats seasonal naive (scaled |e|, H pooled) | -0.508 | -0.7026 | -0.3573 | 2.95e-07 | 5.9e-07 | 3.547e-06 | supported | seeds p<0.05: 5/5 |
+| H1f-T4 | F1 | T4: final forecaster beats the round-1 selected model (chronos) | -0.0574 | -0.0838 | -0.0358 | 4.902e-10 | 1.471e-09 | 6.736e-09 | supported |  |
+| H2-T4 | F1 | T4: 80 % / 90 % coverage within ±5 points | 0.7782 | 0.7782 | 0.8857 |  |  |  | supported | cov80 0.778, cov90 0.886 |
+| H3-T4 | F1 | T4: publication-latency cost > 0 (LightGBM, % MASE) | 15.7772 | -0.2249 | -0.1331 | 2.357e-18 | 1.178e-17 | 3.779e-17 | supported | interval: daily scaled-error difference, instant minus published |
+| H1e | F1 | T5: final forecaster beats seasonal naive (scaled |e|, H pooled) | -0.286 | -0.3925 | -0.1811 | 1.283e-12 | 5.132e-12 | 1.899e-11 | supported | seeds p<0.05: 5/5 |
+| H1f-T5 | F1 | T5: final forecaster beats the round-1 selected model (bilstm) | -1.8576 | -2.0822 | -1.6347 | 9.114e-97 | 1.094e-95 | 4.384e-95 | supported |  |
+| H2-T5 | F1 | T5: 80 % / 90 % coverage within ±5 points | 0.7864 | 0.7864 | 0.892 |  |  |  | supported | cov80 0.786, cov90 0.892 |
+| H3-T5 | F1 | T5: publication-latency cost > 0 (LightGBM, % MASE) | 137.6633 | -0.8024 | -0.5388 | 1.689e-44 | 1.351e-43 | 4.061e-43 | supported | interval: daily scaled-error difference, instant minus published |
+| H4-T1 | F2 | T1: gated (sd) beats matched fusion (sd), pinball | -0.0009314 | -0.0023 | 0.0002906 | 0.0384 | 0.3843 | 0.2465 | not supported |  |
+| H4-T2 | F2 | T2: gated (sd) beats matched fusion (sd), pinball | -0.0014 | -0.0026 | -0.0003035 | 0.0014 | 0.0181 | 0.0117 | supported |  |
+| H4-T3 | F2 | T3: gated (sd) beats matched fusion (sd), pinball | -0.0025 | -0.0046 | -9.187e-05 | 0.0027 | 0.0329 | 0.0211 | supported |  |
+| H4-T4 | F2 | T4: gated (sd) beats matched fusion (sd), pinball | -0.0008901 | -0.007 | 0.0067 | 0.3535 | 1.0 | 1.0 | not supported |  |
+| H4-T5 | F2 | T5: gated (sd) beats matched fusion (sd), pinball | -0.0478 | -0.0786 | -0.02 | 1.413e-07 | 2.119e-06 | 1.812e-06 | supported |  |
+| H5-T1 | F2 | T1: real context beats null and shuffled context, pinball | -0.0021 |  | 0.0021 | 0.0953 | 0.7625 | 0.5731 | not supported | larger of the two p values |
+| H5-T2 | F2 | T2: real context beats null and shuffled context, pinball | -0.0051 |  | -0.0017 | 3.878e-05 | 0.000543 | 0.0004146 | supported | larger of the two p values |
+| H5-T5 | F2 | T5: real context beats null and shuffled context, pinball | -0.0043 |  | 0.0285 | 0.3581 | 1.0 | 1.0 | not supported | larger of the two p values |
+| H6-T1 | F2 | T1: online time-adaptive gate lowers scaled |e| | -0.0027 | -0.0068 | 0.002 | 0.0569 | 0.5121 | 0.3531 | not supported |  |
+| H6-T2 | F2 | T2: online time-adaptive gate lowers scaled |e| | 0.0045 | -0.0002911 | 0.01 | 0.9905 | 1.0 | 1.0 | not supported |  |
+| H6-T3 | F2 | T3: online time-adaptive gate lowers scaled |e| | -0.0021 | -0.0062 | 0.0023 | 0.1145 | 0.8015 | 0.6676 | not supported |  |
+| H6-T4 | F2 | T4: online time-adaptive gate lowers scaled |e| | 0.0414 | 0.0007025 | 0.0949 | 0.9922 | 1.0 | 1.0 | not supported |  |
+| H6-T5 | F2 | T5: online time-adaptive gate lowers scaled |e| | -0.6438 | -0.8178 | -0.441 | 3.198e-25 | 5.117e-24 | 6.836e-24 | supported |  |
+| H7-T1 | F2 | T1: gated model loses less than fusion when RE and weather go missing | -0.0027 | -0.0055 | -0.0001537 | 0.005 | 0.0553 | 0.037 | not supported |  |
+| H7-T2 | F2 | T2: gated model loses less than fusion when RE and weather go missing | 0.0019 | -0.0005351 | 0.0045 | 0.978 | 1.0 | 1.0 | not supported |  |
+| H8-T3 | F2 | T3: carbon block improves pinball loss | 0.0008553 | -7.182e-05 | 0.0019 | 0.9773 | 1.0 | 1.0 | not supported |  |
+| H8-T1 | F2 | T1: carbon block does not worsen pinball (margin 1 %) | 0.0008771 | -0.0004225 | 0.0022 |  |  |  | supported | margin 0.0028 |
+| H8-T2 | F2 | T2: carbon block does not worsen pinball (margin 1 %) | 0.0006304 | -0.0002203 | 0.0014 |  |  |  | supported | margin 0.0029 |
+| H9 | F3 | assessment A ranks consequences better than M0 within M0 deciles | 0.0108 | -0.0154 | 0.0351 | 0.2292 | 0.2292 | 1.0 | not supported |  |
+| H10 | F3 | forecast information beats the shuffled placebo (95th percentile) | 0.0287 |  | 0.0198 | 0.0196 | 0.0392 | 0.1347 | supported |  |
+| H11a | F4 | A4s has lower tail-day system regret than A2 | 0.0306 | -0.0233 | 0.0732 | 0.8961 | 1.0 | 1.0 | not supported |  |
+| H11b | F4 | A4s has lower tail-day system regret than H_pub | -7.8808 | -10.5877 | -5.6943 | 0.0004998 | 0.0035 | 0.0046 | supported |  |
+| H11c | F4 | A4s has lower tail-day system regret than P | -2.7094 | -4.3857 | -1.4029 | 0.0004998 | 0.0035 | 0.0046 | supported |  |
+| H11d | F4 | A5 has lower tail-day system regret than A2 | 1.3183 | 0.531 | 2.278 | 0.9975 | 1.0 | 1.0 | not supported |  |
+| H11e | F4 | A5 has lower tail-day system regret than P | -1.6654 | -2.6855 | -0.9652 | 0.0015 | 0.0075 | 0.012 | supported |  |
+| H11f | F4 | PPO (A1) has lower mean system regret than A2 | -0.1621 | -0.3447 | 0.0674 | 0.0374 | 0.1123 | 0.2465 | not supported |  |
+| H11g | F4 | PPO (A1) has lower mean system regret than P | -0.2814 | -0.5343 | -0.0621 | 0.0052 | 0.0208 | 0.037 | supported |  |
+| H12 | F4 | no decision arm breaks the hard limits | 0.0 |  |  |  |  |  | supported | largest share of State-days outside the limits over all arms |
+| H14 | F4 | the chain with the final forecaster lowers mean system regret (arm A2) vs the round-1 forecaster | -0.2914 | -0.4522 | -0.1457 | 6.554e-06 | 5.243e-05 | 7.417e-05 | supported |  |
+| H13-OTG vs fixed | F5 | PART sign agreement > 1/2 (OTG vs fixed) | 0.6667 |  |  | 0.1509 | 0.3018 | 0.8538 | not supported | 10/15 cells |
+| H13-instance vs fixed | F5 | PART sign agreement > 1/2 (instance vs fixed) | 0.9333 |  |  | 0.0004883 | 0.0015 | 0.0046 | supported | 14/15 cells |
+| H13-regime vs fixed | F5 | PART sign agreement > 1/2 (regime vs fixed) | 0.2667 |  |  | 0.9824 | 0.9824 | 1.0 | not supported | 4/15 cells |
+
+[2026-09-18T16:11:52] end c_hypotheses rc=0 1s
+[2026-09-18T16:11:52] FINISHED_WITH_PROBLEMS c_leakage

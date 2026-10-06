@@ -1,0 +1,39 @@
+
+===== c_o3_ablation start 2026-09-18T13:29:29 host=master job=31823.master
+  T1 null_context seed 0: epochs 17 es 0.0829 [70s]
+  T1 null_context seed 1: epochs 22 es 0.0829 [132s]
+  T1 null_context seed 2: epochs 25 es 0.0832 [200s]
+T1 null_context done 200s
+  T2 null_context seed 0: epochs 19 es 0.0941 [65s]
+  T2 null_context seed 1: epochs 22 es 0.0937 [114s]
+  T2 null_context seed 2: epochs 28 es 0.0940 [171s]
+T2 null_context done 172s
+  T5 null_context seed 0: epochs 12 es 0.2308 [14s]
+  T5 null_context seed 1: epochs 10 es 0.2334 [19s]
+  T5 null_context seed 2: epochs 11 es 0.2294 [23s]
+T5 null_context done 24s
+  T1 permuted_context seed 0: epochs 21 es 0.0836 [62s]
+  T1 permuted_context seed 1: epochs 25 es 0.0836 [111s]
+  T1 permuted_context seed 2: epochs 23 es 0.0836 [153s]
+T1 permuted_context done 154s
+  T2 permuted_context seed 0: epochs 17 es 0.0942 [56s]
+  T2 permuted_context seed 1: epochs 18 es 0.0945 [87s]
+  T2 permuted_context seed 2: epochs 16 es 0.0946 [116s]
+T2 permuted_context done 117s
+  T5 permuted_context seed 0: epochs 11 es 0.2311 [14s]
+  T5 permuted_context seed 1: epochs 11 es 0.2339 [18s]
+  T5 permuted_context seed 2: epochs 10 es 0.2313 [23s]
+T5 permuted_context done 23s
+  T1 market_only seed 0: epochs 20 es 0.0847 [25s]
+  T1 market_only seed 1: epochs 21 es 0.0842 [40s]
+  T1 market_only seed 2: epochs 20 es 0.0838 [57s]
+T1 market_only done 58s
+  T2 market_only seed 0: epochs 21 es 0.0939 [25s]
+  T2 market_only seed 1: epochs 22 es 0.0941 [40s]
+  T2 market_only seed 2: epochs 21 es 0.0941 [57s]
+T2 market_only done 57s
+  T5 market_only seed 0: epochs 8 es 0.1960 [9s]
+  T5 market_only seed 1: epochs 8 es 0.1902 [11s]
+  T5 market_only seed 2: epochs 8 es 0.1939 [13s]
+T5 market_only done 13s
+===== c_o3_ablation end 2026-09-18T13:43:10 rc=0 seconds=820

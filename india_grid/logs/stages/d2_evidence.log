@@ -1,0 +1,63 @@
+
+===== d2_evidence start 2026-09-18T00:02:37 host=master job=31794.master
+# N1–N12 evidence (development data only)
+
+Round 1 = first H100 run; round 2 = protocol `codes/design/06_dev2_protocol.md`. All numbers are copied from the result files named in `NOVELTY_MAP.md`. Claims are tested later on the reserved period.
+
+| N | What is tested | Round 1 (dev test) | Round 2 (dev test) | Note |
+|---|---|---|---|---|
+| N1 | Official-data State-day panel with provenance | c6ef9c8ebaba692c… | rebuild identical | – |
+| N2 | Publication-latency cost (LightGBM, MASE) | T1 +15.6% (p 1.2e-71); T2 +16.3% (p 2.7e-88); T3 +26.9% (p 6.9e-81); T4 +18.1% (p 8.1e-51); T5 +148.8% (p 2.9e-33) | same data; not re-run | – |
+| N3 | Forecast accuracy: selected / final forecaster, dev MASE | T1 lgbm 0.925; T2 lgbm 0.937; T3 lgbm 0.764; T4 chronos 0.875; T5 bilstm 1.264 | not run | – |
+| N4 | LA-MCAG instance gates vs matched fusion (scaled MAE diff) | T1 -0.0419 (p 4.3e-15); T2 -0.0095 (p 8.1e-05); T3 -0.0073 (p 1.3e-04); T4 -0.0084 (p 0.012); T5 +0.1124 (p 1.000) | not run | – |
+| N5 | Online time-adaptive gate vs instance (scaled MAE diff) | T1 -0.0138 (p 7.7e-05); T2 -0.0118 (p 2.1e-04); T3 -0.0005 (p 0.419); T4 +0.0065 (p 0.988); T5 -0.5098 (p 4.6e-24) | not re-run | – |
+| N6 | Real vs null context (pinball diff) | T1 +0.0024 (p 0.828); T2 -0.0026 (p 0.054); T5 -0.0268 (p 0.003) | not re-run | – |
+| N7 | Source loss: extra error of gated minus fusion (negative = gated holds up better) | T1 +0.0203 [+0.0114, +0.0303]; T2 +0.0111 [+0.0057, +0.0167] | not run | – |
+| N8 | Carbon block (GCAL): all vs no carbon (scaled MAE diff) | T1 -0.0010 (p 0.366); T2 -0.0372 (p 2.9e-19); T3 -0.0044 (p 0.004) | not re-run | – |
+| N9 | Price of adaptivity (PART) | sign agreement 19/45 | not run | – |
+| N10 | Context-aware deviation assessment | A vs M0 +0.0062 (p 0.030); placebo p 1.000, 1.000 | not run | – |
+| N11 | Risk-aware scheduling (crore per day, negative = better) | A4-A2 mean +0.00 (p 0.500), tail +0.00; A2-H_pub mean -2.06 (p 7.0e-13), tail -6.74 | not run | – |
+| N12 | Chain: better forecaster inside scheduling (dev J) | not run | not run | reserved-period run pending |
+===== d2_evidence end 2026-09-18T00:02:38 rc=0 seconds=0
+
+===== d2_evidence start 2026-09-18T00:02:46 host=master job=31795.master
+# N1–N12 evidence (development data only)
+
+Round 1 = first H100 run; round 2 = protocol `codes/design/06_dev2_protocol.md`. All numbers are copied from the result files named in `NOVELTY_MAP.md`. Claims are tested later on the reserved period.
+
+| N | What is tested | Round 1 (dev test) | Round 2 (dev test) | Note |
+|---|---|---|---|---|
+| N1 | Official-data State-day panel with provenance | c6ef9c8ebaba692c… | rebuild identical | – |
+| N2 | Publication-latency cost (LightGBM, MASE) | T1 +15.6% (p 1.2e-71); T2 +16.3% (p 2.7e-88); T3 +26.9% (p 6.9e-81); T4 +18.1% (p 8.1e-51); T5 +148.8% (p 2.9e-33) | same data; not re-run | – |
+| N3 | Forecast accuracy: selected / final forecaster, dev MASE | T1 lgbm 0.925; T2 lgbm 0.937; T3 lgbm 0.764; T4 chronos 0.875; T5 bilstm 1.264 | not run | – |
+| N4 | LA-MCAG instance gates vs matched fusion (scaled MAE diff) | T1 -0.0419 (p 4.3e-15); T2 -0.0095 (p 8.1e-05); T3 -0.0073 (p 1.3e-04); T4 -0.0084 (p 0.012); T5 +0.1124 (p 1.000) | not run | – |
+| N5 | Online time-adaptive gate vs instance (scaled MAE diff) | T1 -0.0138 (p 7.7e-05); T2 -0.0118 (p 2.1e-04); T3 -0.0005 (p 0.419); T4 +0.0065 (p 0.988); T5 -0.5098 (p 4.6e-24) | not re-run | – |
+| N6 | Real vs null context (pinball diff) | T1 +0.0024 (p 0.828); T2 -0.0026 (p 0.054); T5 -0.0268 (p 0.003) | not re-run | – |
+| N7 | Source loss: extra error of gated minus fusion (negative = gated holds up better) | T1 +0.0203 [+0.0114, +0.0303]; T2 +0.0111 [+0.0057, +0.0167] | not run | – |
+| N8 | Carbon block (GCAL): all vs no carbon (scaled MAE diff) | T1 -0.0010 (p 0.366); T2 -0.0372 (p 2.9e-19); T3 -0.0044 (p 0.004) | not re-run | – |
+| N9 | Price of adaptivity (PART) | sign agreement 19/45 | not run | – |
+| N10 | Context-aware deviation assessment | A vs M0 +0.0062 (p 0.030); placebo p 1.000, 1.000 | not run | – |
+| N11 | Risk-aware scheduling (crore per day, negative = better) | A4-A2 mean +0.00 (p 0.500), tail +0.00; A2-H_pub mean -2.06 (p 7.0e-13), tail -6.74 | not run | – |
+| N12 | Chain: better forecaster inside scheduling (dev J) | not run | not run | reserved-period run pending |
+===== d2_evidence end 2026-09-18T00:02:47 rc=0 seconds=0
+
+===== d2_evidence start 2026-09-18T01:55:12 host=master job=31797.master
+# N1–N12 evidence (development data only)
+
+Round 1 = first H100 run; round 2 = protocol `codes/design/06_dev2_protocol.md`. All numbers are copied from the result files named in `NOVELTY_MAP.md`. Claims are tested later on the reserved period.
+
+| N | What is tested | Round 1 (dev test) | Round 2 (dev test) | Note |
+|---|---|---|---|---|
+| N1 | Official-data State-day panel with provenance | c6ef9c8ebaba692c… | rebuild identical | – |
+| N2 | Publication-latency cost (LightGBM, MASE) | T1 +15.6% (p 1.2e-71); T2 +16.3% (p 2.7e-88); T3 +26.9% (p 6.9e-81); T4 +18.1% (p 8.1e-51); T5 +148.8% (p 2.9e-33) | same data; not re-run | – |
+| N3 | Forecast accuracy: selected / final forecaster, dev MASE | T1 lgbm 0.925; T2 lgbm 0.937; T3 lgbm 0.764; T4 chronos 0.875; T5 bilstm 1.264 | T1 ens_stack 0.884, vs round 1 -0.041 (p 7.2e-19); T2 ens_stack 0.896, vs round 1 -0.040 (p 2.0e-28); T3 ens_top 0.742, vs round 1 -0.022 (p 8.4e-12); T4 chronos2 0.823, vs round 1 -0.051 (p 6.4e-14); T5 ens_top 0.818, vs round 1 -0.447 (p 1.0e-28) | – |
+| N4 | LA-MCAG instance gates vs matched fusion (scaled MAE diff) | T1 -0.0419 (p 4.3e-15); T2 -0.0095 (p 8.1e-05); T3 -0.0073 (p 1.3e-04); T4 -0.0084 (p 0.012); T5 +0.1124 (p 1.000) | T1 -0.0245 (p 3.0e-12); T2 -0.0253 (p 5.7e-14); T3 -0.0134 (p 5.0e-08); T4 -0.0173 (p 7.2e-07); T5 +0.1787 (p 1.000) | – |
+| N5 | Online time-adaptive gate vs instance (scaled MAE diff) | T1 -0.0138 (p 7.7e-05); T2 -0.0118 (p 2.1e-04); T3 -0.0005 (p 0.419); T4 +0.0065 (p 0.988); T5 -0.5098 (p 4.6e-24) | not re-run | – |
+| N6 | Real vs null context (pinball diff) | T1 +0.0024 (p 0.828); T2 -0.0026 (p 0.054); T5 -0.0268 (p 0.003) | not re-run | – |
+| N7 | Source loss: extra error of gated minus fusion (negative = gated holds up better) | T1 +0.0203 [+0.0114, +0.0303]; T2 +0.0111 [+0.0057, +0.0167] | T1 +0.0122 [+0.0055, +0.0190]; T2 +0.0180 [+0.0112, +0.0252] | – |
+| N8 | Carbon block (GCAL): all vs no carbon (scaled MAE diff) | T1 -0.0010 (p 0.366); T2 -0.0372 (p 2.9e-19); T3 -0.0044 (p 0.004) | not re-run | – |
+| N9 | Price of adaptivity (PART) | sign agreement 19/45 | gain collected: rule +0.3201, always +4.7644, never 0; clear-cell agreement 12/23 | – |
+| N10 | Context-aware deviation assessment | A vs M0 +0.0062 (p 0.030); placebo p 1.000, 1.000 | A vs M0 +0.0200 (p 0.050); placebo p 0.961 | – |
+| N11 | Risk-aware scheduling (crore per day, negative = better) | A4-A2 mean +0.00 (p 0.500), tail +0.00; A2-H_pub mean -2.06 (p 7.0e-13), tail -6.74 | A5-A2 mean -0.10 (p 0.143), tail +1.06; A4s-A2 mean +0.03 (p 1.000), tail +0.06; A5-H_pub mean -2.71 (p 2.5e-28), tail -6.62 | – |
+| N12 | Chain: better forecaster inside scheduling (dev J) | not run | A2: ens_stack J 24.42, lgbm J 24.95; A5: ens_stack J 24.94, lgbm J 25.53; P: ens_stack J 25.44, lgbm J 25.98 | reserved-period run pending |
+===== d2_evidence end 2026-09-18T01:55:12 rc=0 seconds=0

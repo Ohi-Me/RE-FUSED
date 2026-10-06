@@ -1,0 +1,11 @@
+
+===== c_o2_chronos start 2026-09-18T11:05:56 host=master job=31823.master
+
+Loading weights:   0%|          | 0/143 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 143/143 [00:00<00:00, 2520.54it/s]
+T1 chronos 89964 rows 12s
+T2 chronos 89964 rows 12s
+T3 chronos 71442 rows 11s
+T4 chronos 29085 rows 10s
+T5 chronos 34398 rows 12s
+===== c_o2_chronos end 2026-09-18T11:06:57 rc=0 seconds=61

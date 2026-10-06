@@ -1,0 +1,62 @@
+
+===== d2_o5 start 2026-09-18T00:35:57 host=master job=31796.master
+# O5 round 2 — scheduling with the round-2 forecaster (stylised settlement)
+
+Forecast source: `ens_stack` (window 365 days). Tuned on validation: {"A2": {"beta": 0, "rho": 0.5}, "A5": {"beta": 0}, "A4s": {"b0": -4, "bU": 0, "bS": 4, "rho": 0.5}, "A5c": {"b0": -4, "bU": 1, "bS": 2}}.
+
+| split | arm | system_mean_crore | system_cvar90_crore | J | deviation_energy_gwh_per_state_day | hard_limit_envelope_exceedance_share | n_state_days | source |
+|---|---|---|---|---|---|---|---|---|
+| validation | H_final | 2.1953 | 4.9 | 3.5477 | 1.1756 | 0.1229 | 12137 | ens_stack |
+| validation | H_pub | 16.1882 | 41.0749 | 28.6316 | 5.9914 | 0.0 | 12137 | ens_stack |
+| validation | P | 13.7837 | 34.4242 | 24.104 | 5.3503 | 0.0 | 12137 | ens_stack |
+| validation | A2 | 13.9762 | 32.9322 | 23.4542 | 5.5528 | 0.0 | 12137 | ens_stack |
+| validation | A5 | 14.0282 | 34.7849 | 24.4066 | 5.4814 | 0.0 | 12137 | ens_stack |
+| validation | A4s | 13.9994 | 32.9663 | 23.4828 | 5.5616 | 0.0 | 12137 | ens_stack |
+| validation | A5c | 14.0414 | 34.8686 | 24.455 | 5.484 | 0.0 | 12137 | ens_stack |
+| dev_test | H_final | 2.0275 | 4.0394 | 3.0334 | 1.1775 | 0.2241 | 12070 | ens_stack |
+| dev_test | H_pub | 17.976 | 41.6217 | 29.7989 | 6.7924 | 0.0 | 12070 | ens_stack |
+| dev_test | P | 15.3557 | 35.5163 | 25.436 | 6.0576 | 0.0 | 12070 | ens_stack |
+| dev_test | A2 | 15.3659 | 33.4681 | 24.417 | 6.4113 | 0.0 | 12070 | ens_stack |
+| dev_test | A5 | 15.2706 | 34.6077 | 24.9391 | 6.2012 | 0.0 | 12070 | ens_stack |
+| dev_test | A4s | 15.3916 | 33.5237 | 24.4576 | 6.422 | 0.0 | 12070 | ens_stack |
+| dev_test | A5c | 15.2714 | 34.6284 | 24.9499 | 6.2018 | 0.0 | 12070 | ens_stack |
+
+Development-test paired tests (system-wide daily regret, crore; negative = a better):
+
+| a | b | metric | mean_diff | lo | hi | p_a_better | n_days | p_holm |
+|---|---|---|---|---|---|---|---|---|
+| A5 | A2 | mean system regret | -0.0953 | -0.2789 | 0.1041 | 0.1433 | 355 | 0.7476 |
+| A5 | A2 | tail days (either arm above its 90th pct) | 1.0573 | 0.2873 | 1.727 | 0.9975 | 41 |  |
+| A5 | P | mean system regret | -0.0851 | -0.2551 | 0.0754 | 0.1246 | 355 | 0.7476 |
+| A5 | P | tail days (either arm above its 90th pct) | -0.875 | -1.661 | -0.0228 | 0.02 | 39 |  |
+| A5 | H_pub | mean system regret | -2.7054 | -3.2254 | -2.2708 | 2.511e-28 | 355 | 1.758e-27 |
+| A5 | H_pub | tail days (either arm above its 90th pct) | -6.615 | -8.9498 | -4.3737 | 0.0004998 | 43 |  |
+| A4s | A2 | mean system regret | 0.0257 | 0.0137 | 0.0385 | 1.0 | 355 | 1.0 |
+| A4s | A2 | tail days (either arm above its 90th pct) | 0.0555 | 0.0205 | 0.0941 | 0.998 | 36 |  |
+| A5c | A5 | mean system regret | 0.00083 | -0.0047 | 0.0075 | 0.6017 | 355 | 1.0 |
+| A5c | A5 | tail days (either arm above its 90th pct) | 0.0208 | 0.0003396 | 0.046 | 0.956 | 36 |  |
+| A4s | P | mean system regret | 0.0359 | -0.2926 | 0.3383 | 0.5979 | 355 | 1.0 |
+| A4s | P | tail days (either arm above its 90th pct) | -1.8494 | -3.0458 | -0.4736 | 0.0035 | 41 |  |
+| A2 | P | mean system regret | 0.0102 | -0.3147 | 0.3105 | 0.5282 | 355 | 1.0 |
+| A2 | P | tail days (either arm above its 90th pct) | -1.911 | -3.1002 | -0.5262 | 0.003 | 41 |  |
+| P | H_pub | mean system regret | -2.6203 | -3.0668 | -2.2661 | 7.741e-34 | 355 | 6.193e-33 |
+| P | H_pub | tail days (either arm above its 90th pct) | -5.8269 | -7.9128 | -3.8913 | 0.0004998 | 42 |  |
+
+Chain check — same arms with the round-1 selected forecaster:
+
+| split | arm | system_mean_crore | system_cvar90_crore | J | deviation_energy_gwh_per_state_day | hard_limit_envelope_exceedance_share | n_state_days | source |
+|---|---|---|---|---|---|---|---|---|
+| validation | P | 13.7837 | 34.4242 | 24.104 | 5.3503 | 0.0 | 12137 | ens_stack |
+| validation | A2 | 13.9762 | 32.9322 | 23.4542 | 5.5528 | 0.0 | 12137 | ens_stack |
+| validation | A5 | 14.0282 | 34.7849 | 24.4066 | 5.4814 | 0.0 | 12137 | ens_stack |
+| dev_test | P | 15.3557 | 35.5163 | 25.436 | 6.0576 | 0.0 | 12070 | ens_stack |
+| dev_test | A2 | 15.3659 | 33.4681 | 24.417 | 6.4113 | 0.0 | 12070 | ens_stack |
+| dev_test | A5 | 15.2706 | 34.6077 | 24.9391 | 6.2012 | 0.0 | 12070 | ens_stack |
+| validation | P | 14.2131 | 36.0176 | 25.1154 | 5.4666 | 0.0 | 12137 | lgbm |
+| validation | A2 | 14.378 | 34.1466 | 24.2623 | 5.6796 | 0.0 | 12137 | lgbm |
+| validation | A5 | 14.4308 | 35.9441 | 25.1874 | 5.6033 | 0.0 | 12137 | lgbm |
+| dev_test | P | 15.8263 | 36.1284 | 25.9774 | 6.2334 | 0.0 | 12138 | lgbm |
+| dev_test | A2 | 15.8996 | 33.9925 | 24.9461 | 6.642 | 0.0 | 12138 | lgbm |
+| dev_test | A5 | 15.7921 | 35.2697 | 25.5309 | 6.3869 | 0.0 | 12138 | lgbm |
+
+===== d2_o5 end 2026-09-18T01:28:14 rc=0 seconds=3137

@@ -1,0 +1,27 @@
+
+===== build_b06_imd start 2026-09-17T17:40:49 host=master job=31772.master
+/Data3/<hpc-user>/RefusedH100/codes/scripts/build/b06_imd.py:99: RuntimeWarning: Mean of empty slice
+  valid_t = np.nanmean(tx, axis=0)
+2017 done
+2018 done
+/Data3/<hpc-user>/RefusedH100/codes/scripts/build/b06_imd.py:113: RuntimeWarning: Mean of empty slice
+  "tmax_c": np.nanmean(txs, axis=0) if txs else np.nan,
+2019 done
+2020 done
+2021 done
+2022 done
+2023 done
+2024 done
+2025 done
+rows 111758 2017-01-01 00:00:00 2025-12-31 00:00:00 entities 34
+missing share: {'tmax_c': 0.0, 'tmin_c': 0.0, 'rain_mm': 0.0}
+cells used (min over entities): {'n_temp_cells': 1, 'n_rain_cells': 1}
+       tmax_c       rain_mm     
+m          1     5       7    12
+entity                          
+DL       19.4  39.5     6.3  0.3
+MH       29.1  37.0    18.3  0.3
+TN       29.5  34.7     4.4  3.7
+AS       23.4  30.3    10.8  0.2
+RJ       23.1  41.0     7.4  0.1
+===== build_b06_imd end 2026-09-17T17:40:54 rc=0 seconds=4

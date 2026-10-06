@@ -1,0 +1,12 @@
+{
+ "stage": "o3_ablation2",
+ "state": "done",
+ "returncode": 0,
+ "queue": "gpu",
+ "seconds": 229.0,
+ "finished": "2026-09-17T16:06:03",
+ "host": "master",
+ "pbs_job": "31772.master",
+ "cuda_visible_devices": "MIG-4d38d5cf-c802-5308-80b8-251f3cec7480",
+ "log": "logs/stages/o3_ablation2.log"
+}

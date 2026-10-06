@@ -1,0 +1,217 @@
+job 31785.master on master; CUDA_VISIBLE_DEVICES=MIG-4d38d5cf-c802-5308-80b8-251f3cec7480
+[2026-09-17T18:35:50] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-4d38d5cf-c802-5308-80b8-251f3cec7480), torch 2.5.1+cu121
+[2026-09-17T18:35:50] start env_check [cpu] run_all.py _internal env_check
+{
+ "time": "2026-09-17T18:35:50",
+ "host": "master",
+ "platform": "Linux-6.8.0-110-generic-x86_64-with-glibc2.35",
+ "python": "3.10.21",
+ "cpu_count": 128,
+ "pbs_job": "31785.master",
+ "ncpus": "16",
+ "packages": {
+  "numpy": "2.2.6",
+  "pandas": "2.3.3",
+  "pyarrow": "25.0.1",
+  "scipy": "1.15.3",
+  "scikit-learn": "1.7.2",
+  "statsmodels": "0.14.6",
+  "lightgbm": "4.7.0",
+  "torch": "2.5.1+cu121",
+  "pytorch-lightning": "2.5.6",
+  "neuralforecast": "3.2.2",
+  "chronos-forecasting": "2.3.2",
+  "transformers": "5.3.0",
+  "stable_baselines3": "2.7.1",
+  "gymnasium": "1.2.3",
+  "matplotlib": "3.10.8",
+  "openpyxl": "3.1.5",
+  "xlrd": "2.0.2",
+  "pymupdf": "1.28.2"
+ },
+ "cuda_available": false,
+ "cuda_build": "12.1",
+ "panel_shape": [
+  104550,
+  107
+ ],
+ "panel_sha256": "c6ef9c8ebaba692cc0952025f87ea311e09b54ffae9e77c1c04a1b0ffaec4bbd",
+ "panel_sha256_reference": "c6ef9c8ebaba692cc0952025f87ea311e09b54ffae9e77c1c04a1b0ffaec4bbd",
+ "panel_checksum_ok": true
+}
+ENV_CHECK_OK
+[2026-09-17T18:35:52] end env_check rc=0 2s
+[2026-09-17T18:35:52] start leakage_test [cpu] codes/tests/test_leakage.py
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 2.64980333  0.31740243  1.43156431 ...  6.62801694  7.41312781
+ -2.00707063]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[10.72404266  8.52691098  5.54283336 ...  0.17166323  2.52808718
+  5.84134479]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[110.01550901 102.78708863 165.37420179 ... 110.16096966 126.19790336
+  90.19087786]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[2692.85499886 1060.21735802 2804.37357271 ... 1791.53953502 2252.53659824
+ 1137.88013228]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+T1 τ=2023-07-15: 102 rows, 113 feature/anchor columns unchanged; targets changed as expected (max |Δy| = 157.95)
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 6.70362028 -0.89338188  1.2645405  ...  2.7951603   4.50621819
+  0.49179492]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 9.23326761  9.35933671 13.26804971 ...  1.79362332  4.17299325
+  3.2853958 ]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[176.77476076 458.98914003 260.09554809 ...  83.67532184  78.89506136
+  79.79600594]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[1157.82364596 1262.61925393 1947.85864227 ... 2210.96308558 2036.10265979
+ 2854.7672196 ]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+T2 τ=2024-11-02: 102 rows, 113 feature/anchor columns unchanged; targets changed as expected (max |Δy| = 98.03)
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[7.81877946 0.36815664 0.15620078 ... 4.82828399 8.3219498  0.5367352 ]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[-0.09640709 -0.36935225  0.27316273 ...  4.24280999  4.62335022
+  4.14204366]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 31.66659574  27.12938702  14.43497741 ... 112.75877178  76.69952603
+  86.85218347]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[2557.11432378 2931.17789789 1527.16453805 ... 2804.88104864 2615.54517876
+ 1080.08014314]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+T3 τ=2024-01-20: 81 rows, 113 feature/anchor columns unchanged; targets changed as expected (max |Δy| = 223.48)
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[1.11914272 2.62145374 4.58529621 ... 7.6358287  5.86480234 2.0650209 ]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 9.99023542 11.11301702 16.3067076  ...  3.5391523   2.8152034
+  2.08151309]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[401.43943818 236.79044891 480.81418316 ...  69.61699231  91.27247324
+  75.28503002]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[2189.15528777 3033.54768999 1213.04156247 ... 2442.87890289 2899.19507565
+ 2505.49164191]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+T4 τ=2023-12-05: 45 rows, 113 feature/anchor columns unchanged; targets changed as expected (max |Δy| = 38.01)
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[1.03523706 2.14550512 4.69671632 ... 3.34291022 6.41999668 0.25028059]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[6.92007927 4.33536482 9.14000544 ... 3.71300285 5.77327765 1.91386029]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[189.19259339 177.63990766 219.92297798 ... 115.45270572  79.26845657
+ 134.57896967]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[2123.52796785 2920.09876864 1457.0923205  ... 1696.23054957 2920.81274883
+ 2868.41226547]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+T5 τ=2024-06-10: 39 rows, 62 feature/anchor columns unchanged; targets changed as expected (max |Δy| = 2424.23)
+LEAKAGE TEST PASSED (5 targets)
+[2026-09-17T18:36:05] end leakage_test rc=0 14s
+[2026-09-17T18:36:05] start o2_samples [cpu] codes/scripts/o2/o2_01_samples.py
+T1 standard (259896, 124) 34 series
+T1 instant (259998, 124) 34 series
+T2 standard (259896, 124) 34 series
+T2 instant (259998, 124) 34 series
+T3 standard (200355, 124) 27 series
+T3 instant (200517, 124) 27 series
+T4 standard (93594, 124) 15 series
+T4 instant (93684, 124) 15 series
+T5 standard (88647, 73) 13 series
+T5 instant (89193, 73) 13 series
+[2026-09-17T18:36:25] end o2_samples rc=0 19s
+[2026-09-17T18:36:25] start data_paper_numbers [cpu] codes/scripts/paper/make_numbers_data.py
+152 macros written
+[2026-09-17T18:36:25] end data_paper_numbers rc=0 0s
+[2026-09-17T18:36:25] start data_paper_figures [cpu] codes/scripts/paper/make_figures_data.py
+fig_pipeline ok
+fig_coverage ok
+fig_lags ok
+fig_validation ok
+fig_example ok
+[2026-09-17T18:36:34] end data_paper_figures rc=0 10s
+[2026-09-17T18:36:34] start build_b01_psp [cpu] codes/scripts/build/b01_psp.py
+files 3448
+0 2017-18/01.04.17_NLDC_PSP.pdf few_states:0
+500 2018-19/22.08.18_NLDC_PSP.pdf ok
+1000 2019-20/01.03.20_NLDC_PSP.pdf ok
+1500 2021-22/30.07.21_NLDC_PSP.pdf ok
+2000 2022-23/17.12.22_NLDC_PSP_256.pdf ok
+2500 2024-25/30.04.24_NLDC_PSP.xls ok
+3000 2025-26/14.08.25_NLDC_PSP_248.xls ok
+date collisions resolved by cover letter: 2 | duplicate uploads dropped: 0
+states rows 111654 dates 3284 2017-05-08 00:00:00 2026-09-13 00:00:00 entities 34 unmapped labels []
+{'ok': 3382, 'few_states': 60, 'not_psp_or_no_date': 6}
+[2026-09-17T18:37:10] end build_b01_psp rc=0 36s
+[2026-09-17T18:37:10] start build_b07_panel [cpu] codes/scripts/build/b07_panel.py
+panel (104550, 107) checksum c6ef9c8ebaba692c
+unregistered columns: []
+QC exclusions: {'qc_energy_met': 6, 'qc_max_demand': 16, 'qc_energy_shortage': 18, 'qc_od_ud': 2, 'qc_frequency_days': 2, 'qc_price_values': 0, 'qc_npp_capacity': 13, 'qc_npp_station_typo': 145, 'qc_weather_tmax_lt_tmin': 0}
+[2026-09-17T18:37:18] end build_b07_panel rc=0 7s
+[2026-09-17T18:37:18] start build_b08_validation [cpu] codes/scripts/build/b08_validation.py
+psp ok
+dsm ok
+npp ok
+cea_re ok
+/Data3/<hpc-user>/RefusedH100/codes/scripts/build/b08_validation.py:143: RuntimeWarning: invalid value encountered in scalar divide
+  nat = c[c.fuel == "coal"].groupby("fy").apply(lambda g: g.emis_t.sum() / g.netgen_gwh.sum() / 1000, include_groups=False)
+co2 ok
+imd ok
+panel ok
+{
+ "raw_total_bytes_official": 5012347505,
+ "raw_files_ok_official": 17929
+}
+[2026-09-17T18:37:25] end build_b08_validation rc=0 7s
+[2026-09-17T18:37:25] start build_verify [cpu] run_all.py _internal build_verify
+# Panel rebuild check (2026-09-17T18:37:25)
+
+Reference (data/processed/CHECKSUM.txt):
+
+    refused8_state_day.parquet rows=104550 cols=107 content_sha256=c6ef9c8ebaba692cc0952025f87ea311e09b54ffae9e77c1c04a1b0ffaec4bbd
+
+Rebuilt from data/raw on master (results/rebuild/data/processed/CHECKSUM.txt):
+
+    refused8_state_day.parquet rows=104550 cols=107 content_sha256=c6ef9c8ebaba692cc0952025f87ea311e09b54ffae9e77c1c04a1b0ffaec4bbd
+
+Result: **identical panel (content SHA-256 match)**
+
+[2026-09-17T18:37:25] end build_verify rc=0 0s
+[2026-09-17T18:37:25] ALL_REQUESTED_STAGES_DONE env_check,leakage_test,o2_samples,data_paper_numbers,data_paper_figures,build_b01_psp,build_b07_panel,build_b08_validation,build_verify
+SAMPLES_IDENTICAL
+[2026-09-17T18:37:27] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-4d38d5cf-c802-5308-80b8-251f3cec7480), torch 2.5.1+cu121
+[2026-09-17T18:37:27] start report [cpu] run_all.py _internal report
+# RefusedH100 run summary
+
+Written 2026-09-17T18:37:27 on master.
+
+| stage | queue | state | seconds | host | PBS job | log |
+|---|---|---|---|---|---|---|
+| env_check | cpu | done | 2.1 | master | 31785.master | logs/stages/env_check.log |
+| leakage_test | cpu | done | 13.7 | master | 31785.master | logs/stages/leakage_test.log |
+| o2_samples | cpu | done | 19.1 | master | 31785.master | logs/stages/o2_samples.log |
+| o2_patchtst | gpu | done | 365.7 | master | 31770.master | logs/stages/o2_patchtst.log |
+| o2_tft | gpu | done | 896.9 | master | 31770.master | logs/stages/o2_tft.log |
+| o2_bilstm | gpu | done | 132.1 | master | 31770.master | logs/stages/o2_bilstm.log |
+| o2_chronos | gpu | done | 60.5 | master | 31770.master | logs/stages/o2_chronos.log |
+| o3_main | gpu | done | 1547.3 | master | 31772.master | logs/stages/o3_main.log |
+| o3_ablation | gpu | done | 625.2 | master | 31772.master | logs/stages/o3_ablation.log |
+| o3_ablation2 | gpu | done | 229.0 | master | 31772.master | logs/stages/o3_ablation2.log |
+| o2_lgbm | cpu | done | 1599.6 | master | 31772.master | logs/stages/o2_lgbm.log |
+| o2_evaluate | cpu | done | 1062.6 | master | 31772.master | logs/stages/o2_evaluate.log |
+| o4 | cpu | done | 464.1 | master | 31772.master | logs/stages/o4.log |
+| o5_rules | cpu | done | 458.3 | master | 31772.master | logs/stages/o5_rules.log |
+| o5_ppo | gpu | done | 1727.2 | master | 31772.master | logs/stages/o5_ppo.log |
+| o3_evaluate | cpu | done | 354.5 | master | 31783.master | logs/stages/o3_evaluate.log |
+| data_paper_numbers | cpu | done | 0.0 | master | 31785.master | logs/stages/data_paper_numbers.log |
+| data_paper_figures | cpu | done | 9.6 | master | 31785.master | logs/stages/data_paper_figures.log |
+| build_b01_psp | cpu | done | 36.4 | master | 31785.master | logs/stages/build_b01_psp.log |
+| build_b02_dsm | cpu | done | 186.5 | master | 31772.master | logs/stages/build_b02_dsm.log |
+| build_b03_npp | cpu | done | 62.3 | master | 31772.master | logs/stages/build_b03_npp.log |
+| build_b04_re | cpu | done | 38.6 | master | 31772.master | logs/stages/build_b04_re.log |
+| build_b05_co2 | cpu | done | 4.3 | master | 31772.master | logs/stages/build_b05_co2.log |
+| build_b06_imd | cpu | done | 4.5 | master | 31772.master | logs/stages/build_b06_imd.log |
+| build_b07_panel | cpu | done | 7.0 | master | 31785.master | logs/stages/build_b07_panel.log |
+| build_b08_validation | cpu | done | 7.3 | master | 31785.master | logs/stages/build_b08_validation.log |
+| build_verify | cpu | done | 0.0 | master | 31785.master | logs/stages/build_verify.log |
+| prereg_fill | cpu | done | 0.0 | master | 31783.master | logs/stages/prereg_fill.log |
+| report | cpu | done | 0.0 | master | 31783.master | logs/stages/report.log |
+[2026-09-17T18:37:27] end report rc=0 0s
+[2026-09-17T18:37:27] ALL_REQUESTED_STAGES_DONE report

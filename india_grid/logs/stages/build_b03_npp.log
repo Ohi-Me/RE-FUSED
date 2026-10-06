@@ -1,0 +1,16 @@
+
+===== build_b03_npp start 2026-09-17T17:39:04 host=master job=31772.master
+files 3022
+0 2018/2018-03-22_dgr2.xls ok|1.1368683772161603e-13
+500 2019/2019-08-04_dgr2.xls ok|5.684341886080802e-14
+1000 2021/2021-02-28_dgr2.xls ok|1.1368683772161603e-13
+1500 2022/2022-07-13_dgr2.xls ok|1.1368683772161603e-13
+2000 2023/2023-11-25_dgr2.xls ok|1.1368683772161603e-13
+2500 2025/2025-04-08_dgr2.xls ok|1.1368683772161603e-13
+3000 2026/2026-08-21_dgr2.xls ok|2.2737367544323206e-13
+station coal-days values outside 0–180 set to missing: 6
+station typos: 148 State-days flagged: 145
+station rows 1547930 state-day rows 93589 dates 3019 2018-03-22 00:00:00 2026-09-11 00:00:00
+unmapped states ['ANDAMAN & NICOBAR ISLANDS', 'BHUTAN', 'LAKSHADWEEP']
+{'ok': 3019, 'no_state_totals': 3} max station-vs-total discrepancy (GWh): 4.547473508864641e-13
+===== build_b03_npp end 2026-09-17T17:40:07 rc=0 seconds=62

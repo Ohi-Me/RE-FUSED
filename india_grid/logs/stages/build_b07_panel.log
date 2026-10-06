@@ -1,0 +1,12 @@
+
+===== build_b07_panel start 2026-09-17T17:40:54 host=master job=31772.master
+panel (104550, 107) checksum c6ef9c8ebaba692c
+unregistered columns: []
+QC exclusions: {'qc_energy_met': 6, 'qc_max_demand': 16, 'qc_energy_shortage': 18, 'qc_od_ud': 2, 'qc_frequency_days': 2, 'qc_price_values': 0, 'qc_npp_capacity': 13, 'qc_npp_station_typo': 145, 'qc_weather_tmax_lt_tmin': 0}
+===== build_b07_panel end 2026-09-17T17:40:58 rc=0 seconds=4
+
+===== build_b07_panel start 2026-09-17T18:37:10 host=master job=31785.master
+panel (104550, 107) checksum c6ef9c8ebaba692c
+unregistered columns: []
+QC exclusions: {'qc_energy_met': 6, 'qc_max_demand': 16, 'qc_energy_shortage': 18, 'qc_od_ud': 2, 'qc_frequency_days': 2, 'qc_price_values': 0, 'qc_npp_capacity': 13, 'qc_npp_station_typo': 145, 'qc_weather_tmax_lt_tmin': 0}
+===== build_b07_panel end 2026-09-17T18:37:18 rc=0 seconds=7

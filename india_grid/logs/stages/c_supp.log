@@ -1,0 +1,384 @@
+
+===== c_supp start 2026-09-20T23:53:47 host=master job=32069.master
+wrote t_members
+wrote t_members_prob
+wrote t_latency
+wrote t_o2tests
+wrote t_seeds
+wrote t_ensemble
+wrote t_gating
+wrote t_variants
+wrote t_sourceloss
+wrote t_part
+t_assessment skipped: unsupported format string passed to method.__format__
+wrote t_arms
+wrote t_armtests
+wrote t_tuning
+wrote t_hyp_all
+wrote t_hyp_F1
+wrote t_hyp_F2
+wrote t_hyp_F3
+wrote t_hyp_F4
+wrote t_hyp_F5
+19 tables written to /Data3/<hpc-user>/RefusedH100/results/paper/confirm/tables
+===== c_supp end 2026-09-20T23:53:47 rc=0 seconds=0
+
+===== c_supp start 2026-09-21T00:05:32 host=master job=32073.master
+wrote t_members
+wrote t_members_prob
+wrote t_latency
+wrote t_o2tests
+wrote t_seeds
+wrote t_ensemble
+wrote t_gating
+wrote t_variants
+wrote t_sourceloss
+wrote t_part
+wrote t_assessment
+wrote t_arms
+wrote t_armtests
+wrote t_tuning
+wrote t_hyp_all
+wrote t_hyp_F1
+wrote t_hyp_F2
+wrote t_hyp_F3
+wrote t_hyp_F4
+wrote t_hyp_F5
+20 tables written to /Data3/<hpc-user>/RefusedH100/results/paper/confirm/tables
+===== c_supp end 2026-09-21T00:05:33 rc=0 seconds=0
+
+===== c_supp start 2026-09-21T00:10:49 host=master job=32074.master
+wrote t_members
+wrote t_members_prob
+wrote t_latency
+wrote t_o2tests
+wrote t_seeds
+wrote t_ensemble
+wrote t_gating
+wrote t_variants
+wrote t_sourceloss
+wrote t_part
+wrote t_assessment
+wrote t_arms
+wrote t_armtests
+wrote t_tuning
+wrote t_hyp_all
+wrote t_hyp_F1
+wrote t_hyp_F2
+wrote t_hyp_F3
+wrote t_hyp_F4
+wrote t_hyp_F5
+20 tables written to /Data3/<hpc-user>/RefusedH100/results/paper/confirm/tables
+===== c_supp end 2026-09-21T00:10:49 rc=0 seconds=0
+
+===== c_supp start 2026-09-21T00:21:13 host=master job=32076.master
+wrote t_members
+wrote t_members_prob
+wrote t_latency
+wrote t_o2tests
+wrote t_seeds
+wrote t_ensemble
+wrote t_gating
+wrote t_variants
+wrote t_sourceloss
+wrote t_part
+wrote t_assessment
+wrote t_arms
+wrote t_armtests
+wrote t_tuning
+wrote t_hyp_all
+wrote t_hyp_F1
+wrote t_hyp_F2
+wrote t_hyp_F3
+wrote t_hyp_F4
+wrote t_hyp_F5
+20 tables written to /Data3/<hpc-user>/RefusedH100/results/paper/confirm/tables
+===== c_supp end 2026-09-21T00:21:13 rc=0 seconds=0
+
+===== c_supp start 2026-09-21T00:24:37 host=master job=32078.master
+wrote t_members
+wrote t_members_prob
+wrote t_latency
+wrote t_o2tests
+wrote t_seeds
+wrote t_ensemble
+wrote t_gating
+wrote t_variants
+wrote t_sourceloss
+wrote t_part
+wrote t_assessment
+wrote t_arms
+wrote t_armtests
+wrote t_tuning
+wrote t_hyp_all
+wrote t_hyp_F1
+wrote t_hyp_F2
+wrote t_hyp_F3
+wrote t_hyp_F4
+wrote t_hyp_F5
+20 tables written to /Data3/<hpc-user>/RefusedH100/results/paper/confirm/tables
+===== c_supp end 2026-09-21T00:24:37 rc=0 seconds=0
+
+===== c_supp start 2026-09-21T00:27:14 host=master job=32079.master
+wrote t_members
+wrote t_members_prob
+wrote t_latency
+wrote t_o2tests
+wrote t_seeds
+wrote t_ensemble
+wrote t_gating
+wrote t_variants
+wrote t_sourceloss
+wrote t_part
+wrote t_assessment
+wrote t_arms
+wrote t_armtests
+wrote t_tuning
+wrote t_hyp_all
+wrote t_hyp_F1
+wrote t_hyp_F2
+wrote t_hyp_F3
+wrote t_hyp_F4
+wrote t_hyp_F5
+20 tables written to /Data3/<hpc-user>/RefusedH100/results/paper/confirm/tables
+===== c_supp end 2026-09-21T00:27:14 rc=0 seconds=0
+
+===== c_supp start 2026-09-21T00:28:00 host=master job=32080.master
+wrote t_members
+wrote t_members_prob
+wrote t_latency
+wrote t_o2tests
+wrote t_seeds
+wrote t_ensemble
+wrote t_gating
+wrote t_variants
+wrote t_sourceloss
+wrote t_part
+wrote t_assessment
+wrote t_arms
+wrote t_armtests
+wrote t_tuning
+wrote t_hyp_all
+wrote t_hyp_F1
+wrote t_hyp_F2
+wrote t_hyp_F3
+wrote t_hyp_F4
+wrote t_hyp_F5
+20 tables written to /Data3/<hpc-user>/RefusedH100/results/paper/confirm/tables
+===== c_supp end 2026-09-21T00:28:01 rc=0 seconds=0
+
+===== c_supp start 2026-09-21T03:50:53 host=master job=32093.master
+wrote t_members
+wrote t_members_prob
+wrote t_latency
+wrote t_o2tests
+wrote t_seeds
+wrote t_ensemble
+wrote t_gating
+wrote t_variants
+wrote t_sourceloss
+wrote t_part
+wrote t_assessment
+wrote t_arms
+wrote t_armtests
+wrote t_tuning
+wrote t_hyp_all
+wrote t_hyp_F1
+wrote t_hyp_F2
+wrote t_hyp_F3
+wrote t_hyp_F4
+wrote t_hyp_F5
+20 tables written to /Data3/<hpc-user>/RefusedH100/results/paper/confirm/tables
+===== c_supp end 2026-09-21T03:50:53 rc=0 seconds=0
+
+===== c_supp start 2026-09-21T03:56:44 host=master job=32094.master
+wrote t_members
+wrote t_members_prob
+wrote t_latency
+wrote t_o2tests
+wrote t_seeds
+wrote t_ensemble
+wrote t_gating
+wrote t_variants
+wrote t_sourceloss
+wrote t_part
+wrote t_assessment
+wrote t_arms
+wrote t_armtests
+wrote t_tuning
+wrote t_hyp_all
+wrote t_hyp_F1
+wrote t_hyp_F2
+wrote t_hyp_F3
+wrote t_hyp_F4
+wrote t_hyp_F5
+20 tables written to /Data3/<hpc-user>/RefusedH100/results/paper/confirm/tables
+===== c_supp end 2026-09-21T03:56:45 rc=0 seconds=0
+
+===== c_supp start 2026-09-21T03:58:18 host=master job=32095.master
+wrote t_members
+wrote t_members_prob
+wrote t_latency
+wrote t_o2tests
+wrote t_seeds
+wrote t_ensemble
+wrote t_gating
+wrote t_variants
+wrote t_sourceloss
+wrote t_part
+wrote t_assessment
+wrote t_arms
+wrote t_armtests
+wrote t_tuning
+wrote t_hyp_all
+wrote t_hyp_F1
+wrote t_hyp_F2
+wrote t_hyp_F3
+wrote t_hyp_F4
+wrote t_hyp_F5
+20 tables written to /Data3/<hpc-user>/RefusedH100/results/paper/confirm/tables
+===== c_supp end 2026-09-21T03:58:19 rc=0 seconds=0
+
+===== c_supp start 2026-09-21T04:04:55 host=master job=32096.master
+wrote t_members
+wrote t_members_prob
+wrote t_latency
+wrote t_o2tests
+wrote t_seeds
+wrote t_ensemble
+wrote t_gating
+wrote t_variants
+wrote t_sourceloss
+wrote t_part
+wrote t_assessment
+wrote t_arms
+wrote t_armtests
+wrote t_tuning
+wrote t_hyp_all
+wrote t_hyp_F1
+wrote t_hyp_F2
+wrote t_hyp_F3
+wrote t_hyp_F4
+wrote t_hyp_F5
+20 tables written to /Data3/<hpc-user>/RefusedH100/results/paper/confirm/tables
+===== c_supp end 2026-09-21T04:04:56 rc=0 seconds=0
+
+===== c_supp start 2026-09-21T04:07:15 host=master job=32097.master
+wrote t_members
+wrote t_members_prob
+wrote t_latency
+wrote t_o2tests
+wrote t_seeds
+wrote t_ensemble
+wrote t_gating
+wrote t_variants
+wrote t_sourceloss
+wrote t_part
+wrote t_assessment
+wrote t_arms
+wrote t_armtests
+wrote t_tuning
+wrote t_hyp_all
+wrote t_hyp_F1
+wrote t_hyp_F2
+wrote t_hyp_F3
+wrote t_hyp_F4
+wrote t_hyp_F5
+20 tables written to /Data3/<hpc-user>/RefusedH100/results/paper/confirm/tables
+===== c_supp end 2026-09-21T04:07:15 rc=0 seconds=0
+
+===== c_supp start 2026-09-21T14:09:08 host=master job=32116.master
+wrote t_members
+wrote t_members_prob
+wrote t_latency
+wrote t_o2tests
+wrote t_seeds
+wrote t_ensemble
+wrote t_gating
+wrote t_variants
+wrote t_sourceloss
+wrote t_part
+wrote t_assessment
+wrote t_arms
+wrote t_armtests
+wrote t_tuning
+wrote t_hyp_all
+wrote t_hyp_F1
+wrote t_hyp_F2
+wrote t_hyp_F3
+wrote t_hyp_F4
+wrote t_hyp_F5
+20 tables written to /Data3/<hpc-user>/RefusedH100/results/paper/confirm/tables
+===== c_supp end 2026-09-21T14:09:08 rc=0 seconds=0
+
+===== c_supp start 2026-09-21T15:20:29 host=master job=32123.master
+wrote t_members
+wrote t_members_prob
+wrote t_latency
+wrote t_o2tests
+wrote t_seeds
+wrote t_ensemble
+wrote t_gating
+wrote t_variants
+wrote t_sourceloss
+wrote t_part
+wrote t_assessment
+wrote t_arms
+wrote t_armtests
+wrote t_tuning
+wrote t_hyp_all
+wrote t_hyp_F1
+wrote t_hyp_F2
+wrote t_hyp_F3
+wrote t_hyp_F4
+wrote t_hyp_F5
+20 tables written to /Data3/<hpc-user>/RefusedH100/results/paper/confirm/tables
+===== c_supp end 2026-09-21T15:20:29 rc=0 seconds=0
+
+===== c_supp start 2026-09-24T13:55:50 host=master job=32487.master
+wrote t_members
+wrote t_members_prob
+wrote t_latency
+wrote t_o2tests
+wrote t_seeds
+wrote t_ensemble
+wrote t_gating
+wrote t_variants
+wrote t_sourceloss
+wrote t_part
+wrote t_assessment
+wrote t_arms
+wrote t_armtests
+wrote t_tuning
+wrote t_hyp_all
+wrote t_hyp_F1
+wrote t_hyp_F2
+wrote t_hyp_F3
+wrote t_hyp_F4
+wrote t_hyp_F5
+20 tables written to /Data3/<hpc-user>/RE-FUSED/results/paper/confirm/tables
+===== c_supp end 2026-09-24T13:55:50 rc=0 seconds=0
+
+===== c_supp start 2026-10-05T09:46:55 host=master job=34077.master
+wrote t_members
+wrote t_members_prob
+wrote t_latency
+wrote t_o2tests
+wrote t_seeds
+wrote t_ensemble
+wrote t_gating
+wrote t_variants
+wrote t_sourceloss
+wrote t_part
+wrote t_assessment
+wrote t_arms
+wrote t_armtests
+wrote t_tuning
+wrote t_hyp_all
+wrote t_hyp_F1
+wrote t_hyp_F2
+wrote t_hyp_F3
+wrote t_hyp_F4
+wrote t_hyp_F5
+20 tables written to /Data3/<hpc-user>/RE-FUSED/results/paper/confirm/tables
+===== c_supp end 2026-10-05T09:46:56 rc=0 seconds=0

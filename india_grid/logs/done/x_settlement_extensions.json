@@ -1,0 +1,12 @@
+{
+ "stage": "x_settlement_extensions",
+ "state": "done",
+ "returncode": 0,
+ "queue": "gpu",
+ "seconds": 249.6,
+ "finished": "2026-09-21T23:07:02",
+ "host": "master",
+ "pbs_job": "32207.master",
+ "cuda_visible_devices": "MIG-2f219700-5dc6-59eb-81ef-2bb9414d3ec0",
+ "log": "logs/stages/x_settlement_extensions.log"
+}

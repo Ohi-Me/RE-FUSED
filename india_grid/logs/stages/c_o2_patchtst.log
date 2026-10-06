@@ -1,0 +1,225 @@
+
+===== c_o2_patchtst start 2026-09-18T10:41:00 host=master job=31823.master
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+You are using a CUDA device ('NVIDIA H100 NVL MIG 3g.47gb') that has Tensor Cores. To properly utilize them, you should set `torch.set_float32_matmul_precision('medium' | 'high')` which will trade-off precision for performance. For more details, read https://pytorch.org/docs/stable/generated/torch.set_float32_matmul_precision.html#torch.set_float32_matmul_precision
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=1500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  patchtst T1 seed 0: 89862 rows [18s]
+Seed set to 1
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=1500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  patchtst T1 seed 1: 89862 rows [33s]
+Seed set to 2
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  patchtst T1 seed 2: 89862 rows [43s]
+Seed set to 3
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=1500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  patchtst T1 seed 3: 89862 rows [58s]
+Seed set to 4
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  patchtst T1 seed 4: 89862 rows [72s]
+patchtst T1 done 72s
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=1500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  patchtst T2 seed 0: 89862 rows [19s]
+Seed set to 1
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  patchtst T2 seed 1: 89862 rows [33s]
+Seed set to 2
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=1500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  patchtst T2 seed 2: 89862 rows [50s]
+Seed set to 3
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=1500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  patchtst T2 seed 3: 89862 rows [66s]
+Seed set to 4
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  patchtst T2 seed 4: 89862 rows [79s]
+patchtst T2 done 80s
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=1500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  patchtst T3 seed 0: 71361 rows [16s]
+Seed set to 1
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=1500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  patchtst T3 seed 1: 71361 rows [32s]
+Seed set to 2
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=1500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  patchtst T3 seed 2: 71361 rows [48s]
+Seed set to 3
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=1500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  patchtst T3 seed 3: 71361 rows [64s]
+Seed set to 4
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=1500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  patchtst T3 seed 4: 71361 rows [79s]
+patchtst T3 done 80s
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  patchtst T4 seed 0: 29085 rows [5s]
+Seed set to 1
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  patchtst T4 seed 1: 29085 rows [8s]
+Seed set to 2
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  patchtst T4 seed 2: 29085 rows [13s]
+Seed set to 3
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  patchtst T4 seed 3: 29085 rows [21s]
+Seed set to 4
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  patchtst T4 seed 4: 29085 rows [24s]
+patchtst T4 done 25s
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=1500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  patchtst T5 seed 0: 34359 rows [16s]
+Seed set to 1
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=1500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  patchtst T5 seed 1: 34359 rows [31s]
+Seed set to 2
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=1500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  patchtst T5 seed 2: 34359 rows [46s]
+Seed set to 3
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=1500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  patchtst T5 seed 3: 34359 rows [61s]
+Seed set to 4
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=1500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  patchtst T5 seed 4: 34359 rows [79s]
+patchtst T5 done 80s
+===== c_o2_patchtst end 2026-09-18T10:46:46 rc=0 seconds=346

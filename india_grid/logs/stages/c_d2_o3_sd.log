@@ -1,0 +1,63 @@
+
+===== c_d2_o3_sd start 2026-09-18T13:47:27 host=master job=31823.master
+  T5 mcag_instance_sd seed 0: epochs 9 es 0.1492 [16s]
+  T5 mcag_instance_sd seed 1: epochs 10 es 0.1589 [20s]
+  T5 mcag_instance_sd seed 2: epochs 10 es 0.1477 [26s]
+  T5 mcag_instance_sd seed 3: epochs 8 es 0.1609 [31s]
+  T5 mcag_instance_sd seed 4: epochs 8 es 0.1716 [35s]
+T5 mcag_instance_sd done 35s
+  T4 mcag_instance_sd seed 0: epochs 14 es 0.1105 [26s]
+  T4 mcag_instance_sd seed 1: epochs 12 es 0.1109 [36s]
+  T4 mcag_instance_sd seed 2: epochs 20 es 0.1106 [52s]
+  T4 mcag_instance_sd seed 3: epochs 14 es 0.1120 [63s]
+  T4 mcag_instance_sd seed 4: epochs 14 es 0.1110 [75s]
+T4 mcag_instance_sd done 75s
+  T3 mcag_instance_sd seed 0: epochs 12 es 0.0911 [37s]
+  T3 mcag_instance_sd seed 1: epochs 13 es 0.0896 [56s]
+  T3 mcag_instance_sd seed 2: epochs 12 es 0.0915 [74s]
+  T3 mcag_instance_sd seed 3: epochs 13 es 0.0902 [92s]
+  T3 mcag_instance_sd seed 4: epochs 13 es 0.0904 [111s]
+T3 mcag_instance_sd done 112s
+  T2 mcag_instance_sd seed 0: epochs 12 es 0.0938 [48s]
+  T2 mcag_instance_sd seed 1: epochs 12 es 0.0948 [70s]
+  T2 mcag_instance_sd seed 2: epochs 13 es 0.0942 [94s]
+  T2 mcag_instance_sd seed 3: epochs 13 es 0.0936 [118s]
+  T2 mcag_instance_sd seed 4: epochs 11 es 0.0941 [137s]
+T2 mcag_instance_sd done 139s
+  T1 mcag_instance_sd seed 0: epochs 13 es 0.0839 [46s]
+  T1 mcag_instance_sd seed 1: epochs 11 es 0.0846 [68s]
+  T1 mcag_instance_sd seed 2: epochs 14 es 0.0837 [96s]
+  T1 mcag_instance_sd seed 3: epochs 13 es 0.0841 [121s]
+  T1 mcag_instance_sd seed 4: epochs 11 es 0.0856 [141s]
+T1 mcag_instance_sd done 143s
+  T5 fusion_fixed_sd seed 0: epochs 9 es 0.1744 [12s]
+  T5 fusion_fixed_sd seed 1: epochs 13 es 0.1487 [16s]
+  T5 fusion_fixed_sd seed 2: epochs 10 es 0.1596 [20s]
+  T5 fusion_fixed_sd seed 3: epochs 10 es 0.1582 [24s]
+  T5 fusion_fixed_sd seed 4: epochs 12 es 0.1540 [30s]
+T5 fusion_fixed_sd done 31s
+  T4 fusion_fixed_sd seed 0: epochs 16 es 0.1118 [24s]
+  T4 fusion_fixed_sd seed 1: epochs 12 es 0.1116 [31s]
+  T4 fusion_fixed_sd seed 2: epochs 12 es 0.1117 [38s]
+  T4 fusion_fixed_sd seed 3: epochs 18 es 0.1125 [49s]
+  T4 fusion_fixed_sd seed 4: epochs 17 es 0.1108 [59s]
+T4 fusion_fixed_sd done 60s
+  T3 fusion_fixed_sd seed 0: epochs 13 es 0.0919 [31s]
+  T3 fusion_fixed_sd seed 1: epochs 15 es 0.0912 [47s]
+  T3 fusion_fixed_sd seed 2: epochs 17 es 0.0915 [66s]
+  T3 fusion_fixed_sd seed 3: epochs 17 es 0.0911 [86s]
+  T3 fusion_fixed_sd seed 4: epochs 12 es 0.0910 [100s]
+T3 fusion_fixed_sd done 101s
+  T2 fusion_fixed_sd seed 0: epochs 11 es 0.0946 [36s]
+  T2 fusion_fixed_sd seed 1: epochs 10 es 0.0957 [50s]
+  T2 fusion_fixed_sd seed 2: epochs 15 es 0.0942 [70s]
+  T2 fusion_fixed_sd seed 3: epochs 11 es 0.0944 [84s]
+  T2 fusion_fixed_sd seed 4: epochs 11 es 0.0947 [99s]
+T2 fusion_fixed_sd done 100s
+  T1 fusion_fixed_sd seed 0: epochs 13 es 0.0864 [40s]
+  T1 fusion_fixed_sd seed 1: epochs 11 es 0.0858 [56s]
+  T1 fusion_fixed_sd seed 2: epochs 14 es 0.0860 [76s]
+  T1 fusion_fixed_sd seed 3: epochs 13 es 0.0856 [96s]
+  T1 fusion_fixed_sd seed 4: epochs 11 es 0.0860 [111s]
+T1 fusion_fixed_sd done 113s
+===== c_d2_o3_sd end 2026-09-18T14:02:38 rc=0 seconds=911

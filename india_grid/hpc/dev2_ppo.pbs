@@ -1,0 +1,18 @@
+#!/bin/bash
+#PBS -N refused_dev2_ppo
+#PBS -q workq
+#PBS -l select=1:ncpus=8:ngpus=1:mem=32gb
+#PBS -l walltime=12:00:00
+#PBS -j oe
+#PBS -o /Data3/<hpc-user>/RE-FUSED/logs/pbs/refused_dev2_ppo.out
+# PPO arm with the round-2 forecaster, then the N1-N12 evidence table again so it includes PPO.
+cd /Data3/<hpc-user>/RE-FUSED
+export PYTHONNOUSERSITE=1
+export REFUSED_THREADS=16
+source /apps/compilers/anaconda3/etc/profile.d/conda.sh
+conda activate refused_h100
+MIG=$(python run_all.py pick-mig) || { echo "no free MIG instance"; exit 3; }
+export CUDA_VISIBLE_DEVICES="$MIG"
+echo "job $PBS_JOBID on $(hostname); CUDA_VISIBLE_DEVICES=$CUDA_VISIBLE_DEVICES"
+python -u run_all.py stage --keep-going d2_ppo
+python -u run_all.py stage --force d2_evidence

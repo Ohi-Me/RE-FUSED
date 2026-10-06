@@ -1,0 +1,12 @@
+{
+ "stage": "env_check",
+ "state": "done",
+ "returncode": 0,
+ "queue": "cpu",
+ "seconds": 8.6,
+ "finished": "2026-09-17T14:22:42",
+ "host": "DESKTOP-2G1I1UN",
+ "pbs_job": null,
+ "cuda_visible_devices": null,
+ "log": "logs\\stages\\env_check.log"
+}

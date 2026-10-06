@@ -1,0 +1,28 @@
+#!/bin/bash
+#PBS -N refused_zenodo_check
+#PBS -q workq
+#PBS -l select=1:ncpus=8:ngpus=1:mem=32gb
+#PBS -l walltime=01:00:00
+#PBS -j oe
+# Unpack a Zenodo archive in a clean folder and check it the way a reader would: file hashes, panel hash,
+# pre-registration and frozen files, and re-scoring the 52 checks from the stored results.
+# Submit from the project folder:  qsub -v ZIP=release/REFUSED_Zenodo_v1.1.zip -o logs/autopilot/ hpc/zenodo_check_version.pbs
+cd "$PBS_O_WORKDIR"
+export PYTHONNOUSERSITE=1
+source hpc/cluster.env 2>/dev/null
+source "${HPC_CONDA_SH:-/apps/compilers/anaconda3/etc/profile.d/conda.sh}"
+conda activate "${HPC_CONDA_ENV:-refused_h100}"
+MIG=$(python run_all.py pick-mig) || { echo "no free MIG instance"; exit 3; }
+export CUDA_VISIBLE_DEVICES="$MIG"
+NAME=$(basename "$ZIP" .zip)
+T=tmp_zenodo_check_$NAME
+rm -rf "$T" && mkdir -p "$T/work"
+python -c "import zipfile,sys; zipfile.ZipFile(sys.argv[1]).extractall(sys.argv[2])" "$ZIP" "$T"
+TOP=$(ls "$T" | grep -v work | head -1)
+echo "zenodo check $(date -Iseconds) on $(hostname), job $PBS_JOBID; $ZIP: $(find "$T/$TOP" -type f | wc -l) files"
+echo "archive md5 $(md5sum "$ZIP" | cut -d' ' -f1) sha256 $(sha256sum "$ZIP" | cut -d' ' -f1)"
+python "$T/$TOP/code/reproducibility/release/check_zenodo_package.py" "$T/$TOP" "$T/work"
+rc=$?
+cp "$T/work/ZENODO_CHECK.md" "logs/autopilot/ZENODO_CHECK_${NAME}.md" 2>/dev/null
+rm -rf "$T"
+echo "zenodo check finished rc=$rc $(date -Iseconds)"

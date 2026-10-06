@@ -1,0 +1,32 @@
+
+===== build_b08_validation start 2026-09-17T17:40:58 host=master job=31772.master
+psp ok
+dsm ok
+npp ok
+cea_re ok
+/Data3/<hpc-user>/RefusedH100/codes/scripts/build/b08_validation.py:143: RuntimeWarning: invalid value encountered in scalar divide
+  nat = c[c.fuel == "coal"].groupby("fy").apply(lambda g: g.emis_t.sum() / g.netgen_gwh.sum() / 1000, include_groups=False)
+co2 ok
+imd ok
+panel ok
+{
+ "raw_total_bytes_official": 5012347505,
+ "raw_files_ok_official": 17929
+}
+===== build_b08_validation end 2026-09-17T17:41:07 rc=0 seconds=9
+
+===== build_b08_validation start 2026-09-17T18:37:18 host=master job=31785.master
+psp ok
+dsm ok
+npp ok
+cea_re ok
+/Data3/<hpc-user>/RefusedH100/codes/scripts/build/b08_validation.py:143: RuntimeWarning: invalid value encountered in scalar divide
+  nat = c[c.fuel == "coal"].groupby("fy").apply(lambda g: g.emis_t.sum() / g.netgen_gwh.sum() / 1000, include_groups=False)
+co2 ok
+imd ok
+panel ok
+{
+ "raw_total_bytes_official": 5012347505,
+ "raw_files_ok_official": 17929
+}
+===== build_b08_validation end 2026-09-17T18:37:25 rc=0 seconds=7

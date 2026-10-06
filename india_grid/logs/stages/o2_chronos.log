@@ -1,0 +1,12 @@
+
+===== o2_chronos start 2026-09-17T15:24:53 host=master job=31770.master
+
+Loading weights:   0%|          | 0/143 [00:00<?, ?it/s]
+Loading weights:  54%|█████▍    | 77/143 [00:00<00:00, 748.30it/s]
+Loading weights: 100%|██████████| 143/143 [00:00<00:00, 696.50it/s]
+T1 chronos 74460 rows 12s
+T2 chronos 74460 rows 11s
+T3 chronos 59130 rows 11s
+T4 chronos 32799 rows 9s
+T5 chronos 28470 rows 11s
+===== o2_chronos end 2026-09-17T15:25:54 rc=0 seconds=61

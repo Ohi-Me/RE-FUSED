@@ -1,0 +1,17 @@
+
+===== c_d2_o4 start 2026-09-18T15:41:21 host=master job=31823.master
+# O4 round 2 — deviation assessment
+
+Forecast source: `ens_stack` (T2, H = 1, rolling conformal C1, 365-day window). Fitted on validation (n = 7,431); development test (n = 10,759) reported only.
+
+Two-fold week cross-validated within-decile tau on validation: . Chosen: **O4c** with {'depth': 3, 'k': 2.0}.
+
+| test | outcome | tau(A) | tau(comparator) | difference | 95% CI / placebo 95th pct | p (one-sided) |
+|---|---|---|---|---|---|---|
+| A vs M0 | Y | 0.0279 | 0.0172 | +0.0108 | [-0.0154, +0.0351] | 0.23 |
+| A vs M0 | Y1 | 0.0140 | 0.0203 | -0.0063 | [-0.0250, +0.0173] | 0.73 |
+| A vs M0 | Y2 | 0.0259 | 0.0296 | -0.0037 | [-0.0220, +0.0214] | 0.62 |
+| A vs M0 | Y3 | 0.0074 | 0.0048 | +0.0026 | [-0.0234, +0.0247] | 0.42 |
+| forecast information gain (A vs A without U, F) | Y | 0.0279 | -0.0007 | +0.0287 | [+0.0134, +0.0448] | 0.0033 |
+| forecast information vs shuffled placebo | Y | nan | nan | +0.0287 | +0.0198 | 0.02 |
+===== c_d2_o4 end 2026-09-18T15:42:02 rc=0 seconds=42

@@ -1,0 +1,12 @@
+{
+ "stage": "prereg_fill",
+ "state": "done",
+ "returncode": 0,
+ "queue": "cpu",
+ "seconds": 0.0,
+ "finished": "2026-09-17T18:31:15",
+ "host": "master",
+ "pbs_job": "31783.master",
+ "cuda_visible_devices": "MIG-4d38d5cf-c802-5308-80b8-251f3cec7480",
+ "log": "logs/stages/prereg_fill.log"
+}

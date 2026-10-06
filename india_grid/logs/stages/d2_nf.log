@@ -1,0 +1,1015 @@
+
+===== d2_nf start 2026-09-17T21:34:27 host=master job=31793.master
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+You are using a CUDA device ('NVIDIA H100 NVL MIG 3g.47gb') that has Tensor Cores. To properly utilize them, you should set `torch.set_float32_matmul_precision('medium' | 'high')` which will trade-off precision for performance. For more details, read https://pytorch.org/docs/stable/generated/torch.set_float32_matmul_precision.html#torch.set_float32_matmul_precision
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T1 window 28: val pinball 0.8207 [13s]
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T1 window 56: val pinball 0.6794 [19s]
+  nhits T1 seed 0: 74358 rows [19s]
+Seed set to 1
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T1 seed 1: 74358 rows [24s]
+Seed set to 2
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T1 seed 2: 74358 rows [30s]
+Seed set to 3
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T1 seed 3: 74358 rows [35s]
+Seed set to 4
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T1 seed 4: 74358 rows [42s]
+nhits T1 done, window 56 42.3s
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T1 window 28: val pinball 0.2849 [16s]
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T1 window 56: val pinball 0.2845 [24s]
+  tide T1 seed 0: 74358 rows [24s]
+Seed set to 1
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T1 seed 1: 74358 rows [33s]
+Seed set to 2
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T1 seed 2: 74358 rows [43s]
+Seed set to 3
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T1 seed 3: 74358 rows [53s]
+Seed set to 4
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T1 seed 4: 74358 rows [62s]
+tide T1 done, window 56 62.1s
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=1500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T1 window 28: val pinball 0.3063 [20s]
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=1500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T1 window 56: val pinball 0.2926 [41s]
+  bitcn T1 seed 0: 74358 rows [41s]
+Seed set to 1
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=1500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T1 seed 1: 74358 rows [63s]
+Seed set to 2
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=1500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T1 seed 2: 74358 rows [85s]
+Seed set to 3
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=1500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T1 seed 3: 74358 rows [108s]
+Seed set to 4
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=1500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T1 seed 4: 74358 rows [131s]
+bitcn T1 done, window 56 131.6s
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T1 window 28: val pinball 1.3593 [6s]
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T1 window 56: val pinball 0.9903 [10s]
+  nbeatsx T1 seed 0: 74358 rows [10s]
+Seed set to 1
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T1 seed 1: 74358 rows [14s]
+Seed set to 2
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T1 seed 2: 74358 rows [18s]
+Seed set to 3
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T1 seed 3: 74358 rows [21s]
+Seed set to 4
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T1 seed 4: 74358 rows [24s]
+nbeatsx T1 done, window 56 24.7s
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T2 window 28: val pinball 0.5756 [6s]
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T2 window 56: val pinball 0.6395 [12s]
+  nhits T2 seed 0: 74358 rows [12s]
+Seed set to 1
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T2 seed 1: 74358 rows [17s]
+Seed set to 2
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T2 seed 2: 74358 rows [22s]
+Seed set to 3
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T2 seed 3: 74358 rows [29s]
+Seed set to 4
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T2 seed 4: 74358 rows [35s]
+nhits T2 done, window 28 35.1s
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T2 window 28: val pinball 0.2899 [15s]
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T2 window 56: val pinball 0.2927 [27s]
+  tide T2 seed 0: 74358 rows [27s]
+Seed set to 1
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T2 seed 1: 74358 rows [42s]
+Seed set to 2
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T2 seed 2: 74358 rows [57s]
+Seed set to 3
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T2 seed 3: 74358 rows [71s]
+Seed set to 4
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T2 seed 4: 74358 rows [84s]
+tide T2 done, window 28 84.6s
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=1500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T2 window 28: val pinball 0.3135 [22s]
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=1500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T2 window 56: val pinball 0.2895 [46s]
+  bitcn T2 seed 0: 74358 rows [46s]
+Seed set to 1
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=1500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T2 seed 1: 74358 rows [73s]
+Seed set to 2
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=1500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T2 seed 2: 74358 rows [96s]
+Seed set to 3
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T2 seed 3: 74358 rows [117s]
+Seed set to 4
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=1500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T2 seed 4: 74358 rows [142s]
+bitcn T2 done, window 56 142.2s
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T2 window 28: val pinball 0.4910 [6s]
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T2 window 56: val pinball 1.0903 [10s]
+  nbeatsx T2 seed 0: 74358 rows [10s]
+Seed set to 1
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T2 seed 1: 74358 rows [15s]
+Seed set to 2
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T2 seed 2: 74358 rows [19s]
+Seed set to 3
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T2 seed 3: 74358 rows [25s]
+Seed set to 4
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T2 seed 4: 74358 rows [29s]
+nbeatsx T2 done, window 28 29.0s
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T3 window 28: val pinball 0.8346 [8s]
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T3 window 56: val pinball 1.7108 [15s]
+  nhits T3 seed 0: 59049 rows [15s]
+Seed set to 1
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T3 seed 1: 59049 rows [22s]
+Seed set to 2
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T3 seed 2: 59049 rows [30s]
+Seed set to 3
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T3 seed 3: 59049 rows [39s]
+Seed set to 4
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T3 seed 4: 59049 rows [48s]
+nhits T3 done, window 28 48.6s
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T3 window 28: val pinball 0.2852 [14s]
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T3 window 56: val pinball 0.2882 [24s]
+  tide T3 seed 0: 59049 rows [24s]
+Seed set to 1
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T3 seed 1: 59049 rows [35s]
+Seed set to 2
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T3 seed 2: 59049 rows [47s]
+Seed set to 3
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T3 seed 3: 59049 rows [60s]
+Seed set to 4
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T3 seed 4: 59049 rows [72s]
+tide T3 done, window 28 72.4s
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T3 window 28: val pinball 0.3941 [7s]
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T3 window 56: val pinball 0.4356 [17s]
+  bitcn T3 seed 0: 59049 rows [17s]
+Seed set to 1
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T3 seed 1: 59049 rows [25s]
+Seed set to 2
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T3 seed 2: 59049 rows [32s]
+Seed set to 3
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T3 seed 3: 59049 rows [40s]
+Seed set to 4
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T3 seed 4: 59049 rows [46s]
+bitcn T3 done, window 28 46.5s
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T3 window 28: val pinball 0.4597 [6s]
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T3 window 56: val pinball 0.8166 [12s]
+  nbeatsx T3 seed 0: 59049 rows [12s]
+Seed set to 1
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T3 seed 1: 59049 rows [17s]
+Seed set to 2
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T3 seed 2: 59049 rows [24s]
+Seed set to 3
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T3 seed 3: 59049 rows [31s]
+Seed set to 4
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T3 seed 4: 59049 rows [37s]
+nbeatsx T3 done, window 28 37.4s
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T4 window 28: val pinball 0.6238 [7s]
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T4 window 56: val pinball 0.8211 [13s]
+  nhits T4 seed 0: 32754 rows [13s]
+Seed set to 1
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T4 seed 1: 32754 rows [21s]
+Seed set to 2
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T4 seed 2: 32754 rows [28s]
+Seed set to 3
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T4 seed 3: 32754 rows [34s]
+Seed set to 4
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T4 seed 4: 32754 rows [42s]
+nhits T4 done, window 28 41.7s
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T4 window 28: val pinball 0.3961 [9s]
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T4 window 56: val pinball 0.4011 [16s]
+  tide T4 seed 0: 32754 rows [16s]
+Seed set to 1
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T4 seed 1: 32754 rows [24s]
+Seed set to 2
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T4 seed 2: 32754 rows [34s]
+Seed set to 3
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T4 seed 3: 32754 rows [43s]
+Seed set to 4
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T4 seed 4: 32754 rows [53s]
+tide T4 done, window 28 53.0s
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T4 window 28: val pinball 0.4286 [9s]
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T4 window 56: val pinball 0.4520 [19s]
+  bitcn T4 seed 0: 32754 rows [19s]
+Seed set to 1
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T4 seed 1: 32754 rows [28s]
+Seed set to 2
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T4 seed 2: 32754 rows [37s]
+Seed set to 3
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T4 seed 3: 32754 rows [56s]
+Seed set to 4
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T4 seed 4: 32754 rows [67s]
+bitcn T4 done, window 28 66.7s
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T4 window 28: val pinball 0.6021 [6s]
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T4 window 56: val pinball 0.8998 [12s]
+  nbeatsx T4 seed 0: 32754 rows [12s]
+Seed set to 1
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T4 seed 1: 32754 rows [17s]
+Seed set to 2
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T4 seed 2: 32754 rows [21s]
+Seed set to 3
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T4 seed 3: 32754 rows [26s]
+Seed set to 4
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T4 seed 4: 32754 rows [33s]
+nbeatsx T4 done, window 28 32.7s
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T5 window 28: val pinball 0.5861 [5s]
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T5 window 56: val pinball 0.6067 [8s]
+  nhits T5 seed 0: 28431 rows [8s]
+Seed set to 1
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T5 seed 1: 28431 rows [12s]
+Seed set to 2
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T5 seed 2: 28431 rows [15s]
+Seed set to 3
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T5 seed 3: 28431 rows [19s]
+Seed set to 4
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T5 seed 4: 28431 rows [22s]
+nhits T5 done, window 28 22.6s
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T5 window 28: val pinball 0.5424 [10s]
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T5 window 56: val pinball 0.5135 [16s]
+  tide T5 seed 0: 28431 rows [16s]
+Seed set to 1
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T5 seed 1: 28431 rows [22s]
+Seed set to 2
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T5 seed 2: 28431 rows [27s]
+Seed set to 3
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T5 seed 3: 28431 rows [32s]
+Seed set to 4
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T5 seed 4: 28431 rows [39s]
+tide T5 done, window 56 38.9s
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T5 window 28: val pinball 0.4017 [14s]
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T5 window 56: val pinball 0.3994 [34s]
+  bitcn T5 seed 0: 28431 rows [34s]
+Seed set to 1
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T5 seed 1: 28431 rows [53s]
+Seed set to 2
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T5 seed 2: 28431 rows [76s]
+Seed set to 3
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T5 seed 3: 28431 rows [95s]
+Seed set to 4
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T5 seed 4: 28431 rows [108s]
+bitcn T5 done, window 56 108.1s
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T5 window 28: val pinball 0.6399 [5s]
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T5 window 56: val pinball 0.6559 [7s]
+  nbeatsx T5 seed 0: 28431 rows [7s]
+Seed set to 1
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T5 seed 1: 28431 rows [10s]
+Seed set to 2
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T5 seed 2: 28431 rows [13s]
+Seed set to 3
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T5 seed 3: 28431 rows [15s]
+Seed set to 4
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T5 seed 4: 28431 rows [19s]
+nbeatsx T5 done, window 28 18.9s
+===== d2_nf end 2026-09-17T21:53:28 rc=0 seconds=1141

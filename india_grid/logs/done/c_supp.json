@@ -1,0 +1,12 @@
+{
+ "stage": "c_supp",
+ "state": "done",
+ "returncode": 0,
+ "queue": "cpu",
+ "seconds": 0.4,
+ "finished": "2026-10-05T09:46:56",
+ "host": "master",
+ "pbs_job": "34077.master",
+ "cuda_visible_devices": "MIG-110b5c2d-162d-5ada-814c-2aef6f9812f1",
+ "log": "logs/stages/c_supp.log"
+}

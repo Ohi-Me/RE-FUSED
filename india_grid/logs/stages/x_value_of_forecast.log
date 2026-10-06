@@ -1,0 +1,57 @@
+
+===== x_value_of_forecast start 2026-09-21T22:01:21 host=master job=32189.master
+lgbm (window 180): MAE 5.8167 GWh, A2 mean regret 16.1054 crore/day
+bilstm (window 180): MAE 6.2559 GWh, A2 mean regret 17.1980 crore/day
+tft (window 180): MAE 6.0659 GWh, A2 mean regret 16.8930 crore/day
+patchtst (window 180): MAE 6.3572 GWh, A2 mean regret 17.6173 crore/day
+chronos (window 180): MAE 6.1547 GWh, A2 mean regret 16.7902 crore/day
+xgb (window 180): MAE 5.8313 GWh, A2 mean regret 16.1740 crore/day
+nhits (window 180): MAE 6.2956 GWh, A2 mean regret 17.3069 crore/day
+tide (window 180): MAE 6.1170 GWh, A2 mean regret 17.0614 crore/day
+bitcn (window 180): MAE 6.5631 GWh, A2 mean regret 18.0711 crore/day
+nbeatsx (window 180): MAE 6.2989 GWh, A2 mean regret 17.5219 crore/day
+chronos2 (window 180): MAE 5.9073 GWh, A2 mean regret 16.2485 crore/day
+chronos_base (window 180): MAE 6.1290 GWh, A2 mean regret 16.7242 crore/day
+mcag_instance (window 180): MAE 5.8373 GWh, A2 mean regret 16.3002 crore/day
+ens_top (window 180): MAE 5.7252 GWh, A2 mean regret 15.8122 crore/day
+ens_stack (window 180): MAE 5.7007 GWh, A2 mean regret 15.8405 crore/day
+ens_online (window 180): MAE 5.7350 GWh, A2 mean regret 15.9028 crore/day
+ens_stack (window 365): MAE 5.6776 GWh, A2 mean regret 15.7991 crore/day
+{
+ "note": "additional analysis, not pre-registered; frozen rules, stored forecasts, evaluation period only",
+ "n_forecasters": 16,
+ "n_days": 516,
+ "slope_crore_per_day_per_gwh": 2.626958469902236,
+ "slope_lo": 2.3223201176678674,
+ "slope_hi": 2.887841103241601,
+ "spearman_mae_regret": 0.9705882352941176,
+ "best": {
+  "forecaster": "ens_stack",
+  "mae_gwh": 5.700726996569229,
+  "a2_mean_crore": 15.840520224065257
+ },
+ "worst": {
+  "forecaster": "bitcn",
+  "mae_gwh": 6.563061292562619,
+  "a2_mean_crore": 18.071075453144807
+ },
+ "reproduction": {
+  "P": {
+   "extra": 15.918395661015753,
+   "confirmatory": 15.918395661015753,
+   "same": true
+  },
+  "A2": {
+   "extra": 15.799132139499212,
+   "confirmatory": 15.799132139499212,
+   "same": true
+  },
+  "A5": {
+   "extra": 15.795639474991946,
+   "confirmatory": 15.795639474991946,
+   "same": true
+  }
+ },
+ "seconds": 518
+}
+===== x_value_of_forecast end 2026-09-21T22:10:02 rc=0 seconds=520

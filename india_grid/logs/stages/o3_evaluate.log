@@ -1,0 +1,35 @@
+
+===== o3_evaluate start 2026-09-17T17:34:35 host=master job=31772.master
+Traceback (most recent call last):
+  File "/Data3/<hpc-user>/RefusedH100/codes/scripts/o3/o3_02_evaluate.py", line 270, in <module>
+    main()
+  File "/Data3/<hpc-user>/RefusedH100/codes/scripts/o3/o3_02_evaluate.py", line 163, in main
+    pairs += pair_test(C[a], C[b], label, tid, metric)
+  File "/Data3/<hpc-user>/RefusedH100/codes/scripts/o3/o3_02_evaluate.py", line 94, in pair_test
+    lb = ((g.y - g.q50_b).abs() / g.scale_mae).to_numpy()
+  File "/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/pandas/core/ops/common.py", line 76, in new_method
+    return method(self, other)
+  File "/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/pandas/core/arraylike.py", line 198, in __rsub__
+    return self._arith_method(other, roperator.rsub)
+  File "/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/pandas/core/frame.py", line 7932, in _arith_method
+    self, other = self._align_for_op(other, axis, flex=True, level=None)
+  File "/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/pandas/core/frame.py", line 8233, in _align_for_op
+    left, right = left.align(
+  File "/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/pandas/core/generic.py", line 10510, in align
+    left, _right, join_index = self._align_series(
+  File "/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/pandas/core/generic.py", line 10653, in _align_series
+    fdata = fdata.reindex_indexer(join_index, lidx, axis=bm_axis)
+  File "/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/pandas/core/internals/managers.py", line 693, in reindex_indexer
+    self.axes[axis]._validate_can_reindex(indexer)
+  File "/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 4328, in _validate_can_reindex
+    raise ValueError("cannot reindex on an axis with duplicate labels")
+ValueError: cannot reindex on an axis with duplicate labels
+===== o3_evaluate end 2026-09-17T17:35:58 rc=1 seconds=83
+
+===== o3_evaluate start 2026-09-17T18:25:21 host=master job=31783.master
+T1 O3 evaluated: ['fusion_fixed', 'fusion_fixed+otg', 'fusion_fixed_L1j', 'market_only', 'market_only+otg', 'mcag_fixed', 'mcag_fixed+otg', 'mcag_instance', 'mcag_instance+otg', 'mcag_instance_L1j', 'mcag_regime', 'mcag_regime+otg', 'no_carbon', 'no_carbon+otg', 'null_context', 'null_context+otg', 'permuted_context', 'permuted_context+otg']
+T2 O3 evaluated: ['fusion_fixed', 'fusion_fixed+otg', 'fusion_fixed_L1j', 'market_only', 'market_only+otg', 'mcag_fixed', 'mcag_fixed+otg', 'mcag_instance', 'mcag_instance+otg', 'mcag_instance_L1j', 'mcag_regime', 'mcag_regime+otg', 'no_carbon', 'no_carbon+otg', 'null_context', 'null_context+otg', 'permuted_context', 'permuted_context+otg']
+T3 O3 evaluated: ['fusion_fixed', 'fusion_fixed+otg', 'mcag_fixed', 'mcag_fixed+otg', 'mcag_instance', 'mcag_instance+otg', 'mcag_regime', 'mcag_regime+otg', 'no_carbon', 'no_carbon+otg']
+T4 O3 evaluated: ['fusion_fixed', 'fusion_fixed+otg', 'mcag_fixed', 'mcag_fixed+otg', 'mcag_instance', 'mcag_instance+otg', 'mcag_regime', 'mcag_regime+otg']
+T5 O3 evaluated: ['fusion_fixed', 'fusion_fixed+otg', 'market_only', 'market_only+otg', 'mcag_fixed', 'mcag_fixed+otg', 'mcag_instance', 'mcag_instance+otg', 'mcag_regime', 'mcag_regime+otg', 'null_context', 'null_context+otg', 'permuted_context', 'permuted_context+otg']
+===== o3_evaluate end 2026-09-17T18:31:15 rc=0 seconds=355

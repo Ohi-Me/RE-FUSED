@@ -1,0 +1,8 @@
+
+===== prereg_fill start 2026-09-17T17:41:07 host=master job=31772.master
+row not found exactly once: O2 calibration level per target and model
+===== prereg_fill end 2026-09-17T17:41:07 rc=1 seconds=0
+
+===== prereg_fill start 2026-09-17T18:31:15 host=master job=31783.master
+written 02_design/02_preregistration.md; review before freezing
+===== prereg_fill end 2026-09-17T18:31:15 rc=0 seconds=0

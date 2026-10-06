@@ -1,0 +1,8 @@
+
+===== c_o3_evaluate start 2026-09-18T14:28:55 host=master job=31823.master
+T1 O3 evaluated: ['fusion_fixed', 'fusion_fixed+otg', 'fusion_fixed_L1j', 'market_only', 'market_only+otg', 'mcag_fixed', 'mcag_fixed+otg', 'mcag_instance', 'mcag_instance+otg', 'mcag_instance_L1j', 'mcag_regime', 'mcag_regime+otg', 'no_carbon', 'no_carbon+otg', 'null_context', 'null_context+otg', 'permuted_context', 'permuted_context+otg']
+T2 O3 evaluated: ['fusion_fixed', 'fusion_fixed+otg', 'fusion_fixed_L1j', 'market_only', 'market_only+otg', 'mcag_fixed', 'mcag_fixed+otg', 'mcag_instance', 'mcag_instance+otg', 'mcag_instance_L1j', 'mcag_regime', 'mcag_regime+otg', 'no_carbon', 'no_carbon+otg', 'null_context', 'null_context+otg', 'permuted_context', 'permuted_context+otg']
+T3 O3 evaluated: ['fusion_fixed', 'fusion_fixed+otg', 'mcag_fixed', 'mcag_fixed+otg', 'mcag_instance', 'mcag_instance+otg', 'mcag_regime', 'mcag_regime+otg', 'no_carbon', 'no_carbon+otg']
+T4 O3 evaluated: ['fusion_fixed', 'fusion_fixed+otg', 'mcag_fixed', 'mcag_fixed+otg', 'mcag_instance', 'mcag_instance+otg', 'mcag_regime', 'mcag_regime+otg']
+T5 O3 evaluated: ['fusion_fixed', 'fusion_fixed+otg', 'market_only', 'market_only+otg', 'mcag_fixed', 'mcag_fixed+otg', 'mcag_instance', 'mcag_instance+otg', 'mcag_regime', 'mcag_regime+otg', 'null_context', 'null_context+otg', 'permuted_context', 'permuted_context+otg']
+===== c_o3_evaluate end 2026-09-18T14:36:33 rc=0 seconds=457

@@ -1,0 +1,154 @@
+
+===== c_strata start 2026-09-20T23:53:47 host=master job=32069.master
+accuracy_state 124 rows
+accuracy_season 19 rows
+accuracy_horizon 15 rows
+regret_state 34 States
+wrote t_season_accuracy
+wrote t_state_accuracy
+wrote t_state_regret
+strata done
+===== c_strata end 2026-09-20T23:53:48 rc=0 seconds=1
+
+===== c_strata start 2026-09-21T00:05:33 host=master job=32073.master
+accuracy_state 124 rows
+accuracy_season 19 rows
+accuracy_horizon 15 rows
+regret_state 34 States
+wrote t_season_accuracy
+wrote t_state_accuracy
+wrote t_state_regret
+strata done
+===== c_strata end 2026-09-21T00:05:34 rc=0 seconds=1
+
+===== c_strata start 2026-09-21T00:10:49 host=master job=32074.master
+accuracy_state 124 rows
+accuracy_season 19 rows
+accuracy_horizon 15 rows
+regret_state 34 States
+wrote t_season_accuracy
+wrote t_state_accuracy
+wrote t_state_regret
+strata done
+===== c_strata end 2026-09-21T00:10:50 rc=0 seconds=1
+
+===== c_strata start 2026-09-21T00:21:13 host=master job=32076.master
+accuracy_state 124 rows
+accuracy_season 19 rows
+accuracy_horizon 15 rows
+regret_state 34 States
+wrote t_season_accuracy
+wrote t_state_accuracy
+wrote t_state_regret
+strata done
+===== c_strata end 2026-09-21T00:21:14 rc=0 seconds=1
+
+===== c_strata start 2026-09-21T00:24:37 host=master job=32078.master
+accuracy_state 124 rows
+accuracy_season 19 rows
+accuracy_horizon 15 rows
+regret_state 34 States
+wrote t_season_accuracy
+wrote t_state_accuracy
+wrote t_state_regret
+strata done
+===== c_strata end 2026-09-21T00:24:38 rc=0 seconds=1
+
+===== c_strata start 2026-09-21T00:27:14 host=master job=32079.master
+accuracy_state 124 rows
+accuracy_season 19 rows
+accuracy_horizon 15 rows
+regret_state 34 States
+wrote t_season_accuracy
+wrote t_state_accuracy
+wrote t_state_regret
+strata done
+===== c_strata end 2026-09-21T00:27:15 rc=0 seconds=1
+
+===== c_strata start 2026-09-21T00:28:01 host=master job=32080.master
+accuracy_state 124 rows
+accuracy_season 19 rows
+accuracy_horizon 15 rows
+regret_state 34 States
+wrote t_season_accuracy
+wrote t_state_accuracy
+wrote t_state_regret
+strata done
+===== c_strata end 2026-09-21T00:28:02 rc=0 seconds=1
+
+===== c_strata start 2026-09-21T03:50:53 host=master job=32093.master
+accuracy_state 124 rows
+accuracy_season 19 rows
+accuracy_horizon 15 rows
+regret_state 34 States
+wrote t_season_accuracy
+wrote t_state_accuracy
+wrote t_state_regret
+strata done
+===== c_strata end 2026-09-21T03:50:54 rc=0 seconds=1
+
+===== c_strata start 2026-09-21T03:56:45 host=master job=32094.master
+accuracy_state 124 rows
+accuracy_season 19 rows
+accuracy_horizon 15 rows
+regret_state 34 States
+wrote t_season_accuracy
+wrote t_state_accuracy
+wrote t_state_regret
+strata done
+===== c_strata end 2026-09-21T03:56:46 rc=0 seconds=1
+
+===== c_strata start 2026-09-21T03:58:19 host=master job=32095.master
+accuracy_state 124 rows
+accuracy_season 19 rows
+accuracy_horizon 15 rows
+regret_state 34 States
+wrote t_season_accuracy
+wrote t_state_accuracy
+wrote t_state_regret
+strata done
+===== c_strata end 2026-09-21T03:58:20 rc=0 seconds=1
+
+===== c_strata start 2026-09-21T04:04:56 host=master job=32096.master
+accuracy_state 124 rows
+accuracy_season 19 rows
+accuracy_horizon 15 rows
+regret_state 34 States
+wrote t_season_accuracy
+wrote t_state_accuracy
+wrote t_state_regret
+strata done
+===== c_strata end 2026-09-21T04:04:57 rc=0 seconds=1
+
+===== c_strata start 2026-09-21T04:07:15 host=master job=32097.master
+accuracy_state 124 rows
+accuracy_season 19 rows
+accuracy_horizon 15 rows
+regret_state 34 States
+wrote t_season_accuracy
+wrote t_state_accuracy
+wrote t_state_regret
+strata done
+===== c_strata end 2026-09-21T04:07:16 rc=0 seconds=1
+
+===== c_strata start 2026-09-21T14:09:08 host=master job=32116.master
+accuracy_state 124 rows
+accuracy_season 19 rows
+accuracy_horizon 15 rows
+regret_state 34 States
+wrote t_season_accuracy
+wrote t_state_accuracy
+wrote t_state_regret
+strata done
+===== c_strata end 2026-09-21T14:09:09 rc=0 seconds=1
+
+===== c_strata start 2026-09-21T15:20:29 host=master job=32123.master
+accuracy_state 124 rows
+accuracy_season 19 rows
+accuracy_horizon 15 rows
+regret_state 34 States
+wrote t_season_accuracy
+wrote t_state_accuracy
+wrote t_state_regret
+strata done
+===== c_strata end 2026-09-21T15:20:30 rc=0 seconds=1

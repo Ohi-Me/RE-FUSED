@@ -1,0 +1,12 @@
+{
+ "stage": "build_b04_re",
+ "state": "done",
+ "returncode": 0,
+ "queue": "cpu",
+ "seconds": 38.6,
+ "finished": "2026-09-17T17:40:45",
+ "host": "master",
+ "pbs_job": "31772.master",
+ "cuda_visible_devices": "MIG-4d38d5cf-c802-5308-80b8-251f3cec7480",
+ "log": "logs/stages/build_b04_re.log"
+}

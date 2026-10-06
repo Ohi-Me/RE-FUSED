@@ -1,0 +1,21 @@
+#!/bin/bash
+#PBS -N refused_early_gpu
+#PBS -q workq
+#PBS -l select=1:ncpus=8:ngpus=1:mem=32gb
+#PBS -l walltime=02:00:00
+#PBS -j oe
+#PBS -o /Data3/<hpc-user>/RE-FUSED/logs/pbs/refused_early_gpu.out
+# Rerun, inside a GPU job, the early stages that first ran in the cpuq jobs (31748, 31752) on 17 Sep 2026 14:50.
+cd /Data3/<hpc-user>/RE-FUSED
+export PYTHONNOUSERSITE=1
+export REFUSED_THREADS=16
+source /apps/compilers/anaconda3/etc/profile.d/conda.sh
+conda activate refused_h100
+MIG=$(python run_all.py pick-mig) || { echo "no free MIG instance"; exit 3; }
+export CUDA_VISIBLE_DEVICES="$MIG"
+echo "job $PBS_JOBID on $(hostname); CUDA_VISIBLE_DEVICES=$CUDA_VISIBLE_DEVICES"
+python hpc/hash_files.py results/dev/o2/samples > logs/samples_sha256_before_rerun.txt
+python -u run_all.py stage --keep-going --force env_check leakage_test o2_samples data_paper_numbers data_paper_figures build_b01_psp build_b07_panel build_b08_validation build_verify
+python hpc/hash_files.py results/dev/o2/samples > logs/samples_sha256_after_rerun.txt
+if cmp -s logs/samples_sha256_before_rerun.txt logs/samples_sha256_after_rerun.txt; then echo "SAMPLES_IDENTICAL"; else echo "SAMPLES_DIFFER"; fi
+python -u run_all.py stage --force report

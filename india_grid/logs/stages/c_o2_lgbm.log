@@ -1,0 +1,33 @@
+
+===== c_o2_lgbm start 2026-09-18T10:10:48 host=master job=31823.master
+  T1 seed 0 done [162s]
+  T1 seed 1 done [205s]
+  T1 seed 2 done [257s]
+  T1 seed 3 done [306s]
+  T1 seed 4 done [355s]
+T1 done {1: 31, 2: 31, 3: 31} 418.9s
+  T2 seed 0 done [235s]
+  T2 seed 1 done [300s]
+  T2 seed 2 done [368s]
+  T2 seed 3 done [438s]
+  T2 seed 4 done [508s]
+T2 done {1: 31, 2: 31, 3: 63} 584.0s
+  T3 seed 0 done [142s]
+  T3 seed 1 done [181s]
+  T3 seed 2 done [223s]
+  T3 seed 3 done [266s]
+  T3 seed 4 done [307s]
+T3 done {1: 31, 2: 31, 3: 31} 356.3s
+  T4 seed 0 done [138s]
+  T4 seed 1 done [172s]
+  T4 seed 2 done [208s]
+  T4 seed 3 done [244s]
+  T4 seed 4 done [280s]
+T4 done {1: 31, 2: 31, 3: 31} 313.4s
+  T5 seed 0 done [45s]
+  T5 seed 1 done [57s]
+  T5 seed 2 done [76s]
+  T5 seed 3 done [87s]
+  T5 seed 4 done [103s]
+T5 done {1: 31, 2: 63, 3: 31} 138.9s
+===== c_o2_lgbm end 2026-09-18T10:41:00 rc=0 seconds=1812

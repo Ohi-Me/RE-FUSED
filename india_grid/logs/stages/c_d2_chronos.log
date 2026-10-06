@@ -1,0 +1,25 @@
+
+===== c_d2_chronos start 2026-09-18T11:37:58 host=master job=31823.master
+
+Loading weights:   0%|          | 0/170 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 170/170 [00:00<00:00, 2384.06it/s]
+  T1 chronos2 cross_learning=False: val MASE 0.8695 [1314s]
+T1 chronos2 done, cross_learning False 1313.9s
+  T2 chronos2 cross_learning=False: val MASE 0.8674 [1313s]
+T2 chronos2 done, cross_learning False 1313.2s
+  T3 chronos2 cross_learning=False: val MASE 0.7491 [799s]
+T3 chronos2 done, cross_learning False 798.9s
+  T4 chronos2 cross_learning=False: val MASE 0.7725 [460s]
+T4 chronos2 done, cross_learning False 460.5s
+  T5 chronos2 cross_learning=True: val MASE 0.5826 [147s]
+T5 chronos2 done, cross_learning True 147.0s
+
+Loading weights:   0%|          | 0/269 [00:00<?, ?it/s]
+Loading weights:  64%|██████▍   | 173/269 [00:00<00:00, 1713.85it/s]
+Loading weights: 100%|██████████| 269/269 [00:00<00:00, 1589.91it/s]
+T1 chronos_base 89964 rows 23s
+T2 chronos_base 89964 rows 23s
+T3 chronos_base 71442 rows 21s
+T4 chronos_base 29085 rows 17s
+T5 chronos_base 34398 rows 17s
+===== c_d2_chronos end 2026-09-18T12:46:59 rc=0 seconds=4140

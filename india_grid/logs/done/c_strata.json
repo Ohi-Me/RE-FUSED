@@ -1,0 +1,12 @@
+{
+ "stage": "c_strata",
+ "state": "done",
+ "returncode": 0,
+ "queue": "cpu",
+ "seconds": 1.0,
+ "finished": "2026-09-21T15:20:30",
+ "host": "master",
+ "pbs_job": "32123.master",
+ "cuda_visible_devices": "MIG-2f219700-5dc6-59eb-81ef-2bb9414d3ec0",
+ "log": "logs/stages/c_strata.log"
+}

@@ -1,0 +1,8 @@
+
+===== d2_ensemble start 2026-09-18T00:07:11 host=master job=31796.master
+T1 ensembles done: members 13, k=4, lambda=0.0, online (2.0, 0.99, 'all'); cross-fitted val MASE {"best_single": 0.8233, "ens_top": 0.8019, "ens_stack": 0.7999, "ens_online": 0.8044} [29.2s]
+T2 ensembles done: members 13, k=2, lambda=0.0, online (4.0, 0.99, 'all'); cross-fitted val MASE {"best_single": 0.8469, "ens_top": 0.8365, "ens_stack": 0.8335, "ens_online": 0.8374} [16.7s]
+T3 ensembles done: members 13, k=2, lambda=0.0, online (2.0, 0.99, 'all'); cross-fitted val MASE {"best_single": 0.8137, "ens_top": 0.8037, "ens_stack": 0.9784, "ens_online": 0.8068} [25.6s]
+T4 ensembles done: members 13, k=2, lambda=0.0, online (2.0, 0.99, 'region'); cross-fitted val MASE {"best_single": 0.9157, "ens_top": 0.9676, "ens_stack": 0.9167, "ens_online": 0.9214} [13.7s]
+T5 ensembles done: members 13, k=6, lambda=0.1, online (0.5, 1.0, 'all'); cross-fitted val MASE {"best_single": 1.2024, "ens_top": 1.1178, "ens_stack": 1.1304, "ens_online": 1.1917} [15.8s]
+===== d2_ensemble end 2026-09-18T00:08:54 rc=0 seconds=103

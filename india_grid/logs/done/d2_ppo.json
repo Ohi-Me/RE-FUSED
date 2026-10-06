@@ -1,0 +1,12 @@
+{
+ "stage": "d2_ppo",
+ "state": "done",
+ "returncode": 0,
+ "queue": "gpu",
+ "seconds": 1609.4,
+ "finished": "2026-09-18T01:55:10",
+ "host": "master",
+ "pbs_job": "31797.master",
+ "cuda_visible_devices": "MIG-4d38d5cf-c802-5308-80b8-251f3cec7480",
+ "log": "logs/stages/d2_ppo.log"
+}

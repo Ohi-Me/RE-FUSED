@@ -1,0 +1,15 @@
+
+===== c_o3_ablation2 start 2026-09-18T13:43:10 host=master job=31823.master
+  T1 no_carbon seed 0: epochs 12 es 0.0847 [44s]
+  T1 no_carbon seed 1: epochs 11 es 0.0841 [63s]
+  T1 no_carbon seed 2: epochs 15 es 0.0829 [88s]
+T1 no_carbon done 89s
+  T2 no_carbon seed 0: epochs 17 es 0.0936 [52s]
+  T2 no_carbon seed 1: epochs 14 es 0.0937 [75s]
+  T2 no_carbon seed 2: epochs 13 es 0.0937 [97s]
+T2 no_carbon done 98s
+  T3 no_carbon seed 0: epochs 14 es 0.0904 [36s]
+  T3 no_carbon seed 1: epochs 13 es 0.0907 [53s]
+  T3 no_carbon seed 2: epochs 12 es 0.0901 [67s]
+T3 no_carbon done 68s
+===== c_o3_ablation2 end 2026-09-18T13:47:27 rc=0 seconds=257

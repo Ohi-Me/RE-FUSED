@@ -1,0 +1,554 @@
+
+===== c_leakage start 2026-09-18T10:09:34 host=master job=31822.master
+Traceback (most recent call last):
+  File "/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py", line 56, in <module>
+    main()
+  File "/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py", line 31, in main
+    P = O.load_panel()
+  File "/Data3/<hpc-user>/RefusedH100/codes/tests/../refused8/o2data.py", line 63, in load_panel
+    guard.require_confirmatory()
+  File "/Data3/<hpc-user>/RefusedH100/codes/tests/../refused8/guard.py", line 47, in require_confirmatory
+    raise BlindingError("confirmatory data are blinded: " + "; ".join(reasons))
+refused8.guard.BlindingError: confirmatory data are blinded: git tag prereg-v1 missing
+===== c_leakage end 2026-09-18T10:09:35 rc=1 seconds=0
+
+===== c_leakage start 2026-09-18T10:10:24 host=master job=31823.master
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 7.29653033  0.84126868  2.14986142 ...  5.65648252  9.15251295
+ -0.72436771]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 5.06721362  4.70789877  9.13292284 ... 11.45299612  8.86889242
+  8.89675549]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[287.35598421 249.17411262 165.45181159 ... 184.15245081 237.99257971
+ 272.32702239]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[1373.63102406 1507.59481421 2121.46871016 ... 1799.00437262 1523.45581129
+ 2032.02718248]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+Traceback (most recent call last):
+  File "/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py", line 56, in <module>
+    main()
+  File "/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py", line 47, in main
+    assert bad.empty, f"{tid}: features changed after perturbing unpublished data: {bad.to_dict()}"
+AssertionError: T1: features changed after perturbing unpublished data: {'y_l0': 0.26215286956448774, 'y_l1': 0.31202601305473804, 'y_l2': 0.15923359484657834, 'y_l3': 0.46610013468014877, 'y_l4': 0.3050837245179162, 'y_l5': 0.3195212697283246, 'y_l6': 0.2810944735177433, 'y_l7': 0.6016929011325567, 'y_l8': 0.8983020777471968, 'y_l9': 0.449044483052218, 'y_l10': 0.41205904277786387, 'y_l11': 0.4007124787012559, 'y_l12': 0.3738424873391678, 'y_l13': 0.3584620823749691, 'y_base_z': 1.1993940973516826, 'y_std7': 0.25498861754981406, 'x_dem_energy_met_gwh_last': 1.1758449642909476, 'x_dem_energy_met_gwh_m7': 1.1993940973516826, 'x_dem_energy_met_gwh_d7': 0.2621528695644883, 'x_dem_max_demand_mw_last': 0.5163777417329252, 'x_dem_max_demand_mw_m7': 0.5591221840302207, 'x_dem_max_demand_mw_d7': 0.1622622559059086, 'x_dem_energy_shortage_gwh_last': 1.1180722839489605, 'x_dem_energy_shortage_gwh_m7': 1.0405911005242832, 'x_dem_energy_shortage_gwh_d7': 0.33213858049751166, 'x_dev_drawal_schedule_gwh_last': 0.9894560061349951, 'x_dev_drawal_schedule_gwh_m7': 1.0007719766303431, 'x_dev_drawal_schedule_gwh_d7': 0.128930997225597, 'x_dev_od_ud_gwh_last': 0.40489593100851806, 'x_dev_od_ud_gwh_m7': 0.29873462476518864, 'x_dev_od_ud_gwh_d7': 0.35060588744342, 'x_dev_actual_drawal_gwh_last': 0.7505207247529639, 'x_dev_actual_drawal_gwh_m7': 0.8451889170474846, 'x_dev_actual_drawal_gwh_d7': 0.23866498145416315, 'x_reg_wind_gwh_last': 0.050436297100321825, 'x_reg_wind_gwh_m7': 0.03614316065178946, 'x_reg_wind_gwh_d7': 0.02900571315090783, 'x_reg_solar_gwh_last': 0.4419888998281922, 'x_reg_solar_gwh_m7': 0.3706026761860245, 'x_reg_solar_gwh_d7': 0.07855940870960199, 'x_reg_hydro_gwh_last': 0.0613420552067383, 'x_reg_hydro_gwh_m7': 0.05869432100114724, 'x_reg_hydro_gwh_d7': 0.03288393699684078, 'x_reg_energy_met_gwh_last': 0.4229636239601906, 'x_reg_energy_met_gwh_m7': 0.4300585807368926, 'x_reg_energy_met_gwh_d7': 0.11456111998311558, 'x_nat_energy_met_gwh_last': 0.602466449317115, 'x_nat_energy_met_gwh_m7': 0.4204436393058498, 'x_nat_energy_met_gwh_d7': 0.18493603771829004, 'x_sys_pct_lt_49_9_last': 0.011985823339414114, 'x_sys_pct_lt_49_9_m7': 0.009200101068327471, 'x_sys_pct_lt_49_9_d7': 0.007185462101469142, 'x_sys_fvi_last': 0.12406447686101989, 'x_sys_fvi_m7': 0.18266450430100908, 'x_sys_fvi_d7': 0.05953314730596745, 'x_gen_act_gwh_total_last': 0.35047976772959955, 'x_gen_act_gwh_total_m7': 0.3008387485841507, 'x_gen_act_gwh_total_d7': 0.1416708068514, 'x_gen_prog_gwh_total_last': 0.8736631446729419, 'x_gen_prog_gwh_total_m7': 0.8736631446729419, 'x_gen_prog_gwh_total_d7': 0.15134448152495478, 'x_gen_outage_share_last': 1.5950867305612852, 'x_gen_outage_share_m7': 1.4654040043279535, 'x_gen_outage_share_d7': 1.0282619872651066, 'x_gen_act_gwh_hydro_last': 0.2491435208413057, 'x_gen_act_gwh_hydro_m7': 0.23897056265661715, 'x_gen_act_gwh_hydro_d7': 0.05235735668452457, 'x_gen_coal_days_capw_last': 0.04562693898205361, 'x_gen_coal_days_capw_m7': 0.04067173650753064, 'x_gen_coal_days_capw_d7': 0.008494353301891522, 'x_co2_ci_conv_op_last': 1.3773041707813602, 'x_co2_ci_conv_op_m7': 1.280554852520174, 'x_co2_ci_conv_op_d7': 0.5311953552621871, 'x_re_all_total_re_gwh_last': 1.2605706295439685, 'x_re_all_total_re_gwh_m7': 0.9397425428851326, 'x_re_all_total_re_gwh_d7': 0.32082808665883583, 'x_re_all_wind_gwh_last': 0.05914179578423245, 'x_re_all_wind_gwh_m7': 0.05914179578423245, 'x_re_all_wind_gwh_d7': 0.036343522351082624, 'x_re_all_solar_gwh_last': 1.3053040757428929, 'x_re_all_solar_gwh_m7': 0.9808778904629267, 'x_re_all_solar_gwh_d7': 0.607651187742924, 'x_prc_dam_acp_last': 0.036200691956959075, 'x_prc_dam_acp_m7': 0.03592134789248391, 'x_prc_dam_acp_d7': 0.0028353924403224373, 'x_prc_dsm_normal_last': 0.017335345038000854, 'x_prc_dsm_normal_m7': 0.032248409906844244, 'x_prc_dsm_normal_d7': 0.03710434240092808, 'x_wx_tmax_c_last': 0.47229445935150893, 'x_wx_tmax_c_m7': 0.4047888326034127, 'x_wx_tmax_c_d7': 0.3247707895493987, 'x_wx_tmin_c_last': 0.1578054488756458, 'x_wx_tmin_c_m7': 0.17972956891187414, 'x_wx_tmin_c_d7': 0.09019336321416593, 'x_wx_rain_mm_last': 0.041332727322486384, 'x_wx_rain_mm_m7': 0.06686404870312712, 'x_wx_rain_mm_d7': 0.028429907458132675, 'x_wx_cdd24_last': 0.11230090173463259, 'x_wx_cdd24_m7': 0.06451569099052712, 'x_wx_cdd24_d7': 0.08169731039015682, 'y_sn_z': 0.46610013468014877, 'y_sn2_z': 0.41205904277786387, 'y_ly_z': 0.6906756541169483}
+===== c_leakage end 2026-09-18T10:10:27 rc=1 seconds=3
+
+===== c_leakage start 2026-09-18T16:11:59 host=master job=31827.master
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[1.90982576 1.21580768 2.43722026 ... 7.55995688 3.26744694 1.34864562]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[8.82396342 5.40922923 6.27649676 ... 7.01643583 9.04779422 4.53729805]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[212.69991124 245.91916574 275.41529975 ... 133.7091929  310.09083769
+ 195.95226028]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[2637.03085215 1518.89095688 2549.69927736 ... 2022.03427746 2044.71271773
+ 2994.90409927]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+T1 τ=2024-07-15: 102 rows, 113 feature/anchor columns unchanged; targets changed as expected (max |Δy| = 200.74)
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 0.01130186  1.54748689 -0.02146333 ...  6.88296225  5.67022537
+  0.15842058]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 5.24727559  7.08182522 11.42342415 ...  3.75495106 11.06214832
+  5.04885156]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[429.94494322 189.27623639 186.36022425 ... 151.72881898 320.43820511
+ 261.78403399]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[2487.47316126 1564.51471089 2375.32154425 ... 2680.03754924 1820.97732486
+ 2922.3397661 ]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+T2 τ=2025-11-02: 102 rows, 113 feature/anchor columns unchanged; targets changed as expected (max |Δy| = 93.07)
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[-1.16246716  2.54084978  2.13164882 ...  3.23572158  3.04071415
+ -0.42200648]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[2.70521355 0.73040733 2.29791269 ... 3.69992035 7.55104967 6.70910537]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 23.61665669  11.43690091  30.99357081 ... 199.69100472 297.85164055
+ 134.53208879]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[2152.4018417  2189.02092765 2768.21229552 ... 2990.4639308  2801.36218009
+ 1222.42009959]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+T3 τ=2025-01-20: 81 rows, 113 feature/anchor columns unchanged; targets changed as expected (max |Δy| = 188.75)
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[3.82502663 5.04157511 7.05237515 ... 5.34577818 4.94293472 0.54860935]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[10.65208159 17.46556741 16.8059958  ...  9.50012949  7.41149907
+  7.6067056 ]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[348.33677331 509.44352278 429.11442112 ... 225.24544947 298.21072849
+ 170.41506049]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[1678.35180797 2088.73776611 2419.70658349 ... 1564.54107178 2951.98726292
+ 2085.57401435]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+T4 τ=2024-12-05: 48 rows, 113 feature/anchor columns unchanged; targets changed as expected (max |Δy| = 52.69)
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 2.66786152  3.19972296  4.76148738 ...  5.55981129  3.83308062
+ -0.16472554]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 7.34878066  7.67043593  6.48865545 ... 12.09238768  5.38801115
+ 10.32858885]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 83.49381193 164.97877178 112.5098402  ... 291.99139915 231.00954661
+ 237.0791302 ]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[2216.04165572 3016.66884222 2173.44504272 ... 2551.94438469 1737.41658856
+ 1344.77698877]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+T5 τ=2025-06-10: 39 rows, 62 feature/anchor columns unchanged; targets changed as expected (max |Δy| = 2657.50)
+LEAKAGE TEST PASSED (5 targets)
+===== c_leakage end 2026-09-18T16:12:13 rc=0 seconds=14
+
+===== c_leakage start 2026-09-21T03:50:57 host=master job=32093.master
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[1.90982576 1.21580768 2.43722026 ... 7.55995688 3.26744694 1.34864562]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[8.82396342 5.40922923 6.27649676 ... 7.01643583 9.04779422 4.53729805]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[212.69991124 245.91916574 275.41529975 ... 133.7091929  310.09083769
+ 195.95226028]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[2637.03085215 1518.89095688 2549.69927736 ... 2022.03427746 2044.71271773
+ 2994.90409927]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+T1 τ=2024-07-15: 102 rows, 113 feature/anchor columns unchanged; targets changed as expected (max |Δy| = 200.74)
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 0.01130186  1.54748689 -0.02146333 ...  6.88296225  5.67022537
+  0.15842058]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 5.24727559  7.08182522 11.42342415 ...  3.75495106 11.06214832
+  5.04885156]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[429.94494322 189.27623639 186.36022425 ... 151.72881898 320.43820511
+ 261.78403399]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[2487.47316126 1564.51471089 2375.32154425 ... 2680.03754924 1820.97732486
+ 2922.3397661 ]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+T2 τ=2025-11-02: 102 rows, 113 feature/anchor columns unchanged; targets changed as expected (max |Δy| = 93.07)
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[-1.16246716  2.54084978  2.13164882 ...  3.23572158  3.04071415
+ -0.42200648]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[2.70521355 0.73040733 2.29791269 ... 3.69992035 7.55104967 6.70910537]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 23.61665669  11.43690091  30.99357081 ... 199.69100472 297.85164055
+ 134.53208879]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[2152.4018417  2189.02092765 2768.21229552 ... 2990.4639308  2801.36218009
+ 1222.42009959]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+T3 τ=2025-01-20: 81 rows, 113 feature/anchor columns unchanged; targets changed as expected (max |Δy| = 188.75)
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[3.82502663 5.04157511 7.05237515 ... 5.34577818 4.94293472 0.54860935]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[10.65208159 17.46556741 16.8059958  ...  9.50012949  7.41149907
+  7.6067056 ]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[348.33677331 509.44352278 429.11442112 ... 225.24544947 298.21072849
+ 170.41506049]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[1678.35180797 2088.73776611 2419.70658349 ... 1564.54107178 2951.98726292
+ 2085.57401435]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+T4 τ=2024-12-05: 48 rows, 113 feature/anchor columns unchanged; targets changed as expected (max |Δy| = 52.69)
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 2.66786152  3.19972296  4.76148738 ...  5.55981129  3.83308062
+ -0.16472554]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 7.34878066  7.67043593  6.48865545 ... 12.09238768  5.38801115
+ 10.32858885]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 83.49381193 164.97877178 112.5098402  ... 291.99139915 231.00954661
+ 237.0791302 ]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[2216.04165572 3016.66884222 2173.44504272 ... 2551.94438469 1737.41658856
+ 1344.77698877]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+T5 τ=2025-06-10: 39 rows, 62 feature/anchor columns unchanged; targets changed as expected (max |Δy| = 2657.50)
+LEAKAGE TEST PASSED (5 targets)
+===== c_leakage end 2026-09-21T03:51:10 rc=0 seconds=13
+
+===== c_leakage start 2026-09-21T03:56:48 host=master job=32094.master
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[1.90982576 1.21580768 2.43722026 ... 7.55995688 3.26744694 1.34864562]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[8.82396342 5.40922923 6.27649676 ... 7.01643583 9.04779422 4.53729805]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[212.69991124 245.91916574 275.41529975 ... 133.7091929  310.09083769
+ 195.95226028]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[2637.03085215 1518.89095688 2549.69927736 ... 2022.03427746 2044.71271773
+ 2994.90409927]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+T1 τ=2024-07-15: 102 rows, 113 feature/anchor columns unchanged; targets changed as expected (max |Δy| = 200.74)
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 0.01130186  1.54748689 -0.02146333 ...  6.88296225  5.67022537
+  0.15842058]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 5.24727559  7.08182522 11.42342415 ...  3.75495106 11.06214832
+  5.04885156]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[429.94494322 189.27623639 186.36022425 ... 151.72881898 320.43820511
+ 261.78403399]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[2487.47316126 1564.51471089 2375.32154425 ... 2680.03754924 1820.97732486
+ 2922.3397661 ]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+T2 τ=2025-11-02: 102 rows, 113 feature/anchor columns unchanged; targets changed as expected (max |Δy| = 93.07)
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[-1.16246716  2.54084978  2.13164882 ...  3.23572158  3.04071415
+ -0.42200648]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[2.70521355 0.73040733 2.29791269 ... 3.69992035 7.55104967 6.70910537]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 23.61665669  11.43690091  30.99357081 ... 199.69100472 297.85164055
+ 134.53208879]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[2152.4018417  2189.02092765 2768.21229552 ... 2990.4639308  2801.36218009
+ 1222.42009959]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+T3 τ=2025-01-20: 81 rows, 113 feature/anchor columns unchanged; targets changed as expected (max |Δy| = 188.75)
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[3.82502663 5.04157511 7.05237515 ... 5.34577818 4.94293472 0.54860935]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[10.65208159 17.46556741 16.8059958  ...  9.50012949  7.41149907
+  7.6067056 ]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[348.33677331 509.44352278 429.11442112 ... 225.24544947 298.21072849
+ 170.41506049]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[1678.35180797 2088.73776611 2419.70658349 ... 1564.54107178 2951.98726292
+ 2085.57401435]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+T4 τ=2024-12-05: 48 rows, 113 feature/anchor columns unchanged; targets changed as expected (max |Δy| = 52.69)
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 2.66786152  3.19972296  4.76148738 ...  5.55981129  3.83308062
+ -0.16472554]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 7.34878066  7.67043593  6.48865545 ... 12.09238768  5.38801115
+ 10.32858885]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 83.49381193 164.97877178 112.5098402  ... 291.99139915 231.00954661
+ 237.0791302 ]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[2216.04165572 3016.66884222 2173.44504272 ... 2551.94438469 1737.41658856
+ 1344.77698877]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+T5 τ=2025-06-10: 39 rows, 62 feature/anchor columns unchanged; targets changed as expected (max |Δy| = 2657.50)
+LEAKAGE TEST PASSED (5 targets)
+===== c_leakage end 2026-09-21T03:57:01 rc=0 seconds=13
+
+===== c_leakage start 2026-09-21T03:58:23 host=master job=32095.master
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[1.90982576 1.21580768 2.43722026 ... 7.55995688 3.26744694 1.34864562]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[8.82396342 5.40922923 6.27649676 ... 7.01643583 9.04779422 4.53729805]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[212.69991124 245.91916574 275.41529975 ... 133.7091929  310.09083769
+ 195.95226028]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[2637.03085215 1518.89095688 2549.69927736 ... 2022.03427746 2044.71271773
+ 2994.90409927]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+T1 τ=2024-07-15: 102 rows, 113 feature/anchor columns unchanged; targets changed as expected (max |Δy| = 200.74)
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 0.01130186  1.54748689 -0.02146333 ...  6.88296225  5.67022537
+  0.15842058]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 5.24727559  7.08182522 11.42342415 ...  3.75495106 11.06214832
+  5.04885156]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[429.94494322 189.27623639 186.36022425 ... 151.72881898 320.43820511
+ 261.78403399]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[2487.47316126 1564.51471089 2375.32154425 ... 2680.03754924 1820.97732486
+ 2922.3397661 ]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+T2 τ=2025-11-02: 102 rows, 113 feature/anchor columns unchanged; targets changed as expected (max |Δy| = 93.07)
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[-1.16246716  2.54084978  2.13164882 ...  3.23572158  3.04071415
+ -0.42200648]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[2.70521355 0.73040733 2.29791269 ... 3.69992035 7.55104967 6.70910537]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 23.61665669  11.43690091  30.99357081 ... 199.69100472 297.85164055
+ 134.53208879]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[2152.4018417  2189.02092765 2768.21229552 ... 2990.4639308  2801.36218009
+ 1222.42009959]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+T3 τ=2025-01-20: 81 rows, 113 feature/anchor columns unchanged; targets changed as expected (max |Δy| = 188.75)
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[3.82502663 5.04157511 7.05237515 ... 5.34577818 4.94293472 0.54860935]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[10.65208159 17.46556741 16.8059958  ...  9.50012949  7.41149907
+  7.6067056 ]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[348.33677331 509.44352278 429.11442112 ... 225.24544947 298.21072849
+ 170.41506049]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[1678.35180797 2088.73776611 2419.70658349 ... 1564.54107178 2951.98726292
+ 2085.57401435]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+T4 τ=2024-12-05: 48 rows, 113 feature/anchor columns unchanged; targets changed as expected (max |Δy| = 52.69)
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 2.66786152  3.19972296  4.76148738 ...  5.55981129  3.83308062
+ -0.16472554]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 7.34878066  7.67043593  6.48865545 ... 12.09238768  5.38801115
+ 10.32858885]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 83.49381193 164.97877178 112.5098402  ... 291.99139915 231.00954661
+ 237.0791302 ]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[2216.04165572 3016.66884222 2173.44504272 ... 2551.94438469 1737.41658856
+ 1344.77698877]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+T5 τ=2025-06-10: 39 rows, 62 feature/anchor columns unchanged; targets changed as expected (max |Δy| = 2657.50)
+LEAKAGE TEST PASSED (5 targets)
+===== c_leakage end 2026-09-21T03:58:35 rc=0 seconds=12
+
+===== c_leakage start 2026-09-21T04:05:00 host=master job=32096.master
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[1.90982576 1.21580768 2.43722026 ... 7.55995688 3.26744694 1.34864562]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[8.82396342 5.40922923 6.27649676 ... 7.01643583 9.04779422 4.53729805]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[212.69991124 245.91916574 275.41529975 ... 133.7091929  310.09083769
+ 195.95226028]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[2637.03085215 1518.89095688 2549.69927736 ... 2022.03427746 2044.71271773
+ 2994.90409927]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+T1 τ=2024-07-15: 102 rows, 113 feature/anchor columns unchanged; targets changed as expected (max |Δy| = 200.74)
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 0.01130186  1.54748689 -0.02146333 ...  6.88296225  5.67022537
+  0.15842058]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 5.24727559  7.08182522 11.42342415 ...  3.75495106 11.06214832
+  5.04885156]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[429.94494322 189.27623639 186.36022425 ... 151.72881898 320.43820511
+ 261.78403399]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[2487.47316126 1564.51471089 2375.32154425 ... 2680.03754924 1820.97732486
+ 2922.3397661 ]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+T2 τ=2025-11-02: 102 rows, 113 feature/anchor columns unchanged; targets changed as expected (max |Δy| = 93.07)
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[-1.16246716  2.54084978  2.13164882 ...  3.23572158  3.04071415
+ -0.42200648]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[2.70521355 0.73040733 2.29791269 ... 3.69992035 7.55104967 6.70910537]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 23.61665669  11.43690091  30.99357081 ... 199.69100472 297.85164055
+ 134.53208879]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[2152.4018417  2189.02092765 2768.21229552 ... 2990.4639308  2801.36218009
+ 1222.42009959]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+T3 τ=2025-01-20: 81 rows, 113 feature/anchor columns unchanged; targets changed as expected (max |Δy| = 188.75)
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[3.82502663 5.04157511 7.05237515 ... 5.34577818 4.94293472 0.54860935]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[10.65208159 17.46556741 16.8059958  ...  9.50012949  7.41149907
+  7.6067056 ]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[348.33677331 509.44352278 429.11442112 ... 225.24544947 298.21072849
+ 170.41506049]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[1678.35180797 2088.73776611 2419.70658349 ... 1564.54107178 2951.98726292
+ 2085.57401435]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+T4 τ=2024-12-05: 48 rows, 113 feature/anchor columns unchanged; targets changed as expected (max |Δy| = 52.69)
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 2.66786152  3.19972296  4.76148738 ...  5.55981129  3.83308062
+ -0.16472554]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 7.34878066  7.67043593  6.48865545 ... 12.09238768  5.38801115
+ 10.32858885]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 83.49381193 164.97877178 112.5098402  ... 291.99139915 231.00954661
+ 237.0791302 ]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[2216.04165572 3016.66884222 2173.44504272 ... 2551.94438469 1737.41658856
+ 1344.77698877]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+T5 τ=2025-06-10: 39 rows, 62 feature/anchor columns unchanged; targets changed as expected (max |Δy| = 2657.50)
+LEAKAGE TEST PASSED (5 targets)
+===== c_leakage end 2026-09-21T04:05:12 rc=0 seconds=12
+
+===== c_leakage start 2026-09-21T04:07:19 host=master job=32097.master
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[1.90982576 1.21580768 2.43722026 ... 7.55995688 3.26744694 1.34864562]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[8.82396342 5.40922923 6.27649676 ... 7.01643583 9.04779422 4.53729805]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[212.69991124 245.91916574 275.41529975 ... 133.7091929  310.09083769
+ 195.95226028]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[2637.03085215 1518.89095688 2549.69927736 ... 2022.03427746 2044.71271773
+ 2994.90409927]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+T1 τ=2024-07-15: 102 rows, 113 feature/anchor columns unchanged; targets changed as expected (max |Δy| = 200.74)
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 0.01130186  1.54748689 -0.02146333 ...  6.88296225  5.67022537
+  0.15842058]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 5.24727559  7.08182522 11.42342415 ...  3.75495106 11.06214832
+  5.04885156]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[429.94494322 189.27623639 186.36022425 ... 151.72881898 320.43820511
+ 261.78403399]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[2487.47316126 1564.51471089 2375.32154425 ... 2680.03754924 1820.97732486
+ 2922.3397661 ]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+T2 τ=2025-11-02: 102 rows, 113 feature/anchor columns unchanged; targets changed as expected (max |Δy| = 93.07)
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[-1.16246716  2.54084978  2.13164882 ...  3.23572158  3.04071415
+ -0.42200648]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[2.70521355 0.73040733 2.29791269 ... 3.69992035 7.55104967 6.70910537]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 23.61665669  11.43690091  30.99357081 ... 199.69100472 297.85164055
+ 134.53208879]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[2152.4018417  2189.02092765 2768.21229552 ... 2990.4639308  2801.36218009
+ 1222.42009959]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+T3 τ=2025-01-20: 81 rows, 113 feature/anchor columns unchanged; targets changed as expected (max |Δy| = 188.75)
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[3.82502663 5.04157511 7.05237515 ... 5.34577818 4.94293472 0.54860935]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[10.65208159 17.46556741 16.8059958  ...  9.50012949  7.41149907
+  7.6067056 ]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[348.33677331 509.44352278 429.11442112 ... 225.24544947 298.21072849
+ 170.41506049]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[1678.35180797 2088.73776611 2419.70658349 ... 1564.54107178 2951.98726292
+ 2085.57401435]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+T4 τ=2024-12-05: 48 rows, 113 feature/anchor columns unchanged; targets changed as expected (max |Δy| = 52.69)
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 2.66786152  3.19972296  4.76148738 ...  5.55981129  3.83308062
+ -0.16472554]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 7.34878066  7.67043593  6.48865545 ... 12.09238768  5.38801115
+ 10.32858885]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 83.49381193 164.97877178 112.5098402  ... 291.99139915 231.00954661
+ 237.0791302 ]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[2216.04165572 3016.66884222 2173.44504272 ... 2551.94438469 1737.41658856
+ 1344.77698877]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+T5 τ=2025-06-10: 39 rows, 62 feature/anchor columns unchanged; targets changed as expected (max |Δy| = 2657.50)
+LEAKAGE TEST PASSED (5 targets)
+===== c_leakage end 2026-09-21T04:07:32 rc=0 seconds=12
+
+===== c_leakage start 2026-09-21T14:09:12 host=master job=32116.master
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[1.90982576 1.21580768 2.43722026 ... 7.55995688 3.26744694 1.34864562]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[8.82396342 5.40922923 6.27649676 ... 7.01643583 9.04779422 4.53729805]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[212.69991124 245.91916574 275.41529975 ... 133.7091929  310.09083769
+ 195.95226028]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[2637.03085215 1518.89095688 2549.69927736 ... 2022.03427746 2044.71271773
+ 2994.90409927]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+T1 τ=2024-07-15: 102 rows, 113 feature/anchor columns unchanged; targets changed as expected (max |Δy| = 200.74)
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 0.01130186  1.54748689 -0.02146333 ...  6.88296225  5.67022537
+  0.15842058]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 5.24727559  7.08182522 11.42342415 ...  3.75495106 11.06214832
+  5.04885156]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[429.94494322 189.27623639 186.36022425 ... 151.72881898 320.43820511
+ 261.78403399]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[2487.47316126 1564.51471089 2375.32154425 ... 2680.03754924 1820.97732486
+ 2922.3397661 ]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+T2 τ=2025-11-02: 102 rows, 113 feature/anchor columns unchanged; targets changed as expected (max |Δy| = 93.07)
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[-1.16246716  2.54084978  2.13164882 ...  3.23572158  3.04071415
+ -0.42200648]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[2.70521355 0.73040733 2.29791269 ... 3.69992035 7.55104967 6.70910537]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 23.61665669  11.43690091  30.99357081 ... 199.69100472 297.85164055
+ 134.53208879]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[2152.4018417  2189.02092765 2768.21229552 ... 2990.4639308  2801.36218009
+ 1222.42009959]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+T3 τ=2025-01-20: 81 rows, 113 feature/anchor columns unchanged; targets changed as expected (max |Δy| = 188.75)
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[3.82502663 5.04157511 7.05237515 ... 5.34577818 4.94293472 0.54860935]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[10.65208159 17.46556741 16.8059958  ...  9.50012949  7.41149907
+  7.6067056 ]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[348.33677331 509.44352278 429.11442112 ... 225.24544947 298.21072849
+ 170.41506049]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[1678.35180797 2088.73776611 2419.70658349 ... 1564.54107178 2951.98726292
+ 2085.57401435]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+T4 τ=2024-12-05: 48 rows, 113 feature/anchor columns unchanged; targets changed as expected (max |Δy| = 52.69)
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 2.66786152  3.19972296  4.76148738 ...  5.55981129  3.83308062
+ -0.16472554]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 7.34878066  7.67043593  6.48865545 ... 12.09238768  5.38801115
+ 10.32858885]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 83.49381193 164.97877178 112.5098402  ... 291.99139915 231.00954661
+ 237.0791302 ]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[2216.04165572 3016.66884222 2173.44504272 ... 2551.94438469 1737.41658856
+ 1344.77698877]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+T5 τ=2025-06-10: 39 rows, 62 feature/anchor columns unchanged; targets changed as expected (max |Δy| = 2657.50)
+LEAKAGE TEST PASSED (5 targets)
+===== c_leakage end 2026-09-21T14:09:25 rc=0 seconds=12
+
+===== c_leakage start 2026-09-21T15:20:33 host=master job=32123.master
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[1.90982576 1.21580768 2.43722026 ... 7.55995688 3.26744694 1.34864562]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[8.82396342 5.40922923 6.27649676 ... 7.01643583 9.04779422 4.53729805]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[212.69991124 245.91916574 275.41529975 ... 133.7091929  310.09083769
+ 195.95226028]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[2637.03085215 1518.89095688 2549.69927736 ... 2022.03427746 2044.71271773
+ 2994.90409927]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+T1 τ=2024-07-15: 102 rows, 113 feature/anchor columns unchanged; targets changed as expected (max |Δy| = 200.74)
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 0.01130186  1.54748689 -0.02146333 ...  6.88296225  5.67022537
+  0.15842058]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 5.24727559  7.08182522 11.42342415 ...  3.75495106 11.06214832
+  5.04885156]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[429.94494322 189.27623639 186.36022425 ... 151.72881898 320.43820511
+ 261.78403399]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[2487.47316126 1564.51471089 2375.32154425 ... 2680.03754924 1820.97732486
+ 2922.3397661 ]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+T2 τ=2025-11-02: 102 rows, 113 feature/anchor columns unchanged; targets changed as expected (max |Δy| = 93.07)
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[-1.16246716  2.54084978  2.13164882 ...  3.23572158  3.04071415
+ -0.42200648]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[2.70521355 0.73040733 2.29791269 ... 3.69992035 7.55104967 6.70910537]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 23.61665669  11.43690091  30.99357081 ... 199.69100472 297.85164055
+ 134.53208879]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[2152.4018417  2189.02092765 2768.21229552 ... 2990.4639308  2801.36218009
+ 1222.42009959]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+T3 τ=2025-01-20: 81 rows, 113 feature/anchor columns unchanged; targets changed as expected (max |Δy| = 188.75)
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[3.82502663 5.04157511 7.05237515 ... 5.34577818 4.94293472 0.54860935]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[10.65208159 17.46556741 16.8059958  ...  9.50012949  7.41149907
+  7.6067056 ]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[348.33677331 509.44352278 429.11442112 ... 225.24544947 298.21072849
+ 170.41506049]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[1678.35180797 2088.73776611 2419.70658349 ... 1564.54107178 2951.98726292
+ 2085.57401435]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+T4 τ=2024-12-05: 48 rows, 113 feature/anchor columns unchanged; targets changed as expected (max |Δy| = 52.69)
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 2.66786152  3.19972296  4.76148738 ...  5.55981129  3.83308062
+ -0.16472554]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 7.34878066  7.67043593  6.48865545 ... 12.09238768  5.38801115
+ 10.32858885]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 83.49381193 164.97877178 112.5098402  ... 291.99139915 231.00954661
+ 237.0791302 ]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+/Data3/<hpc-user>/RefusedH100/codes/tests/test_leakage.py:25: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[2216.04165572 3016.66884222 2173.44504272 ... 2551.94438469 1737.41658856
+ 1344.77698877]' has dtype incompatible with int32, please explicitly cast to a compatible dtype first.
+  Q.loc[m, c] = Q.loc[m, c] * rng.uniform(0.5, 1.5, m.sum()) + rng.normal(0, 1, m.sum())
+T5 τ=2025-06-10: 39 rows, 62 feature/anchor columns unchanged; targets changed as expected (max |Δy| = 2657.50)
+LEAKAGE TEST PASSED (5 targets)
+===== c_leakage end 2026-09-21T15:20:46 rc=0 seconds=13

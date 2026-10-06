@@ -1,0 +1,28 @@
+#!/bin/bash
+#PBS -N refused_zenodo_check
+#PBS -q workq
+#PBS -l select=1:ncpus=8:ngpus=1:mem=32gb
+#PBS -l walltime=01:00:00
+#PBS -j oe
+#PBS -o /Data3/<hpc-user>/RE-FUSED/logs/autopilot/
+# Unpack the Zenodo archive in a clean folder and check it the way a reader would: file hashes, panel hash,
+# pre-registration and frozen files, and re-scoring the 52 checks from the stored results.
+cd /Data3/<hpc-user>/RE-FUSED
+export PYTHONNOUSERSITE=1
+source /apps/compilers/anaconda3/etc/profile.d/conda.sh
+conda activate refused_h100
+MIG=$(python run_all.py pick-mig) || { echo "no free MIG instance"; exit 3; }
+export CUDA_VISIBLE_DEVICES="$MIG"
+echo "zenodo check $(date -Iseconds) on $(hostname), job $PBS_JOBID, GPU $CUDA_VISIBLE_DEVICES"
+# which archive to check: qsub -v NAME=REFUSED_Zenodo_full hpc/zenodo_check.pbs (default: the reviewer record)
+NAME=${NAME:-REFUSED_Zenodo}
+T=tmp_zenodo_check_$NAME
+rm -rf "$T" && mkdir -p "$T/work"
+python -c "import zipfile; zipfile.ZipFile('release/${NAME}_v1.0.zip').extractall('$T')"
+echo "checking release/${NAME}_v1.0.zip: $(find "$T/$NAME" -type f | wc -l) files"
+# the MD5 is what Zenodo shows for an uploaded file, so the log proves which file was checked
+echo "archive md5 $(md5sum "release/${NAME}_v1.0.zip" | cut -d' ' -f1) sha256 $(sha256sum "release/${NAME}_v1.0.zip" | cut -d' ' -f1)"
+python "$T/$NAME/code/reproducibility/release/check_zenodo_package.py" "$T/$NAME" "$T/work"
+rc=$?
+cp "$T/work/ZENODO_CHECK.md" "logs/autopilot/ZENODO_CHECK_${NAME}.md" 2>/dev/null
+echo "zenodo check finished rc=$rc $(date -Iseconds)"

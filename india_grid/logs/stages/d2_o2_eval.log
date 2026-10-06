@@ -1,0 +1,13 @@
+
+===== d2_o2_eval start 2026-09-18T00:08:54 host=master job=31796.master
+T1 rows per member: {'lgbm': 74355, 'bilstm': 74151, 'tft': 74151, 'patchtst': 74151, 'chronos': 74253, 'xgb': 74355, 'nhits': 74151, 'tide': 74151, 'bitcn': 74151, 'nbeatsx': 74151, 'chronos2': 74253, 'chronos_base': 74253, 'mcag_instance_sd': 74151, 'ens_top': 74151, 'ens_stack': 74151, 'ens_online': 74151, 'seasonal_naive': 74148} -> common rows: 73944
+T1 final: ens_stack window 365
+T2 rows per member: {'lgbm': 74355, 'bilstm': 74151, 'tft': 74151, 'patchtst': 74151, 'chronos': 74253, 'xgb': 74355, 'nhits': 74151, 'tide': 74151, 'bitcn': 74151, 'nbeatsx': 74151, 'chronos2': 74253, 'chronos_base': 74253, 'mcag_instance': 74151, 'ens_top': 74151, 'ens_stack': 74151, 'ens_online': 74151, 'seasonal_naive': 74148} -> common rows: 73944
+T2 final: ens_stack window 365
+T3 rows per member: {'lgbm': 59172, 'bilstm': 59010, 'tft': 59010, 'patchtst': 59010, 'chronos': 59091, 'xgb': 59172, 'nhits': 59010, 'tide': 59010, 'bitcn': 59010, 'nbeatsx': 59010, 'chronos2': 59091, 'chronos_base': 59091, 'mcag_instance': 59010, 'ens_top': 59010, 'ens_stack': 59010, 'ens_online': 59010, 'seasonal_naive': 59133} -> common rows: 58971
+T3 final: ens_top window 365
+T4 rows per member: {'lgbm': 32763, 'bilstm': 32673, 'tft': 32673, 'patchtst': 32673, 'chronos': 32718, 'xgb': 32763, 'nhits': 32673, 'tide': 32673, 'bitcn': 32673, 'nbeatsx': 32673, 'chronos2': 32718, 'chronos_base': 32718, 'mcag_instance': 32673, 'ens_top': 32673, 'ens_stack': 32673, 'ens_online': 32673, 'seasonal_naive': 32715} -> common rows: 32625
+T4 final: chronos2 window 365
+T5 rows per member: {'lgbm': 28509, 'bilstm': 28431, 'tft': 28431, 'patchtst': 28431, 'chronos': 28470, 'xgb': 28509, 'nhits': 28431, 'tide': 28431, 'bitcn': 28431, 'nbeatsx': 28431, 'chronos2': 28470, 'chronos_base': 28470, 'mcag_instance_sd': 28431, 'ens_top': 28431, 'ens_stack': 28431, 'ens_online': 28431, 'seasonal_naive': 28509} -> common rows: 28431
+T5 final: ens_top window 365
+===== d2_o2_eval end 2026-09-18T00:12:39 rc=0 seconds=225

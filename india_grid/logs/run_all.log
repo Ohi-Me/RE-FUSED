@@ -1,0 +1,682 @@
+[2026-09-17T14:50:20] submitted refused_o2_cpu -> 31748.master (cpu; env_check, leakage_test, o2_samples, o2_lgbm)
+[2026-09-17T14:50:20] submitted refused_o2_gpu -> 31749.master (gpu; o2_patchtst, o2_tft, o2_bilstm, o2_chronos) depends afterok:31748.master
+[2026-09-17T14:50:20] submitted refused_o3_gpu -> 31750.master (gpu; o3_main, o3_ablation, o3_ablation2) depends afterany:31749.master
+[2026-09-17T14:50:20] submitted refused_o2eval_o4_o5 -> 31751.master (cpu; o2_evaluate, o4, o5_rules, o5_ppo) depends afterok:31748.master,afterok:31749.master
+[2026-09-17T14:50:20] submitted refused_rebuild_paper -> 31752.master (cpu; data_paper_numbers, data_paper_figures, build_b01_psp, build_b02_dsm, build_b03_npp, build_b04_re, build_b05_co2, build_b06_imd, build_b07_panel, build_b08_validation, build_verify)
+[2026-09-17T14:50:20] submitted refused_o3eval_report -> 31753.master (cpu; o3_evaluate, prereg_fill, report) depends afterok:31751.master,afterok:31750.master,afterany:31752.master
+[2026-09-17T14:50:20] start env_check [cpu] run_all.py _internal env_check
+[2026-09-17T14:50:20] start data_paper_numbers [cpu] codes/scripts/paper/make_numbers_data.py
+[2026-09-17T14:50:20] end data_paper_numbers rc=0 0s
+[2026-09-17T14:50:20] start data_paper_figures [cpu] codes/scripts/paper/make_figures_data.py
+[2026-09-17T14:50:23] end env_check rc=0 3s
+[2026-09-17T14:50:23] start leakage_test [cpu] codes/tests/test_leakage.py
+[2026-09-17T14:50:30] end data_paper_figures rc=0 10s
+[2026-09-17T14:50:30] start build_b01_psp [cpu] codes/scripts/build/b01_psp.py
+[2026-09-17T14:50:35] end leakage_test rc=0 12s
+[2026-09-17T14:50:35] start o2_samples [cpu] codes/scripts/o2/o2_01_samples.py
+[2026-09-17T14:50:58] end o2_samples rc=0 23s
+[2026-09-17T14:50:58] start o2_lgbm [cpu] codes/scripts/o2/o2_02_lgbm.py T1 T2 T3 T4 T5
+[2026-09-17T14:51:06] end build_b01_psp rc=0 35s
+[2026-09-17T14:51:06] start build_b02_dsm [cpu] codes/scripts/build/b02_dsm.py
+[2026-09-17T14:52:02] FAILED o2_lgbm rc=-9 63s
+[2026-09-17T14:52:02] stopping: stage o2_lgbm failed (see logs/stages/o2_lgbm.log); rerun the same command to resume
+[2026-09-17T14:52:02] FAILED build_b02_dsm rc=-9 56s
+[2026-09-17T14:52:02] stopping: stage build_b02_dsm failed (see logs/stages/build_b02_dsm.log); rerun the same command to resume
+[2026-09-17T15:01:32] submitted refused_o2_gpu -> 31770.master (gpu; o2_patchtst, o2_tft, o2_bilstm, o2_chronos)
+[2026-09-17T15:01:32] submitted refused_o3_gpu -> 31771.master (gpu; o3_main, o3_ablation, o3_ablation2) depends afterany:31770.master
+[2026-09-17T15:01:38] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-4d38d5cf-c802-5308-80b8-251f3cec7480), torch 2.5.1+cu121
+[2026-09-17T15:01:38] start o2_patchtst [gpu] codes/scripts/o2/o2_03_nf.py patchtst T1,T2,T3,T4,T5 5
+[2026-09-17T15:06:47] submitted refused_rest_gpu -> 31772.master (gpu; o3_main, o3_ablation, o3_ablation2, o2_lgbm, o2_evaluate, o4, o5_rules, o5_ppo, o3_evaluate, build_b02_dsm, build_b03_npp, build_b04_re, build_b05_co2, build_b06_imd, build_b07_panel, build_b08_validation, build_verify, prereg_fill, report) depends afterany:31770.master
+[2026-09-17T15:07:44] end o2_patchtst rc=0 366s
+[2026-09-17T15:07:44] start o2_tft [gpu] codes/scripts/o2/o2_03_nf.py tft T1,T2,T3,T4,T5 5
+[2026-09-17T15:22:41] end o2_tft rc=0 897s
+[2026-09-17T15:22:41] start o2_bilstm [gpu] codes/scripts/o2/o2_04_bilstm.py T1,T2,T3,T4,T5 5
+[2026-09-17T15:24:53] end o2_bilstm rc=0 132s
+[2026-09-17T15:24:53] start o2_chronos [gpu] codes/scripts/o2/o2_05_chronos.py T1,T2,T3,T4,T5
+[2026-09-17T15:25:54] end o2_chronos rc=0 60s
+[2026-09-17T15:25:54] ALL_REQUESTED_STAGES_DONE o2_patchtst,o2_tft,o2_bilstm,o2_chronos
+[2026-09-17T15:26:01] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-4d38d5cf-c802-5308-80b8-251f3cec7480), torch 2.5.1+cu121
+[2026-09-17T15:26:01] start o3_main [gpu] codes/scripts/o3/o3_01_lamcag.py T5,T4,T3,T2,T1 mcag_instance,fusion_fixed,mcag_fixed,mcag_regime 5
+[2026-09-17T15:51:49] end o3_main rc=0 1547s
+[2026-09-17T15:51:49] start o3_ablation [gpu] codes/scripts/o3/o3_01_lamcag.py T1,T2,T5 null_context,permuted_context,market_only 3
+[2026-09-17T16:02:14] end o3_ablation rc=0 625s
+[2026-09-17T16:02:14] start o3_ablation2 [gpu] codes/scripts/o3/o3_01_lamcag.py T1,T2,T3 no_carbon 3
+[2026-09-17T16:06:03] end o3_ablation2 rc=0 229s
+[2026-09-17T16:06:03] start o2_lgbm [cpu] codes/scripts/o2/o2_02_lgbm.py T1 T2 T3 T4 T5
+[2026-09-17T16:32:42] end o2_lgbm rc=0 1600s
+[2026-09-17T16:32:42] start o2_evaluate [cpu] codes/scripts/o2/o2_06_evaluate.py
+[2026-09-17T16:50:25] end o2_evaluate rc=0 1063s
+[2026-09-17T16:50:25] start o4 [cpu] codes/scripts/o4/o4_01_assessment.py
+[2026-09-17T16:58:09] end o4 rc=0 464s
+[2026-09-17T16:58:09] start o5_rules [cpu] codes/scripts/o5/o5_01_scheduling.py
+[2026-09-17T17:05:48] end o5_rules rc=0 458s
+[2026-09-17T17:05:48] start o5_ppo [gpu] codes/scripts/o5/o5_02_ppo.py
+[2026-09-17T17:34:35] end o5_ppo rc=0 1727s
+[2026-09-17T17:34:35] start o3_evaluate [cpu] codes/scripts/o3/o3_02_evaluate.py
+[2026-09-17T17:35:58] FAILED o3_evaluate rc=1 83s
+[2026-09-17T17:35:58] start build_b02_dsm [cpu] codes/scripts/build/b02_dsm.py
+[2026-09-17T17:39:04] end build_b02_dsm rc=0 186s
+[2026-09-17T17:39:04] start build_b03_npp [cpu] codes/scripts/build/b03_npp.py
+[2026-09-17T17:40:07] end build_b03_npp rc=0 62s
+[2026-09-17T17:40:07] start build_b04_re [cpu] codes/scripts/build/b04_cea_re.py
+[2026-09-17T17:40:45] end build_b04_re rc=0 39s
+[2026-09-17T17:40:45] start build_b05_co2 [cpu] codes/scripts/build/b05_co2.py
+[2026-09-17T17:40:49] end build_b05_co2 rc=0 4s
+[2026-09-17T17:40:49] start build_b06_imd [cpu] codes/scripts/build/b06_imd.py
+[2026-09-17T17:40:54] end build_b06_imd rc=0 4s
+[2026-09-17T17:40:54] start build_b07_panel [cpu] codes/scripts/build/b07_panel.py
+[2026-09-17T17:40:58] end build_b07_panel rc=0 4s
+[2026-09-17T17:40:58] start build_b08_validation [cpu] codes/scripts/build/b08_validation.py
+[2026-09-17T17:41:07] end build_b08_validation rc=0 9s
+[2026-09-17T17:41:07] start build_verify [cpu] run_all.py _internal build_verify
+[2026-09-17T17:41:07] end build_verify rc=0 0s
+[2026-09-17T17:41:07] start prereg_fill [cpu] codes/scripts/prereg/fill_prereg.py
+[2026-09-17T17:41:07] FAILED prereg_fill rc=1 0s
+[2026-09-17T17:41:07] start report [cpu] run_all.py _internal report
+[2026-09-17T17:41:07] end report rc=0 0s
+[2026-09-17T17:41:07] FINISHED_WITH_PROBLEMS o3_evaluate,prereg_fill
+[2026-09-17T18:24:12] submitted refused_rest_gpu -> 31783.master (gpu; o3_evaluate, prereg_fill, report)
+[2026-09-17T18:25:21] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-4d38d5cf-c802-5308-80b8-251f3cec7480), torch 2.5.1+cu121
+[2026-09-17T18:25:21] start o3_evaluate [cpu] codes/scripts/o3/o3_02_evaluate.py
+[2026-09-17T18:31:15] end o3_evaluate rc=0 354s
+[2026-09-17T18:31:15] start prereg_fill [cpu] codes/scripts/prereg/fill_prereg.py
+[2026-09-17T18:31:15] end prereg_fill rc=0 0s
+[2026-09-17T18:31:15] start report [cpu] run_all.py _internal report
+[2026-09-17T18:31:15] end report rc=0 0s
+[2026-09-17T18:31:15] ALL_REQUESTED_STAGES_DONE o3_evaluate,prereg_fill,report
+[2026-09-17T18:35:50] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-4d38d5cf-c802-5308-80b8-251f3cec7480), torch 2.5.1+cu121
+[2026-09-17T18:35:50] start env_check [cpu] run_all.py _internal env_check
+[2026-09-17T18:35:52] end env_check rc=0 2s
+[2026-09-17T18:35:52] start leakage_test [cpu] codes/tests/test_leakage.py
+[2026-09-17T18:36:05] end leakage_test rc=0 14s
+[2026-09-17T18:36:05] start o2_samples [cpu] codes/scripts/o2/o2_01_samples.py
+[2026-09-17T18:36:25] end o2_samples rc=0 19s
+[2026-09-17T18:36:25] start data_paper_numbers [cpu] codes/scripts/paper/make_numbers_data.py
+[2026-09-17T18:36:25] end data_paper_numbers rc=0 0s
+[2026-09-17T18:36:25] start data_paper_figures [cpu] codes/scripts/paper/make_figures_data.py
+[2026-09-17T18:36:34] end data_paper_figures rc=0 10s
+[2026-09-17T18:36:34] start build_b01_psp [cpu] codes/scripts/build/b01_psp.py
+[2026-09-17T18:37:10] end build_b01_psp rc=0 36s
+[2026-09-17T18:37:10] start build_b07_panel [cpu] codes/scripts/build/b07_panel.py
+[2026-09-17T18:37:18] end build_b07_panel rc=0 7s
+[2026-09-17T18:37:18] start build_b08_validation [cpu] codes/scripts/build/b08_validation.py
+[2026-09-17T18:37:25] end build_b08_validation rc=0 7s
+[2026-09-17T18:37:25] start build_verify [cpu] run_all.py _internal build_verify
+[2026-09-17T18:37:25] end build_verify rc=0 0s
+[2026-09-17T18:37:25] ALL_REQUESTED_STAGES_DONE env_check,leakage_test,o2_samples,data_paper_numbers,data_paper_figures,build_b01_psp,build_b07_panel,build_b08_validation,build_verify
+[2026-09-17T18:37:27] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-4d38d5cf-c802-5308-80b8-251f3cec7480), torch 2.5.1+cu121
+[2026-09-17T18:37:27] start report [cpu] run_all.py _internal report
+[2026-09-17T18:37:27] end report rc=0 0s
+[2026-09-17T18:37:27] ALL_REQUESTED_STAGES_DONE report
+[2026-09-17T21:15:34] submitted refused_dev2_setup -> 31792.master (gpu; d2_setup, d2_smoke)
+[2026-09-17T21:15:34] submitted refused_dev2_train -> 31793.master (gpu; d2_xgb, d2_nf, d2_chronos, d2_o3_sd) depends afterok:31792.master
+[2026-09-17T21:15:39] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-4d38d5cf-c802-5308-80b8-251f3cec7480), torch 2.5.1+cu121
+[2026-09-17T21:15:39] start d2_setup [cpu] codes/scripts/dev2/d2_00_setup.py
+[2026-09-17T21:16:17] end d2_setup rc=0 38s
+[2026-09-17T21:16:17] start d2_smoke [gpu] codes/scripts/dev2/d2_smoke.py
+[2026-09-17T21:17:22] end d2_smoke rc=0 65s
+[2026-09-17T21:17:22] ALL_REQUESTED_STAGES_DONE d2_setup,d2_smoke
+[2026-09-17T21:17:30] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-4d38d5cf-c802-5308-80b8-251f3cec7480), torch 2.5.1+cu121
+[2026-09-17T21:17:30] start d2_xgb [gpu] codes/scripts/dev2/d2_01_xgb.py
+[2026-09-17T21:25:40] submitted refused_dev2_eval -> 31794.master (gpu; d2_smoke_eval, d2_ensemble, d2_o2_eval, d2_o3_eval, d2_o4, d2_o5, d2_evidence) depends afterany:31793.master
+[2026-09-17T21:34:27] end d2_xgb rc=0 1017s
+[2026-09-17T21:34:27] start d2_nf [gpu] codes/scripts/dev2/d2_02_nf_models.py nhits,tide,bitcn,nbeatsx T1,T2,T3,T4,T5
+[2026-09-17T21:53:28] end d2_nf rc=0 1141s
+[2026-09-17T21:53:28] start d2_chronos [gpu] codes/scripts/dev2/d2_03_chronos.py chronos2,chronos_base T1,T2,T3,T4,T5
+[2026-09-17T23:44:08] end d2_chronos rc=0 6640s
+[2026-09-17T23:44:08] start d2_o3_sd [gpu] codes/scripts/o3/o3_01_lamcag.py T5,T4,T3,T2,T1 mcag_instance_sd,fusion_fixed_sd 5
+[2026-09-18T00:00:07] end d2_o3_sd rc=0 959s
+[2026-09-18T00:00:07] ALL_REQUESTED_STAGES_DONE d2_xgb,d2_nf,d2_chronos,d2_o3_sd
+[2026-09-18T00:00:14] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-4d38d5cf-c802-5308-80b8-251f3cec7480), torch 2.5.1+cu121
+[2026-09-18T00:00:14] start d2_smoke_eval [gpu] codes/scripts/dev2/d2_smoke_eval.py
+[2026-09-18T00:02:37] FAILED d2_smoke_eval rc=1 143s
+[2026-09-18T00:02:37] skip d2_ensemble: needs d2_smoke_eval
+[2026-09-18T00:02:37] skip d2_o2_eval: needs d2_ensemble
+[2026-09-18T00:02:37] skip d2_o3_eval: needs d2_smoke_eval
+[2026-09-18T00:02:37] skip d2_o4: needs d2_o2_eval
+[2026-09-18T00:02:37] skip d2_o5: needs d2_o2_eval
+[2026-09-18T00:02:37] start d2_evidence [cpu] codes/scripts/dev2/d2_10_evidence.py
+[2026-09-18T00:02:38] end d2_evidence rc=0 0s
+[2026-09-18T00:02:38] FINISHED_WITH_PROBLEMS d2_smoke_eval,d2_ensemble,d2_o2_eval,d2_o3_eval,d2_o4,d2_o5
+[2026-09-18T00:02:44] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-4d38d5cf-c802-5308-80b8-251f3cec7480), torch 2.5.1+cu121
+[2026-09-18T00:02:44] skip d2_ppo: needs d2_o5
+[2026-09-18T00:02:44] FINISHED_WITH_PROBLEMS d2_ppo
+[2026-09-18T00:02:46] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-4d38d5cf-c802-5308-80b8-251f3cec7480), torch 2.5.1+cu121
+[2026-09-18T00:02:46] start d2_evidence [cpu] codes/scripts/dev2/d2_10_evidence.py
+[2026-09-18T00:02:47] end d2_evidence rc=0 0s
+[2026-09-18T00:02:47] ALL_REQUESTED_STAGES_DONE d2_evidence
+[2026-09-18T00:04:25] submitted refused_dev2_eval -> 31796.master (gpu; d2_smoke_eval, d2_ensemble, d2_o2_eval, d2_o3_eval, d2_o4, d2_o5)
+[2026-09-18T00:04:31] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-4d38d5cf-c802-5308-80b8-251f3cec7480), torch 2.5.1+cu121
+[2026-09-18T00:04:31] start d2_smoke_eval [gpu] codes/scripts/dev2/d2_smoke_eval.py
+[2026-09-18T00:07:11] end d2_smoke_eval rc=0 160s
+[2026-09-18T00:07:11] start d2_ensemble [gpu] codes/scripts/dev2/d2_05_ensemble.py
+[2026-09-18T00:08:54] end d2_ensemble rc=0 103s
+[2026-09-18T00:08:54] start d2_o2_eval [cpu] codes/scripts/dev2/d2_06_o2_eval.py
+[2026-09-18T00:12:39] end d2_o2_eval rc=0 225s
+[2026-09-18T00:12:39] start d2_o3_eval [cpu] codes/scripts/dev2/d2_07_o3_eval.py
+[2026-09-18T00:31:19] end d2_o3_eval rc=0 1120s
+[2026-09-18T00:31:19] start d2_o4 [gpu] codes/scripts/dev2/d2_08_o4.py
+[2026-09-18T00:35:57] end d2_o4 rc=0 277s
+[2026-09-18T00:35:57] start d2_o5 [gpu] codes/scripts/dev2/d2_09_o5.py
+[2026-09-18T01:28:14] end d2_o5 rc=0 3137s
+[2026-09-18T01:28:14] ALL_REQUESTED_STAGES_DONE d2_smoke_eval,d2_ensemble,d2_o2_eval,d2_o3_eval,d2_o4,d2_o5
+[2026-09-18T01:28:21] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-4d38d5cf-c802-5308-80b8-251f3cec7480), torch 2.5.1+cu121
+[2026-09-18T01:28:21] start d2_ppo [gpu] codes/scripts/dev2/d2_11_ppo.py
+[2026-09-18T01:55:10] end d2_ppo rc=0 1609s
+[2026-09-18T01:55:10] ALL_REQUESTED_STAGES_DONE d2_ppo
+[2026-09-18T01:55:12] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-4d38d5cf-c802-5308-80b8-251f3cec7480), torch 2.5.1+cu121
+[2026-09-18T01:55:12] start d2_evidence [cpu] codes/scripts/dev2/d2_10_evidence.py
+[2026-09-18T01:55:12] end d2_evidence rc=0 0s
+[2026-09-18T01:55:12] ALL_REQUESTED_STAGES_DONE d2_evidence
+[2026-09-18T10:05:18] submitted refused_rehearsal -> 31820.master (gpu; c_rehearsal)
+[2026-09-18T10:05:25] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-4d38d5cf-c802-5308-80b8-251f3cec7480), torch 2.5.1+cu121
+[2026-09-18T10:05:25] start c_rehearsal [gpu] codes/scripts/confirm/c00_rehearsal.py
+[2026-09-18T10:07:45] end c_rehearsal rc=0 140s
+[2026-09-18T10:07:45] ALL_REQUESTED_STAGES_DONE c_rehearsal
+[2026-09-18T10:09:26] submitted refused_confirm -> 31822.master (gpu; c_freeze, c_env_check, c_leakage, c_o2_samples, c_o2_lgbm, c_o2_patchtst, c_o2_tft, c_o2_bilstm, c_o2_chronos, c_d2_xgb, c_d2_nf, c_d2_chronos, c_o3_main, c_o3_ablation, c_o3_ablation2, c_d2_o3_sd, c_o2_evaluate, c_o3_evaluate, c_d2_ensemble, c_d2_o2_eval, c_d2_o3_eval, c_o4, c_o5_rules, c_o5_ppo, c_d2_o4, c_d2_o5, c_d2_ppo, c_evidence, c_hypotheses)
+[2026-09-18T10:09:32] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-4d38d5cf-c802-5308-80b8-251f3cec7480), torch 2.5.1+cu121
+[2026-09-18T10:09:32] start c_freeze [cpu] run_all.py _internal freeze
+[2026-09-18T10:09:32] end c_freeze rc=0 0s
+[2026-09-18T10:09:32] start c_env_check [cpu] run_all.py _internal env_check
+[2026-09-18T10:09:34] end c_env_check rc=0 2s
+[2026-09-18T10:09:34] start c_leakage [cpu] codes/tests/test_leakage.py
+[2026-09-18T10:09:35] FAILED c_leakage rc=1 0s
+[2026-09-18T10:09:35] start c_o2_samples [cpu] codes/scripts/o2/o2_01_samples.py
+[2026-09-18T10:09:35] FAILED c_o2_samples rc=1 0s
+[2026-09-18T10:09:35] skip c_o2_lgbm: needs c_o2_samples
+[2026-09-18T10:09:35] skip c_o2_patchtst: needs c_o2_samples
+[2026-09-18T10:09:35] skip c_o2_tft: needs c_o2_samples
+[2026-09-18T10:09:35] skip c_o2_bilstm: needs c_o2_samples
+[2026-09-18T10:09:35] skip c_o2_chronos: needs c_o2_samples
+[2026-09-18T10:09:35] skip c_d2_xgb: needs c_o2_samples
+[2026-09-18T10:09:35] skip c_d2_nf: needs c_o2_samples
+[2026-09-18T10:09:35] skip c_d2_chronos: needs c_o2_samples
+[2026-09-18T10:09:35] skip c_o3_main: needs c_o2_samples
+[2026-09-18T10:09:35] skip c_o3_ablation: needs c_o2_samples
+[2026-09-18T10:09:35] skip c_o3_ablation2: needs c_o2_samples
+[2026-09-18T10:09:35] skip c_d2_o3_sd: needs c_o2_samples
+[2026-09-18T10:09:35] skip c_o2_evaluate: needs c_o2_samples, c_o2_samples, c_o2_lgbm, c_o2_patchtst, c_o2_tft, c_o2_bilstm, c_o2_chronos
+[2026-09-18T10:09:35] skip c_o3_evaluate: needs c_o2_samples, c_o2_evaluate, c_o3_main, c_o3_ablation, c_o3_ablation2
+[2026-09-18T10:09:35] skip c_d2_ensemble: needs c_o2_samples, c_o2_samples, c_o2_lgbm, c_o2_patchtst, c_o2_tft, c_o2_bilstm, c_o2_chronos, c_d2_xgb, c_d2_nf, c_d2_chronos, c_o3_main, c_d2_o3_sd
+[2026-09-18T10:09:35] skip c_d2_o2_eval: needs c_o2_samples, c_d2_ensemble, c_o2_evaluate
+[2026-09-18T10:09:35] skip c_d2_o3_eval: needs c_o2_samples, c_o3_main, c_d2_o3_sd
+[2026-09-18T10:09:35] skip c_o4: needs c_o2_samples, c_o2_evaluate
+[2026-09-18T10:09:35] skip c_o5_rules: needs c_o2_samples, c_o4
+[2026-09-18T10:09:35] skip c_o5_ppo: needs c_o2_samples, c_o5_rules
+[2026-09-18T10:09:35] skip c_d2_o4: needs c_o2_samples, c_d2_o2_eval, c_o2_lgbm
+[2026-09-18T10:09:35] skip c_d2_o5: needs c_o2_samples, c_d2_o2_eval, c_o2_lgbm
+[2026-09-18T10:09:35] skip c_d2_ppo: needs c_o2_samples, c_d2_o5
+[2026-09-18T10:09:35] start c_evidence [cpu] codes/scripts/dev2/d2_10_evidence.py
+[2026-09-18T10:09:35] FAILED c_evidence rc=1 0s
+[2026-09-18T10:09:35] start c_hypotheses [cpu] codes/scripts/confirm/c01_hypotheses.py
+[2026-09-18T10:09:36] FAILED c_hypotheses rc=1 1s
+[2026-09-18T10:09:36] FINISHED_WITH_PROBLEMS c_leakage,c_o2_samples,c_o2_lgbm,c_o2_patchtst,c_o2_tft,c_o2_bilstm,c_o2_chronos,c_d2_xgb,c_d2_nf,c_d2_chronos,c_o3_main,c_o3_ablation,c_o3_ablation2,c_d2_o3_sd,c_o2_evaluate,c_o3_evaluate,c_d2_ensemble,c_d2_o2_eval,c_d2_o3_eval,c_o4,c_o5_rules,c_o5_ppo,c_d2_o4,c_d2_o5,c_d2_ppo,c_evidence,c_hypotheses
+[2026-09-18T10:10:18] submitted refused_confirm -> 31823.master (gpu; c_freeze, c_leakage, c_o2_samples, c_o2_lgbm, c_o2_patchtst, c_o2_tft, c_o2_bilstm, c_o2_chronos, c_d2_xgb, c_d2_nf, c_d2_chronos, c_o3_main, c_o3_ablation, c_o3_ablation2, c_d2_o3_sd, c_o2_evaluate, c_o3_evaluate, c_d2_ensemble, c_d2_o2_eval, c_d2_o3_eval, c_o4, c_o5_rules, c_o5_ppo, c_d2_o4, c_d2_o5, c_d2_ppo, c_evidence, c_hypotheses)
+[2026-09-18T10:10:24] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-4d38d5cf-c802-5308-80b8-251f3cec7480), torch 2.5.1+cu121
+[2026-09-18T10:10:24] start c_freeze [cpu] run_all.py _internal freeze
+[2026-09-18T10:10:24] end c_freeze rc=0 0s
+[2026-09-18T10:10:24] start c_leakage [cpu] codes/tests/test_leakage.py
+[2026-09-18T10:10:27] FAILED c_leakage rc=1 3s
+[2026-09-18T10:10:27] start c_o2_samples [cpu] codes/scripts/o2/o2_01_samples.py
+[2026-09-18T10:10:48] end c_o2_samples rc=0 21s
+[2026-09-18T10:10:48] start c_o2_lgbm [cpu] codes/scripts/o2/o2_02_lgbm.py T1 T2 T3 T4 T5
+[2026-09-18T10:41:00] end c_o2_lgbm rc=0 1812s
+[2026-09-18T10:41:00] start c_o2_patchtst [gpu] codes/scripts/o2/o2_03_nf.py patchtst T1,T2,T3,T4,T5 5
+[2026-09-18T10:46:46] end c_o2_patchtst rc=0 346s
+[2026-09-18T10:46:46] start c_o2_tft [gpu] codes/scripts/o2/o2_03_nf.py tft T1,T2,T3,T4,T5 5
+[2026-09-18T11:02:53] end c_o2_tft rc=0 967s
+[2026-09-18T11:02:53] start c_o2_bilstm [gpu] codes/scripts/o2/o2_04_bilstm.py T1,T2,T3,T4,T5 5
+[2026-09-18T11:05:56] end c_o2_bilstm rc=0 183s
+[2026-09-18T11:05:56] start c_o2_chronos [gpu] codes/scripts/o2/o2_05_chronos.py T1,T2,T3,T4,T5
+[2026-09-18T11:06:57] end c_o2_chronos rc=0 62s
+[2026-09-18T11:06:57] start c_d2_xgb [gpu] codes/scripts/dev2/d2_01_xgb.py
+[2026-09-18T11:19:51] end c_d2_xgb rc=0 774s
+[2026-09-18T11:19:51] start c_d2_nf [gpu] codes/scripts/dev2/d2_02_nf_models.py nhits,tide,bitcn,nbeatsx T1,T2,T3,T4,T5
+[2026-09-18T11:37:58] end c_d2_nf rc=0 1087s
+[2026-09-18T11:37:58] start c_d2_chronos [gpu] codes/scripts/dev2/d2_03_chronos.py chronos2,chronos_base T1,T2,T3,T4,T5
+[2026-09-18T12:46:59] end c_d2_chronos rc=0 4140s
+[2026-09-18T12:46:59] start c_o3_main [gpu] codes/scripts/o3/o3_01_lamcag.py T5,T4,T3,T2,T1 mcag_instance,fusion_fixed,mcag_fixed,mcag_regime 5
+[2026-09-18T13:29:29] end c_o3_main rc=0 2551s
+[2026-09-18T13:29:29] start c_o3_ablation [gpu] codes/scripts/o3/o3_01_lamcag.py T1,T2,T5 null_context,permuted_context,market_only 3
+[2026-09-18T13:43:10] end c_o3_ablation rc=0 820s
+[2026-09-18T13:43:10] start c_o3_ablation2 [gpu] codes/scripts/o3/o3_01_lamcag.py T1,T2,T3 no_carbon 3
+[2026-09-18T13:47:27] end c_o3_ablation2 rc=0 257s
+[2026-09-18T13:47:27] start c_d2_o3_sd [gpu] codes/scripts/o3/o3_01_lamcag.py T5,T4,T3,T2,T1 mcag_instance_sd,fusion_fixed_sd 5
+[2026-09-18T14:02:38] end c_d2_o3_sd rc=0 911s
+[2026-09-18T14:02:38] start c_o2_evaluate [cpu] codes/scripts/o2/o2_06_evaluate.py
+[2026-09-18T14:28:55] end c_o2_evaluate rc=0 1577s
+[2026-09-18T14:28:55] start c_o3_evaluate [cpu] codes/scripts/o3/o3_02_evaluate.py
+[2026-09-18T14:36:33] end c_o3_evaluate rc=0 457s
+[2026-09-18T14:36:33] start c_d2_ensemble [gpu] codes/scripts/dev2/d2_05_ensemble.py
+[2026-09-18T14:37:17] end c_d2_ensemble rc=0 44s
+[2026-09-18T14:37:17] start c_d2_o2_eval [cpu] codes/scripts/dev2/d2_06_o2_eval.py
+[2026-09-18T14:41:28] end c_d2_o2_eval rc=0 251s
+[2026-09-18T14:41:28] start c_d2_o3_eval [cpu] codes/scripts/dev2/d2_07_o3_eval.py
+[2026-09-18T14:57:55] end c_d2_o3_eval rc=0 988s
+[2026-09-18T14:57:55] start c_o4 [cpu] codes/scripts/o4/o4_01_assessment.py
+[2026-09-18T15:05:32] end c_o4 rc=0 456s
+[2026-09-18T15:05:32] start c_o5_rules [cpu] codes/scripts/o5/o5_01_scheduling.py
+[2026-09-18T15:13:05] end c_o5_rules rc=0 453s
+[2026-09-18T15:13:05] start c_o5_ppo [gpu] codes/scripts/o5/o5_02_ppo.py
+[2026-09-18T15:41:21] end c_o5_ppo rc=0 1696s
+[2026-09-18T15:41:21] start c_d2_o4 [gpu] codes/scripts/dev2/d2_08_o4.py
+[2026-09-18T15:42:02] end c_d2_o4 rc=0 42s
+[2026-09-18T15:42:02] start c_d2_o5 [gpu] codes/scripts/dev2/d2_09_o5.py
+[2026-09-18T15:44:04] end c_d2_o5 rc=0 122s
+[2026-09-18T15:44:04] start c_d2_ppo [gpu] codes/scripts/dev2/d2_11_ppo.py
+[2026-09-18T16:11:51] end c_d2_ppo rc=0 1667s
+[2026-09-18T16:11:51] start c_evidence [cpu] codes/scripts/dev2/d2_10_evidence.py
+[2026-09-18T16:11:51] end c_evidence rc=0 0s
+[2026-09-18T16:11:51] start c_hypotheses [cpu] codes/scripts/confirm/c01_hypotheses.py
+[2026-09-18T16:11:52] end c_hypotheses rc=0 1s
+[2026-09-18T16:11:52] FINISHED_WITH_PROBLEMS c_leakage
+[2026-09-18T16:11:59] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-4d38d5cf-c802-5308-80b8-251f3cec7480), torch 2.5.1+cu121
+[2026-09-18T16:11:59] start c_leakage [cpu] codes/tests/test_leakage.py
+[2026-09-18T16:12:13] end c_leakage rc=0 14s
+[2026-09-18T16:12:13] ALL_REQUESTED_STAGES_DONE c_leakage
+[2026-09-18T16:12:15] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-4d38d5cf-c802-5308-80b8-251f3cec7480), torch 2.5.1+cu121
+[2026-09-18T16:12:15] start paper_dev_check [cpu] codes/scripts/paper/make_paper_outputs.py
+[2026-09-18T16:12:17] end paper_dev_check rc=0 2s
+[2026-09-18T16:12:17] start c_paper [cpu] codes/scripts/paper/make_paper_outputs.py
+[2026-09-18T16:12:19] end c_paper rc=0 2s
+[2026-09-18T16:12:19] ALL_REQUESTED_STAGES_DONE paper_dev_check,c_paper
+[2026-09-20T11:54:22] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-4d38d5cf-c802-5308-80b8-251f3cec7480), torch 2.5.1+cu121
+[2026-09-20T11:54:22] start c_paper [cpu] codes/scripts/paper/make_paper_outputs.py
+[2026-09-20T11:54:23] end c_paper rc=0 2s
+[2026-09-20T11:54:23] ALL_REQUESTED_STAGES_DONE c_paper
+[2026-09-20T23:53:44] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-4d38d5cf-c802-5308-80b8-251f3cec7480), torch 2.5.1+cu121
+[2026-09-20T23:53:44] start c_paper [cpu] codes/scripts/paper/make_paper_outputs.py
+[2026-09-20T23:53:45] end c_paper rc=0 2s
+[2026-09-20T23:53:45] ALL_REQUESTED_STAGES_DONE c_paper
+[2026-09-20T23:53:47] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-4d38d5cf-c802-5308-80b8-251f3cec7480), torch 2.5.1+cu121
+[2026-09-20T23:53:47] start c_supp [cpu] codes/scripts/paper/make_supplement.py
+[2026-09-20T23:53:47] end c_supp rc=0 0s
+[2026-09-20T23:53:47] start c_strata [cpu] codes/scripts/audit/a01_strata.py
+[2026-09-20T23:53:48] end c_strata rc=0 1s
+[2026-09-20T23:53:48] start c_integrity [cpu] codes/scripts/audit/a02_integrity.py
+[2026-09-20T23:53:49] FAILED c_integrity rc=1 1s
+[2026-09-20T23:53:49] FINISHED_WITH_PROBLEMS c_integrity
+[2026-09-21T00:05:29] GPU: NVIDIA H100 PCIe MIG 3g.40gb (MIG-110b5c2d-162d-5ada-814c-2aef6f9812f1), torch 2.5.1+cu121
+[2026-09-21T00:05:29] start c_paper [cpu] codes/scripts/paper/make_paper_outputs.py
+[2026-09-21T00:05:31] end c_paper rc=0 2s
+[2026-09-21T00:05:31] ALL_REQUESTED_STAGES_DONE c_paper
+[2026-09-21T00:05:32] GPU: NVIDIA H100 PCIe MIG 3g.40gb (MIG-110b5c2d-162d-5ada-814c-2aef6f9812f1), torch 2.5.1+cu121
+[2026-09-21T00:05:32] start c_supp [cpu] codes/scripts/paper/make_supplement.py
+[2026-09-21T00:05:33] end c_supp rc=0 0s
+[2026-09-21T00:05:33] start c_strata [cpu] codes/scripts/audit/a01_strata.py
+[2026-09-21T00:05:34] end c_strata rc=0 1s
+[2026-09-21T00:05:34] start c_integrity [cpu] codes/scripts/audit/a02_integrity.py
+[2026-09-21T00:05:35] end c_integrity rc=0 1s
+[2026-09-21T00:05:35] ALL_REQUESTED_STAGES_DONE c_supp,c_strata,c_integrity
+[2026-09-21T00:10:46] GPU: NVIDIA H100 PCIe MIG 3g.40gb (MIG-110b5c2d-162d-5ada-814c-2aef6f9812f1), torch 2.5.1+cu121
+[2026-09-21T00:10:46] start c_paper [cpu] codes/scripts/paper/make_paper_outputs.py
+[2026-09-21T00:10:47] end c_paper rc=0 2s
+[2026-09-21T00:10:47] ALL_REQUESTED_STAGES_DONE c_paper
+[2026-09-21T00:10:49] GPU: NVIDIA H100 PCIe MIG 3g.40gb (MIG-110b5c2d-162d-5ada-814c-2aef6f9812f1), torch 2.5.1+cu121
+[2026-09-21T00:10:49] start c_supp [cpu] codes/scripts/paper/make_supplement.py
+[2026-09-21T00:10:49] end c_supp rc=0 0s
+[2026-09-21T00:10:49] start c_strata [cpu] codes/scripts/audit/a01_strata.py
+[2026-09-21T00:10:50] end c_strata rc=0 1s
+[2026-09-21T00:10:50] start c_integrity [cpu] codes/scripts/audit/a02_integrity.py
+[2026-09-21T00:10:51] end c_integrity rc=0 1s
+[2026-09-21T00:10:51] ALL_REQUESTED_STAGES_DONE c_supp,c_strata,c_integrity
+[2026-09-21T00:21:09] GPU: NVIDIA H100 PCIe MIG 3g.40gb (MIG-110b5c2d-162d-5ada-814c-2aef6f9812f1), torch 2.5.1+cu121
+[2026-09-21T00:21:09] start c_paper [cpu] codes/scripts/paper/make_paper_outputs.py
+[2026-09-21T00:21:11] end c_paper rc=0 2s
+[2026-09-21T00:21:11] ALL_REQUESTED_STAGES_DONE c_paper
+[2026-09-21T00:21:13] GPU: NVIDIA H100 PCIe MIG 3g.40gb (MIG-110b5c2d-162d-5ada-814c-2aef6f9812f1), torch 2.5.1+cu121
+[2026-09-21T00:21:13] start c_supp [cpu] codes/scripts/paper/make_supplement.py
+[2026-09-21T00:21:13] end c_supp rc=0 0s
+[2026-09-21T00:21:13] start c_strata [cpu] codes/scripts/audit/a01_strata.py
+[2026-09-21T00:21:14] end c_strata rc=0 1s
+[2026-09-21T00:21:14] start c_integrity [cpu] codes/scripts/audit/a02_integrity.py
+[2026-09-21T00:21:15] end c_integrity rc=0 1s
+[2026-09-21T00:21:15] ALL_REQUESTED_STAGES_DONE c_supp,c_strata,c_integrity
+[2026-09-21T00:24:33] GPU: NVIDIA H100 PCIe MIG 3g.40gb (MIG-110b5c2d-162d-5ada-814c-2aef6f9812f1), torch 2.5.1+cu121
+[2026-09-21T00:24:33] start c_paper [cpu] codes/scripts/paper/make_paper_outputs.py
+[2026-09-21T00:24:35] end c_paper rc=0 2s
+[2026-09-21T00:24:35] ALL_REQUESTED_STAGES_DONE c_paper
+[2026-09-21T00:24:37] GPU: NVIDIA H100 PCIe MIG 3g.40gb (MIG-110b5c2d-162d-5ada-814c-2aef6f9812f1), torch 2.5.1+cu121
+[2026-09-21T00:24:37] start c_supp [cpu] codes/scripts/paper/make_supplement.py
+[2026-09-21T00:24:37] end c_supp rc=0 0s
+[2026-09-21T00:24:37] start c_strata [cpu] codes/scripts/audit/a01_strata.py
+[2026-09-21T00:24:38] end c_strata rc=0 1s
+[2026-09-21T00:24:38] start c_integrity [cpu] codes/scripts/audit/a02_integrity.py
+[2026-09-21T00:24:39] end c_integrity rc=0 1s
+[2026-09-21T00:24:39] ALL_REQUESTED_STAGES_DONE c_supp,c_strata,c_integrity
+[2026-09-21T00:27:10] GPU: NVIDIA H100 PCIe MIG 3g.40gb (MIG-110b5c2d-162d-5ada-814c-2aef6f9812f1), torch 2.5.1+cu121
+[2026-09-21T00:27:10] start c_paper [cpu] codes/scripts/paper/make_paper_outputs.py
+[2026-09-21T00:27:12] end c_paper rc=0 2s
+[2026-09-21T00:27:12] ALL_REQUESTED_STAGES_DONE c_paper
+[2026-09-21T00:27:14] GPU: NVIDIA H100 PCIe MIG 3g.40gb (MIG-110b5c2d-162d-5ada-814c-2aef6f9812f1), torch 2.5.1+cu121
+[2026-09-21T00:27:14] start c_supp [cpu] codes/scripts/paper/make_supplement.py
+[2026-09-21T00:27:14] end c_supp rc=0 0s
+[2026-09-21T00:27:14] start c_strata [cpu] codes/scripts/audit/a01_strata.py
+[2026-09-21T00:27:15] end c_strata rc=0 1s
+[2026-09-21T00:27:15] start c_integrity [cpu] codes/scripts/audit/a02_integrity.py
+[2026-09-21T00:27:16] end c_integrity rc=0 1s
+[2026-09-21T00:27:16] ALL_REQUESTED_STAGES_DONE c_supp,c_strata,c_integrity
+[2026-09-21T00:27:56] GPU: NVIDIA H100 PCIe MIG 3g.40gb (MIG-110b5c2d-162d-5ada-814c-2aef6f9812f1), torch 2.5.1+cu121
+[2026-09-21T00:27:56] start c_paper [cpu] codes/scripts/paper/make_paper_outputs.py
+[2026-09-21T00:27:58] end c_paper rc=0 2s
+[2026-09-21T00:27:58] ALL_REQUESTED_STAGES_DONE c_paper
+[2026-09-21T00:28:00] GPU: NVIDIA H100 PCIe MIG 3g.40gb (MIG-110b5c2d-162d-5ada-814c-2aef6f9812f1), torch 2.5.1+cu121
+[2026-09-21T00:28:00] start c_supp [cpu] codes/scripts/paper/make_supplement.py
+[2026-09-21T00:28:01] end c_supp rc=0 0s
+[2026-09-21T00:28:01] start c_strata [cpu] codes/scripts/audit/a01_strata.py
+[2026-09-21T00:28:02] end c_strata rc=0 1s
+[2026-09-21T00:28:02] start c_integrity [cpu] codes/scripts/audit/a02_integrity.py
+[2026-09-21T00:28:03] end c_integrity rc=0 1s
+[2026-09-21T00:28:03] ALL_REQUESTED_STAGES_DONE c_supp,c_strata,c_integrity
+[2026-09-21T03:50:49] GPU: NVIDIA H100 PCIe MIG 3g.40gb (MIG-110b5c2d-162d-5ada-814c-2aef6f9812f1), torch 2.5.1+cu121
+[2026-09-21T03:50:49] start c_paper [cpu] codes/scripts/paper/make_paper_outputs.py
+[2026-09-21T03:50:51] end c_paper rc=0 2s
+[2026-09-21T03:50:51] ALL_REQUESTED_STAGES_DONE c_paper
+[2026-09-21T03:50:53] GPU: NVIDIA H100 PCIe MIG 3g.40gb (MIG-110b5c2d-162d-5ada-814c-2aef6f9812f1), torch 2.5.1+cu121
+[2026-09-21T03:50:53] start c_supp [cpu] codes/scripts/paper/make_supplement.py
+[2026-09-21T03:50:53] end c_supp rc=0 0s
+[2026-09-21T03:50:53] start c_strata [cpu] codes/scripts/audit/a01_strata.py
+[2026-09-21T03:50:54] end c_strata rc=0 1s
+[2026-09-21T03:50:54] start c_integrity [cpu] codes/scripts/audit/a02_integrity.py
+[2026-09-21T03:50:55] end c_integrity rc=0 1s
+[2026-09-21T03:50:55] ALL_REQUESTED_STAGES_DONE c_supp,c_strata,c_integrity
+[2026-09-21T03:50:57] GPU: NVIDIA H100 PCIe MIG 3g.40gb (MIG-110b5c2d-162d-5ada-814c-2aef6f9812f1), torch 2.5.1+cu121
+[2026-09-21T03:50:57] start c_leakage [cpu] codes/tests/test_leakage.py
+[2026-09-21T03:51:10] end c_leakage rc=0 13s
+[2026-09-21T03:51:10] ALL_REQUESTED_STAGES_DONE c_leakage
+[2026-09-21T03:56:40] GPU: NVIDIA H100 PCIe MIG 3g.40gb (MIG-110b5c2d-162d-5ada-814c-2aef6f9812f1), torch 2.5.1+cu121
+[2026-09-21T03:56:40] start c_paper [cpu] codes/scripts/paper/make_paper_outputs.py
+[2026-09-21T03:56:42] end c_paper rc=0 2s
+[2026-09-21T03:56:42] ALL_REQUESTED_STAGES_DONE c_paper
+[2026-09-21T03:56:44] GPU: NVIDIA H100 PCIe MIG 3g.40gb (MIG-110b5c2d-162d-5ada-814c-2aef6f9812f1), torch 2.5.1+cu121
+[2026-09-21T03:56:44] start c_supp [cpu] codes/scripts/paper/make_supplement.py
+[2026-09-21T03:56:45] end c_supp rc=0 0s
+[2026-09-21T03:56:45] start c_strata [cpu] codes/scripts/audit/a01_strata.py
+[2026-09-21T03:56:46] end c_strata rc=0 1s
+[2026-09-21T03:56:46] start c_integrity [cpu] codes/scripts/audit/a02_integrity.py
+[2026-09-21T03:56:47] end c_integrity rc=0 1s
+[2026-09-21T03:56:47] ALL_REQUESTED_STAGES_DONE c_supp,c_strata,c_integrity
+[2026-09-21T03:56:48] GPU: NVIDIA H100 PCIe MIG 3g.40gb (MIG-110b5c2d-162d-5ada-814c-2aef6f9812f1), torch 2.5.1+cu121
+[2026-09-21T03:56:48] start c_leakage [cpu] codes/tests/test_leakage.py
+[2026-09-21T03:57:01] end c_leakage rc=0 13s
+[2026-09-21T03:57:01] ALL_REQUESTED_STAGES_DONE c_leakage
+[2026-09-21T03:58:14] GPU: NVIDIA H100 PCIe MIG 3g.40gb (MIG-110b5c2d-162d-5ada-814c-2aef6f9812f1), torch 2.5.1+cu121
+[2026-09-21T03:58:14] start c_paper [cpu] codes/scripts/paper/make_paper_outputs.py
+[2026-09-21T03:58:16] end c_paper rc=0 2s
+[2026-09-21T03:58:16] ALL_REQUESTED_STAGES_DONE c_paper
+[2026-09-21T03:58:18] GPU: NVIDIA H100 PCIe MIG 3g.40gb (MIG-110b5c2d-162d-5ada-814c-2aef6f9812f1), torch 2.5.1+cu121
+[2026-09-21T03:58:18] start c_supp [cpu] codes/scripts/paper/make_supplement.py
+[2026-09-21T03:58:19] end c_supp rc=0 0s
+[2026-09-21T03:58:19] start c_strata [cpu] codes/scripts/audit/a01_strata.py
+[2026-09-21T03:58:20] end c_strata rc=0 1s
+[2026-09-21T03:58:20] start c_integrity [cpu] codes/scripts/audit/a02_integrity.py
+[2026-09-21T03:58:21] end c_integrity rc=0 1s
+[2026-09-21T03:58:21] ALL_REQUESTED_STAGES_DONE c_supp,c_strata,c_integrity
+[2026-09-21T03:58:23] GPU: NVIDIA H100 PCIe MIG 3g.40gb (MIG-110b5c2d-162d-5ada-814c-2aef6f9812f1), torch 2.5.1+cu121
+[2026-09-21T03:58:23] start c_leakage [cpu] codes/tests/test_leakage.py
+[2026-09-21T03:58:35] end c_leakage rc=0 12s
+[2026-09-21T03:58:35] ALL_REQUESTED_STAGES_DONE c_leakage
+[2026-09-21T04:04:51] GPU: NVIDIA H100 PCIe MIG 3g.40gb (MIG-110b5c2d-162d-5ada-814c-2aef6f9812f1), torch 2.5.1+cu121
+[2026-09-21T04:04:51] start c_paper [cpu] codes/scripts/paper/make_paper_outputs.py
+[2026-09-21T04:04:54] end c_paper rc=0 2s
+[2026-09-21T04:04:54] ALL_REQUESTED_STAGES_DONE c_paper
+[2026-09-21T04:04:55] GPU: NVIDIA H100 PCIe MIG 3g.40gb (MIG-110b5c2d-162d-5ada-814c-2aef6f9812f1), torch 2.5.1+cu121
+[2026-09-21T04:04:55] start c_supp [cpu] codes/scripts/paper/make_supplement.py
+[2026-09-21T04:04:56] end c_supp rc=0 0s
+[2026-09-21T04:04:56] start c_strata [cpu] codes/scripts/audit/a01_strata.py
+[2026-09-21T04:04:57] end c_strata rc=0 1s
+[2026-09-21T04:04:57] start c_integrity [cpu] codes/scripts/audit/a02_integrity.py
+[2026-09-21T04:04:58] end c_integrity rc=0 1s
+[2026-09-21T04:04:58] ALL_REQUESTED_STAGES_DONE c_supp,c_strata,c_integrity
+[2026-09-21T04:05:00] GPU: NVIDIA H100 PCIe MIG 3g.40gb (MIG-110b5c2d-162d-5ada-814c-2aef6f9812f1), torch 2.5.1+cu121
+[2026-09-21T04:05:00] start c_leakage [cpu] codes/tests/test_leakage.py
+[2026-09-21T04:05:12] end c_leakage rc=0 12s
+[2026-09-21T04:05:12] ALL_REQUESTED_STAGES_DONE c_leakage
+[2026-09-21T04:07:11] GPU: NVIDIA H100 PCIe MIG 3g.40gb (MIG-110b5c2d-162d-5ada-814c-2aef6f9812f1), torch 2.5.1+cu121
+[2026-09-21T04:07:11] start c_paper [cpu] codes/scripts/paper/make_paper_outputs.py
+[2026-09-21T04:07:13] end c_paper rc=0 2s
+[2026-09-21T04:07:13] ALL_REQUESTED_STAGES_DONE c_paper
+[2026-09-21T04:07:15] GPU: NVIDIA H100 PCIe MIG 3g.40gb (MIG-110b5c2d-162d-5ada-814c-2aef6f9812f1), torch 2.5.1+cu121
+[2026-09-21T04:07:15] start c_supp [cpu] codes/scripts/paper/make_supplement.py
+[2026-09-21T04:07:15] end c_supp rc=0 0s
+[2026-09-21T04:07:15] start c_strata [cpu] codes/scripts/audit/a01_strata.py
+[2026-09-21T04:07:16] end c_strata rc=0 1s
+[2026-09-21T04:07:16] start c_integrity [cpu] codes/scripts/audit/a02_integrity.py
+[2026-09-21T04:07:18] end c_integrity rc=0 1s
+[2026-09-21T04:07:18] ALL_REQUESTED_STAGES_DONE c_supp,c_strata,c_integrity
+[2026-09-21T04:07:19] GPU: NVIDIA H100 PCIe MIG 3g.40gb (MIG-110b5c2d-162d-5ada-814c-2aef6f9812f1), torch 2.5.1+cu121
+[2026-09-21T04:07:19] start c_leakage [cpu] codes/tests/test_leakage.py
+[2026-09-21T04:07:32] end c_leakage rc=0 12s
+[2026-09-21T04:07:32] ALL_REQUESTED_STAGES_DONE c_leakage
+[2026-09-21T14:09:04] GPU: NVIDIA H100 PCIe MIG 3g.40gb (MIG-5eef67d0-7e58-5016-8973-1bf2618f6d54), torch 2.5.1+cu121
+[2026-09-21T14:09:04] start c_paper [cpu] codes/scripts/paper/make_paper_outputs.py
+[2026-09-21T14:09:06] end c_paper rc=0 2s
+[2026-09-21T14:09:06] ALL_REQUESTED_STAGES_DONE c_paper
+[2026-09-21T14:09:08] GPU: NVIDIA H100 PCIe MIG 3g.40gb (MIG-5eef67d0-7e58-5016-8973-1bf2618f6d54), torch 2.5.1+cu121
+[2026-09-21T14:09:08] start c_supp [cpu] codes/scripts/paper/make_supplement.py
+[2026-09-21T14:09:08] end c_supp rc=0 0s
+[2026-09-21T14:09:08] start c_strata [cpu] codes/scripts/audit/a01_strata.py
+[2026-09-21T14:09:09] end c_strata rc=0 1s
+[2026-09-21T14:09:09] start c_integrity [cpu] codes/scripts/audit/a02_integrity.py
+[2026-09-21T14:09:10] end c_integrity rc=0 1s
+[2026-09-21T14:09:10] ALL_REQUESTED_STAGES_DONE c_supp,c_strata,c_integrity
+[2026-09-21T14:09:12] GPU: NVIDIA H100 PCIe MIG 3g.40gb (MIG-5eef67d0-7e58-5016-8973-1bf2618f6d54), torch 2.5.1+cu121
+[2026-09-21T14:09:12] start c_leakage [cpu] codes/tests/test_leakage.py
+[2026-09-21T14:09:25] end c_leakage rc=0 12s
+[2026-09-21T14:09:25] ALL_REQUESTED_STAGES_DONE c_leakage
+[2026-09-21T15:20:24] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-2f219700-5dc6-59eb-81ef-2bb9414d3ec0), torch 2.5.1+cu121
+[2026-09-21T15:20:24] start c_paper [cpu] codes/scripts/paper/make_paper_outputs.py
+[2026-09-21T15:20:26] end c_paper rc=0 2s
+[2026-09-21T15:20:26] ALL_REQUESTED_STAGES_DONE c_paper
+[2026-09-21T15:20:29] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-2f219700-5dc6-59eb-81ef-2bb9414d3ec0), torch 2.5.1+cu121
+[2026-09-21T15:20:29] start c_supp [cpu] codes/scripts/paper/make_supplement.py
+[2026-09-21T15:20:29] end c_supp rc=0 0s
+[2026-09-21T15:20:29] start c_strata [cpu] codes/scripts/audit/a01_strata.py
+[2026-09-21T15:20:30] end c_strata rc=0 1s
+[2026-09-21T15:20:30] start c_integrity [cpu] codes/scripts/audit/a02_integrity.py
+[2026-09-21T15:20:31] end c_integrity rc=0 1s
+[2026-09-21T15:20:31] ALL_REQUESTED_STAGES_DONE c_supp,c_strata,c_integrity
+[2026-09-21T15:20:33] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-2f219700-5dc6-59eb-81ef-2bb9414d3ec0), torch 2.5.1+cu121
+[2026-09-21T15:20:33] start c_leakage [cpu] codes/tests/test_leakage.py
+[2026-09-21T15:20:46] end c_leakage rc=0 13s
+[2026-09-21T15:20:46] ALL_REQUESTED_STAGES_DONE c_leakage
+[2026-09-21T22:01:00] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-2f219700-5dc6-59eb-81ef-2bb9414d3ec0), torch 2.5.1+cu121
+[2026-09-21T22:01:00] start x_settlement_quantile [gpu] codes/scripts/extra/x02_settlement_quantile.py
+[2026-09-21T22:01:19] end x_settlement_quantile rc=0 20s
+[2026-09-21T22:01:19] ALL_REQUESTED_STAGES_DONE x_settlement_quantile
+[2026-09-21T22:01:21] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-2f219700-5dc6-59eb-81ef-2bb9414d3ec0), torch 2.5.1+cu121
+[2026-09-21T22:01:21] start x_value_of_forecast [gpu] codes/scripts/extra/x01_value_of_forecast.py
+[2026-09-21T22:10:02] end x_value_of_forecast rc=0 520s
+[2026-09-21T22:10:02] ALL_REQUESTED_STAGES_DONE x_value_of_forecast
+[2026-09-21T22:10:04] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-2f219700-5dc6-59eb-81ef-2bb9414d3ec0), torch 2.5.1+cu121
+[2026-09-21T22:10:04] start c_integrity [cpu] codes/scripts/audit/a02_integrity.py
+[2026-09-21T22:10:05] end c_integrity rc=0 1s
+[2026-09-21T22:10:05] ALL_REQUESTED_STAGES_DONE c_integrity
+[2026-09-21T22:10:39] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-2f219700-5dc6-59eb-81ef-2bb9414d3ec0), torch 2.5.1+cu121
+[2026-09-21T22:10:39] start x_paper_outputs [cpu] codes/scripts/extra/x03_paper_outputs.py
+[2026-09-21T22:10:40] end x_paper_outputs rc=0 1s
+[2026-09-21T22:10:40] ALL_REQUESTED_STAGES_DONE x_paper_outputs
+[2026-09-21T22:10:42] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-2f219700-5dc6-59eb-81ef-2bb9414d3ec0), torch 2.5.1+cu121
+[2026-09-21T22:10:42] start c_integrity [cpu] codes/scripts/audit/a02_integrity.py
+[2026-09-21T22:10:44] end c_integrity rc=0 1s
+[2026-09-21T22:10:44] ALL_REQUESTED_STAGES_DONE c_integrity
+[2026-09-21T22:12:45] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-2f219700-5dc6-59eb-81ef-2bb9414d3ec0), torch 2.5.1+cu121
+[2026-09-21T22:12:45] start x_paper_outputs [cpu] codes/scripts/extra/x03_paper_outputs.py
+[2026-09-21T22:12:46] end x_paper_outputs rc=0 1s
+[2026-09-21T22:12:46] ALL_REQUESTED_STAGES_DONE x_paper_outputs
+[2026-09-21T22:12:48] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-2f219700-5dc6-59eb-81ef-2bb9414d3ec0), torch 2.5.1+cu121
+[2026-09-21T22:12:48] start c_integrity [cpu] codes/scripts/audit/a02_integrity.py
+[2026-09-21T22:12:49] end c_integrity rc=0 1s
+[2026-09-21T22:12:49] ALL_REQUESTED_STAGES_DONE c_integrity
+[2026-09-21T22:13:48] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-2f219700-5dc6-59eb-81ef-2bb9414d3ec0), torch 2.5.1+cu121
+[2026-09-21T22:13:48] start x_paper_outputs [cpu] codes/scripts/extra/x03_paper_outputs.py
+[2026-09-21T22:13:49] end x_paper_outputs rc=0 1s
+[2026-09-21T22:13:49] ALL_REQUESTED_STAGES_DONE x_paper_outputs
+[2026-09-21T22:13:51] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-2f219700-5dc6-59eb-81ef-2bb9414d3ec0), torch 2.5.1+cu121
+[2026-09-21T22:13:51] start c_integrity [cpu] codes/scripts/audit/a02_integrity.py
+[2026-09-21T22:13:52] end c_integrity rc=0 1s
+[2026-09-21T22:13:52] ALL_REQUESTED_STAGES_DONE c_integrity
+[2026-09-21T22:14:30] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-2f219700-5dc6-59eb-81ef-2bb9414d3ec0), torch 2.5.1+cu121
+[2026-09-21T22:14:30] start x_paper_outputs [cpu] codes/scripts/extra/x03_paper_outputs.py
+[2026-09-21T22:14:31] end x_paper_outputs rc=0 1s
+[2026-09-21T22:14:31] ALL_REQUESTED_STAGES_DONE x_paper_outputs
+[2026-09-21T22:14:33] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-2f219700-5dc6-59eb-81ef-2bb9414d3ec0), torch 2.5.1+cu121
+[2026-09-21T22:14:33] start c_integrity [cpu] codes/scripts/audit/a02_integrity.py
+[2026-09-21T22:14:34] end c_integrity rc=0 1s
+[2026-09-21T22:14:34] ALL_REQUESTED_STAGES_DONE c_integrity
+[2026-09-21T22:15:09] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-2f219700-5dc6-59eb-81ef-2bb9414d3ec0), torch 2.5.1+cu121
+[2026-09-21T22:15:09] start x_paper_outputs [cpu] codes/scripts/extra/x03_paper_outputs.py
+[2026-09-21T22:15:10] end x_paper_outputs rc=0 1s
+[2026-09-21T22:15:10] ALL_REQUESTED_STAGES_DONE x_paper_outputs
+[2026-09-21T22:15:12] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-2f219700-5dc6-59eb-81ef-2bb9414d3ec0), torch 2.5.1+cu121
+[2026-09-21T22:15:12] start c_integrity [cpu] codes/scripts/audit/a02_integrity.py
+[2026-09-21T22:15:13] end c_integrity rc=0 1s
+[2026-09-21T22:15:13] ALL_REQUESTED_STAGES_DONE c_integrity
+[2026-09-21T22:43:06] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-2f219700-5dc6-59eb-81ef-2bb9414d3ec0), torch 2.5.1+cu121
+[2026-09-21T22:43:06] start x_settlement_extensions [gpu] codes/scripts/extra/x04_settlement_extensions.py
+[2026-09-21T22:44:05] FAILED x_settlement_extensions rc=1 58s
+[2026-09-21T22:44:05] stopping: stage x_settlement_extensions failed (see logs/stages/x_settlement_extensions.log); rerun the same command to resume
+[2026-09-21T22:44:06] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-2f219700-5dc6-59eb-81ef-2bb9414d3ec0), torch 2.5.1+cu121
+[2026-09-21T22:44:06] start c_integrity [cpu] codes/scripts/audit/a02_integrity.py
+[2026-09-21T22:44:07] end c_integrity rc=0 1s
+[2026-09-21T22:44:07] ALL_REQUESTED_STAGES_DONE c_integrity
+[2026-09-21T22:45:29] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-2f219700-5dc6-59eb-81ef-2bb9414d3ec0), torch 2.5.1+cu121
+[2026-09-21T22:45:29] start x_settlement_extensions [gpu] codes/scripts/extra/x04_settlement_extensions.py
+[2026-09-21T22:47:15] end x_settlement_extensions rc=0 106s
+[2026-09-21T22:47:15] ALL_REQUESTED_STAGES_DONE x_settlement_extensions
+[2026-09-21T22:47:17] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-2f219700-5dc6-59eb-81ef-2bb9414d3ec0), torch 2.5.1+cu121
+[2026-09-21T22:47:17] start c_integrity [cpu] codes/scripts/audit/a02_integrity.py
+[2026-09-21T22:47:18] end c_integrity rc=0 1s
+[2026-09-21T22:47:18] ALL_REQUESTED_STAGES_DONE c_integrity
+[2026-09-21T22:49:38] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-2f219700-5dc6-59eb-81ef-2bb9414d3ec0), torch 2.5.1+cu121
+[2026-09-21T22:49:38] start x_paper_outputs [cpu] codes/scripts/extra/x03_paper_outputs.py
+[2026-09-21T22:49:39] end x_paper_outputs rc=0 1s
+[2026-09-21T22:49:39] ALL_REQUESTED_STAGES_DONE x_paper_outputs
+[2026-09-21T22:49:41] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-2f219700-5dc6-59eb-81ef-2bb9414d3ec0), torch 2.5.1+cu121
+[2026-09-21T22:49:41] start c_integrity [cpu] codes/scripts/audit/a02_integrity.py
+[2026-09-21T22:49:42] end c_integrity rc=0 1s
+[2026-09-21T22:49:42] ALL_REQUESTED_STAGES_DONE c_integrity
+[2026-09-21T22:51:47] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-2f219700-5dc6-59eb-81ef-2bb9414d3ec0), torch 2.5.1+cu121
+[2026-09-21T22:51:47] start x_paper_outputs [cpu] codes/scripts/extra/x03_paper_outputs.py
+[2026-09-21T22:51:48] end x_paper_outputs rc=0 1s
+[2026-09-21T22:51:48] ALL_REQUESTED_STAGES_DONE x_paper_outputs
+[2026-09-21T22:51:50] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-2f219700-5dc6-59eb-81ef-2bb9414d3ec0), torch 2.5.1+cu121
+[2026-09-21T22:51:50] start c_integrity [cpu] codes/scripts/audit/a02_integrity.py
+[2026-09-21T22:51:51] end c_integrity rc=0 1s
+[2026-09-21T22:51:51] ALL_REQUESTED_STAGES_DONE c_integrity
+[2026-09-21T22:53:39] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-2f219700-5dc6-59eb-81ef-2bb9414d3ec0), torch 2.5.1+cu121
+[2026-09-21T22:53:39] start x_settlement_extensions [gpu] codes/scripts/extra/x04_settlement_extensions.py
+[2026-09-21T22:55:25] end x_settlement_extensions rc=0 106s
+[2026-09-21T22:55:25] ALL_REQUESTED_STAGES_DONE x_settlement_extensions
+[2026-09-21T22:55:27] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-2f219700-5dc6-59eb-81ef-2bb9414d3ec0), torch 2.5.1+cu121
+[2026-09-21T22:55:27] start x_paper_outputs [cpu] codes/scripts/extra/x03_paper_outputs.py
+[2026-09-21T22:55:29] end x_paper_outputs rc=0 1s
+[2026-09-21T22:55:29] ALL_REQUESTED_STAGES_DONE x_paper_outputs
+[2026-09-21T22:55:30] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-2f219700-5dc6-59eb-81ef-2bb9414d3ec0), torch 2.5.1+cu121
+[2026-09-21T22:55:30] start c_integrity [cpu] codes/scripts/audit/a02_integrity.py
+[2026-09-21T22:55:32] end c_integrity rc=0 1s
+[2026-09-21T22:55:32] ALL_REQUESTED_STAGES_DONE c_integrity
+[2026-09-21T22:56:03] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-2f219700-5dc6-59eb-81ef-2bb9414d3ec0), torch 2.5.1+cu121
+[2026-09-21T22:56:03] start x_paper_outputs [cpu] codes/scripts/extra/x03_paper_outputs.py
+[2026-09-21T22:56:04] end x_paper_outputs rc=0 1s
+[2026-09-21T22:56:04] ALL_REQUESTED_STAGES_DONE x_paper_outputs
+[2026-09-21T22:56:06] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-2f219700-5dc6-59eb-81ef-2bb9414d3ec0), torch 2.5.1+cu121
+[2026-09-21T22:56:06] start c_integrity [cpu] codes/scripts/audit/a02_integrity.py
+[2026-09-21T22:56:07] end c_integrity rc=0 1s
+[2026-09-21T22:56:07] ALL_REQUESTED_STAGES_DONE c_integrity
+[2026-09-21T22:56:40] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-2f219700-5dc6-59eb-81ef-2bb9414d3ec0), torch 2.5.1+cu121
+[2026-09-21T22:56:40] start x_paper_outputs [cpu] codes/scripts/extra/x03_paper_outputs.py
+[2026-09-21T22:56:41] end x_paper_outputs rc=0 1s
+[2026-09-21T22:56:41] ALL_REQUESTED_STAGES_DONE x_paper_outputs
+[2026-09-21T22:56:43] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-2f219700-5dc6-59eb-81ef-2bb9414d3ec0), torch 2.5.1+cu121
+[2026-09-21T22:56:43] start c_integrity [cpu] codes/scripts/audit/a02_integrity.py
+[2026-09-21T22:56:44] end c_integrity rc=0 1s
+[2026-09-21T22:56:44] ALL_REQUESTED_STAGES_DONE c_integrity
+[2026-09-21T23:00:31] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-2f219700-5dc6-59eb-81ef-2bb9414d3ec0), torch 2.5.1+cu121
+[2026-09-21T23:00:31] start x_paper_outputs [cpu] codes/scripts/extra/x03_paper_outputs.py
+[2026-09-21T23:00:33] end x_paper_outputs rc=0 2s
+[2026-09-21T23:00:33] ALL_REQUESTED_STAGES_DONE x_paper_outputs
+[2026-09-21T23:00:35] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-2f219700-5dc6-59eb-81ef-2bb9414d3ec0), torch 2.5.1+cu121
+[2026-09-21T23:00:35] start c_integrity [cpu] codes/scripts/audit/a02_integrity.py
+[2026-09-21T23:00:36] end c_integrity rc=0 1s
+[2026-09-21T23:00:36] ALL_REQUESTED_STAGES_DONE c_integrity
+[2026-09-21T23:01:10] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-2f219700-5dc6-59eb-81ef-2bb9414d3ec0), torch 2.5.1+cu121
+[2026-09-21T23:01:10] start x_paper_outputs [cpu] codes/scripts/extra/x03_paper_outputs.py
+[2026-09-21T23:01:12] end x_paper_outputs rc=0 2s
+[2026-09-21T23:01:12] ALL_REQUESTED_STAGES_DONE x_paper_outputs
+[2026-09-21T23:01:14] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-2f219700-5dc6-59eb-81ef-2bb9414d3ec0), torch 2.5.1+cu121
+[2026-09-21T23:01:14] start c_integrity [cpu] codes/scripts/audit/a02_integrity.py
+[2026-09-21T23:01:15] end c_integrity rc=0 1s
+[2026-09-21T23:01:15] ALL_REQUESTED_STAGES_DONE c_integrity
+[2026-09-21T23:02:52] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-2f219700-5dc6-59eb-81ef-2bb9414d3ec0), torch 2.5.1+cu121
+[2026-09-21T23:02:52] start x_settlement_extensions [gpu] codes/scripts/extra/x04_settlement_extensions.py
+[2026-09-21T23:07:02] end x_settlement_extensions rc=0 250s
+[2026-09-21T23:07:02] ALL_REQUESTED_STAGES_DONE x_settlement_extensions
+[2026-09-21T23:07:04] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-2f219700-5dc6-59eb-81ef-2bb9414d3ec0), torch 2.5.1+cu121
+[2026-09-21T23:07:04] start x_paper_outputs [cpu] codes/scripts/extra/x03_paper_outputs.py
+[2026-09-21T23:07:05] end x_paper_outputs rc=0 2s
+[2026-09-21T23:07:05] ALL_REQUESTED_STAGES_DONE x_paper_outputs
+[2026-09-21T23:07:07] GPU: NVIDIA H100 NVL MIG 3g.47gb (MIG-2f219700-5dc6-59eb-81ef-2bb9414d3ec0), torch 2.5.1+cu121
+[2026-09-21T23:07:07] start c_integrity [cpu] codes/scripts/audit/a02_integrity.py
+[2026-09-21T23:07:08] end c_integrity rc=0 1s
+[2026-09-21T23:07:08] ALL_REQUESTED_STAGES_DONE c_integrity
+[2026-09-24T13:55:46] GPU: NVIDIA H100 PCIe MIG 3g.40gb (MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e), torch 2.5.1+cu121
+[2026-09-24T13:55:46] start c_paper [cpu] codes/scripts/paper/make_paper_outputs.py
+[2026-09-24T13:55:48] end c_paper rc=0 2s
+[2026-09-24T13:55:48] ALL_REQUESTED_STAGES_DONE c_paper
+[2026-09-24T13:55:50] GPU: NVIDIA H100 PCIe MIG 3g.40gb (MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e), torch 2.5.1+cu121
+[2026-09-24T13:55:50] start c_supp [cpu] codes/scripts/paper/make_supplement.py
+[2026-09-24T13:55:50] end c_supp rc=0 0s
+[2026-09-24T13:55:50] ALL_REQUESTED_STAGES_DONE c_supp
+[2026-09-24T13:55:52] GPU: NVIDIA H100 PCIe MIG 3g.40gb (MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e), torch 2.5.1+cu121
+[2026-09-24T13:55:52] start x_paper_outputs [cpu] codes/scripts/extra/x03_paper_outputs.py
+[2026-09-24T13:55:54] end x_paper_outputs rc=0 2s
+[2026-09-24T13:55:54] ALL_REQUESTED_STAGES_DONE x_paper_outputs
+[2026-09-24T13:55:55] GPU: NVIDIA H100 PCIe MIG 3g.40gb (MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e), torch 2.5.1+cu121
+[2026-09-24T13:55:55] start c_integrity [cpu] codes/scripts/audit/a02_integrity.py
+[2026-09-24T13:55:56] end c_integrity rc=0 1s
+[2026-09-24T13:55:56] ALL_REQUESTED_STAGES_DONE c_integrity
+[2026-09-24T13:58:03] GPU: NVIDIA H100 PCIe MIG 3g.40gb (MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e), torch 2.5.1+cu121
+[2026-09-24T13:58:03] start c_integrity [cpu] codes/scripts/audit/a02_integrity.py
+[2026-09-24T13:58:04] end c_integrity rc=0 1s
+[2026-09-24T13:58:04] ALL_REQUESTED_STAGES_DONE c_integrity
+[2026-09-24T13:58:06] GPU: NVIDIA H100 PCIe MIG 3g.40gb (MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e), torch 2.5.1+cu121
+[2026-09-24T13:58:06] start c_integrity [cpu] codes/scripts/audit/a02_integrity.py
+[2026-09-24T13:58:07] end c_integrity rc=0 1s
+[2026-09-24T13:58:07] ALL_REQUESTED_STAGES_DONE c_integrity
+[2026-09-24T13:59:49] GPU: NVIDIA H100 PCIe MIG 3g.40gb (MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e), torch 2.5.1+cu121
+[2026-09-24T13:59:49] start c_integrity [cpu] codes/scripts/audit/a02_integrity.py
+[2026-09-24T13:59:50] end c_integrity rc=0 1s
+[2026-09-24T13:59:50] ALL_REQUESTED_STAGES_DONE c_integrity
+[2026-09-24T13:59:52] GPU: NVIDIA H100 PCIe MIG 3g.40gb (MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e), torch 2.5.1+cu121
+[2026-09-24T13:59:52] start c_integrity [cpu] codes/scripts/audit/a02_integrity.py
+[2026-09-24T13:59:53] end c_integrity rc=0 1s
+[2026-09-24T13:59:53] ALL_REQUESTED_STAGES_DONE c_integrity
+[2026-09-24T14:26:34] GPU: NVIDIA H100 PCIe MIG 3g.40gb (MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e), torch 2.5.1+cu121
+[2026-09-24T14:26:34] start data_paper_numbers [cpu] codes/scripts/paper/make_numbers_data.py
+[2026-09-24T14:26:34] end data_paper_numbers rc=0 0s
+[2026-09-24T14:26:34] ALL_REQUESTED_STAGES_DONE data_paper_numbers
+[2026-09-24T14:26:35] GPU: NVIDIA H100 PCIe MIG 3g.40gb (MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e), torch 2.5.1+cu121
+[2026-09-24T14:26:35] start data_paper_figures [cpu] codes/scripts/paper/make_figures_data.py
+[2026-09-24T14:26:44] end data_paper_figures rc=0 8s
+[2026-09-24T14:26:44] ALL_REQUESTED_STAGES_DONE data_paper_figures
+[2026-09-24T14:26:45] GPU: NVIDIA H100 PCIe MIG 3g.40gb (MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e), torch 2.5.1+cu121
+[2026-09-24T14:26:45] start c_integrity [cpu] codes/scripts/audit/a02_integrity.py
+[2026-09-24T14:26:46] end c_integrity rc=0 1s
+[2026-09-24T14:26:46] ALL_REQUESTED_STAGES_DONE c_integrity
+[2026-10-05T09:46:55] GPU: NVIDIA H100 PCIe MIG 3g.40gb (MIG-110b5c2d-162d-5ada-814c-2aef6f9812f1), torch 2.5.1+cu121
+[2026-10-05T09:46:55] start c_supp [cpu] codes/scripts/paper/make_supplement.py
+[2026-10-05T09:46:56] end c_supp rc=0 0s
+[2026-10-05T09:46:56] ALL_REQUESTED_STAGES_DONE c_supp
+[2026-10-05T09:46:58] GPU: NVIDIA H100 PCIe MIG 3g.40gb (MIG-110b5c2d-162d-5ada-814c-2aef6f9812f1), torch 2.5.1+cu121
+[2026-10-05T09:46:58] start x_paper_outputs [cpu] codes/scripts/extra/x03_paper_outputs.py
+[2026-10-05T09:47:00] end x_paper_outputs rc=0 2s
+[2026-10-05T09:47:00] ALL_REQUESTED_STAGES_DONE x_paper_outputs
+[2026-10-05T09:47:02] GPU: NVIDIA H100 PCIe MIG 3g.40gb (MIG-110b5c2d-162d-5ada-814c-2aef6f9812f1), torch 2.5.1+cu121
+[2026-10-05T09:47:02] start c_integrity [cpu] codes/scripts/audit/a02_integrity.py
+[2026-10-05T09:47:04] end c_integrity rc=0 2s
+[2026-10-05T09:47:04] ALL_REQUESTED_STAGES_DONE c_integrity
+[2026-10-06T12:45:07] GPU: NVIDIA H100 NVL MIG 1g.24gb (MIG-c7e12075-054a-5bc9-89e9-896eab5f7528), torch 2.5.1+cu121
+[2026-10-06T12:45:07] start c_integrity [cpu] codes/scripts/audit/a02_integrity.py
+[2026-10-06T12:45:09] end c_integrity rc=0 1s
+[2026-10-06T12:45:09] ALL_REQUESTED_STAGES_DONE c_integrity

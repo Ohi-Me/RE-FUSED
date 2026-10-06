@@ -1,0 +1,8 @@
+
+===== c_o2_evaluate start 2026-09-18T14:02:38 host=master job=31823.master
+T1 evaluated; models: ['bilstm', 'chronos', 'lgbm', 'ma7', 'patchtst', 'persistence', 'seasonal_naive', 'tft'] selected: lgbm
+T2 evaluated; models: ['bilstm', 'chronos', 'lgbm', 'ma7', 'patchtst', 'persistence', 'seasonal_naive', 'tft'] selected: lgbm
+T3 evaluated; models: ['bilstm', 'chronos', 'lgbm', 'ma7', 'patchtst', 'persistence', 'seasonal_naive', 'tft'] selected: lgbm
+T4 evaluated; models: ['bilstm', 'chronos', 'lgbm', 'ma7', 'patchtst', 'persistence', 'seasonal_naive', 'tft'] selected: chronos
+T5 evaluated; models: ['bilstm', 'chronos', 'lgbm', 'ma7', 'patchtst', 'persistence', 'seasonal_naive', 'tft'] selected: bilstm
+===== c_o2_evaluate end 2026-09-18T14:28:55 rc=0 seconds=1577

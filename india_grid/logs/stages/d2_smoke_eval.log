@@ -1,0 +1,529 @@
+
+===== d2_smoke_eval start 2026-09-18T00:00:14 host=master job=31794.master
+=== smoke: d2_05_ensemble.py
+T5 ensembles done: members 13, k=2, lambda=0.0, online (0.5, 1.0, 'all'); cross-fitted val MASE {"best_single": 0.4371, "ens_top": 0.5153, "ens_stack": 1.1911, "ens_online": 1.6515} [2.9s]
+=== smoke end rc=0 5s
+=== smoke: d2_06_o2_eval.py
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../../refused8/stats.py:17: RuntimeWarning: invalid value encountered in divide
+  return sums / (n_blocks * block)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../../refused8/stats.py:24: RuntimeWarning: Mean of empty slice.
+  m = float(d.mean())
+/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/d2_06_o2_eval.py:63: RuntimeWarning: Mean of empty slice.
+  return dict(mean_diff=float(dd.mean()), lo=ci["lo"], hi=ci["hi"], p_one_sided=p, n_days=len(dd))
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../../refused8/stats.py:17: RuntimeWarning: invalid value encountered in divide
+  return sums / (n_blocks * block)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../../refused8/stats.py:24: RuntimeWarning: Mean of empty slice.
+  m = float(d.mean())
+/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/d2_06_o2_eval.py:63: RuntimeWarning: Mean of empty slice.
+  return dict(mean_diff=float(dd.mean()), lo=ci["lo"], hi=ci["hi"], p_one_sided=p, n_days=len(dd))
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../../refused8/stats.py:17: RuntimeWarning: invalid value encountered in divide
+  return sums / (n_blocks * block)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../../refused8/stats.py:24: RuntimeWarning: Mean of empty slice.
+  m = float(d.mean())
+/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/d2_06_o2_eval.py:63: RuntimeWarning: Mean of empty slice.
+  return dict(mean_diff=float(dd.mean()), lo=ci["lo"], hi=ci["hi"], p_one_sided=p, n_days=len(dd))
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../../refused8/stats.py:17: RuntimeWarning: invalid value encountered in divide
+  return sums / (n_blocks * block)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../../refused8/stats.py:24: RuntimeWarning: Mean of empty slice.
+  m = float(d.mean())
+/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/d2_06_o2_eval.py:63: RuntimeWarning: Mean of empty slice.
+  return dict(mean_diff=float(dd.mean()), lo=ci["lo"], hi=ci["hi"], p_one_sided=p, n_days=len(dd))
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../../refused8/stats.py:17: RuntimeWarning: invalid value encountered in divide
+  return sums / (n_blocks * block)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../../refused8/stats.py:24: RuntimeWarning: Mean of empty slice.
+  m = float(d.mean())
+/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/d2_06_o2_eval.py:63: RuntimeWarning: Mean of empty slice.
+  return dict(mean_diff=float(dd.mean()), lo=ci["lo"], hi=ci["hi"], p_one_sided=p, n_days=len(dd))
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../../refused8/stats.py:17: RuntimeWarning: invalid value encountered in divide
+  return sums / (n_blocks * block)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../../refused8/stats.py:24: RuntimeWarning: Mean of empty slice.
+  m = float(d.mean())
+/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/d2_06_o2_eval.py:63: RuntimeWarning: Mean of empty slice.
+  return dict(mean_diff=float(dd.mean()), lo=ci["lo"], hi=ci["hi"], p_one_sided=p, n_days=len(dd))
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../../refused8/stats.py:17: RuntimeWarning: invalid value encountered in divide
+  return sums / (n_blocks * block)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../../refused8/stats.py:24: RuntimeWarning: Mean of empty slice.
+  m = float(d.mean())
+/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/d2_06_o2_eval.py:63: RuntimeWarning: Mean of empty slice.
+  return dict(mean_diff=float(dd.mean()), lo=ci["lo"], hi=ci["hi"], p_one_sided=p, n_days=len(dd))
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../../refused8/stats.py:17: RuntimeWarning: invalid value encountered in divide
+  return sums / (n_blocks * block)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../../refused8/stats.py:24: RuntimeWarning: Mean of empty slice.
+  m = float(d.mean())
+/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/d2_06_o2_eval.py:63: RuntimeWarning: Mean of empty slice.
+  return dict(mean_diff=float(dd.mean()), lo=ci["lo"], hi=ci["hi"], p_one_sided=p, n_days=len(dd))
+T5 final: chronos window 180
+Traceback (most recent call last):
+  File "/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/d2_06_o2_eval.py", line 224, in <module>
+    main()
+  File "/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/d2_06_o2_eval.py", line 220, in main
+    summary(P, R, T, SD, SEL)
+  File "/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/d2_06_o2_eval.py", line 179, in summary
+    r = R[(R.tid == tid) & (R.window == 180)].set_index("model")
+  File "/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/pandas/core/generic.py", line 6321, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'tid'
+=== smoke end rc=1 3s
+=== smoke: d2_07_o3_eval.py
+T5 O3 round-2 checks done
+# O3 round 2 — staleness-matched dropout and PART as a decision rule
+
+Development test FY2024-25, reported only (protocol `codes/design/06_dev2_protocol.md`, section 4).
+
+## Variants (development test)
+
+| tid | model | mase | rmsse | pinball | cov80 | cov90 | n |
+|---|---|---|---|---|---|---|---|
+| T5 | mcag_instance | 1.3793 | 1.0422 | 0.2555 | 0.8059 | 0.8919 | 14196 |
+| T5 | fusion_fixed | 1.2671 | 0.956 | 0.2446 | 0.8227 | 0.9034 | 14196 |
+| T5 | mcag_instance_sd | 0.9058 | 0.722 | 0.2736 | 0.782 | 0.86 | 14196 |
+
+## Paired tests (all horizons pooled)
+
+| tid | comparison | metric | H | mean_a | mean_b | mean_diff | lo | hi | p_a_better | n_days |
+|---|---|---|---|---|---|---|---|---|---|---|
+| T5 | sd vs round 1 (instance) | mae | all | 0.9059 | 1.3791 | -0.4749 | -0.6263 | -0.3228 | 7.025e-19 | 365 |
+| T5 | sd vs round 1 (instance) | pinball | all | 0.2736 | 0.2555 | 0.0181 | -0.0099 | 0.0428 | 0.9798 | 365 |
+
+## PART decision rule (N9)
+
+Total realised development-test gain collected (MSE, scaled units; higher is better): rule +0.2462, sign_only +0.2462, always +4.9452, never +0.0000, oracle +5.0625.
+
+Sign agreement, all cells: 4/9; cells with a clear realised gain: 3/6.
+
+| tid | H | refinement | G_val | G_lower80 | G_upper80 | refine_rule | refine_sign | realised_gain_dev | gain_lo | gain_hi | clear |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| T5 | 1 | regime vs fixed | 0.0277 | 0.0192 | 0.0373 | True | True | 0.1054 | 0.0415 | 0.1759 | True |
+| T5 | 1 | instance vs fixed | -0.2229 | -0.2501 | -0.1082 | False | False | -0.0384 | -0.1848 | 0.0921 | False |
+| T5 | 1 | OTG vs fixed | -0.2006 | -0.1969 | -0.182 | False | False | 1.7267 | 1.2059 | 2.343 | True |
+| T5 | 2 | regime vs fixed | -0.0352 | -0.0377 | 0.0006092 | False | False | 0.0491 | -0.0156 | 0.1162 | False |
+| T5 | 2 | instance vs fixed | 0.1414 | 0.0713 | 0.746 | True | True | -0.0789 | -0.2233 | 0.0466 | False |
+| T5 | 2 | OTG vs fixed | -0.1989 | -0.2337 | -0.2098 | False | False | 1.5741 | 1.0535 | 2.1836 | True |
+| T5 | 3 | regime vs fixed | 0.0276 | 0.0195 | 0.0663 | True | True | 0.0541 | 0.0017 | 0.1164 | True |
+| T5 | 3 | instance vs fixed | 0.3549 | 0.4241 | 0.8215 | True | True | 0.1656 | 0.0442 | 0.2897 | True |
+| T5 | 3 | OTG vs fixed | -0.1734 | -0.2136 | -0.1794 | False | False | 1.3875 | 0.9288 | 1.9545 | True |
+
+=== smoke end rc=0 18s
+=== smoke: d2_08_o4.py
+# O4 round 2 — deviation assessment
+
+Forecast source: `lgbm` (T2, H = 1, rolling conformal C1, 180-day window). Fitted on validation (n = 3,000); development test (n = 3,000) reported only.
+
+Two-fold week cross-validated within-decile tau on validation: O4a 0.0006, O4b 0.0184, O4c 0.0497. Chosen: **O4c** with {'depth': 2, 'k': 0.25}.
+
+| test | outcome | tau(A) | tau(comparator) | difference | 95% CI / placebo 95th pct | p (one-sided) |
+|---|---|---|---|---|---|---|
+| A vs M0 | Y | -0.0134 | -0.0013 | -0.0121 | [-0.0366, +0.0181] | 0.8 |
+| A vs M0 | Y1 | -0.0038 | 0.0106 | -0.0144 | [-0.0344, +0.0188] | 0.87 |
+| A vs M0 | Y2 | -0.0604 | -0.0084 | -0.0520 | [-0.0797, -0.0305] | 1 |
+| A vs M0 | Y3 | -0.0180 | -0.0111 | -0.0069 | [-0.0317, +0.0184] | 0.71 |
+| forecast information gain (A vs A without U, F) | Y | -0.0134 | -0.0192 | +0.0058 | [-0.0105, +0.0199] | 0.22 |
+| forecast information vs shuffled placebo | Y | nan | nan | +0.0058 | +0.0202 | 1 |
+=== smoke end rc=0 72s
+=== smoke: d2_09_o5.py
+# O5 round 2 — scheduling with the round-2 forecaster (stylised settlement)
+
+Forecast source: `lgbm` (window 180 days). Tuned on validation: {"A2": {"beta": 0, "rho": 0.5}, "A5": {"beta": 0}, "A4s": {"b0": -4, "bU": 0, "bS": 1, "rho": 0.5}, "A5c": {"b0": -4, "bU": 0, "bS": 1}}.
+
+| split | arm | system_mean_crore | system_cvar90_crore | J | deviation_energy_gwh_per_state_day | hard_limit_envelope_exceedance_share | n_state_days | source |
+|---|---|---|---|---|---|---|---|---|
+| validation | H_final | 2.2488 | 4.029 | 3.1389 | 1.1951 | 0.1206 | 2040 | lgbm |
+| validation | H_pub | 16.7864 | 40.0132 | 28.3998 | 6.0892 | 0.0 | 2040 | lgbm |
+| validation | P | 14.7807 | 34.9562 | 24.8684 | 5.608 | 0.0 | 2040 | lgbm |
+| validation | A2 | 15.0468 | 30.7976 | 22.9222 | 5.8802 | 0.0 | 2040 | lgbm |
+| validation | A5 | 15.7201 | 35.9525 | 25.8363 | 5.9011 | 0.0 | 2040 | lgbm |
+| validation | A4s | 15.1228 | 31.1459 | 23.1344 | 5.8955 | 0.0 | 2040 | lgbm |
+| validation | A5c | 15.7494 | 36.2051 | 25.9773 | 5.9035 | 0.0 | 2040 | lgbm |
+| dev_test | H_final | 2.4421 | 4.0389 | 3.2405 | 1.3355 | 0.2451 | 2040 | lgbm |
+| dev_test | H_pub | 19.4158 | 41.7407 | 30.5782 | 7.1734 | 0.0 | 2040 | lgbm |
+| dev_test | P | 18.1487 | 38.9878 | 28.5683 | 6.8617 | 0.0 | 2040 | lgbm |
+| dev_test | A2 | 18.0413 | 36.7248 | 27.383 | 7.0043 | 0.0 | 2040 | lgbm |
+| dev_test | A5 | 17.9259 | 36.6541 | 27.29 | 6.9536 | 0.0 | 2040 | lgbm |
+| dev_test | A4s | 18.083 | 36.7411 | 27.4121 | 7.0204 | 0.0 | 2040 | lgbm |
+| dev_test | A5c | 17.9549 | 36.7231 | 27.339 | 6.9592 | 0.0 | 2040 | lgbm |
+
+Development-test paired tests (system-wide daily regret, crore; negative = a better):
+
+| a | b | metric | mean_diff | lo | hi | p_a_better | n_days | p_holm |
+|---|---|---|---|---|---|---|---|---|
+| A5 | A2 | mean system regret | -0.1153 | -0.4913 | 0.4162 | 0.2879 | 60 | 1.0 |
+| A5 | A2 | tail days (either arm above its 90th pct) | -0.4336 |  |  |  | 8 |  |
+| A5 | P | mean system regret | -0.2228 | -0.431 | 0.2138 | 0.1877 | 60 | 1.0 |
+| A5 | P | tail days (either arm above its 90th pct) | -2.3605 |  |  |  | 7 |  |
+| A5 | H_pub | mean system regret | -1.4898 | -2.1929 | -0.6129 | 0.0007091 | 60 | 0.005 |
+| A5 | H_pub | tail days (either arm above its 90th pct) | -4.4475 |  |  |  | 7 |  |
+| A4s | A2 | mean system regret | 0.0417 | 0.0024 | 0.0826 | 0.9858 | 60 | 1.0 |
+| A4s | A2 | tail days (either arm above its 90th pct) | 0.0163 |  |  |  | 6 |  |
+| A5c | A5 | mean system regret | 0.0289 | 0.0132 | 0.0475 | 0.9749 | 60 | 1.0 |
+| A5c | A5 | tail days (either arm above its 90th pct) | 0.069 |  |  |  | 6 |  |
+| A4s | P | mean system regret | -0.0657 | -0.5456 | 0.414 | 0.4131 | 60 | 1.0 |
+| A4s | P | tail days (either arm above its 90th pct) | -1.9704 |  |  |  | 7 |  |
+| A2 | P | mean system regret | -0.1074 | -0.5813 | 0.3654 | 0.3578 | 60 | 1.0 |
+| A2 | P | tail days (either arm above its 90th pct) | -1.9834 |  |  |  | 7 |  |
+| P | H_pub | mean system regret | -1.267 | -1.8838 | -0.6183 | 6.008e-05 | 60 | 0.0004806 |
+| P | H_pub | tail days (either arm above its 90th pct) | -2.5285 |  |  |  | 7 |  |
+
+Chain check — same arms with the round-1 selected forecaster:
+
+| split | arm | system_mean_crore | system_cvar90_crore | J | deviation_energy_gwh_per_state_day | hard_limit_envelope_exceedance_share | n_state_days | source |
+|---|---|---|---|---|---|---|---|---|
+| validation | P | 14.7807 | 34.9562 | 24.8684 | 5.608 | 0.0 | 2040 | lgbm |
+| validation | A2 | 15.0468 | 30.7976 | 22.9222 | 5.8802 | 0.0 | 2040 | lgbm |
+| validation | A5 | 15.7201 | 35.9525 | 25.8363 | 5.9011 | 0.0 | 2040 | lgbm |
+| dev_test | P | 18.1487 | 38.9878 | 28.5683 | 6.8617 | 0.0 | 2040 | lgbm |
+| dev_test | A2 | 18.0413 | 36.7248 | 27.383 | 7.0043 | 0.0 | 2040 | lgbm |
+| dev_test | A5 | 17.9259 | 36.6541 | 27.29 | 6.9536 | 0.0 | 2040 | lgbm |
+
+=== smoke end rc=0 45s
+SMOKE_FAILED d2_06_o2_eval.py
+===== d2_smoke_eval end 2026-09-18T00:02:37 rc=1 seconds=143
+
+===== d2_smoke_eval start 2026-09-18T00:04:31 host=master job=31796.master
+=== smoke: d2_05_ensemble.py
+T5 ensembles done: members 13, k=2, lambda=0.0, online (0.5, 1.0, 'all'); cross-fitted val MASE {"best_single": 0.4371, "ens_top": 0.5153, "ens_stack": 1.1911, "ens_online": 1.6515} [2.8s]
+=== smoke end rc=0 5s
+=== smoke: d2_06_o2_eval.py
+T5 rows per member: {'lgbm': 28509, 'bilstm': 28431, 'tft': 28431, 'patchtst': 28431, 'chronos': 28470, 'xgb': 28509, 'nhits': 28431, 'tide': 28431, 'bitcn': 28431, 'nbeatsx': 28431, 'chronos2': 195, 'chronos_base': 195, 'mcag_instance': 28431, 'ens_top': 195, 'ens_stack': 195, 'ens_online': 195, 'seasonal_naive': 28509} -> common rows: 195
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../o2/o2_06_evaluate.py:151: RuntimeWarning: Mean of empty slice.
+  return dict(n_scored=int(ok.sum()), pinball=float(pin.mean()), crps_approx=float(crps_from_quantiles(y / sc, Q / sc[:, None], LEV).mean()),
+/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../o2/o2_06_evaluate.py:152: RuntimeWarning: Mean of empty slice.
+  cov80=float(cov80.mean()), cov90=float(cov90.mean()),
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../o2/o2_06_evaluate.py:154: RuntimeWarning: Mean of empty slice.
+  width90_scaled=float(((Q[:, 6] - Q[:, 0]) / sc).mean())), pin.mean(axis=1)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../o2/o2_06_evaluate.py:151: RuntimeWarning: Mean of empty slice.
+  return dict(n_scored=int(ok.sum()), pinball=float(pin.mean()), crps_approx=float(crps_from_quantiles(y / sc, Q / sc[:, None], LEV).mean()),
+/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../o2/o2_06_evaluate.py:152: RuntimeWarning: Mean of empty slice.
+  cov80=float(cov80.mean()), cov90=float(cov90.mean()),
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../o2/o2_06_evaluate.py:154: RuntimeWarning: Mean of empty slice.
+  width90_scaled=float(((Q[:, 6] - Q[:, 0]) / sc).mean())), pin.mean(axis=1)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../o2/o2_06_evaluate.py:151: RuntimeWarning: Mean of empty slice.
+  return dict(n_scored=int(ok.sum()), pinball=float(pin.mean()), crps_approx=float(crps_from_quantiles(y / sc, Q / sc[:, None], LEV).mean()),
+/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../o2/o2_06_evaluate.py:152: RuntimeWarning: Mean of empty slice.
+  cov80=float(cov80.mean()), cov90=float(cov90.mean()),
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../o2/o2_06_evaluate.py:154: RuntimeWarning: Mean of empty slice.
+  width90_scaled=float(((Q[:, 6] - Q[:, 0]) / sc).mean())), pin.mean(axis=1)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../o2/o2_06_evaluate.py:151: RuntimeWarning: Mean of empty slice.
+  return dict(n_scored=int(ok.sum()), pinball=float(pin.mean()), crps_approx=float(crps_from_quantiles(y / sc, Q / sc[:, None], LEV).mean()),
+/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../o2/o2_06_evaluate.py:152: RuntimeWarning: Mean of empty slice.
+  cov80=float(cov80.mean()), cov90=float(cov90.mean()),
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../o2/o2_06_evaluate.py:154: RuntimeWarning: Mean of empty slice.
+  width90_scaled=float(((Q[:, 6] - Q[:, 0]) / sc).mean())), pin.mean(axis=1)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/d2_06_o2_eval.py:137: RuntimeWarning: Mean of empty slice.
+  vp = {W: float(D.pinball_rows(d.y.to_numpy()[ok], Qs[W][ok], d.scale_mae.to_numpy()[ok]).mean()) for W in wins}
+/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../o2/o2_06_evaluate.py:151: RuntimeWarning: Mean of empty slice.
+  return dict(n_scored=int(ok.sum()), pinball=float(pin.mean()), crps_approx=float(crps_from_quantiles(y / sc, Q / sc[:, None], LEV).mean()),
+/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../o2/o2_06_evaluate.py:152: RuntimeWarning: Mean of empty slice.
+  cov80=float(cov80.mean()), cov90=float(cov90.mean()),
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../o2/o2_06_evaluate.py:154: RuntimeWarning: Mean of empty slice.
+  width90_scaled=float(((Q[:, 6] - Q[:, 0]) / sc).mean())), pin.mean(axis=1)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../o2/o2_06_evaluate.py:151: RuntimeWarning: Mean of empty slice.
+  return dict(n_scored=int(ok.sum()), pinball=float(pin.mean()), crps_approx=float(crps_from_quantiles(y / sc, Q / sc[:, None], LEV).mean()),
+/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../o2/o2_06_evaluate.py:152: RuntimeWarning: Mean of empty slice.
+  cov80=float(cov80.mean()), cov90=float(cov90.mean()),
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../o2/o2_06_evaluate.py:154: RuntimeWarning: Mean of empty slice.
+  width90_scaled=float(((Q[:, 6] - Q[:, 0]) / sc).mean())), pin.mean(axis=1)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../o2/o2_06_evaluate.py:151: RuntimeWarning: Mean of empty slice.
+  return dict(n_scored=int(ok.sum()), pinball=float(pin.mean()), crps_approx=float(crps_from_quantiles(y / sc, Q / sc[:, None], LEV).mean()),
+/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../o2/o2_06_evaluate.py:152: RuntimeWarning: Mean of empty slice.
+  cov80=float(cov80.mean()), cov90=float(cov90.mean()),
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../o2/o2_06_evaluate.py:154: RuntimeWarning: Mean of empty slice.
+  width90_scaled=float(((Q[:, 6] - Q[:, 0]) / sc).mean())), pin.mean(axis=1)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../o2/o2_06_evaluate.py:151: RuntimeWarning: Mean of empty slice.
+  return dict(n_scored=int(ok.sum()), pinball=float(pin.mean()), crps_approx=float(crps_from_quantiles(y / sc, Q / sc[:, None], LEV).mean()),
+/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../o2/o2_06_evaluate.py:152: RuntimeWarning: Mean of empty slice.
+  cov80=float(cov80.mean()), cov90=float(cov90.mean()),
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../o2/o2_06_evaluate.py:154: RuntimeWarning: Mean of empty slice.
+  width90_scaled=float(((Q[:, 6] - Q[:, 0]) / sc).mean())), pin.mean(axis=1)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../o2/o2_06_evaluate.py:151: RuntimeWarning: Mean of empty slice.
+  return dict(n_scored=int(ok.sum()), pinball=float(pin.mean()), crps_approx=float(crps_from_quantiles(y / sc, Q / sc[:, None], LEV).mean()),
+/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../o2/o2_06_evaluate.py:152: RuntimeWarning: Mean of empty slice.
+  cov80=float(cov80.mean()), cov90=float(cov90.mean()),
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../o2/o2_06_evaluate.py:154: RuntimeWarning: Mean of empty slice.
+  width90_scaled=float(((Q[:, 6] - Q[:, 0]) / sc).mean())), pin.mean(axis=1)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../o2/o2_06_evaluate.py:151: RuntimeWarning: Mean of empty slice.
+  return dict(n_scored=int(ok.sum()), pinball=float(pin.mean()), crps_approx=float(crps_from_quantiles(y / sc, Q / sc[:, None], LEV).mean()),
+/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../o2/o2_06_evaluate.py:152: RuntimeWarning: Mean of empty slice.
+  cov80=float(cov80.mean()), cov90=float(cov90.mean()),
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../o2/o2_06_evaluate.py:154: RuntimeWarning: Mean of empty slice.
+  width90_scaled=float(((Q[:, 6] - Q[:, 0]) / sc).mean())), pin.mean(axis=1)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../o2/o2_06_evaluate.py:151: RuntimeWarning: Mean of empty slice.
+  return dict(n_scored=int(ok.sum()), pinball=float(pin.mean()), crps_approx=float(crps_from_quantiles(y / sc, Q / sc[:, None], LEV).mean()),
+/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../o2/o2_06_evaluate.py:152: RuntimeWarning: Mean of empty slice.
+  cov80=float(cov80.mean()), cov90=float(cov90.mean()),
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../o2/o2_06_evaluate.py:154: RuntimeWarning: Mean of empty slice.
+  width90_scaled=float(((Q[:, 6] - Q[:, 0]) / sc).mean())), pin.mean(axis=1)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../o2/o2_06_evaluate.py:151: RuntimeWarning: Mean of empty slice.
+  return dict(n_scored=int(ok.sum()), pinball=float(pin.mean()), crps_approx=float(crps_from_quantiles(y / sc, Q / sc[:, None], LEV).mean()),
+/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../o2/o2_06_evaluate.py:152: RuntimeWarning: Mean of empty slice.
+  cov80=float(cov80.mean()), cov90=float(cov90.mean()),
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../o2/o2_06_evaluate.py:154: RuntimeWarning: Mean of empty slice.
+  width90_scaled=float(((Q[:, 6] - Q[:, 0]) / sc).mean())), pin.mean(axis=1)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../o2/o2_06_evaluate.py:151: RuntimeWarning: Mean of empty slice.
+  return dict(n_scored=int(ok.sum()), pinball=float(pin.mean()), crps_approx=float(crps_from_quantiles(y / sc, Q / sc[:, None], LEV).mean()),
+/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../o2/o2_06_evaluate.py:152: RuntimeWarning: Mean of empty slice.
+  cov80=float(cov80.mean()), cov90=float(cov90.mean()),
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../o2/o2_06_evaluate.py:154: RuntimeWarning: Mean of empty slice.
+  width90_scaled=float(((Q[:, 6] - Q[:, 0]) / sc).mean())), pin.mean(axis=1)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../o2/o2_06_evaluate.py:151: RuntimeWarning: Mean of empty slice.
+  return dict(n_scored=int(ok.sum()), pinball=float(pin.mean()), crps_approx=float(crps_from_quantiles(y / sc, Q / sc[:, None], LEV).mean()),
+/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../o2/o2_06_evaluate.py:152: RuntimeWarning: Mean of empty slice.
+  cov80=float(cov80.mean()), cov90=float(cov90.mean()),
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../o2/o2_06_evaluate.py:154: RuntimeWarning: Mean of empty slice.
+  width90_scaled=float(((Q[:, 6] - Q[:, 0]) / sc).mean())), pin.mean(axis=1)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../o2/o2_06_evaluate.py:151: RuntimeWarning: Mean of empty slice.
+  return dict(n_scored=int(ok.sum()), pinball=float(pin.mean()), crps_approx=float(crps_from_quantiles(y / sc, Q / sc[:, None], LEV).mean()),
+/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../o2/o2_06_evaluate.py:152: RuntimeWarning: Mean of empty slice.
+  cov80=float(cov80.mean()), cov90=float(cov90.mean()),
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../o2/o2_06_evaluate.py:154: RuntimeWarning: Mean of empty slice.
+  width90_scaled=float(((Q[:, 6] - Q[:, 0]) / sc).mean())), pin.mean(axis=1)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../o2/o2_06_evaluate.py:151: RuntimeWarning: Mean of empty slice.
+  return dict(n_scored=int(ok.sum()), pinball=float(pin.mean()), crps_approx=float(crps_from_quantiles(y / sc, Q / sc[:, None], LEV).mean()),
+/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../o2/o2_06_evaluate.py:152: RuntimeWarning: Mean of empty slice.
+  cov80=float(cov80.mean()), cov90=float(cov90.mean()),
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../o2/o2_06_evaluate.py:154: RuntimeWarning: Mean of empty slice.
+  width90_scaled=float(((Q[:, 6] - Q[:, 0]) / sc).mean())), pin.mean(axis=1)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../o2/o2_06_evaluate.py:151: RuntimeWarning: Mean of empty slice.
+  return dict(n_scored=int(ok.sum()), pinball=float(pin.mean()), crps_approx=float(crps_from_quantiles(y / sc, Q / sc[:, None], LEV).mean()),
+/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../o2/o2_06_evaluate.py:152: RuntimeWarning: Mean of empty slice.
+  cov80=float(cov80.mean()), cov90=float(cov90.mean()),
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../o2/o2_06_evaluate.py:154: RuntimeWarning: Mean of empty slice.
+  width90_scaled=float(((Q[:, 6] - Q[:, 0]) / sc).mean())), pin.mean(axis=1)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../o2/o2_06_evaluate.py:151: RuntimeWarning: Mean of empty slice.
+  return dict(n_scored=int(ok.sum()), pinball=float(pin.mean()), crps_approx=float(crps_from_quantiles(y / sc, Q / sc[:, None], LEV).mean()),
+/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../o2/o2_06_evaluate.py:152: RuntimeWarning: Mean of empty slice.
+  cov80=float(cov80.mean()), cov90=float(cov90.mean()),
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../o2/o2_06_evaluate.py:154: RuntimeWarning: Mean of empty slice.
+  width90_scaled=float(((Q[:, 6] - Q[:, 0]) / sc).mean())), pin.mean(axis=1)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../../refused8/stats.py:17: RuntimeWarning: invalid value encountered in divide
+  return sums / (n_blocks * block)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../../refused8/stats.py:24: RuntimeWarning: Mean of empty slice.
+  m = float(d.mean())
+/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/d2_06_o2_eval.py:63: RuntimeWarning: Mean of empty slice.
+  return dict(mean_diff=float(dd.mean()), lo=ci["lo"], hi=ci["hi"], p_one_sided=p, n_days=len(dd))
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../../refused8/stats.py:17: RuntimeWarning: invalid value encountered in divide
+  return sums / (n_blocks * block)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../../refused8/stats.py:24: RuntimeWarning: Mean of empty slice.
+  m = float(d.mean())
+/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/d2_06_o2_eval.py:63: RuntimeWarning: Mean of empty slice.
+  return dict(mean_diff=float(dd.mean()), lo=ci["lo"], hi=ci["hi"], p_one_sided=p, n_days=len(dd))
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../../refused8/stats.py:17: RuntimeWarning: invalid value encountered in divide
+  return sums / (n_blocks * block)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../../refused8/stats.py:24: RuntimeWarning: Mean of empty slice.
+  m = float(d.mean())
+/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/d2_06_o2_eval.py:63: RuntimeWarning: Mean of empty slice.
+  return dict(mean_diff=float(dd.mean()), lo=ci["lo"], hi=ci["hi"], p_one_sided=p, n_days=len(dd))
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../../refused8/stats.py:17: RuntimeWarning: invalid value encountered in divide
+  return sums / (n_blocks * block)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../../refused8/stats.py:24: RuntimeWarning: Mean of empty slice.
+  m = float(d.mean())
+/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/d2_06_o2_eval.py:63: RuntimeWarning: Mean of empty slice.
+  return dict(mean_diff=float(dd.mean()), lo=ci["lo"], hi=ci["hi"], p_one_sided=p, n_days=len(dd))
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../../refused8/stats.py:17: RuntimeWarning: invalid value encountered in divide
+  return sums / (n_blocks * block)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../../refused8/stats.py:24: RuntimeWarning: Mean of empty slice.
+  m = float(d.mean())
+/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/d2_06_o2_eval.py:63: RuntimeWarning: Mean of empty slice.
+  return dict(mean_diff=float(dd.mean()), lo=ci["lo"], hi=ci["hi"], p_one_sided=p, n_days=len(dd))
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../../refused8/stats.py:17: RuntimeWarning: invalid value encountered in divide
+  return sums / (n_blocks * block)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../../refused8/stats.py:24: RuntimeWarning: Mean of empty slice.
+  m = float(d.mean())
+/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/d2_06_o2_eval.py:63: RuntimeWarning: Mean of empty slice.
+  return dict(mean_diff=float(dd.mean()), lo=ci["lo"], hi=ci["hi"], p_one_sided=p, n_days=len(dd))
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../../refused8/stats.py:17: RuntimeWarning: invalid value encountered in divide
+  return sums / (n_blocks * block)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../../refused8/stats.py:24: RuntimeWarning: Mean of empty slice.
+  m = float(d.mean())
+/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/d2_06_o2_eval.py:63: RuntimeWarning: Mean of empty slice.
+  return dict(mean_diff=float(dd.mean()), lo=ci["lo"], hi=ci["hi"], p_one_sided=p, n_days=len(dd))
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../../refused8/stats.py:17: RuntimeWarning: invalid value encountered in divide
+  return sums / (n_blocks * block)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/../../refused8/stats.py:24: RuntimeWarning: Mean of empty slice.
+  m = float(d.mean())
+/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/d2_06_o2_eval.py:63: RuntimeWarning: Mean of empty slice.
+  return dict(mean_diff=float(dd.mean()), lo=ci["lo"], hi=ci["hi"], p_one_sided=p, n_days=len(dd))
+T5 final: chronos window 90
+=== smoke end rc=0 3s
+=== smoke: d2_07_o3_eval.py
+T5 O3 round-2 checks done
+# O3 round 2 — staleness-matched dropout and PART as a decision rule
+
+Development test FY2024-25, reported only (protocol `codes/design/06_dev2_protocol.md`, section 4).
+
+## Variants (development test)
+
+| tid | model | mase | rmsse | pinball | cov80 | cov90 | n |
+|---|---|---|---|---|---|---|---|
+| T5 | mcag_instance | 1.3793 | 1.0422 | 0.2555 | 0.8059 | 0.8919 | 14196 |
+| T5 | fusion_fixed | 1.2671 | 0.956 | 0.2446 | 0.8227 | 0.9034 | 14196 |
+| T5 | mcag_instance_sd | 0.9058 | 0.722 | 0.2736 | 0.782 | 0.86 | 14196 |
+
+## Paired tests (all horizons pooled)
+
+| tid | comparison | metric | H | mean_a | mean_b | mean_diff | lo | hi | p_a_better | n_days |
+|---|---|---|---|---|---|---|---|---|---|---|
+| T5 | sd vs round 1 (instance) | mae | all | 0.9059 | 1.3791 | -0.4749 | -0.6263 | -0.3228 | 7.025e-19 | 365 |
+| T5 | sd vs round 1 (instance) | pinball | all | 0.2736 | 0.2555 | 0.0181 | -0.0099 | 0.0428 | 0.9798 | 365 |
+
+## PART decision rule (N9)
+
+Total realised development-test gain collected (MSE, scaled units; higher is better): rule +0.2462, sign_only +0.2462, always +4.9452, never +0.0000, oracle +5.0625.
+
+Sign agreement, all cells: 4/9; cells with a clear realised gain: 3/6.
+
+| tid | H | refinement | G_val | G_lower80 | G_upper80 | refine_rule | refine_sign | realised_gain_dev | gain_lo | gain_hi | clear |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| T5 | 1 | regime vs fixed | 0.0277 | 0.0192 | 0.0373 | True | True | 0.1054 | 0.0415 | 0.1759 | True |
+| T5 | 1 | instance vs fixed | -0.2229 | -0.2501 | -0.1082 | False | False | -0.0384 | -0.1848 | 0.0921 | False |
+| T5 | 1 | OTG vs fixed | -0.2006 | -0.1969 | -0.182 | False | False | 1.7267 | 1.2059 | 2.343 | True |
+| T5 | 2 | regime vs fixed | -0.0352 | -0.0377 | 0.0006092 | False | False | 0.0491 | -0.0156 | 0.1162 | False |
+| T5 | 2 | instance vs fixed | 0.1414 | 0.0713 | 0.746 | True | True | -0.0789 | -0.2233 | 0.0466 | False |
+| T5 | 2 | OTG vs fixed | -0.1989 | -0.2337 | -0.2098 | False | False | 1.5741 | 1.0535 | 2.1836 | True |
+| T5 | 3 | regime vs fixed | 0.0276 | 0.0195 | 0.0663 | True | True | 0.0541 | 0.0017 | 0.1164 | True |
+| T5 | 3 | instance vs fixed | 0.3549 | 0.4241 | 0.8215 | True | True | 0.1656 | 0.0442 | 0.2897 | True |
+| T5 | 3 | OTG vs fixed | -0.1734 | -0.2136 | -0.1794 | False | False | 1.3875 | 0.9288 | 1.9545 | True |
+
+=== smoke end rc=0 19s
+=== smoke: d2_08_o4.py
+# O4 round 2 — deviation assessment
+
+Forecast source: `lgbm` (T2, H = 1, rolling conformal C1, 180-day window). Fitted on validation (n = 3,000); development test (n = 3,000) reported only.
+
+Two-fold week cross-validated within-decile tau on validation: O4a 0.0006, O4b 0.0184, O4c 0.0497. Chosen: **O4c** with {'depth': 2, 'k': 0.25}.
+
+| test | outcome | tau(A) | tau(comparator) | difference | 95% CI / placebo 95th pct | p (one-sided) |
+|---|---|---|---|---|---|---|
+| A vs M0 | Y | -0.0134 | -0.0013 | -0.0121 | [-0.0366, +0.0181] | 0.8 |
+| A vs M0 | Y1 | -0.0038 | 0.0106 | -0.0144 | [-0.0344, +0.0188] | 0.87 |
+| A vs M0 | Y2 | -0.0604 | -0.0084 | -0.0520 | [-0.0797, -0.0305] | 1 |
+| A vs M0 | Y3 | -0.0180 | -0.0111 | -0.0069 | [-0.0317, +0.0184] | 0.71 |
+| forecast information gain (A vs A without U, F) | Y | -0.0134 | -0.0192 | +0.0058 | [-0.0105, +0.0199] | 0.22 |
+| forecast information vs shuffled placebo | Y | nan | nan | +0.0058 | +0.0202 | 1 |
+=== smoke end rc=0 73s
+=== smoke: d2_09_o5.py
+# O5 round 2 — scheduling with the round-2 forecaster (stylised settlement)
+
+Forecast source: `lgbm` (window 180 days). Tuned on validation: {"A2": {"beta": 0, "rho": 0.5}, "A5": {"beta": 0}, "A4s": {"b0": -4, "bU": 0, "bS": 1, "rho": 0.5}, "A5c": {"b0": -4, "bU": 0, "bS": 1}}.
+
+| split | arm | system_mean_crore | system_cvar90_crore | J | deviation_energy_gwh_per_state_day | hard_limit_envelope_exceedance_share | n_state_days | source |
+|---|---|---|---|---|---|---|---|---|
+| validation | H_final | 2.2488 | 4.029 | 3.1389 | 1.1951 | 0.1206 | 2040 | lgbm |
+| validation | H_pub | 16.7864 | 40.0132 | 28.3998 | 6.0892 | 0.0 | 2040 | lgbm |
+| validation | P | 14.7807 | 34.9562 | 24.8684 | 5.608 | 0.0 | 2040 | lgbm |
+| validation | A2 | 15.0468 | 30.7976 | 22.9222 | 5.8802 | 0.0 | 2040 | lgbm |
+| validation | A5 | 15.7201 | 35.9525 | 25.8363 | 5.9011 | 0.0 | 2040 | lgbm |
+| validation | A4s | 15.1228 | 31.1459 | 23.1344 | 5.8955 | 0.0 | 2040 | lgbm |
+| validation | A5c | 15.7494 | 36.2051 | 25.9773 | 5.9035 | 0.0 | 2040 | lgbm |
+| dev_test | H_final | 2.4421 | 4.0389 | 3.2405 | 1.3355 | 0.2451 | 2040 | lgbm |
+| dev_test | H_pub | 19.4158 | 41.7407 | 30.5782 | 7.1734 | 0.0 | 2040 | lgbm |
+| dev_test | P | 18.1487 | 38.9878 | 28.5683 | 6.8617 | 0.0 | 2040 | lgbm |
+| dev_test | A2 | 18.0413 | 36.7248 | 27.383 | 7.0043 | 0.0 | 2040 | lgbm |
+| dev_test | A5 | 17.9259 | 36.6541 | 27.29 | 6.9536 | 0.0 | 2040 | lgbm |
+| dev_test | A4s | 18.083 | 36.7411 | 27.4121 | 7.0204 | 0.0 | 2040 | lgbm |
+| dev_test | A5c | 17.9549 | 36.7231 | 27.339 | 6.9592 | 0.0 | 2040 | lgbm |
+
+Development-test paired tests (system-wide daily regret, crore; negative = a better):
+
+| a | b | metric | mean_diff | lo | hi | p_a_better | n_days | p_holm |
+|---|---|---|---|---|---|---|---|---|
+| A5 | A2 | mean system regret | -0.1153 | -0.4913 | 0.4162 | 0.2879 | 60 | 1.0 |
+| A5 | A2 | tail days (either arm above its 90th pct) | -0.4336 |  |  |  | 8 |  |
+| A5 | P | mean system regret | -0.2228 | -0.431 | 0.2138 | 0.1877 | 60 | 1.0 |
+| A5 | P | tail days (either arm above its 90th pct) | -2.3605 |  |  |  | 7 |  |
+| A5 | H_pub | mean system regret | -1.4898 | -2.1929 | -0.6129 | 0.0007091 | 60 | 0.005 |
+| A5 | H_pub | tail days (either arm above its 90th pct) | -4.4475 |  |  |  | 7 |  |
+| A4s | A2 | mean system regret | 0.0417 | 0.0024 | 0.0826 | 0.9858 | 60 | 1.0 |
+| A4s | A2 | tail days (either arm above its 90th pct) | 0.0163 |  |  |  | 6 |  |
+| A5c | A5 | mean system regret | 0.0289 | 0.0132 | 0.0475 | 0.9749 | 60 | 1.0 |
+| A5c | A5 | tail days (either arm above its 90th pct) | 0.069 |  |  |  | 6 |  |
+| A4s | P | mean system regret | -0.0657 | -0.5456 | 0.414 | 0.4131 | 60 | 1.0 |
+| A4s | P | tail days (either arm above its 90th pct) | -1.9704 |  |  |  | 7 |  |
+| A2 | P | mean system regret | -0.1074 | -0.5813 | 0.3654 | 0.3578 | 60 | 1.0 |
+| A2 | P | tail days (either arm above its 90th pct) | -1.9834 |  |  |  | 7 |  |
+| P | H_pub | mean system regret | -1.267 | -1.8838 | -0.6183 | 6.008e-05 | 60 | 0.0004806 |
+| P | H_pub | tail days (either arm above its 90th pct) | -2.5285 |  |  |  | 7 |  |
+
+Chain check — same arms with the round-1 selected forecaster:
+
+| split | arm | system_mean_crore | system_cvar90_crore | J | deviation_energy_gwh_per_state_day | hard_limit_envelope_exceedance_share | n_state_days | source |
+|---|---|---|---|---|---|---|---|---|
+| validation | P | 14.7807 | 34.9562 | 24.8684 | 5.608 | 0.0 | 2040 | lgbm |
+| validation | A2 | 15.0468 | 30.7976 | 22.9222 | 5.8802 | 0.0 | 2040 | lgbm |
+| validation | A5 | 15.7201 | 35.9525 | 25.8363 | 5.9011 | 0.0 | 2040 | lgbm |
+| dev_test | P | 18.1487 | 38.9878 | 28.5683 | 6.8617 | 0.0 | 2040 | lgbm |
+| dev_test | A2 | 18.0413 | 36.7248 | 27.383 | 7.0043 | 0.0 | 2040 | lgbm |
+| dev_test | A5 | 17.9259 | 36.6541 | 27.29 | 6.9536 | 0.0 | 2040 | lgbm |
+
+=== smoke end rc=0 59s
+SMOKE_OK
+===== d2_smoke_eval end 2026-09-18T00:07:11 rc=0 seconds=160

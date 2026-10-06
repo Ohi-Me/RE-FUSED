@@ -1,0 +1,15 @@
+#!/bin/bash
+#PBS -N refused_o2_cpu
+#PBS -q cpuq
+#PBS -l select=1:ncpus=16
+#PBS -l walltime=24:00:00
+#PBS -j oe
+#PBS -o /Data3/<hpc-user>/RefusedH100/logs/pbs/refused_o2_cpu.out
+
+cd /Data3/<hpc-user>/RefusedH100
+export PYTHONNOUSERSITE=1
+export REFUSED8_THREADS=16
+source /apps/compilers/anaconda3/etc/profile.d/conda.sh
+conda activate refused_h100
+echo "job $PBS_JOBID on $(hostname) at $(date -Iseconds); python $(which python)"
+python -u run_all.py stage env_check leakage_test o2_samples o2_lgbm

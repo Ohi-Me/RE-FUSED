@@ -1,0 +1,722 @@
+
+===== c_integrity start 2026-09-20T23:53:48 host=master job=32069.master
+# Integrity and reproducibility check
+
+Run 2026-09-20T23:53:49+0530 on `master` (PBS job 32069.master), phase `confirm`.
+
+| Check | Result |
+|---|---|
+| Pre-registration hash matches `PREREG_SHA256.txt` | yes |
+| Frozen choice files and scorer (42 files) unchanged | yes |
+| Panel content hash matches `CHECKSUM.txt` | NO (104550 rows x 107 columns) |
+| Git tag `prereg-v1` present | yes (4d3807ed275342c1f83f2e7009f094e838f20bad) |
+| Re-scoring the stored results reproduces `hypotheses.csv` | yes, identical |
+
+Supported checks in the archived table: 35 of 52; in the re-scored table: 35.
+
+The scoring script is `codes/scripts/confirm/c01_hypotheses.py`, sha256 `f07727d831f03717f351d75c1c9554dd6e1c3d4e8d9dfe8f725beeb0df5d713a`, which is the hash written into the pre-registration before the evaluation data were opened.
+
+===== c_integrity end 2026-09-20T23:53:49 rc=1 seconds=1
+
+===== c_integrity start 2026-09-21T00:05:34 host=master job=32073.master
+# Integrity and reproducibility check
+
+Run 2026-09-21T00:05:34+0530 on `master` (PBS job 32073.master), phase `confirm`.
+
+| Check | Result |
+|---|---|
+| Pre-registration hash matches `PREREG_SHA256.txt` | yes |
+| Frozen choice files and scorer (42 files) unchanged | yes |
+| Panel content hash matches `CHECKSUM.txt` | yes (104550 rows x 107 columns) |
+| Git tag `prereg-v1` present | yes (4d3807ed275342c1f83f2e7009f094e838f20bad) |
+| Re-scoring the stored results reproduces `hypotheses.csv` | yes, identical |
+
+Supported checks in the archived table: 35 of 52; in the re-scored table: 35.
+
+The scoring script is `codes/scripts/confirm/c01_hypotheses.py`, sha256 `f07727d831f03717f351d75c1c9554dd6e1c3d4e8d9dfe8f725beeb0df5d713a`, which is the hash written into the pre-registration before the evaluation data were opened.
+
+===== c_integrity end 2026-09-21T00:05:35 rc=0 seconds=1
+
+===== c_integrity start 2026-09-21T00:10:50 host=master job=32074.master
+# Integrity and reproducibility check
+
+Run 2026-09-21T00:10:51+0530 on `master` (PBS job 32074.master), phase `confirm`.
+
+| Check | Result |
+|---|---|
+| Pre-registration hash matches `PREREG_SHA256.txt` | yes |
+| Frozen choice files and scorer (42 files) unchanged | yes |
+| Panel content hash matches `CHECKSUM.txt` | yes (104550 rows x 107 columns) |
+| Git tag `prereg-v1` present | yes (4d3807ed275342c1f83f2e7009f094e838f20bad) |
+| Re-scoring the stored results reproduces `hypotheses.csv` | yes, identical |
+
+Supported checks in the archived table: 35 of 52; in the re-scored table: 35.
+
+The scoring script is `codes/scripts/confirm/c01_hypotheses.py`, sha256 `f07727d831f03717f351d75c1c9554dd6e1c3d4e8d9dfe8f725beeb0df5d713a`, which is the hash written into the pre-registration before the evaluation data were opened.
+
+===== c_integrity end 2026-09-21T00:10:51 rc=0 seconds=1
+
+===== c_integrity start 2026-09-21T00:21:14 host=master job=32076.master
+# Integrity and reproducibility check
+
+Run 2026-09-21T00:21:14+0530 on `master` (PBS job 32076.master), phase `confirm`.
+
+| Check | Result |
+|---|---|
+| Pre-registration hash matches `PREREG_SHA256.txt` | yes |
+| Frozen choice files and scorer (42 files) unchanged | yes |
+| Panel content hash matches `CHECKSUM.txt` | yes (104550 rows x 107 columns) |
+| Git tag `prereg-v1` present | yes (4d3807ed275342c1f83f2e7009f094e838f20bad) |
+| Re-scoring the stored results reproduces `hypotheses.csv` | yes, identical |
+
+Supported checks in the archived table: 35 of 52; in the re-scored table: 35.
+
+The scoring script is `codes/scripts/confirm/c01_hypotheses.py`, sha256 `f07727d831f03717f351d75c1c9554dd6e1c3d4e8d9dfe8f725beeb0df5d713a`, which is the hash written into the pre-registration before the evaluation data were opened.
+
+===== c_integrity end 2026-09-21T00:21:15 rc=0 seconds=1
+
+===== c_integrity start 2026-09-21T00:24:38 host=master job=32078.master
+# Integrity and reproducibility check
+
+Run 2026-09-21T00:24:38+0530 on `master` (PBS job 32078.master), phase `confirm`.
+
+| Check | Result |
+|---|---|
+| Pre-registration hash matches `PREREG_SHA256.txt` | yes |
+| Frozen choice files and scorer (42 files) unchanged | yes |
+| Panel content hash matches `CHECKSUM.txt` | yes (104550 rows x 107 columns) |
+| Git tag `prereg-v1` present | yes (4d3807ed275342c1f83f2e7009f094e838f20bad) |
+| Re-scoring the stored results reproduces `hypotheses.csv` | yes, identical |
+
+Supported checks in the archived table: 35 of 52; in the re-scored table: 35.
+
+The scoring script is `codes/scripts/confirm/c01_hypotheses.py`, sha256 `f07727d831f03717f351d75c1c9554dd6e1c3d4e8d9dfe8f725beeb0df5d713a`, which is the hash written into the pre-registration before the evaluation data were opened.
+
+===== c_integrity end 2026-09-21T00:24:39 rc=0 seconds=1
+
+===== c_integrity start 2026-09-21T00:27:15 host=master job=32079.master
+# Integrity and reproducibility check
+
+Run 2026-09-21T00:27:15+0530 on `master` (PBS job 32079.master), phase `confirm`.
+
+| Check | Result |
+|---|---|
+| Pre-registration hash matches `PREREG_SHA256.txt` | yes |
+| Frozen choice files and scorer (42 files) unchanged | yes |
+| Panel content hash matches `CHECKSUM.txt` | yes (104550 rows x 107 columns) |
+| Git tag `prereg-v1` present | yes (4d3807ed275342c1f83f2e7009f094e838f20bad) |
+| Re-scoring the stored results reproduces `hypotheses.csv` | yes, identical |
+
+Supported checks in the archived table: 35 of 52; in the re-scored table: 35.
+
+The scoring script is `codes/scripts/confirm/c01_hypotheses.py`, sha256 `f07727d831f03717f351d75c1c9554dd6e1c3d4e8d9dfe8f725beeb0df5d713a`, which is the hash written into the pre-registration before the evaluation data were opened.
+
+===== c_integrity end 2026-09-21T00:27:16 rc=0 seconds=1
+
+===== c_integrity start 2026-09-21T00:28:02 host=master job=32080.master
+# Integrity and reproducibility check
+
+Run 2026-09-21T00:28:02+0530 on `master` (PBS job 32080.master), phase `confirm`.
+
+| Check | Result |
+|---|---|
+| Pre-registration hash matches `PREREG_SHA256.txt` | yes |
+| Frozen choice files and scorer (42 files) unchanged | yes |
+| Panel content hash matches `CHECKSUM.txt` | yes (104550 rows x 107 columns) |
+| Git tag `prereg-v1` present | yes (4d3807ed275342c1f83f2e7009f094e838f20bad) |
+| Re-scoring the stored results reproduces `hypotheses.csv` | yes, identical |
+
+Supported checks in the archived table: 35 of 52; in the re-scored table: 35.
+
+The scoring script is `codes/scripts/confirm/c01_hypotheses.py`, sha256 `f07727d831f03717f351d75c1c9554dd6e1c3d4e8d9dfe8f725beeb0df5d713a`, which is the hash written into the pre-registration before the evaluation data were opened.
+
+===== c_integrity end 2026-09-21T00:28:03 rc=0 seconds=1
+
+===== c_integrity start 2026-09-21T03:50:54 host=master job=32093.master
+# Integrity and reproducibility check
+
+Run 2026-09-21T03:50:54+0530 on `master` (PBS job 32093.master), phase `confirm`.
+
+| Check | Result |
+|---|---|
+| Pre-registration hash matches `PREREG_SHA256.txt` | yes |
+| Frozen choice files and scorer (42 files) unchanged | yes |
+| Panel content hash matches `CHECKSUM.txt` | yes (104550 rows x 107 columns) |
+| Git tag `prereg-v1` present | yes (4d3807ed275342c1f83f2e7009f094e838f20bad) |
+| Re-scoring the stored results reproduces `hypotheses.csv` | yes, identical |
+
+Supported checks in the archived table: 35 of 52; in the re-scored table: 35.
+
+The scoring script is `codes/scripts/confirm/c01_hypotheses.py`, sha256 `f07727d831f03717f351d75c1c9554dd6e1c3d4e8d9dfe8f725beeb0df5d713a`, which is the hash written into the pre-registration before the evaluation data were opened.
+
+===== c_integrity end 2026-09-21T03:50:55 rc=0 seconds=1
+
+===== c_integrity start 2026-09-21T03:56:46 host=master job=32094.master
+# Integrity and reproducibility check
+
+Run 2026-09-21T03:56:46+0530 on `master` (PBS job 32094.master), phase `confirm`.
+
+| Check | Result |
+|---|---|
+| Pre-registration hash matches `PREREG_SHA256.txt` | yes |
+| Frozen choice files and scorer (42 files) unchanged | yes |
+| Panel content hash matches `CHECKSUM.txt` | yes (104550 rows x 107 columns) |
+| Git tag `prereg-v1` present | yes (4d3807ed275342c1f83f2e7009f094e838f20bad) |
+| Re-scoring the stored results reproduces `hypotheses.csv` | yes, identical |
+
+Supported checks in the archived table: 35 of 52; in the re-scored table: 35.
+
+The scoring script is `codes/scripts/confirm/c01_hypotheses.py`, sha256 `f07727d831f03717f351d75c1c9554dd6e1c3d4e8d9dfe8f725beeb0df5d713a`, which is the hash written into the pre-registration before the evaluation data were opened.
+
+===== c_integrity end 2026-09-21T03:56:47 rc=0 seconds=1
+
+===== c_integrity start 2026-09-21T03:58:20 host=master job=32095.master
+# Integrity and reproducibility check
+
+Run 2026-09-21T03:58:20+0530 on `master` (PBS job 32095.master), phase `confirm`.
+
+| Check | Result |
+|---|---|
+| Pre-registration hash matches `PREREG_SHA256.txt` | yes |
+| Frozen choice files and scorer (42 files) unchanged | yes |
+| Panel content hash matches `CHECKSUM.txt` | yes (104550 rows x 107 columns) |
+| Git tag `prereg-v1` present | yes (4d3807ed275342c1f83f2e7009f094e838f20bad) |
+| Re-scoring the stored results reproduces `hypotheses.csv` | yes, identical |
+
+Supported checks in the archived table: 35 of 52; in the re-scored table: 35.
+
+The scoring script is `codes/scripts/confirm/c01_hypotheses.py`, sha256 `f07727d831f03717f351d75c1c9554dd6e1c3d4e8d9dfe8f725beeb0df5d713a`, which is the hash written into the pre-registration before the evaluation data were opened.
+
+===== c_integrity end 2026-09-21T03:58:21 rc=0 seconds=1
+
+===== c_integrity start 2026-09-21T04:04:57 host=master job=32096.master
+# Integrity and reproducibility check
+
+Run 2026-09-21T04:04:57+0530 on `master` (PBS job 32096.master), phase `confirm`.
+
+| Check | Result |
+|---|---|
+| Pre-registration hash matches `PREREG_SHA256.txt` | yes |
+| Frozen choice files and scorer (42 files) unchanged | yes |
+| Panel content hash matches `CHECKSUM.txt` | yes (104550 rows x 107 columns) |
+| Git tag `prereg-v1` present | yes (4d3807ed275342c1f83f2e7009f094e838f20bad) |
+| Re-scoring the stored results reproduces `hypotheses.csv` | yes, identical |
+
+Supported checks in the archived table: 35 of 52; in the re-scored table: 35.
+
+The scoring script is `codes/scripts/confirm/c01_hypotheses.py`, sha256 `f07727d831f03717f351d75c1c9554dd6e1c3d4e8d9dfe8f725beeb0df5d713a`, which is the hash written into the pre-registration before the evaluation data were opened.
+
+===== c_integrity end 2026-09-21T04:04:58 rc=0 seconds=1
+
+===== c_integrity start 2026-09-21T04:07:16 host=master job=32097.master
+# Integrity and reproducibility check
+
+Run 2026-09-21T04:07:17+0530 on `master` (PBS job 32097.master), phase `confirm`.
+
+| Check | Result |
+|---|---|
+| Pre-registration hash matches `PREREG_SHA256.txt` | yes |
+| Frozen choice files and scorer (42 files) unchanged | yes |
+| Panel content hash matches `CHECKSUM.txt` | yes (104550 rows x 107 columns) |
+| Git tag `prereg-v1` present | yes (4d3807ed275342c1f83f2e7009f094e838f20bad) |
+| Re-scoring the stored results reproduces `hypotheses.csv` | yes, identical |
+
+Supported checks in the archived table: 35 of 52; in the re-scored table: 35.
+
+The scoring script is `codes/scripts/confirm/c01_hypotheses.py`, sha256 `f07727d831f03717f351d75c1c9554dd6e1c3d4e8d9dfe8f725beeb0df5d713a`, which is the hash written into the pre-registration before the evaluation data were opened.
+
+===== c_integrity end 2026-09-21T04:07:18 rc=0 seconds=1
+
+===== c_integrity start 2026-09-21T14:09:09 host=master job=32116.master
+# Integrity and reproducibility check
+
+Run 2026-09-21T14:09:10+0530 on `master` (PBS job 32116.master), phase `confirm`.
+
+| Check | Result |
+|---|---|
+| Pre-registration hash matches `PREREG_SHA256.txt` | yes |
+| Frozen choice files and scorer (42 files) unchanged | yes |
+| Panel content hash matches `CHECKSUM.txt` | yes (104550 rows x 107 columns) |
+| Git tag `prereg-v1` present | yes (4d3807ed275342c1f83f2e7009f094e838f20bad) |
+| Re-scoring the stored results reproduces `hypotheses.csv` | yes, identical |
+
+Supported checks in the archived table: 35 of 52; in the re-scored table: 35.
+
+The scoring script is `codes/scripts/confirm/c01_hypotheses.py`, sha256 `f07727d831f03717f351d75c1c9554dd6e1c3d4e8d9dfe8f725beeb0df5d713a`, which is the hash written into the pre-registration before the evaluation data were opened.
+
+===== c_integrity end 2026-09-21T14:09:10 rc=0 seconds=1
+
+===== c_integrity start 2026-09-21T15:20:30 host=master job=32123.master
+# Integrity and reproducibility check
+
+Run 2026-09-21T15:20:30+0530 on `master` (PBS job 32123.master), phase `confirm`.
+
+| Check | Result |
+|---|---|
+| Pre-registration hash matches `PREREG_SHA256.txt` | yes |
+| Frozen choice files and scorer (42 files) unchanged | yes |
+| Panel content hash matches `CHECKSUM.txt` | yes (104550 rows x 107 columns) |
+| Git tag `prereg-v1` present | yes (4d3807ed275342c1f83f2e7009f094e838f20bad) |
+| Re-scoring the stored results reproduces `hypotheses.csv` | yes, identical |
+
+Supported checks in the archived table: 35 of 52; in the re-scored table: 35.
+
+The scoring script is `codes/scripts/confirm/c01_hypotheses.py`, sha256 `f07727d831f03717f351d75c1c9554dd6e1c3d4e8d9dfe8f725beeb0df5d713a`, which is the hash written into the pre-registration before the evaluation data were opened.
+
+===== c_integrity end 2026-09-21T15:20:31 rc=0 seconds=1
+
+===== c_integrity start 2026-09-21T22:10:04 host=master job=32189.master
+# Integrity and reproducibility check
+
+Run 2026-09-21T22:10:04+0530 on `master` (PBS job 32189.master), phase `confirm`.
+
+| Check | Result |
+|---|---|
+| Pre-registration hash matches `PREREG_SHA256.txt` | yes |
+| Frozen choice files and scorer (42 files) unchanged | yes |
+| Panel content hash matches `CHECKSUM.txt` | yes (104550 rows x 107 columns) |
+| Git tag `prereg-v1` present | yes (4d3807ed275342c1f83f2e7009f094e838f20bad) |
+| Re-scoring the stored results reproduces `hypotheses.csv` | yes, identical |
+
+Supported checks in the archived table: 35 of 52; in the re-scored table: 35.
+
+The scoring script is `codes/scripts/confirm/c01_hypotheses.py`, sha256 `f07727d831f03717f351d75c1c9554dd6e1c3d4e8d9dfe8f725beeb0df5d713a`, which is the hash written into the pre-registration before the evaluation data were opened.
+
+===== c_integrity end 2026-09-21T22:10:05 rc=0 seconds=1
+
+===== c_integrity start 2026-09-21T22:10:42 host=master job=32190.master
+# Integrity and reproducibility check
+
+Run 2026-09-21T22:10:43+0530 on `master` (PBS job 32190.master), phase `confirm`.
+
+| Check | Result |
+|---|---|
+| Pre-registration hash matches `PREREG_SHA256.txt` | yes |
+| Frozen choice files and scorer (42 files) unchanged | yes |
+| Panel content hash matches `CHECKSUM.txt` | yes (104550 rows x 107 columns) |
+| Git tag `prereg-v1` present | yes (4d3807ed275342c1f83f2e7009f094e838f20bad) |
+| Re-scoring the stored results reproduces `hypotheses.csv` | yes, identical |
+
+Supported checks in the archived table: 35 of 52; in the re-scored table: 35.
+
+The scoring script is `codes/scripts/confirm/c01_hypotheses.py`, sha256 `f07727d831f03717f351d75c1c9554dd6e1c3d4e8d9dfe8f725beeb0df5d713a`, which is the hash written into the pre-registration before the evaluation data were opened.
+
+===== c_integrity end 2026-09-21T22:10:44 rc=0 seconds=1
+
+===== c_integrity start 2026-09-21T22:12:48 host=master job=32191.master
+# Integrity and reproducibility check
+
+Run 2026-09-21T22:12:48+0530 on `master` (PBS job 32191.master), phase `confirm`.
+
+| Check | Result |
+|---|---|
+| Pre-registration hash matches `PREREG_SHA256.txt` | yes |
+| Frozen choice files and scorer (42 files) unchanged | yes |
+| Panel content hash matches `CHECKSUM.txt` | yes (104550 rows x 107 columns) |
+| Git tag `prereg-v1` present | yes (4d3807ed275342c1f83f2e7009f094e838f20bad) |
+| Re-scoring the stored results reproduces `hypotheses.csv` | yes, identical |
+
+Supported checks in the archived table: 35 of 52; in the re-scored table: 35.
+
+The scoring script is `codes/scripts/confirm/c01_hypotheses.py`, sha256 `f07727d831f03717f351d75c1c9554dd6e1c3d4e8d9dfe8f725beeb0df5d713a`, which is the hash written into the pre-registration before the evaluation data were opened.
+
+===== c_integrity end 2026-09-21T22:12:49 rc=0 seconds=1
+
+===== c_integrity start 2026-09-21T22:13:51 host=master job=32192.master
+# Integrity and reproducibility check
+
+Run 2026-09-21T22:13:51+0530 on `master` (PBS job 32192.master), phase `confirm`.
+
+| Check | Result |
+|---|---|
+| Pre-registration hash matches `PREREG_SHA256.txt` | yes |
+| Frozen choice files and scorer (42 files) unchanged | yes |
+| Panel content hash matches `CHECKSUM.txt` | yes (104550 rows x 107 columns) |
+| Git tag `prereg-v1` present | yes (4d3807ed275342c1f83f2e7009f094e838f20bad) |
+| Re-scoring the stored results reproduces `hypotheses.csv` | yes, identical |
+
+Supported checks in the archived table: 35 of 52; in the re-scored table: 35.
+
+The scoring script is `codes/scripts/confirm/c01_hypotheses.py`, sha256 `f07727d831f03717f351d75c1c9554dd6e1c3d4e8d9dfe8f725beeb0df5d713a`, which is the hash written into the pre-registration before the evaluation data were opened.
+
+===== c_integrity end 2026-09-21T22:13:52 rc=0 seconds=1
+
+===== c_integrity start 2026-09-21T22:14:33 host=master job=32193.master
+# Integrity and reproducibility check
+
+Run 2026-09-21T22:14:33+0530 on `master` (PBS job 32193.master), phase `confirm`.
+
+| Check | Result |
+|---|---|
+| Pre-registration hash matches `PREREG_SHA256.txt` | yes |
+| Frozen choice files and scorer (42 files) unchanged | yes |
+| Panel content hash matches `CHECKSUM.txt` | yes (104550 rows x 107 columns) |
+| Git tag `prereg-v1` present | yes (4d3807ed275342c1f83f2e7009f094e838f20bad) |
+| Re-scoring the stored results reproduces `hypotheses.csv` | yes, identical |
+
+Supported checks in the archived table: 35 of 52; in the re-scored table: 35.
+
+The scoring script is `codes/scripts/confirm/c01_hypotheses.py`, sha256 `f07727d831f03717f351d75c1c9554dd6e1c3d4e8d9dfe8f725beeb0df5d713a`, which is the hash written into the pre-registration before the evaluation data were opened.
+
+===== c_integrity end 2026-09-21T22:14:34 rc=0 seconds=1
+
+===== c_integrity start 2026-09-21T22:15:12 host=master job=32194.master
+# Integrity and reproducibility check
+
+Run 2026-09-21T22:15:13+0530 on `master` (PBS job 32194.master), phase `confirm`.
+
+| Check | Result |
+|---|---|
+| Pre-registration hash matches `PREREG_SHA256.txt` | yes |
+| Frozen choice files and scorer (42 files) unchanged | yes |
+| Panel content hash matches `CHECKSUM.txt` | yes (104550 rows x 107 columns) |
+| Git tag `prereg-v1` present | yes (4d3807ed275342c1f83f2e7009f094e838f20bad) |
+| Re-scoring the stored results reproduces `hypotheses.csv` | yes, identical |
+
+Supported checks in the archived table: 35 of 52; in the re-scored table: 35.
+
+The scoring script is `codes/scripts/confirm/c01_hypotheses.py`, sha256 `f07727d831f03717f351d75c1c9554dd6e1c3d4e8d9dfe8f725beeb0df5d713a`, which is the hash written into the pre-registration before the evaluation data were opened.
+
+===== c_integrity end 2026-09-21T22:15:13 rc=0 seconds=1
+
+===== c_integrity start 2026-09-21T22:44:06 host=master job=32195.master
+# Integrity and reproducibility check
+
+Run 2026-09-21T22:44:07+0530 on `master` (PBS job 32195.master), phase `confirm`.
+
+| Check | Result |
+|---|---|
+| Pre-registration hash matches `PREREG_SHA256.txt` | yes |
+| Frozen choice files and scorer (42 files) unchanged | yes |
+| Panel content hash matches `CHECKSUM.txt` | yes (104550 rows x 107 columns) |
+| Git tag `prereg-v1` present | yes (4d3807ed275342c1f83f2e7009f094e838f20bad) |
+| Re-scoring the stored results reproduces `hypotheses.csv` | yes, identical |
+
+Supported checks in the archived table: 35 of 52; in the re-scored table: 35.
+
+The scoring script is `codes/scripts/confirm/c01_hypotheses.py`, sha256 `f07727d831f03717f351d75c1c9554dd6e1c3d4e8d9dfe8f725beeb0df5d713a`, which is the hash written into the pre-registration before the evaluation data were opened.
+
+===== c_integrity end 2026-09-21T22:44:07 rc=0 seconds=1
+
+===== c_integrity start 2026-09-21T22:47:17 host=master job=32196.master
+# Integrity and reproducibility check
+
+Run 2026-09-21T22:47:17+0530 on `master` (PBS job 32196.master), phase `confirm`.
+
+| Check | Result |
+|---|---|
+| Pre-registration hash matches `PREREG_SHA256.txt` | yes |
+| Frozen choice files and scorer (42 files) unchanged | yes |
+| Panel content hash matches `CHECKSUM.txt` | yes (104550 rows x 107 columns) |
+| Git tag `prereg-v1` present | yes (4d3807ed275342c1f83f2e7009f094e838f20bad) |
+| Re-scoring the stored results reproduces `hypotheses.csv` | yes, identical |
+
+Supported checks in the archived table: 35 of 52; in the re-scored table: 35.
+
+The scoring script is `codes/scripts/confirm/c01_hypotheses.py`, sha256 `f07727d831f03717f351d75c1c9554dd6e1c3d4e8d9dfe8f725beeb0df5d713a`, which is the hash written into the pre-registration before the evaluation data were opened.
+
+===== c_integrity end 2026-09-21T22:47:18 rc=0 seconds=1
+
+===== c_integrity start 2026-09-21T22:49:41 host=master job=32198.master
+# Integrity and reproducibility check
+
+Run 2026-09-21T22:49:42+0530 on `master` (PBS job 32198.master), phase `confirm`.
+
+| Check | Result |
+|---|---|
+| Pre-registration hash matches `PREREG_SHA256.txt` | yes |
+| Frozen choice files and scorer (42 files) unchanged | yes |
+| Panel content hash matches `CHECKSUM.txt` | yes (104550 rows x 107 columns) |
+| Git tag `prereg-v1` present | yes (4d3807ed275342c1f83f2e7009f094e838f20bad) |
+| Re-scoring the stored results reproduces `hypotheses.csv` | yes, identical |
+
+Supported checks in the archived table: 35 of 52; in the re-scored table: 35.
+
+The scoring script is `codes/scripts/confirm/c01_hypotheses.py`, sha256 `f07727d831f03717f351d75c1c9554dd6e1c3d4e8d9dfe8f725beeb0df5d713a`, which is the hash written into the pre-registration before the evaluation data were opened.
+
+===== c_integrity end 2026-09-21T22:49:42 rc=0 seconds=1
+
+===== c_integrity start 2026-09-21T22:51:50 host=master job=32200.master
+# Integrity and reproducibility check
+
+Run 2026-09-21T22:51:50+0530 on `master` (PBS job 32200.master), phase `confirm`.
+
+| Check | Result |
+|---|---|
+| Pre-registration hash matches `PREREG_SHA256.txt` | yes |
+| Frozen choice files and scorer (42 files) unchanged | yes |
+| Panel content hash matches `CHECKSUM.txt` | yes (104550 rows x 107 columns) |
+| Git tag `prereg-v1` present | yes (4d3807ed275342c1f83f2e7009f094e838f20bad) |
+| Re-scoring the stored results reproduces `hypotheses.csv` | yes, identical |
+
+Supported checks in the archived table: 35 of 52; in the re-scored table: 35.
+
+The scoring script is `codes/scripts/confirm/c01_hypotheses.py`, sha256 `f07727d831f03717f351d75c1c9554dd6e1c3d4e8d9dfe8f725beeb0df5d713a`, which is the hash written into the pre-registration before the evaluation data were opened.
+
+===== c_integrity end 2026-09-21T22:51:51 rc=0 seconds=1
+
+===== c_integrity start 2026-09-21T22:55:30 host=master job=32201.master
+# Integrity and reproducibility check
+
+Run 2026-09-21T22:55:31+0530 on `master` (PBS job 32201.master), phase `confirm`.
+
+| Check | Result |
+|---|---|
+| Pre-registration hash matches `PREREG_SHA256.txt` | yes |
+| Frozen choice files and scorer (42 files) unchanged | yes |
+| Panel content hash matches `CHECKSUM.txt` | yes (104550 rows x 107 columns) |
+| Git tag `prereg-v1` present | yes (4d3807ed275342c1f83f2e7009f094e838f20bad) |
+| Re-scoring the stored results reproduces `hypotheses.csv` | yes, identical |
+
+Supported checks in the archived table: 35 of 52; in the re-scored table: 35.
+
+The scoring script is `codes/scripts/confirm/c01_hypotheses.py`, sha256 `f07727d831f03717f351d75c1c9554dd6e1c3d4e8d9dfe8f725beeb0df5d713a`, which is the hash written into the pre-registration before the evaluation data were opened.
+
+===== c_integrity end 2026-09-21T22:55:32 rc=0 seconds=1
+
+===== c_integrity start 2026-09-21T22:56:06 host=master job=32203.master
+# Integrity and reproducibility check
+
+Run 2026-09-21T22:56:06+0530 on `master` (PBS job 32203.master), phase `confirm`.
+
+| Check | Result |
+|---|---|
+| Pre-registration hash matches `PREREG_SHA256.txt` | yes |
+| Frozen choice files and scorer (42 files) unchanged | yes |
+| Panel content hash matches `CHECKSUM.txt` | yes (104550 rows x 107 columns) |
+| Git tag `prereg-v1` present | yes (4d3807ed275342c1f83f2e7009f094e838f20bad) |
+| Re-scoring the stored results reproduces `hypotheses.csv` | yes, identical |
+
+Supported checks in the archived table: 35 of 52; in the re-scored table: 35.
+
+The scoring script is `codes/scripts/confirm/c01_hypotheses.py`, sha256 `f07727d831f03717f351d75c1c9554dd6e1c3d4e8d9dfe8f725beeb0df5d713a`, which is the hash written into the pre-registration before the evaluation data were opened.
+
+===== c_integrity end 2026-09-21T22:56:07 rc=0 seconds=1
+
+===== c_integrity start 2026-09-21T22:56:43 host=master job=32204.master
+# Integrity and reproducibility check
+
+Run 2026-09-21T22:56:43+0530 on `master` (PBS job 32204.master), phase `confirm`.
+
+| Check | Result |
+|---|---|
+| Pre-registration hash matches `PREREG_SHA256.txt` | yes |
+| Frozen choice files and scorer (42 files) unchanged | yes |
+| Panel content hash matches `CHECKSUM.txt` | yes (104550 rows x 107 columns) |
+| Git tag `prereg-v1` present | yes (4d3807ed275342c1f83f2e7009f094e838f20bad) |
+| Re-scoring the stored results reproduces `hypotheses.csv` | yes, identical |
+
+Supported checks in the archived table: 35 of 52; in the re-scored table: 35.
+
+The scoring script is `codes/scripts/confirm/c01_hypotheses.py`, sha256 `f07727d831f03717f351d75c1c9554dd6e1c3d4e8d9dfe8f725beeb0df5d713a`, which is the hash written into the pre-registration before the evaluation data were opened.
+
+===== c_integrity end 2026-09-21T22:56:44 rc=0 seconds=1
+
+===== c_integrity start 2026-09-21T23:00:35 host=master job=32205.master
+# Integrity and reproducibility check
+
+Run 2026-09-21T23:00:35+0530 on `master` (PBS job 32205.master), phase `confirm`.
+
+| Check | Result |
+|---|---|
+| Pre-registration hash matches `PREREG_SHA256.txt` | yes |
+| Frozen choice files and scorer (42 files) unchanged | yes |
+| Panel content hash matches `CHECKSUM.txt` | yes (104550 rows x 107 columns) |
+| Git tag `prereg-v1` present | yes (4d3807ed275342c1f83f2e7009f094e838f20bad) |
+| Re-scoring the stored results reproduces `hypotheses.csv` | yes, identical |
+
+Supported checks in the archived table: 35 of 52; in the re-scored table: 35.
+
+The scoring script is `codes/scripts/confirm/c01_hypotheses.py`, sha256 `f07727d831f03717f351d75c1c9554dd6e1c3d4e8d9dfe8f725beeb0df5d713a`, which is the hash written into the pre-registration before the evaluation data were opened.
+
+===== c_integrity end 2026-09-21T23:00:36 rc=0 seconds=1
+
+===== c_integrity start 2026-09-21T23:01:14 host=master job=32206.master
+# Integrity and reproducibility check
+
+Run 2026-09-21T23:01:14+0530 on `master` (PBS job 32206.master), phase `confirm`.
+
+| Check | Result |
+|---|---|
+| Pre-registration hash matches `PREREG_SHA256.txt` | yes |
+| Frozen choice files and scorer (42 files) unchanged | yes |
+| Panel content hash matches `CHECKSUM.txt` | yes (104550 rows x 107 columns) |
+| Git tag `prereg-v1` present | yes (4d3807ed275342c1f83f2e7009f094e838f20bad) |
+| Re-scoring the stored results reproduces `hypotheses.csv` | yes, identical |
+
+Supported checks in the archived table: 35 of 52; in the re-scored table: 35.
+
+The scoring script is `codes/scripts/confirm/c01_hypotheses.py`, sha256 `f07727d831f03717f351d75c1c9554dd6e1c3d4e8d9dfe8f725beeb0df5d713a`, which is the hash written into the pre-registration before the evaluation data were opened.
+
+===== c_integrity end 2026-09-21T23:01:15 rc=0 seconds=1
+
+===== c_integrity start 2026-09-21T23:07:07 host=master job=32207.master
+# Integrity and reproducibility check
+
+Run 2026-09-21T23:07:08+0530 on `master` (PBS job 32207.master), phase `confirm`.
+
+| Check | Result |
+|---|---|
+| Pre-registration hash matches `PREREG_SHA256.txt` | yes |
+| Frozen choice files and scorer (42 files) unchanged | yes |
+| Panel content hash matches `CHECKSUM.txt` | yes (104550 rows x 107 columns) |
+| Git tag `prereg-v1` present | yes (4d3807ed275342c1f83f2e7009f094e838f20bad) |
+| Re-scoring the stored results reproduces `hypotheses.csv` | yes, identical |
+
+Supported checks in the archived table: 35 of 52; in the re-scored table: 35.
+
+The scoring script is `codes/scripts/confirm/c01_hypotheses.py`, sha256 `f07727d831f03717f351d75c1c9554dd6e1c3d4e8d9dfe8f725beeb0df5d713a`, which is the hash written into the pre-registration before the evaluation data were opened.
+
+===== c_integrity end 2026-09-21T23:07:08 rc=0 seconds=1
+
+===== c_integrity start 2026-09-24T13:55:55 host=master job=32487.master
+# Integrity and reproducibility check
+
+Run 2026-09-24T13:55:56+0530 on `master` (PBS job 32487.master), phase `confirm`.
+
+| Check | Result |
+|---|---|
+| Pre-registration hash matches `PREREG_SHA256.txt` | yes |
+| Frozen choice files and scorer (42 files) unchanged | yes (1 renamed on 24 Sep 2026, see RENAME_RECORD.md: codes/scripts/confirm/c01_hypotheses.py) |
+| Panel content hash matches `CHECKSUM.txt` | yes (104550 rows x 107 columns) |
+| Git tag `prereg-v1` present | yes (4d3807ed275342c1f83f2e7009f094e838f20bad) |
+| Re-scoring the stored results reproduces `hypotheses.csv` | NO: None |
+
+Supported checks in the archived table: 35 of 52; in the re-scored table: 9.
+
+The scoring script is `codes/scripts/confirm/c01_hypotheses.py`, sha256 `a1e2296c9bc3e6a77785f8209013bba56549de72a65a0c31b9f12a1f8312f9ee`, which is the hash written into the pre-registration before the evaluation data were opened.
+
+===== c_integrity end 2026-09-24T13:55:56 rc=0 seconds=1
+
+===== c_integrity start 2026-09-24T13:58:03 host=master job=32488.master
+# Integrity and reproducibility check
+
+Run 2026-09-24T13:58:03+0530 on `master` (PBS job 32488.master), phase `confirm`.
+
+| Check | Result |
+|---|---|
+| Pre-registration hash matches `PREREG_SHA256.txt` | yes |
+| Frozen choice files and scorer (42 files) unchanged | yes (1 renamed on 24 Sep 2026, see RENAME_RECORD.md: codes/scripts/confirm/c01_hypotheses.py) |
+| Panel content hash matches `CHECKSUM.txt` | yes (104550 rows x 107 columns) |
+| Git tag `prereg-v1` present | yes (4d3807ed275342c1f83f2e7009f094e838f20bad) |
+| Re-scoring the stored results reproduces `hypotheses.csv` | yes, identical |
+
+Supported checks in the archived table: 35 of 52; in the re-scored table: 35.
+
+The scoring script is `codes/scripts/confirm/c01_hypotheses.py`, sha256 `a1e2296c9bc3e6a77785f8209013bba56549de72a65a0c31b9f12a1f8312f9ee`, which is the hash written into the pre-registration before the evaluation data were opened.
+
+===== c_integrity end 2026-09-24T13:58:04 rc=0 seconds=1
+
+===== c_integrity start 2026-09-24T13:58:06 host=master job=32488.master
+# Integrity and reproducibility check
+
+Run 2026-09-24T13:58:06+0530 on `master` (PBS job 32488.master), phase `confirm`.
+
+| Check | Result |
+|---|---|
+| Pre-registration hash matches `PREREG_SHA256.txt` | yes |
+| Frozen choice files and scorer (42 files) unchanged | yes (1 renamed on 24 Sep 2026, see RENAME_RECORD.md: codes/scripts/confirm/c01_hypotheses.py) |
+| Panel content hash matches `CHECKSUM.txt` | yes (104550 rows x 107 columns) |
+| Git tag `prereg-v1` present | yes (4d3807ed275342c1f83f2e7009f094e838f20bad) |
+| Re-scoring the stored results reproduces `hypotheses.csv` | yes, identical |
+
+Supported checks in the archived table: 35 of 52; in the re-scored table: 35.
+
+The scoring script is `codes/scripts/confirm/c01_hypotheses.py`, sha256 `a1e2296c9bc3e6a77785f8209013bba56549de72a65a0c31b9f12a1f8312f9ee`, which is the hash written into the pre-registration before the evaluation data were opened.
+
+===== c_integrity end 2026-09-24T13:58:07 rc=0 seconds=1
+
+===== c_integrity start 2026-09-24T13:59:49 host=master job=32489.master
+# Integrity and reproducibility check
+
+Run 2026-09-24T13:59:50+0530 on `master` (PBS job 32489.master), phase `confirm`.
+
+| Check | Result |
+|---|---|
+| Pre-registration hash matches `PREREG_SHA256.txt` | yes |
+| Frozen choice files and scorer (42 files) unchanged | yes (1 renamed on 24 Sep 2026, see RENAME_RECORD.md: codes/scripts/confirm/c01_hypotheses.py) |
+| Panel content hash matches `CHECKSUM.txt` | yes (104550 rows x 107 columns) |
+| Git tag `prereg-v1` present | yes (4d3807ed275342c1f83f2e7009f094e838f20bad) |
+| Re-scoring the stored results reproduces `hypotheses.csv` | yes, identical |
+
+Supported checks in the archived table: 35 of 52; in the re-scored table: 35.
+
+The scoring script is `codes/scripts/confirm/c01_hypotheses.py`, sha256 `a1e2296c9bc3e6a77785f8209013bba56549de72a65a0c31b9f12a1f8312f9ee`. The pre-registration, written before the evaluation data were opened, records `f07727d831f0…` for this file; it differs only in the five import lines changed by the rename of 24 Sep 2026 (`codes/design/RENAME_RECORD.md`), and the re-scoring above is what shows that the change has no effect.
+
+===== c_integrity end 2026-09-24T13:59:50 rc=0 seconds=1
+
+===== c_integrity start 2026-09-24T13:59:52 host=master job=32489.master
+# Integrity and reproducibility check
+
+Run 2026-09-24T13:59:52+0530 on `master` (PBS job 32489.master), phase `confirm`.
+
+| Check | Result |
+|---|---|
+| Pre-registration hash matches `PREREG_SHA256.txt` | yes |
+| Frozen choice files and scorer (42 files) unchanged | yes (1 renamed on 24 Sep 2026, see RENAME_RECORD.md: codes/scripts/confirm/c01_hypotheses.py) |
+| Panel content hash matches `CHECKSUM.txt` | yes (104550 rows x 107 columns) |
+| Git tag `prereg-v1` present | yes (4d3807ed275342c1f83f2e7009f094e838f20bad) |
+| Re-scoring the stored results reproduces `hypotheses.csv` | yes, identical |
+
+Supported checks in the archived table: 35 of 52; in the re-scored table: 35.
+
+The scoring script is `codes/scripts/confirm/c01_hypotheses.py`, sha256 `a1e2296c9bc3e6a77785f8209013bba56549de72a65a0c31b9f12a1f8312f9ee`. The pre-registration, written before the evaluation data were opened, records `f07727d831f0…` for this file; it differs only in the five import lines changed by the rename of 24 Sep 2026 (`codes/design/RENAME_RECORD.md`), and the re-scoring above is what shows that the change has no effect.
+
+===== c_integrity end 2026-09-24T13:59:53 rc=0 seconds=1
+
+===== c_integrity start 2026-09-24T14:26:45 host=master job=32491.master
+# Integrity and reproducibility check
+
+Run 2026-09-24T14:26:46+0530 on `master` (PBS job 32491.master), phase `confirm`.
+
+| Check | Result |
+|---|---|
+| Pre-registration hash matches `PREREG_SHA256.txt` | yes |
+| Frozen choice files and scorer (42 files) unchanged | yes (1 renamed on 24 Sep 2026, see RENAME_RECORD.md: codes/scripts/confirm/c01_hypotheses.py) |
+| Panel content hash matches `CHECKSUM.txt` | yes (104550 rows x 107 columns) |
+| Git tag `prereg-v1` present | yes (4d3807ed275342c1f83f2e7009f094e838f20bad) |
+| Re-scoring the stored results reproduces `hypotheses.csv` | yes, identical |
+
+Supported checks in the archived table: 35 of 52; in the re-scored table: 35.
+
+The scoring script is `codes/scripts/confirm/c01_hypotheses.py`, sha256 `a1e2296c9bc3e6a77785f8209013bba56549de72a65a0c31b9f12a1f8312f9ee`. The pre-registration, written before the evaluation data were opened, records `f07727d831f0…` for this file; it differs only in the five import lines changed by the rename of 24 Sep 2026 (`codes/design/RENAME_RECORD.md`), and the re-scoring above is what shows that the change has no effect.
+
+===== c_integrity end 2026-09-24T14:26:46 rc=0 seconds=1
+
+===== c_integrity start 2026-10-05T09:47:02 host=master job=34077.master
+# Integrity and reproducibility check
+
+Run 2026-10-05T09:47:02+0530 on `master` (PBS job 34077.master), phase `confirm`.
+
+| Check | Result |
+|---|---|
+| Pre-registration hash matches `PREREG_SHA256.txt` | yes |
+| Frozen choice files and scorer (42 files) unchanged | yes (1 renamed on 24 Sep 2026, see RENAME_RECORD.md: codes/scripts/confirm/c01_hypotheses.py) |
+| Panel content hash matches `CHECKSUM.txt` | yes (104550 rows x 107 columns) |
+| Git tag `prereg-v1` present | yes (4d3807ed275342c1f83f2e7009f094e838f20bad) |
+| Re-scoring the stored results reproduces `hypotheses.csv` | yes, identical |
+
+Supported checks in the archived table: 35 of 52; in the re-scored table: 35.
+
+The scoring script is `codes/scripts/confirm/c01_hypotheses.py`, sha256 `a1e2296c9bc3e6a77785f8209013bba56549de72a65a0c31b9f12a1f8312f9ee`. The pre-registration, written before the evaluation data were opened, records `f07727d831f0…` for this file; it differs only in the five import lines changed by the rename of 24 Sep 2026 (`codes/design/RENAME_RECORD.md`), and the re-scoring above is what shows that the change has no effect.
+
+===== c_integrity end 2026-10-05T09:47:04 rc=0 seconds=2
+
+===== c_integrity start 2026-10-06T12:45:07 host=master job=34188.master
+# Integrity and reproducibility check
+
+Run 2026-10-06T12:45:08+0530 on `master` (PBS job 34188.master), phase `confirm`.
+
+| Check | Result |
+|---|---|
+| Pre-registration hash matches `PREREG_SHA256.txt` | yes |
+| Frozen choice files and scorer (42 files) unchanged | yes (1 renamed on 24 Sep 2026, see RENAME_RECORD.md: codes/scripts/confirm/c01_hypotheses.py) |
+| Panel content hash matches `CHECKSUM.txt` | yes (104550 rows x 107 columns) |
+| Git tag `prereg-v1` present | yes (4d3807ed275342c1f83f2e7009f094e838f20bad) |
+| Re-scoring the stored results reproduces `hypotheses.csv` | yes, identical |
+
+Supported checks in the archived table: 35 of 52; in the re-scored table: 35.
+
+The scoring script is `codes/scripts/confirm/c01_hypotheses.py`, sha256 `a1e2296c9bc3e6a77785f8209013bba56549de72a65a0c31b9f12a1f8312f9ee`. The pre-registration, written before the evaluation data were opened, records `f07727d831f0…` for this file; it differs only in the five import lines changed by the rename of 24 Sep 2026 (`codes/design/RENAME_RECORD.md`), and the re-scoring above is what shows that the change has no effect.
+
+===== c_integrity end 2026-10-06T12:45:09 rc=0 seconds=1

@@ -1,0 +1,114 @@
+
+===== report start 2026-09-17T17:41:07 host=master job=31772.master
+# RefusedH100 run summary
+
+Written 2026-09-17T17:41:07 on master.
+
+| stage | queue | state | seconds | host | PBS job | log |
+|---|---|---|---|---|---|---|
+| env_check | cpu | done | 2.7 | master | 31748.master | logs/stages/env_check.log |
+| leakage_test | cpu | done | 11.8 | master | 31748.master | logs/stages/leakage_test.log |
+| o2_samples | cpu | done | 23.4 | master | 31748.master | logs/stages/o2_samples.log |
+| o2_patchtst | gpu | done | 365.7 | master | 31770.master | logs/stages/o2_patchtst.log |
+| o2_tft | gpu | done | 896.9 | master | 31770.master | logs/stages/o2_tft.log |
+| o2_bilstm | gpu | done | 132.1 | master | 31770.master | logs/stages/o2_bilstm.log |
+| o2_chronos | gpu | done | 60.5 | master | 31770.master | logs/stages/o2_chronos.log |
+| o3_main | gpu | done | 1547.3 | master | 31772.master | logs/stages/o3_main.log |
+| o3_ablation | gpu | done | 625.2 | master | 31772.master | logs/stages/o3_ablation.log |
+| o3_ablation2 | gpu | done | 229.0 | master | 31772.master | logs/stages/o3_ablation2.log |
+| o2_lgbm | cpu | done | 1599.6 | master | 31772.master | logs/stages/o2_lgbm.log |
+| o2_evaluate | cpu | done | 1062.6 | master | 31772.master | logs/stages/o2_evaluate.log |
+| o4 | cpu | done | 464.1 | master | 31772.master | logs/stages/o4.log |
+| o5_rules | cpu | done | 458.3 | master | 31772.master | logs/stages/o5_rules.log |
+| o5_ppo | gpu | done | 1727.2 | master | 31772.master | logs/stages/o5_ppo.log |
+| o3_evaluate | cpu | failed | 83.0 | master | 31772.master | logs/stages/o3_evaluate.log |
+| data_paper_numbers | cpu | done | 0.0 | master | 31752.master | logs/stages/data_paper_numbers.log |
+| data_paper_figures | cpu | done | 10.0 | master | 31752.master | logs/stages/data_paper_figures.log |
+| build_b01_psp | cpu | done | 35.4 | master | 31752.master | logs/stages/build_b01_psp.log |
+| build_b02_dsm | cpu | done | 186.5 | master | 31772.master | logs/stages/build_b02_dsm.log |
+| build_b03_npp | cpu | done | 62.3 | master | 31772.master | logs/stages/build_b03_npp.log |
+| build_b04_re | cpu | done | 38.6 | master | 31772.master | logs/stages/build_b04_re.log |
+| build_b05_co2 | cpu | done | 4.3 | master | 31772.master | logs/stages/build_b05_co2.log |
+| build_b06_imd | cpu | done | 4.5 | master | 31772.master | logs/stages/build_b06_imd.log |
+| build_b07_panel | cpu | done | 4.2 | master | 31772.master | logs/stages/build_b07_panel.log |
+| build_b08_validation | cpu | done | 8.6 | master | 31772.master | logs/stages/build_b08_validation.log |
+| build_verify | cpu | done | 0.0 | master | 31772.master | logs/stages/build_verify.log |
+| prereg_fill | cpu | failed | 0.0 | master | 31772.master | logs/stages/prereg_fill.log |
+| report | cpu | todo |  |  |  |  |
+===== report end 2026-09-17T17:41:07 rc=0 seconds=0
+
+===== report start 2026-09-17T18:31:15 host=master job=31783.master
+# RefusedH100 run summary
+
+Written 2026-09-17T18:31:15 on master.
+
+| stage | queue | state | seconds | host | PBS job | log |
+|---|---|---|---|---|---|---|
+| env_check | cpu | done | 2.7 | master | 31748.master | logs/stages/env_check.log |
+| leakage_test | cpu | done | 11.8 | master | 31748.master | logs/stages/leakage_test.log |
+| o2_samples | cpu | done | 23.4 | master | 31748.master | logs/stages/o2_samples.log |
+| o2_patchtst | gpu | done | 365.7 | master | 31770.master | logs/stages/o2_patchtst.log |
+| o2_tft | gpu | done | 896.9 | master | 31770.master | logs/stages/o2_tft.log |
+| o2_bilstm | gpu | done | 132.1 | master | 31770.master | logs/stages/o2_bilstm.log |
+| o2_chronos | gpu | done | 60.5 | master | 31770.master | logs/stages/o2_chronos.log |
+| o3_main | gpu | done | 1547.3 | master | 31772.master | logs/stages/o3_main.log |
+| o3_ablation | gpu | done | 625.2 | master | 31772.master | logs/stages/o3_ablation.log |
+| o3_ablation2 | gpu | done | 229.0 | master | 31772.master | logs/stages/o3_ablation2.log |
+| o2_lgbm | cpu | done | 1599.6 | master | 31772.master | logs/stages/o2_lgbm.log |
+| o2_evaluate | cpu | done | 1062.6 | master | 31772.master | logs/stages/o2_evaluate.log |
+| o4 | cpu | done | 464.1 | master | 31772.master | logs/stages/o4.log |
+| o5_rules | cpu | done | 458.3 | master | 31772.master | logs/stages/o5_rules.log |
+| o5_ppo | gpu | done | 1727.2 | master | 31772.master | logs/stages/o5_ppo.log |
+| o3_evaluate | cpu | done | 354.5 | master | 31783.master | logs/stages/o3_evaluate.log |
+| data_paper_numbers | cpu | done | 0.0 | master | 31752.master | logs/stages/data_paper_numbers.log |
+| data_paper_figures | cpu | done | 10.0 | master | 31752.master | logs/stages/data_paper_figures.log |
+| build_b01_psp | cpu | done | 35.4 | master | 31752.master | logs/stages/build_b01_psp.log |
+| build_b02_dsm | cpu | done | 186.5 | master | 31772.master | logs/stages/build_b02_dsm.log |
+| build_b03_npp | cpu | done | 62.3 | master | 31772.master | logs/stages/build_b03_npp.log |
+| build_b04_re | cpu | done | 38.6 | master | 31772.master | logs/stages/build_b04_re.log |
+| build_b05_co2 | cpu | done | 4.3 | master | 31772.master | logs/stages/build_b05_co2.log |
+| build_b06_imd | cpu | done | 4.5 | master | 31772.master | logs/stages/build_b06_imd.log |
+| build_b07_panel | cpu | done | 4.2 | master | 31772.master | logs/stages/build_b07_panel.log |
+| build_b08_validation | cpu | done | 8.6 | master | 31772.master | logs/stages/build_b08_validation.log |
+| build_verify | cpu | done | 0.0 | master | 31772.master | logs/stages/build_verify.log |
+| prereg_fill | cpu | done | 0.0 | master | 31783.master | logs/stages/prereg_fill.log |
+| report | cpu | todo |  |  |  |  |
+===== report end 2026-09-17T18:31:15 rc=0 seconds=0
+
+===== report start 2026-09-17T18:37:27 host=master job=31785.master
+# RefusedH100 run summary
+
+Written 2026-09-17T18:37:27 on master.
+
+| stage | queue | state | seconds | host | PBS job | log |
+|---|---|---|---|---|---|---|
+| env_check | cpu | done | 2.1 | master | 31785.master | logs/stages/env_check.log |
+| leakage_test | cpu | done | 13.7 | master | 31785.master | logs/stages/leakage_test.log |
+| o2_samples | cpu | done | 19.1 | master | 31785.master | logs/stages/o2_samples.log |
+| o2_patchtst | gpu | done | 365.7 | master | 31770.master | logs/stages/o2_patchtst.log |
+| o2_tft | gpu | done | 896.9 | master | 31770.master | logs/stages/o2_tft.log |
+| o2_bilstm | gpu | done | 132.1 | master | 31770.master | logs/stages/o2_bilstm.log |
+| o2_chronos | gpu | done | 60.5 | master | 31770.master | logs/stages/o2_chronos.log |
+| o3_main | gpu | done | 1547.3 | master | 31772.master | logs/stages/o3_main.log |
+| o3_ablation | gpu | done | 625.2 | master | 31772.master | logs/stages/o3_ablation.log |
+| o3_ablation2 | gpu | done | 229.0 | master | 31772.master | logs/stages/o3_ablation2.log |
+| o2_lgbm | cpu | done | 1599.6 | master | 31772.master | logs/stages/o2_lgbm.log |
+| o2_evaluate | cpu | done | 1062.6 | master | 31772.master | logs/stages/o2_evaluate.log |
+| o4 | cpu | done | 464.1 | master | 31772.master | logs/stages/o4.log |
+| o5_rules | cpu | done | 458.3 | master | 31772.master | logs/stages/o5_rules.log |
+| o5_ppo | gpu | done | 1727.2 | master | 31772.master | logs/stages/o5_ppo.log |
+| o3_evaluate | cpu | done | 354.5 | master | 31783.master | logs/stages/o3_evaluate.log |
+| data_paper_numbers | cpu | done | 0.0 | master | 31785.master | logs/stages/data_paper_numbers.log |
+| data_paper_figures | cpu | done | 9.6 | master | 31785.master | logs/stages/data_paper_figures.log |
+| build_b01_psp | cpu | done | 36.4 | master | 31785.master | logs/stages/build_b01_psp.log |
+| build_b02_dsm | cpu | done | 186.5 | master | 31772.master | logs/stages/build_b02_dsm.log |
+| build_b03_npp | cpu | done | 62.3 | master | 31772.master | logs/stages/build_b03_npp.log |
+| build_b04_re | cpu | done | 38.6 | master | 31772.master | logs/stages/build_b04_re.log |
+| build_b05_co2 | cpu | done | 4.3 | master | 31772.master | logs/stages/build_b05_co2.log |
+| build_b06_imd | cpu | done | 4.5 | master | 31772.master | logs/stages/build_b06_imd.log |
+| build_b07_panel | cpu | done | 7.0 | master | 31785.master | logs/stages/build_b07_panel.log |
+| build_b08_validation | cpu | done | 7.3 | master | 31785.master | logs/stages/build_b08_validation.log |
+| build_verify | cpu | done | 0.0 | master | 31785.master | logs/stages/build_verify.log |
+| prereg_fill | cpu | done | 0.0 | master | 31783.master | logs/stages/prereg_fill.log |
+| report | cpu | done | 0.0 | master | 31783.master | logs/stages/report.log |
+===== report end 2026-09-17T18:37:27 rc=0 seconds=0

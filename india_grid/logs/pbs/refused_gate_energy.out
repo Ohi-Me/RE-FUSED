@@ -1,0 +1,48 @@
+gate energy 2026-10-06T12:59:28+05:30 on master, job 34189.master, GPU MIG-c7e12075-054a-5bc9-89e9-896eab5f7528
+T1 done
+T2 done
+T3 done
+T4 done
+T5 done
+tid                  target  H        design                         unit         error  diff_vs_fixed           lo           hi  n_days  n_series  n_rows
+ T1              energy met  1          base     GWh per year (all areas)  98346.161655   22910.569653 19275.339874 27109.397619     516        34   17542
+ T1              energy met  1         fixed     GWh per year (all areas)  75435.592002       0.000000     0.000000     0.000000     516        34   17542
+ T1              energy met  1        regime     GWh per year (all areas)  75420.175604     -15.416397  -215.854282   194.370526     516        34   17542
+ T1              energy met  1      instance     GWh per year (all areas)  75722.513069     286.921067  -167.123702   667.721427     516        34   17542
+ T1              energy met  1           otg     GWh per year (all areas)  75624.303405     188.711403  -199.853320   562.953628     516        34   17542
+ T1              energy met  1   rule_regime     GWh per year (all areas)  75435.592002       0.000000     0.000000     0.000000     516        34   17542
+ T1              energy met  1 rule_instance     GWh per year (all areas)  75435.592002       0.000000     0.000000     0.000000     516        34   17542
+ T1              energy met  1      rule_otg     GWh per year (all areas)  75435.592002       0.000000     0.000000     0.000000     516        34   17542
+ T2           actual drawal  1          base     GWh per year (all areas)  86318.491589   13374.097644 10273.385540 17002.608299     516        34   17543
+ T2           actual drawal  1         fixed     GWh per year (all areas)  72944.393945       0.000000     0.000000     0.000000     516        34   17543
+ T2           actual drawal  1        regime     GWh per year (all areas)  72943.740774      -0.653171  -133.247855   123.289020     516        34   17543
+ T2           actual drawal  1      instance     GWh per year (all areas)  72983.236671      38.842727  -221.199850   268.805299     516        34   17543
+ T2           actual drawal  1           otg     GWh per year (all areas)  73568.052724     623.658779   259.515179  1035.099516     516        34   17543
+ T2           actual drawal  1   rule_regime     GWh per year (all areas)  72944.393945       0.000000     0.000000     0.000000     516        34   17543
+ T2           actual drawal  1 rule_instance     GWh per year (all areas)  72944.393945       0.000000     0.000000     0.000000     516        34   17543
+ T2           actual drawal  1      rule_otg     GWh per year (all areas)  72944.393945       0.000000     0.000000     0.000000     516        34   17543
+ T3 conventional generation  1          base     GWh per year (all areas) 106128.235568   14600.517305 10741.289384 18865.097406     516        27   13916
+ T3 conventional generation  1         fixed     GWh per year (all areas)  91527.718263       0.000000     0.000000     0.000000     516        27   13916
+ T3 conventional generation  1        regime     GWh per year (all areas)  91238.481314    -289.236950  -487.632210  -103.096381     516        27   13916
+ T3 conventional generation  1      instance     GWh per year (all areas)  91707.534575     179.816311  -232.073934   614.094638     516        27   13916
+ T3 conventional generation  1           otg     GWh per year (all areas)  91471.682399     -56.035865  -546.162028   415.547681     516        27   13916
+ T3 conventional generation  1   rule_regime     GWh per year (all areas)  91527.718263       0.000000     0.000000     0.000000     516        27   13916
+ T3 conventional generation  1 rule_instance     GWh per year (all areas)  91527.718263       0.000000     0.000000     0.000000     516        27   13916
+ T3 conventional generation  1      rule_otg     GWh per year (all areas)  91527.718263       0.000000     0.000000     0.000000     516        27   13916
+ T4           RE generation  1          base     GWh per year (all areas)  54691.357908    5425.216970  1391.639792  9577.506633     231        16    3696
+ T4           RE generation  1         fixed     GWh per year (all areas)  49266.140938       0.000000     0.000000     0.000000     231        16    3696
+ T4           RE generation  1        regime     GWh per year (all areas)  49731.256047     465.115109   308.144095   601.124536     231        16    3696
+ T4           RE generation  1      instance     GWh per year (all areas)  49608.454525     342.313587   -87.054255   748.938673     231        16    3696
+ T4           RE generation  1           otg     GWh per year (all areas)  49160.960012    -105.180926 -1343.710321  1070.354331     231        16    3696
+ T4           RE generation  1   rule_regime     GWh per year (all areas)  49266.140938       0.000000     0.000000     0.000000     231        16    3696
+ T4           RE generation  1 rule_instance     GWh per year (all areas)  49266.140938       0.000000     0.000000     0.000000     231        16    3696
+ T4           RE generation  1      rule_otg     GWh per year (all areas)  49266.140938       0.000000     0.000000     0.000000     231        16    3696
+ T5               DAM price  1          base Rs/MWh (mean absolute error)   1007.567610    -477.447390  -692.350390  -260.067275     516        13    6708
+ T5               DAM price  1         fixed Rs/MWh (mean absolute error)   1485.014999       0.000000     0.000000     0.000000     516        13    6708
+ T5               DAM price  1        regime Rs/MWh (mean absolute error)   1503.425298      18.410299     7.933204    29.357985     516        13    6708
+ T5               DAM price  1      instance Rs/MWh (mean absolute error)   1542.408044      57.393045    26.591159    88.717319     516        13    6708
+ T5               DAM price  1           otg Rs/MWh (mean absolute error)    956.415480    -528.599519  -693.248936  -346.755262     516        13    6708
+ T5               DAM price  1   rule_regime Rs/MWh (mean absolute error)   1503.425298      18.410299     7.933204    29.357985     516        13    6708
+ T5               DAM price  1 rule_instance Rs/MWh (mean absolute error)   1485.014999       0.000000     0.000000     0.000000     516        13    6708
+ T5               DAM price  1      rule_otg Rs/MWh (mean absolute error)    956.415480    -528.599519  -693.248936  -346.755262     516        13    6708
+gate energy finished rc=0 2026-10-06T12:59:30+05:30

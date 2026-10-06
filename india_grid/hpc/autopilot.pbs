@@ -1,0 +1,60 @@
+#!/bin/bash
+#PBS -N refused_autopilot
+#PBS -q workq
+#PBS -l select=1:ncpus=8:ngpus=1:mem=32gb
+#PBS -l walltime=04:00:00
+#PBS -j oe
+#PBS -o /Data3/<hpc-user>/RE-FUSED/logs/autopilot/autopilot.out
+# Everything that still has to run after the confirmatory evaluation, in one job on one H100 MIG slice:
+#   1. paper numbers and figures, regenerated from the confirmatory results
+#   2. the full tables for the papers and the supplement
+#   3. descriptive breakdowns by State, season and horizon
+#   4. the integrity check: frozen hashes, panel checksum, and re-scoring the hypotheses from the stored results
+#   5. the macro lint, so no manuscript can quote a number no experiment produced
+# Nothing here retrains a model or reads new evaluation data; the confirmatory results stay as they were scored.
+cd /Data3/<hpc-user>/RE-FUSED
+mkdir -p logs/autopilot results/audit
+export PYTHONNOUSERSITE=1
+source /apps/compilers/anaconda3/etc/profile.d/conda.sh
+conda activate refused_h100
+
+echo "autopilot start $(date -Iseconds) on $(hostname), job $PBS_JOBID"
+MIG=$(python run_all.py pick-mig) || { echo "no free MIG instance"; exit 3; }
+export CUDA_VISIBLE_DEVICES="$MIG"
+echo "CUDA_VISIBLE_DEVICES=$CUDA_VISIBLE_DEVICES"
+nvidia-smi -L
+
+set +e
+python -u run_all.py stage --force c_paper
+python -u run_all.py stage --keep-going --force c_supp c_strata c_integrity
+# the leakage test again, so the overnight record shows it passing against the code as it stands now
+python -u run_all.py stage --force c_leakage
+REFUSED_PHASE=confirm python -u codes/scripts/paper/check_macros.py
+
+SUM=logs/autopilot/SUMMARY.md
+{
+  echo "# Autopilot run $(date -Iseconds)"
+  echo
+  echo "Job \`$PBS_JOBID\` on \`$(hostname)\`, GPU \`$CUDA_VISIBLE_DEVICES\`."
+  echo
+  echo "## Stage records"
+  echo
+  for s in c_paper c_supp c_strata c_integrity c_leakage; do
+    f="logs/done/$s.json"
+    if [ -f "$f" ]; then echo "* \`$s\`: $(python -c "import json,sys;d=json.load(open('$f'));print(d.get('state'),d.get('seconds'),'s,',d.get('finished',''))")"
+    else echo "* \`$s\`: no record"; fi
+  done
+  echo
+  echo "## Files written"
+  echo
+  echo '```'
+  ls -l results/paper/confirm/tables 2>/dev/null | tail -n +2
+  ls -l results/audit results/audit/strata 2>/dev/null
+  echo '```'
+  echo
+  echo "## Integrity"
+  echo
+  sed -n '1,40p' results/audit/INTEGRITY.md 2>/dev/null
+} > "$SUM"
+echo "wrote $SUM"
+echo "autopilot done $(date -Iseconds)"

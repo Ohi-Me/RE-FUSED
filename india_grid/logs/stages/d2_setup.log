@@ -1,0 +1,41 @@
+
+===== d2_setup start 2026-09-17T21:15:39 host=master job=31792.master
+Collecting xgboost<4,>=2.1
+  Downloading xgboost-3.2.0-py3-none-manylinux_2_28_x86_64.whl.metadata (2.1 kB)
+Requirement already satisfied: numpy in /Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages (from xgboost<4,>=2.1) (2.2.6)
+Requirement already satisfied: nvidia-nccl-cu12 in /Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages (from xgboost<4,>=2.1) (2.21.5)
+Requirement already satisfied: scipy in /Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages (from xgboost<4,>=2.1) (1.15.3)
+Downloading xgboost-3.2.0-py3-none-manylinux_2_28_x86_64.whl (131.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 131.7/131.7 MB 36.3 MB/s  0:00:03
+Installing collected packages: xgboost
+Successfully installed xgboost-3.2.0
+ 
+
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+Fetching 4 files:  25%|██▌       | 1/4 [00:00<00:00,  3.24it/s]
+Fetching 4 files: 100%|██████████| 4/4 [00:12<00:00,  3.10s/it]
+Fetching 4 files: 100%|██████████| 4/4 [00:12<00:00,  3.10s/it]
+amazon/chronos-2 {'path': '/Data3/<hpc-user>/RefusedH100/data/hf_cache/hub/models--amazon--chronos-2/snapshots/29ec3766d36d6f73f0696f85560a422f50e8498c', 'bytes': 477940831}
+
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]
+Fetching 4 files:  25%|██▌       | 1/4 [00:00<00:00,  3.62it/s]
+Fetching 4 files: 100%|██████████| 4/4 [00:16<00:00,  4.03s/it]
+Fetching 4 files: 100%|██████████| 4/4 [00:16<00:00,  4.03s/it]
+amazon/chronos-bolt-base {'path': '/Data3/<hpc-user>/RefusedH100/data/hf_cache/hub/models--amazon--chronos-bolt-base/snapshots/5d9f166d69f47aef3401367a7b842e78fe97b121', 'bytes': 821214877}
+{
+ "started": "2026-09-17T21:15:39",
+ "xgboost": "3.2.0",
+ "amazon/chronos-2": {
+  "path": "/Data3/<hpc-user>/RefusedH100/data/hf_cache/hub/models--amazon--chronos-2/snapshots/29ec3766d36d6f73f0696f85560a422f50e8498c",
+  "bytes": 477940831
+ },
+ "amazon/chronos-bolt-base": {
+  "path": "/Data3/<hpc-user>/RefusedH100/data/hf_cache/hub/models--amazon--chronos-bolt-base/snapshots/5d9f166d69f47aef3401367a7b842e78fe97b121",
+  "bytes": 821214877
+ },
+ "numpy": "2.2.6",
+ "torch": "2.5.1+cu121",
+ "finished": "2026-09-17T21:16:17"
+}
+===== d2_setup end 2026-09-17T21:16:17 rc=0 seconds=38

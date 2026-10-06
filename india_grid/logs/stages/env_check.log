@@ -1,0 +1,84 @@
+
+===== env_check start 2026-09-17T14:50:20 host=master job=31748.master
+{
+ "time": "2026-09-17T14:50:21",
+ "host": "master",
+ "platform": "Linux-6.8.0-110-generic-x86_64-with-glibc2.35",
+ "python": "3.10.21",
+ "cpu_count": 128,
+ "pbs_job": "31748.master",
+ "ncpus": "16",
+ "packages": {
+  "numpy": "2.2.6",
+  "pandas": "2.3.3",
+  "pyarrow": "25.0.1",
+  "scipy": "1.15.3",
+  "scikit-learn": "1.7.2",
+  "statsmodels": "0.14.6",
+  "lightgbm": "4.7.0",
+  "torch": "2.5.1+cu121",
+  "pytorch-lightning": "2.5.6",
+  "neuralforecast": "3.2.2",
+  "chronos-forecasting": "2.3.2",
+  "transformers": "5.3.0",
+  "stable_baselines3": "2.7.1",
+  "gymnasium": "1.2.3",
+  "matplotlib": "3.10.8",
+  "openpyxl": "3.1.5",
+  "xlrd": "2.0.2",
+  "pymupdf": "1.28.2"
+ },
+ "cuda_available": true,
+ "cuda_build": "12.1",
+ "panel_shape": [
+  104550,
+  107
+ ],
+ "panel_sha256": "c6ef9c8ebaba692cc0952025f87ea311e09b54ffae9e77c1c04a1b0ffaec4bbd",
+ "panel_sha256_reference": "c6ef9c8ebaba692cc0952025f87ea311e09b54ffae9e77c1c04a1b0ffaec4bbd",
+ "panel_checksum_ok": true
+}
+ENV_CHECK_OK
+===== env_check end 2026-09-17T14:50:23 rc=0 seconds=3
+
+===== env_check start 2026-09-17T18:35:50 host=master job=31785.master
+{
+ "time": "2026-09-17T18:35:50",
+ "host": "master",
+ "platform": "Linux-6.8.0-110-generic-x86_64-with-glibc2.35",
+ "python": "3.10.21",
+ "cpu_count": 128,
+ "pbs_job": "31785.master",
+ "ncpus": "16",
+ "packages": {
+  "numpy": "2.2.6",
+  "pandas": "2.3.3",
+  "pyarrow": "25.0.1",
+  "scipy": "1.15.3",
+  "scikit-learn": "1.7.2",
+  "statsmodels": "0.14.6",
+  "lightgbm": "4.7.0",
+  "torch": "2.5.1+cu121",
+  "pytorch-lightning": "2.5.6",
+  "neuralforecast": "3.2.2",
+  "chronos-forecasting": "2.3.2",
+  "transformers": "5.3.0",
+  "stable_baselines3": "2.7.1",
+  "gymnasium": "1.2.3",
+  "matplotlib": "3.10.8",
+  "openpyxl": "3.1.5",
+  "xlrd": "2.0.2",
+  "pymupdf": "1.28.2"
+ },
+ "cuda_available": false,
+ "cuda_build": "12.1",
+ "panel_shape": [
+  104550,
+  107
+ ],
+ "panel_sha256": "c6ef9c8ebaba692cc0952025f87ea311e09b54ffae9e77c1c04a1b0ffaec4bbd",
+ "panel_sha256_reference": "c6ef9c8ebaba692cc0952025f87ea311e09b54ffae9e77c1c04a1b0ffaec4bbd",
+ "panel_checksum_ok": true
+}
+ENV_CHECK_OK
+===== env_check end 2026-09-17T18:35:52 rc=0 seconds=2

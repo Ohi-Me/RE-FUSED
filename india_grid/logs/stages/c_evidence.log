@@ -1,0 +1,30 @@
+
+===== c_evidence start 2026-09-18T10:09:35 host=master job=31822.master
+Traceback (most recent call last):
+  File "/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/d2_10_evidence.py", line 141, in <module>
+    main()
+  File "/Data3/<hpc-user>/RefusedH100/codes/scripts/dev2/d2_10_evidence.py", line 56, in main
+    s1 = json.load(open(os.path.join(R1, "o2", "eval", "selection.json")))
+FileNotFoundError: [Errno 2] No such file or directory: '/Data3/<hpc-user>/RefusedH100/results/confirm/o2/eval/selection.json'
+===== c_evidence end 2026-09-18T10:09:35 rc=1 seconds=0
+
+===== c_evidence start 2026-09-18T16:11:51 host=master job=31823.master
+# N1–N12 evidence (development data only)
+
+Round 1 = first H100 run; round 2 = protocol `codes/design/06_dev2_protocol.md`. All numbers are copied from the result files named in `NOVELTY_MAP.md`. Claims are tested later on the reserved period.
+
+| N | What is tested | Round 1 (dev test) | Round 2 (dev test) | Note |
+|---|---|---|---|---|
+| N1 | Official-data State-day panel with provenance | c6ef9c8ebaba692c… | rebuild identical | – |
+| N2 | Publication-latency cost (LightGBM, MASE) | T1 +16.2% (p 3.3e-107); T2 +15.1% (p 7.5e-115); T3 +30.0% (p 3.2e-115); T4 +15.8% (p 2.4e-18); T5 +137.7% (p 1.7e-44) | same data; not re-run | – |
+| N3 | Forecast accuracy: selected / final forecaster, dev MASE | T1 lgbm 0.927; T2 lgbm 0.953; T3 lgbm 0.861; T4 chronos 1.166; T5 bilstm 2.598 | T1 ens_stack 0.892, vs round 1 -0.035 (p 3.8e-21); T2 ens_stack 0.922, vs round 1 -0.032 (p 9.8e-20); T3 ens_top 0.859, vs round 1 -0.003 (p 9.1e-04); T4 chronos2 1.107, vs round 1 -0.057 (p 4.9e-10); T5 ens_top 0.741, vs round 1 -1.858 (p 9.1e-97) | – |
+| N4 | LA-MCAG instance gates vs matched fusion (scaled MAE diff) | T1 +0.0045 (p 0.992); T2 +0.0011 (p 0.741); T3 -0.0119 (p 3.1e-06); T4 -0.0127 (p 0.024); T5 -0.1347 (p 1.2e-11) | T1 +0.0030 (p 0.939); T2 +0.0026 (p 0.877); T3 -0.0169 (p 2.1e-06); T4 +0.0088 (p 0.879); T5 -0.2951 (p 5.2e-28) | – |
+| N5 | Online time-adaptive gate vs instance (scaled MAE diff) | T1 -0.0027 (p 0.057); T2 +0.0045 (p 0.990); T3 -0.0021 (p 0.115); T4 +0.0414 (p 0.992); T5 -0.6438 (p 3.2e-25) | not re-run | – |
+| N6 | Real vs null context (pinball diff) | T1 -0.0021 (p 0.095); T2 -0.0051 (p 3.9e-05); T5 -0.0053 (p 0.325) | not re-run | – |
+| N7 | Source loss: extra error of gated minus fusion (negative = gated holds up better) | T1 -0.0037 [-0.0062, -0.0012]; T2 +0.0035 [+0.0013, +0.0060] | T1 -0.0027 [-0.0055, -0.0002]; T2 +0.0019 [-0.0005, +0.0045] | – |
+| N8 | Carbon block (GCAL): all vs no carbon (scaled MAE diff) | T1 +0.0037 (p 0.888); T2 +0.0053 (p 1.000); T3 -0.0009 (p 0.329) | not re-run | – |
+| N9 | Price of adaptivity (PART) | sign agreement 29/45 | gain collected: rule +5.9742, always -0.0148, never 0; clear-cell agreement 16/22 | – |
+| N10 | Context-aware deviation assessment | A vs M0 -0.0086 (p 1.000); placebo p 0.020, 0.020 | A vs M0 +0.0108 (p 0.229); placebo p 0.020 | – |
+| N11 | Risk-aware scheduling (crore per day, negative = better) | A4-A2 mean +0.00 (p 0.500), tail +0.00; A2-H_pub mean -2.45 (p 1.4e-21), tail -7.51 | A5-A2 mean -0.00 (p 0.485), tail +1.32; A4s-A2 mean +0.02 (p 0.999), tail +0.03; A5-H_pub mean -2.74 (p 1.3e-30), tail -7.06 | – |
+| N12 | Chain: better forecaster inside scheduling (dev J) | not run | A2: ens_stack J 27.15, lgbm J 27.64; A5: ens_stack J 27.86, lgbm J 28.08; P: ens_stack J 28.82, lgbm J 29.27 | reserved-period run pending |
+===== c_evidence end 2026-09-18T16:11:51 rc=0 seconds=0

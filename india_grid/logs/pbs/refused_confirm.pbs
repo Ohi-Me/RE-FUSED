@@ -1,0 +1,22 @@
+#!/bin/bash
+#PBS -N refused_confirm
+#PBS -q workq
+#PBS -l select=1:ncpus=16:ngpus=1:mem=32gb
+#PBS -l walltime=48:00:00
+#PBS -j oe
+#PBS -o /Data3/<hpc-user>/RefusedH100/logs/pbs/refused_confirm.out
+
+cd /Data3/<hpc-user>/RefusedH100
+export PYTHONNOUSERSITE=1
+export REFUSED8_THREADS=16
+source /apps/compilers/anaconda3/etc/profile.d/conda.sh
+conda activate refused_h100
+echo "job $PBS_JOBID on $(hostname) at $(date -Iseconds); python $(which python)"
+# MIG setup (required for H100): a fixed UUID from hpc/cluster.env, else the first free instance
+MIG=""
+for try in $(seq 1 60); do [ -n "$MIG" ] && break; MIG=$(python run_all.py pick-mig 2>/dev/null) && break; MIG=""; echo "no free MIG instance yet (try $try), waiting 60 s"; sleep 60; done
+[ -z "$MIG" ] && { echo "no free MIG instance after 60 min"; exit 3; }
+export CUDA_VISIBLE_DEVICES="$MIG"
+echo "CUDA_VISIBLE_DEVICES=$CUDA_VISIBLE_DEVICES"
+nvidia-smi -L
+python -u run_all.py stage --keep-going c_freeze c_leakage c_o2_samples c_o2_lgbm c_o2_patchtst c_o2_tft c_o2_bilstm c_o2_chronos c_d2_xgb c_d2_nf c_d2_chronos c_o3_main c_o3_ablation c_o3_ablation2 c_d2_o3_sd c_o2_evaluate c_o3_evaluate c_d2_ensemble c_d2_o2_eval c_d2_o3_eval c_o4 c_o5_rules c_o5_ppo c_d2_o4 c_d2_o5 c_d2_ppo c_evidence c_hypotheses

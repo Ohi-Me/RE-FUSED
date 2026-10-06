@@ -1,0 +1,31 @@
+# RE-FUSED Python 3.10 environment (versions of the validated laptop environment).
+# torch==2.5.1+cu121 is installed first by hpc/setup_env.sh and held by hpc/constraints.txt. neuralforecast==3.2.2 is
+# installed afterwards with --no-deps: it declares torch>=2.9.1, but the validated laptop environment runs it on 2.5.1.
+numpy==2.2.6
+pandas==2.3.3
+pyarrow==25.0.1
+scipy==1.15.3
+scikit-learn==1.7.2
+statsmodels==0.14.6
+lightgbm==4.7.0
+pytorch-lightning==2.5.6
+torchmetrics==1.9.0
+utilsforecast==0.2.16
+coreforecast==0.0.18
+chronos-forecasting==2.3.2
+transformers==5.3.0
+accelerate==1.15.0
+huggingface_hub==1.7.2
+safetensors==0.7.0
+einops==0.8.2
+stable_baselines3==2.7.1
+gymnasium==1.2.3
+matplotlib==3.10.8
+openpyxl==3.1.5
+xlrd==2.0.2
+pymupdf==1.28.2
+requests==2.32.5
+fsspec==2025.12.0
+optuna==5.0.0
+ray[tune]==2.58.0
+tornado==6.5.8

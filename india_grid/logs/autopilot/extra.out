@@ -1,0 +1,201 @@
+extra start 2026-10-05T09:46:53+05:30 on master, job 34077.master, GPU MIG-110b5c2d-162d-5ada-814c-2aef6f9812f1
+GPU 0: NVIDIA H100 NVL (UUID: GPU-28bcc0ad-8e90-efc9-645e-b546abe3fefc)
+  MIG 3g.47gb     Device  0: (UUID: MIG-4d38d5cf-c802-5308-80b8-251f3cec7480)
+  MIG 3g.47gb     Device  1: (UUID: MIG-9b919b48-2562-5791-8778-080ddb153351)
+GPU 1: NVIDIA H100 NVL (UUID: GPU-6f505f9b-9b65-a96d-bd8c-8c8671f72cda)
+  MIG 3g.47gb     Device  0: (UUID: MIG-2f219700-5dc6-59eb-81ef-2bb9414d3ec0)
+  MIG 3g.47gb     Device  1: (UUID: MIG-569925cc-5048-5da0-9de5-70d720535aba)
+GPU 2: NVIDIA H100 PCIe (UUID: GPU-63af0eea-3926-506e-5128-9a7f8af88ea6)
+  MIG 3g.40gb     Device  0: (UUID: MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e)
+  MIG 3g.40gb     Device  1: (UUID: MIG-110b5c2d-162d-5ada-814c-2aef6f9812f1)
+GPU 3: NVIDIA H100 PCIe (UUID: GPU-a2ee61d0-205e-2913-d3f8-10c7e81b6304)
+  MIG 3g.40gb     Device  0: (UUID: MIG-5eef67d0-7e58-5016-8973-1bf2618f6d54)
+  MIG 3g.40gb     Device  1: (UUID: MIG-98a11fbb-7fcd-5fc9-b30f-f199445f5ddb)
+GPU 4: NVIDIA H100 NVL (UUID: GPU-f950c0e9-ae75-9970-ac82-b1a4bf5d4299)
+  MIG 1g.24gb     Device  0: (UUID: MIG-004fd09c-9a79-5488-bc35-54fb8de861f1)
+  MIG 1g.24gb     Device  1: (UUID: MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e)
+  MIG 1g.24gb     Device  2: (UUID: MIG-c7e12075-054a-5bc9-89e9-896eab5f7528)
+  MIG 1g.24gb     Device  3: (UUID: MIG-120f9b9b-0801-5682-9fd3-e1539b9823c6)
+GPU 5: NVIDIA H100 NVL (UUID: GPU-e1df975a-3c1b-ed1f-8803-08f5c22da8ae)
+GPU 6: NVIDIA H100 NVL (UUID: GPU-494e58c5-04f6-cd47-44b4-50803c2dfacb)
+GPU 7: NVIDIA H100 NVL (UUID: GPU-20df829c-b962-445a-1248-1e4e638cbc38)
+[2026-10-05T09:46:55] GPU: NVIDIA H100 PCIe MIG 3g.40gb (MIG-110b5c2d-162d-5ada-814c-2aef6f9812f1), torch 2.5.1+cu121
+[2026-10-05T09:46:55] start c_supp [cpu] codes/scripts/paper/make_supplement.py
+wrote t_members
+wrote t_members_prob
+wrote t_latency
+wrote t_o2tests
+wrote t_seeds
+wrote t_ensemble
+wrote t_gating
+wrote t_variants
+wrote t_sourceloss
+wrote t_part
+wrote t_assessment
+wrote t_arms
+wrote t_armtests
+wrote t_tuning
+wrote t_hyp_all
+wrote t_hyp_F1
+wrote t_hyp_F2
+wrote t_hyp_F3
+wrote t_hyp_F4
+wrote t_hyp_F5
+20 tables written to /Data3/<hpc-user>/RE-FUSED/results/paper/confirm/tables
+[2026-10-05T09:46:56] end c_supp rc=0 0s
+[2026-10-05T09:46:56] ALL_REQUESTED_STAGES_DONE c_supp
+[2026-10-05T09:46:58] GPU: NVIDIA H100 PCIe MIG 3g.40gb (MIG-110b5c2d-162d-5ada-814c-2aef6f9812f1), torch 2.5.1+cu121
+[2026-10-05T09:46:58] start x_paper_outputs [cpu] codes/scripts/extra/x03_paper_outputs.py
+113 macros written to results/paper/extra
+  \HypHThirteenInstanceCells = 15
+  \HypHThirteenInstanceRight = 14
+  \HypHThirteenOtgCells = 15
+  \HypHThirteenOtgRight = 10
+  \HypHThirteenRegimeCells = 15
+  \HypHThirteenRegimeRight = 4
+  \HypSupportedForecastingPaper = 27
+  \HypTotalForecastingPaper = 38
+  \XBestLevel = 60
+  \XBestLevelMean = 15.45
+  \XCalibrationLevel = 55
+  \XComputeForecastingHours = 4.8
+  \XConstantLevelMean = 15.57
+  \XCostOverInMedian = 0.12
+  \XCostOverOutMedian = 0.34
+  \XDesigns = 6
+  \XGainDay = 1.34
+  \XGainDayPct = 8.7
+  \XGainRatio = 0.00
+  \XGainRatioPct = 0.0
+  \XGainState = 0.04
+  \XGainStatePct = 0.3
+  \XGainStress = 0.00
+  \XGainStressPct = 0.0
+  \XGainUncertainty = 0.00
+  \XGainUncertaintyPct = 0.0
+  \XGridBestBeta = 0
+  \XGridBestJ = 27.15
+  \XGridBestRho = 0.5
+  \XGridFrozenJ = 27.15
+  \XGridGap = 0.00
+  \XGridGapPct = 0.0
+  \XGridJMax = 27.99
+  \XGridJMin = 27.15
+  \XGridRange = 0.84
+  \XInsideBand = 64
+  \XInsideBandVal = 68
+  \XKappaMedian = 0.54
+  \XLevelMax = 70
+  \XLevelMin = 45
+  \XMaxSignalGainPct = 0.7
+  \XPerStateJ = 27.41
+  \XPerStateLevels = 50, 55, 60, 65
+  \XPerStateMean = 15.50
+  \XPerStateVsATwo = -0.30
+  \XPerStateVsATwoHi = -0.07
+  \XPerStateVsATwoLo = -0.49
+  \XPerStateVsConstant = -0.07
+  \XPerStateVsConstantHi = -0.01
+  \XPerStateVsConstantLo = -0.14
+  \XProjectionBinding = 18
+  \XRZeroCvar = 39.57
+  \XRZeroJ = 27.60
+  \XRZeroMean = 15.63
+  \XRZeroVsATwo = -0.17
+  \XRZeroVsATwoHi = +0.01
+  \XRZeroVsATwoLo = -0.32
+  \XRZeroVsP = -0.29
+  \XRZeroVsPHi = -0.11
+  \XRZeroVsPLo = -0.52
+  \XRankAFiveBeatsATwo = 0
+  \XRankAFiveMeanBeatsATwo = 13
+  \XRankATwoBeatsP = 16
+  \XRankN = 16
+  \XRankRhoCaution = -0.53
+  \XRatioAtLeastOne = 100.0
+  \XRatioAtLeastOneVal = 99.9
+  \XRatioMedian = 1.12
+  \XRatioMedianVal = 1.10
+  \XRatioPFive = 1.06
+  \XRatioPFiveVal = 1.04
+  \XRatioPNinetyFive = 1.23
+  \XRatioPNinetyFiveVal = 1.25
+  \XStateDays = 17,543
+  \XStateDaysVal = 12,070
+  \XTauMedian = 0.58
+  \XTauMedianVal = 0.56
+  \XTauPFive = 0.44
+  \XTauPFiveVal = 0.39
+  \XTauPNinetyFive = 0.69
+  \XTauPNinetyFiveVal = 0.69
+  \XTauPSeventyFive = 0.63
+  \XTauPSeventyFiveVal = 0.61
+  \XTauPTwentyFive = 0.52
+  \XTauPTwentyFiveVal = 0.49
+  \XTauRhoRatio = 0.87
+  \XTauRhoRatioVal = 0.83
+  \XTauRhoStress = 0.05
+  \XTauRhoStressVal = 0.15
+  \XTauRhoUncertainty = 0.06
+  \XTauRhoUncertaintyVal = -0.18
+  \XTimeAFiveMs = 0.07
+  \XTimeAFiveS = 2.0
+  \XTimeATwoMs = 0.19
+  \XTimePpoMin = 28
+  \XTimeRZeroMs = 0.16
+  \XVofBestMae = 5.70
+  \XVofBestModel = the stacked combination
+  \XVofBestRegret = 15.84
+  \XVofDays = 516
+  \XVofFinalMae = 5.68
+  \XVofFinalRegret = 15.80
+  \XVofN = 16
+  \XVofRange = 2.23
+  \XVofReproduced = yes
+  \XVofRho = 0.97
+  \XVofSlope = 2.63
+  \XVofSlopeHi = 2.89
+  \XVofSlopeLo = 2.32
+  \XVofSlopeTenth = 0.26
+  \XVofWorstMae = 6.56
+  \XVofWorstModel = BiTCN
+  \XVofWorstRegret = 18.07
+[2026-10-05T09:47:00] end x_paper_outputs rc=0 2s
+[2026-10-05T09:47:00] ALL_REQUESTED_STAGES_DONE x_paper_outputs
+[2026-10-05T09:47:02] GPU: NVIDIA H100 PCIe MIG 3g.40gb (MIG-110b5c2d-162d-5ada-814c-2aef6f9812f1), torch 2.5.1+cu121
+[2026-10-05T09:47:02] start c_integrity [cpu] codes/scripts/audit/a02_integrity.py
+# Integrity and reproducibility check
+
+Run 2026-10-05T09:47:02+0530 on `master` (PBS job 34077.master), phase `confirm`.
+
+| Check | Result |
+|---|---|
+| Pre-registration hash matches `PREREG_SHA256.txt` | yes |
+| Frozen choice files and scorer (42 files) unchanged | yes (1 renamed on 24 Sep 2026, see RENAME_RECORD.md: codes/scripts/confirm/c01_hypotheses.py) |
+| Panel content hash matches `CHECKSUM.txt` | yes (104550 rows x 107 columns) |
+| Git tag `prereg-v1` present | yes (4d3807ed275342c1f83f2e7009f094e838f20bad) |
+| Re-scoring the stored results reproduces `hypotheses.csv` | yes, identical |
+
+Supported checks in the archived table: 35 of 52; in the re-scored table: 35.
+
+The scoring script is `codes/scripts/confirm/c01_hypotheses.py`, sha256 `a1e2296c9bc3e6a77785f8209013bba56549de72a65a0c31b9f12a1f8312f9ee`. The pre-registration, written before the evaluation data were opened, records `f07727d831f0…` for this file; it differs only in the five import lines changed by the rename of 24 Sep 2026 (`codes/design/RENAME_RECORD.md`), and the re-scoring above is what shows that the change has no effect.
+
+[2026-10-05T09:47:04] end c_integrity rc=0 2s
+[2026-10-05T09:47:04] ALL_REQUESTED_STAGES_DONE c_integrity
+integrity after the extra analyses:
+# Integrity and reproducibility check
+
+Run 2026-10-05T09:47:02+0530 on `master` (PBS job 34077.master), phase `confirm`.
+
+| Check | Result |
+|---|---|
+| Pre-registration hash matches `PREREG_SHA256.txt` | yes |
+| Frozen choice files and scorer (42 files) unchanged | yes (1 renamed on 24 Sep 2026, see RENAME_RECORD.md: codes/scripts/confirm/c01_hypotheses.py) |
+| Panel content hash matches `CHECKSUM.txt` | yes (104550 rows x 107 columns) |
+| Git tag `prereg-v1` present | yes (4d3807ed275342c1f83f2e7009f094e838f20bad) |
+| Re-scoring the stored results reproduces `hypotheses.csv` | yes, identical |
+
+Supported checks in the archived table: 35 of 52; in the re-scored table: 35.
+
+The scoring script is `codes/scripts/confirm/c01_hypotheses.py`, sha256 `a1e2296c9bc3e6a77785f8209013bba56549de72a65a0c31b9f12a1f8312f9ee`. The pre-registration, written before the evaluation data were opened, records `f07727d831f0…` for this file; it differs only in the five import lines changed by the rename of 24 Sep 2026 (`codes/design/RENAME_RECORD.md`), and the re-scoring above is what shows that the change has no effect.
+extra done 2026-10-05T09:47:04+05:30

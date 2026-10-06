@@ -1,0 +1,33 @@
+
+===== c_o2_bilstm start 2026-09-18T11:02:53 host=master job=31823.master
+  bilstm T1 seed 0: epochs 8, es pinball 0.0938 [20s]
+  bilstm T1 seed 1: epochs 8, es pinball 0.0937 [29s]
+  bilstm T1 seed 2: epochs 7, es pinball 0.0926 [36s]
+  bilstm T1 seed 3: epochs 7, es pinball 0.0943 [42s]
+  bilstm T1 seed 4: epochs 7, es pinball 0.0938 [49s]
+bilstm T1 done 50s
+  bilstm T2 seed 0: epochs 8, es pinball 0.0998 [16s]
+  bilstm T2 seed 1: epochs 8, es pinball 0.1005 [24s]
+  bilstm T2 seed 2: epochs 8, es pinball 0.1009 [32s]
+  bilstm T2 seed 3: epochs 8, es pinball 0.0989 [39s]
+  bilstm T2 seed 4: epochs 9, es pinball 0.1005 [48s]
+bilstm T2 done 49s
+  bilstm T3 seed 0: epochs 8, es pinball 0.0967 [11s]
+  bilstm T3 seed 1: epochs 8, es pinball 0.0971 [16s]
+  bilstm T3 seed 2: epochs 8, es pinball 0.1002 [23s]
+  bilstm T3 seed 3: epochs 8, es pinball 0.0967 [29s]
+  bilstm T3 seed 4: epochs 9, es pinball 0.0967 [37s]
+bilstm T3 done 37s
+  bilstm T4 seed 0: epochs 8, es pinball 0.1199 [7s]
+  bilstm T4 seed 1: epochs 8, es pinball 0.1239 [11s]
+  bilstm T4 seed 2: epochs 11, es pinball 0.1206 [19s]
+  bilstm T4 seed 3: epochs 9, es pinball 0.1223 [25s]
+  bilstm T4 seed 4: epochs 9, es pinball 0.1198 [29s]
+bilstm T4 done 29s
+  bilstm T5 seed 0: epochs 8, es pinball 0.2119 [6s]
+  bilstm T5 seed 1: epochs 7, es pinball 0.2360 [8s]
+  bilstm T5 seed 2: epochs 7, es pinball 0.2269 [10s]
+  bilstm T5 seed 3: epochs 7, es pinball 0.2624 [13s]
+  bilstm T5 seed 4: epochs 7, es pinball 0.2294 [15s]
+bilstm T5 done 15s
+===== c_o2_bilstm end 2026-09-18T11:05:56 rc=0 seconds=183

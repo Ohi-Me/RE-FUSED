@@ -1,0 +1,12 @@
+{
+ "stage": "d2_chronos",
+ "state": "done",
+ "returncode": 0,
+ "queue": "gpu",
+ "seconds": 6640.2,
+ "finished": "2026-09-17T23:44:08",
+ "host": "master",
+ "pbs_job": "31793.master",
+ "cuda_visible_devices": "MIG-4d38d5cf-c802-5308-80b8-251f3cec7480",
+ "log": "logs/stages/d2_chronos.log"
+}

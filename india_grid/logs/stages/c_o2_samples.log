@@ -1,0 +1,26 @@
+
+===== c_o2_samples start 2026-09-18T10:09:35 host=master job=31822.master
+Traceback (most recent call last):
+  File "/Data3/<hpc-user>/RefusedH100/codes/scripts/o2/o2_01_samples.py", line 46, in <module>
+    main()
+  File "/Data3/<hpc-user>/RefusedH100/codes/scripts/o2/o2_01_samples.py", line 25, in main
+    P = O.load_panel()
+  File "/Data3/<hpc-user>/RefusedH100/codes/scripts/o2/../../refused8/o2data.py", line 63, in load_panel
+    guard.require_confirmatory()
+  File "/Data3/<hpc-user>/RefusedH100/codes/scripts/o2/../../refused8/guard.py", line 47, in require_confirmatory
+    raise BlindingError("confirmatory data are blinded: " + "; ".join(reasons))
+refused8.guard.BlindingError: confirmatory data are blinded: git tag prereg-v1 missing
+===== c_o2_samples end 2026-09-18T10:09:35 rc=1 seconds=0
+
+===== c_o2_samples start 2026-09-18T10:10:27 host=master job=31823.master
+T1 standard (312732, 124) 34 series
+T1 instant (312834, 124) 34 series
+T2 standard (312732, 124) 34 series
+T2 instant (312834, 124) 34 series
+T3 standard (242313, 124) 27 series
+T3 instant (242475, 124) 27 series
+T4 standard (111501, 124) 16 series
+T4 instant (111501, 124) 16 series
+T5 standard (108849, 73) 13 series
+T5 instant (109395, 73) 13 series
+===== c_o2_samples end 2026-09-18T10:10:48 rc=0 seconds=21

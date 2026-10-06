@@ -1,0 +1,12 @@
+{
+ "stage": "leakage_test",
+ "state": "done",
+ "returncode": 0,
+ "queue": "cpu",
+ "seconds": 34.0,
+ "finished": "2026-09-17T14:24:01",
+ "host": "DESKTOP-2G1I1UN",
+ "pbs_job": null,
+ "cuda_visible_devices": null,
+ "log": "logs\\stages\\leakage_test.log"
+}

@@ -1,0 +1,13 @@
+zenodo check 2026-09-21T15:20:15+05:30 on master, job 32122.master, GPU MIG-2f219700-5dc6-59eb-81ef-2bb9414d3ec0
+checking release/REFUSED_Zenodo_v1.0.zip: 261 files
+archive md5 05afbbed72cc11f46e23de75c7e9d6c7 sha256 d73c573c8aca1e453125592597e26516b07ccf3724b61955eaad8f9bb8512e39
+# Check of the RE-FUSED Zenodo record
+
+| Check | Result | Detail |
+|---|---|---|
+| Files match MANIFEST.sha256 | pass | all files match |
+| Panel content hash | pass | 104550 x 107, content hash matches |
+| Pre-registration and frozen files | pass | pre-registration hash matches; 42 of 42 frozen files unchanged |
+| Re-scoring from the stored results | pass | 35 of 52 supported; identical to the record |
+
+zenodo check finished rc=0 2026-09-21T15:20:17+05:30

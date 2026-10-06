@@ -1,0 +1,12 @@
+zenodo check 2026-10-06T14:22:40+05:30 on master, job 34195.master; release/REFUSED_Zenodo_v1.1.zip: 276 files
+archive md5 92f9474de3a471e14424a97c081bbd79 sha256 a69e031ed69ab21c9d3c60583caec75ef200b492238e31f84f973e2afee5644d
+# Check of the RE-FUSED Zenodo record
+
+| Check | Result | Detail |
+|---|---|---|
+| Files match MANIFEST.sha256 | pass | all files match |
+| Panel content hash | pass | 104550 x 107, content hash matches |
+| Pre-registration and frozen files | pass | pre-registration hash matches; 41 of 42 frozen files unchanged, 1 changed only by the renaming recorded in RENAME_RECORD.md |
+| Re-scoring from the stored results | pass | 35 of 52 supported; identical to the record |
+
+zenodo check finished rc=0 2026-10-06T14:22:42+05:30

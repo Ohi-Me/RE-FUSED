@@ -1,0 +1,29 @@
+
+===== o5_ppo start 2026-09-17T17:05:48 host=master job=31772.master
+/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/stable_baselines3/common/on_policy_algorithm.py:150: UserWarning: You are trying to run PPO on the GPU, but it is primarily intended to run on the CPU when not using a CNN policy (you are using ActorCriticPolicy which should be a MlpPolicy). See https://github.com/DLR-RM/stable-baselines3/issues/1245 for more info. You can pass `device='cpu'` or `export CUDA_VISIBLE_DEVICES=` to force using the CPU.Note: The model will train, but the GPU utilization will be poor and the training might take longer than on CPU.
+  warnings.warn(
+PPO seed 0: validation J=23.355, dev_test J=24.763
+/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/stable_baselines3/common/on_policy_algorithm.py:150: UserWarning: You are trying to run PPO on the GPU, but it is primarily intended to run on the CPU when not using a CNN policy (you are using ActorCriticPolicy which should be a MlpPolicy). See https://github.com/DLR-RM/stable-baselines3/issues/1245 for more info. You can pass `device='cpu'` or `export CUDA_VISIBLE_DEVICES=` to force using the CPU.Note: The model will train, but the GPU utilization will be poor and the training might take longer than on CPU.
+  warnings.warn(
+PPO seed 1: validation J=23.248, dev_test J=24.687
+/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/stable_baselines3/common/on_policy_algorithm.py:150: UserWarning: You are trying to run PPO on the GPU, but it is primarily intended to run on the CPU when not using a CNN policy (you are using ActorCriticPolicy which should be a MlpPolicy). See https://github.com/DLR-RM/stable-baselines3/issues/1245 for more info. You can pass `device='cpu'` or `export CUDA_VISIBLE_DEVICES=` to force using the CPU.Note: The model will train, but the GPU utilization will be poor and the training might take longer than on CPU.
+  warnings.warn(
+PPO seed 2: validation J=23.229, dev_test J=24.723
+/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/stable_baselines3/common/on_policy_algorithm.py:150: UserWarning: You are trying to run PPO on the GPU, but it is primarily intended to run on the CPU when not using a CNN policy (you are using ActorCriticPolicy which should be a MlpPolicy). See https://github.com/DLR-RM/stable-baselines3/issues/1245 for more info. You can pass `device='cpu'` or `export CUDA_VISIBLE_DEVICES=` to force using the CPU.Note: The model will train, but the GPU utilization will be poor and the training might take longer than on CPU.
+  warnings.warn(
+PPO seed 3: validation J=23.394, dev_test J=24.788
+/Data3/<hpc-user>/.conda/envs/refused_h100/lib/python3.10/site-packages/stable_baselines3/common/on_policy_algorithm.py:150: UserWarning: You are trying to run PPO on the GPU, but it is primarily intended to run on the CPU when not using a CNN policy (you are using ActorCriticPolicy which should be a MlpPolicy). See https://github.com/DLR-RM/stable-baselines3/issues/1245 for more info. You can pass `device='cpu'` or `export CUDA_VISIBLE_DEVICES=` to force using the CPU.Note: The model will train, but the GPU utilization will be poor and the training might take longer than on CPU.
+  warnings.warn(
+PPO seed 4: validation J=23.660, dev_test J=25.055
+   seed       split  system_mean_crore  system_cvar90_crore        J  seconds  selected_on_validation
+0     0  validation            13.8559              32.8546  23.3553    342.2                   False
+1     0    dev_test            15.4986              34.0269  24.7627    342.2                   False
+2     1  validation            13.8327              32.6635  23.2481    343.0                   False
+3     1    dev_test            15.4478              33.9261  24.6870    343.0                   False
+4     2  validation            14.1422              32.3152  23.2287    343.5                    True
+5     2    dev_test            15.7363              33.7095  24.7229    343.5                    True
+6     3  validation            13.8573              32.9311  23.3942    342.1                   False
+7     3    dev_test            15.5409              34.0353  24.7881    342.1                   False
+8     4  validation            13.8596              33.4609  23.6602    340.3                   False
+9     4    dev_test            15.5351              34.5739  25.0545    340.3                   False
+===== o5_ppo end 2026-09-17T17:34:35 rc=0 seconds=1727

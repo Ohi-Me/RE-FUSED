@@ -1,0 +1,13 @@
+
+===== c_d2_o2_eval start 2026-09-18T14:37:17 host=master job=31823.master
+T1 rows per member: {'lgbm': 89856, 'bilstm': 89652, 'tft': 89652, 'patchtst': 89652, 'chronos': 89754, 'xgb': 89856, 'nhits': 89652, 'tide': 89652, 'bitcn': 89652, 'nbeatsx': 89652, 'chronos2': 89754, 'chronos_base': 89754, 'mcag_instance_sd': 89652, 'ens_top': 89652, 'ens_stack': 89652, 'ens_online': 89652, 'seasonal_naive': 89646} -> common rows: 89442
+T1 final: ens_stack window 365
+T2 rows per member: {'lgbm': 89859, 'bilstm': 89655, 'tft': 89655, 'patchtst': 89655, 'chronos': 89757, 'xgb': 89859, 'nhits': 89655, 'tide': 89655, 'bitcn': 89655, 'nbeatsx': 89655, 'chronos2': 89757, 'chronos_base': 89757, 'mcag_instance': 89655, 'ens_top': 89655, 'ens_stack': 89655, 'ens_online': 89655, 'seasonal_naive': 89652} -> common rows: 89448
+T2 final: ens_stack window 365
+T3 rows per member: {'lgbm': 71454, 'bilstm': 71292, 'tft': 71292, 'patchtst': 71292, 'chronos': 71373, 'xgb': 71454, 'nhits': 71292, 'tide': 71292, 'bitcn': 71292, 'nbeatsx': 71292, 'chronos2': 71373, 'chronos_base': 71373, 'mcag_instance': 71292, 'ens_top': 71292, 'ens_stack': 71292, 'ens_online': 71292, 'seasonal_naive': 71385} -> common rows: 71223
+T3 final: ens_top window 365
+T4 rows per member: {'lgbm': 28524, 'bilstm': 28476, 'tft': 28476, 'patchtst': 28476, 'chronos': 28476, 'xgb': 28524, 'nhits': 28476, 'tide': 28476, 'bitcn': 28476, 'nbeatsx': 28476, 'chronos2': 28476, 'chronos_base': 28476, 'mcag_instance': 28476, 'ens_top': 28476, 'ens_stack': 28476, 'ens_online': 28476, 'seasonal_naive': 28476} -> common rows: 28428
+T4 final: chronos2 window 365
+T5 rows per member: {'lgbm': 34437, 'bilstm': 34359, 'tft': 34359, 'patchtst': 34359, 'chronos': 34398, 'xgb': 34437, 'nhits': 34359, 'tide': 34359, 'bitcn': 34359, 'nbeatsx': 34359, 'chronos2': 34398, 'chronos_base': 34398, 'mcag_instance_sd': 34359, 'ens_top': 34359, 'ens_stack': 34359, 'ens_online': 34359, 'seasonal_naive': 34437} -> common rows: 34359
+T5 final: ens_top window 365
+===== c_d2_o2_eval end 2026-09-18T14:41:28 rc=0 seconds=251

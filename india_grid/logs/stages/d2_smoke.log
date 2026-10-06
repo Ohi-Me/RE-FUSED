@@ -1,0 +1,72 @@
+
+===== d2_smoke start 2026-09-17T21:16:17 host=master job=31792.master
+=== smoke: d2_01_xgb.py T5 --smoke
+  T5 xgb seed 0 done [20s]
+T5 xgb done, depth {1: 6, 2: 6, 3: 6} 20.1s
+=== smoke end rc=0 21s
+=== smoke: d2_02_nf_models.py nhits,tide,bitcn,nbeatsx T5 --smoke
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+You are using a CUDA device ('NVIDIA H100 NVL MIG 3g.47gb') that has Tensor Cores. To properly utilize them, you should set `torch.set_float32_matmul_precision('medium' | 'high')` which will trade-off precision for performance. For more details, read https://pytorch.org/docs/stable/generated/torch.set_float32_matmul_precision.html#torch.set_float32_matmul_precision
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=20` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nhits T5 window 28: val pinball 0.5726 [8s]
+  nhits T5 seed 0: 28431 rows [8s]
+nhits T5 done, window 28 7.9s
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=20` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  tide T5 window 28: val pinball 0.6312 [3s]
+  tide T5 seed 0: 28431 rows [3s]
+tide T5 done, window 28 3.0s
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=20` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  bitcn T5 window 28: val pinball 0.6511 [3s]
+  bitcn T5 seed 0: 28431 rows [3s]
+bitcn T5 done, window 28 3.6s
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+`Trainer.fit` stopped: `max_steps=20` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-4d38d5cf-c802-5308-80b8-251f3cec7480]
+  nbeatsx T5 window 28: val pinball 0.5367 [3s]
+  nbeatsx T5 seed 0: 28431 rows [3s]
+nbeatsx T5 done, window 28 3.1s
+=== smoke end rc=0 19s
+=== smoke: d2_03_chronos.py chronos2,chronos_base T5 --smoke
+
+Loading weights:   0%|          | 0/170 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 170/170 [00:00<00:00, 2283.78it/s]
+  T5 chronos2 cross_learning=False: val MASE 1.9371 [4s]
+  T5 chronos2 cross_learning=True: val MASE 1.9534 [5s]
+T5 chronos2 done, cross_learning False 4.7s
+
+Loading weights:   0%|          | 0/269 [00:00<?, ?it/s]
+Loading weights:  55%|█████▍    | 147/269 [00:00<00:00, 1463.51it/s]
+Loading weights: 100%|██████████| 269/269 [00:00<00:00, 1364.63it/s]
+T5 chronos_base 195 rows 3s
+=== smoke end rc=0 12s
+=== smoke: o3_01_lamcag.py T5 mcag_instance_sd 1
+  T5 mcag_instance_sd seed 0: epochs 1 es 0.2627 [10s]
+T5 mcag_instance_sd done 11s
+=== smoke end rc=0 13s
+SMOKE_OK
+===== d2_smoke end 2026-09-17T21:17:22 rc=0 seconds=65

@@ -1,0 +1,18 @@
+#!/bin/bash
+#PBS -N refused_b10_prices
+#PBS -q workq
+#PBS -l select=1:ncpus=8:ngpus=1:mem=32gb
+#PBS -l walltime=01:00:00
+#PBS -j oe
+# Build step 10: hourly all-India day-ahead and real-time market clearing prices from the Grid-India DSM files.
+# Submit from the project folder:  qsub -o logs/pbs/refused_b10_prices.out hpc/build_prices.pbs
+cd "$PBS_O_WORKDIR"
+export PYTHONNOUSERSITE=1 OMP_NUM_THREADS=8
+source hpc/cluster.env 2>/dev/null
+source "${HPC_CONDA_SH:-/apps/compilers/anaconda3/etc/profile.d/conda.sh}"
+conda activate "${HPC_CONDA_ENV:-refused_h100}"
+MIG=$(python run_all.py pick-mig) || { echo "no free MIG instance"; exit 3; }
+export CUDA_VISIBLE_DEVICES="$MIG"
+echo "b10 $(date -Iseconds) on $(hostname), job $PBS_JOBID"
+python -u codes/scripts/build/b10_hourly_prices.py
+echo "b10 finished rc=$? $(date -Iseconds)"

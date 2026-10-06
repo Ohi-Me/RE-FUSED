@@ -1,0 +1,28 @@
+
+===== build_b01_psp start 2026-09-17T14:50:30 host=master job=31752.master
+files 3448
+0 2017-18/01.04.17_NLDC_PSP.pdf few_states:0
+500 2018-19/22.08.18_NLDC_PSP.pdf ok
+1000 2019-20/01.03.20_NLDC_PSP.pdf ok
+1500 2021-22/30.07.21_NLDC_PSP.pdf ok
+2000 2022-23/17.12.22_NLDC_PSP_256.pdf ok
+2500 2024-25/30.04.24_NLDC_PSP.xls ok
+3000 2025-26/14.08.25_NLDC_PSP_248.xls ok
+date collisions resolved by cover letter: 2 | duplicate uploads dropped: 0
+states rows 111654 dates 3284 2017-05-08 00:00:00 2026-09-13 00:00:00 entities 34 unmapped labels []
+{'ok': 3382, 'few_states': 60, 'not_psp_or_no_date': 6}
+===== build_b01_psp end 2026-09-17T14:51:06 rc=0 seconds=35
+
+===== build_b01_psp start 2026-09-17T18:36:34 host=master job=31785.master
+files 3448
+0 2017-18/01.04.17_NLDC_PSP.pdf few_states:0
+500 2018-19/22.08.18_NLDC_PSP.pdf ok
+1000 2019-20/01.03.20_NLDC_PSP.pdf ok
+1500 2021-22/30.07.21_NLDC_PSP.pdf ok
+2000 2022-23/17.12.22_NLDC_PSP_256.pdf ok
+2500 2024-25/30.04.24_NLDC_PSP.xls ok
+3000 2025-26/14.08.25_NLDC_PSP_248.xls ok
+date collisions resolved by cover letter: 2 | duplicate uploads dropped: 0
+states rows 111654 dates 3284 2017-05-08 00:00:00 2026-09-13 00:00:00 entities 34 unmapped labels []
+{'ok': 3382, 'few_states': 60, 'not_psp_or_no_date': 6}
+===== build_b01_psp end 2026-09-17T18:37:10 rc=0 seconds=36

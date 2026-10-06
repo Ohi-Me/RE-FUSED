@@ -1,0 +1,28 @@
+#!/bin/bash
+#PBS -N refused_extra
+#PBS -q workq
+#PBS -l select=1:ncpus=8:ngpus=1:mem=32gb
+#PBS -l walltime=04:00:00
+#PBS -j oe
+#PBS -o /Data3/<hpc-user>/RE-FUSED/logs/autopilot/extra.out
+# Additional analyses after the confirmatory run, not pre-registered: the settlement quantile and the value of
+# forecast accuracy. They read the stored results only and write to results/extra/. The integrity check runs again
+# afterwards, so the log shows that the confirmatory results were not touched.
+cd /Data3/<hpc-user>/RE-FUSED
+mkdir -p logs/autopilot results/extra
+export PYTHONNOUSERSITE=1
+source /apps/compilers/anaconda3/etc/profile.d/conda.sh
+conda activate refused_h100
+MIG=$(python run_all.py pick-mig) || { echo "no free MIG instance"; exit 3; }
+export CUDA_VISIBLE_DEVICES="$MIG"
+echo "extra start $(date -Iseconds) on $(hostname), job $PBS_JOBID, GPU $CUDA_VISIBLE_DEVICES"
+nvidia-smi -L
+
+set +e
+# which stages to run: qsub -v STAGES="x_paper_outputs" hpc/extra.pbs (default: all three)
+STAGES=${STAGES:-"x_settlement_quantile x_value_of_forecast x_paper_outputs"}
+for s in $STAGES; do python -u run_all.py stage --force "$s"; done
+python -u run_all.py stage --force c_integrity
+echo "integrity after the extra analyses:"
+sed -n '1,20p' results/audit/INTEGRITY.md
+echo "extra done $(date -Iseconds)"

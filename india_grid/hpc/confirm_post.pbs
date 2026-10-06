@@ -1,0 +1,17 @@
+#!/bin/bash
+#PBS -N refused_confirm_post
+#PBS -q workq
+#PBS -l select=1:ncpus=8:ngpus=1:mem=32gb
+#PBS -l walltime=04:00:00
+#PBS -j oe
+#PBS -o /Data3/<hpc-user>/RE-FUSED/logs/pbs/refused_confirm_post.out
+# After the confirmatory job: leakage test with the corrected dates, a check of the paper script on development
+# results, then the confirmatory numbers and figures for the papers.
+cd /Data3/<hpc-user>/RE-FUSED
+export PYTHONNOUSERSITE=1
+source /apps/compilers/anaconda3/etc/profile.d/conda.sh
+conda activate refused_h100
+MIG=$(python run_all.py pick-mig) || { echo "no free MIG instance"; exit 3; }
+export CUDA_VISIBLE_DEVICES="$MIG"
+python -u run_all.py stage --force c_leakage
+python -u run_all.py stage --keep-going paper_dev_check c_paper
