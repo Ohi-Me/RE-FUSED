@@ -1,0 +1,29 @@
+\begin{table}[!htbp]\centering\scriptsize
+\caption{Confirmatory results for all pre-registered tests (estimates in the units of each criterion; Holm adjustment within family). The interval of H8b is narrow by construction: both reserve schedules are static quantile tables, so the daily MW difference is nearly constant; its reliability condition is checked separately. Block-bootstrap $p$ values are bounded below by $1/2001\approx5.0\times10^{-4}$ (2\,000 resamples).}\label{tab:verdicts}
+\fittable{\begin{tabular}{@{}l l r l l l l@{}}\toprule
+Test & Family & Estimate & 95\% CI & $p$ & $p_{\mathrm{Holm}}$ & Verdict \\\midrule
+H2-NYISO-2026 & mechanism & 0.042 & [0.024, 0.062] & $5.0\times10^{-4}$ & $0.002$ & supported \\
+H2-OPSD-2019 & mechanism & 0.015 & [0.006, 0.023] & $0.001$ & $0.004$ & supported \\
+H2-UCI-2014 & mechanism & 0.032 & [-0.011, 0.100] & $0.139$ & $0.139$ & \textbf{not supported} \\
+H2-meta & mechanism & 0.027 & [0.006, 0.049] & $0.007$ & $0.014$ & supported \\
+H3a-sign & selection & 0.750 & -- & $2.2\times10^{-5}$ & $8.4\times10^{-5}$ & supported \\
+H3b-regret-vs-never & selection & -0.0013 & -- & $1.1\times10^{-8}$ & $5.7\times10^{-8}$ & supported \\
+H3c-regret-vs-nested & selection & -0.0007 & -- & $2.1\times10^{-5}$ & $8.4\times10^{-5}$ & supported \\
+H6a-sign & time & 0.753 & -- & $1.6\times10^{-6}$ & $3.3\times10^{-6}$ & supported \\
+H6a-regret-vs-always & time & -0.0028 & -- & $3.4\times10^{-8}$ & $1.0\times10^{-7}$ & supported \\
+H6a-regret-vs-never & time & 0.0000 & -- & $0.373$ & $0.373$ & \textbf{not supported} \\
+H6b-updating-free & time & 0.824 & -- & -- & -- & supported \\
+H7a-part-vs-nested & selection & -0.0020 & -- & $0.005$ & $0.009$ & supported \\
+H7b-part-vs-fixed-series & selection & -0.0013 & -- & $0.019$ & $0.019$ & supported \\
+H5-strength & baseline & 0.733 & -- & $0.012$ & $0.012$ & supported \\
+H4a-zonehour-vs-q-global & probabilistic & 2.393 & [1.635, 3.346] & $5.0\times10^{-4}$ & $0.001$ & supported \\
+H4a-zonehour-vs-q-zone & probabilistic & 0.294 & [0.164, 0.461] & $5.0\times10^{-4}$ & $0.001$ & supported \\
+H4b-instance-undercovers & probabilistic & 0.969 & -- & -- & -- & supported \\
+H8a-deviation-energy & energy & 854 & [626, 1,053] & $5.0\times10^{-4}$ & $0.001$ & supported \\
+H8b-reserve-mw & energy & 234 & [234, 234] & $5.0\times10^{-4}$ & $0.001$ & supported \\
+E8c-imbalance-cost & energy-estimation & -32 & [-94, 3] & -- & -- & estimate \\
+H1-partition-oracle-pred & synthetic & 0.928 & -- & -- & -- & supported \\
+H1-partition-part-contiguous-G & synthetic & 0.787 & -- & -- & -- & supported \\
+H1-instance-oracle-pred & synthetic & 0.727 & -- & -- & -- & \textbf{not supported} \\
+H1-instance-part-contiguous-G & synthetic & 0.432 & -- & -- & -- & \textbf{not supported} \\
+\bottomrule\end{tabular}}\end{table}

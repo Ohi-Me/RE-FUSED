@@ -1,0 +1,31 @@
+\begin{table}[!htbp]\centering\scriptsize
+\caption{Deviations DC1 and DC1b, sensitivity analyses added after unblinding: the OPSD blocks and the semi-synthetic grid (built on twelve OPSD areas) re-run with a plausibility filter defined from 2015--2017 data only. Top: every pre-registered test whose estimate changed (changed verdicts in bold). Bottom: baseline RMSE and pooled skill of per-series and per-instance gates without and with the filter. NYISO and UCI are unaffected.}\label{tab:sensitivity}
+\fittable{\begin{tabular}{@{}l r l r l l l@{}}\toprule
+Test & Primary & Verdict & DC1 & 95\% CI & $p_{\mathrm{Holm}}$ & Verdict \\\midrule
+H2-OPSD-2019 & 0.015 & supported & 0.033 & [0.024, 0.039] & $0.001$ & supported \\
+H2-meta & 0.027 & supported & 0.034 & [0.027, 0.041] & $<10^{-16}$ & supported \\
+H3a-sign & 0.750 & supported & 0.824 & -- & $1.2\times10^{-7}$ & supported \\
+H3b-regret-vs-never & -0.0013 & supported & -0.0015 & -- & $1.4\times10^{-12}$ & supported \\
+H3c-regret-vs-nested & -0.0007 & supported & -0.0007 & -- & $6.3\times10^{-7}$ & supported \\
+H6a-sign & 0.753 & supported & 0.765 & -- & $1.0\times10^{-6}$ & supported \\
+H6a-regret-vs-always & -0.0028 & supported & -0.0028 & -- & $3.5\times10^{-7}$ & supported \\
+H6a-regret-vs-never & 0.0000 & not supported & -0.0001 & -- & $0.070$ & not supported \\
+H6b-updating-free & 0.824 & supported & 0.941 & -- & -- & supported \\
+H7a-part-vs-nested & -0.0020 & supported & -0.0020 & -- & $0.003$ & supported \\
+H7b-part-vs-fixed-series & -0.0013 & supported & -0.0019 & -- & $0.003$ & supported \\
+H1-partition-oracle-pred & 0.928 & supported & 0.848 & -- & -- & \textbf{not supported} \\
+H1-partition-part-contiguous-G & 0.787 & supported & 0.746 & -- & -- & \textbf{not supported} \\
+H1-instance-part-contiguous-G & 0.432 & not supported & 0.455 & -- & -- & not supported \\
+\bottomrule\end{tabular}}
+
+\medskip
+\fittable{\begin{tabular}{@{}l l r r r r r r@{}}\toprule
+& & \multicolumn{3}{c}{Pre-registered} & \multicolumn{3}{c}{DC1 filter} \\\cmidrule(lr){3-5}\cmidrule(l){6-8}
+Unit & Baseline & RMSE & Series & Instance & RMSE & Series & Instance \\\midrule
+OPSD-2019 & lag48 & 1,815 & 0.864 & 0.867 & 1,797 & 0.878 & 0.879 \\
+OPSD-2019 & snaive168 & 1,139 & 0.647 & 0.650 & 1,109 & 0.662 & 0.664 \\
+OPSD-2019 & tso & 715 & 0.507 & 0.515 & 690 & 0.569 & 0.563 \\
+OPSD-2020 & lag48 & 5,836 & 0.073 & 0.073 & 1,626 & 0.853 & 0.859 \\
+OPSD-2020 & snaive168 & 5,693 & 0.039 & 0.034 & 989 & 0.620 & 0.617 \\
+OPSD-2020 & tso & 4,016 & 0.011 & 0.012 & 645 & 0.438 & 0.444 \\
+\bottomrule\end{tabular}}\end{table}

@@ -1,0 +1,102 @@
+{
+ "g1": 1.0163469371836953,
+ "n_fit": 398222,
+ "n_test": 300262,
+ "fit_days": 365,
+ "part2": {
+  "global->series": {
+   "G": 2798.166489721262,
+   "C": 3294.2887816523485,
+   "S": 3294.2887816523485,
+   "energy_full": 3790.4110735834347,
+   "noise": 496.12229193108624,
+   "K": 6,
+   "mode": "interleaved"
+  },
+  "series->series_x_hour_block": {
+   "G": 4547.8761419253615,
+   "C": 4940.061198220432,
+   "S": 4940.061198220432,
+   "energy_full": 5332.246254515502,
+   "noise": 392.18505629507035,
+   "K": 6,
+   "mode": "interleaved"
+  },
+  "series->series_x_hour": {
+   "G": 8512.186694126507,
+   "C": 9100.23351103015,
+   "S": 9100.23351103015,
+   "energy_full": 9688.280327933793,
+   "noise": 588.046816903643,
+   "K": 6,
+   "mode": "interleaved"
+  },
+  "series->instance": {
+   "G": -40479.344169142045,
+   "C": 10007.073101743497,
+   "energy_full": 60493.49037262904,
+   "K": 4,
+   "mode": "interleaved"
+  }
+ },
+ "prequential": {
+  "expanding->time_rolling_30": -2699.4317567644075,
+  "expanding->time_rolling_90": 1252.9873697542434,
+  "expanding->time_rolling_180": 493.64027295000204,
+  "expanding->time_forget_0.98": 1626.1208667715011,
+  "expanding->time_forget_0.995": 975.0885579741795
+ },
+ "part_modes": {},
+ "part": {},
+ "part_block_mode": [
+  "contiguous"
+ ],
+ "nested_risk": {
+  "none": 2956275.0773951574,
+  "global": 344623.78826023795,
+  "series": 343050.5655090049,
+  "series_x_hour_block": 339201.9573795825,
+  "series_x_hour": 337314.22184257687,
+  "instance": 379269.0931047922
+ },
+ "seconds": 87.1,
+ "config": {
+  "corrector": {
+   "max_iter": 300,
+   "learning_rate": 0.06,
+   "max_depth": 6,
+   "l2_regularization": 1.0
+  },
+  "corrector_max_rows": 300000,
+  "min_cell": 30,
+  "instance": {
+   "max_iter": 150,
+   "learning_rate": 0.08,
+   "max_depth": 5
+  },
+  "n_bag": 3,
+  "windows_days": [
+   30,
+   90,
+   180
+  ],
+  "lambdas": [
+   0.98,
+   0.995
+  ],
+  "delay_days": 2,
+  "fixed_share_alpha": 0.02,
+  "part_blocks": 6,
+  "part_instance_blocks": 4,
+  "part_eval_rows": 20000,
+  "do_part": true,
+  "part_version": 2,
+  "do_instance": true,
+  "do_time": true,
+  "part_block_mode": "contiguous",
+  "gate_fit": "val",
+  "gate_fit_fraction": 1.0,
+  "oof_folds": 5
+ },
+ "deviation": "DC1 plausibility filter"
+}

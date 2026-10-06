@@ -1,0 +1,20 @@
+  50 runs [33s]
+  100 runs [71s]
+  150 runs [108s]
+  200 runs [145s]
+  250 runs [183s]
+  300 runs [229s]
+  350 runs [296s]
+  400 runs [367s]
+  450 runs [440s]
+  500 runs [509s]
+  550 runs [579s]
+state     sign accuracy oracle_pred            0.934
+state     sign accuracy part_interleaved_G     0.670
+state     sign accuracy part_contiguous_G      0.851
+state     sign accuracy nested_G               0.802
+unit      sign accuracy oracle_pred            0.840
+unit      sign accuracy part_interleaved_G     0.625
+unit      sign accuracy part_contiguous_G      0.708
+unit      sign accuracy nested_G               0.632
+DONE x1 partition 576 616

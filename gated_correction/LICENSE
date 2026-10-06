@@ -1,0 +1,15 @@
+Licences for this folder
+
+1. Code (04_code/, 13_env/, hpc/): MIT licence, Copyright (c) 2026 Rohit Kumar. Full text in ../LICENSE.
+
+2. Documentation, derived results, figures and tables (02_design/, 06_results/, 09_theory/, 12_logs/ and the same
+   folders inside foreign_data_study/): Creative Commons Attribution 4.0 International (CC BY 4.0),
+   https://creativecommons.org/licenses/by/4.0/, subject to the source-data terms below.
+
+3. Source data are not covered by this licence and are not redistributed in raw form:
+   * Indian data: Grid-India, CEA and IMD publications; see ../LICENSE-DATA.md.
+   * NYISO Market Information System data: public, but NYISO's legal notice grants no redistribution licence.
+     Obtain with 04_code/scripts/data/fetch_nyiso.py.
+   * Open Power System Data, time series 2020-10-06: attribution required
+     (https://doi.org/10.25832/time_series/2020-10-06).
+   * UCI ElectricityLoadDiagrams20112014: CC BY 4.0 (https://doi.org/10.24432/C58C86).

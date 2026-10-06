@@ -1,0 +1,16 @@
+% written by 04_code/scripts/paper/make_india_replication.py; do not edit
+\begin{table}[t]
+\centering
+\caption{Replication on Indian State control areas (separately pre-registered, family F5). PART is computed on the calibration year and compared with the realised gain on the evaluation period, 1 April 2025 to 31 August 2026, over five targets and three horizons. Gains are mean reductions in squared error in scaled units; the rule refines only when the lower end of PART's 80\,\% interval is above zero.}\label{tab:india}
+\small\setlength{\tabcolsep}{3pt}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lccccccc}
+\toprule
+Refinement & PART predicts a gain & Sign agreement & $p_{\text{Holm}}$ & Verdict & Rule refines & Rule gain & Always-refine gain \\
+\midrule
+instance vs.\ fixed & \IndiaInstancePredicts/\IndiaInstanceCells & \IndiaInstanceRight/\IndiaInstanceCells & \IndiaInstanceHolm & \IndiaInstanceDec & \IndiaInstanceRuleRefines & \IndiaInstanceRuleGain & \IndiaInstanceAlwaysGain \\
+OTG vs.\ fixed & \IndiaOtgPredicts/\IndiaOtgCells & \IndiaOtgRight/\IndiaOtgCells & \IndiaOtgHolm & \IndiaOtgDec & \IndiaOtgRuleRefines & \IndiaOtgRuleGain & \IndiaOtgAlwaysGain \\
+regime vs.\ fixed & \IndiaRegimePredicts/\IndiaRegimeCells & \IndiaRegimeRight/\IndiaRegimeCells & \IndiaRegimeHolm & \IndiaRegimeDec & \IndiaRegimeRuleRefines & \IndiaRegimeRuleGain & \IndiaRegimeAlwaysGain \\
+\bottomrule
+\end{tabular}}
+\end{table}

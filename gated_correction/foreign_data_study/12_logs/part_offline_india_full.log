@@ -1,0 +1,43 @@
+  persistence_h1_s0 [6s]
+  persistence_h1_s1 [12s]
+  persistence_h1_s2 [18s]
+  persistence_h3_s0 [27s]
+  persistence_h3_s1 [35s]
+  persistence_h3_s2 [43s]
+  roll7_h1_s0 [52s]
+  roll7_h1_s1 [60s]
+  roll7_h1_s2 [68s]
+  roll7_h3_s0 [76s]
+  roll7_h3_s1 [84s]
+  roll7_h3_s2 [92s]
+  snaive7_h1_s0 [100s]
+  snaive7_h1_s1 [108s]
+  snaive7_h1_s2 [116s]
+  snaive7_h3_s0 [123s]
+  snaive7_h3_s1 [130s]
+  snaive7_h3_s2 [137s]
+  operator_schedule_h1_s0 [143s]
+  operator_schedule_h1_s1 [150s]
+  operator_schedule_h1_s2 [159s]
+  operator_schedule_h3_s0 [168s]
+  operator_schedule_h3_s1 [176s]
+  operator_schedule_h3_s2 [184s]
+                   size   mean
+predictor                     
+part2_contiguous     48  0.833
+part2_interleaved    72  0.861
+part2_time           48  0.646
+prequential          96  0.812
+                                                 n     acc    pred    real
+refinement                   predictor                                    
+expanding->time_forget_0.98  prequential        24  0.8750  0.0181  0.0181
+expanding->time_forget_0.995 prequential        24  0.6250  0.0061  0.0113
+expanding->time_rolling_30   part2_time         24  0.8750 -0.0333  0.0098
+                             prequential        24  1.0000  0.0144  0.0098
+expanding->time_rolling_90   part2_time         24  0.4167 -0.0486  0.0113
+                             prequential        24  0.7500  0.0043  0.0113
+global->series               part2_contiguous   24  1.0000  0.0387  0.0386
+                             part2_interleaved  24  1.0000  0.0278  0.0386
+series->instance             part2_interleaved  24  0.9167 -0.1060 -0.0407
+series->series_x_vol_tercile part2_contiguous   24  0.6667 -0.0088 -0.0015
+                             part2_interleaved  24  0.6667 -0.0047 -0.0015

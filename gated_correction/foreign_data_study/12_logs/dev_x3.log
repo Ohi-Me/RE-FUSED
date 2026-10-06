@@ -1,0 +1,21 @@
+  nyiso_iso seed 0 val25          n_fit=  24024 [71s]
+  nyiso_iso seed 0 val            n_fit=  96580 [97s]
+  nyiso_iso seed 0 oof_train+val  n_fit= 480524 [181s]
+  nyiso_iso seed 1 val25          n_fit=  24024 [249s]
+  nyiso_iso seed 1 val            n_fit=  96580 [275s]
+  nyiso_iso seed 1 oof_train+val  n_fit= 480524 [350s]
+  india_roll7_h1 seed 0 val25          n_fit=   1820 [363s]
+  india_roll7_h1 seed 0 val            n_fit=   7300 [367s]
+  india_roll7_h1 seed 0 oof_train+val  n_fit=  36660 [373s]
+  india_roll7_h1 seed 1 val25          n_fit=   1820 [385s]
+  india_roll7_h1 seed 1 val            n_fit=   7300 [390s]
+  india_roll7_h1 seed 1 oof_train+val  n_fit=  36660 [394s]
+cap                           d1_it150  d1_it25  d1_it400  d3_it150  d3_it25  d3_it400  d6_it150  d6_it25  d6_it400  linear
+dataset        budget                                                                                                      
+india_roll7_h1 oof_train+val   -0.0099  -0.0050   -0.0135   -0.0253  -0.0066   -0.0252   -0.0377  -0.0173   -0.0377 -0.0003
+               val             -0.0164  -0.0116   -0.0239   -0.0324  -0.0174   -0.0442   -0.0488  -0.0321   -0.0656 -0.0058
+               val25           -0.0318  -0.0131   -0.0425   -0.0568  -0.0254   -0.0754   -0.0712  -0.0416   -0.0788 -0.0118
+nyiso_iso      oof_train+val    0.0251   0.0200    0.0253    0.0313   0.0271    0.0345    0.0355   0.0304    0.0322  0.0279
+               val              0.0268   0.0204    0.0286    0.0023   0.0191   -0.0040    0.0047   0.0173   -0.0024  0.0252
+               val25            0.0174   0.0171    0.0152   -0.0086   0.0034   -0.0193   -0.0151   0.0016   -0.0186  0.0131
+DONE x3 394

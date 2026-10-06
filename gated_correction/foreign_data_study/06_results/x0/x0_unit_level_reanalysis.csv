@@ -1,0 +1,12 @@
+claim,unit,n_units,units_supporting,mean_diff,p_unit_sign,p_run_level_refused6,note
+M1 per-series > per-instance (India),config (baseline x h),15,15,0.05775305522925714,3.0517578125e-05,2.2685873632771746e-77,configs share one dataset and test period
+M1 per-series > per-instance (India),baseline,4,4,0.05790656418077066,0.0625,,4 baselines on the same series
+M1 per-series > shrunk (India 2024-25),config,15,14,0.012866830030717279,0.00048828125,4.6539503620659e-34,M10 later showed this ordering is period-specific
+M8 fine < best coarse,config (dataset x h),12,11,-0.03013949089118823,0.003173828125,,
+M8 fine < best coarse,dataset (mean over h),6,5,-0.030139490891188225,0.109375,,
+M10 instance < best coarse,config (origin x baseline x h),24,19,-0.0127091162437201,0.003305375576019287,,
+M10 instance < best coarse,origin (test year),3,3,-0.0127091162437201,0.125,,3 test years of one dataset
+M9_ per-series > neural_gate_refit,config,10,8,0.00544484879738634,0.0546875,2.9747345218211763e-05,
+M9_ per-series > neural_gate_refit,dataset,3,2,0.007484740060091939,0.5,,
+M9b per-series > neural_gate_tuned,config,10,7,0.004639272958186586,0.171875,0.001190697289374043,
+M9b per-series > neural_gate_tuned,dataset,3,2,0.00582816793604517,0.5,,

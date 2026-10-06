@@ -1,0 +1,48 @@
+  iso_s0 [25s]
+  iso_s1 [46s]
+  iso_s2 [69s]
+  snaive168_s0 [94s]
+  snaive168_s1 [119s]
+  snaive168_s2 [144s]
+  lag48_s0 [168s]
+  lag48_s1 [190s]
+  lag48_s2 [214s]
+  lgbm_s0 [236s]
+  lgbm_s1 [258s]
+  lgbm_s2 [279s]
+  nhits_s0 [302s]
+  nhits_s1 [323s]
+  nhits_s2 [341s]
+  patchtst_s0 [363s]
+  patchtst_s1 [384s]
+  patchtst_s2 [404s]
+  tide_s0 [426s]
+  tide_s1 [448s]
+  tide_s2 [468s]
+  dlinear_s0 [487s]
+  dlinear_s1 [507s]
+  dlinear_s2 [528s]
+  chronos_s0 [548s]
+  chronos_s1 [569s]
+  chronos_s2 [591s]
+                   size   mean
+predictor                     
+part2_contiguous     81  0.679
+part2_interleaved   108  0.759
+part2_time           54  0.759
+prequential         108  0.815
+                                                 n     acc    pred    real
+refinement                   predictor                                    
+expanding->time_forget_0.98  prequential        27  0.8519 -0.0003 -0.0025
+expanding->time_forget_0.995 prequential        27  0.6667  0.0001 -0.0009
+expanding->time_rolling_30   part2_time         27  0.8889 -0.0027 -0.0116
+                             prequential        27  0.8889 -0.0080 -0.0116
+expanding->time_rolling_90   part2_time         27  0.6296 -0.0002 -0.0041
+                             prequential        27  0.8519 -0.0004 -0.0041
+global->series               part2_contiguous   27  0.6296 -0.0010  0.0037
+                             part2_interleaved  27  1.0000  0.0028  0.0037
+series->instance             part2_interleaved  27  0.4815 -0.0891 -0.0032
+series->series_x_hour        part2_contiguous   27  0.7407  0.0012  0.0027
+                             part2_interleaved  27  0.7778  0.0009  0.0027
+series->series_x_hour_block  part2_contiguous   27  0.6667  0.0005  0.0024
+                             part2_interleaved  27  0.7778  0.0009  0.0024

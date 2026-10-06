@@ -1,0 +1,95 @@
+{
+ "g1": 0.9576508420091571,
+ "n_fit": 12194,
+ "n_test": 24374,
+ "fit_days": 73,
+ "part2": {
+  "global->series": {
+   "G": 0.05557456190141294,
+   "C": 0.055989385525508535,
+   "S": 0.055989385525508535,
+   "energy_full": 0.05640420914960413,
+   "noise": 0.0004148236240955963,
+   "K": 6,
+   "mode": "interleaved"
+  },
+  "series->series_x_hour_block": {
+   "G": 0.027161408700627554,
+   "C": 0.03614425810156807,
+   "S": 0.03614425810156807,
+   "energy_full": 0.04512710750250859,
+   "noise": 0.008982849400940518,
+   "K": 6,
+   "mode": "interleaved"
+  },
+  "series->instance": {
+   "G": 0.10383375477308532,
+   "C": 0.19961332623813022,
+   "energy_full": 0.2953928977031751,
+   "K": 4,
+   "mode": "interleaved"
+  }
+ },
+ "prequential": {
+  "expanding->time_rolling_14": 0.04456217320176745,
+  "expanding->time_rolling_30": 0.08181216366686637,
+  "expanding->time_rolling_60": 0.017442633984393534,
+  "expanding->time_forget_0.98": 0.030695066559911013,
+  "expanding->time_forget_0.995": 0.00859511378658338
+ },
+ "part_modes": {},
+ "part": {},
+ "part_block_mode": [
+  "contiguous",
+  "interleaved"
+ ],
+ "nested_risk": {
+  "none": 7.404357184435961,
+  "global": 2.9214093350592236,
+  "series": 2.8536078402424647,
+  "series_x_hour_block": 2.962356941878729,
+  "instance": 4.113147757487919
+ },
+ "seconds": 8.8,
+ "config": {
+  "corrector": {
+   "max_iter": 300,
+   "learning_rate": 0.06,
+   "max_depth": 6,
+   "l2_regularization": 1.0
+  },
+  "corrector_max_rows": 300000,
+  "min_cell": 30,
+  "instance": {
+   "max_iter": 150,
+   "learning_rate": 0.08,
+   "max_depth": 5
+  },
+  "n_bag": 3,
+  "windows_days": [
+   14,
+   30,
+   60
+  ],
+  "lambdas": [
+   0.98,
+   0.995
+  ],
+  "delay_days": 2,
+  "fixed_share_alpha": 0.02,
+  "part_blocks": 6,
+  "part_instance_blocks": 4,
+  "part_eval_rows": 20000,
+  "do_part": true,
+  "part_version": 2,
+  "do_instance": true,
+  "do_time": true,
+  "part_block_mode": [
+   "contiguous",
+   "interleaved"
+  ],
+  "gate_fit": "val",
+  "gate_fit_fraction": 1.0,
+  "oof_folds": 5
+ }
+}

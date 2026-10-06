@@ -1,0 +1,19 @@
+% written by 04_code/scripts/paper/make_india_replication.py from ../india_grid/results/extra/gate_energy.csv; do not edit
+\begin{table}[t]
+\centering
+\caption{Forecast-error energy of the gate designs on 34 Indian State control areas, one day ahead, evaluation period 1 April 2025 to 31 August 2026 (additional analysis, not pre-registered). Error energy is the sum over areas of the absolute error of the daily median forecast, in GWh per year. Columns 4--6: change relative to one fixed gate, with a 7-day block-bootstrap 95\,\% interval; a positive change means more error.}\label{tab:india_energy}
+\small\setlength{\tabcolsep}{3pt}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrrr}
+\toprule
+Target & No correction & Saved by one fixed gate & Gate per regime & Gate per instance & Gate online over time \\
+\midrule
+Demand met & $98{,}346$ & $22{,}911$ [$19{,}275$, $27{,}109$] & $-15$ [$-216$, $+194$] & $+287$ [$-167$, $+668$] & $+189$ [$-200$, $+563$] \\
+Actual drawal & $86{,}318$ & $13{,}374$ [$10{,}273$, $17{,}003$] & $-1$ [$-133$, $+123$] & $+39$ [$-221$, $+269$] & $+624$ [$+260$, $+1{,}035$] \\
+Conventional generation & $106{,}128$ & $14{,}601$ [$10{,}741$, $18{,}865$] & $-289$ [$-488$, $-103$] & $+180$ [$-232$, $+614$] & $-56$ [$-546$, $+416$] \\
+Renewable generation & $54{,}691$ & $5{,}425$ [$1{,}392$, $9{,}578$] & $+465$ [$+308$, $+601$] & $+342$ [$-87$, $+749$] & $-105$ [$-1{,}344$, $+1{,}070$] \\
+Day-ahead price$^{a}$ & $1{,}008$ & $1{,}485$ & $1{,}503$ & $1{,}542$ & $956$ \\
+\bottomrule
+\end{tabular}}
+\par\smallskip\parbox{\linewidth}{\footnotesize $^{a}$ Day-ahead price: mean absolute error in Rs/MWh of each design (no correction, fixed gate, then the three refinements), per exchange bid area.}
+\end{table}

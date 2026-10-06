@@ -1,0 +1,31 @@
+D:\\REFUSED7\04_code\scripts\dev\..\..\refused7\selection.py:60: RuntimeWarning: Mean of empty slice
+  jk = np.where(np.isnan(jk), np.nanmean(jk, axis=0, keepdims=True), jk)
+D:\\REFUSED7\04_code\scripts\dev\..\..\refused7\selection.py:61: RuntimeWarning: Mean of empty slice
+  var_jk = (K - 1) / K * np.nansum((jk - np.nanmean(jk, axis=0, keepdims=True)) ** 2, axis=0)
+val_frac0.05_s0                  none->global +0.2296 series +0.2270 inst +0.1434 best=global +0.2296 [14.4s, total 16s]
+val_frac0.1_s0                   none->global +0.2377 series +0.2503 inst +0.2152 best=series +0.2503 [15.7s, total 32s]
+val_frac0.25_s0                  none->global +0.2383 series +0.2448 inst +0.2205 best=series +0.2448 [17.8s, total 50s]
+val_frac0.5_s0                   none->global +0.2384 series +0.2469 inst +0.2342 best=series_x_hour +0.2484 [20.9s, total 71s]
+oof_train_s0                     none->global +0.2189 series +0.2182 inst +0.2259 best=instance +0.2259 [72.1s, total 144s]
+oof_train_val_s0                 none->global +0.2228 series +0.2271 inst +0.2404 best=instance +0.2404 [82.7s, total 227s]
+D:\\REFUSED7\04_code\scripts\dev\..\..\refused7\selection.py:60: RuntimeWarning: Mean of empty slice
+  jk = np.where(np.isnan(jk), np.nanmean(jk, axis=0, keepdims=True), jk)
+D:\\REFUSED7\04_code\scripts\dev\..\..\refused7\selection.py:61: RuntimeWarning: Mean of empty slice
+  var_jk = (K - 1) / K * np.nansum((jk - np.nanmean(jk, axis=0, keepdims=True)) ** 2, axis=0)
+val_frac0.05_s1                  none->global +0.2172 series +0.2397 inst +0.2216 best=series +0.2397 [20.5s, total 247s]
+val_frac0.1_s1                   none->global +0.2251 series +0.2155 inst +0.1767 best=global +0.2251 [16.9s, total 264s]
+val_frac0.25_s1                  none->global +0.2393 series +0.2474 inst +0.2248 best=series_x_hour_block +0.2477 [18.2s, total 283s]
+val_frac0.5_s1                   none->global +0.2373 series +0.2483 inst +0.2338 best=series_x_hour +0.2498 [20.1s, total 303s]
+oof_train_s1                     none->global +0.2199 series +0.2189 inst +0.2243 best=instance +0.2243 [79.1s, total 383s]
+oof_train_val_s1                 none->global +0.2239 series +0.2276 inst +0.2420 best=instance +0.2420 [88.7s, total 472s]
+D:\\REFUSED7\04_code\scripts\dev\..\..\refused7\selection.py:60: RuntimeWarning: Mean of empty slice
+  jk = np.where(np.isnan(jk), np.nanmean(jk, axis=0, keepdims=True), jk)
+D:\\REFUSED7\04_code\scripts\dev\..\..\refused7\selection.py:61: RuntimeWarning: Mean of empty slice
+  var_jk = (K - 1) / K * np.nansum((jk - np.nanmean(jk, axis=0, keepdims=True)) ** 2, axis=0)
+val_frac0.05_s2                  none->global +0.2281 series +0.2096 inst +0.2020 best=global +0.2281 [17.5s, total 489s]
+val_frac0.1_s2                   none->global +0.2148 series +0.2324 inst +0.1883 best=series +0.2324 [22.2s, total 512s]
+val_frac0.25_s2                  none->global +0.2272 series +0.2379 inst +0.2129 best=series +0.2379 [20.9s, total 533s]
+val_frac0.5_s2                   none->global +0.2272 series +0.2394 inst +0.2232 best=series_x_hour_block +0.2397 [26.3s, total 559s]
+oof_train_s2                     none->global +0.2098 series +0.2108 inst +0.2181 best=shrunk +0.2183 [85.9s, total 646s]
+oof_train_val_s2                 none->global +0.2139 series +0.2196 inst +0.2376 best=instance +0.2376 [95.7s, total 742s]
+DONE nyiso_budget 742

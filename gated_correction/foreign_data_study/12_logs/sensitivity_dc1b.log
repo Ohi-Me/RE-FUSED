@@ -1,0 +1,31 @@
+2026-09-13 20:25:44 start commit=b60987d
+  50 runs [32s]
+  100 runs [65s]
+  150 runs [97s]
+  200 runs [127s]
+  250 runs [157s]
+  300 runs [196s]
+  350 runs [254s]
+  400 runs [313s]
+  450 runs [370s]
+  500 runs [428s]
+  550 runs [483s]
+state     sign accuracy oracle_pred            0.785
+state     sign accuracy part_interleaved_G     0.701
+state     sign accuracy part_contiguous_G      0.785
+state     sign accuracy nested_G               0.753
+unit      sign accuracy oracle_pred            0.840
+unit      sign accuracy part_interleaved_G     0.750
+unit      sign accuracy part_contiguous_G      0.688
+unit      sign accuracy nested_G               0.757
+DONE x1 partition 576 514
+2026-09-13 20:34:41 x1 partition exit=0
+  50 runs [571s]
+instance  sign accuracy oracle_pred            0.778
+instance  sign accuracy part_interleaved_G     0.625
+instance  sign accuracy part_contiguous_G      0.611
+instance  sign accuracy nested_G               0.708
+DONE x1 instance 72 884
+2026-09-13 20:49:44 x1 instance exit=0
+2026-09-13 20:50:02 analysis exit=0
+DC1B_DONE

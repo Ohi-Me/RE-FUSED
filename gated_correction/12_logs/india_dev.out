@@ -1,0 +1,152 @@
+india dev 2026-10-06T15:30:25+05:30 on master, job 34206.master, GPU MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e
+  lgbm fit<2025-03-01 done [6s]
+Seed set to 0
+Seed set to 0
+Seed set to 0
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+You are using a CUDA device ('NVIDIA H100 NVL MIG 1g.24gb') that has Tensor Cores. To properly utilize them, you should set `torch.set_float32_matmul_precision('medium' | 'high')` which will trade-off precision for performance. For more details, read https://pytorch.org/docs/stable/generated/torch.set_float32_matmul_precision.html#torch.set_float32_matmul_precision
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+`Trainer.fit` stopped: `max_steps=500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+`Trainer.fit` stopped: `max_steps=500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+`Trainer.fit` stopped: `max_steps=500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+`Trainer.fit` stopped: `max_steps=500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+    neural 2025-03-01 (0/92)
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+    neural 2025-03-31 (30/92)
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+    neural 2025-04-30 (60/92)
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+    neural 2025-05-30 (90/92)
+  neural fit<2025-03-01 done [48s]
+  lgbm fit<2025-06-01 done [55s]
+Seed set to 0
+Seed set to 0
+Seed set to 0
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+`Trainer.fit` stopped: `max_steps=500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+`Trainer.fit` stopped: `max_steps=500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+`Trainer.fit` stopped: `max_steps=500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+`Trainer.fit` stopped: `max_steps=500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+    neural 2025-06-01 (0/273)
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+    neural 2025-07-01 (30/273)
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+    neural 2025-07-31 (60/273)
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+    neural 2025-08-30 (90/273)
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+    neural 2025-09-29 (120/273)
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+    neural 2025-10-29 (150/273)
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+    neural 2025-11-28 (180/273)
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+    neural 2025-12-28 (210/273)
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+    neural 2026-01-27 (240/273)
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-32c916d8-1eff-5d16-963e-c216a6b6ba8e]
+    neural 2026-02-26 (270/273)
+  neural fit<2025-06-01 done [93s]
+Loading weights:   0%|          | 0/143 [00:00<?, ?it/s]Loading weights: 100%|██████████| 143/143 [00:00<00:00, 2319.82it/s]
+    chronos 2025-03-01 (0/365)
+    chronos 2025-08-28 (180/365)
+    chronos 2026-02-24 (360/365)
+  chronos done [95s]
+wrote /Data3/<hpc-user>/gated_correction/03_data/processed/india_hourly_learned_baselines_dev_s0.parquet (35040, 8) ['sid', 'ts', 'B_lgbm', 'B_nhits', 'B_patchtst', 'B_tide', 'B_dlinear', 'B_chronos'] [95s]
+IH1 snaive168_s0                     done [4.9s, total 5s]
+IH1 lag48_s0                         done [4.9s, total 10s]
+IH1 lgbm_s0                          done [4.7s, total 15s]
+IH1 nhits_s0                         done [5.2s, total 20s]
+IH1 patchtst_s0                      done [5.6s, total 26s]
+IH1 tide_s0                          done [5.1s, total 31s]
+IH1 dlinear_s0                       done [5.0s, total 36s]
+IH1 chronos_s0                       done [5.0s, total 41s]
+IH2 val_frac0.1_s0                   done [2.9s, total 44s]
+IH2 val_frac0.25_s0                  done [3.8s, total 48s]
+IH2 val_frac0.5_s0                   done [3.3s, total 51s]
+IH2 oof_train_val_s0                 done [7.0s, total 58s]
+DONE India ladders dev 58
+india dev finished rc=0 2026-10-06T15:33:00+05:30

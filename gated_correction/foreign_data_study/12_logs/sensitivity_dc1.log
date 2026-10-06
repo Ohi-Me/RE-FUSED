@@ -1,0 +1,21 @@
+C3 tso_s0                   done [91.0s, total 101s]
+C3 tso_s1                   done [87.3s, total 190s]
+C3 snaive168_s0             done [90.0s, total 281s]
+C3 snaive168_s1             done [89.6s, total 372s]
+C3 lag48_s0                 done [90.6s, total 464s]
+C3 lag48_s1                 done [85.5s, total 550s]
+C4 tso_s0                   done [85.0s, total 646s]
+C4 tso_s1                   done [81.3s, total 728s]
+C4 snaive168_s0             done [85.3s, total 815s]
+C4 snaive168_s1             done [87.7s, total 903s]
+C4 lag48_s0                 done [87.1s, total 992s]
+C4 lag48_s1                 done [83.3s, total 1076s]
+C5 val_frac0.1_s0           done [37.1s, total 1124s]
+C5 val_frac0.25_s0          done [45.2s, total 1170s]
+C5 oof_train_val_s0         done [197.1s, total 1368s]
+C5 val_frac0.1_s1           done [53.5s, total 1422s]
+C5 val_frac0.25_s1          done [54.7s, total 1477s]
+C5 oof_train_val_s1         done [215.9s, total 1694s]
+DONE DC1 sensitivity 1694
+LADDERS_EXIT=0
+ANALYSIS_EXIT=0

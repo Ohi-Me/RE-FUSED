@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this replication package, please cite the article and the package."
+title: "The Price of Adaptivity: When Should Forecast Corrections Adapt Across Units, States and Time? — replication package (RE-FUSED)"
+type: software
+authors:
+  - name: "The RE-FUSED authors"
+version: "confirm-v1"
+date-released: "2026-09-13"
+license: MIT
+keywords:
+  - forecast correction
+  - adaptivity
+  - pre-registration
+  - load forecasting
+  - operating reserves
+# Repository URL, DOI and author list to be added by the authors at release (withheld for anonymous review).

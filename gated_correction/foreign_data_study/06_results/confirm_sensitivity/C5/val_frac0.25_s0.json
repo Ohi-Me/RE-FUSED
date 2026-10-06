@@ -1,0 +1,95 @@
+{
+ "g1": 1.0645613304799437,
+ "n_fit": 99574,
+ "n_test": 398222,
+ "fit_days": 91,
+ "part2": {
+  "global->series": {
+   "G": 2776.0318447641066,
+   "C": 3644.211219857171,
+   "S": 3644.211219857171,
+   "energy_full": 4512.390594950235,
+   "noise": 868.1793750930642,
+   "K": 6,
+   "mode": "interleaved"
+  },
+  "series->series_x_hour_block": {
+   "G": -86.08937937860492,
+   "C": 757.2554322003022,
+   "S": 757.2554322003022,
+   "energy_full": 1600.6002437792092,
+   "noise": 843.3448115789071,
+   "K": 6,
+   "mode": "interleaved"
+  },
+  "series->series_x_hour": {
+   "G": -140.61346544200887,
+   "C": 1078.5183409713907,
+   "S": 1078.5183409713907,
+   "energy_full": 2297.65014738479,
+   "noise": 1219.1318064133995,
+   "K": 6,
+   "mode": "interleaved"
+  },
+  "series->instance": {
+   "G": -19753.293988934773,
+   "C": 938.2656112021367,
+   "energy_full": 21629.825211339044,
+   "K": 4,
+   "mode": "interleaved"
+  }
+ },
+ "part_modes": {},
+ "part": {},
+ "part_block_mode": [
+  "contiguous"
+ ],
+ "nested_risk": {
+  "none": 398357.121340755,
+  "global": 152857.39610063785,
+  "series": 150893.53359928753,
+  "series_x_hour_block": 151123.65470400997,
+  "series_x_hour": 151461.58507740445,
+  "instance": 178922.0533003007
+ },
+ "seconds": 45.2,
+ "config": {
+  "corrector": {
+   "max_iter": 300,
+   "learning_rate": 0.06,
+   "max_depth": 6,
+   "l2_regularization": 1.0
+  },
+  "corrector_max_rows": 300000,
+  "min_cell": 30,
+  "instance": {
+   "max_iter": 150,
+   "learning_rate": 0.08,
+   "max_depth": 5
+  },
+  "n_bag": 3,
+  "windows_days": [
+   30,
+   90,
+   180
+  ],
+  "lambdas": [
+   0.98,
+   0.995
+  ],
+  "delay_days": 2,
+  "fixed_share_alpha": 0.02,
+  "part_blocks": 6,
+  "part_instance_blocks": 4,
+  "part_eval_rows": 20000,
+  "do_part": true,
+  "part_version": 2,
+  "do_instance": true,
+  "do_time": false,
+  "part_block_mode": "contiguous",
+  "gate_fit": "val",
+  "gate_fit_fraction": 0.25,
+  "oof_folds": 5
+ },
+ "deviation": "DC1 plausibility filter"
+}

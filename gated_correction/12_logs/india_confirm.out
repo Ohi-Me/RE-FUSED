@@ -1,0 +1,377 @@
+india confirm 2026-10-06T18:36:07+05:30 on master, job 34223.master, commit 44c0158, tag prereg-india-v1-3-g44c0158, cores 7,19,28,33,47,62
+c4c6be3a6259ce1d5c0ce2bf324489cbf8a0aa4bf755d4807affc5f8e3c826ef  02_design/05_preregistration_india.md
+  lgbm fit<2025-05-01 done [4s]
+Seed set to 0
+Seed set to 0
+Seed set to 0
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+You are using a CUDA device ('NVIDIA H100 PCIe MIG 3g.40gb') that has Tensor Cores. To properly utilize them, you should set `torch.set_float32_matmul_precision('medium' | 'high')` which will trade-off precision for performance. For more details, read https://pytorch.org/docs/stable/generated/torch.set_float32_matmul_precision.html#torch.set_float32_matmul_precision
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+`Trainer.fit` stopped: `max_steps=500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+`Trainer.fit` stopped: `max_steps=500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+`Trainer.fit` stopped: `max_steps=500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+`Trainer.fit` stopped: `max_steps=500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+    neural 2025-05-01 (0/123)
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+    neural 2025-05-31 (30/123)
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+    neural 2025-06-30 (60/123)
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+    neural 2025-07-30 (90/123)
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+    neural 2025-08-29 (120/123)
+  neural fit<2025-05-01 done [35s]
+  lgbm fit<2025-09-01 done [39s]
+Seed set to 0
+Seed set to 0
+Seed set to 0
+Seed set to 0
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+`Trainer.fit` stopped: `max_steps=500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+`Trainer.fit` stopped: `max_steps=500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+`Trainer.fit` stopped: `max_steps=500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+`Trainer.fit` stopped: `max_steps=500` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+    neural 2025-09-01 (0/378)
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+    neural 2025-10-01 (30/378)
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+    neural 2025-10-31 (60/378)
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+    neural 2025-11-30 (90/378)
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+    neural 2025-12-30 (120/378)
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+    neural 2026-01-29 (150/378)
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+    neural 2026-02-28 (180/378)
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+    neural 2026-03-30 (210/378)
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+    neural 2026-04-29 (240/378)
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+    neural 2026-05-29 (270/378)
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+    neural 2026-06-28 (300/378)
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+    neural 2026-07-28 (330/378)
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [MIG-c747c071-8b61-5993-a5e0-33f4b566bd6e]
+    neural 2026-08-27 (360/378)
+  neural fit<2025-09-01 done [69s]
+Loading weights:   0%|          | 0/143 [00:00<?, ?it/s]Loading weights: 100%|██████████| 143/143 [00:00<00:00, 3990.30it/s]
+    chronos 2025-05-01 (0/501)
+    chronos 2025-10-28 (180/501)
+    chronos 2026-04-26 (360/501)
+  chronos done [71s]
+wrote /Data3/<hpc-user>/gated_correction/03_data/processed/india_hourly_learned_baselines_confirm_s0.parquet (48096, 8) ['sid', 'ts', 'B_lgbm', 'B_nhits', 'B_patchtst', 'B_tide', 'B_dlinear', 'B_chronos'] [71s]
+IH1 snaive168_s0                     done [7.2s, total 7s]
+IH1 snaive168_s1                     done [4.8s, total 12s]
+IH1 snaive168_s2                     done [4.8s, total 17s]
+IH1 lag48_s0                         done [4.8s, total 22s]
+IH1 lag48_s1                         done [5.1s, total 27s]
+IH1 lag48_s2                         done [5.0s, total 32s]
+IH1 lgbm_s0                          done [4.8s, total 37s]
+IH1 lgbm_s1                          done [4.7s, total 41s]
+IH1 lgbm_s2                          done [4.8s, total 46s]
+IH1 nhits_s0                         done [4.7s, total 51s]
+IH1 nhits_s1                         done [5.4s, total 56s]
+IH1 nhits_s2                         done [5.7s, total 62s]
+IH1 patchtst_s0                      done [4.8s, total 67s]
+IH1 patchtst_s1                      done [5.3s, total 72s]
+IH1 patchtst_s2                      done [4.8s, total 77s]
+IH1 tide_s0                          done [5.2s, total 82s]
+IH1 tide_s1                          done [5.3s, total 88s]
+IH1 tide_s2                          done [5.0s, total 93s]
+IH1 dlinear_s0                       done [5.2s, total 98s]
+IH1 dlinear_s1                       done [5.4s, total 103s]
+IH1 dlinear_s2                       done [5.2s, total 109s]
+IH1 chronos_s0                       done [4.9s, total 113s]
+IH1 chronos_s1                       done [4.8s, total 118s]
+IH1 chronos_s2                       done [4.8s, total 123s]
+IH2 val_frac0.1_s0                   done [2.9s, total 126s]
+IH2 val_frac0.25_s0                  done [3.4s, total 130s]
+IH2 val_frac0.5_s0                   done [3.7s, total 133s]
+IH2 oof_train_val_s0                 done [7.3s, total 141s]
+IH2 val_frac0.1_s1                   done [2.7s, total 143s]
+IH2 val_frac0.25_s1                  done [3.2s, total 147s]
+IH2 val_frac0.5_s1                   done [3.7s, total 150s]
+IH2 oof_train_val_s1                 done [7.3s, total 158s]
+IH2 val_frac0.1_s2                   done [2.8s, total 160s]
+IH2 val_frac0.25_s2                  done [3.3s, total 164s]
+IH2 val_frac0.5_s2                   done [3.9s, total 168s]
+IH2 oof_train_val_s2                 done [7.4s, total 175s]
+DONE India ladders confirm 175
+  seed 0 lgbm           done [29s]
+  seed 0 corr_series    done [47s]
+  seed 0 corr_instance  done [65s]
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:114: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"crps_{fname}_{qname}"] = crps_rows.astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:115: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up99_{fname}_{qname}"] = Qm[:, i[0.99]].astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:116: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up975_{fname}_{qname}"] = Qm[:, i[0.975]].astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:117: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"pin99_{fname}_{qname}"] = P.pinball_rows(y, Qm[:, [i[0.99]]], [0.99])[:, 0].astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:114: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"crps_{fname}_{qname}"] = crps_rows.astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:115: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up99_{fname}_{qname}"] = Qm[:, i[0.99]].astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:116: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up975_{fname}_{qname}"] = Qm[:, i[0.975]].astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:117: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"pin99_{fname}_{qname}"] = P.pinball_rows(y, Qm[:, [i[0.99]]], [0.99])[:, 0].astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:114: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"crps_{fname}_{qname}"] = crps_rows.astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:115: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up99_{fname}_{qname}"] = Qm[:, i[0.99]].astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:116: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up975_{fname}_{qname}"] = Qm[:, i[0.975]].astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:117: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"pin99_{fname}_{qname}"] = P.pinball_rows(y, Qm[:, [i[0.99]]], [0.99])[:, 0].astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:114: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"crps_{fname}_{qname}"] = crps_rows.astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:115: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up99_{fname}_{qname}"] = Qm[:, i[0.99]].astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:116: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up975_{fname}_{qname}"] = Qm[:, i[0.975]].astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:117: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"pin99_{fname}_{qname}"] = P.pinball_rows(y, Qm[:, [i[0.99]]], [0.99])[:, 0].astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:114: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"crps_{fname}_{qname}"] = crps_rows.astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:115: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up99_{fname}_{qname}"] = Qm[:, i[0.99]].astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:116: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up975_{fname}_{qname}"] = Qm[:, i[0.975]].astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:117: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"pin99_{fname}_{qname}"] = P.pinball_rows(y, Qm[:, [i[0.99]]], [0.99])[:, 0].astype(np.float32)
+  seed 0 corr_roll30    done [83s]
+  seed 1 lgbm           done [109s]
+  seed 1 corr_series    done [127s]
+  seed 1 corr_instance  done [145s]
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:114: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"crps_{fname}_{qname}"] = crps_rows.astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:115: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up99_{fname}_{qname}"] = Qm[:, i[0.99]].astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:116: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up975_{fname}_{qname}"] = Qm[:, i[0.975]].astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:117: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"pin99_{fname}_{qname}"] = P.pinball_rows(y, Qm[:, [i[0.99]]], [0.99])[:, 0].astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:114: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"crps_{fname}_{qname}"] = crps_rows.astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:115: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up99_{fname}_{qname}"] = Qm[:, i[0.99]].astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:116: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up975_{fname}_{qname}"] = Qm[:, i[0.975]].astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:117: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"pin99_{fname}_{qname}"] = P.pinball_rows(y, Qm[:, [i[0.99]]], [0.99])[:, 0].astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:114: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"crps_{fname}_{qname}"] = crps_rows.astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:115: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up99_{fname}_{qname}"] = Qm[:, i[0.99]].astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:116: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up975_{fname}_{qname}"] = Qm[:, i[0.975]].astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:117: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"pin99_{fname}_{qname}"] = P.pinball_rows(y, Qm[:, [i[0.99]]], [0.99])[:, 0].astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:114: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"crps_{fname}_{qname}"] = crps_rows.astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:115: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up99_{fname}_{qname}"] = Qm[:, i[0.99]].astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:116: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up975_{fname}_{qname}"] = Qm[:, i[0.975]].astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:117: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"pin99_{fname}_{qname}"] = P.pinball_rows(y, Qm[:, [i[0.99]]], [0.99])[:, 0].astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:114: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"crps_{fname}_{qname}"] = crps_rows.astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:115: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up99_{fname}_{qname}"] = Qm[:, i[0.99]].astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:116: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up975_{fname}_{qname}"] = Qm[:, i[0.975]].astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:117: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"pin99_{fname}_{qname}"] = P.pinball_rows(y, Qm[:, [i[0.99]]], [0.99])[:, 0].astype(np.float32)
+  seed 1 corr_roll30    done [164s]
+  seed 2 lgbm           done [189s]
+  seed 2 corr_series    done [208s]
+  seed 2 corr_instance  done [228s]
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:114: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"crps_{fname}_{qname}"] = crps_rows.astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:115: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up99_{fname}_{qname}"] = Qm[:, i[0.99]].astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:116: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up975_{fname}_{qname}"] = Qm[:, i[0.975]].astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:117: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"pin99_{fname}_{qname}"] = P.pinball_rows(y, Qm[:, [i[0.99]]], [0.99])[:, 0].astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:114: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"crps_{fname}_{qname}"] = crps_rows.astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:115: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up99_{fname}_{qname}"] = Qm[:, i[0.99]].astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:116: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up975_{fname}_{qname}"] = Qm[:, i[0.975]].astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:117: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"pin99_{fname}_{qname}"] = P.pinball_rows(y, Qm[:, [i[0.99]]], [0.99])[:, 0].astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:114: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"crps_{fname}_{qname}"] = crps_rows.astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:115: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up99_{fname}_{qname}"] = Qm[:, i[0.99]].astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:116: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up975_{fname}_{qname}"] = Qm[:, i[0.975]].astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:117: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"pin99_{fname}_{qname}"] = P.pinball_rows(y, Qm[:, [i[0.99]]], [0.99])[:, 0].astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:114: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"crps_{fname}_{qname}"] = crps_rows.astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:115: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up99_{fname}_{qname}"] = Qm[:, i[0.99]].astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:116: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up975_{fname}_{qname}"] = Qm[:, i[0.975]].astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:117: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"pin99_{fname}_{qname}"] = P.pinball_rows(y, Qm[:, [i[0.99]]], [0.99])[:, 0].astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:114: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"crps_{fname}_{qname}"] = crps_rows.astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:115: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up99_{fname}_{qname}"] = Qm[:, i[0.99]].astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:116: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up975_{fname}_{qname}"] = Qm[:, i[0.975]].astype(np.float32)
+/Data3/<hpc-user>/gated_correction/04_code/scripts/india/india_prob_energy.py:117: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"pin99_{fname}_{qname}"] = P.pinball_rows(y, Qm[:, [i[0.99]]], [0.99])[:, 0].astype(np.float32)
+  seed 2 corr_roll30    done [246s]
+DONE India prob/energy confirm 246
+  50 runs [2s]
+  100 runs [5s]
+  150 runs [7s]
+  200 runs [9s]
+  250 runs [11s]
+  300 runs [14s]
+  350 runs [19s]
+  400 runs [24s]
+  450 runs [29s]
+  500 runs [35s]
+  550 runs [40s]
+state     sign accuracy oracle_pred            0.469
+state     sign accuracy part_interleaved_G     0.823
+state     sign accuracy part_contiguous_G      0.802
+state     sign accuracy nested_G               0.500
+unit      sign accuracy oracle_pred            0.896
+unit      sign accuracy part_interleaved_G     0.562
+unit      sign accuracy part_contiguous_G      0.646
+unit      sign accuracy nested_G               0.642
+DONE x1 partition 576 42
+  50 runs [133s]
+instance  sign accuracy oracle_pred            0.778
+instance  sign accuracy part_interleaved_G     0.542
+instance  sign accuracy part_contiguous_G      0.528
+instance  sign accuracy nested_G               0.514
+DONE x1 instance 72 191
+IH-2-INDIA-HOURLY                    NOT SUPPORTED  est=-0.02933 p=1 p_holm=1  [delta > 0 (p < 0.05)]
+IH-3a-sign                           NOT SUPPORTED  est=+0.62500 p=0.11 p_holm=0.43  [sign accuracy > 0.5]
+IH-3b-regret-vs-never                NOT SUPPORTED  est=-0.00134 p=0.041 p_holm=0.21  [PART regret < never-refine regret]
+IH-3c-regret-vs-nested               NOT SUPPORTED  est=-0.00005 p=0.58 p_holm=1  [PART regret < nested hold-out regret]
+IH-6a-sign                           NOT SUPPORTED  est=+0.42500 p=0.87 p_holm=1  [prequential sign accuracy > 0.5]
+IH-6a-regret-vs-always               NOT SUPPORTED  est=+0.00158 p=0.95 p_holm=1  [prequential regret < always-discount]
+IH-6a-regret-vs-never                NOT SUPPORTED  est=-0.00379 p=0.26 p_holm=0.77  [prequential regret < never-discount]
+IH-6b-updating-free                  SUPPORTED      est=+0.87500 p=n/a p_holm=n/a  [share of configs with expanding - frozen >= -0.002 is >= 0.8]
+IH-7a-part-vs-nested                 NOT SUPPORTED  est=+0.00198 p=0.81 p_holm=1  [PART selection regret < nested]
+IH-7b-part-vs-fixed-series           NOT SUPPORTED  est=-0.00372 p=0.11 p_holm=0.43  [PART regret < fixed per-series]
+IH-5-strength                        NOT SUPPORTED  est=+0.13161 p=0.24 p_holm=0.24  [Spearman(relative RMSE of the forecast, best correction skill) > 0]
+IH-4a-serieshour-vs-q_global         SUPPORTED      est=+264.06547 p=5.0e-04 p_holm=1.0e-03  [pinball@0.99 lower for series x hour cells]
+IH-4a-serieshour-vs-q_series         SUPPORTED      est=+170.93377 p=5.0e-04 p_holm=1.0e-03  [pinball@0.99 lower for series x hour cells]
+IH-4b-instance-undercovers           NOT SUPPORTED  est=+0.73357 p=n/a p_holm=n/a  [coverage(instance) < 0.985 and coverage(series x hour) >= 0.985]
+IH-8a-deviation-energy               SUPPORTED      est=+5741.93900 p=5.0e-04 p_holm=1.0e-03  [all-India demand: deviation energy lower after correction (GWh/yr)]
+IH-8b-reserve-mw                     SUPPORTED      est=+804.67636 p=5.0e-04 p_holm=1.0e-03  [all-India demand: 99% reserve (MW) lower after correction with |coverage difference| <= 0.005]
+IE8c-imbalance-cost                  ESTIMATE       est=-469.06504 p=n/a p_holm=n/a  [estimation only: stylised two-settlement imbalance cost saved, Rs crore per year]
+IH-1-partition-oracle_pred           NOT SUPPORTED  est=+0.71800 p=n/a p_holm=n/a  [sign accuracy >= 0.85 on non-boundary configurations]
+IH-1-partition-part_contiguous_G     NOT SUPPORTED  est=+0.74600 p=n/a p_holm=n/a  [sign accuracy >= 0.75 on non-boundary configurations]
+IH-1-instance-oracle_pred            NOT SUPPORTED  est=+0.82500 p=n/a p_holm=n/a  [sign accuracy >= 0.85 on non-boundary configurations]
+IH-1-instance-part_contiguous_G      NOT SUPPORTED  est=+0.37500 p=n/a p_holm=n/a  [sign accuracy >= 0.75 on non-boundary configurations]
+india confirm finished rc=0 2026-10-06T18:48:25+05:30

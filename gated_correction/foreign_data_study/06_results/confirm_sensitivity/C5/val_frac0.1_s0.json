@@ -1,0 +1,95 @@
+{
+ "g1": 1.0228765256211267,
+ "n_fit": 39275,
+ "n_test": 398222,
+ "fit_days": 36,
+ "part2": {
+  "global->series": {
+   "G": 2976.682341500542,
+   "C": 5104.648881972587,
+   "S": 5104.648881972587,
+   "energy_full": 7232.615422444633,
+   "noise": 2127.9665404720454,
+   "K": 6,
+   "mode": "interleaved"
+  },
+  "series->series_x_hour_block": {
+   "G": 829.0397881423814,
+   "C": 2221.656421380334,
+   "S": 2221.656421380334,
+   "energy_full": 3614.2730546182866,
+   "noise": 1392.6166332379526,
+   "K": 6,
+   "mode": "interleaved"
+  },
+  "series->series_x_hour": {
+   "G": -3769.640852579523,
+   "C": 673.0845426051856,
+   "S": 673.0845426051856,
+   "energy_full": 5115.809937789894,
+   "noise": 4442.725395184709,
+   "K": 6,
+   "mode": "interleaved"
+  },
+  "series->instance": {
+   "G": -35863.518099308974,
+   "C": 541.1063328474739,
+   "energy_full": 36945.73076500392,
+   "K": 4,
+   "mode": "interleaved"
+  }
+ },
+ "part_modes": {},
+ "part": {},
+ "part_block_mode": [
+  "contiguous"
+ ],
+ "nested_risk": {
+  "none": 415319.5791975319,
+  "global": 168993.65612779904,
+  "series": 164742.48869476645,
+  "series_x_hour_block": 164320.18515748513,
+  "series_x_hour": 164742.48869476645,
+  "instance": 172433.44083696595
+ },
+ "seconds": 37.1,
+ "config": {
+  "corrector": {
+   "max_iter": 300,
+   "learning_rate": 0.06,
+   "max_depth": 6,
+   "l2_regularization": 1.0
+  },
+  "corrector_max_rows": 300000,
+  "min_cell": 30,
+  "instance": {
+   "max_iter": 150,
+   "learning_rate": 0.08,
+   "max_depth": 5
+  },
+  "n_bag": 3,
+  "windows_days": [
+   30,
+   90,
+   180
+  ],
+  "lambdas": [
+   0.98,
+   0.995
+  ],
+  "delay_days": 2,
+  "fixed_share_alpha": 0.02,
+  "part_blocks": 6,
+  "part_instance_blocks": 4,
+  "part_eval_rows": 20000,
+  "do_part": true,
+  "part_version": 2,
+  "do_instance": true,
+  "do_time": false,
+  "part_block_mode": "contiguous",
+  "gate_fit": "val",
+  "gate_fit_fraction": 0.1,
+  "oof_folds": 5
+ },
+ "deviation": "DC1 plausibility filter"
+}

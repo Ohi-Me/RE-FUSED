@@ -1,0 +1,20 @@
+\begin{table}[!htbp]\centering\scriptsize
+\caption{Uncertainty models on NYISO 2026 (seed means). CRPS and pinball loss at the 0.99 quantile in MW per zone-hour; reliability is the share of hours with error below the 99\,\% upward reserve; shortfall is the annualised energy by which realised error exceeded that reserve.}\label{tab:quantiles}
+\fittable{\begin{tabular}{@{}l l r r r r r r@{}}\toprule
+Point forecast & Quantile model & CRPS & Pinball$_{0.99}$ & Reliability & Reserve (MW) & Shortfall (GWh/yr) & Reserve value (M\$/yr) \\\midrule
+ISO forecast & global & 54.46 & 4.74 & 0.9878 & 3,638 & 164.0 & 361 \\
+ISO forecast & per zone & 48.90 & 2.73 & 0.9880 & 2,739 & 49.2 & 296 \\
+ISO forecast & zone $\times$ 4-h block & 47.86 & 2.43 & 0.9903 & 2,579 & 33.9 & 290 \\
+ISO forecast & zone $\times$ hour & 47.76 & 2.48 & 0.9934 & 2,815 & 18.5 & 320 \\
+ISO forecast & zone $\times$ month & 50.78 & 3.30 & 0.9773 & 2,580 & 118.2 & 283 \\
+ISO forecast & per instance & 48.00 & 3.26 & 0.9694 & 1,925 & 168.8 & 226 \\
+ISO forecast & rolling 90 days & 48.04 & 2.78 & 0.9871 & 2,679 & 59.5 & 276 \\
+\midrule
+Corrected (per-zone gate) & global & 51.16 & 4.99 & 0.9850 & 3,233 & 194.7 & 321 \\
+Corrected (per-zone gate) & per zone & 48.63 & 2.89 & 0.9866 & 2,515 & 57.0 & 277 \\
+Corrected (per-zone gate) & zone $\times$ 4-h block & 47.67 & 2.52 & 0.9896 & 2,385 & 32.3 & 274 \\
+Corrected (per-zone gate) & zone $\times$ hour & 47.56 & 2.59 & 0.9921 & 2,580 & 22.9 & 300 \\
+Corrected (per-zone gate) & zone $\times$ month & 49.43 & 3.32 & 0.9793 & 2,323 & 115.0 & 245 \\
+Corrected (per-zone gate) & per instance & 48.82 & 3.28 & 0.9694 & 1,678 & 164.4 & 195 \\
+Corrected (per-zone gate) & rolling 90 days & 48.19 & 2.93 & 0.9859 & 2,404 & 70.6 & 244 \\
+\bottomrule\end{tabular}}\end{table}

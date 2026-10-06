@@ -1,0 +1,6 @@
+  50 runs [569s]
+instance  sign accuracy oracle_pred            0.778
+instance  sign accuracy part_interleaved_G     0.639
+instance  sign accuracy part_contiguous_G      0.556
+instance  sign accuracy nested_G               0.764
+DONE x1 instance 72 857

@@ -1,0 +1,34 @@
+  ETTh1_persistence_h1_s0 [6s]
+  ETTh1_persistence_h1_s1 [8s]
+  ETTh1_persistence_h1_s2 [12s]
+  ETTh1_persistence_h24_s0 [16s]
+  ETTh1_persistence_h24_s1 [20s]
+  ETTh1_persistence_h24_s2 [23s]
+  ETTh1_snaive24_h1_s0 [27s]
+  ETTh1_snaive24_h1_s1 [31s]
+  ETTh1_snaive24_h1_s2 [36s]
+  ETTh2_persistence_h1_s0 [40s]
+  ETTh2_persistence_h1_s1 [43s]
+  ETTh2_persistence_h1_s2 [46s]
+  ETTh2_persistence_h24_s0 [50s]
+  ETTh2_persistence_h24_s1 [54s]
+  ETTh2_persistence_h24_s2 [58s]
+  ETTh2_snaive24_h1_s0 [63s]
+  ETTh2_snaive24_h1_s1 [68s]
+  ETTh2_snaive24_h1_s2 [72s]
+                   size   mean
+predictor                     
+part2_contiguous     36  0.472
+part2_interleaved    36  0.583
+part2_time           18  0.333
+prequential          54  0.278
+                                                 n     acc    pred    real
+refinement                   predictor                                    
+expanding->time_forget_0.98  prequential        18  0.2222  0.0001  0.0001
+expanding->time_forget_0.995 prequential        18  0.2222  0.0001  0.0001
+expanding->time_rolling_30   part2_time         18  0.3333 -0.0040 -0.0029
+                             prequential        18  0.3889 -0.0016 -0.0029
+global->series               part2_contiguous   18  0.6111  0.0027  0.0011
+                             part2_interleaved  18  0.6667  0.0038  0.0011
+series->series_x_hour_block  part2_contiguous   18  0.3333 -0.0006 -0.0162
+                             part2_interleaved  18  0.5000  0.0125 -0.0162

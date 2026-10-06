@@ -1,0 +1,238 @@
+[
+ {
+  "id": "H2-NYISO-2026",
+  "family": "mechanism",
+  "estimate": 0.060148318844310884,
+  "lo": 0.03344817399245931,
+  "hi": 0.08625797592146957,
+  "p": 0.0004997501249375312,
+  "criterion": "delta > 0 (p < 0.05)",
+  "p_holm": 0.0004997501249375312,
+  "p_by": 0.0037915935841972823,
+  "verdict": "SUPPORTED"
+ },
+ {
+  "id": "H3a-sign",
+  "family": "selection",
+  "estimate": 0.7142857142857143,
+  "n": 42,
+  "p": 0.003957948667448363,
+  "criterion": "sign accuracy > 0.5",
+  "p_holm": 0.019789743337241816,
+  "p_by": 0.020221832449052173,
+  "verdict": "SUPPORTED"
+ },
+ {
+  "id": "H3b-regret-vs-never",
+  "family": "selection",
+  "estimate": 0.0031118399234994184,
+  "p": 0.03140697255730629,
+  "criterion": "PART regret < never-refine regret",
+  "p_holm": 0.12562789022922516,
+  "p_by": 0.14297042026219958,
+  "verdict": "NOT SUPPORTED"
+ },
+ {
+  "id": "H3c-regret-vs-nested",
+  "family": "selection",
+  "estimate": -0.000343211111751859,
+  "p": 0.0765380859375,
+  "criterion": "PART regret < nested hold-out regret",
+  "p_holm": 0.2296142578125,
+  "p_by": 0.31674154499471885,
+  "verdict": "NOT SUPPORTED"
+ },
+ {
+  "id": "H6a-sign",
+  "family": "time",
+  "estimate": 0.7083333333333334,
+  "n": 48,
+  "p": 0.002757600742750555,
+  "criterion": "prequential sign accuracy > 0.5",
+  "p_holm": 0.00551520148550111,
+  "p_by": 0.01793302137365599,
+  "verdict": "SUPPORTED"
+ },
+ {
+  "id": "H6a-regret-vs-always",
+  "family": "time",
+  "estimate": -0.0051700474147020415,
+  "p": 2.3133179638534784e-07,
+  "criterion": "prequential regret < always-discount",
+  "p_holm": 6.939953891560435e-07,
+  "p_by": 1.0530656556876177e-05,
+  "verdict": "SUPPORTED"
+ },
+ {
+  "id": "H6a-regret-vs-never",
+  "family": "time",
+  "estimate": 0.00039536556306595644,
+  "p": 0.8837890625,
+  "criterion": "prequential regret < never-discount",
+  "p_holm": 0.8837890625,
+  "p_by": 1.0,
+  "verdict": "NOT SUPPORTED"
+ },
+ {
+  "id": "H6b-updating-free",
+  "family": "time",
+  "estimate": 0.8333333333333334,
+  "n": 12,
+  "p": NaN,
+  "criterion": "share of configs with expanding - frozen >= -0.002 is >= 0.8",
+  "verdict_rule": "threshold",
+  "verdict": "SUPPORTED"
+ },
+ {
+  "id": "H7a-part-vs-nested",
+  "family": "selection",
+  "estimate": -0.0009173593036728347,
+  "p": 0.24609375,
+  "criterion": "PART selection regret < nested",
+  "p_holm": 0.4921875,
+  "p_by": 0.9096167446002182,
+  "verdict": "NOT SUPPORTED"
+ },
+ {
+  "id": "H7b-part-vs-fixed-series",
+  "family": "selection",
+  "estimate": 0.0063487923913476615,
+  "p": 0.259765625,
+  "criterion": "PART regret < fixed per-series",
+  "p_holm": 0.4921875,
+  "p_by": 0.9096167446002182,
+  "verdict": "NOT SUPPORTED"
+ },
+ {
+  "id": "H5-strength",
+  "family": "baseline",
+  "estimate": 0.9166666666666666,
+  "n": 9,
+  "p": 0.0002533095331526042,
+  "criterion": "Spearman(baseline RMSE, best correction skill) > 0",
+  "p_holm": 0.0002533095331526042,
+  "p_by": 0.0037915935841972823,
+  "verdict": "SUPPORTED"
+ },
+ {
+  "id": "H4a-zonehour-vs-q_global",
+  "family": "probabilistic",
+  "estimate": 2.055793786945027,
+  "lo": 1.471264606683258,
+  "hi": 2.78310379288313,
+  "p": 0.0004997501249375312,
+  "criterion": "pinball@0.99 lower for zone x hour cells",
+  "p_holm": 0.0009995002498750624,
+  "p_by": 0.0037915935841972823,
+  "verdict": "SUPPORTED"
+ },
+ {
+  "id": "H4a-zonehour-vs-q_zone",
+  "family": "probabilistic",
+  "estimate": 0.2615493430058939,
+  "lo": 0.12167238170564483,
+  "hi": 0.4454808360046698,
+  "p": 0.00399800099950025,
+  "criterion": "pinball@0.99 lower for zone x hour cells",
+  "p_holm": 0.00399800099950025,
+  "p_by": 0.020221832449052173,
+  "verdict": "SUPPORTED"
+ },
+ {
+  "id": "H4b-instance-undercovers",
+  "family": "probabilistic",
+  "estimate": 0.9690601769176461,
+  "extra": {
+   "zone_hour": 0.9892125918850451
+  },
+  "p": NaN,
+  "criterion": "coverage(instance) < 0.985 and coverage(zone x hour) >= 0.985",
+  "verdict_rule": "threshold",
+  "passed": true,
+  "verdict": "SUPPORTED"
+ },
+ {
+  "id": "H8a-deviation-energy",
+  "family": "energy",
+  "estimate": 1227.124979832967,
+  "lo": 965.7988983470774,
+  "hi": 1443.870824582717,
+  "p": 0.0004997501249375312,
+  "criterion": "deviation energy lower after correction (GWh/yr)",
+  "p_holm": 0.0009995002498750624,
+  "p_by": 0.0037915935841972823,
+  "verdict": "SUPPORTED"
+ },
+ {
+  "id": "H8b-reserve-mw",
+  "family": "energy",
+  "estimate": 271.7942669444613,
+  "lo": 271.56182375422696,
+  "hi": 271.9133780267511,
+  "p": 0.0004997501249375312,
+  "extra": {
+   "coverage_iso": 0.9894513891772914,
+   "coverage_corrected": 0.9892125918850451
+  },
+  "criterion": "99% reserve (MW, summed over zones) lower after correction with |coverage difference| <= 0.005",
+  "coverage_ok": true,
+  "p_holm": 0.0009995002498750624,
+  "p_by": 0.0037915935841972823,
+  "verdict": "SUPPORTED"
+ },
+ {
+  "id": "E8c-imbalance-cost",
+  "family": "energy-estimation",
+  "estimate": -4.454772694751352,
+  "lo": -12.100817027939712,
+  "hi": 2.038322857653351,
+  "p": NaN,
+  "criterion": "estimation only (no directional hypothesis), M$/yr saved",
+  "verdict_rule": "estimate",
+  "verdict": "ESTIMATE"
+ },
+ {
+  "id": "H1-partition-oracle_pred",
+  "family": "synthetic",
+  "estimate": 0.9209744503862151,
+  "n": 1683,
+  "p": NaN,
+  "criterion": "sign accuracy >= 0.85 on non-boundary configurations",
+  "verdict_rule": "threshold",
+  "passed": true,
+  "verdict": "SUPPORTED"
+ },
+ {
+  "id": "H1-partition-part_contiguous_G",
+  "family": "synthetic",
+  "estimate": 0.7973856209150327,
+  "n": 1683,
+  "p": NaN,
+  "criterion": "sign accuracy >= 0.75 on non-boundary configurations",
+  "verdict_rule": "threshold",
+  "passed": true,
+  "verdict": "SUPPORTED"
+ },
+ {
+  "id": "H1-instance-oracle_pred",
+  "family": "synthetic",
+  "estimate": 1.0,
+  "n": 4,
+  "p": NaN,
+  "criterion": "sign accuracy >= 0.85 on non-boundary configurations",
+  "verdict_rule": "threshold",
+  "passed": true,
+  "verdict": "SUPPORTED"
+ },
+ {
+  "id": "H1-instance-part_contiguous_G",
+  "family": "synthetic",
+  "estimate": 0.5,
+  "n": 4,
+  "p": NaN,
+  "criterion": "sign accuracy >= 0.75 on non-boundary configurations",
+  "verdict_rule": "threshold",
+  "passed": false,
+  "verdict": "NOT SUPPORTED"
+ }
+]

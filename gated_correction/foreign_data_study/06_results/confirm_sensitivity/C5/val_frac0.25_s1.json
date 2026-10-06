@@ -1,0 +1,95 @@
+{
+ "g1": 1.0344126350725884,
+ "n_fit": 99195,
+ "n_test": 398222,
+ "fit_days": 91,
+ "part2": {
+  "global->series": {
+   "G": 2542.6468574844876,
+   "C": 3673.15176725809,
+   "S": 3673.15176725809,
+   "energy_full": 4803.656677031692,
+   "noise": 1130.5049097736023,
+   "K": 6,
+   "mode": "interleaved"
+  },
+  "series->series_x_hour_block": {
+   "G": 1342.1576649883318,
+   "C": 1957.82419582551,
+   "S": 1957.82419582551,
+   "energy_full": 2573.4907266626883,
+   "noise": 615.6665308371782,
+   "K": 6,
+   "mode": "interleaved"
+  },
+  "series->series_x_hour": {
+   "G": 1432.3984155189378,
+   "C": 2564.224090175906,
+   "S": 2564.224090175906,
+   "energy_full": 3696.049764832874,
+   "noise": 1131.8256746569682,
+   "K": 6,
+   "mode": "interleaved"
+  },
+  "series->instance": {
+   "G": -19366.759449598383,
+   "C": 1574.4560342718614,
+   "energy_full": 22515.671518142106,
+   "K": 4,
+   "mode": "interleaved"
+  }
+ },
+ "part_modes": {},
+ "part": {},
+ "part_block_mode": [
+  "contiguous"
+ ],
+ "nested_risk": {
+  "none": 431808.09283048054,
+  "global": 194536.1729831876,
+  "series": 190533.8135626717,
+  "series_x_hour_block": 190491.477504881,
+  "series_x_hour": 191009.16122604953,
+  "instance": 217382.191680357
+ },
+ "seconds": 54.7,
+ "config": {
+  "corrector": {
+   "max_iter": 300,
+   "learning_rate": 0.06,
+   "max_depth": 6,
+   "l2_regularization": 1.0
+  },
+  "corrector_max_rows": 300000,
+  "min_cell": 30,
+  "instance": {
+   "max_iter": 150,
+   "learning_rate": 0.08,
+   "max_depth": 5
+  },
+  "n_bag": 3,
+  "windows_days": [
+   30,
+   90,
+   180
+  ],
+  "lambdas": [
+   0.98,
+   0.995
+  ],
+  "delay_days": 2,
+  "fixed_share_alpha": 0.02,
+  "part_blocks": 6,
+  "part_instance_blocks": 4,
+  "part_eval_rows": 20000,
+  "do_part": true,
+  "part_version": 2,
+  "do_instance": true,
+  "do_time": false,
+  "part_block_mode": "contiguous",
+  "gate_fit": "val",
+  "gate_fit_fraction": 0.25,
+  "oof_folds": 5
+ },
+ "deviation": "DC1 plausibility filter"
+}

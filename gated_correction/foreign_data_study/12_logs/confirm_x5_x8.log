@@ -1,0 +1,133 @@
+  seed 0 iso            MAE   70.91 imbalance $  26.91M CRPS(zone_hour) 47.76 [124s]
+  seed 0 corr_series    MAE   62.42 imbalance $  49.49M CRPS(zone_hour) 47.67 [226s]
+  seed 0 corr_instance  MAE   63.14 imbalance $  49.26M CRPS(zone_hour) 48.19 [332s]
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:170: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"crps_{fname}_{qname}"] = crps_rows.astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:171: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up99_{fname}_{qname}"] = Qm[:, i99].astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:172: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up975_{fname}_{qname}"] = Qm[:, i975].astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:173: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"pin99_{fname}_{qname}"] = P.pinball_rows(y, Qm[:, [i99]], [0.99])[:, 0].astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:170: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"crps_{fname}_{qname}"] = crps_rows.astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:171: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up99_{fname}_{qname}"] = Qm[:, i99].astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:172: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up975_{fname}_{qname}"] = Qm[:, i975].astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:173: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"pin99_{fname}_{qname}"] = P.pinball_rows(y, Qm[:, [i99]], [0.99])[:, 0].astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:170: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"crps_{fname}_{qname}"] = crps_rows.astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:171: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up99_{fname}_{qname}"] = Qm[:, i99].astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:172: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up975_{fname}_{qname}"] = Qm[:, i975].astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:173: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"pin99_{fname}_{qname}"] = P.pinball_rows(y, Qm[:, [i99]], [0.99])[:, 0].astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:170: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"crps_{fname}_{qname}"] = crps_rows.astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:171: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up99_{fname}_{qname}"] = Qm[:, i99].astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:172: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up975_{fname}_{qname}"] = Qm[:, i975].astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:173: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"pin99_{fname}_{qname}"] = P.pinball_rows(y, Qm[:, [i99]], [0.99])[:, 0].astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:170: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"crps_{fname}_{qname}"] = crps_rows.astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:171: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up99_{fname}_{qname}"] = Qm[:, i99].astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:172: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up975_{fname}_{qname}"] = Qm[:, i975].astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:173: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"pin99_{fname}_{qname}"] = P.pinball_rows(y, Qm[:, [i99]], [0.99])[:, 0].astype(np.float32)
+  seed 0 corr_roll30    MAE   62.53 imbalance $  47.36M CRPS(zone_hour) 47.66 [437s]
+  seed 1 iso            MAE   70.91 imbalance $  26.91M CRPS(zone_hour) 47.76 [577s]
+  seed 1 corr_series    MAE   62.24 imbalance $  48.29M CRPS(zone_hour) 47.51 [681s]
+  seed 1 corr_instance  MAE   62.93 imbalance $  44.64M CRPS(zone_hour) 47.98 [786s]
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:170: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"crps_{fname}_{qname}"] = crps_rows.astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:171: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up99_{fname}_{qname}"] = Qm[:, i99].astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:172: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up975_{fname}_{qname}"] = Qm[:, i975].astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:173: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"pin99_{fname}_{qname}"] = P.pinball_rows(y, Qm[:, [i99]], [0.99])[:, 0].astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:170: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"crps_{fname}_{qname}"] = crps_rows.astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:171: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up99_{fname}_{qname}"] = Qm[:, i99].astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:172: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up975_{fname}_{qname}"] = Qm[:, i975].astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:173: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"pin99_{fname}_{qname}"] = P.pinball_rows(y, Qm[:, [i99]], [0.99])[:, 0].astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:170: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"crps_{fname}_{qname}"] = crps_rows.astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:171: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up99_{fname}_{qname}"] = Qm[:, i99].astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:172: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up975_{fname}_{qname}"] = Qm[:, i975].astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:173: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"pin99_{fname}_{qname}"] = P.pinball_rows(y, Qm[:, [i99]], [0.99])[:, 0].astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:170: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"crps_{fname}_{qname}"] = crps_rows.astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:171: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up99_{fname}_{qname}"] = Qm[:, i99].astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:172: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up975_{fname}_{qname}"] = Qm[:, i975].astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:173: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"pin99_{fname}_{qname}"] = P.pinball_rows(y, Qm[:, [i99]], [0.99])[:, 0].astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:170: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"crps_{fname}_{qname}"] = crps_rows.astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:171: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up99_{fname}_{qname}"] = Qm[:, i99].astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:172: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up975_{fname}_{qname}"] = Qm[:, i975].astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:173: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"pin99_{fname}_{qname}"] = P.pinball_rows(y, Qm[:, [i99]], [0.99])[:, 0].astype(np.float32)
+  seed 1 corr_roll30    MAE   62.60 imbalance $  46.55M CRPS(zone_hour) 47.67 [892s]
+  seed 2 iso            MAE   70.91 imbalance $  26.91M CRPS(zone_hour) 47.76 [1033s]
+  seed 2 corr_series    MAE   62.22 imbalance $  47.00M CRPS(zone_hour) 47.49 [1139s]
+  seed 2 corr_instance  MAE   63.13 imbalance $  44.81M CRPS(zone_hour) 48.20 [1241s]
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:170: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"crps_{fname}_{qname}"] = crps_rows.astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:171: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up99_{fname}_{qname}"] = Qm[:, i99].astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:172: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up975_{fname}_{qname}"] = Qm[:, i975].astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:173: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"pin99_{fname}_{qname}"] = P.pinball_rows(y, Qm[:, [i99]], [0.99])[:, 0].astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:170: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"crps_{fname}_{qname}"] = crps_rows.astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:171: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up99_{fname}_{qname}"] = Qm[:, i99].astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:172: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up975_{fname}_{qname}"] = Qm[:, i975].astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:173: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"pin99_{fname}_{qname}"] = P.pinball_rows(y, Qm[:, [i99]], [0.99])[:, 0].astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:170: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"crps_{fname}_{qname}"] = crps_rows.astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:171: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up99_{fname}_{qname}"] = Qm[:, i99].astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:172: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up975_{fname}_{qname}"] = Qm[:, i975].astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:173: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"pin99_{fname}_{qname}"] = P.pinball_rows(y, Qm[:, [i99]], [0.99])[:, 0].astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:170: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"crps_{fname}_{qname}"] = crps_rows.astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:171: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up99_{fname}_{qname}"] = Qm[:, i99].astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:172: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up975_{fname}_{qname}"] = Qm[:, i975].astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:173: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"pin99_{fname}_{qname}"] = P.pinball_rows(y, Qm[:, [i99]], [0.99])[:, 0].astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:170: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"crps_{fname}_{qname}"] = crps_rows.astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:171: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up99_{fname}_{qname}"] = Qm[:, i99].astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:172: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"up975_{fname}_{qname}"] = Qm[:, i975].astype(np.float32)
+D:\\REFUSED7\04_code\scripts\dev\x5_x8_prob_energy.py:173: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  rows[f"pin99_{fname}_{qname}"] = P.pinball_rows(y, Qm[:, [i99]], [0.99])[:, 0].astype(np.float32)
+  seed 2 corr_roll30    MAE   62.55 imbalance $  45.61M CRPS(zone_hour) 47.65 [1341s]
+DONE x5_x8 1342

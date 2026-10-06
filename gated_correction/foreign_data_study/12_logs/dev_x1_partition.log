@@ -1,0 +1,47 @@
+  50 runs [37s]
+  100 runs [74s]
+  150 runs [105s]
+  200 runs [128s]
+  250 runs [152s]
+  300 runs [184s]
+  350 runs [216s]
+  400 runs [241s]
+  450 runs [263s]
+  500 runs [282s]
+  550 runs [303s]
+  600 runs [324s]
+  650 runs [347s]
+  700 runs [369s]
+  750 runs [396s]
+  800 runs [424s]
+  850 runs [448s]
+  900 runs [476s]
+  950 runs [500s]
+  1000 runs [553s]
+  1050 runs [614s]
+  1100 runs [692s]
+  1150 runs [761s]
+  1200 runs [827s]
+  1250 runs [893s]
+  1300 runs [957s]
+  1350 runs [1017s]
+  1400 runs [1085s]
+  1450 runs [1153s]
+  1500 runs [1202s]
+  1550 runs [1243s]
+  1600 runs [1283s]
+  1650 runs [1329s]
+  1700 runs [1381s]
+  1750 runs [1424s]
+  1800 runs [1486s]
+  1850 runs [1550s]
+  1900 runs [1609s]
+state     sign accuracy oracle_pred            0.905
+state     sign accuracy part_interleaved_G     0.586
+state     sign accuracy part_contiguous_G      0.827
+state     sign accuracy nested_G               0.354
+unit      sign accuracy oracle_pred            0.857
+unit      sign accuracy part_interleaved_G     0.566
+unit      sign accuracy part_contiguous_G      0.741
+unit      sign accuracy nested_G               0.570
+DONE x1 partition 1944 1653

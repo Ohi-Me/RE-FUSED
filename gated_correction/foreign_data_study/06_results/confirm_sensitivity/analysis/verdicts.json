@@ -1,0 +1,278 @@
+[
+ {
+  "id": "H2-NYISO-2026",
+  "family": "mechanism",
+  "estimate": 0.04204001781640474,
+  "lo": 0.02357690404576091,
+  "hi": 0.06224985726703541,
+  "p": 0.0004997501249375312,
+  "criterion": "delta > 0 (p < 0.05)",
+  "p_holm": 0.0014992503748125937,
+  "p_by": 0.0024351321374684693,
+  "verdict": "SUPPORTED"
+ },
+ {
+  "id": "H2-OPSD-2019",
+  "family": "mechanism",
+  "estimate": 0.03253554341982022,
+  "lo": 0.024458498280063922,
+  "hi": 0.03913841502785278,
+  "p": 0.0004997501249375312,
+  "criterion": "delta > 0 (p < 0.05)",
+  "p_holm": 0.0014992503748125937,
+  "p_by": 0.0024351321374684693,
+  "verdict": "SUPPORTED"
+ },
+ {
+  "id": "H2-UCI-2014",
+  "family": "mechanism",
+  "estimate": 0.03210464211075838,
+  "lo": -0.011447430402682547,
+  "hi": 0.09960635354976685,
+  "p": 0.13943028485757122,
+  "criterion": "delta > 0 (p < 0.05)",
+  "p_holm": 0.13943028485757122,
+  "p_by": 0.4795777880143786,
+  "verdict": "NOT SUPPORTED"
+ },
+ {
+  "id": "H2-meta",
+  "family": "mechanism",
+  "estimate": 0.03372023275267688,
+  "lo": 0.026850517814496815,
+  "hi": 0.04058994769085695,
+  "p": 0.0,
+  "criterion": "pooled delta > 0",
+  "extra": {
+   "I2": 0.0,
+   "k": 3
+  },
+  "p_holm": 0.0,
+  "p_by": 0.0,
+  "verdict": "SUPPORTED"
+ },
+ {
+  "id": "H3a-sign",
+  "family": "selection",
+  "estimate": 0.8235294117647058,
+  "n": 68,
+  "p": 3.1047478687810937e-08,
+  "criterion": "sign accuracy > 0.5",
+  "p_holm": 1.2418991475124375e-07,
+  "p_by": 6.051401239730067e-07,
+  "verdict": "SUPPORTED"
+ },
+ {
+  "id": "H3b-regret-vs-never",
+  "family": "selection",
+  "estimate": -0.001543635006094113,
+  "p": 2.7000623958883807e-13,
+  "criterion": "PART regret < never-refine regret",
+  "p_holm": 1.3500311979441904e-12,
+  "p_by": 7.89395546130553e-12,
+  "verdict": "SUPPORTED"
+ },
+ {
+  "id": "H3c-regret-vs-nested",
+  "family": "selection",
+  "estimate": -0.0007273770113561228,
+  "p": 2.086162567138672e-07,
+  "criterion": "PART regret < nested hold-out regret",
+  "p_holm": 6.258487701416016e-07,
+  "p_by": 2.4396583449497833e-06,
+  "verdict": "SUPPORTED"
+ },
+ {
+  "id": "H6a-sign",
+  "family": "time",
+  "estimate": 0.7647058823529411,
+  "n": 85,
+  "p": 5.149437156259905e-07,
+  "criterion": "prequential sign accuracy > 0.5",
+  "p_holm": 1.029887431251981e-06,
+  "p_by": 5.0183318756149125e-06,
+  "verdict": "SUPPORTED"
+ },
+ {
+  "id": "H6a-regret-vs-always",
+  "family": "time",
+  "estimate": -0.002847528414865507,
+  "p": 1.167742831403978e-07,
+  "criterion": "prequential regret < always-discount",
+  "p_holm": 3.5032284942119337e-07,
+  "p_by": 1.707017940659266e-06,
+  "verdict": "SUPPORTED"
+ },
+ {
+  "id": "H6a-regret-vs-never",
+  "family": "time",
+  "estimate": -0.00013041716156490075,
+  "p": 0.07030299725010991,
+  "criterion": "prequential regret < never-discount",
+  "p_holm": 0.07030299725010991,
+  "p_by": 0.2569240297621232,
+  "verdict": "NOT SUPPORTED"
+ },
+ {
+  "id": "H6b-updating-free",
+  "family": "time",
+  "estimate": 0.9411764705882353,
+  "n": 17,
+  "p": NaN,
+  "criterion": "share of configs with expanding - frozen >= -0.002 is >= 0.8",
+  "verdict_rule": "threshold",
+  "verdict": "SUPPORTED"
+ },
+ {
+  "id": "H7a-part-vs-nested",
+  "family": "selection",
+  "estimate": -0.0019792413317677414,
+  "p": 0.001953125,
+  "criterion": "PART selection regret < nested",
+  "p_holm": 0.002685546875,
+  "p_by": 0.008157420882379031,
+  "verdict": "SUPPORTED"
+ },
+ {
+  "id": "H7b-part-vs-fixed-series",
+  "family": "selection",
+  "estimate": -0.0019082467839727085,
+  "p": 0.0013427734375,
+  "criterion": "PART regret < fixed per-series",
+  "p_holm": 0.002685546875,
+  "p_by": 0.006039628922530628,
+  "verdict": "SUPPORTED"
+ },
+ {
+  "id": "H5-strength",
+  "family": "baseline",
+  "estimate": 0.7333333333333334,
+  "n": 9,
+  "p": 0.01227707503573484,
+  "criterion": "Spearman(baseline RMSE, best correction skill) > 0",
+  "p_holm": 0.01227707503573484,
+  "p_by": 0.04785799699778653,
+  "verdict": "SUPPORTED"
+ },
+ {
+  "id": "H4a-zonehour-vs-q_global",
+  "family": "probabilistic",
+  "estimate": 2.392703235173648,
+  "lo": 1.634879603143308,
+  "hi": 3.3457829564081023,
+  "p": 0.0004997501249375312,
+  "criterion": "pinball@0.99 lower for zone x hour cells",
+  "p_holm": 0.0009995002498750624,
+  "p_by": 0.0024351321374684693,
+  "verdict": "SUPPORTED"
+ },
+ {
+  "id": "H4a-zonehour-vs-q_zone",
+  "family": "probabilistic",
+  "estimate": 0.2938747504138604,
+  "lo": 0.16371602884419312,
+  "hi": 0.4611373302440676,
+  "p": 0.0004997501249375312,
+  "criterion": "pinball@0.99 lower for zone x hour cells",
+  "p_holm": 0.0009995002498750624,
+  "p_by": 0.0024351321374684693,
+  "verdict": "SUPPORTED"
+ },
+ {
+  "id": "H4b-instance-undercovers",
+  "family": "probabilistic",
+  "estimate": 0.9694265926249455,
+  "extra": {
+   "zone_hour": 0.9921070693205216
+  },
+  "p": NaN,
+  "criterion": "coverage(instance) < 0.985 and coverage(zone x hour) >= 0.985",
+  "verdict_rule": "threshold",
+  "passed": true,
+  "verdict": "SUPPORTED"
+ },
+ {
+  "id": "H8a-deviation-energy",
+  "family": "energy",
+  "estimate": 853.7296704870781,
+  "lo": 626.1055464917365,
+  "hi": 1053.481324060719,
+  "p": 0.0004997501249375312,
+  "criterion": "deviation energy lower after correction (GWh/yr)",
+  "p_holm": 0.0009995002498750624,
+  "p_by": 0.0024351321374684693,
+  "verdict": "SUPPORTED"
+ },
+ {
+  "id": "H8b-reserve-mw",
+  "family": "energy",
+  "estimate": 234.2561911398491,
+  "lo": 233.98982212148795,
+  "hi": 234.41037993960921,
+  "p": 0.0004997501249375312,
+  "extra": {
+   "coverage_iso": 0.993417358208024,
+   "coverage_corrected": 0.9921070693205216
+  },
+  "criterion": "99% reserve (MW, summed over zones) lower after correction with |coverage difference| <= 0.005",
+  "coverage_ok": true,
+  "p_holm": 0.0009995002498750624,
+  "p_by": 0.0024351321374684693,
+  "verdict": "SUPPORTED"
+ },
+ {
+  "id": "E8c-imbalance-cost",
+  "family": "energy-estimation",
+  "estimate": -32.08011059913395,
+  "lo": -93.5677242312755,
+  "hi": 2.764033188784774,
+  "p": NaN,
+  "criterion": "estimation only (no directional hypothesis), M$/yr saved",
+  "verdict_rule": "estimate",
+  "verdict": "ESTIMATE"
+ },
+ {
+  "id": "H1-partition-oracle_pred",
+  "family": "synthetic",
+  "estimate": 0.8484848484848485,
+  "n": 528,
+  "p": NaN,
+  "criterion": "sign accuracy >= 0.85 on non-boundary configurations",
+  "verdict_rule": "threshold",
+  "passed": false,
+  "verdict": "NOT SUPPORTED"
+ },
+ {
+  "id": "H1-partition-part_contiguous_G",
+  "family": "synthetic",
+  "estimate": 0.7462121212121212,
+  "n": 528,
+  "p": NaN,
+  "criterion": "sign accuracy >= 0.75 on non-boundary configurations",
+  "verdict_rule": "threshold",
+  "passed": false,
+  "verdict": "NOT SUPPORTED"
+ },
+ {
+  "id": "H1-instance-oracle_pred",
+  "family": "synthetic",
+  "estimate": 0.7272727272727273,
+  "n": 44,
+  "p": NaN,
+  "criterion": "sign accuracy >= 0.85 on non-boundary configurations",
+  "verdict_rule": "threshold",
+  "passed": false,
+  "verdict": "NOT SUPPORTED"
+ },
+ {
+  "id": "H1-instance-part_contiguous_G",
+  "family": "synthetic",
+  "estimate": 0.45454545454545453,
+  "n": 44,
+  "p": NaN,
+  "criterion": "sign accuracy >= 0.75 on non-boundary configurations",
+  "verdict_rule": "threshold",
+  "passed": false,
+  "verdict": "NOT SUPPORTED"
+ }
+]

@@ -1,0 +1,155 @@
+{
+ "g1": 0.7866814902800436,
+ "n_fit": 7300,
+ "n_test": 8400,
+ "fit_days": 365,
+ "part_modes": {
+  "contiguous": {
+   "global->series": {
+    "S": 9.230061127353503,
+    "C": 10.051555349146794,
+    "E": 2.3429849610160667,
+    "G": 8.530064609924018,
+    "K": 6,
+    "cells": 20,
+    "energy_full": 11.591564715310863
+   },
+   "series->series_x_vol_tercile": {
+    "S": -0.12467881060359162,
+    "C": -0.09738811685444038,
+    "E": 1.9486802276175452,
+    "G": -2.0187776507228343,
+    "K": 6,
+    "cells": 58,
+    "energy_full": 0.6620231436066817
+   },
+   "series->instance": {
+    "S": 5.633750786532674,
+    "C": 4.623813684312715,
+    "E": 22.891774703360152,
+    "G": -19.277898121267395,
+    "K": 4
+   }
+  },
+  "interleaved": {
+   "global->series": {
+    "S": 7.613525508355584,
+    "C": 7.613525508355584,
+    "E": 1.4775058202740043,
+    "G": 6.13601968808158,
+    "K": 6,
+    "cells": 20,
+    "energy_full": 11.591564715310863
+   },
+   "series->series_x_vol_tercile": {
+    "S": 0.07933871431747436,
+    "C": 0.07933871431747436,
+    "E": 0.9883966135264199,
+    "G": -0.9090578992089455,
+    "K": 6,
+    "cells": 58,
+    "energy_full": 0.6620231436066817
+   },
+   "series->instance": {
+    "S": 4.361981564051725,
+    "C": 4.361981564051725,
+    "E": 12.731248941219516,
+    "G": -8.369267377167791,
+    "K": 4
+   }
+  }
+ },
+ "part": {
+  "global->series": {
+   "S": 9.230061127353503,
+   "C": 10.051555349146794,
+   "E": 2.3429849610160667,
+   "G": 8.530064609924018,
+   "K": 6,
+   "cells": 20,
+   "energy_full": 11.591564715310863
+  },
+  "series->series_x_vol_tercile": {
+   "S": -0.12467881060359162,
+   "C": -0.09738811685444038,
+   "E": 1.9486802276175452,
+   "G": -2.0187776507228343,
+   "K": 6,
+   "cells": 58,
+   "energy_full": 0.6620231436066817
+  },
+  "series->instance": {
+   "S": 5.633750786532674,
+   "C": 4.623813684312715,
+   "E": 22.891774703360152,
+   "G": -19.277898121267395,
+   "K": 4
+  }
+ },
+ "part_block_mode": [
+  "contiguous",
+  "interleaved"
+ ],
+ "part_time": {
+  "series->rolling_30": {
+   "G": -28.336737904372736,
+   "K": 13,
+   "block_days": 30,
+   "n_terms": 12
+  },
+  "series->rolling_90": {
+   "G": -12.077221472447622,
+   "K": 5,
+   "block_days": 90,
+   "n_terms": 4
+  }
+ },
+ "nested_risk": {
+  "none": 408.89451379056544,
+  "global": 354.90030297302513,
+  "series": 345.13011573046964,
+  "series_x_vol_tercile": 348.95938686095786,
+  "instance": 373.00479812849915
+ },
+ "seconds": 146.1,
+ "config": {
+  "corrector": {
+   "max_iter": 300,
+   "learning_rate": 0.06,
+   "max_depth": 6,
+   "l2_regularization": 1.0
+  },
+  "corrector_max_rows": 300000,
+  "min_cell": 30,
+  "instance": {
+   "max_iter": 150,
+   "learning_rate": 0.08,
+   "max_depth": 5
+  },
+  "n_bag": 3,
+  "windows_days": [
+   30,
+   90,
+   180
+  ],
+  "lambdas": [
+   0.98,
+   0.995
+  ],
+  "delay_days": 3,
+  "fixed_share_alpha": 0.02,
+  "part_blocks": 6,
+  "part_instance_blocks": 4,
+  "part_eval_rows": 8000,
+  "do_part": true,
+  "do_instance": true,
+  "do_time": true,
+  "part_block_mode": [
+   "contiguous",
+   "interleaved"
+  ],
+  "gate_fit": "val",
+  "gate_fit_fraction": 1.0,
+  "oof_folds": 5
+ }
+}

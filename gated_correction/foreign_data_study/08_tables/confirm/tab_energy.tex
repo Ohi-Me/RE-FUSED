@@ -1,0 +1,16 @@
+\begin{table}[!htbp]\centering\scriptsize
+\caption{Energy-system outcomes on NYISO zonal load, January--August 2026 (annualised; 11 zones). Reserve: ex-ante 99\,\% upward quantile of the forecast error, valued at the day-ahead 10-minute spinning reserve price; imbalance: two-settlement cost $(A-F)(P^{RT}-P^{DA})$.}\label{tab:energy}
+\fittable{\begin{tabular}{@{}l r r r r r r@{}}\toprule
+Forecast / reserve level & MAE (MW) & Deviation (GWh/yr) & Imbalance (M\$/yr) & Reserve (MW) & Reliability & Reserve value (M\$/yr) \\\midrule
+ISO day-ahead forecast & 70.9 & 6,828 & 40.4 & 2,815 & 0.9934 & 320 \\
+Corrected, static per-zone gate & 62.0 & 5,974 & 72.5 & 2,580 & 0.9921 & 300 \\
+Corrected, per-instance gate & 62.6 & 6,032 & 69.4 & 2,554 & 0.9910 & 298 \\
+Corrected, 30-day rolling gate & 62.4 & 6,007 & 69.9 & 2,606 & 0.9913 & 305 \\
+\midrule
+\quad reserve quantile: global & -- & -- & -- & 3,233 & 0.9850 & 321 \\
+\quad reserve quantile: per zone & -- & -- & -- & 2,515 & 0.9866 & 277 \\
+\quad reserve quantile: zone $\times$ hour & -- & -- & -- & 2,580 & 0.9921 & 300 \\
+\quad reserve quantile: zone $\times$ month & -- & -- & -- & 2,323 & 0.9793 & 245 \\
+\quad reserve quantile: per instance & -- & -- & -- & 1,678 & 0.9694 & 195 \\
+\quad reserve quantile: rolling 90 days & -- & -- & -- & 2,404 & 0.9859 & 244 \\
+\bottomrule\end{tabular}}\end{table}

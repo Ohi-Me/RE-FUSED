@@ -1,0 +1,10 @@
+iso_s0                           none->global +0.2368 series +0.2477 inst +0.2441 best=time_rolling_30 +0.2652 [27.6s, total 29s]
+iso_s1                           none->global +0.2385 series +0.2491 inst +0.2408 best=time_rolling_30 +0.2705 [28.7s, total 58s]
+iso_s2                           none->global +0.2275 series +0.2393 inst +0.2394 best=time_rolling_30 +0.2592 [28.3s, total 87s]
+snaive168_s0                     none->global +0.7599 series +0.7711 inst +0.7710 best=time_forget_0.995 +0.7751 [29.6s, total 117s]
+snaive168_s1                     none->global +0.7648 series +0.7756 inst +0.7776 best=shrunk +0.7794 [27.5s, total 145s]
+snaive168_s2                     none->global +0.7595 series +0.7690 inst +0.7660 best=time_forget_0.995 +0.7736 [27.1s, total 172s]
+lag48_s0                         none->global +0.7043 series +0.7259 inst +0.7142 best=time_forget_0.98 +0.7296 [27.2s, total 200s]
+lag48_s1                         none->global +0.7079 series +0.7301 inst +0.7196 best=time_forget_0.98 +0.7335 [27.5s, total 228s]
+lag48_s2                         none->global +0.7096 series +0.7315 inst +0.7201 best=time_forget_0.98 +0.7346 [27.5s, total 256s]
+DONE nyiso_baselines 256

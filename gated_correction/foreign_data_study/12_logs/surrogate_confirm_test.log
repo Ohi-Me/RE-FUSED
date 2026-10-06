@@ -1,0 +1,9 @@
+C1 iso_s0                       done [35.4s, total 39s]
+C2 val_frac0.1_s0               done [23.6s, total 63s]
+C3 tso_s0                       done [112.6s, total 188s]
+C4 tso_s0                       done [95.2s, total 300s]
+C5 val_frac0.1_s0               done [50.6s, total 363s]
+C6 snaive168_s0                 done [115.4s, total 492s]
+C7 val_frac0.1_s0               done [62.4s, total 555s]
+DONE confirmatory ladders 556
+SURROGATE_EXIT=0

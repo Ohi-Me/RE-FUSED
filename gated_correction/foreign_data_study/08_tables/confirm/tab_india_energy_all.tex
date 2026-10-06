@@ -1,0 +1,31 @@
+% written by 04_code/scripts/paper/make_india_replication.py from ../india_grid/results/extra/gate_energy.csv; do not edit
+\begin{table}[t]
+\centering
+\caption{Forecast-error energy of the gate designs on 34 Indian State control areas, horizons of one to three days, evaluation period 1 April 2025 to 31 August 2026 (additional analysis, not pre-registered). Error energy is the sum over areas of the absolute error of the daily median forecast, in GWh per year. Columns 4--6: change relative to one fixed gate, with a 7-day block-bootstrap 95\,\% interval; a positive change means more error.}\label{tab:india_energy_all}
+\small\setlength{\tabcolsep}{3pt}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{clrrrrr}
+\toprule
+$H$ & Target & No correction & Saved by one fixed gate & Gate per regime & Gate per instance & Gate online over time \\
+\midrule
+1 & Demand met & $98{,}346$ & $22{,}911$ [$19{,}275$, $27{,}109$] & $-15$ [$-216$, $+194$] & $+287$ [$-167$, $+668$] & $+189$ [$-200$, $+563$] \\
+1 & Actual drawal & $86{,}318$ & $13{,}374$ [$10{,}273$, $17{,}003$] & $-1$ [$-133$, $+123$] & $+39$ [$-221$, $+269$] & $+624$ [$+260$, $+1{,}035$] \\
+1 & Conventional generation & $106{,}128$ & $14{,}601$ [$10{,}741$, $18{,}865$] & $-289$ [$-488$, $-103$] & $+180$ [$-232$, $+614$] & $-56$ [$-546$, $+416$] \\
+1 & Renewable generation & $54{,}691$ & $5{,}425$ [$1{,}392$, $9{,}578$] & $+465$ [$+308$, $+601$] & $+342$ [$-87$, $+749$] & $-105$ [$-1{,}344$, $+1{,}070$] \\
+1 & Day-ahead price$^{a}$ & $1{,}008$ & $1{,}485$ & $1{,}503$ & $1{,}542$ & $956$ \\
+\addlinespace
+2 & Demand met & $111{,}237$ & $20{,}418$ [$16{,}390$, $25{,}101$] & $-317$ [$-568$, $-48$] & $+926$ [$+334$, $+1{,}516$] & $+334$ [$-207$, $+870$] \\
+2 & Actual drawal & $95{,}984$ & $11{,}180$ [$7{,}829$, $15{,}184$] & $-94$ [$-222$, $+29$] & $+289$ [$-18$, $+561$] & $+892$ [$+330$, $+1{,}538$] \\
+2 & Conventional generation & $114{,}950$ & $13{,}106$ [$9{,}068$, $17{,}478$] & $-210$ [$-508$, $+42$] & $-21$ [$-419$, $+423$] & $-48$ [$-711$, $+606$] \\
+2 & Renewable generation & $58{,}341$ & $5{,}053$ [$880$, $9{,}142$] & $+495$ [$+345$, $+633$] & $+414$ [$+4$, $+795$] & $+392$ [$-949$, $+1{,}710$] \\
+2 & Day-ahead price$^{a}$ & $972$ & $1{,}584$ & $1{,}574$ & $1{,}620$ & $940$ \\
+\addlinespace
+3 & Demand met & $120{,}738$ & $18{,}448$ [$14{,}180$, $23{,}152$] & $-289$ [$-520$, $-57$] & $+745$ [$-147$, $+1{,}584$] & $+719$ [$-62$, $+1{,}566$] \\
+3 & Actual drawal & $102{,}801$ & $10{,}365$ [$6{,}707$, $14{,}614$] & $-49$ [$-176$, $+85$] & $+467$ [$+105$, $+776$] & $+1{,}180$ [$+360$, $+2{,}179$] \\
+3 & Conventional generation & $121{,}564$ & $13{,}034$ [$8{,}799$, $17{,}585$] & $-78$ [$-298$, $+132$] & $-216$ [$-677$, $+270$] & $-5$ [$-710$, $+753$] \\
+3 & Renewable generation & $60{,}960$ & $6{,}065$ [$1{,}315$, $10{,}621$] & $+415$ [$+270$, $+569$] & $+279$ [$-185$, $+700$] & $+688$ [$-867$, $+2{,}173$] \\
+3 & Day-ahead price$^{a}$ & $963$ & $1{,}615$ & $1{,}619$ & $1{,}639$ & $943$ \\
+\bottomrule
+\end{tabular}}
+\par\smallskip\parbox{\linewidth}{\footnotesize $^{a}$ Day-ahead price: mean absolute error in Rs/MWh of each design (no correction, fixed gate, then the three refinements), per exchange bid area.}
+\end{table}

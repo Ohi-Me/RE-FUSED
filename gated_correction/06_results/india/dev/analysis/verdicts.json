@@ -1,0 +1,234 @@
+[
+ {
+  "id": "IH-2-INDIA-HOURLY",
+  "family": "mechanism",
+  "estimate": 0.5479186148741648,
+  "lo": 0.2843094254538076,
+  "hi": 0.8700792563134604,
+  "p": 0.0004997501249375312,
+  "criterion": "delta > 0 (p < 0.05)",
+  "p_holm": 0.0004997501249375312,
+  "p_by": 0.003721991817943841,
+  "verdict": "SUPPORTED"
+ },
+ {
+  "id": "IH-3a-sign",
+  "family": "selection",
+  "estimate": 0.625,
+  "n": 32,
+  "p": 0.10766357486136258,
+  "criterion": "sign accuracy > 0.5",
+  "p_holm": 0.21532714972272515,
+  "p_by": 0.5011541327461726,
+  "verdict": "NOT SUPPORTED"
+ },
+ {
+  "id": "IH-3b-regret-vs-never",
+  "family": "selection",
+  "estimate": -0.007256172760160419,
+  "p": 0.18526554107666016,
+  "criterion": "PART regret < never-refine regret",
+  "p_holm": 0.21532714972272515,
+  "p_by": 0.7665573404980944,
+  "verdict": "NOT SUPPORTED"
+ },
+ {
+  "id": "IH-3c-regret-vs-nested",
+  "family": "selection",
+  "estimate": -0.002281956850731917,
+  "p": NaN,
+  "criterion": "PART regret < nested hold-out regret",
+  "verdict": "NOT SUPPORTED"
+ },
+ {
+  "id": "IH-6a-sign",
+  "family": "time",
+  "estimate": 0.8,
+  "n": 40,
+  "p": 9.108291487791575e-05,
+  "criterion": "prequential sign accuracy > 0.5",
+  "p_holm": 0.0001821658297558315,
+  "p_by": 0.0016958968443102145,
+  "verdict": "SUPPORTED"
+ },
+ {
+  "id": "IH-6a-regret-vs-always",
+  "family": "time",
+  "estimate": 0.0024968993410398976,
+  "p": 0.58447265625,
+  "criterion": "prequential regret < always-discount",
+  "p_holm": 0.58447265625,
+  "p_by": 1.0,
+  "verdict": "NOT SUPPORTED"
+ },
+ {
+  "id": "IH-6a-regret-vs-never",
+  "family": "time",
+  "estimate": -0.026692981785080266,
+  "p": 2.60770320892334e-08,
+  "criterion": "prequential regret < never-discount",
+  "p_holm": 7.82310962677002e-08,
+  "p_by": 9.710702932242192e-07,
+  "verdict": "SUPPORTED"
+ },
+ {
+  "id": "IH-6b-updating-free",
+  "family": "time",
+  "estimate": 1.0,
+  "n": 8,
+  "p": NaN,
+  "criterion": "share of configs with expanding - frozen >= -0.002 is >= 0.8",
+  "verdict_rule": "threshold",
+  "verdict": "SUPPORTED"
+ },
+ {
+  "id": "IH-7a-part-vs-nested",
+  "family": "selection",
+  "estimate": -0.00022276024097487527,
+  "p": NaN,
+  "criterion": "PART selection regret < nested",
+  "verdict": "NOT SUPPORTED"
+ },
+ {
+  "id": "IH-7b-part-vs-fixed-series",
+  "family": "selection",
+  "estimate": -0.023329660298642016,
+  "p": 0.0390625,
+  "criterion": "PART regret < fixed per-series",
+  "p_holm": 0.1171875,
+  "p_by": 0.24243833423520922,
+  "verdict": "NOT SUPPORTED"
+ },
+ {
+  "id": "IH-5-strength",
+  "family": "baseline",
+  "estimate": -0.14924719511846732,
+  "n": 32,
+  "p": 0.7925384228751917,
+  "criterion": "Spearman(relative RMSE of the forecast, best correction skill) > 0",
+  "p_holm": 0.7925384228751917,
+  "p_by": 1.0,
+  "verdict": "NOT SUPPORTED"
+ },
+ {
+  "id": "IH-4a-serieshour-vs-q_global",
+  "family": "probabilistic",
+  "estimate": 10.859133726557243,
+  "lo": 8.47435638916556,
+  "hi": 13.04856735416836,
+  "p": 0.0004997501249375312,
+  "criterion": "pinball@0.99 lower for series x hour cells",
+  "p_holm": 0.0009995002498750624,
+  "p_by": 0.003721991817943841,
+  "verdict": "SUPPORTED"
+ },
+ {
+  "id": "IH-4a-serieshour-vs-q_series",
+  "family": "probabilistic",
+  "estimate": 9.976583259467516,
+  "lo": -3.688716016383727,
+  "hi": 19.938206433006957,
+  "p": 0.05297351324337831,
+  "criterion": "pinball@0.99 lower for series x hour cells",
+  "p_holm": 0.05297351324337831,
+  "p_by": 0.2818079519300337,
+  "verdict": "NOT SUPPORTED"
+ },
+ {
+  "id": "IH-4b-instance-undercovers",
+  "family": "probabilistic",
+  "estimate": 0.9476184957700776,
+  "extra": {
+   "series_hour": 0.9880635067794646
+  },
+  "p": NaN,
+  "verdict_rule": "threshold",
+  "criterion": "coverage(instance) < 0.985 and coverage(series x hour) >= 0.985",
+  "passed": true,
+  "verdict": "SUPPORTED"
+ },
+ {
+  "id": "IH-8a-deviation-energy",
+  "family": "energy",
+  "estimate": -4329.933152777778,
+  "lo": -13312.604970016313,
+  "hi": 3827.0905561684294,
+  "p": 0.8315842078960519,
+  "criterion": "all-India demand: deviation energy lower after correction (GWh/yr)",
+  "p_holm": 0.8315842078960519,
+  "p_by": 1.0,
+  "verdict": "NOT SUPPORTED"
+ },
+ {
+  "id": "IH-8b-reserve-mw",
+  "family": "energy",
+  "estimate": 885.215576171875,
+  "lo": 885.215576171875,
+  "hi": 885.215576171875,
+  "p": 0.0004997501249375312,
+  "extra": {
+   "coverage_reference": 1.0,
+   "coverage_corrected": 1.0
+  },
+  "criterion": "all-India demand: 99% reserve (MW) lower after correction with |coverage difference| <= 0.005",
+  "coverage_ok": true,
+  "p_holm": 0.0009995002498750624,
+  "p_by": 0.003721991817943841,
+  "verdict": "SUPPORTED"
+ },
+ {
+  "id": "IE8c-imbalance-cost",
+  "family": "energy-estimation",
+  "estimate": -154.55760057038628,
+  "lo": -513.1854268341535,
+  "hi": 209.6613840390769,
+  "p": NaN,
+  "verdict_rule": "estimate",
+  "criterion": "estimation only: stylised two-settlement imbalance cost saved, Rs crore per year",
+  "verdict": "ESTIMATE"
+ },
+ {
+  "id": "IH-1-partition-oracle_pred",
+  "family": "synthetic",
+  "estimate": 0.6344086021505376,
+  "n": 558,
+  "p": NaN,
+  "criterion": "sign accuracy >= 0.85 on non-boundary configurations",
+  "verdict_rule": "threshold",
+  "passed": false,
+  "verdict": "NOT SUPPORTED"
+ },
+ {
+  "id": "IH-1-partition-part_contiguous_G",
+  "family": "synthetic",
+  "estimate": 0.8888888888888888,
+  "n": 558,
+  "p": NaN,
+  "criterion": "sign accuracy >= 0.75 on non-boundary configurations",
+  "verdict_rule": "threshold",
+  "passed": true,
+  "verdict": "SUPPORTED"
+ },
+ {
+  "id": "IH-1-instance-oracle_pred",
+  "family": "synthetic",
+  "estimate": 0.875,
+  "n": 16,
+  "p": NaN,
+  "criterion": "sign accuracy >= 0.85 on non-boundary configurations",
+  "verdict_rule": "threshold",
+  "passed": true,
+  "verdict": "SUPPORTED"
+ },
+ {
+  "id": "IH-1-instance-part_contiguous_G",
+  "family": "synthetic",
+  "estimate": 0.625,
+  "n": 16,
+  "p": NaN,
+  "criterion": "sign accuracy >= 0.75 on non-boundary configurations",
+  "verdict_rule": "threshold",
+  "passed": false,
+  "verdict": "NOT SUPPORTED"
+ }
+]

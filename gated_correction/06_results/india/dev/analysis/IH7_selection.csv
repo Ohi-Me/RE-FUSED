@@ -1,0 +1,9 @@
+unit,baseline,oracle,part_choice,nested_choice,regret_part,regret_nested,regret_series,regret_global
+INDIA-HOURLY,chronos,instance,series_x_hour,series_x_hour_block,0.0008342798098112091,0.002449926538903978,0.0028308098445261796,0.0013953078139850468
+INDIA-HOURLY,dlinear,global,series_x_hour,series_x_hour,0.010444736039773549,0.010444736039773549,0.07447311267927773,0.0
+INDIA-HOURLY,lag48,series_x_hour,series_x_hour,series_x_hour,0.0,0.0,0.0044659100556581005,0.0014909713118020996
+INDIA-HOURLY,lgbm,series,series_x_hour_block,series_x_hour,0.013022669723743621,0.013189104922449856,0.0,0.08239084598514111
+INDIA-HOURLY,nhits,series_x_hour,series_x_hour,series_x_hour,0.0,0.0,0.0018115631802077343,0.007696011692958338
+INDIA-HOURLY,patchtst,series_x_hour_block,series_x_hour,series_x_hour,0.0018055177711135979,0.0018055177711135979,0.060168237366358276,0.011935134707060672
+INDIA-HOURLY,snaive168,global,global,global,0.0,0.0,0.006336018554009946,0.0
+INDIA-HOURLY,tide,instance,series_x_hour,series_x_hour,0.027342845145288525,0.027342845145288525,0.09000167919882868,0.02252721174011435

@@ -1,0 +1,95 @@
+{
+ "g1": 1.0194215939587585,
+ "n_fit": 1350065,
+ "n_test": 398222,
+ "fit_days": 1236,
+ "part2": {
+  "global->series": {
+   "G": 1598.3880606986818,
+   "C": 1724.9038944004362,
+   "S": 1724.9038944004362,
+   "energy_full": 1851.4197281021907,
+   "noise": 126.51583370175445,
+   "K": 6,
+   "mode": "interleaved"
+  },
+  "series->series_x_hour_block": {
+   "G": 440.4674137849005,
+   "C": 501.60174931993726,
+   "S": 501.60174931993726,
+   "energy_full": 562.736084854974,
+   "noise": 61.13433553503677,
+   "K": 6,
+   "mode": "interleaved"
+  },
+  "series->series_x_hour": {
+   "G": 800.0756332526394,
+   "C": 897.5426086559014,
+   "S": 897.5426086559014,
+   "energy_full": 995.0095840591634,
+   "noise": 97.46697540326204,
+   "K": 6,
+   "mode": "interleaved"
+  },
+  "series->instance": {
+   "G": -1328.9142647684157,
+   "C": 2772.2679539743253,
+   "energy_full": 6873.450172717066,
+   "K": 4,
+   "mode": "interleaved"
+  }
+ },
+ "part_modes": {},
+ "part": {},
+ "part_block_mode": [
+  "contiguous"
+ ],
+ "nested_risk": {
+  "none": 358276.49391303427,
+  "global": 156420.35461357463,
+  "series": 154854.2442145962,
+  "series_x_hour_block": 155302.6381341263,
+  "series_x_hour": 155237.37769132946,
+  "instance": 166593.01137670263
+ },
+ "seconds": 197.1,
+ "config": {
+  "corrector": {
+   "max_iter": 300,
+   "learning_rate": 0.06,
+   "max_depth": 6,
+   "l2_regularization": 1.0
+  },
+  "corrector_max_rows": 300000,
+  "min_cell": 30,
+  "instance": {
+   "max_iter": 150,
+   "learning_rate": 0.08,
+   "max_depth": 5
+  },
+  "n_bag": 3,
+  "windows_days": [
+   30,
+   90,
+   180
+  ],
+  "lambdas": [
+   0.98,
+   0.995
+  ],
+  "delay_days": 2,
+  "fixed_share_alpha": 0.02,
+  "part_blocks": 6,
+  "part_instance_blocks": 4,
+  "part_eval_rows": 20000,
+  "do_part": true,
+  "part_version": 2,
+  "do_instance": true,
+  "do_time": false,
+  "part_block_mode": "contiguous",
+  "gate_fit": "oof_train+val",
+  "gate_fit_fraction": 1.0,
+  "oof_folds": 5
+ },
+ "deviation": "DC1 plausibility filter"
+}

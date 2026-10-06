@@ -1,0 +1,105 @@
+{
+ "g1": 1.017180948133131,
+ "n_fit": 96580,
+ "n_test": 96316,
+ "fit_days": 366,
+ "part2": {
+  "global->series": {
+   "G": 240.12881730534465,
+   "C": 234.71055693949293,
+   "S": 234.71055693949293,
+   "energy_full": 229.2922965736412,
+   "noise": 0.0,
+   "K": 6,
+   "mode": "interleaved"
+  },
+  "series->series_x_hour_block": {
+   "G": 151.98827684685875,
+   "C": 156.68486519337517,
+   "S": 156.68486519337517,
+   "energy_full": 161.3814535398916,
+   "noise": 4.696588346516421,
+   "K": 6,
+   "mode": "interleaved"
+  },
+  "series->series_x_hour": {
+   "G": 136.16290928935823,
+   "C": 163.79500004846605,
+   "S": 163.79500004846605,
+   "energy_full": 191.42709080757388,
+   "noise": 27.632090759107825,
+   "K": 6,
+   "mode": "interleaved"
+  },
+  "series->instance": {
+   "G": -3938.7761248481333,
+   "C": 375.698626954869,
+   "energy_full": 4690.173378757871,
+   "K": 4,
+   "mode": "interleaved"
+  }
+ },
+ "prequential": {
+  "expanding->time_rolling_30": -977.1766736124146,
+  "expanding->time_rolling_90": -127.66666758505623,
+  "expanding->time_rolling_180": -5.130094126335625,
+  "expanding->time_forget_0.98": -201.17102571993084,
+  "expanding->time_forget_0.995": -48.172676713820934
+ },
+ "part_modes": {},
+ "part": {},
+ "part_block_mode": [
+  "contiguous",
+  "interleaved"
+ ],
+ "nested_risk": {
+  "none": 38386.323029974345,
+  "global": 23853.75179785936,
+  "series": 23622.40043229636,
+  "series_x_hour_block": 23504.43448867013,
+  "series_x_hour": 23509.324652017076,
+  "instance": 28297.237455891656
+ },
+ "seconds": 43.7,
+ "config": {
+  "corrector": {
+   "max_iter": 300,
+   "learning_rate": 0.06,
+   "max_depth": 6,
+   "l2_regularization": 1.0
+  },
+  "corrector_max_rows": 300000,
+  "min_cell": 30,
+  "instance": {
+   "max_iter": 150,
+   "learning_rate": 0.08,
+   "max_depth": 5
+  },
+  "n_bag": 3,
+  "windows_days": [
+   30,
+   90,
+   180
+  ],
+  "lambdas": [
+   0.98,
+   0.995
+  ],
+  "delay_days": 2,
+  "fixed_share_alpha": 0.02,
+  "part_blocks": 6,
+  "part_instance_blocks": 4,
+  "part_eval_rows": 20000,
+  "do_part": true,
+  "part_version": 2,
+  "do_instance": true,
+  "do_time": true,
+  "part_block_mode": [
+   "contiguous",
+   "interleaved"
+  ],
+  "gate_fit": "val",
+  "gate_fit_fraction": 1.0,
+  "oof_folds": 5
+ }
+}

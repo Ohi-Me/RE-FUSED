@@ -1,0 +1,94 @@
+{
+ "g1": 0.7500898984951134,
+ "n_fit": 557612,
+ "n_test": 64108,
+ "fit_days": 2113,
+ "part2": {
+  "global->series": {
+   "G": 257.75188609589435,
+   "C": 267.29190347495427,
+   "S": 267.29190347495427,
+   "energy_full": 276.8319208540142,
+   "noise": 9.540017379059918,
+   "K": 6,
+   "mode": "interleaved"
+  },
+  "series->series_x_hour_block": {
+   "G": 2.158413875974773,
+   "C": 4.329086805703978,
+   "S": 4.329086805703978,
+   "energy_full": 6.499759735433184,
+   "noise": 2.1706729297292053,
+   "K": 6,
+   "mode": "interleaved"
+  },
+  "series->series_x_hour": {
+   "G": 3.5713970659395358,
+   "C": 6.205976115297665,
+   "S": 6.205976115297665,
+   "energy_full": 8.840555164655795,
+   "noise": 2.6345790493581296,
+   "K": 6,
+   "mode": "interleaved"
+  },
+  "series->instance": {
+   "G": -309.3629409754431,
+   "C": 164.76697998461688,
+   "energy_full": 638.8969009446769,
+   "K": 4,
+   "mode": "interleaved"
+  }
+ },
+ "part_modes": {},
+ "part": {},
+ "part_block_mode": [
+  "contiguous"
+ ],
+ "nested_risk": {
+  "none": 8998.274589652505,
+  "global": 7373.681088546687,
+  "series": 7474.265113400633,
+  "series_x_hour_block": 7454.692591835658,
+  "series_x_hour": 7452.725707679916,
+  "instance": 7424.799968008977
+ },
+ "seconds": 99.5,
+ "config": {
+  "corrector": {
+   "max_iter": 300,
+   "learning_rate": 0.06,
+   "max_depth": 6,
+   "l2_regularization": 1.0
+  },
+  "corrector_max_rows": 300000,
+  "min_cell": 30,
+  "instance": {
+   "max_iter": 150,
+   "learning_rate": 0.08,
+   "max_depth": 5
+  },
+  "n_bag": 3,
+  "windows_days": [
+   30,
+   90,
+   180
+  ],
+  "lambdas": [
+   0.98,
+   0.995
+  ],
+  "delay_days": 2,
+  "fixed_share_alpha": 0.02,
+  "part_blocks": 6,
+  "part_instance_blocks": 4,
+  "part_eval_rows": 20000,
+  "do_part": true,
+  "part_version": 2,
+  "do_instance": true,
+  "do_time": false,
+  "part_block_mode": "contiguous",
+  "gate_fit": "oof_train+val",
+  "gate_fit_fraction": 1.0,
+  "oof_folds": 5
+ }
+}

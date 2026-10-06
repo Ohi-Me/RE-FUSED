@@ -1,0 +1,121 @@
+D:\\REFUSED7\04_code\scripts\dev\..\..\refused7\selection.py:60: RuntimeWarning: Mean of empty slice
+  jk = np.where(np.isnan(jk), np.nanmean(jk, axis=0, keepdims=True), jk)
+D:\\REFUSED7\04_code\scripts\dev\..\..\refused7\selection.py:61: RuntimeWarning: Mean of empty slice
+  var_jk = (K - 1) / K * np.nansum((jk - np.nanmean(jk, axis=0, keepdims=True)) ** 2, axis=0)
+persistence_h1_s0                none->global +0.1382 series +0.1454 inst +0.1297 best=time_expanding +0.1466 [7.2s, total 7s]
+D:\\REFUSED7\04_code\scripts\dev\..\..\refused7\selection.py:60: RuntimeWarning: Mean of empty slice
+  jk = np.where(np.isnan(jk), np.nanmean(jk, axis=0, keepdims=True), jk)
+D:\\REFUSED7\04_code\scripts\dev\..\..\refused7\selection.py:61: RuntimeWarning: Mean of empty slice
+  var_jk = (K - 1) / K * np.nansum((jk - np.nanmean(jk, axis=0, keepdims=True)) ** 2, axis=0)
+persistence_h1_s1                none->global +0.1398 series +0.1449 inst +0.1329 best=time_expanding +0.1464 [8.2s, total 16s]
+D:\\REFUSED7\04_code\scripts\dev\..\..\refused7\selection.py:60: RuntimeWarning: Mean of empty slice
+  jk = np.where(np.isnan(jk), np.nanmean(jk, axis=0, keepdims=True), jk)
+D:\\REFUSED7\04_code\scripts\dev\..\..\refused7\selection.py:61: RuntimeWarning: Mean of empty slice
+  var_jk = (K - 1) / K * np.nansum((jk - np.nanmean(jk, axis=0, keepdims=True)) ** 2, axis=0)
+persistence_h1_s2                none->global +0.1435 series +0.1451 inst +0.1328 best=time_forget_0.995 +0.1474 [8.3s, total 24s]
+D:\\REFUSED7\04_code\scripts\dev\..\..\refused7\selection.py:60: RuntimeWarning: Mean of empty slice
+  jk = np.where(np.isnan(jk), np.nanmean(jk, axis=0, keepdims=True), jk)
+D:\\REFUSED7\04_code\scripts\dev\..\..\refused7\selection.py:61: RuntimeWarning: Mean of empty slice
+  var_jk = (K - 1) / K * np.nansum((jk - np.nanmean(jk, axis=0, keepdims=True)) ** 2, axis=0)
+persistence_h3_s0                none->global +0.0983 series +0.1210 inst +0.0895 best=time_expanding +0.1242 [10.1s, total 34s]
+D:\\REFUSED7\04_code\scripts\dev\..\..\refused7\selection.py:60: RuntimeWarning: Mean of empty slice
+  jk = np.where(np.isnan(jk), np.nanmean(jk, axis=0, keepdims=True), jk)
+D:\\REFUSED7\04_code\scripts\dev\..\..\refused7\selection.py:61: RuntimeWarning: Mean of empty slice
+  var_jk = (K - 1) / K * np.nansum((jk - np.nanmean(jk, axis=0, keepdims=True)) ** 2, axis=0)
+persistence_h3_s1                none->global +0.1001 series +0.1200 inst +0.0840 best=time_expanding +0.1240 [8.6s, total 43s]
+D:\\REFUSED7\04_code\scripts\dev\..\..\refused7\selection.py:60: RuntimeWarning: Mean of empty slice
+  jk = np.where(np.isnan(jk), np.nanmean(jk, axis=0, keepdims=True), jk)
+D:\\REFUSED7\04_code\scripts\dev\..\..\refused7\selection.py:61: RuntimeWarning: Mean of empty slice
+  var_jk = (K - 1) / K * np.nansum((jk - np.nanmean(jk, axis=0, keepdims=True)) ** 2, axis=0)
+persistence_h3_s2                none->global +0.1061 series +0.1219 inst +0.0877 best=time_expanding +0.1243 [8.8s, total 52s]
+D:\\REFUSED7\04_code\scripts\dev\..\..\refused7\selection.py:60: RuntimeWarning: Mean of empty slice
+  jk = np.where(np.isnan(jk), np.nanmean(jk, axis=0, keepdims=True), jk)
+D:\\REFUSED7\04_code\scripts\dev\..\..\refused7\selection.py:61: RuntimeWarning: Mean of empty slice
+  var_jk = (K - 1) / K * np.nansum((jk - np.nanmean(jk, axis=0, keepdims=True)) ** 2, axis=0)
+roll7_h1_s0                      none->global +0.1886 series +0.2071 inst +0.1703 best=time_forget_0.995 +0.2170 [10.3s, total 62s]
+D:\\REFUSED7\04_code\scripts\dev\..\..\refused7\selection.py:60: RuntimeWarning: Mean of empty slice
+  jk = np.where(np.isnan(jk), np.nanmean(jk, axis=0, keepdims=True), jk)
+D:\\REFUSED7\04_code\scripts\dev\..\..\refused7\selection.py:61: RuntimeWarning: Mean of empty slice
+  var_jk = (K - 1) / K * np.nansum((jk - np.nanmean(jk, axis=0, keepdims=True)) ** 2, axis=0)
+roll7_h1_s1                      none->global +0.1925 series +0.2138 inst +0.1711 best=time_forget_0.995 +0.2253 [8.3s, total 71s]
+D:\\REFUSED7\04_code\scripts\dev\..\..\refused7\selection.py:60: RuntimeWarning: Mean of empty slice
+  jk = np.where(np.isnan(jk), np.nanmean(jk, axis=0, keepdims=True), jk)
+D:\\REFUSED7\04_code\scripts\dev\..\..\refused7\selection.py:61: RuntimeWarning: Mean of empty slice
+  var_jk = (K - 1) / K * np.nansum((jk - np.nanmean(jk, axis=0, keepdims=True)) ** 2, axis=0)
+roll7_h1_s2                      none->global +0.1820 series +0.2073 inst +0.1597 best=time_forget_0.995 +0.2187 [8.1s, total 79s]
+D:\\REFUSED7\04_code\scripts\dev\..\..\refused7\selection.py:60: RuntimeWarning: Mean of empty slice
+  jk = np.where(np.isnan(jk), np.nanmean(jk, axis=0, keepdims=True), jk)
+D:\\REFUSED7\04_code\scripts\dev\..\..\refused7\selection.py:61: RuntimeWarning: Mean of empty slice
+  var_jk = (K - 1) / K * np.nansum((jk - np.nanmean(jk, axis=0, keepdims=True)) ** 2, axis=0)
+roll7_h3_s0                      none->global +0.0517 series +0.0911 inst +0.0615 best=time_forget_0.995 +0.1006 [8.7s, total 88s]
+D:\\REFUSED7\04_code\scripts\dev\..\..\refused7\selection.py:60: RuntimeWarning: Mean of empty slice
+  jk = np.where(np.isnan(jk), np.nanmean(jk, axis=0, keepdims=True), jk)
+D:\\REFUSED7\04_code\scripts\dev\..\..\refused7\selection.py:61: RuntimeWarning: Mean of empty slice
+  var_jk = (K - 1) / K * np.nansum((jk - np.nanmean(jk, axis=0, keepdims=True)) ** 2, axis=0)
+roll7_h3_s1                      none->global +0.0464 series +0.0946 inst +0.0642 best=time_forget_0.995 +0.1052 [10.6s, total 98s]
+D:\\REFUSED7\04_code\scripts\dev\..\..\refused7\selection.py:60: RuntimeWarning: Mean of empty slice
+  jk = np.where(np.isnan(jk), np.nanmean(jk, axis=0, keepdims=True), jk)
+D:\\REFUSED7\04_code\scripts\dev\..\..\refused7\selection.py:61: RuntimeWarning: Mean of empty slice
+  var_jk = (K - 1) / K * np.nansum((jk - np.nanmean(jk, axis=0, keepdims=True)) ** 2, axis=0)
+roll7_h3_s2                      none->global +0.0419 series +0.0811 inst +0.0547 best=time_forget_0.995 +0.0971 [9.1s, total 107s]
+D:\\REFUSED7\04_code\scripts\dev\..\..\refused7\selection.py:60: RuntimeWarning: Mean of empty slice
+  jk = np.where(np.isnan(jk), np.nanmean(jk, axis=0, keepdims=True), jk)
+D:\\REFUSED7\04_code\scripts\dev\..\..\refused7\selection.py:61: RuntimeWarning: Mean of empty slice
+  var_jk = (K - 1) / K * np.nansum((jk - np.nanmean(jk, axis=0, keepdims=True)) ** 2, axis=0)
+snaive7_h1_s0                    none->global +0.3079 series +0.3281 inst +0.2736 best=time_forget_0.995 +0.3396 [9.7s, total 117s]
+D:\\REFUSED7\04_code\scripts\dev\..\..\refused7\selection.py:60: RuntimeWarning: Mean of empty slice
+  jk = np.where(np.isnan(jk), np.nanmean(jk, axis=0, keepdims=True), jk)
+D:\\REFUSED7\04_code\scripts\dev\..\..\refused7\selection.py:61: RuntimeWarning: Mean of empty slice
+  var_jk = (K - 1) / K * np.nansum((jk - np.nanmean(jk, axis=0, keepdims=True)) ** 2, axis=0)
+snaive7_h1_s1                    none->global +0.3157 series +0.3371 inst +0.2978 best=time_forget_0.995 +0.3481 [8.7s, total 126s]
+D:\\REFUSED7\04_code\scripts\dev\..\..\refused7\selection.py:60: RuntimeWarning: Mean of empty slice
+  jk = np.where(np.isnan(jk), np.nanmean(jk, axis=0, keepdims=True), jk)
+D:\\REFUSED7\04_code\scripts\dev\..\..\refused7\selection.py:61: RuntimeWarning: Mean of empty slice
+  var_jk = (K - 1) / K * np.nansum((jk - np.nanmean(jk, axis=0, keepdims=True)) ** 2, axis=0)
+snaive7_h1_s2                    none->global +0.3171 series +0.3310 inst +0.2921 best=time_forget_0.995 +0.3417 [8.1s, total 134s]
+D:\\REFUSED7\04_code\scripts\dev\..\..\refused7\selection.py:60: RuntimeWarning: Mean of empty slice
+  jk = np.where(np.isnan(jk), np.nanmean(jk, axis=0, keepdims=True), jk)
+D:\\REFUSED7\04_code\scripts\dev\..\..\refused7\selection.py:61: RuntimeWarning: Mean of empty slice
+  var_jk = (K - 1) / K * np.nansum((jk - np.nanmean(jk, axis=0, keepdims=True)) ** 2, axis=0)
+snaive7_h3_s0                    none->global +0.0734 series +0.1362 inst +0.0857 best=time_forget_0.995 +0.1446 [10.9s, total 145s]
+D:\\REFUSED7\04_code\scripts\dev\..\..\refused7\selection.py:60: RuntimeWarning: Mean of empty slice
+  jk = np.where(np.isnan(jk), np.nanmean(jk, axis=0, keepdims=True), jk)
+D:\\REFUSED7\04_code\scripts\dev\..\..\refused7\selection.py:61: RuntimeWarning: Mean of empty slice
+  var_jk = (K - 1) / K * np.nansum((jk - np.nanmean(jk, axis=0, keepdims=True)) ** 2, axis=0)
+snaive7_h3_s1                    none->global +0.0880 series +0.1428 inst +0.0777 best=time_expanding +0.1478 [8.9s, total 154s]
+D:\\REFUSED7\04_code\scripts\dev\..\..\refused7\selection.py:60: RuntimeWarning: Mean of empty slice
+  jk = np.where(np.isnan(jk), np.nanmean(jk, axis=0, keepdims=True), jk)
+D:\\REFUSED7\04_code\scripts\dev\..\..\refused7\selection.py:61: RuntimeWarning: Mean of empty slice
+  var_jk = (K - 1) / K * np.nansum((jk - np.nanmean(jk, axis=0, keepdims=True)) ** 2, axis=0)
+snaive7_h3_s2                    none->global +0.0961 series +0.1313 inst +0.0726 best=time_forget_0.995 +0.1378 [8.3s, total 163s]
+D:\\REFUSED7\04_code\scripts\dev\..\..\refused7\selection.py:60: RuntimeWarning: Mean of empty slice
+  jk = np.where(np.isnan(jk), np.nanmean(jk, axis=0, keepdims=True), jk)
+D:\\REFUSED7\04_code\scripts\dev\..\..\refused7\selection.py:61: RuntimeWarning: Mean of empty slice
+  var_jk = (K - 1) / K * np.nansum((jk - np.nanmean(jk, axis=0, keepdims=True)) ** 2, axis=0)
+operator_schedule_h1_s0          none->global -0.0906 series +0.0064 inst +0.0187 best=time_fixed_share +0.1982 [8.6s, total 171s]
+D:\\REFUSED7\04_code\scripts\dev\..\..\refused7\selection.py:60: RuntimeWarning: Mean of empty slice
+  jk = np.where(np.isnan(jk), np.nanmean(jk, axis=0, keepdims=True), jk)
+D:\\REFUSED7\04_code\scripts\dev\..\..\refused7\selection.py:61: RuntimeWarning: Mean of empty slice
+  var_jk = (K - 1) / K * np.nansum((jk - np.nanmean(jk, axis=0, keepdims=True)) ** 2, axis=0)
+operator_schedule_h1_s1          none->global -0.0763 series +0.0105 inst +0.0209 best=time_fixed_share +0.1942 [8.2s, total 180s]
+D:\\REFUSED7\04_code\scripts\dev\..\..\refused7\selection.py:60: RuntimeWarning: Mean of empty slice
+  jk = np.where(np.isnan(jk), np.nanmean(jk, axis=0, keepdims=True), jk)
+D:\\REFUSED7\04_code\scripts\dev\..\..\refused7\selection.py:61: RuntimeWarning: Mean of empty slice
+  var_jk = (K - 1) / K * np.nansum((jk - np.nanmean(jk, axis=0, keepdims=True)) ** 2, axis=0)
+operator_schedule_h1_s2          none->global -0.0809 series +0.0122 inst +0.0173 best=time_fixed_share +0.1982 [8.8s, total 188s]
+D:\\REFUSED7\04_code\scripts\dev\..\..\refused7\selection.py:60: RuntimeWarning: Mean of empty slice
+  jk = np.where(np.isnan(jk), np.nanmean(jk, axis=0, keepdims=True), jk)
+D:\\REFUSED7\04_code\scripts\dev\..\..\refused7\selection.py:61: RuntimeWarning: Mean of empty slice
+  var_jk = (K - 1) / K * np.nansum((jk - np.nanmean(jk, axis=0, keepdims=True)) ** 2, axis=0)
+operator_schedule_h3_s0          none->global -0.0546 series -0.0027 inst -0.0011 best=time_rolling_30 +0.1134 [10.3s, total 199s]
+D:\\REFUSED7\04_code\scripts\dev\..\..\refused7\selection.py:60: RuntimeWarning: Mean of empty slice
+  jk = np.where(np.isnan(jk), np.nanmean(jk, axis=0, keepdims=True), jk)
+D:\\REFUSED7\04_code\scripts\dev\..\..\refused7\selection.py:61: RuntimeWarning: Mean of empty slice
+  var_jk = (K - 1) / K * np.nansum((jk - np.nanmean(jk, axis=0, keepdims=True)) ** 2, axis=0)
+operator_schedule_h3_s1          none->global -0.0513 series -0.0110 inst -0.0017 best=time_rolling_30 +0.1013 [8.5s, total 207s]
+D:\\REFUSED7\04_code\scripts\dev\..\..\refused7\selection.py:60: RuntimeWarning: Mean of empty slice
+  jk = np.where(np.isnan(jk), np.nanmean(jk, axis=0, keepdims=True), jk)
+D:\\REFUSED7\04_code\scripts\dev\..\..\refused7\selection.py:61: RuntimeWarning: Mean of empty slice
+  var_jk = (K - 1) / K * np.nansum((jk - np.nanmean(jk, axis=0, keepdims=True)) ** 2, axis=0)
+operator_schedule_h3_s2          none->global -0.0525 series -0.0062 inst -0.0034 best=time_rolling_30 +0.1125 [10.3s, total 218s]
+DONE india 218
