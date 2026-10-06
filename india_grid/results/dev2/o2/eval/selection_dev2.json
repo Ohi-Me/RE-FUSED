@@ -1,0 +1,1018 @@
+[
+ {
+  "tid": "T1",
+  "final": "ens_stack",
+  "final_kind": "ens_stack",
+  "crossfit_val_mase": {
+   "best_single": 0.8232774075915777,
+   "ens_top": 0.8019296565255566,
+   "ens_stack": 0.7999116326078571,
+   "ens_online": 0.8044120641600034
+  },
+  "calibration_window": 365,
+  "members": [
+   "lgbm",
+   "bilstm",
+   "tft",
+   "patchtst",
+   "chronos",
+   "xgb",
+   "nhits",
+   "tide",
+   "bitcn",
+   "nbeatsx",
+   "chronos2",
+   "chronos_base",
+   "mcag_instance_sd"
+  ],
+  "round1_selected": "lgbm",
+  "ensemble_settings": {
+   "ens_top": {
+    "k": 4,
+    "cv_mase": {
+     "2": 0.8137139112374736,
+     "3": 0.8021076235204552,
+     "4": 0.801691067083518,
+     "5": 0.8053654258890597,
+     "6": 0.8071356928153154
+    },
+    "members": [
+     "chronos2",
+     "xgb",
+     "lgbm",
+     "mcag_instance_sd"
+    ]
+   },
+   "ens_stack": {
+    "lambda_": 0.0,
+    "cv_pinball": {
+     "0.0": 0.24144471517125415,
+     "0.1": 0.25694019554951447,
+     "1.0": 0.29447538630378606
+    },
+    "weights": {
+     "1": {
+      "lgbm": 0.04080353304743767,
+      "bilstm": 0.0013874872820451856,
+      "tft": 0.15105466544628143,
+      "patchtst": 0.0010231602936983109,
+      "chronos": 0.003516675904393196,
+      "xgb": 0.12803517282009125,
+      "nhits": 0.00020455721823964268,
+      "tide": 0.0018319498049095273,
+      "bitcn": 0.00041694045648910105,
+      "nbeatsx": 0.00021298749197740108,
+      "chronos2": 0.45431679487228394,
+      "chronos_base": 0.008057857863605022,
+      "mcag_instance_sd": 0.20913814008235931
+     },
+     "2": {
+      "lgbm": 0.020682334899902344,
+      "bilstm": 0.001832503010518849,
+      "tft": 0.17550009489059448,
+      "patchtst": 0.000976384268142283,
+      "chronos": 0.0039428649470210075,
+      "xgb": 0.025424830615520477,
+      "nhits": 0.000180793009349145,
+      "tide": 0.002594374120235443,
+      "bitcn": 0.0004623199056368321,
+      "nbeatsx": 0.0001883509976323694,
+      "chronos2": 0.4691321849822998,
+      "chronos_base": 0.008904934860765934,
+      "mcag_instance_sd": 0.29017800092697144
+     },
+     "3": {
+      "lgbm": 0.02311832830309868,
+      "bilstm": 0.002036045538261533,
+      "tft": 0.17395809292793274,
+      "patchtst": 0.000930739042814821,
+      "chronos": 0.003759858664125204,
+      "xgb": 0.025573166087269783,
+      "nhits": 0.00017548211326356977,
+      "tide": 0.0024091980885714293,
+      "bitcn": 0.0005074807559140027,
+      "nbeatsx": 0.00018282202654518187,
+      "chronos2": 0.4691588580608368,
+      "chronos_base": 0.0068636019714176655,
+      "mcag_instance_sd": 0.2913263738155365
+     }
+    }
+   },
+   "ens_online": {
+    "eta": 2.0,
+    "gamma": 0.99,
+    "pool": "all",
+    "grid": {
+     "eta=0.5,gamma=1.0,pool=all": {
+      "val_mase": 0.8112149244624154,
+      "val_pinball": 0.24458694167501324
+     },
+     "eta=0.5,gamma=1.0,pool=region": {
+      "val_mase": 0.8118000072338827,
+      "val_pinball": 0.24472825018450664
+     },
+     "eta=0.5,gamma=0.99,pool=all": {
+      "val_mase": 0.8379632433924806,
+      "val_pinball": 0.25505526039679255
+     },
+     "eta=0.5,gamma=0.99,pool=region": {
+      "val_mase": 0.8307885985386273,
+      "val_pinball": 0.2515621233639036
+     },
+     "eta=0.5,gamma=0.97,pool=all": {
+      "val_mase": 0.8798467510225457,
+      "val_pinball": 0.2711595109174288
+     },
+     "eta=0.5,gamma=0.97,pool=region": {
+      "val_mase": 0.8503325066912464,
+      "val_pinball": 0.25922551932113547
+     },
+     "eta=1.0,gamma=1.0,pool=all": {
+      "val_mase": 0.8068125743657345,
+      "val_pinball": 0.24307987274924123
+     },
+     "eta=1.0,gamma=1.0,pool=region": {
+      "val_mase": 0.8096215257453457,
+      "val_pinball": 0.24414258804537228
+     },
+     "eta=1.0,gamma=0.99,pool=all": {
+      "val_mase": 0.8117773659365104,
+      "val_pinball": 0.24487295977388743
+     },
+     "eta=1.0,gamma=0.99,pool=region": {
+      "val_mase": 0.8110986673079438,
+      "val_pinball": 0.24441322515154787
+     },
+     "eta=1.0,gamma=0.97,pool=all": {
+      "val_mase": 0.8390016098127536,
+      "val_pinball": 0.2553355917435175
+     },
+     "eta=1.0,gamma=0.97,pool=region": {
+      "val_mase": 0.8219497451021758,
+      "val_pinball": 0.24833341444933862
+     },
+     "eta=2.0,gamma=1.0,pool=all": {
+      "val_mase": 0.8073174319941238,
+      "val_pinball": 0.24324224580413836
+     },
+     "eta=2.0,gamma=1.0,pool=region": {
+      "val_mase": 0.8127096300902958,
+      "val_pinball": 0.24524238325745606
+     },
+     "eta=2.0,gamma=0.99,pool=all": {
+      "val_mase": 0.8044120641600034,
+      "val_pinball": 0.24237195188365998
+     },
+     "eta=2.0,gamma=0.99,pool=region": {
+      "val_mase": 0.807541666437462,
+      "val_pinball": 0.24339826652338722
+     },
+     "eta=2.0,gamma=0.97,pool=all": {
+      "val_mase": 0.8125990497355952,
+      "val_pinball": 0.24509427439388248
+     },
+     "eta=2.0,gamma=0.97,pool=region": {
+      "val_mase": 0.8117749307846182,
+      "val_pinball": 0.24455775134071356
+     },
+     "eta=4.0,gamma=1.0,pool=all": {
+      "val_mase": 0.8129967959012218,
+      "val_pinball": 0.2448629741968765
+     },
+     "eta=4.0,gamma=1.0,pool=region": {
+      "val_mase": 0.8181083111757038,
+      "val_pinball": 0.24702046122652857
+     },
+     "eta=4.0,gamma=0.99,pool=all": {
+      "val_mase": 0.8050450705193899,
+      "val_pinball": 0.2427347588375533
+     },
+     "eta=4.0,gamma=0.99,pool=region": {
+      "val_mase": 0.8101298235853875,
+      "val_pinball": 0.24440229489140017
+     },
+     "eta=4.0,gamma=0.97,pool=all": {
+      "val_mase": 0.8047253703945463,
+      "val_pinball": 0.242443198984219
+     },
+     "eta=4.0,gamma=0.97,pool=region": {
+      "val_mase": 0.8092993952779663,
+      "val_pinball": 0.24385116898613982
+     }
+    }
+   }
+  }
+ },
+ {
+  "tid": "T2",
+  "final": "ens_stack",
+  "final_kind": "ens_stack",
+  "crossfit_val_mase": {
+   "best_single": 0.8468617631037249,
+   "ens_top": 0.8364555058878523,
+   "ens_stack": 0.8335085113147284,
+   "ens_online": 0.837424355164571
+  },
+  "calibration_window": 365,
+  "members": [
+   "lgbm",
+   "bilstm",
+   "tft",
+   "patchtst",
+   "chronos",
+   "xgb",
+   "nhits",
+   "tide",
+   "bitcn",
+   "nbeatsx",
+   "chronos2",
+   "chronos_base",
+   "mcag_instance"
+  ],
+  "round1_selected": "lgbm",
+  "ensemble_settings": {
+   "ens_top": {
+    "k": 2,
+    "cv_mase": {
+     "2": 0.8342797160374849,
+     "3": 0.8388393759085466,
+     "4": 0.8392420188126524,
+     "5": 0.8413748022219079,
+     "6": 0.8432050082434657
+    },
+    "members": [
+     "chronos2",
+     "lgbm"
+    ]
+   },
+   "ens_stack": {
+    "lambda_": 0.0,
+    "cv_pinball": {
+     "0.0": 0.25046125517893014,
+     "0.1": 0.25506406744381077,
+     "1.0": 0.27521666980690196
+    },
+    "weights": {
+     "1": {
+      "lgbm": 0.03503843769431114,
+      "bilstm": 0.0011195711558684707,
+      "tft": 0.14131997525691986,
+      "patchtst": 0.0005118105909787118,
+      "chronos": 0.003064654301851988,
+      "xgb": 0.07012015581130981,
+      "nhits": 0.000272000819677487,
+      "tide": 0.0012698823120445013,
+      "bitcn": 0.0002283235953655094,
+      "nbeatsx": 0.00027007589233107865,
+      "chronos2": 0.5156824588775635,
+      "chronos_base": 0.004580708220601082,
+      "mcag_instance": 0.22652193903923035
+     },
+     "2": {
+      "lgbm": 0.05026648938655853,
+      "bilstm": 0.001631115679629147,
+      "tft": 0.1339995265007019,
+      "patchtst": 0.0005266770021989942,
+      "chronos": 0.005514787044376135,
+      "xgb": 0.04199609160423279,
+      "nhits": 0.00026940874522551894,
+      "tide": 0.0022560760844498873,
+      "bitcn": 0.00024046696489676833,
+      "nbeatsx": 0.00026909058215096593,
+      "chronos2": 0.5312937498092651,
+      "chronos_base": 0.007414276245981455,
+      "mcag_instance": 0.22432218492031097
+     },
+     "3": {
+      "lgbm": 0.07160891592502594,
+      "bilstm": 0.0017812345176935196,
+      "tft": 0.12369207292795181,
+      "patchtst": 0.0005369670107029378,
+      "chronos": 0.008622388355433941,
+      "xgb": 0.03842202574014664,
+      "nhits": 0.0002608449140097946,
+      "tide": 0.002621868159621954,
+      "bitcn": 0.00027467639301903546,
+      "nbeatsx": 0.00026310881366953254,
+      "chronos2": 0.5226761102676392,
+      "chronos_base": 0.008011042140424252,
+      "mcag_instance": 0.22122879326343536
+     }
+    }
+   },
+   "ens_online": {
+    "eta": 4.0,
+    "gamma": 0.99,
+    "pool": "all",
+    "grid": {
+     "eta=0.5,gamma=1.0,pool=all": {
+      "val_mase": 0.8447044966770707,
+      "val_pinball": 0.2539927121786795
+     },
+     "eta=0.5,gamma=1.0,pool=region": {
+      "val_mase": 0.8617555512997899,
+      "val_pinball": 0.26133834655488136
+     },
+     "eta=0.5,gamma=0.99,pool=all": {
+      "val_mase": 0.8606148558513289,
+      "val_pinball": 0.26035624557523057
+     },
+     "eta=0.5,gamma=0.99,pool=region": {
+      "val_mase": 0.8874426277599754,
+      "val_pinball": 0.2726192582216286
+     },
+     "eta=0.5,gamma=0.97,pool=all": {
+      "val_mase": 0.8860798968967817,
+      "val_pinball": 0.27178642037718614
+     },
+     "eta=0.5,gamma=0.97,pool=region": {
+      "val_mase": 0.9050459390700297,
+      "val_pinball": 0.2804618967567094
+     },
+     "eta=1.0,gamma=1.0,pool=all": {
+      "val_mase": 0.8389822303747994,
+      "val_pinball": 0.2522607296500802
+     },
+     "eta=1.0,gamma=1.0,pool=region": {
+      "val_mase": 0.8457427285885266,
+      "val_pinball": 0.2549393943857575
+     },
+     "eta=1.0,gamma=0.99,pool=all": {
+      "val_mase": 0.8462044341305903,
+      "val_pinball": 0.2543753656785106
+     },
+     "eta=1.0,gamma=0.99,pool=region": {
+      "val_mase": 0.8678834865314877,
+      "val_pinball": 0.26456981720360223
+     },
+     "eta=1.0,gamma=0.97,pool=all": {
+      "val_mase": 0.8684147824742182,
+      "val_pinball": 0.2638315071632994
+     },
+     "eta=1.0,gamma=0.97,pool=region": {
+      "val_mase": 0.8966188529158066,
+      "val_pinball": 0.27706861790360265
+     },
+     "eta=2.0,gamma=1.0,pool=all": {
+      "val_mase": 0.8374948533040109,
+      "val_pinball": 0.2520142216466329
+     },
+     "eta=2.0,gamma=1.0,pool=region": {
+      "val_mase": 0.8442724656856821,
+      "val_pinball": 0.2545215057058627
+     },
+     "eta=2.0,gamma=0.99,pool=all": {
+      "val_mase": 0.8387328706377096,
+      "val_pinball": 0.2519982302370753
+     },
+     "eta=2.0,gamma=0.99,pool=region": {
+      "val_mase": 0.848037299025804,
+      "val_pinball": 0.2565178028019463
+     },
+     "eta=2.0,gamma=0.97,pool=all": {
+      "val_mase": 0.8506229340640252,
+      "val_pinball": 0.2561616725461846
+     },
+     "eta=2.0,gamma=0.97,pool=region": {
+      "val_mase": 0.8815365982683048,
+      "val_pinball": 0.2712125632992168
+     },
+     "eta=4.0,gamma=1.0,pool=all": {
+      "val_mase": 0.838750923144772,
+      "val_pinball": 0.2526306889196093
+     },
+     "eta=4.0,gamma=1.0,pool=region": {
+      "val_mase": 0.8469716246323893,
+      "val_pinball": 0.25572675261770766
+     },
+     "eta=4.0,gamma=0.99,pool=all": {
+      "val_mase": 0.837424355164571,
+      "val_pinball": 0.25195208822021065
+     },
+     "eta=4.0,gamma=0.99,pool=region": {
+      "val_mase": 0.8416659193356429,
+      "val_pinball": 0.2539292494919715
+     },
+     "eta=4.0,gamma=0.97,pool=all": {
+      "val_mase": 0.8405143007667647,
+      "val_pinball": 0.25239066831764034
+     },
+     "eta=4.0,gamma=0.97,pool=region": {
+      "val_mase": 0.8612183590306376,
+      "val_pinball": 0.26276346249908933
+     }
+    }
+   }
+  }
+ },
+ {
+  "tid": "T3",
+  "final": "ens_top",
+  "final_kind": "ens_top",
+  "crossfit_val_mase": {
+   "best_single": 0.8136701732929403,
+   "ens_top": 0.8036800901202081,
+   "ens_stack": 0.9784370112931357,
+   "ens_online": 0.8068005666476057
+  },
+  "calibration_window": 365,
+  "members": [
+   "lgbm",
+   "bilstm",
+   "tft",
+   "patchtst",
+   "chronos",
+   "xgb",
+   "nhits",
+   "tide",
+   "bitcn",
+   "nbeatsx",
+   "chronos2",
+   "chronos_base",
+   "mcag_instance"
+  ],
+  "round1_selected": "lgbm",
+  "ensemble_settings": {
+   "ens_top": {
+    "k": 2,
+    "cv_mase": {
+     "2": 0.8037384478980552,
+     "3": 0.8082250603061092,
+     "4": 0.8132139867906182,
+     "5": 0.8104936591628079,
+     "6": 0.8111635858547124
+    },
+    "members": [
+     "chronos2",
+     "xgb"
+    ]
+   },
+   "ens_stack": {
+    "lambda_": 0.0,
+    "cv_pinball": {
+     "0.0": 0.2881058660739601,
+     "0.1": 0.35293552192437316,
+     "1.0": 0.38353875734241566
+    },
+    "weights": {
+     "1": {
+      "lgbm": 0.08069628477096558,
+      "bilstm": 0.0025164231192320585,
+      "tft": 0.14802299439907074,
+      "patchtst": 0.0018833114299923182,
+      "chronos": 0.004420321900397539,
+      "xgb": 0.19758151471614838,
+      "nhits": 0.00016283695003949106,
+      "tide": 0.0023706534411758184,
+      "bitcn": 0.0012278754729777575,
+      "nbeatsx": 0.0001724132162053138,
+      "chronos2": 0.5119296312332153,
+      "chronos_base": 0.004492024425417185,
+      "mcag_instance": 0.044523753225803375
+     },
+     "2": {
+      "lgbm": 0.06065894663333893,
+      "bilstm": 0.0039906068705022335,
+      "tft": 0.14609213173389435,
+      "patchtst": 0.00274828914552927,
+      "chronos": 0.007681021001189947,
+      "xgb": 0.04729542136192322,
+      "nhits": 0.0001790635142242536,
+      "tide": 0.0038280535954982042,
+      "bitcn": 0.0022964710369706154,
+      "nbeatsx": 0.00017634691903367639,
+      "chronos2": 0.5632657408714294,
+      "chronos_base": 0.007391610648483038,
+      "mcag_instance": 0.15439626574516296
+     },
+     "3": {
+      "lgbm": 0.03973570466041565,
+      "bilstm": 0.004271848127245903,
+      "tft": 0.1383640021085739,
+      "patchtst": 0.0030121656600385904,
+      "chronos": 0.009556088596582413,
+      "xgb": 0.05793018639087677,
+      "nhits": 0.00019252128549851477,
+      "tide": 0.004871285520493984,
+      "bitcn": 0.0037246537394821644,
+      "nbeatsx": 0.00019013631390407681,
+      "chronos2": 0.5325981974601746,
+      "chronos_base": 0.008670492097735405,
+      "mcag_instance": 0.1968827098608017
+     }
+    }
+   },
+   "ens_online": {
+    "eta": 2.0,
+    "gamma": 0.99,
+    "pool": "all",
+    "grid": {
+     "eta=0.5,gamma=1.0,pool=all": {
+      "val_mase": 0.8263601024990126,
+      "val_pinball": 0.2443900381122827
+     },
+     "eta=0.5,gamma=1.0,pool=region": {
+      "val_mase": 0.8387928816174557,
+      "val_pinball": 0.24700092665090753
+     },
+     "eta=0.5,gamma=0.99,pool=all": {
+      "val_mase": 0.9484042187599071,
+      "val_pinball": 0.27486830292473535
+     },
+     "eta=0.5,gamma=0.99,pool=region": {
+      "val_mase": 1.1201225428341026,
+      "val_pinball": 0.31327806845939266
+     },
+     "eta=0.5,gamma=0.97,pool=all": {
+      "val_mase": 1.1538767343464396,
+      "val_pinball": 0.32554588667923257
+     },
+     "eta=0.5,gamma=0.97,pool=region": {
+      "val_mase": 1.4893938804479476,
+      "val_pinball": 0.4025781018729914
+     },
+     "eta=1.0,gamma=1.0,pool=all": {
+      "val_mase": 0.8081296403290237,
+      "val_pinball": 0.24005222567563808
+     },
+     "eta=1.0,gamma=1.0,pool=region": {
+      "val_mase": 0.8097388856794089,
+      "val_pinball": 0.2405690961039538
+     },
+     "eta=1.0,gamma=0.99,pool=all": {
+      "val_mase": 0.8285736959517979,
+      "val_pinball": 0.24513888162700057
+     },
+     "eta=1.0,gamma=0.99,pool=region": {
+      "val_mase": 0.9116062955637381,
+      "val_pinball": 0.26351667064823464
+     },
+     "eta=1.0,gamma=0.97,pool=all": {
+      "val_mase": 0.9741604803609752,
+      "val_pinball": 0.28175071715598016
+     },
+     "eta=1.0,gamma=0.97,pool=region": {
+      "val_mase": 1.4457756754110949,
+      "val_pinball": 0.38943665863516175
+     },
+     "eta=2.0,gamma=1.0,pool=all": {
+      "val_mase": 0.8077528280539871,
+      "val_pinball": 0.24046133392327432
+     },
+     "eta=2.0,gamma=1.0,pool=region": {
+      "val_mase": 0.8128059418987442,
+      "val_pinball": 0.24188416904897578
+     },
+     "eta=2.0,gamma=0.99,pool=all": {
+      "val_mase": 0.8068005666476057,
+      "val_pinball": 0.2399163981649727
+     },
+     "eta=2.0,gamma=0.99,pool=region": {
+      "val_mase": 0.8168643098439717,
+      "val_pinball": 0.24221517323476524
+     },
+     "eta=2.0,gamma=0.97,pool=all": {
+      "val_mase": 0.8397716754310633,
+      "val_pinball": 0.2483491340815591
+     },
+     "eta=2.0,gamma=0.97,pool=region": {
+      "val_mase": 1.2177106621868254,
+      "val_pinball": 0.3329120585813089
+     },
+     "eta=4.0,gamma=1.0,pool=all": {
+      "val_mase": 0.8092875858888863,
+      "val_pinball": 0.24136330525641125
+     },
+     "eta=4.0,gamma=1.0,pool=region": {
+      "val_mase": 0.8179084483095737,
+      "val_pinball": 0.24397122373859204
+     },
+     "eta=4.0,gamma=0.99,pool=all": {
+      "val_mase": 0.8078305821676377,
+      "val_pinball": 0.24073308329482176
+     },
+     "eta=4.0,gamma=0.99,pool=region": {
+      "val_mase": 0.8138800122483825,
+      "val_pinball": 0.24234968073237648
+     },
+     "eta=4.0,gamma=0.97,pool=all": {
+      "val_mase": 0.807550803143463,
+      "val_pinball": 0.24039869501717648
+     },
+     "eta=4.0,gamma=0.97,pool=region": {
+      "val_mase": 0.9254700264045612,
+      "val_pinball": 0.2657899240596172
+     }
+    }
+   }
+  }
+ },
+ {
+  "tid": "T4",
+  "final": "chronos2",
+  "final_kind": "best_single",
+  "crossfit_val_mase": {
+   "best_single": 0.9156987227947156,
+   "ens_top": 0.967648908134499,
+   "ens_stack": 0.9166647503557603,
+   "ens_online": 0.9213649271906598
+  },
+  "calibration_window": 365,
+  "members": [
+   "lgbm",
+   "bilstm",
+   "tft",
+   "patchtst",
+   "chronos",
+   "xgb",
+   "nhits",
+   "tide",
+   "bitcn",
+   "nbeatsx",
+   "chronos2",
+   "chronos_base",
+   "mcag_instance"
+  ],
+  "round1_selected": "chronos",
+  "ensemble_settings": {
+   "ens_top": {
+    "k": 2,
+    "cv_mase": {
+     "2": 0.9675956777216961,
+     "3": 0.9908289752262283,
+     "4": 1.0284168190813154,
+     "5": 1.0657874634990558,
+     "6": 1.0923671955931051
+    },
+    "members": [
+     "chronos2",
+     "chronos_base"
+    ]
+   },
+   "ens_stack": {
+    "lambda_": 0.0,
+    "cv_pinball": {
+     "0.0": 0.2861034443412906,
+     "0.1": 0.3065964314239562,
+     "1.0": 0.3441814366576277
+    },
+    "weights": {
+     "1": {
+      "lgbm": 0.0001989282900467515,
+      "bilstm": 0.0004553787875920534,
+      "tft": 0.0005140529829077423,
+      "patchtst": 0.0003422143345233053,
+      "chronos": 0.004317969549447298,
+      "xgb": 0.0002866904251277447,
+      "nhits": 0.00028748108888976276,
+      "tide": 0.00035157412639819086,
+      "bitcn": 0.00022847014770377427,
+      "nbeatsx": 0.00030958474962972105,
+      "chronos2": 0.9876201152801514,
+      "chronos_base": 0.0047293771058321,
+      "mcag_instance": 0.00035810336703434587
+     },
+     "2": {
+      "lgbm": 0.00020800555648747832,
+      "bilstm": 0.0003251137677580118,
+      "tft": 0.000643574574496597,
+      "patchtst": 0.00040348395123146474,
+      "chronos": 0.00712635787203908,
+      "xgb": 0.00030497633269988,
+      "nhits": 0.000277666375041008,
+      "tide": 0.00043758147512562573,
+      "bitcn": 0.00034871266689151525,
+      "nbeatsx": 0.00031091051641851664,
+      "chronos2": 0.9832395911216736,
+      "chronos_base": 0.00616223132237792,
+      "mcag_instance": 0.00021171382104512304
+     },
+     "3": {
+      "lgbm": 0.00019720918498933315,
+      "bilstm": 0.00026281081954948604,
+      "tft": 0.0005536440876312554,
+      "patchtst": 0.00032638723496347666,
+      "chronos": 0.006241417955607176,
+      "xgb": 0.0002412842441117391,
+      "nhits": 0.00022416695719584823,
+      "tide": 0.0003395907115191221,
+      "bitcn": 0.0002527019823901355,
+      "nbeatsx": 0.00024795540957711637,
+      "chronos2": 0.986328661441803,
+      "chronos_base": 0.004605489317327738,
+      "mcag_instance": 0.00017855384794529527
+     }
+    }
+   },
+   "ens_online": {
+    "eta": 2.0,
+    "gamma": 0.99,
+    "pool": "region",
+    "grid": {
+     "eta=0.5,gamma=1.0,pool=all": {
+      "val_mase": 0.9588156491648094,
+      "val_pinball": 0.2948147731881703
+     },
+     "eta=0.5,gamma=1.0,pool=region": {
+      "val_mase": 0.929804231861818,
+      "val_pinball": 0.2890252288490735
+     },
+     "eta=0.5,gamma=0.99,pool=all": {
+      "val_mase": 0.9847097700242563,
+      "val_pinball": 0.299487920878768
+     },
+     "eta=0.5,gamma=0.99,pool=region": {
+      "val_mase": 0.9394699738555203,
+      "val_pinball": 0.2927550017293486
+     },
+     "eta=0.5,gamma=0.97,pool=all": {
+      "val_mase": 1.068476962894776,
+      "val_pinball": 0.3164768643272763
+     },
+     "eta=0.5,gamma=0.97,pool=region": {
+      "val_mase": 0.9625457893131022,
+      "val_pinball": 0.30233989793356364
+     },
+     "eta=1.0,gamma=1.0,pool=all": {
+      "val_mase": 0.9402234683358022,
+      "val_pinball": 0.29115880566310937
+     },
+     "eta=1.0,gamma=1.0,pool=region": {
+      "val_mase": 0.9244028429814765,
+      "val_pinball": 0.2877927359280219
+     },
+     "eta=1.0,gamma=0.99,pool=all": {
+      "val_mase": 0.9470575398024718,
+      "val_pinball": 0.2924697265649641
+     },
+     "eta=1.0,gamma=0.99,pool=region": {
+      "val_mase": 0.9264200999684974,
+      "val_pinball": 0.28832044729400114
+     },
+     "eta=1.0,gamma=0.97,pool=all": {
+      "val_mase": 0.9919909004949766,
+      "val_pinball": 0.30010182224040055
+     },
+     "eta=1.0,gamma=0.97,pool=region": {
+      "val_mase": 0.9431971807419421,
+      "val_pinball": 0.29524793725862547
+     },
+     "eta=2.0,gamma=1.0,pool=all": {
+      "val_mase": 0.9299532592072011,
+      "val_pinball": 0.2889879855558804
+     },
+     "eta=2.0,gamma=1.0,pool=region": {
+      "val_mase": 0.9222061482634782,
+      "val_pinball": 0.28785802002947186
+     },
+     "eta=2.0,gamma=0.99,pool=all": {
+      "val_mase": 0.9311371590473438,
+      "val_pinball": 0.2892484384634628
+     },
+     "eta=2.0,gamma=0.99,pool=region": {
+      "val_mase": 0.9213649271906598,
+      "val_pinball": 0.28715953106393255
+     },
+     "eta=2.0,gamma=0.97,pool=all": {
+      "val_mase": 0.945376889489635,
+      "val_pinball": 0.29239044762118943
+     },
+     "eta=2.0,gamma=0.97,pool=region": {
+      "val_mase": 0.9300516459629798,
+      "val_pinball": 0.2901102385335633
+     },
+     "eta=4.0,gamma=1.0,pool=all": {
+      "val_mase": 0.9248383925530613,
+      "val_pinball": 0.2878519284394302
+     },
+     "eta=4.0,gamma=1.0,pool=region": {
+      "val_mase": 0.9210577879225335,
+      "val_pinball": 0.2880428380134983
+     },
+     "eta=4.0,gamma=0.99,pool=all": {
+      "val_mase": 0.9250931552363191,
+      "val_pinball": 0.2879071214171408
+     },
+     "eta=4.0,gamma=0.99,pool=region": {
+      "val_mase": 0.9203003614088047,
+      "val_pinball": 0.2874061700819812
+     },
+     "eta=4.0,gamma=0.97,pool=all": {
+      "val_mase": 0.9287131613156605,
+      "val_pinball": 0.28941593770587964
+     },
+     "eta=4.0,gamma=0.97,pool=region": {
+      "val_mase": 0.9248508817685411,
+      "val_pinball": 0.288591477823055
+     }
+    }
+   }
+  }
+ },
+ {
+  "tid": "T5",
+  "final": "ens_top",
+  "final_kind": "ens_top",
+  "crossfit_val_mase": {
+   "best_single": 1.2023684023858947,
+   "ens_top": 1.1177634742779985,
+   "ens_stack": 1.1304456711913018,
+   "ens_online": 1.1916991529811092
+  },
+  "calibration_window": 365,
+  "members": [
+   "lgbm",
+   "bilstm",
+   "tft",
+   "patchtst",
+   "chronos",
+   "xgb",
+   "nhits",
+   "tide",
+   "bitcn",
+   "nbeatsx",
+   "chronos2",
+   "chronos_base",
+   "mcag_instance_sd"
+  ],
+  "round1_selected": "bilstm",
+  "ensemble_settings": {
+   "ens_top": {
+    "k": 6,
+    "cv_mase": {
+     "2": 1.19974408155678,
+     "3": 1.1544523126427202,
+     "4": 1.166550930166918,
+     "5": 1.127599375099983,
+     "6": 1.1177049319486092
+    },
+    "members": [
+     "chronos2",
+     "bitcn",
+     "mcag_instance_sd",
+     "bilstm",
+     "nbeatsx",
+     "nhits"
+    ]
+   },
+   "ens_stack": {
+    "lambda_": 0.1,
+    "cv_pinball": {
+     "0.0": 0.3310248834456275,
+     "0.1": 0.3287584944046472,
+     "1.0": 0.3534829393785569
+    },
+    "weights": {
+     "1": {
+      "lgbm": 0.001081062713637948,
+      "bilstm": 0.09612315893173218,
+      "tft": 0.0984797552227974,
+      "patchtst": 0.000721789721865207,
+      "chronos": 0.0010501582873985171,
+      "xgb": 0.0010792549001052976,
+      "nhits": 0.12393955141305923,
+      "tide": 0.0006230107974261045,
+      "bitcn": 0.18306483328342438,
+      "nbeatsx": 0.10696563124656677,
+      "chronos2": 0.2500840127468109,
+      "chronos_base": 0.0007703052251599729,
+      "mcag_instance_sd": 0.13601748645305634
+     },
+     "2": {
+      "lgbm": 0.0009231059229932725,
+      "bilstm": 0.11412706971168518,
+      "tft": 0.07839130610227585,
+      "patchtst": 0.0006651859730482101,
+      "chronos": 0.001098624081350863,
+      "xgb": 0.001014330075122416,
+      "nhits": 0.1346690058708191,
+      "tide": 0.000558318046387285,
+      "bitcn": 0.1428201049566269,
+      "nbeatsx": 0.09332942217588425,
+      "chronos2": 0.25559213757514954,
+      "chronos_base": 0.0007111698505468667,
+      "mcag_instance_sd": 0.17610026895999908
+     },
+     "3": {
+      "lgbm": 0.0009765680879354477,
+      "bilstm": 0.13323190808296204,
+      "tft": 0.06916379928588867,
+      "patchtst": 0.0007262630388140678,
+      "chronos": 0.0029617012478411198,
+      "xgb": 0.0010363865876570344,
+      "nhits": 0.12545548379421234,
+      "tide": 0.0006898705614730716,
+      "bitcn": 0.13651229441165924,
+      "nbeatsx": 0.08506564795970917,
+      "chronos2": 0.23877470195293427,
+      "chronos_base": 0.0008782668737694621,
+      "mcag_instance_sd": 0.20452715456485748
+     }
+    }
+   },
+   "ens_online": {
+    "eta": 0.5,
+    "gamma": 1.0,
+    "pool": "all",
+    "grid": {
+     "eta=0.5,gamma=1.0,pool=all": {
+      "val_mase": 1.1916991529811092,
+      "val_pinball": 0.34941423599068616
+     },
+     "eta=0.5,gamma=1.0,pool=region": {
+      "val_mase": 1.1940696318741661,
+      "val_pinball": 0.3510872940692502
+     },
+     "eta=0.5,gamma=0.99,pool=all": {
+      "val_mase": 1.203880523506998,
+      "val_pinball": 0.3506557741639205
+     },
+     "eta=0.5,gamma=0.99,pool=region": {
+      "val_mase": 1.1996263218681738,
+      "val_pinball": 0.35003403543163375
+     },
+     "eta=0.5,gamma=0.97,pool=all": {
+      "val_mase": 1.2344764491719868,
+      "val_pinball": 0.35982378022673667
+     },
+     "eta=0.5,gamma=0.97,pool=region": {
+      "val_mase": 1.2301189891055377,
+      "val_pinball": 0.35904908228368126
+     },
+     "eta=1.0,gamma=1.0,pool=all": {
+      "val_mase": 1.2062602889545506,
+      "val_pinball": 0.3540460273147902
+     },
+     "eta=1.0,gamma=1.0,pool=region": {
+      "val_mase": 1.212145965614405,
+      "val_pinball": 0.35649849563873864
+     },
+     "eta=1.0,gamma=0.99,pool=all": {
+      "val_mase": 1.2090243525895086,
+      "val_pinball": 0.3507815109754056
+     },
+     "eta=1.0,gamma=0.99,pool=region": {
+      "val_mase": 1.2028480385442435,
+      "val_pinball": 0.3503650205083663
+     },
+     "eta=1.0,gamma=0.97,pool=all": {
+      "val_mase": 1.2353489511702946,
+      "val_pinball": 0.3596877476107488
+     },
+     "eta=1.0,gamma=0.97,pool=region": {
+      "val_mase": 1.2269952639375872,
+      "val_pinball": 0.35816698088235516
+     },
+     "eta=2.0,gamma=1.0,pool=all": {
+      "val_mase": 1.2268280641414289,
+      "val_pinball": 0.35902469536579673
+     },
+     "eta=2.0,gamma=1.0,pool=region": {
+      "val_mase": 1.2331665248135237,
+      "val_pinball": 0.36151704926882694
+     },
+     "eta=2.0,gamma=0.99,pool=all": {
+      "val_mase": 1.226642205736955,
+      "val_pinball": 0.3541975272922034
+     },
+     "eta=2.0,gamma=0.99,pool=region": {
+      "val_mase": 1.221499807834224,
+      "val_pinball": 0.35447062999161266
+     },
+     "eta=2.0,gamma=0.97,pool=all": {
+      "val_mase": 1.2392885383733243,
+      "val_pinball": 0.3594397373497328
+     },
+     "eta=2.0,gamma=0.97,pool=region": {
+      "val_mase": 1.233573612999488,
+      "val_pinball": 0.3586365209205361
+     },
+     "eta=4.0,gamma=1.0,pool=all": {
+      "val_mase": 1.2466514662906563,
+      "val_pinball": 0.3633215673184078
+     },
+     "eta=4.0,gamma=1.0,pool=region": {
+      "val_mase": 1.2469423886910416,
+      "val_pinball": 0.3650577348366143
+     },
+     "eta=4.0,gamma=0.99,pool=all": {
+      "val_mase": 1.2439067205477936,
+      "val_pinball": 0.3578131129585413
+     },
+     "eta=4.0,gamma=0.99,pool=region": {
+      "val_mase": 1.2378457802970602,
+      "val_pinball": 0.35885997022779337
+     },
+     "eta=4.0,gamma=0.97,pool=all": {
+      "val_mase": 1.240076253192133,
+      "val_pinball": 0.3593085624593077
+     },
+     "eta=4.0,gamma=0.97,pool=region": {
+      "val_mase": 1.2400847632266123,
+      "val_pinball": 0.360291963809027
+     }
+    }
+   }
+  }
+ }
+]

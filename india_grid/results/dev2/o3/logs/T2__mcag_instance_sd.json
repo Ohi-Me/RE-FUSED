@@ -1,0 +1,53 @@
+{
+ "tid": "T2",
+ "variant": "mcag_instance_sd",
+ "blocks": [
+  "market",
+  "supply_npp",
+  "supply_re",
+  "system",
+  "environment",
+  "carbon"
+ ],
+ "block_dims": [
+  6,
+  7,
+  7,
+  27,
+  9,
+  2
+ ],
+ "params_instance": 283785,
+ "params": 283785,
+ "fusion_hidden": 248,
+ "n_train": 55386,
+ "n_es": 6052,
+ "n_eval": 24786,
+ "seeds": {
+  "0": {
+   "epochs": 15,
+   "best_es": 0.09252209814667937,
+   "elapsed_s": 48.1
+  },
+  "1": {
+   "epochs": 12,
+   "best_es": 0.0931960652334282,
+   "elapsed_s": 77.0
+  },
+  "2": {
+   "epochs": 13,
+   "best_es": 0.09196593165791594,
+   "elapsed_s": 103.5
+  },
+  "3": {
+   "epochs": 14,
+   "best_es": 0.09198731831561156,
+   "elapsed_s": 133.2
+  },
+  "4": {
+   "epochs": 18,
+   "best_es": 0.09253588220337251,
+   "elapsed_s": 172.2
+  }
+ }
+}

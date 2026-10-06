@@ -1,0 +1,26 @@
+{
+ "forecast_model": "ens_stack",
+ "calibration_window": 365,
+ "round1_model": "lgbm",
+ "params": {
+  "A2": {
+   "beta": 0,
+   "rho": 0.5
+  },
+  "A5": {
+   "beta": 0
+  },
+  "A4s": {
+   "b0": -4,
+   "bU": 0,
+   "bS": 4,
+   "rho": 0.5
+  },
+  "A5c": {
+   "b0": -4,
+   "bU": 1,
+   "bS": 2
+  }
+ },
+ "seconds": 3134
+}

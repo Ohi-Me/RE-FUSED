@@ -1,0 +1,15 @@
+{
+ "started": "2026-09-17T21:15:39",
+ "xgboost": "3.2.0",
+ "amazon/chronos-2": {
+  "path": "/Data3/<hpc-user>/RefusedH100/data/hf_cache/hub/models--amazon--chronos-2/snapshots/29ec3766d36d6f73f0696f85560a422f50e8498c",
+  "bytes": 477940831
+ },
+ "amazon/chronos-bolt-base": {
+  "path": "/Data3/<hpc-user>/RefusedH100/data/hf_cache/hub/models--amazon--chronos-bolt-base/snapshots/5d9f166d69f47aef3401367a7b842e78fe97b121",
+  "bytes": 821214877
+ },
+ "numpy": "2.2.6",
+ "torch": "2.5.1+cu121",
+ "finished": "2026-09-17T21:16:17"
+}
