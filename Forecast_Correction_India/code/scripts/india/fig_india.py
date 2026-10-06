@@ -1,9 +1,11 @@
 """Figure of the pre-registered Indian hourly study: the best squared-error skill any gate design reached, for each
 day-ahead forecast and series (test months 1 Mar - 13 Sep 2026). Reads results/india/confirm/analysis/IH5_strength.csv.
-Output: figures/india/correction_skill_hourly.{png,pdf}
+Output: figures/india/correction_skill_hourly.{png,pdf}; with --paper also the same chart without its title
+(correction_skill_hourly_paper.pdf), for use under a caption
 Usage:  python code/scripts/india/fig_india.py      (run on the H100: hpc/india_fig.pbs)
 """
 import os
+import sys
 
 import matplotlib
 import pandas as pd
@@ -39,10 +41,13 @@ def main():
         ax.set_xlabel("error removed (%)", fontsize=9)
     axes[0].set_yticks(list(range(len(order)))[::-1])
     axes[0].set_yticklabels([NAMES[b] for b in order], fontsize=9)
+    os.makedirs(OUT, exist_ok=True)
+    if "--paper" in sys.argv:
+        fig.tight_layout()
+        fig.savefig(os.path.join(OUT, "correction_skill_hourly_paper.pdf"))
     fig.suptitle("All-India hourly forecasts, 1 Mar – 13 Sep 2026: squared error removed by the best gated correction",
                  fontsize=11, x=0.01, ha="left")
     fig.tight_layout()
-    os.makedirs(OUT, exist_ok=True)
     for ext in ("png", "pdf"):
         fig.savefig(os.path.join(OUT, f"correction_skill_hourly.{ext}"), dpi=160)
     print("wrote", OUT)
