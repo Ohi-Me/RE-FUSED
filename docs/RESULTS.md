@@ -92,7 +92,7 @@ Four hourly series from the Grid-India SCADA data: demand met, net demand (deman
 solar. Eight day-ahead forecasts were corrected: two simple ones (same hour last week; value 48 hours earlier) and
 six learned ones (LightGBM, N-HiTS, PatchTST, TiDE, DLinear, Chronos-Bolt). Test months: 1 March to 13 September
 2026, opened once in H100 job 34223 after the plan was frozen (tag `prereg-india-v1`).
-**5 of 21 pre-registered tests supported.**
+**5 of 20 pre-registered tests supported** (plus one estimate without a test).
 
 ![Correction skill](figures/correction_skill_hourly.png)
 
@@ -154,7 +154,7 @@ unchanged reliability (99.2 % against 99.3 %), again without lowering imbalance 
 
 | | Other countries | India (hourly) |
 |---|---|---|
-| Tests supported | 19 of 23 | 5 of 21 |
+| Tests supported | 19 of 23 | 5 of 20 |
 | PART predicts whether a finer gate helps | yes (0.75) | no (0.625, not significant) |
 | Prequential choice of time policy | sign 0.75, but no regret gain | no |
 | Correction lowers deviation energy | yes | yes |
