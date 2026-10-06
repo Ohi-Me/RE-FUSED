@@ -1,0 +1,47 @@
+{
+ "tid": "T5",
+ "variant": "mcag_instance",
+ "blocks": [
+  "market",
+  "system",
+  "environment"
+ ],
+ "block_dims": [
+  6,
+  13,
+  5
+ ],
+ "params_instance": 227535,
+ "params": 227535,
+ "fusion_hidden": 172,
+ "n_train": 21008,
+ "n_es": 2314,
+ "n_eval": 9477,
+ "seeds": {
+  "0": {
+   "epochs": 9,
+   "best_es": 0.18343238532543182,
+   "elapsed_s": 14.5
+  },
+  "1": {
+   "epochs": 9,
+   "best_es": 0.2071492075920105,
+   "elapsed_s": 19.1
+  },
+  "2": {
+   "epochs": 8,
+   "best_es": 0.2112245112657547,
+   "elapsed_s": 22.5
+  },
+  "3": {
+   "epochs": 9,
+   "best_es": 0.19705696403980255,
+   "elapsed_s": 26.1
+  },
+  "4": {
+   "epochs": 9,
+   "best_es": 0.20460273325443268,
+   "elapsed_s": 29.5
+  }
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "A2": {
+  "beta": 0,
+  "rho": 0.5
+ },
+ "A3": {
+  "rho0": 0.25
+ },
+ "A4": {
+  "beta0": 0,
+  "beta_U": 0,
+  "beta_stress": 0
+ },
+ "A2r": {
+  "beta_low": 0,
+  "beta_high": 0
+ },
+ "model": "lgbm"
+}

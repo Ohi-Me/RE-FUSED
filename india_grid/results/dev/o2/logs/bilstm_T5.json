@@ -1,0 +1,33 @@
+{
+ "tid": "T5",
+ "n_train": 21008,
+ "n_es": 2314,
+ "n_eval": 9477,
+ "seeds": {
+  "0": {
+   "epochs": 7,
+   "best_es_pinball_z": 0.28099459409713745,
+   "elapsed_s": 4.7
+  },
+  "1": {
+   "epochs": 7,
+   "best_es_pinball_z": 0.2508469521999359,
+   "elapsed_s": 6.6
+  },
+  "2": {
+   "epochs": 7,
+   "best_es_pinball_z": 0.24507470428943634,
+   "elapsed_s": 8.6
+  },
+  "3": {
+   "epochs": 8,
+   "best_es_pinball_z": 0.22543299198150635,
+   "elapsed_s": 10.7
+  },
+  "4": {
+   "epochs": 7,
+   "best_es_pinball_z": 0.24460841715335846,
+   "elapsed_s": 12.6
+  }
+ }
+}
