@@ -1,0 +1,337 @@
+{
+ "time": "2026-10-06T12:45:08+0530",
+ "host": "master",
+ "pbs_job": "34188.master",
+ "phase": "confirm",
+ "prereg": {
+  "file": "codes/design/02_preregistration.md",
+  "recorded": "e2122f04b88c25d6387d54bab6a2b8cc68cdd9212fdee4bbd8265a2287306ac2",
+  "found": "e2122f04b88c25d6387d54bab6a2b8cc68cdd9212fdee4bbd8265a2287306ac2",
+  "ok": true
+ },
+ "frozen_files": [
+  {
+   "file": "results/dev/o2/eval/selection.json",
+   "recorded": "71d2ec7992376bcebb2ca6cb322845bc8dc65c8c93ce769a856dd65a71ca30ca",
+   "found": "71d2ec7992376bcebb2ca6cb322845bc8dc65c8c93ce769a856dd65a71ca30ca",
+   "ok": true,
+   "note": ""
+  },
+  {
+   "file": "results/dev/o4/weights.json",
+   "recorded": "f93c9f25744f7f492a6d169d94a19522c810c0414434cf44a6e40615448da372",
+   "found": "f93c9f25744f7f492a6d169d94a19522c810c0414434cf44a6e40615448da372",
+   "ok": true,
+   "note": ""
+  },
+  {
+   "file": "results/dev/o5/frozen_params.json",
+   "recorded": "5251d233e4550391fde92c9f2fb110e8032b8d6acf1335ad4ef2863521ed1e34",
+   "found": "5251d233e4550391fde92c9f2fb110e8032b8d6acf1335ad4ef2863521ed1e34",
+   "ok": true,
+   "note": ""
+  },
+  {
+   "file": "results/dev2/o2/eval/selection_dev2.json",
+   "recorded": "e075eb5a9edf793ee65d80ca1cdc2eb70929495d0bdf129068ed700bc8b310e5",
+   "found": "e075eb5a9edf793ee65d80ca1cdc2eb70929495d0bdf129068ed700bc8b310e5",
+   "ok": true,
+   "note": ""
+  },
+  {
+   "file": "results/dev2/o2/logs/ensemble_T1.json",
+   "recorded": "8c2f35bbe2b210a21d0b4584fe601b14d2e8432f0850390ea88f6b5a33dcd9eb",
+   "found": "8c2f35bbe2b210a21d0b4584fe601b14d2e8432f0850390ea88f6b5a33dcd9eb",
+   "ok": true,
+   "note": ""
+  },
+  {
+   "file": "results/dev2/o2/logs/ensemble_T2.json",
+   "recorded": "fed3362138a9a5866762dd44b9ecbb97e6fe9d65c2a91743cde43277be757764",
+   "found": "fed3362138a9a5866762dd44b9ecbb97e6fe9d65c2a91743cde43277be757764",
+   "ok": true,
+   "note": ""
+  },
+  {
+   "file": "results/dev2/o2/logs/ensemble_T3.json",
+   "recorded": "424144916fc4aa1e071e2ec3d243767a7d9b1346ef167fd99267feafcb01733d",
+   "found": "424144916fc4aa1e071e2ec3d243767a7d9b1346ef167fd99267feafcb01733d",
+   "ok": true,
+   "note": ""
+  },
+  {
+   "file": "results/dev2/o2/logs/ensemble_T4.json",
+   "recorded": "1bfac3682aa224f1004de18368f4e338b482aa75387ebb0279d913d96b20cb25",
+   "found": "1bfac3682aa224f1004de18368f4e338b482aa75387ebb0279d913d96b20cb25",
+   "ok": true,
+   "note": ""
+  },
+  {
+   "file": "results/dev2/o2/logs/ensemble_T5.json",
+   "recorded": "d8f956602326027b7d71e4610ce4b9ffe79de88fc6a1db3084fdfafa8637f4e9",
+   "found": "d8f956602326027b7d71e4610ce4b9ffe79de88fc6a1db3084fdfafa8637f4e9",
+   "ok": true,
+   "note": ""
+  },
+  {
+   "file": "results/dev2/o2/logs/xgb_T1.json",
+   "recorded": "51ce681b5bc831871fa53191fad94e7e90ed86d558d1d356352ace7bd5324718",
+   "found": "51ce681b5bc831871fa53191fad94e7e90ed86d558d1d356352ace7bd5324718",
+   "ok": true,
+   "note": ""
+  },
+  {
+   "file": "results/dev2/o2/logs/xgb_T2.json",
+   "recorded": "6520117556a457cf5e0ce7fdc98684c1cc95a5a6cbc22a841d5d71a38e5ab60c",
+   "found": "6520117556a457cf5e0ce7fdc98684c1cc95a5a6cbc22a841d5d71a38e5ab60c",
+   "ok": true,
+   "note": ""
+  },
+  {
+   "file": "results/dev2/o2/logs/xgb_T3.json",
+   "recorded": "3fbe8daceb88669341af71d7ba2d94f9b99802756083db2b9e336a173edc6c7e",
+   "found": "3fbe8daceb88669341af71d7ba2d94f9b99802756083db2b9e336a173edc6c7e",
+   "ok": true,
+   "note": ""
+  },
+  {
+   "file": "results/dev2/o2/logs/xgb_T4.json",
+   "recorded": "ef1a6070cff2142bd9b67a4df1ca716892c67617c3b945e089020b9ac27ae67f",
+   "found": "ef1a6070cff2142bd9b67a4df1ca716892c67617c3b945e089020b9ac27ae67f",
+   "ok": true,
+   "note": ""
+  },
+  {
+   "file": "results/dev2/o2/logs/xgb_T5.json",
+   "recorded": "8a0635aee1946d995c00a1ca25195b6e4c0221370fd2ec40e0b30bd4b12a022c",
+   "found": "8a0635aee1946d995c00a1ca25195b6e4c0221370fd2ec40e0b30bd4b12a022c",
+   "ok": true,
+   "note": ""
+  },
+  {
+   "file": "results/dev2/o2/logs/nf_bitcn_T1.json",
+   "recorded": "621e9da2f40e4e4beb1e5f32e884d1a88f5318836c1060a7a5422e5ef4a1825b",
+   "found": "621e9da2f40e4e4beb1e5f32e884d1a88f5318836c1060a7a5422e5ef4a1825b",
+   "ok": true,
+   "note": ""
+  },
+  {
+   "file": "results/dev2/o2/logs/nf_bitcn_T2.json",
+   "recorded": "8a19146d91277de4ddb6de259c135c04f00d66be1b47b12dce3e285eedf16ac9",
+   "found": "8a19146d91277de4ddb6de259c135c04f00d66be1b47b12dce3e285eedf16ac9",
+   "ok": true,
+   "note": ""
+  },
+  {
+   "file": "results/dev2/o2/logs/nf_bitcn_T3.json",
+   "recorded": "140021d358106c93fbec5911219753fc240ea3c434278db1e54c2a92521408ee",
+   "found": "140021d358106c93fbec5911219753fc240ea3c434278db1e54c2a92521408ee",
+   "ok": true,
+   "note": ""
+  },
+  {
+   "file": "results/dev2/o2/logs/nf_bitcn_T4.json",
+   "recorded": "eb9dad9d604278f277f2fc6a46c5375e87fd20fc19a1e6d10c456d84b6947afc",
+   "found": "eb9dad9d604278f277f2fc6a46c5375e87fd20fc19a1e6d10c456d84b6947afc",
+   "ok": true,
+   "note": ""
+  },
+  {
+   "file": "results/dev2/o2/logs/nf_bitcn_T5.json",
+   "recorded": "fb5da26d32c416f1d574c21c337eee774e4be511a836446d7a86ce56eba3e580",
+   "found": "fb5da26d32c416f1d574c21c337eee774e4be511a836446d7a86ce56eba3e580",
+   "ok": true,
+   "note": ""
+  },
+  {
+   "file": "results/dev2/o2/logs/nf_nbeatsx_T1.json",
+   "recorded": "c9ef92c05c4b4c3a94f6f0e1fc45cdfd5a00eb4b4d803bab3beb08032a866f69",
+   "found": "c9ef92c05c4b4c3a94f6f0e1fc45cdfd5a00eb4b4d803bab3beb08032a866f69",
+   "ok": true,
+   "note": ""
+  },
+  {
+   "file": "results/dev2/o2/logs/nf_nbeatsx_T2.json",
+   "recorded": "d81280a6c1d3088acfc841583beaea8de17c5b6c5454eebc1a401448dcd257c7",
+   "found": "d81280a6c1d3088acfc841583beaea8de17c5b6c5454eebc1a401448dcd257c7",
+   "ok": true,
+   "note": ""
+  },
+  {
+   "file": "results/dev2/o2/logs/nf_nbeatsx_T3.json",
+   "recorded": "604a52ea457b08346ad28f3195af053b2a71714903a11f1590e1620e9fad7e5d",
+   "found": "604a52ea457b08346ad28f3195af053b2a71714903a11f1590e1620e9fad7e5d",
+   "ok": true,
+   "note": ""
+  },
+  {
+   "file": "results/dev2/o2/logs/nf_nbeatsx_T4.json",
+   "recorded": "3ffaefdbef606565b0ca87e1177360676d1266da7349121ecfeb1934f3277c03",
+   "found": "3ffaefdbef606565b0ca87e1177360676d1266da7349121ecfeb1934f3277c03",
+   "ok": true,
+   "note": ""
+  },
+  {
+   "file": "results/dev2/o2/logs/nf_nbeatsx_T5.json",
+   "recorded": "ef243f91de6a0cccc59c6f6cc5882ae3ed8212765a0e618963aa3654c7da361b",
+   "found": "ef243f91de6a0cccc59c6f6cc5882ae3ed8212765a0e618963aa3654c7da361b",
+   "ok": true,
+   "note": ""
+  },
+  {
+   "file": "results/dev2/o2/logs/nf_nhits_T1.json",
+   "recorded": "259b3e2369091ee85e53d54c0e43d43fef660fd7f5bcac73a7458d1b24eb1eee",
+   "found": "259b3e2369091ee85e53d54c0e43d43fef660fd7f5bcac73a7458d1b24eb1eee",
+   "ok": true,
+   "note": ""
+  },
+  {
+   "file": "results/dev2/o2/logs/nf_nhits_T2.json",
+   "recorded": "2a032af2ef395a1da3d7195869d4c085543ebc42cfb83f5dbd478da116050958",
+   "found": "2a032af2ef395a1da3d7195869d4c085543ebc42cfb83f5dbd478da116050958",
+   "ok": true,
+   "note": ""
+  },
+  {
+   "file": "results/dev2/o2/logs/nf_nhits_T3.json",
+   "recorded": "03649b1ec616c92c3edfce9ece931b3e93a04fa76dfc0617ff36e67da261b953",
+   "found": "03649b1ec616c92c3edfce9ece931b3e93a04fa76dfc0617ff36e67da261b953",
+   "ok": true,
+   "note": ""
+  },
+  {
+   "file": "results/dev2/o2/logs/nf_nhits_T4.json",
+   "recorded": "3062a5ca5dcda95815a1f6ab47c8d463a86406ab687a76c96aee09a599f667d7",
+   "found": "3062a5ca5dcda95815a1f6ab47c8d463a86406ab687a76c96aee09a599f667d7",
+   "ok": true,
+   "note": ""
+  },
+  {
+   "file": "results/dev2/o2/logs/nf_nhits_T5.json",
+   "recorded": "9fd6ae64564cc1d02695614dda635423bd0253b08a2f7c32854e48ee6fee6868",
+   "found": "9fd6ae64564cc1d02695614dda635423bd0253b08a2f7c32854e48ee6fee6868",
+   "ok": true,
+   "note": ""
+  },
+  {
+   "file": "results/dev2/o2/logs/nf_tide_T1.json",
+   "recorded": "88f11a833805d97277c0560bc5ae845f9870baaeb7f9a75a0d9629ed23881ee3",
+   "found": "88f11a833805d97277c0560bc5ae845f9870baaeb7f9a75a0d9629ed23881ee3",
+   "ok": true,
+   "note": ""
+  },
+  {
+   "file": "results/dev2/o2/logs/nf_tide_T2.json",
+   "recorded": "f483b6dbee6fdcedd2f1d5c9b4e7d4522bb57699a4e68cc8f7b8ba3890b642d0",
+   "found": "f483b6dbee6fdcedd2f1d5c9b4e7d4522bb57699a4e68cc8f7b8ba3890b642d0",
+   "ok": true,
+   "note": ""
+  },
+  {
+   "file": "results/dev2/o2/logs/nf_tide_T3.json",
+   "recorded": "9f8ee8edd1fd4d680c1a346d04ab7cd59e1f9a322236a7855006388de511214b",
+   "found": "9f8ee8edd1fd4d680c1a346d04ab7cd59e1f9a322236a7855006388de511214b",
+   "ok": true,
+   "note": ""
+  },
+  {
+   "file": "results/dev2/o2/logs/nf_tide_T4.json",
+   "recorded": "f83ce2c0d9289dbe54e36a5e74255cbb251b05364001491f86f2cc5523cd77b3",
+   "found": "f83ce2c0d9289dbe54e36a5e74255cbb251b05364001491f86f2cc5523cd77b3",
+   "ok": true,
+   "note": ""
+  },
+  {
+   "file": "results/dev2/o2/logs/nf_tide_T5.json",
+   "recorded": "6dc699b3692a994d313536157ddbc79588d3e94bd32dfb3805ed1574fc9b8b8a",
+   "found": "6dc699b3692a994d313536157ddbc79588d3e94bd32dfb3805ed1574fc9b8b8a",
+   "ok": true,
+   "note": ""
+  },
+  {
+   "file": "results/dev2/o2/logs/chronos2_T1.json",
+   "recorded": "3a92f0067a62eed9502ce10e712d3ff98feffb9fd273a1b40cb6c4fedb696117",
+   "found": "3a92f0067a62eed9502ce10e712d3ff98feffb9fd273a1b40cb6c4fedb696117",
+   "ok": true,
+   "note": ""
+  },
+  {
+   "file": "results/dev2/o2/logs/chronos2_T2.json",
+   "recorded": "4dd8be15b6b93beaa069553948e216f5e52a015ee6dc63673b9c7f7da91ddb1b",
+   "found": "4dd8be15b6b93beaa069553948e216f5e52a015ee6dc63673b9c7f7da91ddb1b",
+   "ok": true,
+   "note": ""
+  },
+  {
+   "file": "results/dev2/o2/logs/chronos2_T3.json",
+   "recorded": "090046721616b9e4b383a6e769f888a0bed37b06fa038b659cf2cb656a2762b9",
+   "found": "090046721616b9e4b383a6e769f888a0bed37b06fa038b659cf2cb656a2762b9",
+   "ok": true,
+   "note": ""
+  },
+  {
+   "file": "results/dev2/o2/logs/chronos2_T4.json",
+   "recorded": "7439120260f4e693809420d1094e1ebd0276772a44541c1b487e22ac9d66a11e",
+   "found": "7439120260f4e693809420d1094e1ebd0276772a44541c1b487e22ac9d66a11e",
+   "ok": true,
+   "note": ""
+  },
+  {
+   "file": "results/dev2/o2/logs/chronos2_T5.json",
+   "recorded": "0c944cd05c05766be48615a147afbb7b7fd205c5c032d2e23252dadcab562b10",
+   "found": "0c944cd05c05766be48615a147afbb7b7fd205c5c032d2e23252dadcab562b10",
+   "ok": true,
+   "note": ""
+  },
+  {
+   "file": "results/dev2/o4/choice.json",
+   "recorded": "e6229131723ee56b5d9f1d8f20fff7a7302cf1725081f3e17c9dd8adec0dde07",
+   "found": "e6229131723ee56b5d9f1d8f20fff7a7302cf1725081f3e17c9dd8adec0dde07",
+   "ok": true,
+   "note": ""
+  },
+  {
+   "file": "results/dev2/o5/params.json",
+   "recorded": "ce53716026a0bf951fb682017d61bb64b392328f6e03102a1106379d60ba86ef",
+   "found": "ce53716026a0bf951fb682017d61bb64b392328f6e03102a1106379d60ba86ef",
+   "ok": true,
+   "note": ""
+  },
+  {
+   "file": "codes/scripts/confirm/c01_hypotheses.py",
+   "recorded": "f07727d831f03717f351d75c1c9554dd6e1c3d4e8d9dfe8f725beeb0df5d713a",
+   "found": "a1e2296c9bc3e6a77785f8209013bba56549de72a65a0c31b9f12a1f8312f9ee",
+   "ok": true,
+   "note": "renamed 24 Sep 2026, recorded in RENAME_RECORD.md"
+  }
+ ],
+ "panel": {
+  "file": "data/processed/refused_state_day.parquet",
+  "recorded": "c6ef9c8ebaba692cc0952025f87ea311e09b54ffae9e77c1c04a1b0ffaec4bbd",
+  "found": "c6ef9c8ebaba692cc0952025f87ea311e09b54ffae9e77c1c04a1b0ffaec4bbd",
+  "ok": true,
+  "rows": 104550,
+  "cols": 107
+ },
+ "git": {
+  "tag_present": true,
+  "commit": "4d3807ed275342c1f83f2e7009f094e838f20bad"
+ },
+ "rescore": {
+  "ok": true,
+  "shape_kept": [
+   52,
+   13
+  ],
+  "shape_new": [
+   52,
+   13
+  ],
+  "differing_columns": [],
+  "scorer_sha256": "a1e2296c9bc3e6a77785f8209013bba56549de72a65a0c31b9f12a1f8312f9ee",
+  "supported_kept": 35,
+  "supported_new": 35
+ },
+ "hashes_ok": true,
+ "all_ok": true
+}
