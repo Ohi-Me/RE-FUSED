@@ -1,0 +1,47 @@
+{
+ "tid": "T5",
+ "variant": "fusion_fixed_sd",
+ "blocks": [
+  "market",
+  "system",
+  "environment"
+ ],
+ "block_dims": [
+  6,
+  13,
+  5
+ ],
+ "params_instance": 227535,
+ "params": 227358,
+ "fusion_hidden": 172,
+ "n_train": 25766,
+ "n_es": 2314,
+ "n_eval": 11453,
+ "seeds": {
+  "0": {
+   "epochs": 9,
+   "best_es": 0.17439864575862885,
+   "elapsed_s": 12.0
+  },
+  "1": {
+   "epochs": 13,
+   "best_es": 0.1487428843975067,
+   "elapsed_s": 16.5
+  },
+  "2": {
+   "epochs": 10,
+   "best_es": 0.159597247838974,
+   "elapsed_s": 20.0
+  },
+  "3": {
+   "epochs": 10,
+   "best_es": 0.15815335512161255,
+   "elapsed_s": 23.7
+  },
+  "4": {
+   "epochs": 12,
+   "best_es": 0.15403307974338531,
+   "elapsed_s": 30.3
+  }
+ }
+}

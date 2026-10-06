@@ -1,0 +1,68 @@
+{
+ "tid": "T4",
+ "model": "nhits",
+ "Ly": 2,
+ "hist_exog": [
+  "co2_ci_conv_op",
+  "dem_energy_met_gwh",
+  "dem_energy_shortage_gwh",
+  "dem_max_demand_mw",
+  "dev_actual_drawal_gwh",
+  "dev_drawal_schedule_gwh",
+  "dev_od_ud_gwh",
+  "gen_act_gwh_hydro",
+  "gen_act_gwh_total",
+  "gen_coal_days_capw",
+  "gen_outage_share",
+  "gen_prog_gwh_total",
+  "m_dsm",
+  "m_npp",
+  "m_prc",
+  "m_psp",
+  "m_re",
+  "m_wx",
+  "nat_energy_met_gwh",
+  "prc_dam_acp",
+  "prc_dsm_normal",
+  "re_all_solar_gwh",
+  "re_all_total_re_gwh",
+  "re_all_wind_gwh",
+  "reg_energy_met_gwh",
+  "reg_hydro_gwh",
+  "reg_solar_gwh",
+  "reg_wind_gwh",
+  "sys_fvi",
+  "sys_pct_lt_49_9",
+  "wx_cdd24",
+  "wx_rain_mm",
+  "wx_tmax_c",
+  "wx_tmin_c"
+ ],
+ "val_pinball": {
+  "28": 0.29738148422932165
+ },
+ "seeds": {
+  "0": {
+   "rows": 29085,
+   "elapsed_s": 11.4
+  },
+  "1": {
+   "rows": 29085,
+   "elapsed_s": 15.7
+  },
+  "2": {
+   "rows": 29085,
+   "elapsed_s": 24.4
+  },
+  "3": {
+   "rows": 29085,
+   "elapsed_s": 35.3
+  },
+  "4": {
+   "rows": 29085,
+   "elapsed_s": 41.5
+  }
+ },
+ "input_size": 28,
+ "seconds": 41.7
+}

@@ -1,0 +1,28 @@
+{
+ "tid": "T2",
+ "xgboost": "3.2.0",
+ "val_pinball_z": {},
+ "best_iteration": {
+  "H1_seed0": 290,
+  "H2_seed0": 202,
+  "H3_seed0": 218,
+  "H1_seed1": 267,
+  "H2_seed1": 264,
+  "H3_seed1": 170,
+  "H1_seed2": 331,
+  "H2_seed2": 217,
+  "H3_seed2": 221,
+  "H1_seed3": 269,
+  "H2_seed3": 212,
+  "H3_seed3": 217,
+  "H1_seed4": 357,
+  "H2_seed4": 229,
+  "H3_seed4": 188
+ },
+ "depth": {
+  "1": 6,
+  "2": 6,
+  "3": 6
+ },
+ "seconds": 230.9
+}

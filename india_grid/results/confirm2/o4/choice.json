@@ -1,0 +1,12 @@
+{
+ "forecast_model": "ens_stack",
+ "calibration_window": 365,
+ "cv_tau": {},
+ "chosen": "O4c",
+ "params": {
+  "depth": 3,
+  "k": 2.0
+ },
+ "n_val": 7431,
+ "n_dev": 10759
+}

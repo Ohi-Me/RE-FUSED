@@ -1,0 +1,48 @@
+{
+ "tid": "T5",
+ "model": "nbeatsx",
+ "Ly": 14,
+ "hist_exog": [
+  "dem_energy_met_gwh",
+  "dev_actual_drawal_gwh",
+  "gen_outage_share",
+  "m_dsm",
+  "m_prc_rtm",
+  "m_psp",
+  "m_wx",
+  "nat_energy_met_gwh",
+  "prc_dsm_normal",
+  "prc_rtm_acp",
+  "reg_solar_gwh",
+  "sys_pct_lt_49_9",
+  "wx_cdd24",
+  "wx_tmax_c"
+ ],
+ "val_pinball": {
+  "28": 0.3225705924932798
+ },
+ "seeds": {
+  "0": {
+   "rows": 34359,
+   "elapsed_s": 4.3
+  },
+  "1": {
+   "rows": 34359,
+   "elapsed_s": 7.1
+  },
+  "2": {
+   "rows": 34359,
+   "elapsed_s": 10.6
+  },
+  "3": {
+   "rows": 34359,
+   "elapsed_s": 14.2
+  },
+  "4": {
+   "rows": 34359,
+   "elapsed_s": 17.5
+  }
+ },
+ "input_size": 28,
+ "seconds": 17.8
+}
