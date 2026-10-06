@@ -1,0 +1,128 @@
+# O3 round 2 — staleness-matched dropout and PART as a decision rule
+
+Development test FY2024-25, reported only (protocol `codes/design/06_dev2_protocol.md`, section 4).
+
+## Variants (development test)
+
+| tid | model | mase | rmsse | pinball | cov80 | cov90 | n |
+|---|---|---|---|---|---|---|---|
+| T1 | mcag_instance | 0.9607 | 0.9888 | 0.2891 | 0.7862 | 0.8871 | 36924 |
+| T1 | fusion_fixed | 1.0024 | 1.0179 | 0.2984 | 0.7806 | 0.8859 | 36924 |
+| T1 | mcag_instance_sd | 0.9491 | 0.9824 | 0.2864 | 0.7901 | 0.8899 | 36924 |
+| T1 | fusion_fixed_sd | 0.9735 | 0.9975 | 0.2905 | 0.7889 | 0.892 | 36924 |
+| T2 | mcag_instance | 0.9654 | 0.9612 | 0.2879 | 0.7914 | 0.8958 | 36924 |
+| T2 | fusion_fixed | 0.9752 | 0.9707 | 0.2904 | 0.7951 | 0.8985 | 36924 |
+| T2 | mcag_instance_sd | 0.9721 | 0.9663 | 0.2877 | 0.7906 | 0.8944 | 36924 |
+| T2 | fusion_fixed_sd | 0.9974 | 0.9882 | 0.294 | 0.7925 | 0.8971 | 36924 |
+| T3 | mcag_instance | 0.7824 | 0.765 | 0.2334 | 0.7896 | 0.8905 | 29463 |
+| T3 | fusion_fixed | 0.7897 | 0.7698 | 0.2346 | 0.797 | 0.8951 | 29463 |
+| T3 | mcag_instance_sd | 0.7846 | 0.7645 | 0.2328 | 0.7882 | 0.8898 | 29463 |
+| T3 | fusion_fixed_sd | 0.7979 | 0.7769 | 0.2354 | 0.7964 | 0.894 | 29463 |
+| T4 | mcag_instance | 0.8553 | 0.7212 | 0.2705 | 0.7969 | 0.8891 | 16296 |
+| T4 | fusion_fixed | 0.8633 | 0.7252 | 0.2682 | 0.8023 | 0.8915 | 16296 |
+| T4 | mcag_instance_sd | 0.8503 | 0.7187 | 0.2694 | 0.7962 | 0.8887 | 16296 |
+| T4 | fusion_fixed_sd | 0.8674 | 0.7241 | 0.2677 | 0.8031 | 0.892 | 16296 |
+| T5 | mcag_instance | 1.3793 | 1.0422 | 0.2555 | 0.8059 | 0.8919 | 14196 |
+| T5 | fusion_fixed | 1.2671 | 0.956 | 0.2446 | 0.8227 | 0.9034 | 14196 |
+| T5 | mcag_instance_sd | 1.3295 | 1.0194 | 0.259 | 0.8071 | 0.8944 | 14196 |
+| T5 | fusion_fixed_sd | 1.1508 | 0.8851 | 0.2438 | 0.8328 | 0.9086 | 14196 |
+
+## Paired tests (all horizons pooled)
+
+| tid | comparison | metric | H | mean_a | mean_b | mean_diff | lo | hi | p_a_better | n_days |
+|---|---|---|---|---|---|---|---|---|---|---|
+| T1 | A2 sd: instance vs fusion | mae | all | 0.9493 | 0.9736 | -0.0245 | -0.0331 | -0.0148 | 3.01e-12 | 363 |
+| T1 | A2 sd: instance vs fusion | pinball | all | 0.2864 | 0.2905 | -0.0042 | -0.0064 | -0.0018 | 1.23e-06 | 363 |
+| T1 | sd vs round 1 (instance) | mae | all | 0.9493 | 0.9609 | -0.0116 | -0.0172 | -0.0064 | 6.464e-08 | 363 |
+| T1 | sd vs round 1 (instance) | pinball | all | 0.2864 | 0.2891 | -0.0027 | -0.0043 | -0.0013 | 2.64e-06 | 363 |
+| T1 | sd vs round 1 (fusion) | mae | all | 0.9736 | 1.0026 | -0.0288 | -0.0409 | -0.0179 | 6.659e-13 | 363 |
+| T1 | sd vs round 1 (fusion) | pinball | all | 0.2905 | 0.2984 | -0.0079 | -0.0106 | -0.0055 | 2.153e-18 | 363 |
+| T2 | A2 sd: instance vs fusion | mae | all | 0.9722 | 0.9976 | -0.0253 | -0.0354 | -0.0163 | 5.735e-14 | 363 |
+| T2 | A2 sd: instance vs fusion | pinball | all | 0.2877 | 0.294 | -0.0063 | -0.0088 | -0.0042 | 2.988e-14 | 363 |
+| T2 | sd vs round 1 (instance) | mae | all | 0.9722 | 0.9656 | 0.0067 | 0.0024 | 0.0114 | 1.0 | 363 |
+| T2 | sd vs round 1 (instance) | pinball | all | 0.2877 | 0.2879 | -0.0001375 | -0.0009941 | 0.0007521 | 0.3397 | 363 |
+| T2 | sd vs round 1 (fusion) | mae | all | 0.9976 | 0.9753 | 0.0223 | 0.0151 | 0.031 | 1.0 | 363 |
+| T2 | sd vs round 1 (fusion) | pinball | all | 0.294 | 0.2904 | 0.0036 | 0.0022 | 0.0052 | 1.0 | 363 |
+| T3 | A2 sd: instance vs fusion | mae | all | 0.7847 | 0.798 | -0.0134 | -0.0195 | -0.0072 | 5.05e-08 | 365 |
+| T3 | A2 sd: instance vs fusion | pinball | all | 0.2328 | 0.2354 | -0.0026 | -0.0042 | -0.0011 | 2.407e-05 | 365 |
+| T3 | sd vs round 1 (instance) | mae | all | 0.7847 | 0.7826 | 0.0022 | -0.0014 | 0.0059 | 0.9281 | 365 |
+| T3 | sd vs round 1 (instance) | pinball | all | 0.2328 | 0.2334 | -0.0006244 | -0.0013 | 8.415e-05 | 0.0172 | 365 |
+| T3 | sd vs round 1 (fusion) | mae | all | 0.798 | 0.7899 | 0.0083 | 0.0046 | 0.0116 | 1.0 | 365 |
+| T3 | sd vs round 1 (fusion) | pinball | all | 0.2354 | 0.2346 | 0.0008735 | -0.0001515 | 0.0019 | 0.9859 | 365 |
+| T4 | A2 sd: instance vs fusion | mae | all | 0.8515 | 0.8687 | -0.0173 | -0.0264 | -0.0076 | 7.156e-07 | 365 |
+| T4 | A2 sd: instance vs fusion | pinball | all | 0.2694 | 0.2677 | 0.0017 | -0.0007893 | 0.0044 | 0.9633 | 365 |
+| T4 | sd vs round 1 (instance) | mae | all | 0.8515 | 0.8565 | -0.0048 | -0.0088 | -0.0007518 | 0.0014 | 365 |
+| T4 | sd vs round 1 (instance) | pinball | all | 0.2694 | 0.2705 | -0.0011 | -0.0019 | -0.0003644 | 0.0004458 | 365 |
+| T4 | sd vs round 1 (fusion) | mae | all | 0.8687 | 0.8646 | 0.0041 | 6.819e-05 | 0.0087 | 0.9934 | 365 |
+| T4 | sd vs round 1 (fusion) | pinball | all | 0.2677 | 0.2682 | -0.0004692 | -0.0014 | 0.0004329 | 0.1224 | 365 |
+| T5 | A2 sd: instance vs fusion | mae | all | 1.3293 | 1.1507 | 0.1787 | 0.1277 | 0.2334 | 1.0 | 365 |
+| T5 | A2 sd: instance vs fusion | pinball | all | 0.259 | 0.2438 | 0.0152 | 0.0083 | 0.0243 | 1.0 | 365 |
+| T5 | sd vs round 1 (instance) | mae | all | 1.3293 | 1.3791 | -0.0499 | -0.0802 | -0.022 | 2.452e-07 | 365 |
+| T5 | sd vs round 1 (instance) | pinball | all | 0.259 | 0.2555 | 0.0035 | -0.0006269 | 0.0081 | 0.9878 | 365 |
+| T5 | sd vs round 1 (fusion) | mae | all | 1.1507 | 1.2669 | -0.1162 | -0.1493 | -0.0867 | 6.776e-24 | 365 |
+| T5 | sd vs round 1 (fusion) | pinball | all | 0.2438 | 0.2446 | -0.0007907 | -0.0054 | 0.0041 | 0.3103 | 365 |
+
+## H7 source loss with staleness-matched dropout (RE and weather blocks missing)
+
+| tid | model | mase | mase_source_loss | mean_diff | lo | hi | p_instance_degrades_less |
+|---|---|---|---|---|---|---|---|
+| T1 | mcag_instance_sd | 0.9493 | 0.9596 |  |  |  |  |
+| T1 | fusion_fixed_sd | 0.9736 | 0.9717 |  |  |  |  |
+| T1 | instance_sd − fusion_sd (degradation difference) |  |  | 0.0122 | 0.0055 | 0.019 | 1.0 |
+| T2 | mcag_instance_sd | 0.9722 | 0.9774 |  |  |  |  |
+| T2 | fusion_fixed_sd | 0.9976 | 0.9849 |  |  |  |  |
+| T2 | instance_sd − fusion_sd (degradation difference) |  |  | 0.018 | 0.0112 | 0.0252 | 1.0 |
+
+## PART decision rule (N9)
+
+Total realised development-test gain collected (MSE, scaled units; higher is better): rule +0.3201, sign_only +0.1961, always +4.7644, never +0.0000, oracle +5.1937.
+
+Sign agreement, all cells: 19/45; cells with a clear realised gain: 12/23.
+
+| tid | H | refinement | G_val | G_lower80 | G_upper80 | refine_rule | refine_sign | realised_gain_dev | gain_lo | gain_hi | clear |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| T1 | 1 | regime vs fixed | -0.0037 | -0.0067 | -0.0026 | False | False | 0.0022 | -0.0021 | 0.0069 | False |
+| T1 | 1 | instance vs fixed | -0.053 | -0.0826 | -0.0336 | False | False | -0.015 | -0.0256 | -0.0057 | True |
+| T1 | 1 | OTG vs fixed | 0.0011 | -0.0011 | 0.0031 | False | True | -0.0023 | -0.0256 | 0.016 | False |
+| T1 | 2 | regime vs fixed | -0.0081 | -0.0113 | -0.0054 | False | False | 0.0153 | 0.0077 | 0.0231 | True |
+| T1 | 2 | instance vs fixed | -0.0457 | -0.1104 | -0.0613 | False | False | -0.0111 | -0.0253 | 0.0011 | False |
+| T1 | 2 | OTG vs fixed | 0.0028 | -0.0003241 | 0.0053 | False | True | 0.0038 | -0.0444 | 0.0412 | False |
+| T1 | 3 | regime vs fixed | -0.009 | -0.0158 | -0.0025 | False | False | 0.024 | 0.0134 | 0.0347 | True |
+| T1 | 3 | instance vs fixed | -0.1141 | -0.1714 | -0.098 | False | False | -0.0096 | -0.0258 | 0.0044 | False |
+| T1 | 3 | OTG vs fixed | 0.0031 | -0.0005688 | 0.0097 | False | True | 0.0017 | -0.0579 | 0.0451 | False |
+| T2 | 1 | regime vs fixed | -0.0024 | -0.0056 | -0.0009712 | False | False | 0.0015 | -0.0037 | 0.0064 | False |
+| T2 | 1 | instance vs fixed | -0.0358 | -0.0741 | -0.0243 | False | False | -0.0065 | -0.0137 | -0.0008552 | True |
+| T2 | 1 | OTG vs fixed | 0.0022 | 0.0005583 | 0.004 | True | True | -0.005 | -0.0296 | 0.0173 | False |
+| T2 | 2 | regime vs fixed | -0.0049 | -0.0074 | -0.0019 | False | False | -0.0107 | -0.0223 | -0.0005663 | True |
+| T2 | 2 | instance vs fixed | 0.001 | -0.0649 | -0.0148 | False | True | -0.0166 | -0.0278 | -0.0072 | True |
+| T2 | 2 | OTG vs fixed | 0.0004443 | -0.0012 | 0.0027 | False | True | -0.0084 | -0.0427 | 0.0213 | False |
+| T2 | 3 | regime vs fixed | -0.0067 | -0.012 | -0.0029 | False | False | -0.0211 | -0.0387 | -0.0061 | True |
+| T2 | 3 | instance vs fixed | -0.035 | -0.0894 | -0.0272 | False | False | -0.0259 | -0.0419 | -0.0117 | True |
+| T2 | 3 | OTG vs fixed | 5.196e-05 | -0.0021 | 0.0041 | False | True | -0.0066 | -0.0476 | 0.0263 | False |
+| T3 | 1 | regime vs fixed | -0.0053 | -0.0097 | -0.0017 | False | False | 0.0122 | 0.0069 | 0.0183 | True |
+| T3 | 1 | instance vs fixed | -0.0821 | -0.1279 | -0.0836 | False | False | 0.0072 | 0.0018 | 0.0134 | True |
+| T3 | 1 | OTG vs fixed | -0.0032 | -0.0055 | -0.0009156 | False | False | -0.0239 | -0.0491 | -0.0025 | True |
+| T3 | 2 | regime vs fixed | -0.0064 | -0.0128 | 0.00091 | False | False | 0.0073 | 0.0017 | 0.0133 | True |
+| T3 | 2 | instance vs fixed | -0.0996 | -0.1574 | -0.1115 | False | False | 0.0106 | 0.0049 | 0.0176 | True |
+| T3 | 2 | OTG vs fixed | -0.0035 | -0.007 | -0.0008623 | False | False | -0.0229 | -0.0516 | 0.0024 | False |
+| T3 | 3 | regime vs fixed | -0.0079 | -0.0158 | 0.0048 | False | False | 0.0038 | -0.0037 | 0.0115 | False |
+| T3 | 3 | instance vs fixed | -0.1211 | -0.2016 | -0.123 | False | False | 0.0072 | 0.0027 | 0.0123 | True |
+| T3 | 3 | OTG vs fixed | -0.0053 | -0.0089 | -0.0008778 | False | False | -0.024 | -0.0549 | 0.0035 | False |
+| T4 | 1 | regime vs fixed | 0.0356 | -0.0174 | 0.0473 | False | True | -0.0045 | -0.0141 | 0.006 | False |
+| T4 | 1 | instance vs fixed | -0.0924 | -1.1059 | -0.0945 | False | False | 0.0118 | -0.0035 | 0.0294 | False |
+| T4 | 1 | OTG vs fixed | -0.01 | -0.0231 | -0.0009162 | False | False | -0.0225 | -0.0482 | -0.0016 | True |
+| T4 | 2 | regime vs fixed | 0.0186 | -0.0596 | 0.0377 | False | True | -0.0037 | -0.013 | 0.007 | False |
+| T4 | 2 | instance vs fixed | -0.7731 | -3.398 | -0.1065 | False | False | 0.0094 | -0.0065 | 0.0272 | False |
+| T4 | 2 | OTG vs fixed | -0.0214 | -0.044 | -0.0012 | False | False | -0.0303 | -0.066 | -0.0034 | True |
+| T4 | 3 | regime vs fixed | 0.0031 | -0.0505 | 0.021 | False | True | -0.0083 | -0.0171 | 0.0002539 | False |
+| T4 | 3 | instance vs fixed | -0.6541 | -1.2839 | -0.1155 | False | False | 0.0132 | -0.0059 | 0.0349 | False |
+| T4 | 3 | OTG vs fixed | -0.0394 | -0.0772 | -0.0018 | False | False | -0.033 | -0.072 | -0.0011 | True |
+| T5 | 1 | regime vs fixed | 0.0277 | 0.0154 | 0.0589 | True | True | 0.1054 | 0.045 | 0.1715 | True |
+| T5 | 1 | instance vs fixed | -0.2229 | -0.35 | 0.1475 | False | False | -0.0384 | -0.1868 | 0.0852 | False |
+| T5 | 1 | OTG vs fixed | -0.2006 | -0.2303 | -0.172 | False | False | 1.7267 | 1.2163 | 2.3415 | True |
+| T5 | 2 | regime vs fixed | -0.0352 | -0.0406 | 0.0006693 | False | False | 0.0491 | -0.0118 | 0.1133 | False |
+| T5 | 2 | instance vs fixed | 0.1414 | -0.0207 | 0.4579 | False | True | -0.0789 | -0.2211 | 0.0456 | False |
+| T5 | 2 | OTG vs fixed | -0.1989 | -0.2263 | -0.1657 | False | False | 1.5741 | 1.0694 | 2.1727 | True |
+| T5 | 3 | regime vs fixed | 0.0276 | 0.01 | 0.0499 | True | True | 0.0541 | 0.0004673 | 0.1081 | True |
+| T5 | 3 | instance vs fixed | 0.3549 | 0.1276 | 0.6598 | True | True | 0.1656 | 0.0547 | 0.2921 | True |
+| T5 | 3 | OTG vs fixed | -0.1734 | -0.2001 | -0.1516 | False | False | 1.3875 | 0.93 | 1.9675 | True |

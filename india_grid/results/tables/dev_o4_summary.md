@@ -1,0 +1,34 @@
+# O4 development results — context-aware deviation assessment
+
+U from O2 model `lgbm` (T2, H = 1, rolling-180 conformal C1). Weights fitted on validation (n = 7,493); scored on the development test (n = 7,473).
+
+Weights (R, S, C, U) = [0.0, 1.0, 0.0, 0.0], κ = 0.25; validation within-decile τ = 0.0082 (without U: 0.0082).
+
+| test | outcome | τ(A) | τ(comparator) | difference | 95% CI / placebo 95th pct | p (one-sided) |
+|---|---|---|---|---|---|---|
+| A7 A vs M0 | Y | -0.0035 | -0.0097 | +0.0062 | [-0.0016, +0.0122] | 0.03 |
+| A7 A vs M0 | Y1 | -0.0010 | -0.0111 | +0.0101 | [+0.0046, +0.0153] | 0.0033 |
+| A7 A vs M0 | Y2 | -0.0011 | -0.0027 | +0.0017 | [-0.0029, +0.0070] | 0.26 |
+| A7 A vs M0 | Y3 | -0.0116 | -0.0074 | -0.0042 | [-0.0130, +0.0030] | 0.84 |
+| U gain (A vs A without U) | Y | -0.0035 | -0.0035 | +0.0000 | [+0.0000, +0.0000] | 1 |
+| U vs gaussian placebo | Y | nan | nan | +0.0000 | +0.0000 | 1 |
+| U vs permuted placebo | Y | nan | nan | +0.0000 | +0.0000 | 1 |
+
+Strata (development test):
+
+| stratum | value | n | tau_A | tau_M0 |
+|---|---|---|---|---|
+| regime | R2 | 3516 | 0.0062 | -0.0068 |
+| regime | R3 | 3957 | -0.017 | -0.0112 |
+| season | monsoon | 2549 | 0.0003698 | -0.0027 |
+| season | post | 1275 | -0.0284 | -0.0228 |
+| season | summer | 1928 | 0.0175 | 0.0082 |
+| season | winter | 1721 | -0.0023 | 0.0016 |
+
+Variance decomposition of log(1 + A):
+
+| component | share |
+|---|---|
+| State | 0.378 |
+| date | 0.083 |
+| residual (interaction + noise) | 0.539 |

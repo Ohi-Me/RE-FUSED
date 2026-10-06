@@ -1,0 +1,50 @@
+# O5 development results — risk-aware scheduling (stylised settlement; not actual DSM settlement)
+
+Forecast source: O2 `lgbm` (T2, H = 1, rolling-180 conformal C1). Chosen on validation: A2 β = 0, ρ = 0.5; A3 ρ₀ = 0.25; A4 β₀ = 0, β_U = 0, β_stress = 0; A2r β(low, high stress) = (0, 0).
+
+| split | arm | system_mean_crore | system_cvar90_crore | J | state_mean_crore | state_cvar90_crore | deviation_energy_gwh_per_state_day | budget_violation_share | hard_limit_envelope_exceedance_share | n_state_days |
+|---|---|---|---|---|---|---|---|---|---|---|
+| validation | H_final | 2.0257 | 4.0394 | 3.0326 | 0.0596 | 0.2132 | 1.1764 | 0.2099 | 0.1236 | 12070 |
+| validation | H_pub | 15.2445 | 35.9283 | 25.5864 | 0.4484 | 1.898 | 6.1466 | 0.7833 | 0.0 | 12070 |
+| validation | P | 12.6924 | 29.1792 | 20.9358 | 0.3733 | 1.5892 | 5.4346 | 0.6837 | 0.0 | 12070 |
+| validation | A2 | 12.7932 | 27.2602 | 20.0267 | 0.3763 | 1.5451 | 5.8544 | 0.7099 | 0.0 | 12070 |
+| validation | A2r | 12.7932 | 27.2602 | 20.0267 | 0.3763 | 1.5451 | 5.8544 | 0.7099 | 0.0 | 12070 |
+| validation | A3 | 12.6468 | 27.3929 | 20.0199 | 0.372 | 1.5454 | 5.7435 | 0.7036 | 0.0 | 12070 |
+| validation | A4 | 12.7932 | 27.2602 | 20.0267 | 0.3763 | 1.5451 | 5.8544 | 0.7099 | 0.0 | 12070 |
+| dev_test | H_final | 2.2654 | 4.6478 | 3.4566 | 0.0666 | 0.2353 | 1.3221 | 0.1944 | 0.2024 | 17611 |
+| dev_test | H_pub | 18.5585 | 47.467 | 33.0127 | 0.5458 | 2.3777 | 6.9406 | 0.8156 | 0.0 | 17611 |
+| dev_test | P | 16.2729 | 42.2742 | 29.2736 | 0.4786 | 2.1261 | 6.2507 | 0.7376 | 0.0 | 17611 |
+| dev_test | A2 | 16.1054 | 39.179 | 27.6422 | 0.4737 | 2.0238 | 6.6748 | 0.7433 | 0.0 | 17611 |
+| dev_test | A2r | 16.1054 | 39.179 | 27.6422 | 0.4737 | 2.0238 | 6.6748 | 0.7433 | 0.0 | 17611 |
+| dev_test | A3 | 16.0158 | 39.3914 | 27.7036 | 0.4711 | 2.0293 | 6.5798 | 0.7404 | 0.0 | 17611 |
+| dev_test | A4 | 16.1054 | 39.179 | 27.6422 | 0.4737 | 2.0238 | 6.6748 | 0.7433 | 0.0 | 17611 |
+
+Development-test paired tests (system-wide daily regret, ₹ crore; negative = a better):
+
+| a | b | metric | mean_diff | lo | hi | p_a_better | n_days | p_holm |
+|---|---|---|---|---|---|---|---|---|
+| A4 | A2 | mean system regret | 0.0 | 0.0 | 0.0 | 0.5 | 518 | 1.0 |
+| A4 | A2 | tail days (either arm above its 90th pct) | 0.0 | 0.0 | 0.0 | 1.0 | 52 |  |
+| A4 | H_pub | mean system regret | -2.4531 | -2.9674 | -1.9835 | 1.428e-21 | 518 | 1.143e-20 |
+| A4 | H_pub | tail days (either arm above its 90th pct) | -7.5123 | -9.9705 | -5.5574 | 0.0004998 | 65 |  |
+| A4 | P | mean system regret | -0.1675 | -0.5083 | 0.1598 | 0.1274 | 518 | 0.6371 |
+| A4 | P | tail days (either arm above its 90th pct) | -2.752 | -4.2612 | -1.5698 | 0.0004998 | 60 |  |
+| A2 | H_pub | mean system regret | -2.4531 | -2.9674 | -1.9835 | 1.428e-21 | 518 | 1.143e-20 |
+| A2 | H_pub | tail days (either arm above its 90th pct) | -7.5123 | -9.9705 | -5.5574 | 0.0004998 | 65 |  |
+| A2 | P | mean system regret | -0.1675 | -0.5083 | 0.1598 | 0.1274 | 518 | 0.6371 |
+| A2 | P | tail days (either arm above its 90th pct) | -2.752 | -4.2612 | -1.5698 | 0.0004998 | 60 |  |
+| A3 | A2 | mean system regret | -0.0896 | -0.1418 | -0.0343 | 2.843e-05 | 518 | 0.0001706 |
+| A3 | A2 | tail days (either arm above its 90th pct) | 0.2123 | 0.000455 | 0.4353 | 0.9765 | 52 |  |
+| A2r | A2 | mean system regret | 0.0 | 0.0 | 0.0 | 0.5 | 518 | 1.0 |
+| A2r | A2 | tail days (either arm above its 90th pct) | 0.0 | 0.0 | 0.0 | 1.0 | 52 |  |
+| A4 | A2r | mean system regret | 0.0 | 0.0 | 0.0 | 0.5 | 518 | 1.0 |
+| A4 | A2r | tail days (either arm above its 90th pct) | 0.0 | 0.0 | 0.0 | 1.0 | 52 |  |
+| P | H_pub | mean system regret | -2.2856 | -2.6735 | -1.9223 | 2.879e-33 | 518 | 2.591e-32 |
+| P | H_pub | tail days (either arm above its 90th pct) | -5.2964 | -7.5063 | -3.2368 | 0.0004998 | 59 |  |
+
+β adaptivity ladder (prequential validation prediction vs realised development gain in J):
+
+| step | predicted_gain_val | realised_gain_dev | agree |
+|---|---|---|---|
+| constant → per-regime | 0.0 | 0.0 | True |
+| per-regime → per-instance | 0.0 | 0.0 | True |

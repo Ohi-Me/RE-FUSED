@@ -1,0 +1,50 @@
+# O5 development results — risk-aware scheduling (stylised settlement; not actual DSM settlement)
+
+Forecast source: O2 `lgbm` (T2, H = 1, rolling-180 conformal C1). Chosen on validation: A2 β = 0, ρ = 0.5; A3 ρ₀ = 0.25; A4 β₀ = 0, β_U = 0, β_stress = 0; A2r β(low, high stress) = (0, 0).
+
+| split | arm | system_mean_crore | system_cvar90_crore | J | state_mean_crore | state_cvar90_crore | deviation_energy_gwh_per_state_day | budget_violation_share | hard_limit_envelope_exceedance_share | n_state_days |
+|---|---|---|---|---|---|---|---|---|---|---|
+| validation | H_final | 2.1953 | 4.9 | 3.5477 | 0.0646 | 0.2402 | 1.1756 | 0.2136 | 0.1229 | 12137 |
+| validation | H_pub | 16.1879 | 41.0749 | 28.6314 | 0.4762 | 2.18 | 5.9912 | 0.7843 | 0.0 | 12137 |
+| validation | P | 14.2131 | 36.0176 | 25.1154 | 0.4181 | 1.9347 | 5.4666 | 0.6752 | 0.0 | 12137 |
+| validation | A2 | 14.378 | 34.1466 | 24.2623 | 0.4229 | 1.9097 | 5.6796 | 0.6915 | 0.0 | 12137 |
+| validation | A2r | 14.378 | 34.1466 | 24.2623 | 0.4229 | 1.9097 | 5.6796 | 0.6915 | 0.0 | 12137 |
+| validation | A3 | 14.2849 | 34.4629 | 24.3739 | 0.4202 | 1.9093 | 5.6285 | 0.6919 | 0.0 | 12137 |
+| validation | A4 | 14.378 | 34.1466 | 24.2623 | 0.4229 | 1.9097 | 5.6796 | 0.6915 | 0.0 | 12137 |
+| dev_test | H_final | 2.0256 | 4.0394 | 3.0325 | 0.0596 | 0.2137 | 1.1778 | 0.2098 | 0.2245 | 12138 |
+| dev_test | H_pub | 17.9581 | 41.6217 | 29.7899 | 0.5282 | 2.2076 | 6.798 | 0.812 | 0.0 | 12138 |
+| dev_test | P | 15.8263 | 36.1284 | 25.9774 | 0.4655 | 1.9751 | 6.2334 | 0.732 | 0.0 | 12138 |
+| dev_test | A2 | 15.8996 | 33.9925 | 24.9461 | 0.4676 | 1.9263 | 6.642 | 0.7606 | 0.0 | 12138 |
+| dev_test | A2r | 15.8996 | 33.9925 | 24.9461 | 0.4676 | 1.9263 | 6.642 | 0.7606 | 0.0 | 12138 |
+| dev_test | A3 | 15.7702 | 34.2131 | 24.9917 | 0.4638 | 1.9289 | 6.5396 | 0.7532 | 0.0 | 12138 |
+| dev_test | A4 | 15.8996 | 33.9925 | 24.9461 | 0.4676 | 1.9263 | 6.642 | 0.7606 | 0.0 | 12138 |
+
+Development-test paired tests (system-wide daily regret, ₹ crore; negative = a better):
+
+| a | b | metric | mean_diff | lo | hi | p_a_better | n_days | p_holm |
+|---|---|---|---|---|---|---|---|---|
+| A4 | A2 | mean system regret | 0.0 | 0.0 | 0.0 | 0.5 | 357 | 1.0 |
+| A4 | A2 | tail days (either arm above its 90th pct) | 0.0 | 0.0 | 0.0 | 1.0 | 36 |  |
+| A4 | H_pub | mean system regret | -2.0585 | -2.7107 | -1.5006 | 7.019e-13 | 357 | 5.615e-12 |
+| A4 | H_pub | tail days (either arm above its 90th pct) | -6.739 | -9.7305 | -3.876 | 0.0004998 | 47 |  |
+| A4 | P | mean system regret | 0.0733 | -0.2817 | 0.4206 | 0.6865 | 357 | 1.0 |
+| A4 | P | tail days (either arm above its 90th pct) | -1.9292 | -3.2248 | -0.5475 | 0.0035 | 42 |  |
+| A2 | H_pub | mean system regret | -2.0585 | -2.7107 | -1.5006 | 7.019e-13 | 357 | 5.615e-12 |
+| A2 | H_pub | tail days (either arm above its 90th pct) | -6.739 | -9.7305 | -3.876 | 0.0004998 | 47 |  |
+| A2 | P | mean system regret | 0.0733 | -0.2817 | 0.4206 | 0.6865 | 357 | 1.0 |
+| A2 | P | tail days (either arm above its 90th pct) | -1.9292 | -3.2248 | -0.5475 | 0.0035 | 42 |  |
+| A3 | A2 | mean system regret | -0.1294 | -0.1939 | -0.0671 | 6.285e-08 | 357 | 3.771e-07 |
+| A3 | A2 | tail days (either arm above its 90th pct) | 0.2206 | 0.0871 | 0.3629 | 0.999 | 36 |  |
+| A2r | A2 | mean system regret | 0.0 | 0.0 | 0.0 | 0.5 | 357 | 1.0 |
+| A2r | A2 | tail days (either arm above its 90th pct) | 0.0 | 0.0 | 0.0 | 1.0 | 36 |  |
+| A4 | A2r | mean system regret | 0.0 | 0.0 | 0.0 | 0.5 | 357 | 1.0 |
+| A4 | A2r | tail days (either arm above its 90th pct) | 0.0 | 0.0 | 0.0 | 1.0 | 36 |  |
+| P | H_pub | mean system regret | -2.1318 | -2.5557 | -1.7897 | 3.306e-27 | 357 | 2.975e-26 |
+| P | H_pub | tail days (either arm above its 90th pct) | -5.416 | -7.5321 | -3.5568 | 0.0004998 | 41 |  |
+
+β adaptivity ladder (prequential validation prediction vs realised development gain in J):
+
+| step | predicted_gain_val | realised_gain_dev | agree |
+|---|---|---|---|
+| constant → per-regime | 0.0 | 0.0 | True |
+| per-regime → per-instance | 0.0 | 0.0 | True |
