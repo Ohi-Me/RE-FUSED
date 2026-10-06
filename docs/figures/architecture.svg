@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 860" width="1100" height="860" font-family="Segoe UI, Helvetica, Arial, sans-serif" role="img" aria-label="RE-FUSED: from official Indian grid reports to tested forecasts and schedules"><title>RE-FUSED: from official Indian grid reports to tested forecasts and schedules</title><defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6b7280"/></marker></defs><rect width="1100" height="860" fill="#ffffff"/>
+<text x="550" y="34" font-size="19" fill="#1f2937" text-anchor="middle" font-weight="600">RE-FUSED: from official Indian grid reports to tested forecasts and schedules</text>
+<text x="30" y="66" font-size="14" fill="#1f2937" text-anchor="start" font-weight="600">1  Official Government of India sources</text>
+<rect x="30" y="78" width="196" height="118" rx="10" fill="#eef2f7" stroke="#5b6b82" stroke-width="1.6"/>
+<text x="128.0" y="102" font-size="15" fill="#1f2937" text-anchor="middle" font-weight="600">Grid-India</text>
+<text x="128.0" y="126" font-size="12" fill="#4b5563" text-anchor="middle">Daily PSP reports:</text>
+<text x="128.0" y="144" font-size="12" fill="#4b5563" text-anchor="middle">State demand, drawal,</text>
+<text x="128.0" y="162" font-size="12" fill="#4b5563" text-anchor="middle">schedules; all-India</text>
+<text x="128.0" y="180" font-size="12" fill="#4b5563" text-anchor="middle">15-minute SCADA</text>
+<line x1="128" y1="196" x2="128" y2="226" stroke="#6b7280" stroke-width="1.8" marker-end="url(#ah)"/>
+<rect x="240" y="78" width="196" height="118" rx="10" fill="#eef2f7" stroke="#5b6b82" stroke-width="1.6"/>
+<text x="338.0" y="102" font-size="15" fill="#1f2937" text-anchor="middle" font-weight="600">Grid-India</text>
+<text x="338.0" y="126" font-size="12" fill="#4b5563" text-anchor="middle">DSM files:</text>
+<text x="338.0" y="144" font-size="12" fill="#4b5563" text-anchor="middle">deviation rates,</text>
+<text x="338.0" y="162" font-size="12" fill="#4b5563" text-anchor="middle">day-ahead and</text>
+<text x="338.0" y="180" font-size="12" fill="#4b5563" text-anchor="middle">real-time prices</text>
+<line x1="338" y1="196" x2="338" y2="226" stroke="#6b7280" stroke-width="1.8" marker-end="url(#ah)"/>
+<rect x="450" y="78" width="196" height="118" rx="10" fill="#eef2f7" stroke="#5b6b82" stroke-width="1.6"/>
+<text x="548.0" y="102" font-size="15" fill="#1f2937" text-anchor="middle" font-weight="600">CEA</text>
+<text x="548.0" y="126" font-size="12" fill="#4b5563" text-anchor="middle">daily generation</text>
+<text x="548.0" y="144" font-size="12" fill="#4b5563" text-anchor="middle">reports: conventional</text>
+<text x="548.0" y="162" font-size="12" fill="#4b5563" text-anchor="middle">and renewable</text>
+<line x1="548" y1="196" x2="548" y2="226" stroke="#6b7280" stroke-width="1.8" marker-end="url(#ah)"/>
+<rect x="660" y="78" width="196" height="118" rx="10" fill="#eef2f7" stroke="#5b6b82" stroke-width="1.6"/>
+<text x="758.0" y="102" font-size="15" fill="#1f2937" text-anchor="middle" font-weight="600">CEA</text>
+<text x="758.0" y="126" font-size="12" fill="#4b5563" text-anchor="middle">CO₂ baseline</text>
+<text x="758.0" y="144" font-size="12" fill="#4b5563" text-anchor="middle">database:</text>
+<text x="758.0" y="162" font-size="12" fill="#4b5563" text-anchor="middle">emission factors</text>
+<line x1="758" y1="196" x2="758" y2="226" stroke="#6b7280" stroke-width="1.8" marker-end="url(#ah)"/>
+<rect x="870" y="78" width="196" height="118" rx="10" fill="#eef2f7" stroke="#5b6b82" stroke-width="1.6"/>
+<text x="968.0" y="102" font-size="15" fill="#1f2937" text-anchor="middle" font-weight="600">IMD</text>
+<text x="968.0" y="126" font-size="12" fill="#4b5563" text-anchor="middle">gridded rainfall</text>
+<text x="968.0" y="144" font-size="12" fill="#4b5563" text-anchor="middle">and temperature</text>
+<line x1="968" y1="196" x2="968" y2="226" stroke="#6b7280" stroke-width="1.8" marker-end="url(#ah)"/>
+<text x="30" y="222" font-size="1" fill="#1f2937" text-anchor="middle"></text>
+<rect x="30" y="228" width="1040" height="62" rx="10" fill="#e3eefb" stroke="#2a6fb0" stroke-width="1.6"/>
+<text x="550" y="252" font-size="15" fill="#1f2937" text-anchor="middle" font-weight="600">2  Data build</text>
+<text x="550" y="276" font-size="13" fill="#4b5563" text-anchor="middle">scripted download with SHA-256 manifest  →  layout-aware parsers  →  QC flags (nothing imputed)  →  field registry with the publication lag of every column</text>
+<line x1="285" y1="290" x2="285" y2="322" stroke="#6b7280" stroke-width="1.8" marker-end="url(#ah)"/>
+<line x1="815" y1="290" x2="815" y2="322" stroke="#6b7280" stroke-width="1.8" marker-end="url(#ah)"/>
+<rect x="30" y="324" width="510" height="88" rx="10" fill="#e3eefb" stroke="#2a6fb0" stroke-width="1.6"/>
+<text x="285.0" y="348" font-size="15" fill="#1f2937" text-anchor="middle" font-weight="600">State-day panel</text>
+<text x="285.0" y="372" font-size="13" fill="#4b5563" text-anchor="middle">34 State control areas, 1 Apr 2018 – 31 Aug 2026</text>
+<text x="285.0" y="391" font-size="13" fill="#4b5563" text-anchor="middle">104,550 State-days × 107 columns</text>
+<rect x="560" y="324" width="510" height="88" rx="10" fill="#e3eefb" stroke="#2a6fb0" stroke-width="1.6"/>
+<text x="815.0" y="348" font-size="15" fill="#1f2937" text-anchor="middle" font-weight="600">All-India series</text>
+<text x="815.0" y="372" font-size="13" fill="#4b5563" text-anchor="middle">15-minute SCADA, 5 Nov 2024 – 13 Sep 2026; hourly demand, net</text>
+<text x="815.0" y="391" font-size="13" fill="#4b5563" text-anchor="middle">demand, wind, solar; hourly day-ahead and real-time prices</text>
+<text x="30" y="446" font-size="14" fill="#1f2937" text-anchor="start" font-weight="600">3  Research questions</text>
+<rect x="30" y="458" width="245" height="186" rx="10" fill="#e6f4ea" stroke="#2e7d4f" stroke-width="1.6"/>
+<text x="152.5" y="482" font-size="15" fill="#1f2937" text-anchor="middle" font-weight="600">Day-ahead forecasting</text>
+<text x="152.5" y="506" font-size="12.5" fill="#4b5563" text-anchor="middle">5 targets per State: demand,</text>
+<text x="152.5" y="524.5" font-size="12.5" fill="#4b5563" text-anchor="middle">drawal, conventional and</text>
+<text x="152.5" y="543.0" font-size="12.5" fill="#4b5563" text-anchor="middle">renewable generation, price</text>
+<text x="152.5" y="561.5" font-size="12.5" fill="#4b5563" text-anchor="middle">13 models and combinations</text>
+<text x="152.5" y="580.0" font-size="12.5" fill="#4b5563" text-anchor="middle">data used only as published</text>
+<text x="152.5" y="598.5" font-size="12.5" fill="#4b5563" text-anchor="middle">calibrated 80 % / 90 % intervals</text>
+<rect x="295" y="458" width="245" height="186" rx="10" fill="#e6f4ea" stroke="#2e7d4f" stroke-width="1.6"/>
+<text x="417.5" y="482" font-size="15" fill="#1f2937" text-anchor="middle" font-weight="600">Scheduling and settlement</text>
+<text x="417.5" y="506" font-size="12.5" fill="#4b5563" text-anchor="middle">forecast → schedule →</text>
+<text x="417.5" y="524.5" font-size="12.5" fill="#4b5563" text-anchor="middle">deviation → charge</text>
+<text x="417.5" y="543.0" font-size="12.5" fill="#4b5563" text-anchor="middle">fixed vs learned (PPO) risk level</text>
+<text x="417.5" y="561.5" font-size="12.5" fill="#4b5563" text-anchor="middle">consequence-aware deviation</text>
+<text x="417.5" y="580.0" font-size="12.5" fill="#4b5563" text-anchor="middle">assessment</text>
+<text x="417.5" y="598.5" font-size="12.5" fill="#4b5563" text-anchor="middle">money value of accuracy</text>
+<rect x="560" y="458" width="245" height="186" rx="10" fill="#e6f4ea" stroke="#2e7d4f" stroke-width="1.6"/>
+<text x="682.5" y="482" font-size="15" fill="#1f2937" text-anchor="middle" font-weight="600">When does correction pay?</text>
+<text x="682.5" y="506" font-size="12.5" fill="#4b5563" text-anchor="middle">ŷ = B + g·r: base forecast plus</text>
+<text x="682.5" y="524.5" font-size="12.5" fill="#4b5563" text-anchor="middle">a gated learned correction</text>
+<text x="682.5" y="543.0" font-size="12.5" fill="#4b5563" text-anchor="middle">gates from global to per hour</text>
+<text x="682.5" y="561.5" font-size="12.5" fill="#4b5563" text-anchor="middle">and per instance; time policies</text>
+<text x="682.5" y="580.0" font-size="12.5" fill="#4b5563" text-anchor="middle">chosen on validation only</text>
+<text x="682.5" y="598.5" font-size="12.5" fill="#4b5563" text-anchor="middle">effect on reserve and energy</text>
+<rect x="825" y="458" width="245" height="186" rx="10" fill="#e6f4ea" stroke="#2e7d4f" stroke-width="1.6"/>
+<text x="947.5" y="482" font-size="15" fill="#1f2937" text-anchor="middle" font-weight="600">Open dataset</text>
+<text x="947.5" y="506" font-size="12.5" fill="#4b5563" text-anchor="middle">State-day panel and</text>
+<text x="947.5" y="524.5" font-size="12.5" fill="#4b5563" text-anchor="middle">all-India series</text>
+<text x="947.5" y="543.0" font-size="12.5" fill="#4b5563" text-anchor="middle">data dictionary, QC report</text>
+<text x="947.5" y="561.5" font-size="12.5" fill="#4b5563" text-anchor="middle">source manifests, checksums</text>
+<text x="947.5" y="580.0" font-size="12.5" fill="#4b5563" text-anchor="middle">archived on Zenodo</text>
+<path d="M 150 412 L 150 456" fill="none" stroke="#6b7280" stroke-width="1.8" marker-end="url(#ah)"/>
+<path d="M 400 412 L 400 456" fill="none" stroke="#6b7280" stroke-width="1.8" marker-end="url(#ah)"/>
+<path d="M 470 412 L 470 430 L 650 430 L 650 456" fill="none" stroke="#6b7280" stroke-width="1.8" marker-end="url(#ah)"/>
+<path d="M 760 412 L 760 456" fill="none" stroke="#6b7280" stroke-width="1.8" marker-end="url(#ah)"/>
+<path d="M 1000 412 L 1000 456" fill="none" stroke="#6b7280" stroke-width="1.8" marker-end="url(#ah)"/>
+<line x1="275" y1="560" x2="293" y2="560" stroke="#6b7280" stroke-width="1.8" marker-end="url(#ah)"/>
+<text x="284" y="548" font-size="1" fill="#1f2937" text-anchor="middle"></text>
+<path d="M 152 644 L 152 664 L 680 664 L 680 646" fill="none" stroke="#6b7280" stroke-width="1.8" marker-end="url(#ah)"/>
+<text x="416" y="680" font-size="12" fill="#4b5563" text-anchor="middle" font-style="italic">the same forecasts are corrected</text>
+<text x="30" y="714" font-size="14" fill="#1f2937" text-anchor="start" font-weight="600">4  How every claim is tested</text>
+<rect x="30" y="726" width="196" height="66" rx="10" fill="#fff3e0" stroke="#b26a00" stroke-width="1.6"/>
+<text x="128" y="752" font-size="13" fill="#1f2937" text-anchor="middle" font-weight="600">develop on early data</text>
+<text x="128" y="772" font-size="13" fill="#4b5563" text-anchor="middle">only</text>
+<line x1="226" y1="759" x2="240" y2="759" stroke="#6b7280" stroke-width="1.8" marker-end="url(#ah)"/>
+<rect x="242" y="726" width="196" height="66" rx="10" fill="#fff3e0" stroke="#b26a00" stroke-width="1.6"/>
+<text x="340" y="752" font-size="13" fill="#1f2937" text-anchor="middle" font-weight="600">freeze the plan:</text>
+<text x="340" y="772" font-size="13" fill="#4b5563" text-anchor="middle">SHA-256 + git tag</text>
+<line x1="438" y1="759" x2="452" y2="759" stroke="#6b7280" stroke-width="1.8" marker-end="url(#ah)"/>
+<rect x="454" y="726" width="196" height="66" rx="10" fill="#fff3e0" stroke="#b26a00" stroke-width="1.6"/>
+<text x="552" y="752" font-size="13" fill="#1f2937" text-anchor="middle" font-weight="600">code refuses held-out</text>
+<text x="552" y="772" font-size="13" fill="#4b5563" text-anchor="middle">data until frozen</text>
+<line x1="650" y1="759" x2="664" y2="759" stroke="#6b7280" stroke-width="1.8" marker-end="url(#ah)"/>
+<rect x="666" y="726" width="196" height="66" rx="10" fill="#fff3e0" stroke="#b26a00" stroke-width="1.6"/>
+<text x="764" y="752" font-size="13" fill="#1f2937" text-anchor="middle" font-weight="600">one run on the</text>
+<text x="764" y="772" font-size="13" fill="#4b5563" text-anchor="middle">H100 GPU</text>
+<line x1="862" y1="759" x2="876" y2="759" stroke="#6b7280" stroke-width="1.8" marker-end="url(#ah)"/>
+<rect x="878" y="726" width="196" height="66" rx="10" fill="#fff3e0" stroke="#b26a00" stroke-width="1.6"/>
+<text x="976" y="752" font-size="13" fill="#1f2937" text-anchor="middle" font-weight="600">corrected tests;</text>
+<text x="976" y="772" font-size="13" fill="#4b5563" text-anchor="middle">deviations logged</text>
+<rect x="560" y="806" width="510" height="44" rx="10" fill="#ffffff" stroke="#9ca3af" stroke-width="1.6" stroke-dasharray="6 4"/>
+<text x="815" y="833" font-size="12.5" fill="#4b5563" text-anchor="middle">comparison only: the correction method on NYISO, European and UCI data</text>
+</svg>

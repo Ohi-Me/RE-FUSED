@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 470" width="1100" height="470" font-family="Segoe UI, Helvetica, Arial, sans-serif" role="img" aria-label="Day-ahead forecasting with data as it is published"><title>Day-ahead forecasting with data as it is published</title><defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6b7280"/></marker></defs><rect width="1100" height="470" fill="#ffffff"/>
+<text x="550" y="34" font-size="19" fill="#1f2937" text-anchor="middle" font-weight="600">Day-ahead forecasting with data as it is published</text>
+<rect x="20" y="70" width="162" height="196" rx="10" fill="#eef2f7" stroke="#5b6b82" stroke-width="1.6"/>
+<text x="101.0" y="94" font-size="14" fill="#1f2937" text-anchor="middle" font-weight="600">Reports up to day D</text>
+<text x="101.0" y="117" font-size="12" fill="#4b5563" text-anchor="middle">only what Grid-India,</text>
+<text x="101.0" y="135" font-size="12" fill="#4b5563" text-anchor="middle">CEA and IMD had</text>
+<text x="101.0" y="153" font-size="12" fill="#4b5563" text-anchor="middle">published by day D</text>
+<line x1="182" y1="168" x2="198" y2="168" stroke="#6b7280" stroke-width="1.8" marker-end="url(#ah)"/>
+<rect x="200" y="70" width="162" height="196" rx="10" fill="#e3eefb" stroke="#2a6fb0" stroke-width="1.6"/>
+<text x="281.0" y="94" font-size="14" fill="#1f2937" text-anchor="middle" font-weight="600">Field registry</text>
+<text x="281.0" y="117" font-size="12" fill="#4b5563" text-anchor="middle">each column usable</text>
+<text x="281.0" y="135" font-size="12" fill="#4b5563" text-anchor="middle">only after its lag:</text>
+<text x="281.0" y="153" font-size="12" fill="#4b5563" text-anchor="middle">demand 1 day,</text>
+<text x="281.0" y="171" font-size="12" fill="#4b5563" text-anchor="middle">generation 2 days</text>
+<line x1="362" y1="168" x2="378" y2="168" stroke="#6b7280" stroke-width="1.8" marker-end="url(#ah)"/>
+<rect x="380" y="70" width="162" height="196" rx="10" fill="#e6f4ea" stroke="#2e7d4f" stroke-width="1.6"/>
+<text x="461.0" y="94" font-size="14" fill="#1f2937" text-anchor="middle" font-weight="600">13 forecasters</text>
+<text x="461.0" y="117" font-size="12" fill="#4b5563" text-anchor="middle">seasonal naive</text>
+<text x="461.0" y="135" font-size="12" fill="#4b5563" text-anchor="middle">LightGBM, XGBoost</text>
+<text x="461.0" y="153" font-size="12" fill="#4b5563" text-anchor="middle">PatchTST, TFT, BiLSTM,</text>
+<text x="461.0" y="171" font-size="12" fill="#4b5563" text-anchor="middle">NHITS, TiDE, BiTCN, NBEATSx</text>
+<text x="461.0" y="189" font-size="12" fill="#4b5563" text-anchor="middle">Chronos-Bolt, Chronos-2</text>
+<text x="461.0" y="207" font-size="12" fill="#4b5563" text-anchor="middle">context-gated fusion</text>
+<line x1="542" y1="168" x2="558" y2="168" stroke="#6b7280" stroke-width="1.8" marker-end="url(#ah)"/>
+<rect x="560" y="70" width="162" height="196" rx="10" fill="#e6f4ea" stroke="#2e7d4f" stroke-width="1.6"/>
+<text x="641.0" y="94" font-size="14" fill="#1f2937" text-anchor="middle" font-weight="600">Combine per target</text>
+<text x="641.0" y="117" font-size="12" fill="#4b5563" text-anchor="middle">chosen on a calibration</text>
+<text x="641.0" y="135" font-size="12" fill="#4b5563" text-anchor="middle">year: stacked weights,</text>
+<text x="641.0" y="153" font-size="12" fill="#4b5563" text-anchor="middle">top-k average or one</text>
+<text x="641.0" y="171" font-size="12" fill="#4b5563" text-anchor="middle">model</text>
+<line x1="722" y1="168" x2="738" y2="168" stroke="#6b7280" stroke-width="1.8" marker-end="url(#ah)"/>
+<rect x="740" y="70" width="162" height="196" rx="10" fill="#e6f4ea" stroke="#2e7d4f" stroke-width="1.6"/>
+<text x="821.0" y="94" font-size="14" fill="#1f2937" text-anchor="middle" font-weight="600">Calibrated quantiles</text>
+<text x="821.0" y="117" font-size="12" fill="#4b5563" text-anchor="middle">conformal calibration</text>
+<text x="821.0" y="135" font-size="12" fill="#4b5563" text-anchor="middle">of 80 % and 90 %</text>
+<text x="821.0" y="153" font-size="12" fill="#4b5563" text-anchor="middle">intervals</text>
+<line x1="902" y1="168" x2="918" y2="168" stroke="#6b7280" stroke-width="1.8" marker-end="url(#ah)"/>
+<rect x="920" y="70" width="162" height="196" rx="10" fill="#e3eefb" stroke="#2a6fb0" stroke-width="1.6"/>
+<text x="1001.0" y="94" font-size="14" fill="#1f2937" text-anchor="middle" font-weight="600">Forecast for day D+1</text>
+<text x="1001.0" y="117" font-size="12" fill="#4b5563" text-anchor="middle">each State control</text>
+<text x="1001.0" y="135" font-size="12" fill="#4b5563" text-anchor="middle">area, five targets</text>
+<rect x="20" y="296" width="1060" height="150" rx="10" fill="#fff3e0" stroke="#b26a00" stroke-width="1.6"/>
+<text x="32" y="320" font-size="15" fill="#1f2937" text-anchor="start" font-weight="600">How it is scored (evaluation period 1 Apr 2025 – 31 Aug 2026, opened once)</text>
+<text x="34" y="352" font-size="13" fill="#4b5563" text-anchor="start">• accuracy: mean absolute scaled error (MASE) against the seasonal naive forecast; below 1 is better</text>
+<text x="34" y="374" font-size="13" fill="#4b5563" text-anchor="start">• intervals: share of actual values inside the 80 % and 90 % intervals, allowed band ± 5 points</text>
+<text x="34" y="396" font-size="13" fill="#4b5563" text-anchor="start">• cost of late data: error when data are used as published minus error if every report arrived instantly</text>
+<text x="34" y="418" font-size="13" fill="#4b5563" text-anchor="start">• targets: T1 demand met, T2 actual drawal, T3 conventional generation, T4 renewable generation, T5 day-ahead price per bid area</text>
+</svg>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 420" width="1100" height="420" font-family="Segoe UI, Helvetica, Arial, sans-serif" role="img" aria-label="From forecast to schedule to deviation charge"><title>From forecast to schedule to deviation charge</title><defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6b7280"/></marker></defs><rect width="1100" height="420" fill="#ffffff"/>
+<text x="550" y="34" font-size="19" fill="#1f2937" text-anchor="middle" font-weight="600">From forecast to schedule to deviation charge</text>
+<rect x="20" y="70" width="196" height="190" rx="10" fill="#e3eefb" stroke="#2a6fb0" stroke-width="1.6"/>
+<text x="118.0" y="94" font-size="14" fill="#1f2937" text-anchor="middle" font-weight="600">Drawal forecast</text>
+<text x="118.0" y="117" font-size="12.5" fill="#4b5563" text-anchor="middle">quantiles for each</text>
+<text x="118.0" y="135.5" font-size="12.5" fill="#4b5563" text-anchor="middle">State and day</text>
+<line x1="216" y1="165" x2="234" y2="165" stroke="#6b7280" stroke-width="1.8" marker-end="url(#ah)"/>
+<rect x="236" y="70" width="196" height="190" rx="10" fill="#e6f4ea" stroke="#2e7d4f" stroke-width="1.6"/>
+<text x="334.0" y="94" font-size="14" fill="#1f2937" text-anchor="middle" font-weight="600">Schedule rule</text>
+<text x="334.0" y="117" font-size="12.5" fill="#4b5563" text-anchor="middle">picks a quantile</text>
+<text x="334.0" y="135.5" font-size="12.5" fill="#4b5563" text-anchor="middle">(the risk level):</text>
+<text x="334.0" y="154.0" font-size="12.5" fill="#4b5563" text-anchor="middle">P  median</text>
+<text x="334.0" y="172.5" font-size="12.5" fill="#4b5563" text-anchor="middle">A2 one fixed level</text>
+<text x="334.0" y="191.0" font-size="12.5" fill="#4b5563" text-anchor="middle">A1 learned (PPO)</text>
+<text x="334.0" y="209.5" font-size="12.5" fill="#4b5563" text-anchor="middle">coupled, system-tail</text>
+<line x1="432" y1="165" x2="450" y2="165" stroke="#6b7280" stroke-width="1.8" marker-end="url(#ah)"/>
+<rect x="452" y="70" width="196" height="190" rx="10" fill="#e6f4ea" stroke="#2e7d4f" stroke-width="1.6"/>
+<text x="550.0" y="94" font-size="14" fill="#1f2937" text-anchor="middle" font-weight="600">Deviation</text>
+<text x="550.0" y="117" font-size="12.5" fill="#4b5563" text-anchor="middle">actual drawal</text>
+<text x="550.0" y="135.5" font-size="12.5" fill="#4b5563" text-anchor="middle">minus the</text>
+<text x="550.0" y="154.0" font-size="12.5" fill="#4b5563" text-anchor="middle">schedule</text>
+<line x1="648" y1="165" x2="666" y2="165" stroke="#6b7280" stroke-width="1.8" marker-end="url(#ah)"/>
+<rect x="668" y="70" width="196" height="190" rx="10" fill="#e6f4ea" stroke="#2e7d4f" stroke-width="1.6"/>
+<text x="766.0" y="94" font-size="14" fill="#1f2937" text-anchor="middle" font-weight="600">Charge</text>
+<text x="766.0" y="117" font-size="12.5" fill="#4b5563" text-anchor="middle">deviation charges</text>
+<text x="766.0" y="135.5" font-size="12.5" fill="#4b5563" text-anchor="middle">from Grid-India DSM</text>
+<text x="766.0" y="154.0" font-size="12.5" fill="#4b5563" text-anchor="middle">rate files (daily,</text>
+<text x="766.0" y="172.5" font-size="12.5" fill="#4b5563" text-anchor="middle">stylised)</text>
+<line x1="864" y1="165" x2="882" y2="165" stroke="#6b7280" stroke-width="1.8" marker-end="url(#ah)"/>
+<rect x="884" y="70" width="196" height="190" rx="10" fill="#fff3e0" stroke="#b26a00" stroke-width="1.6"/>
+<text x="982.0" y="94" font-size="14" fill="#1f2937" text-anchor="middle" font-weight="600">Regret</text>
+<text x="982.0" y="117" font-size="12.5" fill="#4b5563" text-anchor="middle">cost above the best</text>
+<text x="982.0" y="135.5" font-size="12.5" fill="#4b5563" text-anchor="middle">schedule in hindsight</text>
+<text x="982.0" y="154.0" font-size="12.5" fill="#4b5563" text-anchor="middle">mean, CVaR 0.9,</text>
+<text x="982.0" y="172.5" font-size="12.5" fill="#4b5563" text-anchor="middle">J = ½ mean + ½ CVaR</text>
+<rect x="20" y="290" width="520" height="112" rx="10" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="280.0" y="314" font-size="15" fill="#1f2937" text-anchor="middle" font-weight="600">Chain test</text>
+<text x="280.0" y="338" font-size="13" fill="#4b5563" text-anchor="middle">same rule and settings, only the forecast changes:</text>
+<text x="280.0" y="357" font-size="13" fill="#4b5563" text-anchor="middle">does a better forecast lower the regret?</text>
+<text x="280.0" y="376" font-size="13" fill="#4b5563" text-anchor="middle">also: money value of 1 GWh less forecast error</text>
+<rect x="560" y="290" width="520" height="112" rx="10" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="820.0" y="314" font-size="15" fill="#1f2937" text-anchor="middle" font-weight="600">Deviation assessment</text>
+<text x="820.0" y="338" font-size="13" fill="#4b5563" text-anchor="middle">does a consequence-aware measure rank</text>
+<text x="820.0" y="357" font-size="13" fill="#4b5563" text-anchor="middle">deviations better than energy alone?</text>
+<text x="820.0" y="376" font-size="13" fill="#4b5563" text-anchor="middle">checked against a shuffled placebo</text>
+</svg>

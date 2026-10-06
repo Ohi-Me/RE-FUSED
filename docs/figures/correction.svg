@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 560" width="1100" height="560" font-family="Segoe UI, Helvetica, Arial, sans-serif" role="img" aria-label="Gated forecast correction: when does a finer correction pay?"><title>Gated forecast correction: when does a finer correction pay?</title><defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6b7280"/></marker></defs><rect width="1100" height="560" fill="#ffffff"/>
+<text x="550" y="34" font-size="19" fill="#1f2937" text-anchor="middle" font-weight="600">Gated forecast correction: when does a finer correction pay?</text>
+<rect x="20" y="66" width="230" height="100" rx="10" fill="#e3eefb" stroke="#2a6fb0" stroke-width="1.6"/>
+<text x="135.0" y="90" font-size="15" fill="#1f2937" text-anchor="middle" font-weight="600">Base forecast B</text>
+<text x="135.0" y="114" font-size="12.5" fill="#4b5563" text-anchor="middle">any forecaster: naive,</text>
+<text x="135.0" y="132.5" font-size="12.5" fill="#4b5563" text-anchor="middle">LightGBM, deep or Chronos</text>
+<rect x="20" y="186" width="230" height="100" rx="10" fill="#e6f4ea" stroke="#2e7d4f" stroke-width="1.6"/>
+<text x="135.0" y="210" font-size="15" fill="#1f2937" text-anchor="middle" font-weight="600">Correction r</text>
+<text x="135.0" y="234" font-size="12.5" fill="#4b5563" text-anchor="middle">learned from the</text>
+<text x="135.0" y="252.5" font-size="12.5" fill="#4b5563" text-anchor="middle">base forecast's past errors</text>
+<rect x="300" y="116" width="250" height="120" rx="10" fill="#e6f4ea" stroke="#2e7d4f" stroke-width="1.6"/>
+<text x="425.0" y="140" font-size="15" fill="#1f2937" text-anchor="middle" font-weight="600">Gate g</text>
+<text x="425.0" y="164" font-size="12.5" fill="#4b5563" text-anchor="middle">how much of r to apply,</text>
+<text x="425.0" y="182.5" font-size="12.5" fill="#4b5563" text-anchor="middle">fitted per cell of the</text>
+<text x="425.0" y="201.0" font-size="12.5" fill="#4b5563" text-anchor="middle">chosen partition</text>
+<rect x="600" y="126" width="200" height="100" rx="10" fill="#fff3e0" stroke="#b26a00" stroke-width="1.6"/>
+<text x="700.0" y="150" font-size="17" fill="#1f2937" text-anchor="middle" font-weight="600">ŷ = B + g · r</text>
+<text x="700.0" y="176" font-size="12.5" fill="#4b5563" text-anchor="middle">corrected forecast</text>
+<path d="M 250 116 L 298 150" fill="none" stroke="#6b7280" stroke-width="1.8" marker-end="url(#ah)"/>
+<path d="M 250 236 L 298 200" fill="none" stroke="#6b7280" stroke-width="1.8" marker-end="url(#ah)"/>
+<line x1="550" y1="176" x2="598" y2="176" stroke="#6b7280" stroke-width="1.8" marker-end="url(#ah)"/>
+<rect x="840" y="76" width="240" height="200" rx="10" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="960.0" y="100" font-size="15" fill="#1f2937" text-anchor="middle" font-weight="600">Scored by</text>
+<text x="960.0" y="124" font-size="12.5" fill="#4b5563" text-anchor="middle">squared-error skill</text>
+<text x="960.0" y="142.5" font-size="12.5" fill="#4b5563" text-anchor="middle">against B</text>
+<text x="960.0" y="161.0" font-size="12.5" fill="#4b5563" text-anchor="middle">99 % upward reserve (MW)</text>
+<text x="960.0" y="179.5" font-size="12.5" fill="#4b5563" text-anchor="middle">deviation energy (GWh/yr)</text>
+<text x="960.0" y="198.0" font-size="12.5" fill="#4b5563" text-anchor="middle">imbalance cost (estimate)</text>
+<line x1="800" y1="176" x2="838" y2="176" stroke="#6b7280" stroke-width="1.8" marker-end="url(#ah)"/>
+<text x="20" y="330" font-size="14" fill="#1f2937" text-anchor="start" font-weight="600">Gate ladder (coarse → fine)</text>
+<rect x="20" y="342" width="140" height="40" rx="10" fill="#e6f4ea" stroke="#2e7d4f" stroke-width="1.6"/>
+<text x="90" y="367" font-size="13" fill="#1f2937" text-anchor="middle">none</text>
+<rect x="172" y="342" width="140" height="40" rx="10" fill="#e6f4ea" stroke="#2e7d4f" stroke-width="1.6"/>
+<text x="242" y="367" font-size="13" fill="#1f2937" text-anchor="middle">global</text>
+<rect x="324" y="342" width="140" height="40" rx="10" fill="#e6f4ea" stroke="#2e7d4f" stroke-width="1.6"/>
+<text x="394" y="367" font-size="13" fill="#1f2937" text-anchor="middle">per series</text>
+<rect x="476" y="342" width="140" height="40" rx="10" fill="#e6f4ea" stroke="#2e7d4f" stroke-width="1.6"/>
+<text x="546" y="367" font-size="13" fill="#1f2937" text-anchor="middle">series × hour block</text>
+<rect x="628" y="342" width="140" height="40" rx="10" fill="#e6f4ea" stroke="#2e7d4f" stroke-width="1.6"/>
+<text x="698" y="367" font-size="13" fill="#1f2937" text-anchor="middle">series × hour</text>
+<rect x="780" y="342" width="140" height="40" rx="10" fill="#e6f4ea" stroke="#2e7d4f" stroke-width="1.6"/>
+<text x="850" y="367" font-size="13" fill="#1f2937" text-anchor="middle">per instance</text>
+<rect x="932" y="342" width="140" height="40" rx="10" fill="#e6f4ea" stroke="#2e7d4f" stroke-width="1.6"/>
+<text x="1002" y="367" font-size="13" fill="#1f2937" text-anchor="middle">shrunk</text>
+<text x="20" y="414" font-size="14" fill="#1f2937" text-anchor="start" font-weight="600">Time policies</text>
+<rect x="20" y="426" width="254" height="40" rx="10" fill="#e6f4ea" stroke="#2e7d4f" stroke-width="1.6"/>
+<text x="147" y="451" font-size="13" fill="#1f2937" text-anchor="middle">expanding</text>
+<rect x="286" y="426" width="254" height="40" rx="10" fill="#e6f4ea" stroke="#2e7d4f" stroke-width="1.6"/>
+<text x="413" y="451" font-size="13" fill="#1f2937" text-anchor="middle">rolling 30 / 90 / 180 days</text>
+<rect x="552" y="426" width="254" height="40" rx="10" fill="#e6f4ea" stroke="#2e7d4f" stroke-width="1.6"/>
+<text x="679" y="451" font-size="13" fill="#1f2937" text-anchor="middle">forgetting 0.98 / 0.995</text>
+<rect x="818" y="426" width="254" height="40" rx="10" fill="#e6f4ea" stroke="#2e7d4f" stroke-width="1.6"/>
+<text x="945" y="451" font-size="13" fill="#1f2937" text-anchor="middle">Fixed Share</text>
+<text x="20" y="500" font-size="13" fill="#4b5563" text-anchor="start">Choosing the gate on validation data only: PART for partitions, prequential validation for time policies,</text>
+<text x="20" y="522" font-size="13" fill="#4b5563" text-anchor="start">nested hold-out as a reference. Indian data: all-India hourly series and State daily series. Other countries: comparison only.</text>
+</svg>

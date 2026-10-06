@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the dataset record."
+title: "RE-FUSED: Renewable Energy Forecasting, Uncertainty, Schedule-Deviation, Evaluation & Decision-Support"
+type: software
+authors:
+  - family-names: Kumar
+    given-names: Rohit
+    orcid: "https://orcid.org/0009-0004-7936-9683"
+    affiliation: "Centre for Artificial Intelligence, Dr. B. R. Ambedkar National Institute of Technology Jalandhar"
+repository-code: "https://github.com/Ohi-Me/RE-FUSED"
+license: MIT
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.22870921
+    description: "State-day panel of India's power system, code and frozen results (Zenodo)"
+keywords:
+  - load forecasting
+  - Indian power system
+  - deviation settlement
+  - forecast correction
+  - pre-registered evaluation
