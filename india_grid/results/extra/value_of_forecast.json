@@ -1,0 +1,37 @@
+{
+ "note": "additional analysis, not pre-registered; frozen rules, stored forecasts, evaluation period only",
+ "n_forecasters": 16,
+ "n_days": 516,
+ "slope_crore_per_day_per_gwh": 2.626958469902236,
+ "slope_lo": 2.3223201176678674,
+ "slope_hi": 2.887841103241601,
+ "spearman_mae_regret": 0.9705882352941176,
+ "best": {
+  "forecaster": "ens_stack",
+  "mae_gwh": 5.700726996569229,
+  "a2_mean_crore": 15.840520224065257
+ },
+ "worst": {
+  "forecaster": "bitcn",
+  "mae_gwh": 6.563061292562619,
+  "a2_mean_crore": 18.071075453144807
+ },
+ "reproduction": {
+  "P": {
+   "extra": 15.918395661015753,
+   "confirmatory": 15.918395661015753,
+   "same": true
+  },
+  "A2": {
+   "extra": 15.799132139499212,
+   "confirmatory": 15.799132139499212,
+   "same": true
+  },
+  "A5": {
+   "extra": 15.795639474991946,
+   "confirmatory": 15.795639474991946,
+   "same": true
+  }
+ },
+ "seconds": 518
+}

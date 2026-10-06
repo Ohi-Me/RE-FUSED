@@ -1,0 +1,346 @@
+{
+ "note": "additional analysis, not pre-registered; GWh per year summed over 34 control areas",
+ "period": "1 Apr 2025 - 31 Aug 2026",
+ "by_horizon": {
+  "1": {
+   "base": {
+    "error": 345484.2467198903,
+    "diff_vs_fixed": 56310.40157187881
+   },
+   "fixed": {
+    "error": 289173.84514801146,
+    "diff_vs_fixed": 0.0
+   },
+   "instance": {
+    "error": 290021.73883980484,
+    "diff_vs_fixed": 847.8936917933629
+   },
+   "otg": {
+    "error": 289824.9985397051,
+    "diff_vs_fixed": 651.1533916936029
+   },
+   "regime": {
+    "error": 289333.6537392027,
+    "diff_vs_fixed": 159.80859119128456
+   },
+   "rule_instance": {
+    "error": 289173.84514801146,
+    "diff_vs_fixed": 0.0
+   },
+   "rule_otg": {
+    "error": 289173.84514801146,
+    "diff_vs_fixed": 0.0
+   },
+   "rule_regime": {
+    "error": 289173.84514801146,
+    "diff_vs_fixed": 0.0
+   }
+  },
+  "all": {
+   "base": {
+    "error": 1132059.5754774217,
+    "diff_vs_fixed": 153978.06586272732
+   },
+   "fixed": {
+    "error": 978081.5096146946,
+    "diff_vs_fixed": 0.0
+   },
+   "instance": {
+    "error": 981811.8075326513,
+    "diff_vs_fixed": 3730.29791795688
+   },
+   "otg": {
+    "error": 982885.6532017135,
+    "diff_vs_fixed": 4804.143587018826
+   },
+   "regime": {
+    "error": 978113.1160553329,
+    "diff_vs_fixed": 31.606440638390097
+   },
+   "rule_instance": {
+    "error": 978081.5096146946,
+    "diff_vs_fixed": 0.0
+   },
+   "rule_otg": {
+    "error": 978081.5096146946,
+    "diff_vs_fixed": 0.0
+   },
+   "rule_regime": {
+    "error": 978991.3348172543,
+    "diff_vs_fixed": 909.8252025598547
+   }
+  }
+ },
+ "rule": [
+  {
+   "tid": "T1",
+   "H": 1,
+   "refinement": "regime vs fixed",
+   "refine_rule": false
+  },
+  {
+   "tid": "T1",
+   "H": 1,
+   "refinement": "instance vs fixed",
+   "refine_rule": false
+  },
+  {
+   "tid": "T1",
+   "H": 1,
+   "refinement": "OTG vs fixed",
+   "refine_rule": false
+  },
+  {
+   "tid": "T1",
+   "H": 2,
+   "refinement": "regime vs fixed",
+   "refine_rule": false
+  },
+  {
+   "tid": "T1",
+   "H": 2,
+   "refinement": "instance vs fixed",
+   "refine_rule": false
+  },
+  {
+   "tid": "T1",
+   "H": 2,
+   "refinement": "OTG vs fixed",
+   "refine_rule": false
+  },
+  {
+   "tid": "T1",
+   "H": 3,
+   "refinement": "regime vs fixed",
+   "refine_rule": false
+  },
+  {
+   "tid": "T1",
+   "H": 3,
+   "refinement": "instance vs fixed",
+   "refine_rule": false
+  },
+  {
+   "tid": "T1",
+   "H": 3,
+   "refinement": "OTG vs fixed",
+   "refine_rule": false
+  },
+  {
+   "tid": "T2",
+   "H": 1,
+   "refinement": "regime vs fixed",
+   "refine_rule": false
+  },
+  {
+   "tid": "T2",
+   "H": 1,
+   "refinement": "instance vs fixed",
+   "refine_rule": false
+  },
+  {
+   "tid": "T2",
+   "H": 1,
+   "refinement": "OTG vs fixed",
+   "refine_rule": false
+  },
+  {
+   "tid": "T2",
+   "H": 2,
+   "refinement": "regime vs fixed",
+   "refine_rule": false
+  },
+  {
+   "tid": "T2",
+   "H": 2,
+   "refinement": "instance vs fixed",
+   "refine_rule": false
+  },
+  {
+   "tid": "T2",
+   "H": 2,
+   "refinement": "OTG vs fixed",
+   "refine_rule": false
+  },
+  {
+   "tid": "T2",
+   "H": 3,
+   "refinement": "regime vs fixed",
+   "refine_rule": false
+  },
+  {
+   "tid": "T2",
+   "H": 3,
+   "refinement": "instance vs fixed",
+   "refine_rule": false
+  },
+  {
+   "tid": "T2",
+   "H": 3,
+   "refinement": "OTG vs fixed",
+   "refine_rule": false
+  },
+  {
+   "tid": "T3",
+   "H": 1,
+   "refinement": "regime vs fixed",
+   "refine_rule": false
+  },
+  {
+   "tid": "T3",
+   "H": 1,
+   "refinement": "instance vs fixed",
+   "refine_rule": false
+  },
+  {
+   "tid": "T3",
+   "H": 1,
+   "refinement": "OTG vs fixed",
+   "refine_rule": false
+  },
+  {
+   "tid": "T3",
+   "H": 2,
+   "refinement": "regime vs fixed",
+   "refine_rule": false
+  },
+  {
+   "tid": "T3",
+   "H": 2,
+   "refinement": "instance vs fixed",
+   "refine_rule": false
+  },
+  {
+   "tid": "T3",
+   "H": 2,
+   "refinement": "OTG vs fixed",
+   "refine_rule": false
+  },
+  {
+   "tid": "T3",
+   "H": 3,
+   "refinement": "regime vs fixed",
+   "refine_rule": false
+  },
+  {
+   "tid": "T3",
+   "H": 3,
+   "refinement": "instance vs fixed",
+   "refine_rule": false
+  },
+  {
+   "tid": "T3",
+   "H": 3,
+   "refinement": "OTG vs fixed",
+   "refine_rule": false
+  },
+  {
+   "tid": "T4",
+   "H": 1,
+   "refinement": "regime vs fixed",
+   "refine_rule": false
+  },
+  {
+   "tid": "T4",
+   "H": 1,
+   "refinement": "instance vs fixed",
+   "refine_rule": false
+  },
+  {
+   "tid": "T4",
+   "H": 1,
+   "refinement": "OTG vs fixed",
+   "refine_rule": false
+  },
+  {
+   "tid": "T4",
+   "H": 2,
+   "refinement": "regime vs fixed",
+   "refine_rule": true
+  },
+  {
+   "tid": "T4",
+   "H": 2,
+   "refinement": "instance vs fixed",
+   "refine_rule": false
+  },
+  {
+   "tid": "T4",
+   "H": 2,
+   "refinement": "OTG vs fixed",
+   "refine_rule": false
+  },
+  {
+   "tid": "T4",
+   "H": 3,
+   "refinement": "regime vs fixed",
+   "refine_rule": true
+  },
+  {
+   "tid": "T4",
+   "H": 3,
+   "refinement": "instance vs fixed",
+   "refine_rule": false
+  },
+  {
+   "tid": "T4",
+   "H": 3,
+   "refinement": "OTG vs fixed",
+   "refine_rule": false
+  },
+  {
+   "tid": "T5",
+   "H": 1,
+   "refinement": "regime vs fixed",
+   "refine_rule": true
+  },
+  {
+   "tid": "T5",
+   "H": 1,
+   "refinement": "instance vs fixed",
+   "refine_rule": false
+  },
+  {
+   "tid": "T5",
+   "H": 1,
+   "refinement": "OTG vs fixed",
+   "refine_rule": true
+  },
+  {
+   "tid": "T5",
+   "H": 2,
+   "refinement": "regime vs fixed",
+   "refine_rule": false
+  },
+  {
+   "tid": "T5",
+   "H": 2,
+   "refinement": "instance vs fixed",
+   "refine_rule": false
+  },
+  {
+   "tid": "T5",
+   "H": 2,
+   "refinement": "OTG vs fixed",
+   "refine_rule": true
+  },
+  {
+   "tid": "T5",
+   "H": 3,
+   "refinement": "regime vs fixed",
+   "refine_rule": false
+  },
+  {
+   "tid": "T5",
+   "H": 3,
+   "refinement": "instance vs fixed",
+   "refine_rule": false
+  },
+  {
+   "tid": "T5",
+   "H": 3,
+   "refinement": "OTG vs fixed",
+   "refine_rule": true
+  }
+ ]
+}
