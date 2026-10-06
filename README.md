@@ -20,13 +20,20 @@ Jalandhar. All computation ran on the institute's NVIDIA H100 cluster.
 
 ## What is in this repository
 
+The folders are numbered in reading order. Folders 1 and 2 are the **final version** of the work;
+[`FINAL_VERSION.md`](FINAL_VERSION.md) shows which code produced each final result, where the result is, and its run log.
+
 | Folder | What it holds |
 |---|---|
-| [`india_grid/`](india_grid/) | Data download, parsing and checking for every official source; the State-day panel and the all-India 15-minute and hourly series; forecasting, scheduling, deviation assessment; all results and run logs |
-| [`gated_correction/`](gated_correction/) | The forecast-correction study on Indian data (all-India hourly series and State daily series), with its frozen pre-registration and run logs |
-| [`gated_correction/foreign_data_study/`](gated_correction/foreign_data_study/) | The same correction method on public data from other countries (NYISO, European TSOs, UCI), kept only as a comparison |
-| [`early_work/`](early_work/) | Code, results and notes of the earlier stages, with a note on what each stage found and why the work changed direction |
+| [`1_india_data_forecasting_scheduling/`](1_india_data_forecasting_scheduling/) | **Main study.** Download and checking of every official report; the State-day panel and the all-India 15-minute and hourly series; day-ahead forecasting; deviation assessment; scheduling under deviation charges; all results and run logs |
+| [`2_forecast_correction_india/`](2_forecast_correction_india/) | **Forecast correction on real Indian data.** Can a forecast be improved by learning its past errors, and how finely should that correction be tuned? Run on the all-India hourly series and the State daily series, with its frozen plan and run logs |
+| [`2_forecast_correction_india/comparison_other_countries/`](2_forecast_correction_india/comparison_other_countries/) | The same correction method tested earlier on data from other countries (USA, Europe), kept only to compare with the Indian results |
+| [`3_early_versions/`](3_early_versions/) | Code, results and notes of the earlier versions, and why the work changed direction |
 | [`docs/`](docs/) | Plain-language guides: [data](docs/DATA.md), [results](docs/RESULTS.md), [how to rerun](docs/REPRODUCE.md), and all figures |
+
+**Gated correction, in one line:** a forecast `B` is improved by adding a learned correction `r` of its usual
+errors, scaled by a gate `g` between 0 and 1.5: `final forecast = B + g × r`. The gate can be one number for
+everything, or one per series, per hour or per day; the study tests when a finer gate actually helps.
 
 ## The main findings, in short
 
@@ -73,9 +80,3 @@ Files too large for GitHub are in the Zenodo record ([list](docs/LARGE_FILES_ON_
 
 See [`CITATION.cff`](CITATION.cff). Dataset: Rohit Kumar, *RE-FUSED: a provenance-tracked State-day panel of India's
 power system*, Zenodo, DOI 10.5281/zenodo.22870921.
-
-## Acknowledgement
-
-The authors gratefully acknowledge the High Performance Computing (HPC) facility provided by Dr. B. R. Ambedkar
-National Institute of Technology Jalandhar (NIT Jalandhar) for supporting the computational requirements of this
-research work.

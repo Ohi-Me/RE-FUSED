@@ -1,0 +1,38 @@
+#!/bin/bash
+#PBS -N refused_india_confirm
+#PBS -q workq
+#PBS -l select=1:ncpus=8:ngpus=1:mem=32gb
+#PBS -l walltime=24:00:00
+#PBS -j oe
+# The pre-registered run of the Indian hourly study (02_design/05_preregistration_india.md, tag prereg-india-v1).
+# Submit from the 2_forecast_correction_india folder:  qsub -o 12_logs/india_confirm.out hpc/india_confirm.pbs
+cd "$PBS_O_WORKDIR"
+export PYTHONNOUSERSITE=1 OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 OPENBLAS_NUM_THREADS=4 NUMEXPR_MAX_THREADS=4 REFUSED_TORCH_THREADS=4 PYTHONIOENCODING=utf-8 PYTHONUNBUFFERED=1 MPLBACKEND=Agg
+export REFUSED_INDIA_CONFIRMATORY=1
+source ../1_india_data_forecasting_scheduling/hpc/cluster.env 2>/dev/null
+source "${HPC_CONDA_SH:-/apps/compilers/anaconda3/etc/profile.d/conda.sh}"
+conda activate "${HPC_CONDA_ENV:-refused_h100}"
+export HF_HOME=$(readlink -f ../1_india_data_forecasting_scheduling)/data/hf_cache HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1
+MIG=$(cd ../1_india_data_forecasting_scheduling && python run_all.py pick-mig) || { echo "no free MIG instance"; exit 3; }
+export CUDA_VISIBLE_DEVICES="$MIG"
+# Pin the job to the 6 least-busy cores of the node (deviation D2): some library still starts one thread per core of
+# the 128-core node whatever the thread settings say, and the cluster stops jobs that use more than the 8 cores requested.
+CORES=$(python - <<'PY'
+import time
+def snap():
+    return {l.split()[0]: list(map(int, l.split()[1:])) for l in open("/proc/stat") if l[:3] == "cpu" and l[3].isdigit()}
+a = snap(); time.sleep(2); b = snap()
+idle = {k: (b[k][3] + b[k][4] - a[k][3] - a[k][4]) / max(1, sum(b[k]) - sum(a[k])) for k in a}
+print(",".join(sorted((k[3:] for k in sorted(idle, key=idle.get, reverse=True)[:6]), key=int)))
+PY
+)
+RUN="taskset -c $CORES python -u"
+echo "india confirm $(date -Iseconds) on $(hostname), job $PBS_JOBID, commit $(git rev-parse --short HEAD), tag $(git describe --tags), cores $CORES"
+sha256sum 02_design/05_preregistration_india.md
+$RUN 04_code/scripts/dev/make_learned_baselines_india.py --mode confirm || exit 1
+$RUN 04_code/scripts/india/run_india_ladders.py --mode confirm || exit 1
+$RUN 04_code/scripts/india/india_prob_energy.py --mode confirm --seeds 3 || exit 1
+$RUN 04_code/scripts/india/x1_india.py --part partition --source india_daily_confirm --seed_offset 900 --tag confirm || exit 1
+$RUN 04_code/scripts/india/x1_india.py --part instance --source india_daily_confirm --seed_offset 900 --tag confirm || exit 1
+$RUN 04_code/scripts/india/analyze_india.py --map confirm
+echo "india confirm finished rc=$? $(date -Iseconds)"
