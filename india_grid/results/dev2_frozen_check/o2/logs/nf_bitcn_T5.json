@@ -1,0 +1,32 @@
+{
+ "tid": "T5",
+ "model": "bitcn",
+ "Ly": 14,
+ "hist_exog": [
+  "dem_energy_met_gwh",
+  "dev_actual_drawal_gwh",
+  "gen_outage_share",
+  "m_dsm",
+  "m_prc_rtm",
+  "m_psp",
+  "m_wx",
+  "nat_energy_met_gwh",
+  "prc_dsm_normal",
+  "prc_rtm_acp",
+  "reg_solar_gwh",
+  "sys_pct_lt_49_9",
+  "wx_cdd24",
+  "wx_tmax_c"
+ ],
+ "val_pinball": {
+  "56": 0.5884966847863843
+ },
+ "seeds": {
+  "0": {
+   "rows": 28431,
+   "elapsed_s": 2.4
+  }
+ },
+ "input_size": 56,
+ "seconds": 2.4
+}

@@ -1,0 +1,17 @@
+tid,model,window,chosen,n_scored,pinball,crps_approx,cov80,cov90,cov90_series_mad,width90_scaled,n
+T5,lgbm,180,False,0,,,,,,,0
+T5,bilstm,180,False,0,,,,,,,0
+T5,tft,180,False,0,,,,,,,0
+T5,patchtst,180,False,0,,,,,,,0
+T5,chronos,180,False,0,,,,,,,0
+T5,xgb,180,False,0,,,,,,,0
+T5,nhits,180,False,0,,,,,,,0
+T5,tide,180,False,0,,,,,,,0
+T5,bitcn,180,False,0,,,,,,,0
+T5,nbeatsx,180,False,0,,,,,,,0
+T5,chronos2,180,False,0,,,,,,,0
+T5,chronos_base,180,False,0,,,,,,,0
+T5,mcag_instance_sd,180,False,0,,,,,,,0
+T5,ens_top,365,True,0,,,,,,,0
+T5,ens_stack,180,False,0,,,,,,,0
+T5,ens_online,180,False,0,,,,,,,0

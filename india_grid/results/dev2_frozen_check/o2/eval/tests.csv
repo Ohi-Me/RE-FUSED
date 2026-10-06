@@ -1,0 +1,13 @@
+tid,model,test,comparator,H,mean_diff,lo,hi,p_one_sided,n_days,p_holm_family
+T5,ens_top,final_vs_seasonal_naive,seasonal_naive,1,,,,,0,1.0
+T5,ens_top,final_vs_seasonal_naive,seasonal_naive,2,,,,,0,1.0
+T5,ens_top,final_vs_seasonal_naive,seasonal_naive,3,,,,,0,1.0
+T5,ens_top,final_vs_seasonal_naive,seasonal_naive,all,,,,,0,
+T5,ens_top,final_vs_round1_selected,bilstm,1,,,,,0,
+T5,ens_top,final_vs_round1_selected,bilstm,2,,,,,0,
+T5,ens_top,final_vs_round1_selected,bilstm,3,,,,,0,
+T5,ens_top,final_vs_round1_selected,bilstm,all,,,,,0,
+T5,ens_top,final_vs_best_single,chronos,1,,,,,0,
+T5,ens_top,final_vs_best_single,chronos,2,,,,,0,
+T5,ens_top,final_vs_best_single,chronos,3,,,,,0,
+T5,ens_top,final_vs_best_single,chronos,all,,,,,0,
