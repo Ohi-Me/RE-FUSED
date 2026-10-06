@@ -1,0 +1,108 @@
+column,block,source,unit,avail_lag_days,note,missing_share_train_to_devtest,missing_share_reserved
+entity,key,registry,-,0,,0.0,0.0
+date,key,registry,-,0,,0.0,0.0
+region,key,registry,-,0,,0.0,0.0
+bid_area,key,registry,-,0,,0.0,0.0
+pilot18,key,registry,-,0,,0.0,0.0
+dem_energy_met_gwh,demand,Grid-India PSP §C,GWh,1,,0.050518760495985644,0.00011355893708834885
+dev_drawal_schedule_gwh,deviation,Grid-India PSP §C,GWh,1,"OD(+)/UD(−) = actual − scheduled drawal, daily net",0.050472750695898225,0.0
+dev_od_ud_gwh,deviation,Grid-India PSP §C,GWh,1,"OD(+)/UD(−) = actual − scheduled drawal, daily net",0.05048425314592008,5.6779468544174426e-05
+dem_energy_shortage_gwh,demand,Grid-India PSP §C,GWh,1,,0.05067979479629161,0.0
+dem_peak_shortage_mw,demand,Grid-India PSP §C,MW,1,peak shortage = shortage at the time of maximum demand,0.05048425314592008,5.6779468544174426e-05
+dem_max_demand_mw,demand,Grid-India PSP §C,MW,1,peak shortage = shortage at the time of maximum demand,0.05063378499620419,0.00011355893708834885
+dev_max_od_mw,deviation,Grid-India PSP §C,MW,1,max UD printed from 2023,0.05100186339690354,5.6779468544174426e-05
+dev_max_ud_mw,deviation,Grid-India PSP §C,MW,1,max UD printed from 2023,1.0,0.61588689529866
+avail_psp,availability,derived,flag,0,,0.0,0.0
+qc_energy_met,qc,b07 rules,flag,1,value set to missing when flagged,0.0,0.0
+qc_max_demand,qc,b07 rules,flag,1,value set to missing when flagged,0.0,0.0
+qc_energy_shortage,qc,b07 rules,flag,1,value set to missing when flagged,0.0,0.0
+qc_od_ud,qc,b07 rules,flag,1,value set to missing when flagged,0.0,0.0
+dev_actual_drawal_gwh,deviation,derived (PSP),GWh,1,,0.05048425314592008,5.6779468544174426e-05
+dev_abs_od_ud_gwh,deviation,derived (PSP),GWh,1,,0.05048425314592008,5.6779468544174426e-05
+reg_energy_met_gwh,regional,Grid-India PSP §A/§E,GWh,1,region of the entity / All-India,0.05044974579585452,0.0
+reg_energy_shortage_gwh,regional,Grid-India PSP §A/§E,GWh,1,region of the entity / All-India,0.050840829096597574,0.0
+reg_hydro_gwh,regional,Grid-India PSP §A/§E,GWh,1,region of the entity / All-India,0.05044974579585452,0.0
+reg_ir_od_ud_gwh,regional,Grid-India PSP §A/§E,GWh,1,region of the entity / All-India,0.05553382870551427,0.0
+reg_outage_total_mw,regional,Grid-India PSP §F,MW,1,,0.05553382870551427,0.0
+reg_solar_gwh,regional,Grid-India PSP §A/§E,GWh,1,region of the entity / All-India,0.05044974579585452,0.0
+reg_wind_gwh,regional,Grid-India PSP §A/§E,GWh,1,region of the entity / All-India,0.4130644827348225,0.38235294117647056
+nat_energy_met_gwh,regional,Grid-India PSP §A/§E,GWh,1,region of the entity / All-India,0.05044974579585452,0.0
+nat_energy_shortage_gwh,regional,Grid-India PSP §A/§E,GWh,1,region of the entity / All-India,0.050840829096597574,0.0
+nat_hydro_gwh,regional,Grid-India PSP §A/§E,GWh,1,region of the entity / All-India,0.05044974579585452,0.0
+nat_ir_od_ud_gwh,regional,Grid-India PSP §A/§E,GWh,1,region of the entity / All-India,0.05553382870551427,0.0
+nat_outage_total_mw,regional,Grid-India PSP §F,MW,1,,0.05553382870551427,0.0
+nat_solar_gwh,regional,Grid-India PSP §A/§E,GWh,1,region of the entity / All-India,0.05044974579585452,0.0
+nat_wind_gwh,regional,Grid-India PSP §A/§E,GWh,1,region of the entity / All-India,0.05044974579585452,0.0
+sys_fvi,system stress,Grid-India PSP §B,% of time / index,1,"All-India; day excluded when bands do not sum to 100 ± 2 or FVI ∉ [0, 5]",0.05123191239734063,0.0
+sys_pct_lt_49_7,system stress,Grid-India PSP §B,% of time / index,1,"All-India; day excluded when bands do not sum to 100 ± 2 or FVI ∉ [0, 5]",0.05123191239734063,0.0
+sys_pct_49_7_49_8,system stress,Grid-India PSP §B,% of time / index,1,"All-India; day excluded when bands do not sum to 100 ± 2 or FVI ∉ [0, 5]",0.05123191239734063,0.0
+sys_pct_49_8_49_9,system stress,Grid-India PSP §B,% of time / index,1,"All-India; day excluded when bands do not sum to 100 ± 2 or FVI ∉ [0, 5]",0.05123191239734063,0.0
+sys_pct_lt_49_9,system stress,Grid-India PSP §B,% of time / index,1,"All-India; day excluded when bands do not sum to 100 ± 2 or FVI ∉ [0, 5]",0.05123191239734063,0.0
+sys_pct_49_9_50_05,system stress,Grid-India PSP §B,% of time / index,1,"All-India; day excluded when bands do not sum to 100 ± 2 or FVI ∉ [0, 5]",0.05123191239734063,0.0
+sys_pct_gt_50_05,system stress,Grid-India PSP §B,% of time / index,1,"All-India; day excluded when bands do not sum to 100 ± 2 or FVI ∉ [0, 5]",0.05123191239734063,0.0
+prc_dam_acp,price,Grid-India DSM files,₹/MWh,14,"DAM/RTM area clearing price of the entity's bid area (R1: daily average ACP column); Grid-India uploads the files in batches 8–11 days after the date, so features use a 14-day lag",0.10285490809542433,0.0
+prc_dam_acp_max,price,Grid-India DSM files,₹/MWh,14,"DAM/RTM area clearing price of the entity's bid area (R1: daily average ACP column); Grid-India uploads the files in batches 8–11 days after the date, so features use a 14-day lag",0.10285490809542433,0.0
+prc_regime,price,Grid-India DSM files,category,14,R1 ≤ 2022-12-04; R2; R3 ≥ 2024-09-16,0.10285490809542433,0.0
+prc_rtm_acp,price,Grid-India DSM files,₹/MWh,14,"DAM/RTM area clearing price of the entity's bid area (R1: daily average ACP column); Grid-India uploads the files in batches 8–11 days after the date, so features use a 14-day lag",0.6675791943684005,0.0
+prc_dsm_normal,price,Grid-India DSM files,₹/MWh / share,14,R1: charge for deviation at 50.00 Hz; R2/R3: normal rate of charges for deviation,0.10637465780211185,0.0
+prc_dsm_normal_max,price,Grid-India DSM files,₹/MWh / share,14,R1: charge for deviation at 50.00 Hz; R2/R3: normal rate of charges for deviation,0.10637465780211185,0.0
+prc_dsm_cap_share,price,Grid-India DSM files,₹/MWh / share,14,R1: charge for deviation at 50.00 Hz; R2/R3: normal rate of charges for deviation,0.10637465780211185,0.0
+gen_cap_mw_total,conventional generation,CEA NPP DGR2,MW,2,,0.030113414157215485,0.0
+gen_prog_gwh_total,conventional generation,CEA NPP DGR2,GWh,2,"gross; stations monitored by CEA (≥ 25 MW); published d+1 evening, later at weekends",0.030113414157215485,0.0
+gen_act_gwh_total,conventional generation,CEA NPP DGR2,GWh,2,"gross; stations monitored by CEA (≥ 25 MW); published d+1 evening, later at weekends",0.03171225471025328,0.0009084714967067908
+gen_outage_mw_total,conventional generation,CEA NPP DGR2,MW,2,,0.030113414157215485,0.0
+gen_act_gwh_coal,conventional generation,CEA NPP DGR2,GWh,2,"gross; stations monitored by CEA (≥ 25 MW); published d+1 evening, later at weekends",0.03171225471025328,0.0009084714967067908
+gen_act_gwh_diesel,conventional generation,CEA NPP DGR2,GWh,2,"gross; stations monitored by CEA (≥ 25 MW); published d+1 evening, later at weekends",0.03171225471025328,0.0009084714967067908
+gen_act_gwh_gas,conventional generation,CEA NPP DGR2,GWh,2,"gross; stations monitored by CEA (≥ 25 MW); published d+1 evening, later at weekends",0.03171225471025328,0.0009084714967067908
+gen_act_gwh_hydro,conventional generation,CEA NPP DGR2,GWh,2,"gross; stations monitored by CEA (≥ 25 MW); published d+1 evening, later at weekends",0.03171225471025328,0.0009084714967067908
+gen_act_gwh_nuclear,conventional generation,CEA NPP DGR2,GWh,2,"gross; stations monitored by CEA (≥ 25 MW); published d+1 evening, later at weekends",0.03171225471025328,0.0009084714967067908
+gen_cap_mw_coal,conventional generation,CEA NPP DGR2,MW,2,,0.030113414157215485,0.0
+gen_cap_mw_diesel,conventional generation,CEA NPP DGR2,MW,2,,0.030113414157215485,0.0
+gen_cap_mw_gas,conventional generation,CEA NPP DGR2,MW,2,,0.030113414157215485,0.0
+gen_cap_mw_hydro,conventional generation,CEA NPP DGR2,MW,2,,0.030113414157215485,0.0
+gen_cap_mw_nuclear,conventional generation,CEA NPP DGR2,MW,2,,0.030113414157215485,0.0
+gen_outage_mw_coal,conventional generation,CEA NPP DGR2,MW,2,,0.030113414157215485,0.0
+gen_outage_mw_diesel,conventional generation,CEA NPP DGR2,MW,2,,0.030113414157215485,0.0
+gen_outage_mw_gas,conventional generation,CEA NPP DGR2,MW,2,,0.030113414157215485,0.0
+gen_outage_mw_hydro,conventional generation,CEA NPP DGR2,MW,2,,0.030113414157215485,0.0
+gen_outage_mw_nuclear,conventional generation,CEA NPP DGR2,MW,2,,0.030113414157215485,0.0
+gen_prog_gwh_coal,conventional generation,CEA NPP DGR2,GWh,2,"gross; stations monitored by CEA (≥ 25 MW); published d+1 evening, later at weekends",0.030113414157215485,0.0
+gen_prog_gwh_diesel,conventional generation,CEA NPP DGR2,GWh,2,"gross; stations monitored by CEA (≥ 25 MW); published d+1 evening, later at weekends",0.030113414157215485,0.0
+gen_prog_gwh_gas,conventional generation,CEA NPP DGR2,GWh,2,"gross; stations monitored by CEA (≥ 25 MW); published d+1 evening, later at weekends",0.030113414157215485,0.0
+gen_prog_gwh_hydro,conventional generation,CEA NPP DGR2,GWh,2,"gross; stations monitored by CEA (≥ 25 MW); published d+1 evening, later at weekends",0.030113414157215485,0.0
+gen_prog_gwh_nuclear,conventional generation,CEA NPP DGR2,GWh,2,"gross; stations monitored by CEA (≥ 25 MW); published d+1 evening, later at weekends",0.030113414157215485,0.0
+gen_coal_days_capw,system stress,CEA NPP DGR2,days / share / MW,2,,0.5407991902275184,0.5005110152168976
+gen_coal_cap_share_lt7d,system stress,CEA NPP DGR2,days / share / MW,2,,0.5407991902275184,0.5005110152168976
+gen_coal_cap_reporting_mw,system stress,CEA NPP DGR2,days / share / MW,2,,0.5407991902275184,0.5005110152168976
+avail_npp,availability,derived,flag,0,,0.0,0.0
+qc_npp_capacity,qc,b03/b07 rules,flag,2,State actual generation set to missing,0.0,0.0
+qc_npp_station_typo,qc,b03/b07 rules,flag,2,State actual generation set to missing,0.0,0.0
+gen_outage_share,system stress,CEA NPP DGR2,days / share / MW,2,,0.11569164231981412,0.11537588008176243
+gen_conv_dev_gwh,conventional generation,CEA NPP DGR2,GWh,2,"gross; stations monitored by CEA (≥ 25 MW); published d+1 evening, later at weekends",0.03171225471025328,0.0009084714967067908
+re_all_other_re_gwh,renewables,CEA daily RE report (State+ISGS),GWh,2,published to 2025-11-18,0.2137385263061032,0.5671701112877583
+re_ctrl_other_re_gwh,renewables,CEA daily RE report (State control area),GWh,2,from 2020-06-01 to 2025-11-18,0.3347097931859486,0.5671701112877583
+re_all_solar_gwh,renewables,CEA daily RE report (State+ISGS),GWh,2,published to 2025-11-18,0.2137385263061032,0.5671701112877583
+re_ctrl_solar_gwh,renewables,CEA daily RE report (State control area),GWh,2,from 2020-06-01 to 2025-11-18,0.3347097931859486,0.5671701112877583
+re_all_total_re_gwh,renewables,CEA daily RE report (State+ISGS),GWh,2,published to 2025-11-18,0.2137385263061032,0.5671701112877583
+re_ctrl_total_re_gwh,renewables,CEA daily RE report (State control area),GWh,2,from 2020-06-01 to 2025-11-18,0.3347097931859486,0.5671701112877583
+re_all_wind_gwh,renewables,CEA daily RE report (State+ISGS),GWh,2,published to 2025-11-18,0.2137385263061032,0.5671701112877583
+re_ctrl_wind_gwh,renewables,CEA daily RE report (State control area),GWh,2,from 2020-06-01 to 2025-11-18,0.3347097931859486,0.5671701112877583
+avail_re,availability,derived,flag,0,,0.0,0.0
+co2_emis_t_op,carbon,CEA CO2 database v22 × CEA NPP DGR2,t CO2,2,op: factor of FY−2 (published before the date); acc: FY−1 (ex-post accounting),0.03171225471025328,0.0009084714967067908
+qc_co2_factor_filled_op,qc,b07,flag,2,earliest available FY factor used (FY2017-18) because FY−lag precedes the database,0.0,0.0
+co2_emis_t_acc,carbon,CEA CO2 database v22 × CEA NPP DGR2,t CO2,2,op: factor of FY−2 (published before the date); acc: FY−1 (ex-post accounting),0.03171225471025328,0.0009084714967067908
+qc_co2_factor_filled_acc,qc,b07,flag,2,earliest available FY factor used (FY2017-18) because FY−lag precedes the database,0.0,0.0
+co2_ci_conv_op,carbon,derived,t CO2/MWh,2,conv: conventional generation only; gen: incl. CEA RE (to 2025-11-18); cons: consumption-based with net drawal,0.14755342888035153,0.12468771292300704
+co2_ci_gen_acc,carbon,derived,t CO2/MWh,2,conv: conventional generation only; gen: incl. CEA RE (to 2025-11-18); cons: consumption-based with net drawal,0.3152016379488831,0.6068589598001363
+co2_ci_cons_acc,carbon,derived,t CO2/MWh,2,conv: conventional generation only; gen: incl. CEA RE (to 2025-11-18); cons: consumption-based with net drawal,0.10594906715130323,0.034521916874858054
+wx_tmax_c,weather,IMD Pune gridded (load centres),°C / mm,1,observed weather; IMD final gridded product ends 2025-12-31,1.1502450021854655e-05,0.4691119691119691
+wx_tmin_c,weather,IMD Pune gridded (load centres),°C / mm,1,observed weather; IMD final gridded product ends 2025-12-31,0.0,0.4691119691119691
+wx_rain_mm,weather,IMD Pune gridded (load centres),°C / mm,1,observed weather; IMD final gridded product ends 2025-12-31,0.0,0.4691119691119691
+wx_tmean_c,weather,IMD Pune gridded (load centres),°C / mm,1,observed weather; IMD final gridded product ends 2025-12-31,1.1502450021854655e-05,0.4691119691119691
+wx_cdd24,weather,IMD Pune gridded (load centres),°C / mm,1,observed weather; IMD final gridded product ends 2025-12-31,1.1502450021854655e-05,0.4691119691119691
+wx_hdd18,weather,IMD Pune gridded (load centres),°C / mm,1,observed weather; IMD final gridded product ends 2025-12-31,1.1502450021854655e-05,0.4691119691119691
+cal_dow,calendar,derived,integer,0,,0.0,0.0
+cal_month,calendar,derived,integer,0,,0.0,0.0
+cal_doy,calendar,derived,integer,0,,0.0,0.0
+cal_fy,calendar,derived,integer,0,,0.0,0.0
+split,key,registry,-,0,,0.0,0.0

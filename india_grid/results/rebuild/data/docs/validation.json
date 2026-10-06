@@ -1,0 +1,285 @@
+{
+ "manifests": {
+  "cea_co2_database": {
+   "files_ok": 48,
+   "not_available": 0,
+   "bytes_ok": 67981463
+  },
+  "cea_daily_re": {
+   "files_ok": 2361,
+   "not_available": 8,
+   "bytes_ok": 382273625
+  },
+  "cerc_regulations": {
+   "files_ok": 2,
+   "not_available": 0,
+   "bytes_ok": 418116
+  },
+  "grid_india_dsm": {
+   "files_ok": 404,
+   "not_available": 0,
+   "bytes_ok": 87606003
+  },
+  "grid_india_psp": {
+   "files_ok": 3448,
+   "not_available": 5,
+   "bytes_ok": 2667232396
+  },
+  "imd_gridded": {
+   "files_ok": 27,
+   "not_available": 0,
+   "bytes_ok": 254242876
+  },
+  "npp_coal": {
+   "files_ok": 2837,
+   "not_available": 2555,
+   "bytes_ok": 278408322
+  },
+  "npp_dgr10": {
+   "files_ok": 3018,
+   "not_available": 78,
+   "bytes_ok": 166539264
+  },
+  "npp_dgr2": {
+   "files_ok": 3022,
+   "not_available": 74,
+   "bytes_ok": 1053144064
+  },
+  "npp_dgr6": {
+   "files_ok": 2762,
+   "not_available": 334,
+   "bytes_ok": 54501376
+  },
+  "legacy_refused0": {
+   "files_ok": 162,
+   "not_available": 0,
+   "bytes_ok": 816931440
+  }
+ },
+ "raw_total_bytes_official": 5012347505,
+ "raw_files_ok_official": 17929,
+ "psp": {
+  "state_rows": 111654,
+  "dates": 3284,
+  "first": "2017-05-08",
+  "last": "2026-09-13",
+  "entities": 34,
+  "missing_dates_window": 129,
+  "missing_dates_shared_path": 90,
+  "listing_records": 4834,
+  "listing_filepaths_shared_by_titles": 23,
+  "titles_on_shared_paths": 118,
+  "largest_shared_path_titles": 72,
+  "files_parsed_ok": 3382,
+  "files_few_states": 60,
+  "files_not_psp": 6,
+  "date_reassigned_by_cover_letter": 2,
+  "duplicate_uploads_dropped": 0,
+  "publication_lag_hours_median": 10.6,
+  "publication_lag_hours_p90": 36.67333333333334,
+  "publication_lag_n": 1064,
+  "xls_share_of_chosen": 0.4101705237515225
+ },
+ "dsm": {
+  "dates": 2818,
+  "first": "2018-12-19",
+  "last": "2026-09-06",
+  "bid_areas": 13,
+  "regimes": {
+   "R1": {
+    "first": "2018-12-19",
+    "last": "2022-12-04",
+    "dates": 1444
+   },
+   "R2": {
+    "first": "2022-12-01",
+    "last": "2024-09-15",
+    "dates": 653
+   },
+   "R3": {
+    "first": "2024-09-16",
+    "last": "2026-09-06",
+    "dates": 721
+   }
+  },
+  "daily_file_lag_days_median": 8.774305555555555,
+  "daily_file_lag_days_min": 4.7375,
+  "daily_file_lag_days_max": 71.65694444444445,
+  "daily_file_lag_n": 267
+ },
+ "npp": {
+  "station_rows": 1547930,
+  "state_rows": 93589,
+  "dates": 3019,
+  "first": "2018-03-22",
+  "last": "2026-09-11",
+  "entities": 31,
+  "missing_dates": 77,
+  "missing_2020_lockdown": 74,
+  "files_no_state_totals": 3,
+  "max_abs_station_vs_total_gwh": 4.547473508864641e-13,
+  "idp_overlap_rows": 75485,
+  "idp_first": "2018-03-22",
+  "idp_last": "2025-03-31",
+  "idp_share_within_1pct": 1.0,
+  "idp_share_within_0p01gwh": 0.9905809101145923
+ },
+ "cea_re": {
+  "rows": 76025,
+  "dates": 2285,
+  "first": "2019-07-01",
+  "last": "2025-11-18",
+  "ctrl_first": "2020-06-01",
+  "ctrl_dates": 1975,
+  "entities": 34,
+  "files": 2361,
+  "date_mismatch_files": 10,
+  "duplicate_table_files": 1,
+  "inconsistent_rows_all": 46,
+  "inconsistent_rows_ctrl": 23,
+  "layout_counts": {
+   "std": {
+    "all": 75921,
+    "ctrl": 65443
+   },
+   "no_other_col": {
+    "all": 58,
+    "ctrl": 19
+   },
+   "inconsistent": {
+    "all": 46,
+    "ctrl": 23
+   }
+  },
+  "idp_overlap_rows": 60619,
+  "idp_share_within_1pct": 0.9985977993698345
+ },
+ "co2": {
+  "cells": 453,
+  "entities": 25,
+  "net_gross_ratio": {
+   "coal": 0.9268323070417456,
+   "diesel": 0.7397175398633258,
+   "gas": 0.9656195819095014
+  },
+  "coal_ef_gross_min": 0.837175517240209,
+  "coal_ef_gross_max": 1.0365618937884096,
+  "coal_ef_gross_median": 0.9081066494229221,
+  "national_coal_ef_net": {
+   "2017-18": 0.9876166838616857,
+   "2018-19": 0.9918496249145953,
+   "2019-20": 0.9892111220714022,
+   "2020-21": 0.97833361279868,
+   "2021-22": 0.9851117513895281,
+   "2022-23": 0.9864679747747541,
+   "2023-24": 0.9771365049003302,
+   "2024-25": 0.9798160521269695,
+   "2025-26": 0.9827708102017738
+  }
+ },
+ "imd": {
+  "rows": 111758,
+  "first": "2017-01-01",
+  "last": "2025-12-31",
+  "missing_share": 8.947905295370353e-06,
+  "delhi_tmax_jan": 19.35700908100306,
+  "delhi_tmax_may": 39.66444299297948,
+  "mumbai_cell_rain_jul2023_mm": 1532.4061279296875
+ },
+ "panel": {
+  "rows": 104550,
+  "columns": 107,
+  "entities": 34,
+  "first": "2018-04-01",
+  "last": "2026-08-31",
+  "days": 3075,
+  "nonmissing_values": 10169383,
+  "rows_with_energy_met": 100156,
+  "splits": {
+   "train": 62084,
+   "reserved": 17612,
+   "validation": 12444,
+   "dev_test": 12410
+  },
+  "qc_flag_counts": {
+   "qc_energy_met": 6,
+   "qc_max_demand": 16,
+   "qc_energy_shortage": 18,
+   "qc_od_ud": 2,
+   "qc_npp_capacity": 13,
+   "qc_npp_station_typo": 145,
+   "qc_co2_factor_filled_op": 7732,
+   "qc_co2_factor_filled_acc": 51
+  },
+  "blocks_missing": {
+   "availability": {
+    "train_dev": 0.0,
+    "reserved": 0.0
+   },
+   "calendar": {
+    "train_dev": 0.0,
+    "reserved": 0.0
+   },
+   "carbon": {
+    "train_dev": 0.12642572868020885,
+    "reserved": 0.15357710651828294
+   },
+   "conventional generation": {
+    "train_dev": 0.030561089512065983,
+    "reserved": 0.000254372019077876
+   },
+   "demand": {
+    "train_dev": 0.05057914835860033,
+    "reserved": 7.09743356801936e-05
+   },
+   "deviation": {
+    "train_dev": 0.20882122892176028,
+    "reserved": 0.10268566886213944
+   },
+   "key": {
+    "train_dev": 0.0,
+    "reserved": 0.0
+   },
+   "price": {
+    "train_dev": 0.18503827029442982,
+    "reserved": 0.0
+   },
+   "qc": {
+    "train_dev": 0.0,
+    "reserved": 0.0
+   },
+   "regional": {
+    "train_dev": 0.07785926259436113,
+    "reserved": 0.027310924369747892
+   },
+   "renewables": {
+    "train_dev": 0.27422415974602593,
+    "reserved": 0.5671701112877583
+   },
+   "system stress": {
+    "train_dev": 0.19061023634397758,
+    "reserved": 0.1469917205211323
+   },
+   "weather": {
+    "train_dev": 7.66830001456977e-06,
+    "reserved": 0.4691119691119691
+   }
+  },
+  "block_column_counts": {
+   "conventional generation": 25,
+   "regional": 14,
+   "system stress": 11,
+   "renewables": 8,
+   "qc": 8,
+   "price": 7,
+   "weather": 6,
+   "deviation": 6,
+   "key": 6,
+   "carbon": 5,
+   "demand": 4,
+   "calendar": 4,
+   "availability": 3
+  },
+  "content_sha256": "c6ef9c8ebaba692cc0952025f87ea311e09b54ffae9e77c1c04a1b0ffaec4bbd"
+ }
+}
