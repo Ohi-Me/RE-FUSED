@@ -1,392 +1,399 @@
 # Large files kept in the Zenodo archive, not here
 
-GitHub cannot hold files this large. They are in the Zenodo record (link in the main README).
+GitHub cannot hold files this large. They are in the Zenodo record (https://doi.org/10.5281/zenodo.23194781), in four archives, `RE-FUSED_Large_Results_v1.0_part1of4.zip` to `part4of4.zip` (about 2 GB each).
 
-| File | MB |
-|---|---|
-| `Forecast_Correction_India/results/india/confirm/prob_energy/prob_energy_s0.parquet` | 7.9 |
-| `Forecast_Correction_India/results/india/confirm/prob_energy/prob_energy_s1.parquet` | 8.0 |
-| `Forecast_Correction_India/results/india/confirm/prob_energy/prob_energy_s2.parquet` | 8.0 |
-| `Forecast_Correction_India/Other_Countries/results/confirm/C3/lag48_s0.parquet` | 12.1 |
-| `Forecast_Correction_India/Other_Countries/results/confirm/C3/lag48_s1.parquet` | 12.0 |
-| `Forecast_Correction_India/Other_Countries/results/confirm/C3/snaive168_s0.parquet` | 11.6 |
-| `Forecast_Correction_India/Other_Countries/results/confirm/C3/snaive168_s1.parquet` | 11.7 |
-| `Forecast_Correction_India/Other_Countries/results/confirm/C3/tso_s0.parquet` | 11.8 |
-| `Forecast_Correction_India/Other_Countries/results/confirm/C3/tso_s1.parquet` | 11.8 |
-| `Forecast_Correction_India/Other_Countries/results/confirm/C4/lag48_s0.parquet` | 9.5 |
-| `Forecast_Correction_India/Other_Countries/results/confirm/C4/lag48_s1.parquet` | 9.5 |
-| `Forecast_Correction_India/Other_Countries/results/confirm/C4/snaive168_s0.parquet` | 8.5 |
-| `Forecast_Correction_India/Other_Countries/results/confirm/C4/snaive168_s1.parquet` | 8.7 |
-| `Forecast_Correction_India/Other_Countries/results/confirm/C4/tso_s0.parquet` | 9.2 |
-| `Forecast_Correction_India/Other_Countries/results/confirm/C4/tso_s1.parquet` | 9.3 |
-| `Forecast_Correction_India/Other_Countries/results/confirm/C5/oof_train_val_s0.parquet` | 11.1 |
-| `Forecast_Correction_India/Other_Countries/results/confirm/C5/oof_train_val_s1.parquet` | 11.1 |
-| `Forecast_Correction_India/Other_Countries/results/confirm/C5/val_frac0.1_s0.parquet` | 10.8 |
-| `Forecast_Correction_India/Other_Countries/results/confirm/C5/val_frac0.1_s1.parquet` | 11.1 |
-| `Forecast_Correction_India/Other_Countries/results/confirm/C5/val_frac0.25_s0.parquet` | 11.0 |
-| `Forecast_Correction_India/Other_Countries/results/confirm/C5/val_frac0.25_s1.parquet` | 11.0 |
-| `Forecast_Correction_India/Other_Countries/results/confirm/C6/lag48_s0.parquet` | 13.8 |
-| `Forecast_Correction_India/Other_Countries/results/confirm/C6/lag48_s1.parquet` | 14.1 |
-| `Forecast_Correction_India/Other_Countries/results/confirm/C6/snaive168_s0.parquet` | 13.0 |
-| `Forecast_Correction_India/Other_Countries/results/confirm/C6/snaive168_s1.parquet` | 12.9 |
-| `Forecast_Correction_India/Other_Countries/results/confirm/C7/oof_train_val_s0.parquet` | 8.9 |
-| `Forecast_Correction_India/Other_Countries/results/confirm/C7/oof_train_val_s1.parquet` | 9.0 |
-| `Forecast_Correction_India/Other_Countries/results/confirm/C7/val_frac0.1_s0.parquet` | 10.8 |
-| `Forecast_Correction_India/Other_Countries/results/confirm/C7/val_frac0.1_s1.parquet` | 12.0 |
-| `Forecast_Correction_India/Other_Countries/results/confirm/C7/val_frac0.25_s0.parquet` | 12.1 |
-| `Forecast_Correction_India/Other_Countries/results/confirm/C7/val_frac0.25_s1.parquet` | 11.3 |
-| `Forecast_Correction_India/Other_Countries/results/confirm_sensitivity/C3/lag48_s0.parquet` | 12.1 |
-| `Forecast_Correction_India/Other_Countries/results/confirm_sensitivity/C3/lag48_s1.parquet` | 12.1 |
-| `Forecast_Correction_India/Other_Countries/results/confirm_sensitivity/C3/snaive168_s0.parquet` | 11.6 |
-| `Forecast_Correction_India/Other_Countries/results/confirm_sensitivity/C3/snaive168_s1.parquet` | 11.6 |
-| `Forecast_Correction_India/Other_Countries/results/confirm_sensitivity/C3/tso_s0.parquet` | 11.8 |
-| `Forecast_Correction_India/Other_Countries/results/confirm_sensitivity/C3/tso_s1.parquet` | 11.8 |
-| `Forecast_Correction_India/Other_Countries/results/confirm_sensitivity/C4/lag48_s0.parquet` | 9.5 |
-| `Forecast_Correction_India/Other_Countries/results/confirm_sensitivity/C4/lag48_s1.parquet` | 9.4 |
-| `Forecast_Correction_India/Other_Countries/results/confirm_sensitivity/C4/snaive168_s0.parquet` | 8.5 |
-| `Forecast_Correction_India/Other_Countries/results/confirm_sensitivity/C4/snaive168_s1.parquet` | 8.6 |
-| `Forecast_Correction_India/Other_Countries/results/confirm_sensitivity/C4/tso_s0.parquet` | 9.2 |
-| `Forecast_Correction_India/Other_Countries/results/confirm_sensitivity/C4/tso_s1.parquet` | 9.1 |
-| `Forecast_Correction_India/Other_Countries/results/confirm_sensitivity/C5/oof_train_val_s0.parquet` | 11.0 |
-| `Forecast_Correction_India/Other_Countries/results/confirm_sensitivity/C5/oof_train_val_s1.parquet` | 11.1 |
-| `Forecast_Correction_India/Other_Countries/results/confirm_sensitivity/C5/val_frac0.1_s0.parquet` | 11.0 |
-| `Forecast_Correction_India/Other_Countries/results/confirm_sensitivity/C5/val_frac0.1_s1.parquet` | 11.1 |
-| `Forecast_Correction_India/Other_Countries/results/confirm_sensitivity/C5/val_frac0.25_s0.parquet` | 11.0 |
-| `Forecast_Correction_India/Other_Countries/results/confirm_sensitivity/C5/val_frac0.25_s1.parquet` | 11.1 |
-| `Forecast_Correction_India/Other_Countries/results/surrogate/C3/tso_s0.parquet` | 12.8 |
-| `Forecast_Correction_India/Other_Countries/results/surrogate/C4/tso_s0.parquet` | 9.9 |
-| `Forecast_Correction_India/Other_Countries/results/surrogate/C5/val_frac0.1_s0.parquet` | 12.7 |
-| `Forecast_Correction_India/Other_Countries/results/surrogate/C6/snaive168_s0.parquet` | 14.8 |
-| `Forecast_Correction_India/Other_Countries/results/surrogate/C7/val_frac0.1_s0.parquet` | 14.3 |
-| `India_Grid_Study/data/interim/dsm_block.parquet` | 14.1 |
-| `India_Grid_Study/data/interim/npp_station_day.parquet` | 6.0 |
-| `India_Grid_Study/results/confirm/o2/preds/T1__bilstm.parquet` | 6.8 |
-| `India_Grid_Study/results/confirm/o2/preds/T1__bilstm_seeds.parquet` | 28.2 |
-| `India_Grid_Study/results/confirm/o2/preds/T1__lgbm.parquet` | 6.8 |
-| `India_Grid_Study/results/confirm/o2/preds/T1__lgbm_instant.parquet` | 6.6 |
-| `India_Grid_Study/results/confirm/o2/preds/T1__lgbm_seeds.parquet` | 28.4 |
-| `India_Grid_Study/results/confirm/o2/preds/T1__patchtst_seeds.parquet` | 17.7 |
-| `India_Grid_Study/results/confirm/o2/preds/T1__tft_seeds.parquet` | 17.7 |
-| `India_Grid_Study/results/confirm/o2/preds/T2__bilstm.parquet` | 6.8 |
-| `India_Grid_Study/results/confirm/o2/preds/T2__bilstm_seeds.parquet` | 28.3 |
-| `India_Grid_Study/results/confirm/o2/preds/T2__lgbm.parquet` | 6.8 |
-| `India_Grid_Study/results/confirm/o2/preds/T2__lgbm_instant.parquet` | 6.7 |
-| `India_Grid_Study/results/confirm/o2/preds/T2__lgbm_seeds.parquet` | 28.4 |
-| `India_Grid_Study/results/confirm/o2/preds/T2__patchtst_seeds.parquet` | 17.8 |
-| `India_Grid_Study/results/confirm/o2/preds/T2__tft_seeds.parquet` | 17.8 |
-| `India_Grid_Study/results/confirm/o2/preds/T3__bilstm.parquet` | 5.4 |
-| `India_Grid_Study/results/confirm/o2/preds/T3__bilstm_seeds.parquet` | 22.8 |
-| `India_Grid_Study/results/confirm/o2/preds/T3__lgbm.parquet` | 5.4 |
-| `India_Grid_Study/results/confirm/o2/preds/T3__lgbm_instant.parquet` | 5.3 |
-| `India_Grid_Study/results/confirm/o2/preds/T3__lgbm_seeds.parquet` | 23.0 |
-| `India_Grid_Study/results/confirm/o2/preds/T3__patchtst_seeds.parquet` | 14.9 |
-| `India_Grid_Study/results/confirm/o2/preds/T3__tft_seeds.parquet` | 14.9 |
-| `India_Grid_Study/results/confirm/o2/preds/T4__bilstm_seeds.parquet` | 10.4 |
-| `India_Grid_Study/results/confirm/o2/preds/T4__lgbm_seeds.parquet` | 10.4 |
-| `India_Grid_Study/results/confirm/o2/preds/T4__patchtst_seeds.parquet` | 6.5 |
-| `India_Grid_Study/results/confirm/o2/preds/T4__tft_seeds.parquet` | 6.6 |
-| `India_Grid_Study/results/confirm/o2/preds/T5__bilstm_seeds.parquet` | 11.9 |
-| `India_Grid_Study/results/confirm/o2/preds/T5__lgbm_seeds.parquet` | 12.1 |
-| `India_Grid_Study/results/confirm/o2/preds/T5__patchtst_seeds.parquet` | 7.7 |
-| `India_Grid_Study/results/confirm/o2/preds/T5__tft_seeds.parquet` | 7.7 |
-| `India_Grid_Study/results/confirm/o2/samples/T1.parquet` | 89.6 |
-| `India_Grid_Study/results/confirm/o2/samples/T1_instant.parquet` | 89.1 |
-| `India_Grid_Study/results/confirm/o2/samples/T2.parquet` | 90.4 |
-| `India_Grid_Study/results/confirm/o2/samples/T2_instant.parquet` | 89.9 |
-| `India_Grid_Study/results/confirm/o2/samples/T3.parquet` | 77.8 |
-| `India_Grid_Study/results/confirm/o2/samples/T3_instant.parquet` | 78.3 |
-| `India_Grid_Study/results/confirm/o2/samples/T4.parquet` | 38.2 |
-| `India_Grid_Study/results/confirm/o2/samples/T4_instant.parquet` | 38.3 |
-| `India_Grid_Study/results/confirm/o2/samples/T5.parquet` | 24.3 |
-| `India_Grid_Study/results/confirm/o2/samples/T5_instant.parquet` | 24.1 |
-| `India_Grid_Study/results/confirm/o3/preds/T1__fusion_fixed.parquet` | 13.1 |
-| `India_Grid_Study/results/confirm/o3/preds/T1__fusion_fixed_L1.parquet` | 13.1 |
-| `India_Grid_Study/results/confirm/o3/preds/T1__fusion_fixed_L1_seeds.parquet` | 55.3 |
-| `India_Grid_Study/results/confirm/o3/preds/T1__fusion_fixed_seeds.parquet` | 55.3 |
-| `India_Grid_Study/results/confirm/o3/preds/T1__market_only.parquet` | 13.1 |
-| `India_Grid_Study/results/confirm/o3/preds/T1__market_only_seeds.parquet` | 34.7 |
-| `India_Grid_Study/results/confirm/o3/preds/T1__mcag_fixed.parquet` | 13.1 |
-| `India_Grid_Study/results/confirm/o3/preds/T1__mcag_fixed_seeds.parquet` | 55.3 |
-| `India_Grid_Study/results/confirm/o3/preds/T1__mcag_instance.parquet` | 13.1 |
-| `India_Grid_Study/results/confirm/o3/preds/T1__mcag_instance_L1.parquet` | 13.1 |
-| `India_Grid_Study/results/confirm/o3/preds/T1__mcag_instance_L1_seeds.parquet` | 55.3 |
-| `India_Grid_Study/results/confirm/o3/preds/T1__mcag_instance_gates.parquet` | 7.9 |
-| `India_Grid_Study/results/confirm/o3/preds/T1__mcag_instance_seeds.parquet` | 55.3 |
-| `India_Grid_Study/results/confirm/o3/preds/T1__mcag_regime.parquet` | 13.1 |
-| `India_Grid_Study/results/confirm/o3/preds/T1__mcag_regime_seeds.parquet` | 55.3 |
-| `India_Grid_Study/results/confirm/o3/preds/T1__no_carbon.parquet` | 13.1 |
-| `India_Grid_Study/results/confirm/o3/preds/T1__no_carbon_seeds.parquet` | 34.7 |
-| `India_Grid_Study/results/confirm/o3/preds/T1__null_context.parquet` | 13.1 |
-| `India_Grid_Study/results/confirm/o3/preds/T1__null_context_seeds.parquet` | 34.7 |
-| `India_Grid_Study/results/confirm/o3/preds/T1__permuted_context.parquet` | 13.1 |
-| `India_Grid_Study/results/confirm/o3/preds/T1__permuted_context_seeds.parquet` | 34.7 |
-| `India_Grid_Study/results/confirm/o3/preds/T2__fusion_fixed.parquet` | 13.1 |
-| `India_Grid_Study/results/confirm/o3/preds/T2__fusion_fixed_L1.parquet` | 13.1 |
-| `India_Grid_Study/results/confirm/o3/preds/T2__fusion_fixed_L1_seeds.parquet` | 55.4 |
-| `India_Grid_Study/results/confirm/o3/preds/T2__fusion_fixed_seeds.parquet` | 55.4 |
-| `India_Grid_Study/results/confirm/o3/preds/T2__market_only.parquet` | 13.1 |
-| `India_Grid_Study/results/confirm/o3/preds/T2__market_only_seeds.parquet` | 34.8 |
-| `India_Grid_Study/results/confirm/o3/preds/T2__mcag_fixed.parquet` | 13.1 |
-| `India_Grid_Study/results/confirm/o3/preds/T2__mcag_fixed_seeds.parquet` | 55.4 |
-| `India_Grid_Study/results/confirm/o3/preds/T2__mcag_instance.parquet` | 13.1 |
-| `India_Grid_Study/results/confirm/o3/preds/T2__mcag_instance_L1.parquet` | 13.1 |
-| `India_Grid_Study/results/confirm/o3/preds/T2__mcag_instance_L1_seeds.parquet` | 55.4 |
-| `India_Grid_Study/results/confirm/o3/preds/T2__mcag_instance_gates.parquet` | 7.9 |
-| `India_Grid_Study/results/confirm/o3/preds/T2__mcag_instance_seeds.parquet` | 55.4 |
-| `India_Grid_Study/results/confirm/o3/preds/T2__mcag_regime.parquet` | 13.1 |
-| `India_Grid_Study/results/confirm/o3/preds/T2__mcag_regime_seeds.parquet` | 55.4 |
-| `India_Grid_Study/results/confirm/o3/preds/T2__no_carbon.parquet` | 13.1 |
-| `India_Grid_Study/results/confirm/o3/preds/T2__no_carbon_seeds.parquet` | 34.8 |
-| `India_Grid_Study/results/confirm/o3/preds/T2__null_context.parquet` | 13.1 |
-| `India_Grid_Study/results/confirm/o3/preds/T2__null_context_seeds.parquet` | 34.8 |
-| `India_Grid_Study/results/confirm/o3/preds/T2__permuted_context.parquet` | 13.1 |
-| `India_Grid_Study/results/confirm/o3/preds/T2__permuted_context_seeds.parquet` | 34.8 |
-| `India_Grid_Study/results/confirm/o3/preds/T3__fusion_fixed.parquet` | 10.4 |
-| `India_Grid_Study/results/confirm/o3/preds/T3__fusion_fixed_seeds.parquet` | 44.7 |
-| `India_Grid_Study/results/confirm/o3/preds/T3__mcag_fixed.parquet` | 10.4 |
-| `India_Grid_Study/results/confirm/o3/preds/T3__mcag_fixed_seeds.parquet` | 44.7 |
-| `India_Grid_Study/results/confirm/o3/preds/T3__mcag_instance.parquet` | 10.4 |
-| `India_Grid_Study/results/confirm/o3/preds/T3__mcag_instance_gates.parquet` | 6.3 |
-| `India_Grid_Study/results/confirm/o3/preds/T3__mcag_instance_seeds.parquet` | 44.7 |
-| `India_Grid_Study/results/confirm/o3/preds/T3__mcag_regime.parquet` | 10.4 |
-| `India_Grid_Study/results/confirm/o3/preds/T3__mcag_regime_seeds.parquet` | 44.7 |
-| `India_Grid_Study/results/confirm/o3/preds/T3__no_carbon.parquet` | 10.4 |
-| `India_Grid_Study/results/confirm/o3/preds/T3__no_carbon_seeds.parquet` | 28.4 |
-| `India_Grid_Study/results/confirm/o3/preds/T4__fusion_fixed_seeds.parquet` | 20.5 |
-| `India_Grid_Study/results/confirm/o3/preds/T4__mcag_fixed_seeds.parquet` | 20.5 |
-| `India_Grid_Study/results/confirm/o3/preds/T4__mcag_instance_seeds.parquet` | 20.5 |
-| `India_Grid_Study/results/confirm/o3/preds/T4__mcag_regime_seeds.parquet` | 20.5 |
-| `India_Grid_Study/results/confirm/o3/preds/T5__fusion_fixed_seeds.parquet` | 23.4 |
-| `India_Grid_Study/results/confirm/o3/preds/T5__market_only_seeds.parquet` | 14.7 |
-| `India_Grid_Study/results/confirm/o3/preds/T5__mcag_fixed_seeds.parquet` | 23.4 |
-| `India_Grid_Study/results/confirm/o3/preds/T5__mcag_instance_seeds.parquet` | 23.4 |
-| `India_Grid_Study/results/confirm/o3/preds/T5__mcag_regime_seeds.parquet` | 23.4 |
-| `India_Grid_Study/results/confirm/o3/preds/T5__null_context_seeds.parquet` | 14.7 |
-| `India_Grid_Study/results/confirm/o3/preds/T5__permuted_context_seeds.parquet` | 14.7 |
-| `India_Grid_Study/results/confirm2/o2/preds/T1__bitcn_seeds.parquet` | 17.7 |
-| `India_Grid_Study/results/confirm2/o2/preds/T1__ens_online.parquet` | 6.6 |
-| `India_Grid_Study/results/confirm2/o2/preds/T1__ens_stack.parquet` | 6.6 |
-| `India_Grid_Study/results/confirm2/o2/preds/T1__ens_top.parquet` | 6.6 |
-| `India_Grid_Study/results/confirm2/o2/preds/T1__nbeatsx_seeds.parquet` | 17.7 |
-| `India_Grid_Study/results/confirm2/o2/preds/T1__nhits_seeds.parquet` | 17.7 |
-| `India_Grid_Study/results/confirm2/o2/preds/T1__tide_seeds.parquet` | 17.7 |
-| `India_Grid_Study/results/confirm2/o2/preds/T1__xgb.parquet` | 6.8 |
-| `India_Grid_Study/results/confirm2/o2/preds/T1__xgb_seeds.parquet` | 28.4 |
-| `India_Grid_Study/results/confirm2/o2/preds/T2__bitcn_seeds.parquet` | 17.8 |
-| `India_Grid_Study/results/confirm2/o2/preds/T2__ens_online.parquet` | 6.6 |
-| `India_Grid_Study/results/confirm2/o2/preds/T2__ens_stack.parquet` | 6.6 |
-| `India_Grid_Study/results/confirm2/o2/preds/T2__ens_top.parquet` | 6.6 |
-| `India_Grid_Study/results/confirm2/o2/preds/T2__nbeatsx_seeds.parquet` | 17.8 |
-| `India_Grid_Study/results/confirm2/o2/preds/T2__nhits_seeds.parquet` | 17.8 |
-| `India_Grid_Study/results/confirm2/o2/preds/T2__tide_seeds.parquet` | 17.8 |
-| `India_Grid_Study/results/confirm2/o2/preds/T2__xgb.parquet` | 6.8 |
-| `India_Grid_Study/results/confirm2/o2/preds/T2__xgb_seeds.parquet` | 28.4 |
-| `India_Grid_Study/results/confirm2/o2/preds/T3__bitcn_seeds.parquet` | 14.9 |
-| `India_Grid_Study/results/confirm2/o2/preds/T3__ens_online.parquet` | 5.3 |
-| `India_Grid_Study/results/confirm2/o2/preds/T3__ens_stack.parquet` | 5.3 |
-| `India_Grid_Study/results/confirm2/o2/preds/T3__ens_top.parquet` | 5.3 |
-| `India_Grid_Study/results/confirm2/o2/preds/T3__nbeatsx_seeds.parquet` | 14.9 |
-| `India_Grid_Study/results/confirm2/o2/preds/T3__nhits_seeds.parquet` | 14.9 |
-| `India_Grid_Study/results/confirm2/o2/preds/T3__tide_seeds.parquet` | 14.9 |
-| `India_Grid_Study/results/confirm2/o2/preds/T3__xgb.parquet` | 5.4 |
-| `India_Grid_Study/results/confirm2/o2/preds/T3__xgb_seeds.parquet` | 23.0 |
-| `India_Grid_Study/results/confirm2/o2/preds/T4__bitcn_seeds.parquet` | 6.6 |
-| `India_Grid_Study/results/confirm2/o2/preds/T4__nbeatsx_seeds.parquet` | 6.6 |
-| `India_Grid_Study/results/confirm2/o2/preds/T4__nhits_seeds.parquet` | 6.6 |
-| `India_Grid_Study/results/confirm2/o2/preds/T4__tide_seeds.parquet` | 6.6 |
-| `India_Grid_Study/results/confirm2/o2/preds/T4__xgb_seeds.parquet` | 10.5 |
-| `India_Grid_Study/results/confirm2/o2/preds/T5__bitcn_seeds.parquet` | 7.7 |
-| `India_Grid_Study/results/confirm2/o2/preds/T5__nbeatsx_seeds.parquet` | 7.7 |
-| `India_Grid_Study/results/confirm2/o2/preds/T5__nhits_seeds.parquet` | 7.7 |
-| `India_Grid_Study/results/confirm2/o2/preds/T5__tide_seeds.parquet` | 7.7 |
-| `India_Grid_Study/results/confirm2/o2/preds/T5__xgb_seeds.parquet` | 12.1 |
-| `India_Grid_Study/results/confirm2/o3/preds/T1__fusion_fixed_sd.parquet` | 13.1 |
-| `India_Grid_Study/results/confirm2/o3/preds/T1__fusion_fixed_sd_L1.parquet` | 13.1 |
-| `India_Grid_Study/results/confirm2/o3/preds/T1__fusion_fixed_sd_L1_seeds.parquet` | 55.3 |
-| `India_Grid_Study/results/confirm2/o3/preds/T1__fusion_fixed_sd_seeds.parquet` | 55.3 |
-| `India_Grid_Study/results/confirm2/o3/preds/T1__mcag_instance_sd.parquet` | 13.1 |
-| `India_Grid_Study/results/confirm2/o3/preds/T1__mcag_instance_sd_L1.parquet` | 13.1 |
-| `India_Grid_Study/results/confirm2/o3/preds/T1__mcag_instance_sd_L1_seeds.parquet` | 55.3 |
-| `India_Grid_Study/results/confirm2/o3/preds/T1__mcag_instance_sd_gates.parquet` | 7.9 |
-| `India_Grid_Study/results/confirm2/o3/preds/T1__mcag_instance_sd_seeds.parquet` | 55.3 |
-| `India_Grid_Study/results/confirm2/o3/preds/T2__fusion_fixed_sd.parquet` | 13.1 |
-| `India_Grid_Study/results/confirm2/o3/preds/T2__fusion_fixed_sd_L1.parquet` | 13.1 |
-| `India_Grid_Study/results/confirm2/o3/preds/T2__fusion_fixed_sd_L1_seeds.parquet` | 55.4 |
-| `India_Grid_Study/results/confirm2/o3/preds/T2__fusion_fixed_sd_seeds.parquet` | 55.4 |
-| `India_Grid_Study/results/confirm2/o3/preds/T2__mcag_instance_sd.parquet` | 13.1 |
-| `India_Grid_Study/results/confirm2/o3/preds/T2__mcag_instance_sd_L1.parquet` | 13.1 |
-| `India_Grid_Study/results/confirm2/o3/preds/T2__mcag_instance_sd_L1_seeds.parquet` | 55.4 |
-| `India_Grid_Study/results/confirm2/o3/preds/T2__mcag_instance_sd_gates.parquet` | 7.9 |
-| `India_Grid_Study/results/confirm2/o3/preds/T2__mcag_instance_sd_seeds.parquet` | 55.4 |
-| `India_Grid_Study/results/confirm2/o3/preds/T3__fusion_fixed_sd.parquet` | 10.4 |
-| `India_Grid_Study/results/confirm2/o3/preds/T3__fusion_fixed_sd_seeds.parquet` | 44.7 |
-| `India_Grid_Study/results/confirm2/o3/preds/T3__mcag_instance_sd.parquet` | 10.4 |
-| `India_Grid_Study/results/confirm2/o3/preds/T3__mcag_instance_sd_gates.parquet` | 6.3 |
-| `India_Grid_Study/results/confirm2/o3/preds/T3__mcag_instance_sd_seeds.parquet` | 44.7 |
-| `India_Grid_Study/results/confirm2/o3/preds/T4__fusion_fixed_sd_seeds.parquet` | 20.5 |
-| `India_Grid_Study/results/confirm2/o3/preds/T4__mcag_instance_sd_seeds.parquet` | 20.5 |
-| `India_Grid_Study/results/confirm2/o3/preds/T5__fusion_fixed_sd_seeds.parquet` | 23.4 |
-| `India_Grid_Study/results/confirm2/o3/preds/T5__mcag_instance_sd_seeds.parquet` | 23.4 |
-| `India_Grid_Study/results/dev/o2/preds/T1__bilstm.parquet` | 5.6 |
-| `India_Grid_Study/results/dev/o2/preds/T1__bilstm_seeds.parquet` | 23.7 |
-| `India_Grid_Study/results/dev/o2/preds/T1__lgbm.parquet` | 5.6 |
-| `India_Grid_Study/results/dev/o2/preds/T1__lgbm_instant.parquet` | 5.5 |
-| `India_Grid_Study/results/dev/o2/preds/T1__lgbm_seeds.parquet` | 23.8 |
-| `India_Grid_Study/results/dev/o2/preds/T1__patchtst_seeds.parquet` | 15.3 |
-| `India_Grid_Study/results/dev/o2/preds/T1__tft_seeds.parquet` | 15.3 |
-| `India_Grid_Study/results/dev/o2/preds/T2__bilstm.parquet` | 5.6 |
-| `India_Grid_Study/results/dev/o2/preds/T2__bilstm_seeds.parquet` | 23.7 |
-| `India_Grid_Study/results/dev/o2/preds/T2__lgbm.parquet` | 5.6 |
-| `India_Grid_Study/results/dev/o2/preds/T2__lgbm_instant.parquet` | 5.5 |
-| `India_Grid_Study/results/dev/o2/preds/T2__lgbm_seeds.parquet` | 23.8 |
-| `India_Grid_Study/results/dev/o2/preds/T2__patchtst_seeds.parquet` | 15.4 |
-| `India_Grid_Study/results/dev/o2/preds/T2__tft_seeds.parquet` | 15.4 |
-| `India_Grid_Study/results/dev/o2/preds/T3__bilstm_seeds.parquet` | 19.2 |
-| `India_Grid_Study/results/dev/o2/preds/T3__lgbm_seeds.parquet` | 19.3 |
-| `India_Grid_Study/results/dev/o2/preds/T3__patchtst_seeds.parquet` | 13.0 |
-| `India_Grid_Study/results/dev/o2/preds/T3__tft_seeds.parquet` | 13.0 |
-| `India_Grid_Study/results/dev/o2/preds/T4__bilstm_seeds.parquet` | 11.5 |
-| `India_Grid_Study/results/dev/o2/preds/T4__lgbm_seeds.parquet` | 11.5 |
-| `India_Grid_Study/results/dev/o2/preds/T4__patchtst_seeds.parquet` | 7.3 |
-| `India_Grid_Study/results/dev/o2/preds/T4__tft_seeds.parquet` | 7.4 |
-| `India_Grid_Study/results/dev/o2/preds/T5__bilstm_seeds.parquet` | 10.2 |
-| `India_Grid_Study/results/dev/o2/preds/T5__lgbm_seeds.parquet` | 10.3 |
-| `India_Grid_Study/results/dev/o2/preds/T5__patchtst_seeds.parquet` | 6.3 |
-| `India_Grid_Study/results/dev/o2/preds/T5__tft_seeds.parquet` | 6.3 |
-| `India_Grid_Study/results/dev/o2/samples/T1.parquet` | 72.0 |
-| `India_Grid_Study/results/dev/o2/samples/T1_instant.parquet` | 72.4 |
-| `India_Grid_Study/results/dev/o2/samples/T2.parquet` | 72.5 |
-| `India_Grid_Study/results/dev/o2/samples/T2_instant.parquet` | 73.1 |
-| `India_Grid_Study/results/dev/o2/samples/T3.parquet` | 64.9 |
-| `India_Grid_Study/results/dev/o2/samples/T3_instant.parquet` | 64.9 |
-| `India_Grid_Study/results/dev/o2/samples/T4.parquet` | 33.0 |
-| `India_Grid_Study/results/dev/o2/samples/T4_instant.parquet` | 33.1 |
-| `India_Grid_Study/results/dev/o2/samples/T5.parquet` | 19.1 |
-| `India_Grid_Study/results/dev/o2/samples/T5_instant.parquet` | 19.1 |
-| `India_Grid_Study/results/dev/o3/preds/T1__fusion_fixed.parquet` | 10.8 |
-| `India_Grid_Study/results/dev/o3/preds/T1__fusion_fixed_L1.parquet` | 10.8 |
-| `India_Grid_Study/results/dev/o3/preds/T1__fusion_fixed_L1_seeds.parquet` | 46.4 |
-| `India_Grid_Study/results/dev/o3/preds/T1__fusion_fixed_seeds.parquet` | 46.4 |
-| `India_Grid_Study/results/dev/o3/preds/T1__market_only.parquet` | 10.8 |
-| `India_Grid_Study/results/dev/o3/preds/T1__market_only_seeds.parquet` | 29.4 |
-| `India_Grid_Study/results/dev/o3/preds/T1__mcag_fixed.parquet` | 10.8 |
-| `India_Grid_Study/results/dev/o3/preds/T1__mcag_fixed_seeds.parquet` | 46.4 |
-| `India_Grid_Study/results/dev/o3/preds/T1__mcag_instance.parquet` | 10.8 |
-| `India_Grid_Study/results/dev/o3/preds/T1__mcag_instance_L1.parquet` | 10.8 |
-| `India_Grid_Study/results/dev/o3/preds/T1__mcag_instance_L1_seeds.parquet` | 46.4 |
-| `India_Grid_Study/results/dev/o3/preds/T1__mcag_instance_gates.parquet` | 6.5 |
-| `India_Grid_Study/results/dev/o3/preds/T1__mcag_instance_seeds.parquet` | 46.4 |
-| `India_Grid_Study/results/dev/o3/preds/T1__mcag_regime.parquet` | 10.8 |
-| `India_Grid_Study/results/dev/o3/preds/T1__mcag_regime_seeds.parquet` | 46.4 |
-| `India_Grid_Study/results/dev/o3/preds/T1__no_carbon.parquet` | 10.8 |
-| `India_Grid_Study/results/dev/o3/preds/T1__no_carbon_seeds.parquet` | 29.4 |
-| `India_Grid_Study/results/dev/o3/preds/T1__null_context.parquet` | 10.8 |
-| `India_Grid_Study/results/dev/o3/preds/T1__null_context_seeds.parquet` | 29.4 |
-| `India_Grid_Study/results/dev/o3/preds/T1__permuted_context.parquet` | 10.8 |
-| `India_Grid_Study/results/dev/o3/preds/T1__permuted_context_seeds.parquet` | 29.4 |
-| `India_Grid_Study/results/dev/o3/preds/T2__fusion_fixed.parquet` | 10.8 |
-| `India_Grid_Study/results/dev/o3/preds/T2__fusion_fixed_L1.parquet` | 10.8 |
-| `India_Grid_Study/results/dev/o3/preds/T2__fusion_fixed_L1_seeds.parquet` | 46.4 |
-| `India_Grid_Study/results/dev/o3/preds/T2__fusion_fixed_seeds.parquet` | 46.4 |
-| `India_Grid_Study/results/dev/o3/preds/T2__market_only.parquet` | 10.8 |
-| `India_Grid_Study/results/dev/o3/preds/T2__market_only_seeds.parquet` | 29.4 |
-| `India_Grid_Study/results/dev/o3/preds/T2__mcag_fixed.parquet` | 10.8 |
-| `India_Grid_Study/results/dev/o3/preds/T2__mcag_fixed_seeds.parquet` | 46.4 |
-| `India_Grid_Study/results/dev/o3/preds/T2__mcag_instance.parquet` | 10.8 |
-| `India_Grid_Study/results/dev/o3/preds/T2__mcag_instance_L1.parquet` | 10.8 |
-| `India_Grid_Study/results/dev/o3/preds/T2__mcag_instance_L1_seeds.parquet` | 46.4 |
-| `India_Grid_Study/results/dev/o3/preds/T2__mcag_instance_gates.parquet` | 6.5 |
-| `India_Grid_Study/results/dev/o3/preds/T2__mcag_instance_seeds.parquet` | 46.4 |
-| `India_Grid_Study/results/dev/o3/preds/T2__mcag_regime.parquet` | 10.8 |
-| `India_Grid_Study/results/dev/o3/preds/T2__mcag_regime_seeds.parquet` | 46.4 |
-| `India_Grid_Study/results/dev/o3/preds/T2__no_carbon.parquet` | 10.8 |
-| `India_Grid_Study/results/dev/o3/preds/T2__no_carbon_seeds.parquet` | 29.4 |
-| `India_Grid_Study/results/dev/o3/preds/T2__null_context.parquet` | 10.8 |
-| `India_Grid_Study/results/dev/o3/preds/T2__null_context_seeds.parquet` | 29.4 |
-| `India_Grid_Study/results/dev/o3/preds/T2__permuted_context.parquet` | 10.8 |
-| `India_Grid_Study/results/dev/o3/preds/T2__permuted_context_seeds.parquet` | 29.4 |
-| `India_Grid_Study/results/dev/o3/preds/T3__fusion_fixed.parquet` | 8.5 |
-| `India_Grid_Study/results/dev/o3/preds/T3__fusion_fixed_seeds.parquet` | 37.6 |
-| `India_Grid_Study/results/dev/o3/preds/T3__mcag_fixed.parquet` | 8.5 |
-| `India_Grid_Study/results/dev/o3/preds/T3__mcag_fixed_seeds.parquet` | 37.6 |
-| `India_Grid_Study/results/dev/o3/preds/T3__mcag_instance.parquet` | 8.5 |
-| `India_Grid_Study/results/dev/o3/preds/T3__mcag_instance_gates.parquet` | 5.2 |
-| `India_Grid_Study/results/dev/o3/preds/T3__mcag_instance_seeds.parquet` | 37.6 |
-| `India_Grid_Study/results/dev/o3/preds/T3__mcag_regime.parquet` | 8.5 |
-| `India_Grid_Study/results/dev/o3/preds/T3__mcag_regime_seeds.parquet` | 37.6 |
-| `India_Grid_Study/results/dev/o3/preds/T3__no_carbon.parquet` | 8.5 |
-| `India_Grid_Study/results/dev/o3/preds/T3__no_carbon_seeds.parquet` | 24.1 |
-| `India_Grid_Study/results/dev/o3/preds/T4__fusion_fixed_seeds.parquet` | 22.6 |
-| `India_Grid_Study/results/dev/o3/preds/T4__mcag_fixed_seeds.parquet` | 22.6 |
-| `India_Grid_Study/results/dev/o3/preds/T4__mcag_instance_seeds.parquet` | 22.6 |
-| `India_Grid_Study/results/dev/o3/preds/T4__mcag_regime_seeds.parquet` | 22.6 |
-| `India_Grid_Study/results/dev/o3/preds/T5__fusion_fixed_seeds.parquet` | 20.0 |
-| `India_Grid_Study/results/dev/o3/preds/T5__market_only_seeds.parquet` | 12.1 |
-| `India_Grid_Study/results/dev/o3/preds/T5__mcag_fixed_seeds.parquet` | 20.0 |
-| `India_Grid_Study/results/dev/o3/preds/T5__mcag_instance_seeds.parquet` | 20.0 |
-| `India_Grid_Study/results/dev/o3/preds/T5__mcag_regime_seeds.parquet` | 20.0 |
-| `India_Grid_Study/results/dev/o3/preds/T5__null_context_seeds.parquet` | 12.1 |
-| `India_Grid_Study/results/dev/o3/preds/T5__permuted_context_seeds.parquet` | 12.1 |
-| `India_Grid_Study/results/dev2/o2/preds/T1__bitcn_seeds.parquet` | 15.3 |
-| `India_Grid_Study/results/dev2/o2/preds/T1__ens_online.parquet` | 5.4 |
-| `India_Grid_Study/results/dev2/o2/preds/T1__ens_stack.parquet` | 5.4 |
-| `India_Grid_Study/results/dev2/o2/preds/T1__ens_top.parquet` | 5.4 |
-| `India_Grid_Study/results/dev2/o2/preds/T1__nbeatsx_seeds.parquet` | 15.3 |
-| `India_Grid_Study/results/dev2/o2/preds/T1__nhits_seeds.parquet` | 15.3 |
-| `India_Grid_Study/results/dev2/o2/preds/T1__tide_seeds.parquet` | 15.3 |
-| `India_Grid_Study/results/dev2/o2/preds/T1__xgb.parquet` | 5.6 |
-| `India_Grid_Study/results/dev2/o2/preds/T1__xgb_seeds.parquet` | 23.8 |
-| `India_Grid_Study/results/dev2/o2/preds/T2__bitcn_seeds.parquet` | 15.4 |
-| `India_Grid_Study/results/dev2/o2/preds/T2__ens_online.parquet` | 5.4 |
-| `India_Grid_Study/results/dev2/o2/preds/T2__ens_stack.parquet` | 5.4 |
-| `India_Grid_Study/results/dev2/o2/preds/T2__ens_top.parquet` | 5.4 |
-| `India_Grid_Study/results/dev2/o2/preds/T2__nbeatsx_seeds.parquet` | 15.4 |
-| `India_Grid_Study/results/dev2/o2/preds/T2__nhits_seeds.parquet` | 15.4 |
-| `India_Grid_Study/results/dev2/o2/preds/T2__tide_seeds.parquet` | 15.4 |
-| `India_Grid_Study/results/dev2/o2/preds/T2__xgb.parquet` | 5.6 |
-| `India_Grid_Study/results/dev2/o2/preds/T2__xgb_seeds.parquet` | 23.8 |
-| `India_Grid_Study/results/dev2/o2/preds/T3__bitcn_seeds.parquet` | 13.0 |
-| `India_Grid_Study/results/dev2/o2/preds/T3__nbeatsx_seeds.parquet` | 13.0 |
-| `India_Grid_Study/results/dev2/o2/preds/T3__nhits_seeds.parquet` | 13.0 |
-| `India_Grid_Study/results/dev2/o2/preds/T3__tide_seeds.parquet` | 13.0 |
-| `India_Grid_Study/results/dev2/o2/preds/T3__xgb_seeds.parquet` | 19.3 |
-| `India_Grid_Study/results/dev2/o2/preds/T4__bitcn_seeds.parquet` | 7.4 |
-| `India_Grid_Study/results/dev2/o2/preds/T4__nbeatsx_seeds.parquet` | 7.4 |
-| `India_Grid_Study/results/dev2/o2/preds/T4__nhits_seeds.parquet` | 7.4 |
-| `India_Grid_Study/results/dev2/o2/preds/T4__tide_seeds.parquet` | 7.4 |
-| `India_Grid_Study/results/dev2/o2/preds/T4__xgb_seeds.parquet` | 11.5 |
-| `India_Grid_Study/results/dev2/o2/preds/T5__bitcn_seeds.parquet` | 6.3 |
-| `India_Grid_Study/results/dev2/o2/preds/T5__nbeatsx_seeds.parquet` | 6.3 |
-| `India_Grid_Study/results/dev2/o2/preds/T5__nhits_seeds.parquet` | 6.3 |
-| `India_Grid_Study/results/dev2/o2/preds/T5__tide_seeds.parquet` | 6.3 |
-| `India_Grid_Study/results/dev2/o2/preds/T5__xgb_seeds.parquet` | 10.3 |
-| `India_Grid_Study/results/dev2/o3/preds/T1__fusion_fixed_sd.parquet` | 10.8 |
-| `India_Grid_Study/results/dev2/o3/preds/T1__fusion_fixed_sd_L1.parquet` | 10.8 |
-| `India_Grid_Study/results/dev2/o3/preds/T1__fusion_fixed_sd_L1_seeds.parquet` | 46.4 |
-| `India_Grid_Study/results/dev2/o3/preds/T1__fusion_fixed_sd_seeds.parquet` | 46.4 |
-| `India_Grid_Study/results/dev2/o3/preds/T1__mcag_instance_sd.parquet` | 10.8 |
-| `India_Grid_Study/results/dev2/o3/preds/T1__mcag_instance_sd_L1.parquet` | 10.8 |
-| `India_Grid_Study/results/dev2/o3/preds/T1__mcag_instance_sd_L1_seeds.parquet` | 46.4 |
-| `India_Grid_Study/results/dev2/o3/preds/T1__mcag_instance_sd_gates.parquet` | 6.5 |
-| `India_Grid_Study/results/dev2/o3/preds/T1__mcag_instance_sd_seeds.parquet` | 46.4 |
-| `India_Grid_Study/results/dev2/o3/preds/T2__fusion_fixed_sd.parquet` | 10.8 |
-| `India_Grid_Study/results/dev2/o3/preds/T2__fusion_fixed_sd_L1.parquet` | 10.8 |
-| `India_Grid_Study/results/dev2/o3/preds/T2__fusion_fixed_sd_L1_seeds.parquet` | 46.4 |
-| `India_Grid_Study/results/dev2/o3/preds/T2__fusion_fixed_sd_seeds.parquet` | 46.4 |
-| `India_Grid_Study/results/dev2/o3/preds/T2__mcag_instance_sd.parquet` | 10.8 |
-| `India_Grid_Study/results/dev2/o3/preds/T2__mcag_instance_sd_L1.parquet` | 10.8 |
-| `India_Grid_Study/results/dev2/o3/preds/T2__mcag_instance_sd_L1_seeds.parquet` | 46.4 |
-| `India_Grid_Study/results/dev2/o3/preds/T2__mcag_instance_sd_gates.parquet` | 6.5 |
-| `India_Grid_Study/results/dev2/o3/preds/T2__mcag_instance_sd_seeds.parquet` | 46.4 |
-| `India_Grid_Study/results/dev2/o3/preds/T3__fusion_fixed_sd.parquet` | 8.5 |
-| `India_Grid_Study/results/dev2/o3/preds/T3__fusion_fixed_sd_seeds.parquet` | 37.6 |
-| `India_Grid_Study/results/dev2/o3/preds/T3__mcag_instance_sd.parquet` | 8.5 |
-| `India_Grid_Study/results/dev2/o3/preds/T3__mcag_instance_sd_gates.parquet` | 5.2 |
-| `India_Grid_Study/results/dev2/o3/preds/T3__mcag_instance_sd_seeds.parquet` | 37.6 |
-| `India_Grid_Study/results/dev2/o3/preds/T4__fusion_fixed_sd_seeds.parquet` | 22.6 |
-| `India_Grid_Study/results/dev2/o3/preds/T4__mcag_instance_sd_seeds.parquet` | 22.6 |
-| `India_Grid_Study/results/dev2/o3/preds/T5__fusion_fixed_sd_seeds.parquet` | 20.0 |
-| `India_Grid_Study/results/dev2/o3/preds/T5__mcag_instance_sd_seeds.parquet` | 20.0 |
-| `India_Grid_Study/results/rebuild/data/interim/dsm_block.parquet` | 14.1 |
-| `India_Grid_Study/results/rebuild/data/interim/npp_station_day.parquet` | 6.0 |
-| `India_Grid_Study/results/rebuild/data/processed/refused8_state_day.parquet` | 15.2 |
+How to use them:
+
+1. Download the part that holds the file you need (column *Part* below), or all four.
+2. Check each download against `CHECKSUMS_SHA256.txt` from the same record (`sha256sum -c CHECKSUMS_SHA256.txt --ignore-missing`, or `Get-FileHash -Algorithm SHA256 <file>` in PowerShell).
+3. Unzip the parts into the folder that holds this repository's top folder. Every part is a complete ZIP on its own and unpacks under `RE-FUSED/`, so each file lands at the path listed here, next to the code and results from `RE-FUSED_Code_Results_Logs_v1.0.zip` (or a clone of this repository renamed `RE-FUSED`).
+4. Inside each part, `RE-FUSED/LARGE_RESULTS_partK_SHA256.txt` gives the SHA-256 of every file in it.
+
+| File | MB | Part |
+|---|---|---|
+| `Forecast_Correction_India/results/india/confirm/prob_energy/prob_energy_s0.parquet` | 7.9 | 1 |
+| `Forecast_Correction_India/results/india/confirm/prob_energy/prob_energy_s1.parquet` | 8.0 | 1 |
+| `Forecast_Correction_India/results/india/confirm/prob_energy/prob_energy_s2.parquet` | 8.0 | 1 |
+| `Forecast_Correction_India/Other_Countries/results/confirm/C3/lag48_s0.parquet` | 12.1 | 1 |
+| `Forecast_Correction_India/Other_Countries/results/confirm/C3/lag48_s1.parquet` | 12.0 | 1 |
+| `Forecast_Correction_India/Other_Countries/results/confirm/C3/snaive168_s0.parquet` | 11.6 | 1 |
+| `Forecast_Correction_India/Other_Countries/results/confirm/C3/snaive168_s1.parquet` | 11.7 | 1 |
+| `Forecast_Correction_India/Other_Countries/results/confirm/C3/tso_s0.parquet` | 11.8 | 1 |
+| `Forecast_Correction_India/Other_Countries/results/confirm/C3/tso_s1.parquet` | 11.8 | 1 |
+| `Forecast_Correction_India/Other_Countries/results/confirm/C4/lag48_s0.parquet` | 9.5 | 1 |
+| `Forecast_Correction_India/Other_Countries/results/confirm/C4/lag48_s1.parquet` | 9.5 | 1 |
+| `Forecast_Correction_India/Other_Countries/results/confirm/C4/snaive168_s0.parquet` | 8.5 | 1 |
+| `Forecast_Correction_India/Other_Countries/results/confirm/C4/snaive168_s1.parquet` | 8.7 | 1 |
+| `Forecast_Correction_India/Other_Countries/results/confirm/C4/tso_s0.parquet` | 9.2 | 1 |
+| `Forecast_Correction_India/Other_Countries/results/confirm/C4/tso_s1.parquet` | 9.3 | 1 |
+| `Forecast_Correction_India/Other_Countries/results/confirm/C5/oof_train_val_s0.parquet` | 11.1 | 1 |
+| `Forecast_Correction_India/Other_Countries/results/confirm/C5/oof_train_val_s1.parquet` | 11.1 | 1 |
+| `Forecast_Correction_India/Other_Countries/results/confirm/C5/val_frac0.1_s0.parquet` | 10.8 | 1 |
+| `Forecast_Correction_India/Other_Countries/results/confirm/C5/val_frac0.1_s1.parquet` | 11.1 | 1 |
+| `Forecast_Correction_India/Other_Countries/results/confirm/C5/val_frac0.25_s0.parquet` | 11.0 | 1 |
+| `Forecast_Correction_India/Other_Countries/results/confirm/C5/val_frac0.25_s1.parquet` | 11.0 | 1 |
+| `Forecast_Correction_India/Other_Countries/results/confirm/C6/lag48_s0.parquet` | 13.8 | 1 |
+| `Forecast_Correction_India/Other_Countries/results/confirm/C6/lag48_s1.parquet` | 14.1 | 1 |
+| `Forecast_Correction_India/Other_Countries/results/confirm/C6/snaive168_s0.parquet` | 13.0 | 1 |
+| `Forecast_Correction_India/Other_Countries/results/confirm/C6/snaive168_s1.parquet` | 12.9 | 1 |
+| `Forecast_Correction_India/Other_Countries/results/confirm/C7/oof_train_val_s0.parquet` | 8.9 | 1 |
+| `Forecast_Correction_India/Other_Countries/results/confirm/C7/oof_train_val_s1.parquet` | 9.0 | 1 |
+| `Forecast_Correction_India/Other_Countries/results/confirm/C7/val_frac0.1_s0.parquet` | 10.8 | 1 |
+| `Forecast_Correction_India/Other_Countries/results/confirm/C7/val_frac0.1_s1.parquet` | 12.0 | 1 |
+| `Forecast_Correction_India/Other_Countries/results/confirm/C7/val_frac0.25_s0.parquet` | 12.1 | 1 |
+| `Forecast_Correction_India/Other_Countries/results/confirm/C7/val_frac0.25_s1.parquet` | 11.3 | 1 |
+| `Forecast_Correction_India/Other_Countries/results/confirm_sensitivity/C3/lag48_s0.parquet` | 12.1 | 1 |
+| `Forecast_Correction_India/Other_Countries/results/confirm_sensitivity/C3/lag48_s1.parquet` | 12.1 | 1 |
+| `Forecast_Correction_India/Other_Countries/results/confirm_sensitivity/C3/snaive168_s0.parquet` | 11.6 | 1 |
+| `Forecast_Correction_India/Other_Countries/results/confirm_sensitivity/C3/snaive168_s1.parquet` | 11.6 | 1 |
+| `Forecast_Correction_India/Other_Countries/results/confirm_sensitivity/C3/tso_s0.parquet` | 11.8 | 1 |
+| `Forecast_Correction_India/Other_Countries/results/confirm_sensitivity/C3/tso_s1.parquet` | 11.8 | 1 |
+| `Forecast_Correction_India/Other_Countries/results/confirm_sensitivity/C4/lag48_s0.parquet` | 9.5 | 1 |
+| `Forecast_Correction_India/Other_Countries/results/confirm_sensitivity/C4/lag48_s1.parquet` | 9.4 | 1 |
+| `Forecast_Correction_India/Other_Countries/results/confirm_sensitivity/C4/snaive168_s0.parquet` | 8.5 | 1 |
+| `Forecast_Correction_India/Other_Countries/results/confirm_sensitivity/C4/snaive168_s1.parquet` | 8.6 | 1 |
+| `Forecast_Correction_India/Other_Countries/results/confirm_sensitivity/C4/tso_s0.parquet` | 9.2 | 1 |
+| `Forecast_Correction_India/Other_Countries/results/confirm_sensitivity/C4/tso_s1.parquet` | 9.1 | 1 |
+| `Forecast_Correction_India/Other_Countries/results/confirm_sensitivity/C5/oof_train_val_s0.parquet` | 11.0 | 1 |
+| `Forecast_Correction_India/Other_Countries/results/confirm_sensitivity/C5/oof_train_val_s1.parquet` | 11.1 | 1 |
+| `Forecast_Correction_India/Other_Countries/results/confirm_sensitivity/C5/val_frac0.1_s0.parquet` | 11.0 | 1 |
+| `Forecast_Correction_India/Other_Countries/results/confirm_sensitivity/C5/val_frac0.1_s1.parquet` | 11.1 | 1 |
+| `Forecast_Correction_India/Other_Countries/results/confirm_sensitivity/C5/val_frac0.25_s0.parquet` | 11.0 | 1 |
+| `Forecast_Correction_India/Other_Countries/results/confirm_sensitivity/C5/val_frac0.25_s1.parquet` | 11.1 | 1 |
+| `Forecast_Correction_India/Other_Countries/results/surrogate/C3/tso_s0.parquet` | 12.8 | 1 |
+| `Forecast_Correction_India/Other_Countries/results/surrogate/C4/tso_s0.parquet` | 9.9 | 1 |
+| `Forecast_Correction_India/Other_Countries/results/surrogate/C5/val_frac0.1_s0.parquet` | 12.7 | 1 |
+| `Forecast_Correction_India/Other_Countries/results/surrogate/C6/snaive168_s0.parquet` | 14.8 | 1 |
+| `Forecast_Correction_India/Other_Countries/results/surrogate/C7/val_frac0.1_s0.parquet` | 14.3 | 1 |
+| `India_Grid_Study/data/interim/dsm_block.parquet` | 14.1 | 1 |
+| `India_Grid_Study/data/interim/npp_station_day.parquet` | 6.0 | 1 |
+| `India_Grid_Study/results/confirm/o2/preds/T1__bilstm.parquet` | 6.8 | 1 |
+| `India_Grid_Study/results/confirm/o2/preds/T1__bilstm_seeds.parquet` | 28.2 | 1 |
+| `India_Grid_Study/results/confirm/o2/preds/T1__lgbm.parquet` | 6.8 | 1 |
+| `India_Grid_Study/results/confirm/o2/preds/T1__lgbm_instant.parquet` | 6.6 | 1 |
+| `India_Grid_Study/results/confirm/o2/preds/T1__lgbm_seeds.parquet` | 28.4 | 1 |
+| `India_Grid_Study/results/confirm/o2/preds/T1__patchtst_seeds.parquet` | 17.7 | 1 |
+| `India_Grid_Study/results/confirm/o2/preds/T1__tft_seeds.parquet` | 17.7 | 1 |
+| `India_Grid_Study/results/confirm/o2/preds/T2__bilstm.parquet` | 6.8 | 1 |
+| `India_Grid_Study/results/confirm/o2/preds/T2__bilstm_seeds.parquet` | 28.3 | 1 |
+| `India_Grid_Study/results/confirm/o2/preds/T2__lgbm.parquet` | 6.8 | 1 |
+| `India_Grid_Study/results/confirm/o2/preds/T2__lgbm_instant.parquet` | 6.7 | 1 |
+| `India_Grid_Study/results/confirm/o2/preds/T2__lgbm_seeds.parquet` | 28.4 | 1 |
+| `India_Grid_Study/results/confirm/o2/preds/T2__patchtst_seeds.parquet` | 17.8 | 1 |
+| `India_Grid_Study/results/confirm/o2/preds/T2__tft_seeds.parquet` | 17.8 | 1 |
+| `India_Grid_Study/results/confirm/o2/preds/T3__bilstm.parquet` | 5.4 | 1 |
+| `India_Grid_Study/results/confirm/o2/preds/T3__bilstm_seeds.parquet` | 22.8 | 1 |
+| `India_Grid_Study/results/confirm/o2/preds/T3__lgbm.parquet` | 5.4 | 1 |
+| `India_Grid_Study/results/confirm/o2/preds/T3__lgbm_instant.parquet` | 5.3 | 1 |
+| `India_Grid_Study/results/confirm/o2/preds/T3__lgbm_seeds.parquet` | 23.0 | 1 |
+| `India_Grid_Study/results/confirm/o2/preds/T3__patchtst_seeds.parquet` | 14.9 | 1 |
+| `India_Grid_Study/results/confirm/o2/preds/T3__tft_seeds.parquet` | 14.9 | 1 |
+| `India_Grid_Study/results/confirm/o2/preds/T4__bilstm_seeds.parquet` | 10.4 | 1 |
+| `India_Grid_Study/results/confirm/o2/preds/T4__lgbm_seeds.parquet` | 10.4 | 1 |
+| `India_Grid_Study/results/confirm/o2/preds/T4__patchtst_seeds.parquet` | 6.5 | 1 |
+| `India_Grid_Study/results/confirm/o2/preds/T4__tft_seeds.parquet` | 6.6 | 1 |
+| `India_Grid_Study/results/confirm/o2/preds/T5__bilstm_seeds.parquet` | 11.9 | 1 |
+| `India_Grid_Study/results/confirm/o2/preds/T5__lgbm_seeds.parquet` | 12.1 | 1 |
+| `India_Grid_Study/results/confirm/o2/preds/T5__patchtst_seeds.parquet` | 7.7 | 1 |
+| `India_Grid_Study/results/confirm/o2/preds/T5__tft_seeds.parquet` | 7.7 | 1 |
+| `India_Grid_Study/results/confirm/o2/samples/T1.parquet` | 89.6 | 1 |
+| `India_Grid_Study/results/confirm/o2/samples/T1_instant.parquet` | 89.1 | 1 |
+| `India_Grid_Study/results/confirm/o2/samples/T2.parquet` | 90.4 | 1 |
+| `India_Grid_Study/results/confirm/o2/samples/T2_instant.parquet` | 89.9 | 1 |
+| `India_Grid_Study/results/confirm/o2/samples/T3.parquet` | 77.8 | 1 |
+| `India_Grid_Study/results/confirm/o2/samples/T3_instant.parquet` | 78.3 | 1 |
+| `India_Grid_Study/results/confirm/o2/samples/T4.parquet` | 38.2 | 1 |
+| `India_Grid_Study/results/confirm/o2/samples/T4_instant.parquet` | 38.3 | 1 |
+| `India_Grid_Study/results/confirm/o2/samples/T5.parquet` | 24.3 | 1 |
+| `India_Grid_Study/results/confirm/o2/samples/T5_instant.parquet` | 24.1 | 1 |
+| `India_Grid_Study/results/confirm/o3/preds/T1__fusion_fixed.parquet` | 13.1 | 1 |
+| `India_Grid_Study/results/confirm/o3/preds/T1__fusion_fixed_L1.parquet` | 13.1 | 1 |
+| `India_Grid_Study/results/confirm/o3/preds/T1__fusion_fixed_L1_seeds.parquet` | 55.3 | 1 |
+| `India_Grid_Study/results/confirm/o3/preds/T1__fusion_fixed_seeds.parquet` | 55.3 | 1 |
+| `India_Grid_Study/results/confirm/o3/preds/T1__market_only.parquet` | 13.1 | 1 |
+| `India_Grid_Study/results/confirm/o3/preds/T1__market_only_seeds.parquet` | 34.7 | 1 |
+| `India_Grid_Study/results/confirm/o3/preds/T1__mcag_fixed.parquet` | 13.1 | 1 |
+| `India_Grid_Study/results/confirm/o3/preds/T1__mcag_fixed_seeds.parquet` | 55.3 | 1 |
+| `India_Grid_Study/results/confirm/o3/preds/T1__mcag_instance.parquet` | 13.1 | 1 |
+| `India_Grid_Study/results/confirm/o3/preds/T1__mcag_instance_L1.parquet` | 13.1 | 1 |
+| `India_Grid_Study/results/confirm/o3/preds/T1__mcag_instance_L1_seeds.parquet` | 55.3 | 1 |
+| `India_Grid_Study/results/confirm/o3/preds/T1__mcag_instance_gates.parquet` | 7.9 | 1 |
+| `India_Grid_Study/results/confirm/o3/preds/T1__mcag_instance_seeds.parquet` | 55.3 | 2 |
+| `India_Grid_Study/results/confirm/o3/preds/T1__mcag_regime.parquet` | 13.1 | 2 |
+| `India_Grid_Study/results/confirm/o3/preds/T1__mcag_regime_seeds.parquet` | 55.3 | 2 |
+| `India_Grid_Study/results/confirm/o3/preds/T1__no_carbon.parquet` | 13.1 | 2 |
+| `India_Grid_Study/results/confirm/o3/preds/T1__no_carbon_seeds.parquet` | 34.7 | 2 |
+| `India_Grid_Study/results/confirm/o3/preds/T1__null_context.parquet` | 13.1 | 2 |
+| `India_Grid_Study/results/confirm/o3/preds/T1__null_context_seeds.parquet` | 34.7 | 2 |
+| `India_Grid_Study/results/confirm/o3/preds/T1__permuted_context.parquet` | 13.1 | 2 |
+| `India_Grid_Study/results/confirm/o3/preds/T1__permuted_context_seeds.parquet` | 34.7 | 2 |
+| `India_Grid_Study/results/confirm/o3/preds/T2__fusion_fixed.parquet` | 13.1 | 2 |
+| `India_Grid_Study/results/confirm/o3/preds/T2__fusion_fixed_L1.parquet` | 13.1 | 2 |
+| `India_Grid_Study/results/confirm/o3/preds/T2__fusion_fixed_L1_seeds.parquet` | 55.4 | 2 |
+| `India_Grid_Study/results/confirm/o3/preds/T2__fusion_fixed_seeds.parquet` | 55.4 | 2 |
+| `India_Grid_Study/results/confirm/o3/preds/T2__market_only.parquet` | 13.1 | 2 |
+| `India_Grid_Study/results/confirm/o3/preds/T2__market_only_seeds.parquet` | 34.8 | 2 |
+| `India_Grid_Study/results/confirm/o3/preds/T2__mcag_fixed.parquet` | 13.1 | 2 |
+| `India_Grid_Study/results/confirm/o3/preds/T2__mcag_fixed_seeds.parquet` | 55.4 | 2 |
+| `India_Grid_Study/results/confirm/o3/preds/T2__mcag_instance.parquet` | 13.1 | 2 |
+| `India_Grid_Study/results/confirm/o3/preds/T2__mcag_instance_L1.parquet` | 13.1 | 2 |
+| `India_Grid_Study/results/confirm/o3/preds/T2__mcag_instance_L1_seeds.parquet` | 55.4 | 2 |
+| `India_Grid_Study/results/confirm/o3/preds/T2__mcag_instance_gates.parquet` | 7.9 | 2 |
+| `India_Grid_Study/results/confirm/o3/preds/T2__mcag_instance_seeds.parquet` | 55.4 | 2 |
+| `India_Grid_Study/results/confirm/o3/preds/T2__mcag_regime.parquet` | 13.1 | 2 |
+| `India_Grid_Study/results/confirm/o3/preds/T2__mcag_regime_seeds.parquet` | 55.4 | 2 |
+| `India_Grid_Study/results/confirm/o3/preds/T2__no_carbon.parquet` | 13.1 | 2 |
+| `India_Grid_Study/results/confirm/o3/preds/T2__no_carbon_seeds.parquet` | 34.8 | 2 |
+| `India_Grid_Study/results/confirm/o3/preds/T2__null_context.parquet` | 13.1 | 2 |
+| `India_Grid_Study/results/confirm/o3/preds/T2__null_context_seeds.parquet` | 34.8 | 2 |
+| `India_Grid_Study/results/confirm/o3/preds/T2__permuted_context.parquet` | 13.1 | 2 |
+| `India_Grid_Study/results/confirm/o3/preds/T2__permuted_context_seeds.parquet` | 34.8 | 2 |
+| `India_Grid_Study/results/confirm/o3/preds/T3__fusion_fixed.parquet` | 10.4 | 2 |
+| `India_Grid_Study/results/confirm/o3/preds/T3__fusion_fixed_seeds.parquet` | 44.7 | 2 |
+| `India_Grid_Study/results/confirm/o3/preds/T3__mcag_fixed.parquet` | 10.4 | 2 |
+| `India_Grid_Study/results/confirm/o3/preds/T3__mcag_fixed_seeds.parquet` | 44.7 | 2 |
+| `India_Grid_Study/results/confirm/o3/preds/T3__mcag_instance.parquet` | 10.4 | 2 |
+| `India_Grid_Study/results/confirm/o3/preds/T3__mcag_instance_gates.parquet` | 6.3 | 2 |
+| `India_Grid_Study/results/confirm/o3/preds/T3__mcag_instance_seeds.parquet` | 44.7 | 2 |
+| `India_Grid_Study/results/confirm/o3/preds/T3__mcag_regime.parquet` | 10.4 | 2 |
+| `India_Grid_Study/results/confirm/o3/preds/T3__mcag_regime_seeds.parquet` | 44.7 | 2 |
+| `India_Grid_Study/results/confirm/o3/preds/T3__no_carbon.parquet` | 10.4 | 2 |
+| `India_Grid_Study/results/confirm/o3/preds/T3__no_carbon_seeds.parquet` | 28.4 | 2 |
+| `India_Grid_Study/results/confirm/o3/preds/T4__fusion_fixed_seeds.parquet` | 20.5 | 2 |
+| `India_Grid_Study/results/confirm/o3/preds/T4__mcag_fixed_seeds.parquet` | 20.5 | 2 |
+| `India_Grid_Study/results/confirm/o3/preds/T4__mcag_instance_seeds.parquet` | 20.5 | 2 |
+| `India_Grid_Study/results/confirm/o3/preds/T4__mcag_regime_seeds.parquet` | 20.5 | 2 |
+| `India_Grid_Study/results/confirm/o3/preds/T5__fusion_fixed_seeds.parquet` | 23.4 | 2 |
+| `India_Grid_Study/results/confirm/o3/preds/T5__market_only_seeds.parquet` | 14.7 | 2 |
+| `India_Grid_Study/results/confirm/o3/preds/T5__mcag_fixed_seeds.parquet` | 23.4 | 2 |
+| `India_Grid_Study/results/confirm/o3/preds/T5__mcag_instance_seeds.parquet` | 23.4 | 2 |
+| `India_Grid_Study/results/confirm/o3/preds/T5__mcag_regime_seeds.parquet` | 23.4 | 2 |
+| `India_Grid_Study/results/confirm/o3/preds/T5__null_context_seeds.parquet` | 14.7 | 2 |
+| `India_Grid_Study/results/confirm/o3/preds/T5__permuted_context_seeds.parquet` | 14.7 | 2 |
+| `India_Grid_Study/results/confirm2/o2/preds/T1__bitcn_seeds.parquet` | 17.7 | 2 |
+| `India_Grid_Study/results/confirm2/o2/preds/T1__ens_online.parquet` | 6.6 | 2 |
+| `India_Grid_Study/results/confirm2/o2/preds/T1__ens_stack.parquet` | 6.6 | 2 |
+| `India_Grid_Study/results/confirm2/o2/preds/T1__ens_top.parquet` | 6.6 | 2 |
+| `India_Grid_Study/results/confirm2/o2/preds/T1__nbeatsx_seeds.parquet` | 17.7 | 2 |
+| `India_Grid_Study/results/confirm2/o2/preds/T1__nhits_seeds.parquet` | 17.7 | 2 |
+| `India_Grid_Study/results/confirm2/o2/preds/T1__tide_seeds.parquet` | 17.7 | 2 |
+| `India_Grid_Study/results/confirm2/o2/preds/T1__xgb.parquet` | 6.8 | 2 |
+| `India_Grid_Study/results/confirm2/o2/preds/T1__xgb_seeds.parquet` | 28.4 | 2 |
+| `India_Grid_Study/results/confirm2/o2/preds/T2__bitcn_seeds.parquet` | 17.8 | 2 |
+| `India_Grid_Study/results/confirm2/o2/preds/T2__ens_online.parquet` | 6.6 | 2 |
+| `India_Grid_Study/results/confirm2/o2/preds/T2__ens_stack.parquet` | 6.6 | 2 |
+| `India_Grid_Study/results/confirm2/o2/preds/T2__ens_top.parquet` | 6.6 | 2 |
+| `India_Grid_Study/results/confirm2/o2/preds/T2__nbeatsx_seeds.parquet` | 17.8 | 2 |
+| `India_Grid_Study/results/confirm2/o2/preds/T2__nhits_seeds.parquet` | 17.8 | 2 |
+| `India_Grid_Study/results/confirm2/o2/preds/T2__tide_seeds.parquet` | 17.8 | 2 |
+| `India_Grid_Study/results/confirm2/o2/preds/T2__xgb.parquet` | 6.8 | 2 |
+| `India_Grid_Study/results/confirm2/o2/preds/T2__xgb_seeds.parquet` | 28.4 | 2 |
+| `India_Grid_Study/results/confirm2/o2/preds/T3__bitcn_seeds.parquet` | 14.9 | 2 |
+| `India_Grid_Study/results/confirm2/o2/preds/T3__ens_online.parquet` | 5.3 | 2 |
+| `India_Grid_Study/results/confirm2/o2/preds/T3__ens_stack.parquet` | 5.3 | 2 |
+| `India_Grid_Study/results/confirm2/o2/preds/T3__ens_top.parquet` | 5.3 | 2 |
+| `India_Grid_Study/results/confirm2/o2/preds/T3__nbeatsx_seeds.parquet` | 14.9 | 2 |
+| `India_Grid_Study/results/confirm2/o2/preds/T3__nhits_seeds.parquet` | 14.9 | 2 |
+| `India_Grid_Study/results/confirm2/o2/preds/T3__tide_seeds.parquet` | 14.9 | 2 |
+| `India_Grid_Study/results/confirm2/o2/preds/T3__xgb.parquet` | 5.4 | 2 |
+| `India_Grid_Study/results/confirm2/o2/preds/T3__xgb_seeds.parquet` | 23.0 | 2 |
+| `India_Grid_Study/results/confirm2/o2/preds/T4__bitcn_seeds.parquet` | 6.6 | 2 |
+| `India_Grid_Study/results/confirm2/o2/preds/T4__nbeatsx_seeds.parquet` | 6.6 | 2 |
+| `India_Grid_Study/results/confirm2/o2/preds/T4__nhits_seeds.parquet` | 6.6 | 2 |
+| `India_Grid_Study/results/confirm2/o2/preds/T4__tide_seeds.parquet` | 6.6 | 2 |
+| `India_Grid_Study/results/confirm2/o2/preds/T4__xgb_seeds.parquet` | 10.5 | 2 |
+| `India_Grid_Study/results/confirm2/o2/preds/T5__bitcn_seeds.parquet` | 7.7 | 2 |
+| `India_Grid_Study/results/confirm2/o2/preds/T5__nbeatsx_seeds.parquet` | 7.7 | 2 |
+| `India_Grid_Study/results/confirm2/o2/preds/T5__nhits_seeds.parquet` | 7.7 | 2 |
+| `India_Grid_Study/results/confirm2/o2/preds/T5__tide_seeds.parquet` | 7.7 | 2 |
+| `India_Grid_Study/results/confirm2/o2/preds/T5__xgb_seeds.parquet` | 12.1 | 2 |
+| `India_Grid_Study/results/confirm2/o3/preds/T1__fusion_fixed_sd.parquet` | 13.1 | 2 |
+| `India_Grid_Study/results/confirm2/o3/preds/T1__fusion_fixed_sd_L1.parquet` | 13.1 | 2 |
+| `India_Grid_Study/results/confirm2/o3/preds/T1__fusion_fixed_sd_L1_seeds.parquet` | 55.3 | 2 |
+| `India_Grid_Study/results/confirm2/o3/preds/T1__fusion_fixed_sd_seeds.parquet` | 55.3 | 2 |
+| `India_Grid_Study/results/confirm2/o3/preds/T1__mcag_instance_sd.parquet` | 13.1 | 2 |
+| `India_Grid_Study/results/confirm2/o3/preds/T1__mcag_instance_sd_L1.parquet` | 13.1 | 2 |
+| `India_Grid_Study/results/confirm2/o3/preds/T1__mcag_instance_sd_L1_seeds.parquet` | 55.3 | 3 |
+| `India_Grid_Study/results/confirm2/o3/preds/T1__mcag_instance_sd_gates.parquet` | 7.9 | 3 |
+| `India_Grid_Study/results/confirm2/o3/preds/T1__mcag_instance_sd_seeds.parquet` | 55.3 | 3 |
+| `India_Grid_Study/results/confirm2/o3/preds/T2__fusion_fixed_sd.parquet` | 13.1 | 3 |
+| `India_Grid_Study/results/confirm2/o3/preds/T2__fusion_fixed_sd_L1.parquet` | 13.1 | 3 |
+| `India_Grid_Study/results/confirm2/o3/preds/T2__fusion_fixed_sd_L1_seeds.parquet` | 55.4 | 3 |
+| `India_Grid_Study/results/confirm2/o3/preds/T2__fusion_fixed_sd_seeds.parquet` | 55.4 | 3 |
+| `India_Grid_Study/results/confirm2/o3/preds/T2__mcag_instance_sd.parquet` | 13.1 | 3 |
+| `India_Grid_Study/results/confirm2/o3/preds/T2__mcag_instance_sd_L1.parquet` | 13.1 | 3 |
+| `India_Grid_Study/results/confirm2/o3/preds/T2__mcag_instance_sd_L1_seeds.parquet` | 55.4 | 3 |
+| `India_Grid_Study/results/confirm2/o3/preds/T2__mcag_instance_sd_gates.parquet` | 7.9 | 3 |
+| `India_Grid_Study/results/confirm2/o3/preds/T2__mcag_instance_sd_seeds.parquet` | 55.4 | 3 |
+| `India_Grid_Study/results/confirm2/o3/preds/T3__fusion_fixed_sd.parquet` | 10.4 | 3 |
+| `India_Grid_Study/results/confirm2/o3/preds/T3__fusion_fixed_sd_seeds.parquet` | 44.7 | 3 |
+| `India_Grid_Study/results/confirm2/o3/preds/T3__mcag_instance_sd.parquet` | 10.4 | 3 |
+| `India_Grid_Study/results/confirm2/o3/preds/T3__mcag_instance_sd_gates.parquet` | 6.3 | 3 |
+| `India_Grid_Study/results/confirm2/o3/preds/T3__mcag_instance_sd_seeds.parquet` | 44.7 | 3 |
+| `India_Grid_Study/results/confirm2/o3/preds/T4__fusion_fixed_sd_seeds.parquet` | 20.5 | 3 |
+| `India_Grid_Study/results/confirm2/o3/preds/T4__mcag_instance_sd_seeds.parquet` | 20.5 | 3 |
+| `India_Grid_Study/results/confirm2/o3/preds/T5__fusion_fixed_sd_seeds.parquet` | 23.4 | 3 |
+| `India_Grid_Study/results/confirm2/o3/preds/T5__mcag_instance_sd_seeds.parquet` | 23.4 | 3 |
+| `India_Grid_Study/results/dev/o2/preds/T1__bilstm.parquet` | 5.6 | 3 |
+| `India_Grid_Study/results/dev/o2/preds/T1__bilstm_seeds.parquet` | 23.7 | 3 |
+| `India_Grid_Study/results/dev/o2/preds/T1__lgbm.parquet` | 5.6 | 3 |
+| `India_Grid_Study/results/dev/o2/preds/T1__lgbm_instant.parquet` | 5.5 | 3 |
+| `India_Grid_Study/results/dev/o2/preds/T1__lgbm_seeds.parquet` | 23.8 | 3 |
+| `India_Grid_Study/results/dev/o2/preds/T1__patchtst_seeds.parquet` | 15.3 | 3 |
+| `India_Grid_Study/results/dev/o2/preds/T1__tft_seeds.parquet` | 15.3 | 3 |
+| `India_Grid_Study/results/dev/o2/preds/T2__bilstm.parquet` | 5.6 | 3 |
+| `India_Grid_Study/results/dev/o2/preds/T2__bilstm_seeds.parquet` | 23.7 | 3 |
+| `India_Grid_Study/results/dev/o2/preds/T2__lgbm.parquet` | 5.6 | 3 |
+| `India_Grid_Study/results/dev/o2/preds/T2__lgbm_instant.parquet` | 5.5 | 3 |
+| `India_Grid_Study/results/dev/o2/preds/T2__lgbm_seeds.parquet` | 23.8 | 3 |
+| `India_Grid_Study/results/dev/o2/preds/T2__patchtst_seeds.parquet` | 15.4 | 3 |
+| `India_Grid_Study/results/dev/o2/preds/T2__tft_seeds.parquet` | 15.4 | 3 |
+| `India_Grid_Study/results/dev/o2/preds/T3__bilstm_seeds.parquet` | 19.2 | 3 |
+| `India_Grid_Study/results/dev/o2/preds/T3__lgbm_seeds.parquet` | 19.3 | 3 |
+| `India_Grid_Study/results/dev/o2/preds/T3__patchtst_seeds.parquet` | 13.0 | 3 |
+| `India_Grid_Study/results/dev/o2/preds/T3__tft_seeds.parquet` | 13.0 | 3 |
+| `India_Grid_Study/results/dev/o2/preds/T4__bilstm_seeds.parquet` | 11.5 | 3 |
+| `India_Grid_Study/results/dev/o2/preds/T4__lgbm_seeds.parquet` | 11.5 | 3 |
+| `India_Grid_Study/results/dev/o2/preds/T4__patchtst_seeds.parquet` | 7.3 | 3 |
+| `India_Grid_Study/results/dev/o2/preds/T4__tft_seeds.parquet` | 7.4 | 3 |
+| `India_Grid_Study/results/dev/o2/preds/T5__bilstm_seeds.parquet` | 10.2 | 3 |
+| `India_Grid_Study/results/dev/o2/preds/T5__lgbm_seeds.parquet` | 10.3 | 3 |
+| `India_Grid_Study/results/dev/o2/preds/T5__patchtst_seeds.parquet` | 6.3 | 3 |
+| `India_Grid_Study/results/dev/o2/preds/T5__tft_seeds.parquet` | 6.3 | 3 |
+| `India_Grid_Study/results/dev/o2/samples/T1.parquet` | 72.0 | 3 |
+| `India_Grid_Study/results/dev/o2/samples/T1_instant.parquet` | 72.4 | 3 |
+| `India_Grid_Study/results/dev/o2/samples/T2.parquet` | 72.5 | 3 |
+| `India_Grid_Study/results/dev/o2/samples/T2_instant.parquet` | 73.1 | 3 |
+| `India_Grid_Study/results/dev/o2/samples/T3.parquet` | 64.9 | 3 |
+| `India_Grid_Study/results/dev/o2/samples/T3_instant.parquet` | 64.9 | 3 |
+| `India_Grid_Study/results/dev/o2/samples/T4.parquet` | 33.0 | 3 |
+| `India_Grid_Study/results/dev/o2/samples/T4_instant.parquet` | 33.1 | 3 |
+| `India_Grid_Study/results/dev/o2/samples/T5.parquet` | 19.1 | 3 |
+| `India_Grid_Study/results/dev/o2/samples/T5_instant.parquet` | 19.1 | 3 |
+| `India_Grid_Study/results/dev/o3/preds/T1__fusion_fixed.parquet` | 10.8 | 3 |
+| `India_Grid_Study/results/dev/o3/preds/T1__fusion_fixed_L1.parquet` | 10.8 | 3 |
+| `India_Grid_Study/results/dev/o3/preds/T1__fusion_fixed_L1_seeds.parquet` | 46.4 | 3 |
+| `India_Grid_Study/results/dev/o3/preds/T1__fusion_fixed_seeds.parquet` | 46.4 | 3 |
+| `India_Grid_Study/results/dev/o3/preds/T1__market_only.parquet` | 10.8 | 3 |
+| `India_Grid_Study/results/dev/o3/preds/T1__market_only_seeds.parquet` | 29.4 | 3 |
+| `India_Grid_Study/results/dev/o3/preds/T1__mcag_fixed.parquet` | 10.8 | 3 |
+| `India_Grid_Study/results/dev/o3/preds/T1__mcag_fixed_seeds.parquet` | 46.4 | 3 |
+| `India_Grid_Study/results/dev/o3/preds/T1__mcag_instance.parquet` | 10.8 | 3 |
+| `India_Grid_Study/results/dev/o3/preds/T1__mcag_instance_L1.parquet` | 10.8 | 3 |
+| `India_Grid_Study/results/dev/o3/preds/T1__mcag_instance_L1_seeds.parquet` | 46.4 | 3 |
+| `India_Grid_Study/results/dev/o3/preds/T1__mcag_instance_gates.parquet` | 6.5 | 3 |
+| `India_Grid_Study/results/dev/o3/preds/T1__mcag_instance_seeds.parquet` | 46.4 | 3 |
+| `India_Grid_Study/results/dev/o3/preds/T1__mcag_regime.parquet` | 10.8 | 3 |
+| `India_Grid_Study/results/dev/o3/preds/T1__mcag_regime_seeds.parquet` | 46.4 | 3 |
+| `India_Grid_Study/results/dev/o3/preds/T1__no_carbon.parquet` | 10.8 | 3 |
+| `India_Grid_Study/results/dev/o3/preds/T1__no_carbon_seeds.parquet` | 29.4 | 3 |
+| `India_Grid_Study/results/dev/o3/preds/T1__null_context.parquet` | 10.8 | 3 |
+| `India_Grid_Study/results/dev/o3/preds/T1__null_context_seeds.parquet` | 29.4 | 3 |
+| `India_Grid_Study/results/dev/o3/preds/T1__permuted_context.parquet` | 10.8 | 3 |
+| `India_Grid_Study/results/dev/o3/preds/T1__permuted_context_seeds.parquet` | 29.4 | 3 |
+| `India_Grid_Study/results/dev/o3/preds/T2__fusion_fixed.parquet` | 10.8 | 3 |
+| `India_Grid_Study/results/dev/o3/preds/T2__fusion_fixed_L1.parquet` | 10.8 | 3 |
+| `India_Grid_Study/results/dev/o3/preds/T2__fusion_fixed_L1_seeds.parquet` | 46.4 | 4 |
+| `India_Grid_Study/results/dev/o3/preds/T2__fusion_fixed_seeds.parquet` | 46.4 | 4 |
+| `India_Grid_Study/results/dev/o3/preds/T2__market_only.parquet` | 10.8 | 4 |
+| `India_Grid_Study/results/dev/o3/preds/T2__market_only_seeds.parquet` | 29.4 | 4 |
+| `India_Grid_Study/results/dev/o3/preds/T2__mcag_fixed.parquet` | 10.8 | 4 |
+| `India_Grid_Study/results/dev/o3/preds/T2__mcag_fixed_seeds.parquet` | 46.4 | 4 |
+| `India_Grid_Study/results/dev/o3/preds/T2__mcag_instance.parquet` | 10.8 | 4 |
+| `India_Grid_Study/results/dev/o3/preds/T2__mcag_instance_L1.parquet` | 10.8 | 4 |
+| `India_Grid_Study/results/dev/o3/preds/T2__mcag_instance_L1_seeds.parquet` | 46.4 | 4 |
+| `India_Grid_Study/results/dev/o3/preds/T2__mcag_instance_gates.parquet` | 6.5 | 4 |
+| `India_Grid_Study/results/dev/o3/preds/T2__mcag_instance_seeds.parquet` | 46.4 | 4 |
+| `India_Grid_Study/results/dev/o3/preds/T2__mcag_regime.parquet` | 10.8 | 4 |
+| `India_Grid_Study/results/dev/o3/preds/T2__mcag_regime_seeds.parquet` | 46.4 | 4 |
+| `India_Grid_Study/results/dev/o3/preds/T2__no_carbon.parquet` | 10.8 | 4 |
+| `India_Grid_Study/results/dev/o3/preds/T2__no_carbon_seeds.parquet` | 29.4 | 4 |
+| `India_Grid_Study/results/dev/o3/preds/T2__null_context.parquet` | 10.8 | 4 |
+| `India_Grid_Study/results/dev/o3/preds/T2__null_context_seeds.parquet` | 29.4 | 4 |
+| `India_Grid_Study/results/dev/o3/preds/T2__permuted_context.parquet` | 10.8 | 4 |
+| `India_Grid_Study/results/dev/o3/preds/T2__permuted_context_seeds.parquet` | 29.4 | 4 |
+| `India_Grid_Study/results/dev/o3/preds/T3__fusion_fixed.parquet` | 8.5 | 4 |
+| `India_Grid_Study/results/dev/o3/preds/T3__fusion_fixed_seeds.parquet` | 37.6 | 4 |
+| `India_Grid_Study/results/dev/o3/preds/T3__mcag_fixed.parquet` | 8.5 | 4 |
+| `India_Grid_Study/results/dev/o3/preds/T3__mcag_fixed_seeds.parquet` | 37.6 | 4 |
+| `India_Grid_Study/results/dev/o3/preds/T3__mcag_instance.parquet` | 8.5 | 4 |
+| `India_Grid_Study/results/dev/o3/preds/T3__mcag_instance_gates.parquet` | 5.2 | 4 |
+| `India_Grid_Study/results/dev/o3/preds/T3__mcag_instance_seeds.parquet` | 37.6 | 4 |
+| `India_Grid_Study/results/dev/o3/preds/T3__mcag_regime.parquet` | 8.5 | 4 |
+| `India_Grid_Study/results/dev/o3/preds/T3__mcag_regime_seeds.parquet` | 37.6 | 4 |
+| `India_Grid_Study/results/dev/o3/preds/T3__no_carbon.parquet` | 8.5 | 4 |
+| `India_Grid_Study/results/dev/o3/preds/T3__no_carbon_seeds.parquet` | 24.1 | 4 |
+| `India_Grid_Study/results/dev/o3/preds/T4__fusion_fixed_seeds.parquet` | 22.6 | 4 |
+| `India_Grid_Study/results/dev/o3/preds/T4__mcag_fixed_seeds.parquet` | 22.6 | 4 |
+| `India_Grid_Study/results/dev/o3/preds/T4__mcag_instance_seeds.parquet` | 22.6 | 4 |
+| `India_Grid_Study/results/dev/o3/preds/T4__mcag_regime_seeds.parquet` | 22.6 | 4 |
+| `India_Grid_Study/results/dev/o3/preds/T5__fusion_fixed_seeds.parquet` | 20.0 | 4 |
+| `India_Grid_Study/results/dev/o3/preds/T5__market_only_seeds.parquet` | 12.1 | 4 |
+| `India_Grid_Study/results/dev/o3/preds/T5__mcag_fixed_seeds.parquet` | 20.0 | 4 |
+| `India_Grid_Study/results/dev/o3/preds/T5__mcag_instance_seeds.parquet` | 20.0 | 4 |
+| `India_Grid_Study/results/dev/o3/preds/T5__mcag_regime_seeds.parquet` | 20.0 | 4 |
+| `India_Grid_Study/results/dev/o3/preds/T5__null_context_seeds.parquet` | 12.1 | 4 |
+| `India_Grid_Study/results/dev/o3/preds/T5__permuted_context_seeds.parquet` | 12.1 | 4 |
+| `India_Grid_Study/results/dev2/o2/preds/T1__bitcn_seeds.parquet` | 15.3 | 4 |
+| `India_Grid_Study/results/dev2/o2/preds/T1__ens_online.parquet` | 5.4 | 4 |
+| `India_Grid_Study/results/dev2/o2/preds/T1__ens_stack.parquet` | 5.4 | 4 |
+| `India_Grid_Study/results/dev2/o2/preds/T1__ens_top.parquet` | 5.4 | 4 |
+| `India_Grid_Study/results/dev2/o2/preds/T1__nbeatsx_seeds.parquet` | 15.3 | 4 |
+| `India_Grid_Study/results/dev2/o2/preds/T1__nhits_seeds.parquet` | 15.3 | 4 |
+| `India_Grid_Study/results/dev2/o2/preds/T1__tide_seeds.parquet` | 15.3 | 4 |
+| `India_Grid_Study/results/dev2/o2/preds/T1__xgb.parquet` | 5.6 | 4 |
+| `India_Grid_Study/results/dev2/o2/preds/T1__xgb_seeds.parquet` | 23.8 | 4 |
+| `India_Grid_Study/results/dev2/o2/preds/T2__bitcn_seeds.parquet` | 15.4 | 4 |
+| `India_Grid_Study/results/dev2/o2/preds/T2__ens_online.parquet` | 5.4 | 4 |
+| `India_Grid_Study/results/dev2/o2/preds/T2__ens_stack.parquet` | 5.4 | 4 |
+| `India_Grid_Study/results/dev2/o2/preds/T2__ens_top.parquet` | 5.4 | 4 |
+| `India_Grid_Study/results/dev2/o2/preds/T2__nbeatsx_seeds.parquet` | 15.4 | 4 |
+| `India_Grid_Study/results/dev2/o2/preds/T2__nhits_seeds.parquet` | 15.4 | 4 |
+| `India_Grid_Study/results/dev2/o2/preds/T2__tide_seeds.parquet` | 15.4 | 4 |
+| `India_Grid_Study/results/dev2/o2/preds/T2__xgb.parquet` | 5.6 | 4 |
+| `India_Grid_Study/results/dev2/o2/preds/T2__xgb_seeds.parquet` | 23.8 | 4 |
+| `India_Grid_Study/results/dev2/o2/preds/T3__bitcn_seeds.parquet` | 13.0 | 4 |
+| `India_Grid_Study/results/dev2/o2/preds/T3__nbeatsx_seeds.parquet` | 13.0 | 4 |
+| `India_Grid_Study/results/dev2/o2/preds/T3__nhits_seeds.parquet` | 13.0 | 4 |
+| `India_Grid_Study/results/dev2/o2/preds/T3__tide_seeds.parquet` | 13.0 | 4 |
+| `India_Grid_Study/results/dev2/o2/preds/T3__xgb_seeds.parquet` | 19.3 | 4 |
+| `India_Grid_Study/results/dev2/o2/preds/T4__bitcn_seeds.parquet` | 7.4 | 4 |
+| `India_Grid_Study/results/dev2/o2/preds/T4__nbeatsx_seeds.parquet` | 7.4 | 4 |
+| `India_Grid_Study/results/dev2/o2/preds/T4__nhits_seeds.parquet` | 7.4 | 4 |
+| `India_Grid_Study/results/dev2/o2/preds/T4__tide_seeds.parquet` | 7.4 | 4 |
+| `India_Grid_Study/results/dev2/o2/preds/T4__xgb_seeds.parquet` | 11.5 | 4 |
+| `India_Grid_Study/results/dev2/o2/preds/T5__bitcn_seeds.parquet` | 6.3 | 4 |
+| `India_Grid_Study/results/dev2/o2/preds/T5__nbeatsx_seeds.parquet` | 6.3 | 4 |
+| `India_Grid_Study/results/dev2/o2/preds/T5__nhits_seeds.parquet` | 6.3 | 4 |
+| `India_Grid_Study/results/dev2/o2/preds/T5__tide_seeds.parquet` | 6.3 | 4 |
+| `India_Grid_Study/results/dev2/o2/preds/T5__xgb_seeds.parquet` | 10.3 | 4 |
+| `India_Grid_Study/results/dev2/o3/preds/T1__fusion_fixed_sd.parquet` | 10.8 | 4 |
+| `India_Grid_Study/results/dev2/o3/preds/T1__fusion_fixed_sd_L1.parquet` | 10.8 | 4 |
+| `India_Grid_Study/results/dev2/o3/preds/T1__fusion_fixed_sd_L1_seeds.parquet` | 46.4 | 4 |
+| `India_Grid_Study/results/dev2/o3/preds/T1__fusion_fixed_sd_seeds.parquet` | 46.4 | 4 |
+| `India_Grid_Study/results/dev2/o3/preds/T1__mcag_instance_sd.parquet` | 10.8 | 4 |
+| `India_Grid_Study/results/dev2/o3/preds/T1__mcag_instance_sd_L1.parquet` | 10.8 | 4 |
+| `India_Grid_Study/results/dev2/o3/preds/T1__mcag_instance_sd_L1_seeds.parquet` | 46.4 | 4 |
+| `India_Grid_Study/results/dev2/o3/preds/T1__mcag_instance_sd_gates.parquet` | 6.5 | 4 |
+| `India_Grid_Study/results/dev2/o3/preds/T1__mcag_instance_sd_seeds.parquet` | 46.4 | 4 |
+| `India_Grid_Study/results/dev2/o3/preds/T2__fusion_fixed_sd.parquet` | 10.8 | 4 |
+| `India_Grid_Study/results/dev2/o3/preds/T2__fusion_fixed_sd_L1.parquet` | 10.8 | 4 |
+| `India_Grid_Study/results/dev2/o3/preds/T2__fusion_fixed_sd_L1_seeds.parquet` | 46.4 | 4 |
+| `India_Grid_Study/results/dev2/o3/preds/T2__fusion_fixed_sd_seeds.parquet` | 46.4 | 4 |
+| `India_Grid_Study/results/dev2/o3/preds/T2__mcag_instance_sd.parquet` | 10.8 | 4 |
+| `India_Grid_Study/results/dev2/o3/preds/T2__mcag_instance_sd_L1.parquet` | 10.8 | 4 |
+| `India_Grid_Study/results/dev2/o3/preds/T2__mcag_instance_sd_L1_seeds.parquet` | 46.4 | 4 |
+| `India_Grid_Study/results/dev2/o3/preds/T2__mcag_instance_sd_gates.parquet` | 6.5 | 4 |
+| `India_Grid_Study/results/dev2/o3/preds/T2__mcag_instance_sd_seeds.parquet` | 46.4 | 4 |
+| `India_Grid_Study/results/dev2/o3/preds/T3__fusion_fixed_sd.parquet` | 8.5 | 4 |
+| `India_Grid_Study/results/dev2/o3/preds/T3__fusion_fixed_sd_seeds.parquet` | 37.6 | 4 |
+| `India_Grid_Study/results/dev2/o3/preds/T3__mcag_instance_sd.parquet` | 8.5 | 4 |
+| `India_Grid_Study/results/dev2/o3/preds/T3__mcag_instance_sd_gates.parquet` | 5.2 | 4 |
+| `India_Grid_Study/results/dev2/o3/preds/T3__mcag_instance_sd_seeds.parquet` | 37.6 | 4 |
+| `India_Grid_Study/results/dev2/o3/preds/T4__fusion_fixed_sd_seeds.parquet` | 22.6 | 4 |
+| `India_Grid_Study/results/dev2/o3/preds/T4__mcag_instance_sd_seeds.parquet` | 22.6 | 4 |
+| `India_Grid_Study/results/dev2/o3/preds/T5__fusion_fixed_sd_seeds.parquet` | 20.0 | 4 |
+| `India_Grid_Study/results/dev2/o3/preds/T5__mcag_instance_sd_seeds.parquet` | 20.0 | 4 |
+| `India_Grid_Study/results/rebuild/data/interim/dsm_block.parquet` | 14.1 | 4 |
+| `India_Grid_Study/results/rebuild/data/interim/npp_station_day.parquet` | 6.0 | 4 |
+| `India_Grid_Study/results/rebuild/data/processed/refused8_state_day.parquet` | 15.2 | 4 |

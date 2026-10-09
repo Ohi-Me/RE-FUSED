@@ -9,9 +9,31 @@ authors:
     affiliation: "Centre for Artificial Intelligence, Dr. B. R. Ambedkar National Institute of Technology Jalandhar"
 repository-code: "https://github.com/Ohi-Me/RE-FUSED"
 license: MIT
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23194781
+    description: "Zenodo record, version 1.0.0 (code, results, logs and datasets)"
+  - type: doi
+    value: 10.5281/zenodo.23194780
+    description: "Zenodo concept DOI (all versions)"
 keywords:
   - load forecasting
   - Indian power system
   - deviation settlement
   - forecast correction
   - pre-registered evaluation
+version: "1.0.0"
+date-released: "2026-10-06"
+preferred-citation:
+  type: dataset
+  title: "RE-FUSED (Dataset and Relevent files)"
+  authors:
+    - family-names: Kumar
+      given-names: Rohit
+      orcid: "https://orcid.org/0009-0004-7936-9683"
+  version: "1.0.0"
+  doi: 10.5281/zenodo.23194781
+  publisher:
+    name: Zenodo
+  year: 2026
+  url: "https://doi.org/10.5281/zenodo.23194781"

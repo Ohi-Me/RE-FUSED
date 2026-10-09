@@ -3,7 +3,7 @@
 - **Code:** MIT licence ([`LICENSE`](LICENSE)).
 - **Processed Indian data** (`India_Grid_Study/data/processed/`), their documentation, and all derived results, tables
   and figures: Creative Commons Attribution 4.0 International (CC BY 4.0),
-  https://creativecommons.org/licenses/by/4.0/. Please cite the Zenodo record, DOI to be added on publication, and
+  https://creativecommons.org/licenses/by/4.0/. Please cite the Zenodo record, DOI 10.5281/zenodo.23194781, and
   name the original sources: Grid Controller of India (Grid-India), the Central Electricity Authority (CEA) and
   the India Meteorological Department (IMD).
 - **Original report files** are not in this repository. They remain publications of the agencies that issued

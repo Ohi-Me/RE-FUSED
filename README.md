@@ -63,7 +63,7 @@ evaluation data were opened ([how](Docs/figures/protocol.svg)).
   a year of drawal forecast error across the 34 control areas; finer gates add little or make it worse. Market
   prices are the exception: there only a gate that keeps re-learning over time helps.
 - **The dataset is open**: 34 State control areas, 1 April 2018 to 31 August 2026, 104,550 State-days × 107
-  columns, Zenodo DOI [to be added on publication](https://zenodo.org).
+  columns, Zenodo DOI [10.5281/zenodo.23194781](https://doi.org/10.5281/zenodo.23194781).
 
 Details, with intervals and the tests that were *not* supported: [Docs/RESULTS.md](Docs/RESULTS.md).
 
@@ -85,9 +85,15 @@ Details, with intervals and the tests that were *not* supported: [Docs/RESULTS.m
 Code: MIT licence ([`LICENSE`](LICENSE)). The processed Indian data, documentation and results: CC BY 4.0
 ([`LICENSE-DATA.md`](LICENSE-DATA.md)). The original report files are not copied here; they stay with the agencies
 that publish them, and the download scripts fetch them again and check them against the recorded SHA-256 hashes.
-Files too large for GitHub are in the [Zenodo record](https://zenodo.org) ([list](Docs/LARGE_FILES_ON_ZENODO.md)).
+Files too large for GitHub are in the [Zenodo record](https://doi.org/10.5281/zenodo.23194781) ([list](Docs/LARGE_FILES_ON_ZENODO.md)).
 
 ## Citation
 
-See [`CITATION.cff`](CITATION.cff). Rohit Kumar (2026). *RE-FUSED: research on India's power system from official
-government data — code, results, logs and datasets* (version 1.0). Zenodo. DOI to be added on publication.
+Please cite the Zenodo record (see also [`CITATION.cff`](CITATION.cff)):
+
+Kumar, R. (2026). *RE-FUSED (Dataset and Relevent files)* (Version 1.0.0) [Dataset]. Zenodo.
+https://doi.org/10.5281/zenodo.23194781
+
+That DOI is for version 1.0.0. The concept DOI [10.5281/zenodo.23194780](https://doi.org/10.5281/zenodo.23194780)
+always points to the newest version. The record is a dataset release; the research papers that use it are still
+manuscripts and have not been published.

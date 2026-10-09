@@ -70,4 +70,4 @@ compare with the Indian results. The raw files are not redistributed; the downlo
 ## Licence
 
 The processed Indian data and their documentation: CC BY 4.0. Please cite the Zenodo record
-(DOI to be added on publication) and name the original sources: Grid-India, CEA and IMD.
+(DOI 10.5281/zenodo.23194781) and name the original sources: Grid-India, CEA and IMD.
