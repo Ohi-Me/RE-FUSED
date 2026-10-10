@@ -139,12 +139,12 @@ def tex_tables(acc, reg):
         pick = reg.head(10)
         rows = [[r.entity, f"{r.mean_H_pub:.3f}", f"{r.mean_P:.3f}", f"{r.mean_A2:.3f}", f"{r.saving_pct:+.1f}"]
                 for _, r in pick.iterrows()]
-        head("t_state_regret", "The ten States with the largest settlement regret under their published schedules, "
+        head("t_state_regret", "The ten States with the largest settlement regret under the persistence schedule, "
              "and what the decision rules would have cost instead (Rs crore per day). Descriptive.",
              "tab:stateregret", "lrrrr",
-             ["State", "Published", "Forecast median", "Fixed risk (A2)", "Saving (\\%)"], rows,
+             ["State", "Persistence", "Forecast median", "Fixed rule (A2)", "Saving (\\%)"], rows,
              "results/audit/strata/regret_state.csv",
-             f"Across all {len(reg)} control areas the fixed-risk arm lowers mean daily regret by "
+             f"Across all {len(reg)} control areas the fixed rule lowers mean daily regret by "
              f"{100 * (1 - reg.mean_A2.sum() / reg.mean_H_pub.sum()):.1f}\\%.")
 
 
