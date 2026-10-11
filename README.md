@@ -63,7 +63,7 @@ evaluation data were opened ([how](Docs/figures/protocol.svg)).
   a year of drawal forecast error across the 34 control areas; finer gates add little or make it worse. Market
   prices are the exception: there only a gate that keeps re-learning over time helps.
 - **The dataset is open**: 34 State control areas, 1 April 2018 to 31 August 2026, 104,550 State-days × 107
-  columns, Zenodo DOI [10.5281/zenodo.23194781](https://doi.org/10.5281/zenodo.23194781).
+  columns, Zenodo DOI [10.5281/zenodo.23301898](https://doi.org/10.5281/zenodo.23301898).
 
 Details, with intervals and the tests that were *not* supported: [Docs/RESULTS.md](Docs/RESULTS.md).
 
@@ -85,15 +85,14 @@ Details, with intervals and the tests that were *not* supported: [Docs/RESULTS.m
 Code: MIT licence ([`LICENSE`](LICENSE)). The processed Indian data, documentation and results: CC BY 4.0
 ([`LICENSE-DATA.md`](LICENSE-DATA.md)). The original report files are not copied here; they stay with the agencies
 that publish them, and the download scripts fetch them again and check them against the recorded SHA-256 hashes.
-Files too large for GitHub are in the [Zenodo record](https://doi.org/10.5281/zenodo.23194781) ([list](Docs/LARGE_FILES_ON_ZENODO.md)).
+Files too large for GitHub are in the [Zenodo record](https://doi.org/10.5281/zenodo.23301898) ([list](Docs/LARGE_FILES_ON_ZENODO.md)).
 
 ## Citation
 
 Please cite the Zenodo record (see also [`CITATION.cff`](CITATION.cff)):
 
-Kumar, R. (2026). *RE-FUSED: Adaptive Forecasting and Decision Support Framework for Renewable Energy Systems — Datasets, Experimental Results and Logs* (Version 1.0.0) [Dataset]. Zenodo.
-https://doi.org/10.5281/zenodo.23194781
+Kumar, R. (2026). *RE-FUSED: State-day panel of India's power system from official data, with forecasting, forecast correction and scheduling code, results and logs* (Version 1.0.0) [Dataset]. Zenodo.
+https://doi.org/10.5281/zenodo.23301898
 
-That DOI is for version 1.0.0. The concept DOI [10.5281/zenodo.23194780](https://doi.org/10.5281/zenodo.23194780)
-always points to the newest version. The record is a dataset release; the research papers that use it are still
+The record is a dataset release; the research papers that use it are still
 manuscripts and have not been published.

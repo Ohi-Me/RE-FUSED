@@ -2,14 +2,10 @@
 
 Version {version}
 
-**Authors**
+**Author**
 
 * Rohit Kumar, Centre for Artificial Intelligence, Dr. B. R. Ambedkar National Institute of Technology Jalandhar,
   India. ORCID 0009-0004-7936-9683. Contact: rohitaryan0613@gmail.com
-* Urvashi Bansal, Department of Computer Science & Engineering, Dr. B. R. Ambedkar National Institute of Technology
-  Jalandhar, India. ORCID 0000-0002-3395-9942
-* Sukumar Nandi, Department of Computer Science and Engineering, Indian Institute of Technology Guwahati, India.
-  ORCID 0000-0002-5869-1057
 
 {doi_line}
 

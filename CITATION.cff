@@ -11,11 +11,8 @@ repository-code: "https://github.com/Ohi-Me/RE-FUSED"
 license: MIT
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.23194781
+    value: 10.5281/zenodo.23301898
     description: "Zenodo record, version 1.0.0 (code, results, logs and datasets)"
-  - type: doi
-    value: 10.5281/zenodo.23194780
-    description: "Zenodo concept DOI (all versions)"
 keywords:
   - load forecasting
   - Indian power system
@@ -26,14 +23,14 @@ version: "1.0.0"
 date-released: "2026-10-06"
 preferred-citation:
   type: dataset
-  title: "RE-FUSED: Adaptive Forecasting and Decision Support Framework for Renewable Energy Systems — Datasets, Experimental Results and Logs"
+  title: "RE-FUSED: State-day panel of India's power system from official data, with forecasting, forecast correction and scheduling code, results and logs"
   authors:
     - family-names: Kumar
       given-names: Rohit
       orcid: "https://orcid.org/0009-0004-7936-9683"
   version: "1.0.0"
-  doi: 10.5281/zenodo.23194781
+  doi: 10.5281/zenodo.23301898
   publisher:
     name: Zenodo
   year: 2026
-  url: "https://doi.org/10.5281/zenodo.23194781"
+  url: "https://doi.org/10.5281/zenodo.23301898"

@@ -5,7 +5,7 @@ region,key,registry,-,0,,0.0,0.0
 bid_area,key,registry,-,0,,0.0,0.0
 pilot18,key,registry,-,0,,0.0,0.0
 dem_energy_met_gwh,demand,Grid-India PSP §C,GWh,1,,0.050518760495985644,0.00011355893708834885
-dev_drawal_schedule_gwh,deviation,Grid-India PSP §C,GWh,1,"OD(+)/UD(−) = actual − scheduled drawal, daily net",0.050472750695898225,0.0
+dev_drawal_schedule_gwh,deviation,Grid-India PSP §C,GWh,1,"scheduled drawal, daily total",0.050472750695898225,0.0
 dev_od_ud_gwh,deviation,Grid-India PSP §C,GWh,1,"OD(+)/UD(−) = actual − scheduled drawal, daily net",0.05048425314592008,5.6779468544174426e-05
 dem_energy_shortage_gwh,demand,Grid-India PSP §C,GWh,1,,0.05067979479629161,0.0
 dem_peak_shortage_mw,demand,Grid-India PSP §C,MW,1,peak shortage = shortage at the time of maximum demand,0.05048425314592008,5.6779468544174426e-05
