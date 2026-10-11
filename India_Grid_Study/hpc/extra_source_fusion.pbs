@@ -1,0 +1,17 @@
+#!/bin/bash
+#PBS -N refused_source_fusion
+#PBS -q cpuq
+#PBS -l select=1:ncpus=8:ngpus=0:mem=32gb
+#PBS -l walltime=04:00:00
+#PBS -j oe
+# Source fusion for scheduling (protocol codes/design/10_source_fusion_protocol.md), CPU only. PHASE=dev or confirm.
+# Submit from the project folder:  qsub -v PHASE=dev -o logs/pbs/refused_source_fusion_dev.out hpc/extra_source_fusion.pbs
+cd "$PBS_O_WORKDIR"
+export PYTHONNOUSERSITE=1 OMP_NUM_THREADS=8 CUDA_VISIBLE_DEVICES=""
+source hpc/cluster.env 2>/dev/null
+source "${HPC_CONDA_SH:-/apps/compilers/anaconda3/etc/profile.d/conda.sh}"
+conda activate "${HPC_CONDA_ENV:-refused_h100}"
+echo "source fusion $PHASE $(date -Iseconds) on $(hostname), job $PBS_JOBID"
+if [ "$PHASE" = "confirm" ]; then EXTRA="REFUSED_CONFIRMATORY=1"; else EXTRA=""; fi
+env REFUSED_PHASE=$PHASE $EXTRA python -u codes/scripts/extra/x09_source_fusion.py
+echo "source fusion finished rc=$? $(date -Iseconds)"

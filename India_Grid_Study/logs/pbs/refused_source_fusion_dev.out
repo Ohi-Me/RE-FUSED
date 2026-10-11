@@ -1,0 +1,43 @@
+source fusion dev 2026-10-11T17:54:12+05:30 on master, job 35030.master
+/Data3/<hpc-user>/RE-FUSED/codes/scripts/extra/x09_source_fusion.py:83: RuntimeWarning: divide by zero encountered in log
+  logw = np.log(p)
+/Data3/<hpc-user>/RE-FUSED/codes/scripts/extra/x09_source_fusion.py:83: RuntimeWarning: divide by zero encountered in log
+  logw = np.log(p)
+/Data3/<hpc-user>/RE-FUSED/codes/scripts/extra/x09_source_fusion.py:83: RuntimeWarning: divide by zero encountered in log
+  logw = np.log(p)
+/Data3/<hpc-user>/RE-FUSED/codes/scripts/extra/x09_source_fusion.py:83: RuntimeWarning: divide by zero encountered in log
+  logw = np.log(p)
+stylised projected {"A2": 15.366, "H_pub": 17.976, "G0": 15.366, "G1": 15.364, "G2": 15.423, "G3": 15.388, "G4": 15.561}
+{"G1 vs A2": [-0.002, -0.053, 0.056, null], "G1 vs H_pub": [-2.612, -3.195, -2.095, null], "G1 vs G0": [-0.002, -0.053, 0.056, 1.0], "G2 vs A2": [0.057, -0.039, 0.157, null], "G2 vs H_pub": [-2.553, -3.132, -2.051, null], "G2 vs G0": [0.057, -0.039, 0.157, 1.0], "G3 vs A2": [0.022, -0.049, 0.104, null], "G3 vs H_pub": [-2.588, -3.17, -2.066, null], "G3 vs G0": [0.022, -0.049, 0.104, 1.0], "G4 vs A2": [0.195, 0.026, 0.371, null], "G4 vs H_pub": [-2.415, -2.915, -1.98, null], "G4 vs G0": [0.195, 0.026, 0.371, 1.0]}
+/Data3/<hpc-user>/RE-FUSED/codes/scripts/extra/x09_source_fusion.py:83: RuntimeWarning: divide by zero encountered in log
+  logw = np.log(p)
+/Data3/<hpc-user>/RE-FUSED/codes/scripts/extra/x09_source_fusion.py:83: RuntimeWarning: divide by zero encountered in log
+  logw = np.log(p)
+/Data3/<hpc-user>/RE-FUSED/codes/scripts/extra/x09_source_fusion.py:83: RuntimeWarning: divide by zero encountered in log
+  logw = np.log(p)
+/Data3/<hpc-user>/RE-FUSED/codes/scripts/extra/x09_source_fusion.py:83: RuntimeWarning: divide by zero encountered in log
+  logw = np.log(p)
+stylised not projected {"A2": 11.583, "H_pub": 14.553, "G0": 11.583, "G1": 11.577, "G2": 11.662, "G3": 11.617, "G4": 11.817}
+{"G1 vs A2": [-0.006, -0.063, 0.058, null], "G1 vs H_pub": [-2.976, -3.604, -2.424, null], "G1 vs G0": [-0.006, -0.063, 0.058, 1.0], "G2 vs A2": [0.078, -0.037, 0.196, null], "G2 vs H_pub": [-2.891, -3.52, -2.336, null], "G2 vs G0": [0.078, -0.037, 0.196, 1.0], "G3 vs A2": [0.034, -0.049, 0.132, null], "G3 vs H_pub": [-2.936, -3.572, -2.374, null], "G3 vs G0": [0.034, -0.049, 0.132, 1.0], "G4 vs A2": [0.234, 0.041, 0.42, null], "G4 vs H_pub": [-2.736, -3.293, -2.261, null], "G4 vs G0": [0.234, 0.041, 0.42, 1.0]}
+/Data3/<hpc-user>/RE-FUSED/codes/scripts/extra/x09_source_fusion.py:83: RuntimeWarning: divide by zero encountered in log
+  logw = np.log(p)
+/Data3/<hpc-user>/RE-FUSED/codes/scripts/extra/x09_source_fusion.py:83: RuntimeWarning: divide by zero encountered in log
+  logw = np.log(p)
+/Data3/<hpc-user>/RE-FUSED/codes/scripts/extra/x09_source_fusion.py:83: RuntimeWarning: divide by zero encountered in log
+  logw = np.log(p)
+/Data3/<hpc-user>/RE-FUSED/codes/scripts/extra/x09_source_fusion.py:83: RuntimeWarning: divide by zero encountered in log
+  logw = np.log(p)
+dsm_nominal projected {"A2": 68.234, "H_pub": 78.908, "G0": 68.234, "G1": 68.234, "G2": 68.623, "G3": 68.432, "G4": 69.389}
+{"G1 vs A2": [0.0, 0.0, 0.0, null], "G1 vs H_pub": [-10.674, -12.445, -9.213, null], "G1 vs G0": [0.0, 0.0, 0.0, 1.0], "G2 vs A2": [0.389, 0.209, 0.578, null], "G2 vs H_pub": [-10.285, -11.95, -8.927, null], "G2 vs G0": [0.389, 0.209, 0.578, 1.0], "G3 vs A2": [0.198, 0.075, 0.342, null], "G3 vs H_pub": [-10.476, -12.173, -9.094, null], "G3 vs G0": [0.198, 0.075, 0.342, 1.0], "G4 vs A2": [1.155, 0.834, 1.482, null], "G4 vs H_pub": [-9.519, -11.075, -8.258, null], "G4 vs G0": [1.155, 0.834, 1.482, 1.0]}
+/Data3/<hpc-user>/RE-FUSED/codes/scripts/extra/x09_source_fusion.py:83: RuntimeWarning: divide by zero encountered in log
+  logw = np.log(p)
+/Data3/<hpc-user>/RE-FUSED/codes/scripts/extra/x09_source_fusion.py:83: RuntimeWarning: divide by zero encountered in log
+  logw = np.log(p)
+/Data3/<hpc-user>/RE-FUSED/codes/scripts/extra/x09_source_fusion.py:83: RuntimeWarning: divide by zero encountered in log
+  logw = np.log(p)
+/Data3/<hpc-user>/RE-FUSED/codes/scripts/extra/x09_source_fusion.py:83: RuntimeWarning: divide by zero encountered in log
+  logw = np.log(p)
+dsm_nominal not projected {"A2": 49.459, "H_pub": 62.215, "G0": 49.459, "G1": 49.459, "G2": 49.831, "G3": 49.666, "G4": 50.936}
+{"G1 vs A2": [0.0, 0.0, 0.0, null], "G1 vs H_pub": [-12.756, -14.571, -11.174, null], "G1 vs G0": [0.0, 0.0, 0.0, 1.0], "G2 vs A2": [0.372, 0.173, 0.582, null], "G2 vs H_pub": [-12.384, -14.09, -10.868, null], "G2 vs G0": [0.372, 0.173, 0.582, 1.0], "G3 vs A2": [0.207, 0.068, 0.376, null], "G3 vs H_pub": [-12.549, -14.262, -11.048, null], "G3 vs G0": [0.207, 0.068, 0.376, 1.0], "G4 vs A2": [1.477, 1.058, 1.887, null], "G4 vs H_pub": [-11.279, -12.863, -9.954, null], "G4 vs G0": [1.477, 1.058, 1.887, 1.0]}
+DONE 237 s -> /Data3/<hpc-user>/RE-FUSED/results/extra/source_fusion_dev.json
+source fusion finished rc=0 2026-10-11T17:58:12+05:30
