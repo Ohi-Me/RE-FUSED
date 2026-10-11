@@ -1,0 +1,35 @@
+{
+ "L0": 2,
+ "delay_days": 2,
+ "feats": [
+  "y_lag2",
+  "y_lag3",
+  "y_lag7",
+  "y_lag14",
+  "y_lag28",
+  "y_rm7",
+  "y_rs7",
+  "y_rm28",
+  "y_rs28",
+  "dow",
+  "doy_sin",
+  "doy_cos",
+  "sid_code",
+  "E_lag2",
+  "E_lag3",
+  "E_lag7",
+  "E_lag14",
+  "E_roll7",
+  "S_pub_feat"
+ ],
+ "state_keys": [
+  "season",
+  "weekend"
+ ],
+ "seeds": 3,
+ "started": "Sat Oct 10 19:38:24 2026",
+ "rows_sched_persist": 83383,
+ "rows_sched_final": 83383,
+ "rows_snaive7": 83383,
+ "finished": "Sat Oct 10 19:39:50 2026"
+}

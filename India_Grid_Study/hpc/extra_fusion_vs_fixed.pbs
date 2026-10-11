@@ -1,0 +1,18 @@
+#!/bin/bash
+#PBS -N refused_fusion_fix
+#PBS -q workq
+#PBS -l select=1:ncpus=8:ngpus=1:mem=32gb
+#PBS -l walltime=01:00:00
+#PBS -j oe
+# Additional analysis (not pre-registered): forecast-error energy of each gate design on the Indian panel.
+# Submit from the project folder:  qsub -o logs/pbs/refused_fusion_fixulation.out hpc/extra_gate_energy.pbs
+cd "$PBS_O_WORKDIR"
+export PYTHONNOUSERSITE=1
+source hpc/cluster.env 2>/dev/null
+source "${HPC_CONDA_SH:-/apps/compilers/anaconda3/etc/profile.d/conda.sh}"
+conda activate "${HPC_CONDA_ENV:-refused_h100}"
+MIG=$(python run_all.py pick-mig) || { echo "no free MIG instance"; exit 3; }
+export CUDA_VISIBLE_DEVICES="$MIG"
+echo "fusion vs fixed $(date -Iseconds) on $(hostname), job $PBS_JOBID, GPU $CUDA_VISIBLE_DEVICES"
+REFUSED_PHASE=confirm REFUSED_CONFIRMATORY=1 python -u codes/scripts/extra/x08_fusion_vs_fixed_level.py
+echo "fusion vs fixed finished rc=$? $(date -Iseconds)"

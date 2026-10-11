@@ -1,0 +1,25 @@
+{
+ "note": "chosen on the development split only, before any test file was read",
+ "mean_dev_skill": {
+  "EWA(eta=1.0)": 0.05859547763826821,
+  "FS(eta=20.0,alpha=0.05)": 0.07473492363472986,
+  "LEAD30": 0.05395108821967721
+ },
+ "frozen": {
+  "EWA(eta=1.0)": [
+   "EWA",
+   1.0,
+   0.0
+  ],
+  "FS(eta=20.0,alpha=0.05)": [
+   "FS",
+   20.0,
+   0.05
+  ],
+  "LEAD30": [
+   "LEAD30",
+   0.0,
+   0.0
+  ]
+ }
+}

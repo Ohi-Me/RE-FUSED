@@ -26,7 +26,7 @@ version: "1.0.0"
 date-released: "2026-10-06"
 preferred-citation:
   type: dataset
-  title: "RE-FUSED (Dataset and Relevent files)"
+  title: "RE-FUSED: Adaptive Forecasting and Decision Support Framework for Renewable Energy Systems — Datasets, Experimental Results and Logs"
   authors:
     - family-names: Kumar
       given-names: Rohit

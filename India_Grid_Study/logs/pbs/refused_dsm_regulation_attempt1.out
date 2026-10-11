@@ -1,0 +1,16 @@
+dsm regulation 2026-10-10T19:40:02+05:30 on master, job 34922.master, GPU MIG-5eef67d0-7e58-5016-8973-1bf2618f6d54
+Traceback (most recent call last):
+  File "/Data3/<hpc-user>/RE-FUSED/codes/scripts/extra/x06_dsm_regulation.py", line 208, in <module>
+    main()
+  File "/Data3/<hpc-user>/RE-FUSED/codes/scripts/extra/x06_dsm_regulation.py", line 131, in main
+    F0 = R2.build_v2(sel["final"], int(sel["calibration_window"])).reset_index(drop=True)
+  File "/Data3/<hpc-user>/RE-FUSED/codes/scripts/extra/../dev2/d2_09_o5.py", line 60, in build_v2
+    F = O5.build("lgbm")
+  File "/Data3/<hpc-user>/RE-FUSED/codes/scripts/extra/../o5/o5_01_scheduling.py", line 127, in build
+    P = O.load_panel().sort_values(["entity", "date"]).reset_index(drop=True)
+  File "/Data3/<hpc-user>/RE-FUSED/codes/scripts/extra/../../refused/o2data.py", line 63, in load_panel
+    guard.require_confirmatory()
+  File "/Data3/<hpc-user>/RE-FUSED/codes/scripts/extra/../../refused/guard.py", line 47, in require_confirmatory
+    raise BlindingError("confirmatory data are blinded: " + "; ".join(reasons))
+refused.guard.BlindingError: confirmatory data are blinded: REFUSED_CONFIRMATORY is not 1
+dsm regulation finished rc=1 2026-10-10T19:40:05+05:30

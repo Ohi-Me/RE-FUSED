@@ -91,7 +91,7 @@ Files too large for GitHub are in the [Zenodo record](https://doi.org/10.5281/ze
 
 Please cite the Zenodo record (see also [`CITATION.cff`](CITATION.cff)):
 
-Kumar, R. (2026). *RE-FUSED (Dataset and Relevent files)* (Version 1.0.0) [Dataset]. Zenodo.
+Kumar, R. (2026). *RE-FUSED: Adaptive Forecasting and Decision Support Framework for Renewable Energy Systems — Datasets, Experimental Results and Logs* (Version 1.0.0) [Dataset]. Zenodo.
 https://doi.org/10.5281/zenodo.23194781
 
 That DOI is for version 1.0.0. The concept DOI [10.5281/zenodo.23194780](https://doi.org/10.5281/zenodo.23194780)

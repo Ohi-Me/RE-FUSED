@@ -1,0 +1,25 @@
+#!/bin/bash
+#PBS -N refused_explore_schedule
+#PBS -q workq
+#PBS -l select=1:ncpus=8:ngpus=1:mem=32gb
+#PBS -l walltime=04:00:00
+#PBS -j oe
+# Exploratory (not pre-registered): gate ladder on the States' recorded drawal schedules (ECM reviewer request).
+# Submit from the Forecast_Correction_India folder:  qsub -o logs/explore_schedule.out hpc/explore_schedule.pbs
+cd "$PBS_O_WORKDIR"
+export PYTHONNOUSERSITE=1 OMP_NUM_THREADS=6
+source ../India_Grid_Study/hpc/cluster.env 2>/dev/null
+source "${HPC_CONDA_SH:-/apps/compilers/anaconda3/etc/profile.d/conda.sh}"
+conda activate "${HPC_CONDA_ENV:-refused_h100}"
+CORES=$(python - <<'PY'
+import time
+def snap():
+    return {l.split()[0]: list(map(int, l.split()[1:])) for l in open("/proc/stat") if l[:3] == "cpu" and l[3].isdigit()}
+a = snap(); time.sleep(2); b = snap()
+idle = {k: (b[k][3] + b[k][4] - a[k][3] - a[k][4]) / max(1, sum(b[k]) - sum(a[k])) for k in a}
+print(",".join(sorted((k[3:] for k in sorted(idle, key=idle.get, reverse=True)[:6]), key=int)))
+PY
+)
+echo "explore schedule $(date -Iseconds) on $(hostname), job $PBS_JOBID, commit $(git rev-parse --short HEAD), cores $CORES"
+taskset -c $CORES python -u code/scripts/india/explore_schedule_correction.py
+echo "finished $(date -Iseconds)"
