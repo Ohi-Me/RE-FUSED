@@ -61,7 +61,8 @@ def main():
     reg(["dem_energy_met_gwh", "dem_energy_shortage_gwh"], "demand", "Grid-India PSP §C", "GWh", 1)
     reg(["dem_max_demand_mw", "dem_peak_shortage_mw"], "demand", "Grid-India PSP §C", "MW", 1,
         "peak shortage = shortage at the time of maximum demand")
-    reg(["dev_drawal_schedule_gwh", "dev_od_ud_gwh"], "deviation", "Grid-India PSP §C", "GWh", 1,
+    reg(["dev_drawal_schedule_gwh"], "deviation", "Grid-India PSP §C", "GWh", 1, "scheduled drawal, daily total")
+    reg(["dev_od_ud_gwh"], "deviation", "Grid-India PSP §C", "GWh", 1,
         "OD(+)/UD(−) = actual − scheduled drawal, daily net")
     reg(["dev_max_od_mw", "dev_max_ud_mw"], "deviation", "Grid-India PSP §C", "MW", 1, "max UD printed from 2023")
     P = P.sort_values(["entity", "date"]).reset_index(drop=True)
