@@ -1,0 +1,50 @@
+{
+ "note": "exploratory validation of the rate function against official ERPC accounts",
+ "n_blocks": 302400,
+ "share_within_tolerance": 1.0,
+ "by_entity": {
+  "BR": {
+   "n": 50400,
+   "within": 1.0,
+   "official_net_rs": 1519862320.27,
+   "model_net_rs": 1519862383.355823,
+   "abs_error_share": 7.02686983963751e-07
+  },
+  "DVC": {
+   "n": 50400,
+   "within": 1.0,
+   "official_net_rs": 298621197.9,
+   "model_net_rs": 298620781.8075461,
+   "abs_error_share": 1.3278014923432702e-06
+  },
+  "JH": {
+   "n": 50400,
+   "within": 1.0,
+   "official_net_rs": 1378054850.14,
+   "model_net_rs": 1378054812.5411701,
+   "abs_error_share": 1.1381074787956538e-06
+  },
+  "OD": {
+   "n": 50400,
+   "within": 1.0,
+   "official_net_rs": -247597051.97999993,
+   "model_net_rs": -247596859.4497373,
+   "abs_error_share": 9.758716126190163e-07
+  },
+  "SK": {
+   "n": 50400,
+   "within": 1.0,
+   "official_net_rs": 122387018.67,
+   "model_net_rs": 122387046.06087889,
+   "abs_error_share": 1.1274668914406403e-05
+  },
+  "WB": {
+   "n": 50400,
+   "within": 1.0,
+   "official_net_rs": -3330749470.8700004,
+   "model_net_rs": -3330749227.734104,
+   "abs_error_share": 7.774330157698813e-07
+  }
+ },
+ "mismatch_examples": []
+}

@@ -66,6 +66,7 @@ How to use them:
 | `Forecast_Correction_India/Other_Countries/results/surrogate/C6/snaive168_s0.parquet` | 14.8 | 1 |
 | `Forecast_Correction_India/Other_Countries/results/surrogate/C7/val_frac0.1_s0.parquet` | 14.3 | 1 |
 | `India_Grid_Study/data/interim/dsm_block.parquet` | 14.1 | 1 |
+| `India_Grid_Study/data/interim/erpc_dsm_blocks.parquet` | 10.5 | ? |
 | `India_Grid_Study/data/interim/npp_station_day.parquet` | 6.0 | 1 |
 | `India_Grid_Study/results/confirm/o2/preds/T1__bilstm.parquet` | 6.8 | 1 |
 | `India_Grid_Study/results/confirm/o2/preds/T1__bilstm_seeds.parquet` | 28.2 | 1 |

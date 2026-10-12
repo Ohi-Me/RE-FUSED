@@ -1,0 +1,17 @@
+#!/bin/bash
+#PBS -N refused_block_settle
+#PBS -q cpuq
+#PBS -l select=1:ncpus=8:ngpus=0:mem=32gb
+#PBS -l walltime=04:00:00
+#PBS -j oe
+# Block-level check of Paper 2 with the official ERPC settlement (exploratory), CPU only.
+# Submit from the project folder:  qsub -o logs/pbs/refused_block_settlement.out hpc/extra_block_settlement.pbs
+cd "$PBS_O_WORKDIR"
+export PYTHONNOUSERSITE=1 OMP_NUM_THREADS=8 CUDA_VISIBLE_DEVICES=""
+source hpc/cluster.env 2>/dev/null
+source "${HPC_CONDA_SH:-/apps/compilers/anaconda3/etc/profile.d/conda.sh}"
+conda activate "${HPC_CONDA_ENV:-refused_h100}"
+echo "block settlement $(date -Iseconds) on $(hostname), job $PBS_JOBID"
+python -u codes/scripts/extra/x11a_rate_check.py
+REFUSED_PHASE=confirm REFUSED_CONFIRMATORY=1 python -u codes/scripts/extra/x11_block_settlement.py
+echo "block settlement finished rc=$? $(date -Iseconds)"

@@ -1,0 +1,18 @@
+﻿M1 stylised (paper) {'corr': 0.7967071082527545, 'sign_agreement': 0.851421188630491, 'mean_official_rs_cr': -0.01207360978940568, 'mean_model_rs_cr': -0.2967927237534441, 'mae_over_mean_abs_official': 0.6657487808646168}
+M2 Regulations, daily at 50.00 Hz {'corr': 0.8067497536107814, 'sign_agreement': 0.8517441860465116, 'mean_official_rs_cr': -0.01207360978940568, 'mean_model_rs_cr': -0.32326600946353473, 'mae_over_mean_abs_official': 0.7100890457763731}
+M3 M2 with block frequency and rate {'corr': 0.8452180276006246, 'sign_agreement': 0.8517441860465116, 'mean_official_rs_cr': -0.01207360978940568, 'mean_model_rs_cr': -0.2581947215131981, 'mae_over_mean_abs_official': 0.5814069929116605}
+as is {"P": 9.776, "H_pub": 10.413, "A2": 10.706, "R0": 10.22, "fixed level": 9.984, "adaptive level": 10.045}
+   A2 vs P 0.93 [0.605, 1.268]
+   A2 vs H_pub 0.293 [-0.15, 0.761]
+   A2 vs R0 0.486 [0.338, 0.636]
+   A2 vs fixed level 0.722 [0.511, 0.955]
+   A2 vs adaptive level 0.661 [0.456, 0.892]
+   adaptive vs fixed 0.061 [0.029, 0.097]
+rescaled {"P": 9.769, "H_pub": 10.404, "A2": 10.699, "R0": 10.214, "fixed level": 9.977, "adaptive level": 10.038}
+   A2 vs P 0.93 [0.606, 1.267]
+   A2 vs H_pub 0.295 [-0.149, 0.762]
+   A2 vs R0 0.485 [0.338, 0.636]
+   A2 vs fixed level 0.722 [0.511, 0.954]
+   A2 vs adaptive level 0.661 [0.455, 0.892]
+   adaptive vs fixed 0.061 [0.029, 0.097]
+DONE 546 s
