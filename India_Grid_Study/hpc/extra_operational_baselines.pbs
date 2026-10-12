@@ -1,0 +1,16 @@
+#!/bin/bash
+#PBS -N refused_op_baselines
+#PBS -q cpuq
+#PBS -l select=1:ncpus=8:ngpus=0:mem=32gb
+#PBS -l walltime=04:00:00
+#PBS -j oe
+# Operational baselines for Paper 2 (exploratory), CPU only.
+# Submit from the project folder:  qsub -o logs/pbs/refused_operational_baselines.out hpc/extra_operational_baselines.pbs
+cd "$PBS_O_WORKDIR"
+export PYTHONNOUSERSITE=1 OMP_NUM_THREADS=8 CUDA_VISIBLE_DEVICES=""
+source hpc/cluster.env 2>/dev/null
+source "${HPC_CONDA_SH:-/apps/compilers/anaconda3/etc/profile.d/conda.sh}"
+conda activate "${HPC_CONDA_ENV:-refused_h100}"
+echo "operational baselines $(date -Iseconds) on $(hostname), job $PBS_JOBID"
+REFUSED_PHASE=confirm REFUSED_CONFIRMATORY=1 python -u codes/scripts/extra/x10_operational_baselines.py
+echo "operational baselines finished rc=$? $(date -Iseconds)"

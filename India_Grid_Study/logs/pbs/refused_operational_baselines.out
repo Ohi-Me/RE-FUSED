@@ -1,0 +1,33 @@
+operational baselines 2026-10-12T12:18:34+05:30 on master, job 35119.master
+stylised fixed {'H_pub': 18.54, 'P': 15.92, 'A2': 15.8, 'H7': 28.05, 'H7 (not projected)': 27.33, 'WK4': 29.91, 'WK4 (not projected)': 28.86, 'M7': 21.39, 'M7 (not projected)': 19.65, 'X2': 19.09, 'X2 (not projected)': 17.3, 'X7': 29.3, 'X7 (not projected)': 28.65, 'H_pub (not projected)': 16.71}
+   A2 vs best on calibration year H_pub -2.738 [-3.317, -2.232]
+   A2 vs best on evaluation period H_pub -2.738 [-3.317, -2.232]
+   A2 vs best on calibration year (not projected) H_pub (not projected) -0.908 [-1.934, -0.041]
+   A2 vs best on evaluation period (not projected) H_pub (not projected) -0.908 [-1.934, -0.041]
+stylised rolling {'H_pub': 16.5, 'P': 13.61, 'A2': 13.49, 'H7': 27.06, 'H7 (not projected)': 27.33, 'WK4': 28.86, 'WK4 (not projected)': 28.86, 'M7': 19.64, 'M7 (not projected)': 19.65, 'X2': 16.95, 'X2 (not projected)': 17.3, 'X7': 28.22, 'X7 (not projected)': 28.65, 'H_pub (not projected)': 16.71}
+   A2 vs best on calibration year H_pub -3.012 [-3.654, -2.44]
+   A2 vs best on evaluation period H_pub -3.012 [-3.654, -2.44]
+   A2 vs best on calibration year (not projected) H_pub (not projected) -3.217 [-3.861, -2.636]
+   A2 vs best on evaluation period (not projected) H_pub (not projected) -3.217 [-3.861, -2.636]
+dsm_nominal fixed {'H_pub': 77.7, 'P': 67.12, 'A2': 66.88, 'H7': 118.28, 'H7 (not projected)': 116.91, 'WK4': 126.64, 'WK4 (not projected)': 123.19, 'M7': 90.92, 'M7 (not projected)': 84.59, 'X2': 79.0, 'X2 (not projected)': 71.71, 'X7': 121.94, 'X7 (not projected)': 120.62, 'H_pub (not projected)': 70.43}
+   A2 vs best on calibration year H_pub -10.817 [-12.407, -9.293]
+   A2 vs best on evaluation period H_pub -10.817 [-12.407, -9.293]
+   A2 vs best on calibration year (not projected) H_pub (not projected) -3.544 [-7.638, -0.033]
+   A2 vs best on evaluation period (not projected) H_pub (not projected) -3.544 [-7.638, -0.033]
+dsm_nominal rolling {'H_pub': 69.66, 'P': 57.76, 'A2': 57.37, 'H7': 115.84, 'H7 (not projected)': 116.91, 'WK4': 123.19, 'WK4 (not projected)': 123.19, 'M7': 84.56, 'M7 (not projected)': 84.59, 'X2': 70.48, 'X2 (not projected)': 71.71, 'X7': 119.02, 'X7 (not projected)': 120.62, 'H_pub (not projected)': 70.43}
+   A2 vs best on calibration year H_pub -12.282 [-14.02, -10.556]
+   A2 vs best on evaluation period H_pub -12.282 [-14.02, -10.556]
+   A2 vs best on calibration year (not projected) H_pub (not projected) -13.055 [-14.809, -11.245]
+   A2 vs best on evaluation period (not projected) H_pub (not projected) -13.055 [-14.809, -11.245]
+dsm_lowfreq fixed {'H_pub': 82.59, 'P': 71.78, 'A2': 70.96, 'H7': 123.55, 'H7 (not projected)': 121.55, 'WK4': 132.1, 'WK4 (not projected)': 128.17, 'M7': 95.88, 'M7 (not projected)': 88.91, 'X2': 84.23, 'X2 (not projected)': 76.13, 'X7': 127.45, 'X7 (not projected)': 125.52, 'H_pub (not projected)': 74.47}
+   A2 vs best on calibration year H_pub -11.627 [-13.354, -9.991]
+   A2 vs best on evaluation period H_pub -11.627 [-13.354, -9.991]
+   A2 vs best on calibration year (not projected) H_pub (not projected) -3.508 [-7.72, 0.133]
+   A2 vs best on evaluation period (not projected) H_pub (not projected) -3.508 [-7.72, 0.133]
+dsm_lowfreq rolling {'H_pub': 73.71, 'P': 61.66, 'A2': 60.58, 'H7': 120.48, 'H7 (not projected)': 121.55, 'WK4': 128.17, 'WK4 (not projected)': 128.17, 'M7': 88.88, 'M7 (not projected)': 88.91, 'X2': 74.91, 'X2 (not projected)': 76.13, 'X7': 123.92, 'X7 (not projected)': 125.52, 'H_pub (not projected)': 74.47}
+   A2 vs best on calibration year H_pub -13.13 [-15.06, -11.279]
+   A2 vs best on evaluation period H_pub -13.13 [-15.06, -11.279]
+   A2 vs best on calibration year (not projected) H_pub (not projected) -13.882 [-15.8, -11.913]
+   A2 vs best on evaluation period (not projected) H_pub (not projected) -13.882 [-15.8, -11.913]
+DONE 99 s
+operational baselines finished rc=0 2026-10-12T12:20:16+05:30
