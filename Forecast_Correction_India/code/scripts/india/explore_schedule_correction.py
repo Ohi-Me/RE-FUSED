@@ -7,7 +7,7 @@ The State-day panel holds actual drawal X and the recorded schedule S (dev_drawa
 published net deviation dev_od_ud_gwh exactly). Grid-India publishes only the final schedule, which includes revisions
 made during the day, so two baselines are used and reported separately:
   sched_persist  B = S of the latest published day (t - L0, L0 = 1 + publication delay). Available when the day-ahead
-                 forecast is issued, so it is an operational baseline (the persistence rule of Paper 2).
+                 forecast is issued, so it is an operational baseline (the persistence rule of the scheduling study).
   sched_final    B = S of day t itself. NOT available day-ahead (it contains intra-day revisions); it is a ceiling that
                  asks whether even the final schedule carries a learnable, correctable error.
 The corrector sees lags of X, lags of the schedule error X - S (both at the published lag or older), calendar terms

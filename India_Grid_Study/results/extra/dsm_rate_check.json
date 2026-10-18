@@ -2,6 +2,10 @@
  "note": "exploratory validation of the rate function against official ERPC accounts",
  "n_blocks": 302400,
  "share_within_tolerance": 1.0,
+ "share_within_rs1": 0.9989219576719577,
+ "max_abs_error_rs": 2.486918999813497,
+ "median_abs_error_rs": 0.0714199199956056,
+ "abs_error_share": 1.1278271030537031e-06,
  "by_entity": {
   "BR": {
    "n": 50400,

@@ -1,4 +1,4 @@
-"""Block-level (15-minute) check of Paper 2 with the official settlement of six Eastern-Region control areas
+"""Block-level (15-minute) check of the scheduling rules with the official settlement of six Eastern-Region control areas
 (exploratory, not pre-registered; the pre-registered results are unchanged).
 
 Data: ERPC block-wise settlement accounts (data/interim/erpc_dsm_blocks.parquet, b11_erpc_blocks.py): per block the

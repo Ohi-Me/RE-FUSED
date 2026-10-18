@@ -36,7 +36,10 @@ def main():
     err = (D.model - D.official).abs()
     tol = np.maximum(1.0, 0.001 * D.official.abs())          # Rs 1 or 0.1 %
     res = dict(note="exploratory validation of the rate function against official ERPC accounts",
-               n_blocks=int(len(D)), share_within_tolerance=float((err <= tol).mean()), by_entity={})
+               n_blocks=int(len(D)), share_within_tolerance=float((err <= tol).mean()),
+               share_within_rs1=float((err <= 1.0).mean()), max_abs_error_rs=float(err.max()),
+               median_abs_error_rs=float(err.median()), abs_error_share=float(err.sum() / D.official.abs().sum()),
+               by_entity={})
     for e, g in D.groupby("entity"):
         ge = (g.model - g.official).abs()
         res["by_entity"][e] = dict(n=int(len(g)), within=float((ge <= np.maximum(1.0, 0.001 * g.official.abs())).mean()),

@@ -1,4 +1,4 @@
-"""Stronger operational baselines for the scheduling rules of Paper 2 (exploratory, not pre-registered).
+"""Stronger operational baselines for the scheduling rules (exploratory, not pre-registered).
 
 Persistence of the recorded schedule of day t-2 is a weak baseline for an operator who has weeks of schedules and
 drawal at hand. Five further baselines use only values published by the decision time and have nothing to fit:

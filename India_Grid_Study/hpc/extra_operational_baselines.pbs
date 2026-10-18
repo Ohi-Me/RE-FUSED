@@ -4,7 +4,7 @@
 #PBS -l select=1:ncpus=8:ngpus=0:mem=32gb
 #PBS -l walltime=04:00:00
 #PBS -j oe
-# Operational baselines for Paper 2 (exploratory), CPU only.
+# Operational baselines for the scheduling rules (exploratory), CPU only.
 # Submit from the project folder:  qsub -o logs/pbs/refused_operational_baselines.out hpc/extra_operational_baselines.pbs
 cd "$PBS_O_WORKDIR"
 export PYTHONNOUSERSITE=1 OMP_NUM_THREADS=8 CUDA_VISIBLE_DEVICES=""
