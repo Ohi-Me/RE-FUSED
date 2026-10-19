@@ -1,6 +1,6 @@
 """Exploratory (not pre-registered): gated correction of the States' own recorded drawal schedules.
 
-Question (reviewer request for the ECM paper): does the gate ladder behave the same when the forecast being corrected
+Question (exploratory, added after the confirmatory scoring): does the gate ladder behave the same when the forecast being corrected
 is the State's own schedule rather than a forecast we built?
 
 The State-day panel holds actual drawal X and the recorded schedule S (dev_drawal_schedule_gwh; X - S equals the

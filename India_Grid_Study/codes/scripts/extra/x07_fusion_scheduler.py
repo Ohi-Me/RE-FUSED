@@ -1,4 +1,4 @@
-"""Settlement-aware fusion scheduler (TPWRS follow-up; protocol codes/design/09_fusion_tpwrs_protocol.md).
+"""Settlement-aware fusion scheduler (scheduling follow-up; protocol codes/design/09_fusion_tpwrs_protocol.md).
 
 A level tau = 0.01 + 0.98 sigmoid(f(z)) is learned from decision-time features z and the schedule is the calibrated
 forecast quantile at that level (variant F5 adds a scaled bias term). theta minimises the realised settlement regret

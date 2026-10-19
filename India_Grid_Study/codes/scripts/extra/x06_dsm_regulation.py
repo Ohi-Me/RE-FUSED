@@ -1,4 +1,4 @@
-"""Exploratory analysis, not pre-registered (TPWRS reviewer request): do the scheduling results survive a settlement
+"""Exploratory analysis, not pre-registered (added after the confirmatory scoring): do the scheduling results survive a settlement
 closer to the DSM Regulations 2024 and schedule limits that follow demand growth?
 
 Nothing is refitted. It uses the frame of the confirmatory run (final forecaster, calibrated scenarios, prices as

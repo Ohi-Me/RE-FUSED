@@ -1,4 +1,4 @@
-"""Source fusion for day-ahead scheduling (TPWRS follow-up 2; protocol codes/design/10_source_fusion_protocol.md).
+"""Source fusion for day-ahead scheduling (scheduling follow-up 2; protocol codes/design/10_source_fusion_protocol.md).
 
 Two schedules are available at decision time: the settlement-aware forecast rule A2 (from the calibrated forecast
 distribution) and the State's own recorded schedule of day t-2 (H_pub), which carries what the State knows about its

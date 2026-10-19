@@ -4,7 +4,7 @@
 #PBS -l select=1:ncpus=8:ngpus=1:mem=32gb
 #PBS -l walltime=04:00:00
 #PBS -j oe
-# Exploratory (not pre-registered): gate ladder on the States' recorded drawal schedules (ECM reviewer request).
+# Exploratory (not pre-registered): gate ladder on the States' recorded drawal schedules (added after the confirmatory scoring).
 # Submit from the Forecast_Correction_India folder:  qsub -o logs/explore_schedule.out hpc/explore_schedule.pbs
 cd "$PBS_O_WORKDIR"
 export PYTHONNOUSERSITE=1 OMP_NUM_THREADS=6

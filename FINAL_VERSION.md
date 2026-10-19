@@ -27,6 +27,8 @@ run was H100 job 31823 (18–20 September 2026).
 | **Scoring of all 52 pre-registered tests** | `codes/scripts/confirm/c01_hypotheses.py` | `results/confirm2/hypotheses.csv` | `results/tables/confirm_hypotheses.md` |
 | Integrity check (hashes, rescoring) | `codes/scripts/audit/a02_integrity.py` | `results/audit/` | `results/audit/INTEGRITY.md` |
 | Additional analyses (after scoring) | `codes/scripts/extra/x01`, `x02`, `x04`, `x05` | `results/extra/` | `Docs/RESULTS.md` |
+| Exploratory scheduling checks (after scoring) | `codes/scripts/extra/x06_dsm_regulation.py` (closer daily settlement, limits that follow demand), `x07_fusion_scheduler.py` and `x08_fusion_vs_fixed_level.py` (level policy learned on the settlement cost), `x09_source_fusion.py`, `x10_operational_baselines.py` | `results/extra/` (`dsm_regulation.json`, `fusion_vs_fixed_level.json`, `source_fusion_dev.json`, `operational_baselines.json`) | `results/extra/*_README.md` |
+| Check against the official 15-minute settlement (ERPC, six areas) | `codes/scripts/acquire/a20_erpc_dsm_blockwise.py`, `codes/scripts/build/b11_erpc_blocks.py`, `codes/refused/dsm2024.py` (buyer rules of the 2024 Regulations), `codes/scripts/extra/x11a_rate_check.py`, `x11_block_settlement.py` | `results/extra/dsm_rate_check.json`, `block_settlement.json` | — |
 | Plan frozen before scoring | — | `codes/design/02_preregistration.md`, `PREREG_SHA256.txt` | `codes/design/07_confirm_deviations.md` |
 
 `results/confirm/` holds the first-round models scored on the same held-out period; the final combinations in
