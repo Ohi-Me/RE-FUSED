@@ -1,0 +1,16 @@
+#!/bin/bash
+#PBS -N refused_gate_energy_blocks
+#PBS -q cpuq
+#PBS -l select=1:ncpus=8:ngpus=0:mem=32gb
+#PBS -l walltime=02:00:00
+#PBS -j oe
+# Exploratory check (not pre-registered): bootstrap sensitivity of the State-panel energy valuation.
+# CPU only. Submit from the project folder:  qsub -o logs/pbs/refused_gate_energy_blocks.out hpc/extra_gate_energy_blocks.pbs
+cd "$PBS_O_WORKDIR"
+export PYTHONNOUSERSITE=1 OMP_NUM_THREADS=${NT:-6} OPENBLAS_NUM_THREADS=${NT:-6} MKL_NUM_THREADS=${NT:-6}
+source hpc/cluster.env 2>/dev/null
+source "${HPC_CONDA_SH:-/apps/compilers/anaconda3/etc/profile.d/conda.sh}"
+conda activate "${HPC_CONDA_ENV:-refused_h100}"
+echo "gate energy blocks $(date -Iseconds) on $(hostname), job $PBS_JOBID"
+REFUSED_PHASE=confirm python -u codes/scripts/extra/x12_gate_energy_blocks.py
+echo "finished rc=$? $(date -Iseconds)"

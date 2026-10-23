@@ -28,6 +28,7 @@ run was H100 job 31823 (18–20 September 2026).
 | Integrity check (hashes, rescoring) | `codes/scripts/audit/a02_integrity.py` | `results/audit/` | `results/audit/INTEGRITY.md` |
 | Additional analyses (after scoring) | `codes/scripts/extra/x01`, `x02`, `x04`, `x05` | `results/extra/` | `Docs/RESULTS.md` |
 | Exploratory scheduling checks (after scoring) | `codes/scripts/extra/x06_dsm_regulation.py` (closer daily settlement, limits that follow demand), `x07_fusion_scheduler.py` and `x08_fusion_vs_fixed_level.py` (level policy learned on the settlement cost), `x09_source_fusion.py`, `x10_operational_baselines.py` | `results/extra/` (`dsm_regulation.json`, `fusion_vs_fixed_level.json`, `source_fusion_dev.json`, `operational_baselines.json`) | `results/extra/*_README.md` |
+| Bootstrap sensitivity of the gate-energy valuation (exploratory) | `codes/scripts/extra/x12_gate_energy_blocks.py`; job `hpc/extra_gate_energy_blocks.pbs` (H100 job 37217) | `results/extra/gate_energy_blocks.csv` | — |
 | Check against the official 15-minute settlement (ERPC, six areas) | `codes/scripts/acquire/a20_erpc_dsm_blockwise.py`, `codes/scripts/build/b11_erpc_blocks.py`, `codes/refused/dsm2024.py` (buyer rules of the 2024 Regulations), `codes/scripts/extra/x11a_rate_check.py`, `x11_block_settlement.py` | `results/extra/dsm_rate_check.json`, `block_settlement.json` | — |
 | Plan frozen before scoring | — | `codes/design/02_preregistration.md`, `PREREG_SHA256.txt` | `codes/design/07_confirm_deviations.md` |
 
@@ -48,6 +49,7 @@ separate number per series, per hour or per day. This study asks when a finer ga
 | **All-India hourly study** (pre-registered) | `code/scripts/india/run_india_ladders.py`, `india_prob_energy.py`, `x1_india.py`, `analyze_india.py`; job `hpc/india_confirm.pbs` | `results/india/confirm/` | **`results/india/confirm/analysis/verdicts.json`** |
 | Figure | `code/scripts/india/fig_india.py` | `figures/india/correction_skill_hourly.png` | — |
 | State daily ladders (exploratory) | `code/scripts/india/run_india_ladders.py --mode explore`; job `hpc/india_daily.pbs` | `results/india/explore/` | — |
+| Checks added after scoring (exploratory): conventional bias corrections, error-aware corrector, refreshed LightGBM, rolling-origin selection, reserve tracking, settlement and bootstrap sensitivity | `code/scripts/india/explore_ecm_revision.py`; job `hpc/explore_ecm.pbs` (H100 jobs 37216, 37218, 37228) | `results/india/explore_ecm/` (summaries) | `design/11_ecm_revision_exploratory.md` (settings fixed before the runs) |
 | Changes after the plan was frozen | — | — | `design/06_deviations_india.md` |
 
 Logs: `logs/india_confirm.out` (final run, H100 job 34223) and the earlier stopped attempt

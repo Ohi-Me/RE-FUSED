@@ -1,0 +1,95 @@
+{
+ "eta_grid": {
+  "0.005": 0.00953160383467433,
+  "0.01": 0.009074583435114197,
+  "0.02": 0.008301793540934747,
+  "0.05": 0.008217626666254061,
+  "0.1": 0.009618974697711702
+ },
+ "eta": 0.05,
+ "chosen_on": "development test months 1 Dec 2025 - 28 Feb 2026 (seed 0)",
+ "lgbm|all": {
+  "fixed": {
+   "coverage": 0.8619685497961561,
+   "mean_reserve_mw": 15593.33330393658,
+   "pinball99": 851.936757945667,
+   "shortfall_gwh_yr": 26088.046608714223
+  },
+  "tracked": {
+   "coverage": 0.9859691851538095,
+   "mean_reserve_mw": 23222.67527953717,
+   "pinball99": 220.1237005097387,
+   "shortfall_gwh_yr": 1308.794996154407
+  }
+ },
+ "lgbm|demand": {
+  "fixed": {
+   "coverage": 0.7174280879864637,
+   "mean_reserve_mw": 18391.304646809895,
+   "pinball99": 2729.9097439435777,
+   "shortfall_gwh_yr": 23350.875906492904
+  },
+  "tracked": {
+   "coverage": 0.9809644670050761,
+   "mean_reserve_mw": 40529.020742738954,
+   "pinball99": 354.1724088326484,
+   "shortfall_gwh_yr": 600.1529209177744
+  }
+ },
+ "lgbm|net_demand": {
+  "fixed": {
+   "coverage": 0.9796954314720813,
+   "mean_reserve_mw": 26542.228271484375,
+   "pinball99": 315.57420791445264,
+   "shortfall_gwh_yr": 835.161875991434
+  },
+  "tracked": {
+   "coverage": 0.9875211505922166,
+   "mean_reserve_mw": 29928.0465276387,
+   "pinball99": 304.4845471149273,
+   "shortfall_gwh_yr": 441.41876814847245
+  }
+ },
+ "corr_series|all": {
+  "fixed": {
+   "coverage": 0.8713930216551068,
+   "mean_reserve_mw": 15560.5730530104,
+   "pinball99": 833.478877390855,
+   "shortfall_gwh_yr": 25274.248894140663
+  },
+  "tracked": {
+   "coverage": 0.9859691851538095,
+   "mean_reserve_mw": 22733.361054565947,
+   "pinball99": 219.98434307182154,
+   "shortfall_gwh_yr": 1295.7948589571831
+  }
+ },
+ "corr_series|demand": {
+  "fixed": {
+   "coverage": 0.7195431472081218,
+   "mean_reserve_mw": 17586.628282335067,
+   "pinball99": 2674.6854312283535,
+   "shortfall_gwh_yr": 22848.830289209563
+  },
+  "tracked": {
+   "coverage": 0.9804004512126339,
+   "mean_reserve_mw": 38514.67104849516,
+   "pinball99": 346.35781145216123,
+   "shortfall_gwh_yr": 619.3837936544911
+  }
+ },
+ "corr_series|net_demand": {
+  "fixed": {
+   "coverage": 0.9811759729272419,
+   "mean_reserve_mw": 27085.515855577254,
+   "pinball99": 318.0835150335823,
+   "shortfall_gwh_yr": 763.0084112930944
+  },
+  "tracked": {
+   "coverage": 0.9875211505922166,
+   "mean_reserve_mw": 29660.691440233462,
+   "pinball99": 304.6709650570394,
+   "shortfall_gwh_yr": 419.92909228269474
+  }
+ }
+}

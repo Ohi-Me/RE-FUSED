@@ -1,0 +1,32 @@
+#!/bin/bash
+#PBS -N refused_explore_ecm
+#PBS -q cpuq
+#PBS -l select=1:ncpus=8:ngpus=0:mem=32gb
+#PBS -l walltime=08:00:00
+#PBS -j oe
+# Exploratory (not pre-registered): analyses for the ECM revision, protocol design/11_ecm_revision_exploratory.md.
+# CPU only. Submit from the Forecast_Correction_India folder:  qsub -o logs/explore_ecm.out hpc/explore_ecm.pbs
+cd "$PBS_O_WORKDIR"
+export PYTHONNOUSERSITE=1 OMP_NUM_THREADS=${NT:-6} OPENBLAS_NUM_THREADS=${NT:-6} MKL_NUM_THREADS=${NT:-6}
+# the hourly test months were opened and scored on 6 Oct 2026 (tag prereg-india-v1); these analyses come after that
+export REFUSED_INDIA_CONFIRMATORY=1
+source ../India_Grid_Study/hpc/cluster.env 2>/dev/null
+source "${HPC_CONDA_SH:-/apps/compilers/anaconda3/etc/profile.d/conda.sh}"
+conda activate "${HPC_CONDA_ENV:-refused_h100}"
+# pin the job to as many of the least busy cores as it requested: the libraries otherwise start one thread per core of
+# the node, and the cluster stops a job that uses more cores than it requested (job 37218 was stopped for this)
+CORES=$(NREQ="${NCPUS:-3}" python - <<'PY'
+import os, time
+def snap():
+    return {l.split()[0]: list(map(int, l.split()[1:])) for l in open("/proc/stat") if l[:3] == "cpu" and l[3].isdigit()}
+a = snap(); time.sleep(2); b = snap()
+idle = {k: (b[k][3] + b[k][4] - a[k][3] - a[k][4]) / max(1, sum(b[k]) - sum(a[k])) for k in a}
+n = int(os.environ["NREQ"])
+print(",".join(sorted((k[3:] for k in sorted(idle, key=idle.get, reverse=True)[:n]), key=int)))
+PY
+)
+echo "explore ecm $(date -Iseconds) on $(hostname), job $PBS_JOBID, commit $(git rev-parse --short HEAD 2>/dev/null), cores $CORES"
+sha256sum design/11_ecm_revision_exploratory.md code/scripts/india/explore_ecm_revision.py
+# BLOCKS may be passed with ':' as separator (qsub -v cannot carry commas)
+taskset -c "$CORES" python -u code/scripts/india/explore_ecm_revision.py --blocks "$(echo "${BLOCKS:-R1,R1b,R2,R3,R4,R5,R6,R7}" | tr ':' ',')"
+echo "finished rc=$? $(date -Iseconds)"
