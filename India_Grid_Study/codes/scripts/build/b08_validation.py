@@ -132,7 +132,35 @@ def cea_re():
                 duplicate_table_files=int((log.status == "duplicate_tables").sum()),
                 inconsistent_rows_all=int(r.all_sum_flag.sum()), inconsistent_rows_ctrl=int(r.ctrl_sum_flag.sum()),
                 layout_counts={k: {c: int(v) for c, v in row.items()} for k, row in lay.iterrows()},
-                idp_overlap_rows=len(j), idp_share_within_1pct=float((d <= 0.01 * j.idp.abs().clip(lower=1)).mean()))
+                idp_overlap_rows=len(j), idp_share_within_1pct=float((d <= 0.01 * j.idp.abs().clip(lower=1)).mean()),
+                **portal_overlap())
+
+
+def portal_overlap():
+    """Version 1.1: the days published on both CEA listings (old cea.nic.in, new RE generation portal) must parse
+    to the same values, cell by cell."""
+    src = os.path.join(RAW, "cea_daily_re_portal")
+    if not os.path.isdir(src):
+        return {}
+    from refused import parse_cea_re as C
+    num = ["wind_gwh", "solar_gwh", "other_re_gwh", "total_re_gwh"]
+    man = pd.read_csv(os.path.join(src, "MANIFEST.csv"))
+    man = man[man.status.astype(str) == "200"]
+    dates, cells, diff = 0, 0, 0
+    for path in sorted(man.path):
+        day = os.path.basename(path)[:10]
+        old = sorted(glob.glob(os.path.join(RAW, "cea_daily_re", day[:4], day + "_*.xlsx")))
+        if not old or not path.endswith(".xlsx"):
+            continue
+        a = {(x["state_raw"], x["scope"]): x for x in C.parse_xlsx(os.path.join(src, path))["rows"]}
+        b = {(x["state_raw"], x["scope"]): x for x in C.parse_xlsx(old[0])["rows"]}
+        dates += 1
+        for k in set(a) | set(b):
+            for c in num:
+                cells += 1
+                diff += (a.get(k) or {}).get(c) != (b.get(k) or {}).get(c)
+    return dict(portal_first=str(sorted(man.path)[0].split("/")[-1][:10]), portal_overlap_dates=dates,
+                portal_overlap_values=cells, portal_overlap_differences=int(diff))
 
 
 def co2():
@@ -175,8 +203,11 @@ def panel():
 
 def main():
     V["manifests"] = manifests()
-    V["raw_total_bytes_official"] = int(sum(v["bytes_ok"] for k, v in V["manifests"].items() if k != "legacy_refused0"))
-    V["raw_files_ok_official"] = int(sum(v["files_ok"] for k, v in V["manifests"].items() if k != "legacy_refused0"))
+    # erpc_dsm holds the block-wise settlement files of the Eastern Region (a check of the scheduling study, Oct 2026),
+    # not an input of the panel
+    not_panel = ("legacy_refused0", "erpc_dsm")
+    V["raw_total_bytes_official"] = int(sum(v["bytes_ok"] for k, v in V["manifests"].items() if k not in not_panel))
+    V["raw_files_ok_official"] = int(sum(v["files_ok"] for k, v in V["manifests"].items() if k not in not_panel))
     for name, fn in [("psp", psp), ("dsm", dsm), ("npp", npp), ("cea_re", cea_re), ("co2", co2), ("imd", imd),
                      ("panel", panel)]:
         V[name] = fn()

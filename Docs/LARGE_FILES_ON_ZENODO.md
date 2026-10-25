@@ -398,3 +398,7 @@ How to use them:
 | `India_Grid_Study/results/rebuild/data/interim/dsm_block.parquet` | 14.1 | 4 |
 | `India_Grid_Study/results/rebuild/data/interim/npp_station_day.parquet` | 6.0 | 4 |
 | `India_Grid_Study/results/rebuild/data/processed/refused8_state_day.parquet` | 15.2 | 4 |
+| `India_Grid_Study/versions/v1_1/data/interim/dsm_block.parquet` | 14.1 | ? |
+| `India_Grid_Study/versions/v1_1/data/interim/erpc_dsm_blocks.parquet` | 10.5 | ? |
+| `India_Grid_Study/versions/v1_1/data/interim/npp_station_day.parquet` | 6.0 | ? |
+| `India_Grid_Study/versions/v1_1/data/processed/refused_state_day.parquet` | 15.3 | ? |

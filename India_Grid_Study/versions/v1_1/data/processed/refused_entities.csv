@@ -1,0 +1,35 @@
+entity,name,region,bid_area,pilot18,geo_state
+PB,Punjab,NR,N3,True,Punjab
+HR,Haryana,NR,N1,True,Haryana
+RJ,Rajasthan,NR,N2,True,Rajasthan
+DL,Delhi,NR,N2,True,Delhi
+UP,Uttar Pradesh,NR,N2,True,Uttar Pradesh
+UK,Uttarakhand,NR,N2,True,Uttarakhand
+HP,Himachal Pradesh,NR,N1,True,Himachal Pradesh
+JK,Jammu & Kashmir and Ladakh,NR,N1,True,Jammu and Kashmir
+CH,Chandigarh,NR,N1,False,Chandigarh
+CG,Chhattisgarh,WR,W3,True,Chhattisgarh
+GJ,Gujarat,WR,W2,True,Gujarat
+MP,Madhya Pradesh,WR,W1,True,Madhya Pradesh
+MH,Maharashtra,WR,W2,True,Maharashtra
+GA,Goa,WR,W2,False,Goa
+DNHDD,Dadra & Nagar Haveli and Daman & Diu,WR,W2,False,Dadra and Nagar Haveli and Daman and Diu
+AP,Andhra Pradesh,SR,S1,False,Andhra Pradesh
+TG,Telangana,SR,S1,False,Telangana
+KA,Karnataka,SR,S1,True,Karnataka
+KL,Kerala,SR,S3,False,Kerala
+TN,Tamil Nadu,SR,S2,True,Tamil Nadu
+PY,Puducherry,SR,S2,True,Puducherry
+BR,Bihar,ER,E1,True,Bihar
+DVC,Damodar Valley Corporation,ER,E1,False,
+JH,Jharkhand,ER,E1,True,Jharkhand
+OD,Odisha,ER,E2,True,Odisha
+WB,West Bengal,ER,E1,False,West Bengal
+SK,Sikkim,ER,E1,False,Sikkim
+AR,Arunachal Pradesh,NER,A2,False,Arunachal Pradesh
+AS,Assam,NER,A2,False,Assam
+MN,Manipur,NER,A1,False,Manipur
+ML,Meghalaya,NER,A2,False,Meghalaya
+MZ,Mizoram,NER,A1,False,Mizoram
+NL,Nagaland,NER,A1,False,Nagaland
+TR,Tripura,NER,A1,False,Tripura

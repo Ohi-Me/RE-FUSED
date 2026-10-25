@@ -54,7 +54,27 @@ def co2():
     print("CEA_CO2_DONE", flush=True)
 
 
+def daily_re_portal(first="2025-11-01", last="2026-08-31"):
+    """The same Daily Renewable Generation Report on CEA's RE generation portal (https://gen-re.cea.gov.in/reports),
+    where CEA has published it since November 2025; the old cea.nic.in listing above has no report after 18 Nov 2025.
+    Files follow a date pattern; XLSX taken when published, otherwise PDF. The days up to 18 Nov 2025 overlap with
+    the old listing and serve as a check that both copies are the same report."""
+    import pandas as pd
+    f = Fetcher("cea_daily_re_portal", delay=0.5)
+    base = "https://gen-re.cea.gov.in/renewables/public/uploads/dailyReport/"
+    for d in pd.date_range(first, last).strftime("%Y-%m-%d"):
+        got = None
+        for kind, ext in (("excel", "xlsx"), ("pdf", "pdf")):
+            got = f.get(f"{base}{kind}/Report-{d}.{ext}", f"{d[:4]}/{d}_Report-{d}.{ext}", note=f"DailyRE {d}",
+                        min_bytes=2000)
+            if got:
+                break
+        if d.endswith("-01"):
+            print(d, "ok" if got else "missing", flush=True)
+    print("CEA_RE_PORTAL_DONE", flush=True)
+
+
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
-    ap.add_argument("product", choices=["re", "co2"])
-    {"re": daily_re, "co2": co2}[ap.parse_args().product]()
+    ap.add_argument("product", choices=["re", "re_portal", "co2"])
+    {"re": daily_re, "re_portal": daily_re_portal, "co2": co2}[ap.parse_args().product]()

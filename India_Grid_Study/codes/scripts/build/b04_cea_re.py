@@ -27,11 +27,17 @@ from refused import parse_cea_re as C  # noqa: E402
 from refused.paths import INTERIM, RAW  # noqa: E402
 
 SRC = os.path.join(RAW, "cea_daily_re")
+# Version 1.1 of the panel (25 Oct 2026) also reads the same report from CEA's RE generation portal, where it has been
+# published since November 2025 (acquire/cea.py re_portal). The old listing wins on every date it covers, so without
+# this switch the output is that of version 1.0.
+PORTAL = os.environ.get("REFUSED_RE_PORTAL") == "1"
+SOURCES = [("", SRC)] + ([("portal/", os.path.join(RAW, "cea_daily_re_portal"))] if PORTAL else [])
 NUM = ["wind_gwh", "solar_gwh", "other_re_gwh", "total_re_gwh"]
 
 
 def work(rel):
-    p = os.path.join(SRC, rel)
+    pre, src = next((a, b) for a, b in SOURCES[::-1] if rel.startswith(a))
+    p = os.path.join(src, rel[len(pre):])
     try:
         r = C.parse_xlsx(p) if rel.lower().endswith(".xlsx") else C.parse_pdf(p)
     except Exception as e:
@@ -43,8 +49,11 @@ def work(rel):
 
 
 def main():
-    man = pd.read_csv(os.path.join(SRC, "MANIFEST.csv"))
-    rels = sorted({p for p in man.loc[man.status.astype(str) == "200", "path"] if os.path.exists(os.path.join(SRC, p))})
+    rels = []
+    for pre, src in SOURCES:
+        man = pd.read_csv(os.path.join(src, "MANIFEST.csv"))
+        rels += sorted({pre + p for p in man.loc[man.status.astype(str) == "200", "path"]
+                        if os.path.exists(os.path.join(src, p))})
     print("files", len(rels), flush=True)
     log, rows = [], []
     with ProcessPoolExecutor(max_workers=6) as ex:
@@ -63,8 +72,10 @@ def main():
     df["date"] = pd.to_datetime(df.date)
     df["fmt"] = df.source_file.str.rsplit(".", n=1).str[-1].str.lower()
     df["has_ctrl"] = df.groupby("source_file").scope.transform(lambda s: (s == "ctrl").any())
-    pick = (df[df.scope == "all"].groupby(["date", "source_file", "fmt"]).size().rename("n").reset_index()
-            .sort_values(["date", "fmt", "n"], ascending=[True, False, False]).drop_duplicates("date"))
+    pick = df[df.scope == "all"].groupby(["date", "source_file", "fmt"]).size().rename("n").reset_index()
+    pick["portal"] = pick.source_file.str.startswith("portal/")  # the old listing first, as in version 1.0
+    pick = (pick.sort_values(["date", "portal", "fmt", "n"], ascending=[True, True, False, False])
+            .drop_duplicates("date"))
     log["chosen"] = log.file.isin(pick.source_file)
     df = df.merge(pick[["date", "source_file"]], on=["date", "source_file"])
     df["entity"] = df.state_raw.map(E.entity_id)
