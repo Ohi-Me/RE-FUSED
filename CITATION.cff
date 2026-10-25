@@ -11,8 +11,11 @@ repository-code: "https://github.com/Ohi-Me/RE-FUSED"
 license: MIT
 identifiers:
   - type: doi
+    value: 10.5281/zenodo.23301897
+    description: "Zenodo record, all versions (resolves to the latest)"
+  - type: doi
     value: 10.5281/zenodo.23301898
-    description: "Zenodo record, version 1.0.0 (code, results, logs and datasets)"
+    description: "Zenodo record, version 1.0.0 (frozen input of the pre-registered studies)"
 keywords:
   - load forecasting
   - Indian power system
