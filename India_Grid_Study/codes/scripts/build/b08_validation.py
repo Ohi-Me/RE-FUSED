@@ -56,6 +56,10 @@ def psp():
             gap_shared += 1
     recent = li[li.rep >= "2025-04-01"]
     lag_h = (recent.created - recent.rep).dt.total_seconds() / 3600
+    # the registry assigns PSP columns a 1-day delay, i.e. a forecast issued at noon uses the previous data day: share of
+    # report dates whose first upload was online by noon of the reporting date (12 h after the end of the data day)
+    first_h = recent.groupby("rep").created.min()
+    first_h = (first_h - first_h.index).dt.total_seconds() / 3600
     # PDF vs XLS agreement on dates where both formats were parsed
     both = st.groupby("date").source_file.first()
     return dict(state_rows=len(st), dates=int(st.date.nunique()), first=str(st.date.min().date()),
@@ -70,7 +74,9 @@ def psp():
                 date_reassigned_by_cover_letter=int(log.date_reassigned_to.notna().sum()) if "date_reassigned_to" in log else 0,
                 duplicate_uploads_dropped=int(log.dropped_duplicate_content.sum()) if "dropped_duplicate_content" in log else 0,
                 publication_lag_hours_median=float(lag_h.median()), publication_lag_hours_p90=float(lag_h.quantile(0.9)),
-                publication_lag_n=int(lag_h.notna().sum()), xls_share_of_chosen=float(both.str.lower().str.endswith(("xls", "xlsx")).mean()))
+                publication_lag_n=int(lag_h.notna().sum()),
+                report_dates_online_by_noon_share=float((first_h.dropna() <= 12).mean()),
+                report_dates_timed=int(first_h.notna().sum()), xls_share_of_chosen=float(both.str.lower().str.endswith(("xls", "xlsx")).mean()))
 
 
 def dsm():
@@ -87,7 +93,8 @@ def dsm():
                 regimes={k: dict(first=str(v["min"].date()), last=str(v["max"].date()), dates=int(v["nunique"]))
                          for k, v in reg.iterrows()},
                 daily_file_lag_days_median=float(lag.median()), daily_file_lag_days_min=float(lag.min()),
-                daily_file_lag_days_max=float(lag.max()), daily_file_lag_n=int(lag.notna().sum()))
+                daily_file_lag_days_max=float(lag.max()), daily_file_lag_n=int(lag.notna().sum()),
+                daily_file_within_14d_share=float((lag.dropna() <= 14).mean()))  # the registry's price delay
 
 
 def npp():
@@ -208,6 +215,12 @@ def main():
     not_panel = ("legacy_refused0", "erpc_dsm")
     V["raw_total_bytes_official"] = int(sum(v["bytes_ok"] for k, v in V["manifests"].items() if k not in not_panel))
     V["raw_files_ok_official"] = int(sum(v["files_ok"] for k, v in V["manifests"].items() if k not in not_panel))
+    # the sources the build steps b01-b07 read (Table 1 of the data descriptor); the other official downloads (NPP
+    # sub-reports 6 and 10, the NPP daily coal report, the CERC regulations) are kept with their manifests but unused
+    panel_in = ("grid_india_psp", "grid_india_dsm", "npp_dgr2", "cea_daily_re", "cea_daily_re_portal",
+                "cea_co2_database", "imd_gridded")
+    V["raw_files_ok_panel"] = int(sum(V["manifests"][k]["files_ok"] for k in panel_in if k in V["manifests"]))
+    V["raw_total_bytes_panel"] = int(sum(V["manifests"][k]["bytes_ok"] for k in panel_in if k in V["manifests"]))
     for name, fn in [("psp", psp), ("dsm", dsm), ("npp", npp), ("cea_re", cea_re), ("co2", co2), ("imd", imd),
                      ("panel", panel)]:
         V[name] = fn()

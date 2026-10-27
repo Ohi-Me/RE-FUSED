@@ -68,6 +68,8 @@
  },
  "raw_total_bytes_official": 5025794592,
  "raw_files_ok_official": 18233,
+ "raw_files_ok_panel": 9614,
+ "raw_total_bytes_panel": 4525927514,
  "psp": {
   "state_rows": 111654,
   "dates": 3284,
@@ -88,6 +90,8 @@
   "publication_lag_hours_median": 10.6,
   "publication_lag_hours_p90": 36.67333333333334,
   "publication_lag_n": 1064,
+  "report_dates_online_by_noon_share": 0.7681451612903226,
+  "report_dates_timed": 496,
   "xls_share_of_chosen": 0.4101705237515225
  },
  "dsm": {
@@ -115,7 +119,8 @@
   "daily_file_lag_days_median": 8.774305555555555,
   "daily_file_lag_days_min": 4.7375,
   "daily_file_lag_days_max": 71.65694444444445,
-  "daily_file_lag_n": 267
+  "daily_file_lag_n": 267,
+  "daily_file_within_14d_share": 0.9213483146067416
  },
  "npp": {
   "station_rows": 1547930,
