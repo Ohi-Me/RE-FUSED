@@ -5,7 +5,7 @@ Version {version}
 **Author**
 
 * Rohit Kumar, Centre for Artificial Intelligence, Dr. B. R. Ambedkar National Institute of Technology Jalandhar,
-  India. ORCID 0009-0004-7936-9683. Contact: rohitaryan0613@gmail.com
+  India. ORCID 0009-0004-7936-9683. Contact: therohitkumar.build@gmail.com
 
 {doi_line}
 
