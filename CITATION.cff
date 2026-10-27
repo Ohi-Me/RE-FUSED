@@ -14,6 +14,9 @@ identifiers:
     value: 10.5281/zenodo.23301897
     description: "Zenodo record, all versions (resolves to the latest)"
   - type: doi
+    value: 10.5281/zenodo.23685972
+    description: "Zenodo record, version 1.1.0"
+  - type: doi
     value: 10.5281/zenodo.23301898
     description: "Zenodo record, version 1.0.0 (frozen input of the pre-registered studies)"
 keywords:
@@ -23,7 +26,7 @@ keywords:
   - forecast correction
   - pre-registered evaluation
 version: "1.1.0"
-date-released: "2026-10-26"
+date-released: "2026-10-27"
 preferred-citation:
   type: dataset
   title: "RE-FUSED: State-day panel of India's power system from official data, with forecasting, forecast correction and scheduling code, results and logs"
@@ -32,8 +35,8 @@ preferred-citation:
       given-names: Rohit
       orcid: "https://orcid.org/0009-0004-7936-9683"
   version: "1.1.0"
-  doi: 10.5281/zenodo.23301897
+  doi: 10.5281/zenodo.23685972
   publisher:
     name: Zenodo
   year: 2026
-  url: "https://doi.org/10.5281/zenodo.23301897"
+  url: "https://doi.org/10.5281/zenodo.23685972"
