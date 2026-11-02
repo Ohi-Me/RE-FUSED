@@ -1,0 +1,20 @@
+#!/bin/bash
+#PBS -N refused_delay_chronos
+#PBS -q workq
+#PBS -l select=1:ncpus=8:ngpus=1:mem=32gb
+#PBS -l walltime=08:00:00
+#PBS -j oe
+# Delay study (additional analysis, not pre-registered): E4b, Chronos-2 inference with instant publication.
+# One GPU job; submit only when <hpc-user> has no other GPU job. Writes results/extra/delay/E4b/ only.
+# Submit from the project folder:  qsub -o logs/pbs/refused_delay_chronos.out hpc/extra_delay_chronos.pbs
+cd "$PBS_O_WORKDIR"
+export PYTHONNOUSERSITE=1 HF_HUB_OFFLINE=1
+source hpc/cluster.env 2>/dev/null
+source "${HPC_CONDA_SH:-/apps/compilers/anaconda3/etc/profile.d/conda.sh}"
+conda activate "${HPC_CONDA_ENV:-refused_h100}"
+MIG=$(python run_all.py pick-mig) || { echo "no free MIG instance"; exit 3; }
+export CUDA_VISIBLE_DEVICES="$MIG"
+echo "delay chronos $(date -Iseconds) on $(hostname), job $PBS_JOBID, GPU $CUDA_VISIBLE_DEVICES"
+env REFUSED_PHASE=confirm REFUSED_CONFIRMATORY=1 REFUSED_DEV2_DIR=extra/delay/E4b \
+    python -u codes/scripts/extra/x17_chronos_instant.py
+echo "delay chronos finished rc=$? $(date -Iseconds)"

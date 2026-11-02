@@ -1,0 +1,15 @@
+{
+ "exp": "E2",
+ "tid": "T4",
+ "phase": "confirm",
+ "num_leaves": {
+  "1": 31,
+  "2": 31,
+  "3": 31
+ },
+ "reproduce_lgbm_instant": {
+  "rows": 29037,
+  "max_abs_diff_q50": 0.0
+ },
+ "seconds": 548.8
+}
